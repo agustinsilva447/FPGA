@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Vivado v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Mar 22 16:05:09 2017
+# Process ID: 128
+# Current directory: C:/Users/caos1/Desktop/Tesis/Definitivo/NGrover64/solution1/.autopilot/db/ip_tmp
+# Command line: vivado.exe  -notrace -mode batch -source run_vivado.tcl
+# Log file: C:/Users/caos1/Desktop/Tesis/Definitivo/NGrover64/solution1/.autopilot/db/ip_tmp/vivado.log
+# Journal file: C:/Users/caos1/Desktop/Tesis/Definitivo/NGrover64/solution1/.autopilot/db/ip_tmp\vivado.jou
+#-----------------------------------------------------------
+source run_vivado.tcl -notrace
