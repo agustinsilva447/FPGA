@@ -1,0 +1,852 @@
+18:30:02 **** Build of project VQFTAXIBUS_test_bsp ****
+make -k all 
+"Running Make include in ps7_cortexa9_0/libsrc/bram_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/bram_v4_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/emacps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scugic_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_5/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/sdps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/standalone_v6_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_1/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/tmrctr_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/ttcps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/uartps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_3/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/VQFTAXIBUS_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/VQFTAXIBUS_v1_0/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make include in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s include  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Running Make libs in ps7_cortexa9_0/libsrc/bram_v4_1/src"
+make -C ps7_cortexa9_0/libsrc/bram_v4_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling bram"
+arm-none-eabi-ar: creating ../../../lib/libxil.a
+"Running Make libs in ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src"
+make -C ps7_cortexa9_0/libsrc/coresightps_dcc_v1_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling coresightps_dcc"
+"Running Make libs in ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/cpu_cortexa9_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling cpu_cortexa9"
+"Running Make libs in ps7_cortexa9_0/libsrc/ddrps_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/ddrps_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ddrps"
+"Running Make libs in ps7_cortexa9_0/libsrc/devcfg_v3_4/src"
+make -C ps7_cortexa9_0/libsrc/devcfg_v3_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling devcfg"
+"Running Make libs in ps7_cortexa9_0/libsrc/dmaps_v2_3/src"
+make -C ps7_cortexa9_0/libsrc/dmaps_v2_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling dmaps"
+"Running Make libs in ps7_cortexa9_0/libsrc/emacps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/emacps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling emacps"
+"Running Make libs in ps7_cortexa9_0/libsrc/gpiops_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/gpiops_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling gpiops"
+"Running Make libs in ps7_cortexa9_0/libsrc/qspips_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/qspips_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling qspips"
+"Running Make libs in ps7_cortexa9_0/libsrc/scugic_v3_5/src"
+make -C ps7_cortexa9_0/libsrc/scugic_v3_5/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scugic"
+"Running Make libs in ps7_cortexa9_0/libsrc/scutimer_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scutimer_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scutimer"
+"Running Make libs in ps7_cortexa9_0/libsrc/scuwdt_v2_1/src"
+make -C ps7_cortexa9_0/libsrc/scuwdt_v2_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling scuwdt"
+"Running Make libs in ps7_cortexa9_0/libsrc/sdps_v3_1/src"
+make -C ps7_cortexa9_0/libsrc/sdps_v3_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling sdps"
+"Running Make libs in ps7_cortexa9_0/libsrc/standalone_v6_1/src"
+make -C ps7_cortexa9_0/libsrc/standalone_v6_1/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling standalone"
+"Running Make libs in ps7_cortexa9_0/libsrc/tmrctr_v4_2/src"
+make -C ps7_cortexa9_0/libsrc/tmrctr_v4_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling tmrctr"
+"Running Make libs in ps7_cortexa9_0/libsrc/ttcps_v3_2/src"
+make -C ps7_cortexa9_0/libsrc/ttcps_v3_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling ttcps"
+"Running Make libs in ps7_cortexa9_0/libsrc/uartps_v3_3/src"
+make -C ps7_cortexa9_0/libsrc/uartps_v3_3/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling uartps"
+"Running Make libs in ps7_cortexa9_0/libsrc/usbps_v2_4/src"
+make -C ps7_cortexa9_0/libsrc/usbps_v2_4/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling usbps"
+"Running Make libs in ps7_cortexa9_0/libsrc/VQFTAXIBUS_v1_0/src"
+make -C ps7_cortexa9_0/libsrc/VQFTAXIBUS_v1_0/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling VQFTAXIBUS"
+"Running Make libs in ps7_cortexa9_0/libsrc/xadcps_v2_2/src"
+make -C ps7_cortexa9_0/libsrc/xadcps_v2_2/src -s libs  "SHELL=CMD" "COMPILER=arm-none-eabi-gcc" "ARCHIVER=arm-none-eabi-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -nostartfiles"
+"Compiling xadcps"
+'Finished building libraries'
+18:30:24 **** Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  19056	   1148	  22576	  42780	   a71c	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+18:30:36 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc:9:28: fatal error: AxiTimerHelper.h: No such file or directory
+compilation terminated.
+make: *** [src/main.o] Error 1
+18:31:26 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/AxiTimerHelper.cpp'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/AxiTimerHelper.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/AxiTimerHelper.d" -MT"src/AxiTimerHelper.o" -o "src/AxiTimerHelper.o" "../src/AxiTimerHelper.cpp"
+'Finished building: ../src/AxiTimerHelper.cpp'
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 178496	   2632	  23380	 204508	  31edc	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+18:32:37 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+18:33:20 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 178488	   2632	  23380	 204500	  31ed4	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+18:34:04 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+18:35:27 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+18:38:28 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+18:41:21 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+18:53:32 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+18:54:18 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+18:55:33 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+19:00:24 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+19:09:10 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+11:43:32 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+11:44:41 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+11:45:42 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+11:46:38 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 178488	   2632	  23380	 204500	  31ed4	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+11:46:53 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+11:47:55 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+11:56:23 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 178488	   2632	  23380	 204500	  31ed4	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+11:56:31 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+12:04:35 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+12:08:06 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+12:12:09 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 178488	   2632	  23380	 204500	  31ed4	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+12:34:28 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 177592	   2632	  23380	 203604	  31b54	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+12:34:54 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+12:36:45 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 177656	   2632	  23380	 203668	  31b94	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+12:36:56 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+12:37:41 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 177720	   2632	  23380	 203732	  31bd4	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+12:37:47 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+12:39:38 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 178488	   2632	  23380	 204500	  31ed4	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+12:40:09 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+12:40:39 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 178488	   2632	  23380	 204500	  31ed4	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+12:40:51 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+12:41:15 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 177656	   2632	  23380	 203668	  31b94	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+12:41:21 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+14:13:26 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 178488	   2632	  23380	 204500	  31ed4	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+14:13:53 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+18:28:28 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+18:29:53 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 178488	   2632	  23380	 204500	  31ed4	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+18:30:06 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+11:27:22 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+11:28:13 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+11:29:14 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+11:31:55 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+15:09:37 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+15:10:49 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 177720	   2632	  23380	 203732	  31bd4	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+15:11:09 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+15:11:25 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+15:12:52 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 177720	   2632	  23380	 203732	  31bd4	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+15:13:01 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+15:14:25 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 177720	   2632	  23380	 203732	  31bd4	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+15:14:34 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+15:14:48 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 177720	   2632	  23380	 203732	  31bd4	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+15:14:54 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+15:15:40 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 178488	   2632	  23380	 204500	  31ed4	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+15:15:47 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+16:56:33 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+16:57:47 **** Auto Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+'Building file: ../src/main.cc'
+'Invoking: ARM v7 g++ compiler'
+arm-none-eabi-g++ -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -I../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.cc"
+../src/main.cc: In function 'int main()':
+../src/main.cc:89:8: warning: unused variable 'P' [-Wunused-variable]
+  float P[2*K];
+        ^
+../src/main.cc:92:8: warning: variable 'MESW' set but not used [-Wunused-but-set-variable]
+  float MESW[M], MEHW[M];
+        ^
+'Finished building: ../src/main.cc'
+' '
+'Building target: VQFTAXIBUS_test.elf'
+'Invoking: ARM v7 g++ linker'
+arm-none-eabi-g++ -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -L../../VQFTAXIBUS_test_bsp/ps7_cortexa9_0/lib -o "VQFTAXIBUS_test.elf"  ./src/AxiTimerHelper.o ./src/main.o   -Wl,--start-group,-lxil,-lgcc,-lc,-lstdc++,--end-group
+'Finished building target: VQFTAXIBUS_test.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size VQFTAXIBUS_test.elf  |tee "VQFTAXIBUS_test.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+ 177720	   2632	  23380	 203732	  31bd4	VQFTAXIBUS_test.elf
+'Finished building: VQFTAXIBUS_test.elf.size'
+' '
+16:58:03 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.

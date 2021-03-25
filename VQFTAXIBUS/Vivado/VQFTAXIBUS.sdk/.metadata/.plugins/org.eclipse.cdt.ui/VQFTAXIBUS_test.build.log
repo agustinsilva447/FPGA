@@ -1,0 +1,8 @@
+16:58:03 **** Incremental Build of configuration Debug for project VQFTAXIBUS_test ****
+make pre-build main-build 
+a9-linaro-pre-build-step
+' '
+make: No se hace nada para `main-build'.
+
+16:58:03 Build Finished (took 184ms)
+

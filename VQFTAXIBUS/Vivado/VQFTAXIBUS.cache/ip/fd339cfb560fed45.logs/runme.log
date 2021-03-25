@@ -1,0 +1,615 @@
+
+*** Running vivado
+    with args -log design_1_VQFTAXIBUS_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_VQFTAXIBUS_0_0.tcl
+
+
+****** Vivado v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source design_1_VQFTAXIBUS_0_0.tcl -notrace
+Command: synth_design -top design_1_VQFTAXIBUS_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 6164 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:16 . Memory (MB): peak = 344.027 ; gain = 135.094
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_VQFTAXIBUS_0_0' [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ip/design_1_VQFTAXIBUS_0_0/synth/design_1_VQFTAXIBUS_0_0.v:57]
+INFO: [Synth 8-638] synthesizing module 'VQFTAXIBUS' [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/verilog/VQFTAXIBUS.v:12]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/verilog/VQFTAXIBUS.v:646]
+INFO: [Synth 8-638] synthesizing module 'VQFTAXIBUS_CRTL_BUS_s_axi' [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/verilog/VQFTAXIBUS_CRTL_BUS_s_axi.v:9]
+INFO: [Synth 8-155] case statement is not full and has no default [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/verilog/VQFTAXIBUS_CRTL_BUS_s_axi.v:187]
+INFO: [Synth 8-256] done synthesizing module 'VQFTAXIBUS_CRTL_BUS_s_axi' (1#1) [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/verilog/VQFTAXIBUS_CRTL_BUS_s_axi.v:9]
+INFO: [Synth 8-638] synthesizing module 'VQFTAXIBUS_faddfsbkb' [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/verilog/VQFTAXIBUS_faddfsbkb.v:11]
+INFO: [Synth 8-638] synthesizing module 'VQFTAXIBUS_ap_faddfsub_3_full_dsp_32' [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/ip/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32.vhd:74]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_3' declared at 'c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/ad02/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_3' [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/ip/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32.vhd:201]
+INFO: [Synth 8-256] done synthesizing module 'VQFTAXIBUS_ap_faddfsub_3_full_dsp_32' (19#1) [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/ip/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32.vhd:74]
+INFO: [Synth 8-256] done synthesizing module 'VQFTAXIBUS_faddfsbkb' (20#1) [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/verilog/VQFTAXIBUS_faddfsbkb.v:11]
+INFO: [Synth 8-638] synthesizing module 'VQFTAXIBUS_fmul_3cud' [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/verilog/VQFTAXIBUS_fmul_3cud.v:11]
+INFO: [Synth 8-638] synthesizing module 'VQFTAXIBUS_ap_fmul_2_max_dsp_32' [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/ip/VQFTAXIBUS_ap_fmul_2_max_dsp_32.vhd:72]
+INFO: [Synth 8-3491] module 'floating_point_v7_1_3' declared at 'c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/ad02/hdl/floating_point_v7_1_vh_rfs.vhd:91604' bound to instance 'U0' of component 'floating_point_v7_1_3' [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/ip/VQFTAXIBUS_ap_fmul_2_max_dsp_32.vhd:197]
+INFO: [Synth 8-256] done synthesizing module 'VQFTAXIBUS_ap_fmul_2_max_dsp_32' (28#1) [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/ip/VQFTAXIBUS_ap_fmul_2_max_dsp_32.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'VQFTAXIBUS_fmul_3cud' (29#1) [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/verilog/VQFTAXIBUS_fmul_3cud.v:11]
+INFO: [Synth 8-256] done synthesizing module 'VQFTAXIBUS' (30#1) [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/verilog/VQFTAXIBUS.v:12]
+INFO: [Synth 8-256] done synthesizing module 'design_1_VQFTAXIBUS_0_0' (31#1) [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ip/design_1_VQFTAXIBUS_0_0/synth/design_1_VQFTAXIBUS_0_0.v:57]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[11]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[10]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[9]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DEC_OP_STATE[8]
+WARNING: [Synth 8-3331] design flt_dec_op_lat has unconnected port DIVIDE_BY_ZERO_IN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized244 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized244 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized244 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized244 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized244 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized242 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized242 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized242 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized242 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized242 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized240 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized240 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized240 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized240 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized240 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized238 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized238 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized238 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized238 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized238 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized236 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized236 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized236 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized236 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized236 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized234 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized234 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized234 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized234 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized234 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized232 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized232 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized232 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized232 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized232 has unconnected port SINIT
+WARNING: [Synth 8-3331] design dsp48e1_wrapper__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized246 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized246 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized246 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized246 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized246 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized254 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized254 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized254 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized254 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized254 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized252 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized252 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized252 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized252 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized252 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized250 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized250 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized250 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized250 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized250 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized248 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized248 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized248 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized248 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized248 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_round_dsp_opt_full has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized184 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized184 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized184 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized184 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized184 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized230 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized230 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized230 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized230 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized230 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized228 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized228 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized228 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized228 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized228 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized226 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized226 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized226 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized226 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized226 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized224 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized224 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized224 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized224 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized224 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized222 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized222 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized222 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized222 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized222 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized220 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized220 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_3_viv__parameterized220 has unconnected port SINIT
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:24 ; elapsed = 00:00:28 . Memory (MB): peak = 497.949 ; gain = 289.016
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:26 ; elapsed = 00:00:29 . Memory (MB): peak = 497.949 ; gain = 289.016
+---------------------------------------------------------------------------------
+INFO: [Netlist 29-17] Analyzing 1100 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ip/design_1_VQFTAXIBUS_0_0/constraints/VQFTAXIBUS_ooc.xdc] for cell 'inst'
+Finished Parsing XDC File [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ip/design_1_VQFTAXIBUS_0_0/constraints/VQFTAXIBUS_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.runs/design_1_VQFTAXIBUS_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.runs/design_1_VQFTAXIBUS_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 30 instances were transformed.
+  FDE => FDRE: 30 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:02 . Memory (MB): peak = 836.957 ; gain = 1.816
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 836.957 ; gain = 628.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 836.957 ; gain = 628.023
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for inst. (constraint file  auto generated constraint, line ).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:52 ; elapsed = 00:00:55 . Memory (MB): peak = 836.957 ; gain = 628.023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "det_state" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5544] ROM "state_int_up" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-5544] ROM "ap_NS_fsm" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "grp_fu_970_opcode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "grp_fu_979_opcode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "grp_fu_983_opcode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "grp_fu_995_opcode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "grp_fu_999_opcode" won't be mapped to Block RAM because address size (1) smaller than threshold (5)
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:03 ; elapsed = 00:01:08 . Memory (MB): peak = 836.957 ; gain = 628.023
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |VQFTAXIBUS__GB0 |           1|     54204|
+|2     |VQFTAXIBUS__GB1 |           1|     28628|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/exp_just_over_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "MULT.OP/EXP/flow_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-4471] merging register 'VQFTAXIBUS_fmul_3cud_U12/din0_buf1_reg[31:0]' into 'VQFTAXIBUS_fmul_3cud_U11/din0_buf1_reg[31:0]' [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/verilog/VQFTAXIBUS_fmul_3cud.v:52]
+INFO: [Synth 8-4471] merging register 'VQFTAXIBUS_fmul_3cud_U14/din0_buf1_reg[31:0]' into 'VQFTAXIBUS_fmul_3cud_U13/din0_buf1_reg[31:0]' [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/verilog/VQFTAXIBUS_fmul_3cud.v:52]
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_B/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/exp_over_int" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/ip_sig" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_one_ip" won't be mapped to RAM because it is too sparse
+INFO: [Synth 8-5546] ROM "ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/COND_DET_A/exp_all_zero_ip" won't be mapped to RAM because it is too sparse
+INFO: [Common 17-14] Message 'Synth 8-5546' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4471] merging register 'VQFTAXIBUS_faddfsbkb_U8/opcode_buf1_reg[1:0]' into 'VQFTAXIBUS_faddfsbkb_U9/opcode_buf1_reg[1:0]' [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/verilog/VQFTAXIBUS_faddfsbkb.v:62]
+INFO: [Synth 8-4471] merging register 'VQFTAXIBUS_faddfsbkb_U7/opcode_buf1_reg[1:0]' into 'VQFTAXIBUS_faddfsbkb_U9/opcode_buf1_reg[1:0]' [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/verilog/VQFTAXIBUS_faddfsbkb.v:62]
+INFO: [Synth 8-4471] merging register 'VQFTAXIBUS_faddfsbkb_U4/opcode_buf1_reg[1:0]' into 'VQFTAXIBUS_faddfsbkb_U5/opcode_buf1_reg[1:0]' [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/verilog/VQFTAXIBUS_faddfsbkb.v:62]
+INFO: [Synth 8-4471] merging register 'VQFTAXIBUS_faddfsbkb_U2/opcode_buf1_reg[1:0]' into 'VQFTAXIBUS_faddfsbkb_U5/opcode_buf1_reg[1:0]' [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/verilog/VQFTAXIBUS_faddfsbkb.v:62]
+INFO: [Synth 8-4471] merging register 'VQFTAXIBUS_faddfsbkb_U1/opcode_buf1_reg[1:0]' into 'VQFTAXIBUS_faddfsbkb_U5/opcode_buf1_reg[1:0]' [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ipshared/2a2b/hdl/verilog/VQFTAXIBUS_faddfsbkb.v:62]
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U13/din1_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U13/din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U13/din1_buf1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U15/din1_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U15/din1_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U15/din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U15/din1_buf1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U14/din1_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U14/din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U14/din1_buf1_reg[30] )
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[4]' (FD) to 'inst/i_0/VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[13]' (FD) to 'inst/i_0/VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[14]' (FD) to 'inst/i_0/VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[16]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[15] )
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[17]' (FD) to 'inst/i_0/VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[18]' (FD) to 'inst/i_0/VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[19]' (FD) to 'inst/i_0/VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[25]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[20] )
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[22]' (FD) to 'inst/i_0/VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[23]' (FD) to 'inst/i_0/VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[24]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U19/din1_buf1_reg[30] )
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_fmul_3cud_U18/din1_buf1_reg[13]' (FD) to 'inst/i_0/VQFTAXIBUS_fmul_3cud_U18/din1_buf1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_fmul_3cud_U18/din1_buf1_reg[15]' (FD) to 'inst/i_0/VQFTAXIBUS_fmul_3cud_U18/din1_buf1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_fmul_3cud_U18/din1_buf1_reg[17]' (FD) to 'inst/i_0/VQFTAXIBUS_fmul_3cud_U18/din1_buf1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_fmul_3cud_U18/din1_buf1_reg[18]' (FD) to 'inst/i_0/VQFTAXIBUS_fmul_3cud_U18/din1_buf1_reg[21]'
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U18/din1_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U18/din1_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U18/din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U18/din1_buf1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U17/din1_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U17/din1_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U17/din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U17/din1_buf1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U16/din1_buf1_reg[26] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U16/din1_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U16/din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U16/din1_buf1_reg[30] )
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_fmul_3cud_U10/din1_buf1_reg[28]' (FD) to 'inst/i_0/VQFTAXIBUS_fmul_3cud_U10/din1_buf1_reg[29]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U10/din1_buf1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U11/din1_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U11/din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U11/din1_buf1_reg[30] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U12/din1_buf1_reg[28] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U12/din1_buf1_reg[29] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_0/\VQFTAXIBUS_fmul_3cud_U12/din1_buf1_reg[30] )
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'inst/i_0/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[4]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[5]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[5]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[6]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[6]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[8]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[8]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[9]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[10]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[10]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[11]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[11]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[12]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[12]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[13]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[13]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[14]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[14]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[15]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[15]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[16]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[16]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[17]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[17]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[18]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[18]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[19]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[19]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[20]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[20]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[21]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[21]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[22]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[22]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[23]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[23]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[24]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[24]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[25]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[25]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[26]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[26]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[27]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[27]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[28]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[28]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[29]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[29]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[30]'
+INFO: [Synth 8-3886] merging instance 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[30]' (FDE) to 'inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/rdata_reg[31]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (inst/i_0/VQFTAXIBUS_CRTL_BUS_s_axi_U/\rdata_reg[31] )
+WARNING: [Synth 8-3332] Sequential element (rdata_reg[31]) is unused and will be removed from module VQFTAXIBUS_CRTL_BUS_s_axi.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__1.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__2.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__4.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__5.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__6.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__7.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__8.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1__9.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__parameterized1.
+INFO: [Synth 8-3886] merging instance 'inst/i_1/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'inst/i_1/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/i_1/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'inst/i_1/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/i_1/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'inst/i_1/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/i_1/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'inst/i_1/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/i_1/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'inst/i_1/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/i_1/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'inst/i_1/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/i_1/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'inst/i_1/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/i_1/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'inst/i_1/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'inst/i_1/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'inst/i_1/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/SPEED_OP.DSP.OP/DSP48E1_BODY.EXP/NOT_LOW_LATENCY_NORM_DIST.NORM_EXP_DELAY/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__2.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__2.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__3.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__4.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__4.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__5.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__5.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__6.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__6.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__7.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__7.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__8.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__8.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv__9.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv__9.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[2].pipe_reg[2][0]) is unused and will be removed from module floating_point_v7_1_3_viv.
+INFO: [Synth 8-3332] Sequential element (i_nd_to_rdy/opt_has_pipe.i_pipe[3].pipe_reg[3][0]) is unused and will be removed from module floating_point_v7_1_3_viv.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:01 ; elapsed = 00:02:13 . Memory (MB): peak = 952.938 ; gain = 744.004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |VQFTAXIBUS__GB0 |           1|     47184|
+|2     |VQFTAXIBUS__GB1 |           1|     27061|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:22 ; elapsed = 00:02:35 . Memory (MB): peak = 952.938 ; gain = 744.004
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:30 ; elapsed = 00:02:43 . Memory (MB): peak = 952.938 ; gain = 744.004
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+----------------+------------+----------+
+|      |RTL Partition   |Replication |Instances |
++------+----------------+------------+----------+
+|1     |VQFTAXIBUS__GB0 |           1|     47184|
+|2     |VQFTAXIBUS__GB1 |           1|     27061|
++------+----------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:50 ; elapsed = 00:03:04 . Memory (MB): peak = 1341.008 ; gain = 1132.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:52 ; elapsed = 00:03:06 . Memory (MB): peak = 1341.008 ; gain = 1132.074
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:52 ; elapsed = 00:03:06 . Memory (MB): peak = 1341.008 ; gain = 1132.074
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:57 ; elapsed = 00:03:10 . Memory (MB): peak = 1341.008 ; gain = 1132.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:57 ; elapsed = 00:03:10 . Memory (MB): peak = 1341.008 ; gain = 1132.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:58 ; elapsed = 00:03:11 . Memory (MB): peak = 1341.008 ; gain = 1132.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:58 ; elapsed = 00:03:12 . Memory (MB): peak = 1341.008 ; gain = 1132.074
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------+------+
+|      |Cell      |Count |
++------+----------+------+
+|1     |CARRY4    |    30|
+|2     |DSP48E1   |    10|
+|3     |DSP48E1_1 |    10|
+|4     |DSP48E1_2 |    10|
+|5     |DSP48E1_3 |    10|
+|6     |DSP48E1_4 |    10|
+|7     |LUT1      |    64|
+|8     |LUT2      |   615|
+|9     |LUT3      |  1192|
+|10    |LUT4      |  1231|
+|11    |LUT5      |  1946|
+|12    |LUT6      |  6798|
+|13    |MUXCY     |   700|
+|14    |XORCY     |   250|
+|15    |FDE       |    30|
+|16    |FDRE      |  5764|
+|17    |FDSE      |    23|
++------+----------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:58 ; elapsed = 00:03:12 . Memory (MB): peak = 1341.008 ; gain = 1132.074
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 33 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:02:12 ; elapsed = 00:02:43 . Memory (MB): peak = 1341.008 ; gain = 739.637
+Synthesis Optimization Complete : Time (s): cpu = 00:02:58 ; elapsed = 00:03:12 . Memory (MB): peak = 1341.008 ; gain = 1132.074
+INFO: [Project 1-571] Translating synthesized netlist
+INFO: [Netlist 29-17] Analyzing 1060 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+Parsing XDC File [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ip/design_1_VQFTAXIBUS_0_0/constraints/VQFTAXIBUS_ooc.xdc] for cell 'inst'
+INFO: [Vivado 12-4761] HD.CLK_SRC property is set on port ap_clk. The net connecting to the port drives either clock PIN or hierarchical black box. Use the create_clock constraint to create a clock on this port prior to setting HD.CLK_SRC.  [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ip/design_1_VQFTAXIBUS_0_0/constraints/VQFTAXIBUS_ooc.xdc:6]
+Finished Parsing XDC File [c:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/design_1/ip/design_1_VQFTAXIBUS_0_0/constraints/VQFTAXIBUS_ooc.xdc] for cell 'inst'
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 220 instances were transformed.
+  (MUXCY,XORCY) => CARRY4: 190 instances
+  FDE => FDRE: 30 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+265 Infos, 101 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:03 ; elapsed = 00:03:15 . Memory (MB): peak = 1341.441 ; gain = 1079.078
+INFO: [Common 17-1381] The checkpoint 'C:/Users/caos1/Desktop/Tesis/Vivado/VQFTAXIBUS/VQFTAXIBUS.runs/design_1_VQFTAXIBUS_0_0_synth_1/design_1_VQFTAXIBUS_0_0.dcp' has been generated.
