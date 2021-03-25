@@ -1,0 +1,300 @@
+
+
+================================================================
+== Vivado HLS Report for 'VQFTAXIBUS'
+================================================================
+* Date:           Sat Jul 28 16:52:30 2018
+
+* Version:        2016.4 (Build 1756540 on Mon Jan 23 19:31:01 MST 2017)
+* Project:        VQFTAXIBUS
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing (ns): 
+    * Summary: 
+    +--------+-------+----------+------------+
+    |  Clock | Target| Estimated| Uncertainty|
+    +--------+-------+----------+------------+
+    |ap_clk  |  10.00|     10.70|        1.25|
+    +--------+-------+----------+------------+
+
++ Latency (clock cycles): 
+    * Summary: 
+    +-----+-----+-----+-----+---------+
+    |  Latency  |  Interval | Pipeline|
+    | min | max | min | max |   Type  |
+    +-----+-----+-----+-----+---------+
+    |  196|  196|  197|  197|   none  |
+    +-----+-----+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+-------+
+|       Name      | BRAM_18K| DSP48E|   FF   |  LUT  |
++-----------------+---------+-------+--------+-------+
+|DSP              |        -|      -|       -|      -|
+|Expression       |        -|      -|       -|      -|
+|FIFO             |        -|      -|       -|      -|
+|Instance         |        0|     50|    3516|   7150|
+|Memory           |        -|      -|       -|      -|
+|Multiplexer      |        -|      -|       -|   7128|
+|Register         |        -|      -|    2629|      -|
++-----------------+---------+-------+--------+-------+
+|Total            |        0|     50|    6145|  14278|
++-----------------+---------+-------+--------+-------+
+|Available        |      280|    220|  106400|  53200|
++-----------------+---------+-------+--------+-------+
+|Utilization (%)  |        0|     22|       5|     26|
++-----------------+---------+-------+--------+-------+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------+---------------------------+---------+-------+-----+-----+
+    |           Instance          |           Module          | BRAM_18K| DSP48E|  FF | LUT |
+    +-----------------------------+---------------------------+---------+-------+-----+-----+
+    |VQFTAXIBUS_CRTL_BUS_s_axi_U  |VQFTAXIBUS_CRTL_BUS_s_axi  |        0|      0|   36|   40|
+    |VQFTAXIBUS_faddfsbkb_U0      |VQFTAXIBUS_faddfsbkb       |        0|      2|  205|  390|
+    |VQFTAXIBUS_faddfsbkb_U1      |VQFTAXIBUS_faddfsbkb       |        0|      2|  205|  390|
+    |VQFTAXIBUS_faddfsbkb_U2      |VQFTAXIBUS_faddfsbkb       |        0|      2|  205|  390|
+    |VQFTAXIBUS_faddfsbkb_U3      |VQFTAXIBUS_faddfsbkb       |        0|      2|  205|  390|
+    |VQFTAXIBUS_faddfsbkb_U4      |VQFTAXIBUS_faddfsbkb       |        0|      2|  205|  390|
+    |VQFTAXIBUS_faddfsbkb_U5      |VQFTAXIBUS_faddfsbkb       |        0|      2|  205|  390|
+    |VQFTAXIBUS_faddfsbkb_U6      |VQFTAXIBUS_faddfsbkb       |        0|      2|  205|  390|
+    |VQFTAXIBUS_faddfsbkb_U7      |VQFTAXIBUS_faddfsbkb       |        0|      2|  205|  390|
+    |VQFTAXIBUS_faddfsbkb_U8      |VQFTAXIBUS_faddfsbkb       |        0|      2|  205|  390|
+    |VQFTAXIBUS_faddfsbkb_U9      |VQFTAXIBUS_faddfsbkb       |        0|      2|  205|  390|
+    |VQFTAXIBUS_fmul_3cud_U10     |VQFTAXIBUS_fmul_3cud       |        0|      3|  143|  321|
+    |VQFTAXIBUS_fmul_3cud_U11     |VQFTAXIBUS_fmul_3cud       |        0|      3|  143|  321|
+    |VQFTAXIBUS_fmul_3cud_U12     |VQFTAXIBUS_fmul_3cud       |        0|      3|  143|  321|
+    |VQFTAXIBUS_fmul_3cud_U13     |VQFTAXIBUS_fmul_3cud       |        0|      3|  143|  321|
+    |VQFTAXIBUS_fmul_3cud_U14     |VQFTAXIBUS_fmul_3cud       |        0|      3|  143|  321|
+    |VQFTAXIBUS_fmul_3cud_U15     |VQFTAXIBUS_fmul_3cud       |        0|      3|  143|  321|
+    |VQFTAXIBUS_fmul_3cud_U16     |VQFTAXIBUS_fmul_3cud       |        0|      3|  143|  321|
+    |VQFTAXIBUS_fmul_3cud_U17     |VQFTAXIBUS_fmul_3cud       |        0|      3|  143|  321|
+    |VQFTAXIBUS_fmul_3cud_U18     |VQFTAXIBUS_fmul_3cud       |        0|      3|  143|  321|
+    |VQFTAXIBUS_fmul_3cud_U19     |VQFTAXIBUS_fmul_3cud       |        0|      3|  143|  321|
+    +-----------------------------+---------------------------+---------+-------+-----+-----+
+    |Total                        |                           |        0|     50| 3516| 7150|
+    +-----------------------------+---------------------------+---------+-------+-----+-----+
+
+    * DSP48: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +--------------------+-----+-----------+-----+-----------+
+    |        Name        | LUT | Input Size| Bits| Total Bits|
+    +--------------------+-----+-----------+-----+-----------+
+    |E_Addr_A_orig       |  672|         65|   32|       2080|
+    |S_Addr_A_orig       |  320|         33|   32|       1056|
+    |S_Din_A             |  224|         24|   32|        768|
+    |S_WEN_A             |    4|          2|    4|          8|
+    |ap_NS_fsm           |  512|        198|    1|        198|
+    |grp_fu_1022_opcode  |    2|          3|    2|          6|
+    |grp_fu_1022_p0      |   64|          9|   32|        288|
+    |grp_fu_1022_p1      |   64|          8|   32|        256|
+    |grp_fu_1027_opcode  |    2|          3|    2|          6|
+    |grp_fu_1027_p0      |   64|          9|   32|        288|
+    |grp_fu_1027_p1      |   64|          9|   32|        288|
+    |grp_fu_1031_opcode  |    2|          3|    2|          6|
+    |grp_fu_1031_p0      |   64|          9|   32|        288|
+    |grp_fu_1031_p1      |   96|         13|   32|        416|
+    |grp_fu_1035_opcode  |    2|          3|    2|          6|
+    |grp_fu_1035_p0      |   64|          9|   32|        288|
+    |grp_fu_1035_p1      |   64|          9|   32|        288|
+    |grp_fu_1039_opcode  |    2|          3|    2|          6|
+    |grp_fu_1039_p0      |   64|          9|   32|        288|
+    |grp_fu_1039_p1      |   96|         15|   32|        480|
+    |grp_fu_1043_opcode  |    2|          3|    2|          6|
+    |grp_fu_1043_p0      |   64|          9|   32|        288|
+    |grp_fu_1043_p1      |   96|         13|   32|        416|
+    |grp_fu_1047_opcode  |    2|          3|    2|          6|
+    |grp_fu_1047_p0      |   32|          5|   32|        160|
+    |grp_fu_1047_p1      |   32|          7|   32|        224|
+    |grp_fu_1051_opcode  |    2|          3|    2|          6|
+    |grp_fu_1051_p0      |   32|          5|   32|        160|
+    |grp_fu_1051_p1      |   32|          7|   32|        224|
+    |grp_fu_1055_opcode  |    2|          3|    2|          6|
+    |grp_fu_1055_p0      |   32|          5|   32|        160|
+    |grp_fu_1055_p1      |   64|         11|   32|        352|
+    |grp_fu_1059_opcode  |    2|          3|    2|          6|
+    |grp_fu_1059_p0      |   32|          5|   32|        160|
+    |grp_fu_1059_p1      |   32|          7|   32|        224|
+    |grp_fu_1063_p0      |   32|          6|   32|        192|
+    |grp_fu_1063_p1      |  320|         33|   32|       1056|
+    |grp_fu_1070_p0      |   32|          6|   32|        192|
+    |grp_fu_1070_p1      |  544|         57|   32|       1824|
+    |grp_fu_1076_p0      |   32|          6|   32|        192|
+    |grp_fu_1076_p1      |  512|         52|   32|       1664|
+    |grp_fu_1082_p0      |   32|          6|   32|        192|
+    |grp_fu_1082_p1      |  544|         58|   32|       1856|
+    |grp_fu_1088_p0      |   32|          6|   32|        192|
+    |grp_fu_1088_p1      |  512|         52|   32|       1664|
+    |grp_fu_1094_p0      |   32|          6|   32|        192|
+    |grp_fu_1094_p1      |  480|         51|   32|       1632|
+    |grp_fu_1100_p0      |   32|          4|   32|        128|
+    |grp_fu_1100_p1      |  256|         30|   32|        960|
+    |grp_fu_1106_p0      |   32|          4|   32|        128|
+    |grp_fu_1106_p1      |  256|         30|   32|        960|
+    |grp_fu_1112_p0      |   32|          4|   32|        128|
+    |grp_fu_1112_p1      |  256|         28|   32|        896|
+    |grp_fu_1118_p0      |   32|          4|   32|        128|
+    |grp_fu_1118_p1      |  224|         25|   32|        800|
+    +--------------------+-----+-----------+-----+-----------+
+    |Total               | 7128|        993| 1401|      24682|
+    +--------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +----------------------+-----+----+-----+-----------+
+    |         Name         |  FF | LUT| Bits| Const Bits|
+    +----------------------+-----+----+-----+-----------+
+    |ap_CS_fsm             |  197|   0|  197|          0|
+    |reg_1519              |   32|   0|   32|          0|
+    |reg_1529              |   32|   0|   32|          0|
+    |reg_1539              |   32|   0|   32|          0|
+    |reg_1549              |   32|   0|   32|          0|
+    |reg_1559              |   32|   0|   32|          0|
+    |reg_1574              |   32|   0|   32|          0|
+    |reg_1589              |   32|   0|   32|          0|
+    |reg_1603              |   32|   0|   32|          0|
+    |reg_1617              |   32|   0|   32|          0|
+    |reg_1624              |   32|   0|   32|          0|
+    |reg_1631              |   32|   0|   32|          0|
+    |reg_1637              |   32|   0|   32|          0|
+    |reg_1643              |   32|   0|   32|          0|
+    |reg_1650              |   32|   0|   32|          0|
+    |reg_1657              |   32|   0|   32|          0|
+    |reg_1664              |   32|   0|   32|          0|
+    |reg_1671              |   32|   0|   32|          0|
+    |reg_1678              |   32|   0|   32|          0|
+    |reg_1684              |   32|   0|   32|          0|
+    |reg_1689              |   32|   0|   32|          0|
+    |reg_1695              |   32|   0|   32|          0|
+    |reg_1701              |   32|   0|   32|          0|
+    |reg_1708              |   32|   0|   32|          0|
+    |reg_1715              |   32|   0|   32|          0|
+    |reg_1722              |   32|   0|   32|          0|
+    |reg_1729              |   32|   0|   32|          0|
+    |reg_1736              |   32|   0|   32|          0|
+    |reg_1742              |   32|   0|   32|          0|
+    |reg_1747              |   32|   0|   32|          0|
+    |reg_1757              |   32|   0|   32|          0|
+    |reg_1767              |   32|   0|   32|          0|
+    |reg_1772              |   32|   0|   32|          0|
+    |reg_1778              |   32|   0|   32|          0|
+    |reg_1784              |   32|   0|   32|          0|
+    |reg_1790              |   32|   0|   32|          0|
+    |reg_1796              |   32|   0|   32|          0|
+    |reg_1802              |   32|   0|   32|          0|
+    |reg_1808              |   32|   0|   32|          0|
+    |reg_1814              |   32|   0|   32|          0|
+    |reg_1820              |   32|   0|   32|          0|
+    |reg_1826              |   32|   0|   32|          0|
+    |reg_1831              |   32|   0|   32|          0|
+    |reg_1837              |   32|   0|   32|          0|
+    |reg_1843              |   32|   0|   32|          0|
+    |reg_1849              |   32|   0|   32|          0|
+    |reg_1855              |   32|   0|   32|          0|
+    |reg_1861              |   32|   0|   32|          0|
+    |reg_1867              |   32|   0|   32|          0|
+    |reg_1873              |   32|   0|   32|          0|
+    |reg_1879              |   32|   0|   32|          0|
+    |reg_1885              |   32|   0|   32|          0|
+    |reg_1891              |   32|   0|   32|          0|
+    |reg_1898              |   32|   0|   32|          0|
+    |reg_1904              |   32|   0|   32|          0|
+    |reg_1910              |   32|   0|   32|          0|
+    |reg_1915              |   32|   0|   32|          0|
+    |reg_1921              |   32|   0|   32|          0|
+    |reg_1928              |   32|   0|   32|          0|
+    |reg_1934              |   32|   0|   32|          0|
+    |reg_1940              |   32|   0|   32|          0|
+    |reg_1945              |   32|   0|   32|          0|
+    |reg_1950              |   32|   0|   32|          0|
+    |reg_1955              |   32|   0|   32|          0|
+    |reg_1960              |   32|   0|   32|          0|
+    |reg_1966              |   32|   0|   32|          0|
+    |reg_1972              |   32|   0|   32|          0|
+    |reg_1977              |   32|   0|   32|          0|
+    |reg_1982              |   32|   0|   32|          0|
+    |reg_1987              |   32|   0|   32|          0|
+    |reg_1992              |   32|   0|   32|          0|
+    |reg_1998              |   32|   0|   32|          0|
+    |reg_2004              |   32|   0|   32|          0|
+    |tmp_100_5_2_reg_2050  |   32|   0|   32|          0|
+    |tmp_100_8_4_reg_2080  |   32|   0|   32|          0|
+    |tmp_96_5_2_reg_2040   |   32|   0|   32|          0|
+    |tmp_96_8_4_reg_2070   |   32|   0|   32|          0|
+    +----------------------+-----+----+-----+-----------+
+    |Total                 | 2629|   0| 2629|          0|
+    +----------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+--------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------------------+-----+-----+------------+--------------+--------------+
+|s_axi_CRTL_BUS_AWVALID  |  in |    1|    s_axi   |   CRTL_BUS   |  return void |
+|s_axi_CRTL_BUS_AWREADY  | out |    1|    s_axi   |   CRTL_BUS   |  return void |
+|s_axi_CRTL_BUS_AWADDR   |  in |    4|    s_axi   |   CRTL_BUS   |  return void |
+|s_axi_CRTL_BUS_WVALID   |  in |    1|    s_axi   |   CRTL_BUS   |  return void |
+|s_axi_CRTL_BUS_WREADY   | out |    1|    s_axi   |   CRTL_BUS   |  return void |
+|s_axi_CRTL_BUS_WDATA    |  in |   32|    s_axi   |   CRTL_BUS   |  return void |
+|s_axi_CRTL_BUS_WSTRB    |  in |    4|    s_axi   |   CRTL_BUS   |  return void |
+|s_axi_CRTL_BUS_ARVALID  |  in |    1|    s_axi   |   CRTL_BUS   |  return void |
+|s_axi_CRTL_BUS_ARREADY  | out |    1|    s_axi   |   CRTL_BUS   |  return void |
+|s_axi_CRTL_BUS_ARADDR   |  in |    4|    s_axi   |   CRTL_BUS   |  return void |
+|s_axi_CRTL_BUS_RVALID   | out |    1|    s_axi   |   CRTL_BUS   |  return void |
+|s_axi_CRTL_BUS_RREADY   |  in |    1|    s_axi   |   CRTL_BUS   |  return void |
+|s_axi_CRTL_BUS_RDATA    | out |   32|    s_axi   |   CRTL_BUS   |  return void |
+|s_axi_CRTL_BUS_RRESP    | out |    2|    s_axi   |   CRTL_BUS   |  return void |
+|s_axi_CRTL_BUS_BVALID   | out |    1|    s_axi   |   CRTL_BUS   |  return void |
+|s_axi_CRTL_BUS_BREADY   |  in |    1|    s_axi   |   CRTL_BUS   |  return void |
+|s_axi_CRTL_BUS_BRESP    | out |    2|    s_axi   |   CRTL_BUS   |  return void |
+|ap_clk                  |  in |    1| ap_ctrl_hs |  VQFTAXIBUS  | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs |  VQFTAXIBUS  | return value |
+|interrupt               | out |    1| ap_ctrl_hs |  VQFTAXIBUS  | return value |
+|E_Addr_A                | out |   32|    bram    |       E      |     array    |
+|E_EN_A                  | out |    1|    bram    |       E      |     array    |
+|E_WEN_A                 | out |    4|    bram    |       E      |     array    |
+|E_Din_A                 | out |   32|    bram    |       E      |     array    |
+|E_Dout_A                |  in |   32|    bram    |       E      |     array    |
+|E_Clk_A                 | out |    1|    bram    |       E      |     array    |
+|E_Rst_A                 | out |    1|    bram    |       E      |     array    |
+|S_Addr_A                | out |   32|    bram    |       S      |     array    |
+|S_EN_A                  | out |    1|    bram    |       S      |     array    |
+|S_WEN_A                 | out |    4|    bram    |       S      |     array    |
+|S_Din_A                 | out |   32|    bram    |       S      |     array    |
+|S_Dout_A                |  in |   32|    bram    |       S      |     array    |
+|S_Clk_A                 | out |    1|    bram    |       S      |     array    |
+|S_Rst_A                 | out |    1|    bram    |       S      |     array    |
++------------------------+-----+-----+------------+--------------+--------------+
+

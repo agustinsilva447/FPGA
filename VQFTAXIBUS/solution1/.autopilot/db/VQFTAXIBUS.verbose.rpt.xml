@@ -1,0 +1,287 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'VQFTAXIBUS'" level="0">
+<item name = "Date">Sat Jul 28 16:52:30 2018
+</item>
+<item name = "Version">2016.4 (Build 1756540 on Mon Jan 23 19:31:01 MST 2017)</item>
+<item name = "Project">VQFTAXIBUS</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing (ns)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00, 10.70, 1.25</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency (clock cycles)">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">, min, max, min, max, Type</keys>
+<column name="">196, 196, 197, 197, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="7">Instance, Module, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="5">Name, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="DSP">-, -, -, -</column>
+<column name="Expression">-, -, -, -</column>
+<column name="FIFO">-, -, -, -</column>
+<column name="Instance">0, 50, 3516, 7150</column>
+<column name="Memory">-, -, -, -</column>
+<column name="Multiplexer">-, -, -, 7128</column>
+<column name="Register">-, -, 2629, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200</specialColumn>
+<specialColumn name="Utilization (%)">0, 22, 5, 26</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="6">Instance, Module, BRAM_18K, DSP48E, FF, LUT</keys>
+<column name="VQFTAXIBUS_CRTL_BUS_s_axi_U">VQFTAXIBUS_CRTL_BUS_s_axi, 0, 0, 36, 40</column>
+<column name="VQFTAXIBUS_faddfsbkb_U0">VQFTAXIBUS_faddfsbkb, 0, 2, 205, 390</column>
+<column name="VQFTAXIBUS_faddfsbkb_U1">VQFTAXIBUS_faddfsbkb, 0, 2, 205, 390</column>
+<column name="VQFTAXIBUS_faddfsbkb_U2">VQFTAXIBUS_faddfsbkb, 0, 2, 205, 390</column>
+<column name="VQFTAXIBUS_faddfsbkb_U3">VQFTAXIBUS_faddfsbkb, 0, 2, 205, 390</column>
+<column name="VQFTAXIBUS_faddfsbkb_U4">VQFTAXIBUS_faddfsbkb, 0, 2, 205, 390</column>
+<column name="VQFTAXIBUS_faddfsbkb_U5">VQFTAXIBUS_faddfsbkb, 0, 2, 205, 390</column>
+<column name="VQFTAXIBUS_faddfsbkb_U6">VQFTAXIBUS_faddfsbkb, 0, 2, 205, 390</column>
+<column name="VQFTAXIBUS_faddfsbkb_U7">VQFTAXIBUS_faddfsbkb, 0, 2, 205, 390</column>
+<column name="VQFTAXIBUS_faddfsbkb_U8">VQFTAXIBUS_faddfsbkb, 0, 2, 205, 390</column>
+<column name="VQFTAXIBUS_faddfsbkb_U9">VQFTAXIBUS_faddfsbkb, 0, 2, 205, 390</column>
+<column name="VQFTAXIBUS_fmul_3cud_U10">VQFTAXIBUS_fmul_3cud, 0, 3, 143, 321</column>
+<column name="VQFTAXIBUS_fmul_3cud_U11">VQFTAXIBUS_fmul_3cud, 0, 3, 143, 321</column>
+<column name="VQFTAXIBUS_fmul_3cud_U12">VQFTAXIBUS_fmul_3cud, 0, 3, 143, 321</column>
+<column name="VQFTAXIBUS_fmul_3cud_U13">VQFTAXIBUS_fmul_3cud, 0, 3, 143, 321</column>
+<column name="VQFTAXIBUS_fmul_3cud_U14">VQFTAXIBUS_fmul_3cud, 0, 3, 143, 321</column>
+<column name="VQFTAXIBUS_fmul_3cud_U15">VQFTAXIBUS_fmul_3cud, 0, 3, 143, 321</column>
+<column name="VQFTAXIBUS_fmul_3cud_U16">VQFTAXIBUS_fmul_3cud, 0, 3, 143, 321</column>
+<column name="VQFTAXIBUS_fmul_3cud_U17">VQFTAXIBUS_fmul_3cud, 0, 3, 143, 321</column>
+<column name="VQFTAXIBUS_fmul_3cud_U18">VQFTAXIBUS_fmul_3cud, 0, 3, 143, 321</column>
+<column name="VQFTAXIBUS_fmul_3cud_U19">VQFTAXIBUS_fmul_3cud, 0, 3, 143, 321</column>
+</table>
+</item>
+<item name = "DSP48"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="9">Memory, Module, BRAM_18K, FF, LUT, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="7">Name, BRAM_18K, FF, LUT, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="E_Addr_A_orig">672, 65, 32, 2080</column>
+<column name="S_Addr_A_orig">320, 33, 32, 1056</column>
+<column name="S_Din_A">224, 24, 32, 768</column>
+<column name="S_WEN_A">4, 2, 4, 8</column>
+<column name="ap_NS_fsm">512, 198, 1, 198</column>
+<column name="grp_fu_1022_opcode">2, 3, 2, 6</column>
+<column name="grp_fu_1022_p0">64, 9, 32, 288</column>
+<column name="grp_fu_1022_p1">64, 8, 32, 256</column>
+<column name="grp_fu_1027_opcode">2, 3, 2, 6</column>
+<column name="grp_fu_1027_p0">64, 9, 32, 288</column>
+<column name="grp_fu_1027_p1">64, 9, 32, 288</column>
+<column name="grp_fu_1031_opcode">2, 3, 2, 6</column>
+<column name="grp_fu_1031_p0">64, 9, 32, 288</column>
+<column name="grp_fu_1031_p1">96, 13, 32, 416</column>
+<column name="grp_fu_1035_opcode">2, 3, 2, 6</column>
+<column name="grp_fu_1035_p0">64, 9, 32, 288</column>
+<column name="grp_fu_1035_p1">64, 9, 32, 288</column>
+<column name="grp_fu_1039_opcode">2, 3, 2, 6</column>
+<column name="grp_fu_1039_p0">64, 9, 32, 288</column>
+<column name="grp_fu_1039_p1">96, 15, 32, 480</column>
+<column name="grp_fu_1043_opcode">2, 3, 2, 6</column>
+<column name="grp_fu_1043_p0">64, 9, 32, 288</column>
+<column name="grp_fu_1043_p1">96, 13, 32, 416</column>
+<column name="grp_fu_1047_opcode">2, 3, 2, 6</column>
+<column name="grp_fu_1047_p0">32, 5, 32, 160</column>
+<column name="grp_fu_1047_p1">32, 7, 32, 224</column>
+<column name="grp_fu_1051_opcode">2, 3, 2, 6</column>
+<column name="grp_fu_1051_p0">32, 5, 32, 160</column>
+<column name="grp_fu_1051_p1">32, 7, 32, 224</column>
+<column name="grp_fu_1055_opcode">2, 3, 2, 6</column>
+<column name="grp_fu_1055_p0">32, 5, 32, 160</column>
+<column name="grp_fu_1055_p1">64, 11, 32, 352</column>
+<column name="grp_fu_1059_opcode">2, 3, 2, 6</column>
+<column name="grp_fu_1059_p0">32, 5, 32, 160</column>
+<column name="grp_fu_1059_p1">32, 7, 32, 224</column>
+<column name="grp_fu_1063_p0">32, 6, 32, 192</column>
+<column name="grp_fu_1063_p1">320, 33, 32, 1056</column>
+<column name="grp_fu_1070_p0">32, 6, 32, 192</column>
+<column name="grp_fu_1070_p1">544, 57, 32, 1824</column>
+<column name="grp_fu_1076_p0">32, 6, 32, 192</column>
+<column name="grp_fu_1076_p1">512, 52, 32, 1664</column>
+<column name="grp_fu_1082_p0">32, 6, 32, 192</column>
+<column name="grp_fu_1082_p1">544, 58, 32, 1856</column>
+<column name="grp_fu_1088_p0">32, 6, 32, 192</column>
+<column name="grp_fu_1088_p1">512, 52, 32, 1664</column>
+<column name="grp_fu_1094_p0">32, 6, 32, 192</column>
+<column name="grp_fu_1094_p1">480, 51, 32, 1632</column>
+<column name="grp_fu_1100_p0">32, 4, 32, 128</column>
+<column name="grp_fu_1100_p1">256, 30, 32, 960</column>
+<column name="grp_fu_1106_p0">32, 4, 32, 128</column>
+<column name="grp_fu_1106_p1">256, 30, 32, 960</column>
+<column name="grp_fu_1112_p0">32, 4, 32, 128</column>
+<column name="grp_fu_1112_p1">256, 28, 32, 896</column>
+<column name="grp_fu_1118_p0">32, 4, 32, 128</column>
+<column name="grp_fu_1118_p1">224, 25, 32, 800</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">197, 0, 197, 0</column>
+<column name="reg_1519">32, 0, 32, 0</column>
+<column name="reg_1529">32, 0, 32, 0</column>
+<column name="reg_1539">32, 0, 32, 0</column>
+<column name="reg_1549">32, 0, 32, 0</column>
+<column name="reg_1559">32, 0, 32, 0</column>
+<column name="reg_1574">32, 0, 32, 0</column>
+<column name="reg_1589">32, 0, 32, 0</column>
+<column name="reg_1603">32, 0, 32, 0</column>
+<column name="reg_1617">32, 0, 32, 0</column>
+<column name="reg_1624">32, 0, 32, 0</column>
+<column name="reg_1631">32, 0, 32, 0</column>
+<column name="reg_1637">32, 0, 32, 0</column>
+<column name="reg_1643">32, 0, 32, 0</column>
+<column name="reg_1650">32, 0, 32, 0</column>
+<column name="reg_1657">32, 0, 32, 0</column>
+<column name="reg_1664">32, 0, 32, 0</column>
+<column name="reg_1671">32, 0, 32, 0</column>
+<column name="reg_1678">32, 0, 32, 0</column>
+<column name="reg_1684">32, 0, 32, 0</column>
+<column name="reg_1689">32, 0, 32, 0</column>
+<column name="reg_1695">32, 0, 32, 0</column>
+<column name="reg_1701">32, 0, 32, 0</column>
+<column name="reg_1708">32, 0, 32, 0</column>
+<column name="reg_1715">32, 0, 32, 0</column>
+<column name="reg_1722">32, 0, 32, 0</column>
+<column name="reg_1729">32, 0, 32, 0</column>
+<column name="reg_1736">32, 0, 32, 0</column>
+<column name="reg_1742">32, 0, 32, 0</column>
+<column name="reg_1747">32, 0, 32, 0</column>
+<column name="reg_1757">32, 0, 32, 0</column>
+<column name="reg_1767">32, 0, 32, 0</column>
+<column name="reg_1772">32, 0, 32, 0</column>
+<column name="reg_1778">32, 0, 32, 0</column>
+<column name="reg_1784">32, 0, 32, 0</column>
+<column name="reg_1790">32, 0, 32, 0</column>
+<column name="reg_1796">32, 0, 32, 0</column>
+<column name="reg_1802">32, 0, 32, 0</column>
+<column name="reg_1808">32, 0, 32, 0</column>
+<column name="reg_1814">32, 0, 32, 0</column>
+<column name="reg_1820">32, 0, 32, 0</column>
+<column name="reg_1826">32, 0, 32, 0</column>
+<column name="reg_1831">32, 0, 32, 0</column>
+<column name="reg_1837">32, 0, 32, 0</column>
+<column name="reg_1843">32, 0, 32, 0</column>
+<column name="reg_1849">32, 0, 32, 0</column>
+<column name="reg_1855">32, 0, 32, 0</column>
+<column name="reg_1861">32, 0, 32, 0</column>
+<column name="reg_1867">32, 0, 32, 0</column>
+<column name="reg_1873">32, 0, 32, 0</column>
+<column name="reg_1879">32, 0, 32, 0</column>
+<column name="reg_1885">32, 0, 32, 0</column>
+<column name="reg_1891">32, 0, 32, 0</column>
+<column name="reg_1898">32, 0, 32, 0</column>
+<column name="reg_1904">32, 0, 32, 0</column>
+<column name="reg_1910">32, 0, 32, 0</column>
+<column name="reg_1915">32, 0, 32, 0</column>
+<column name="reg_1921">32, 0, 32, 0</column>
+<column name="reg_1928">32, 0, 32, 0</column>
+<column name="reg_1934">32, 0, 32, 0</column>
+<column name="reg_1940">32, 0, 32, 0</column>
+<column name="reg_1945">32, 0, 32, 0</column>
+<column name="reg_1950">32, 0, 32, 0</column>
+<column name="reg_1955">32, 0, 32, 0</column>
+<column name="reg_1960">32, 0, 32, 0</column>
+<column name="reg_1966">32, 0, 32, 0</column>
+<column name="reg_1972">32, 0, 32, 0</column>
+<column name="reg_1977">32, 0, 32, 0</column>
+<column name="reg_1982">32, 0, 32, 0</column>
+<column name="reg_1987">32, 0, 32, 0</column>
+<column name="reg_1992">32, 0, 32, 0</column>
+<column name="reg_1998">32, 0, 32, 0</column>
+<column name="reg_2004">32, 0, 32, 0</column>
+<column name="tmp_100_5_2_reg_2050">32, 0, 32, 0</column>
+<column name="tmp_100_8_4_reg_2080">32, 0, 32, 0</column>
+<column name="tmp_96_5_2_reg_2040">32, 0, 32, 0</column>
+<column name="tmp_96_8_4_reg_2070">32, 0, 32, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_CRTL_BUS_AWVALID">in, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_AWREADY">out, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_AWADDR">in, 4, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_WVALID">in, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_WREADY">out, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_WDATA">in, 32, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_WSTRB">in, 4, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_ARVALID">in, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_ARREADY">out, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_ARADDR">in, 4, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_RVALID">out, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_RREADY">in, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_RDATA">out, 32, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_RRESP">out, 2, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_BVALID">out, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_BREADY">in, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_BRESP">out, 2, s_axi, CRTL_BUS, return void</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, VQFTAXIBUS, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, VQFTAXIBUS, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, VQFTAXIBUS, return value</column>
+<column name="E_Addr_A">out, 32, bram, E, array</column>
+<column name="E_EN_A">out, 1, bram, E, array</column>
+<column name="E_WEN_A">out, 4, bram, E, array</column>
+<column name="E_Din_A">out, 32, bram, E, array</column>
+<column name="E_Dout_A">in, 32, bram, E, array</column>
+<column name="E_Clk_A">out, 1, bram, E, array</column>
+<column name="E_Rst_A">out, 1, bram, E, array</column>
+<column name="S_Addr_A">out, 32, bram, S, array</column>
+<column name="S_EN_A">out, 1, bram, S, array</column>
+<column name="S_WEN_A">out, 4, bram, S, array</column>
+<column name="S_Din_A">out, 32, bram, S, array</column>
+<column name="S_Dout_A">in, 32, bram, S, array</column>
+<column name="S_Clk_A">out, 1, bram, S, array</column>
+<column name="S_Rst_A">out, 1, bram, S, array</column>
+</table>
+</item>
+</section>
+</profile>

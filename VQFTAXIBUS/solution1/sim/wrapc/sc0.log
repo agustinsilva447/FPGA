@@ -1,0 +1,5 @@
+   Build using "C:/Xilinx/Vivado_HLS/2016.4/msys/bin/g++.exe"
+   Compiling VQFTAXIBUS.cpp_pre.cpp.tb.cpp
+   Compiling VQFTAXIBUS_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_VQFTAXIBUS.cpp
+   Generating cosim.tv.exe

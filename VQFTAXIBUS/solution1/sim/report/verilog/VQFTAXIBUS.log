@@ -1,0 +1,994 @@
+@I [SIM-47] Using XSIM for RTL simulation.
+@I [SIM-14] Instrumenting C test bench ...
+   Build using "C:/Xilinx/Vivado_HLS/2016.4/msys/bin/g++.exe"
+   Compiling VQFTAXIBUS.cpp_pre.cpp.tb.cpp
+   Compiling VQFTAXIBUS_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_VQFTAXIBUS.cpp
+   Generating cosim.tv.exe
+@I [SIM-302] Starting C TB testing ... 
+@I [SIM-333] Generating C post check test bench ...
+@I [SIM-12] Generating RTL test bench ...
+@I [SIM-323] Starting verilog simulation. 
+@I [SIM-15] Starting XSIM ...
+@I [SIM-316] Starting C post checking ...
+
+E = 
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+1.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+
+S = 
+0.250000 + i* 0.000000
+-0.095655 + i* 0.230977
+-0.176802 + i* -0.176752
+0.230950 + i* -0.095720
+0.000071 + i* 0.250000
+-0.231004 + i* -0.095589
+0.176702 + i* -0.176852
+0.095785 + i* 0.230922
+-0.250000 + i* 0.000141
+0.095524 + i* -0.231031
+0.176902 + i* 0.176652
+-0.230895 + i* 0.095851
+-0.000212 + i* -0.250000
+0.231058 + i* 0.095458
+-0.176602 + i* 0.176952
+-0.095916 + i* -0.230868
+
+C:\Users\caos1\Desktop\AgustinSilva\Tesis\Definitivo\VQFTAXIBUS\solution1\sim\verilog>call C:/Xilinx/Vivado/2016.4/bin/xelab xil_defaultlib.apatb_VQFTAXIBUS_top -prj VQFTAXIBUS.prj --initfile "C:/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini" --lib "ieee_proposed=./ieee_proposed" -s VQFTAXIBUS  
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "C:/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2016.4
+Copyright 1986-1999, 2001-2016 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2016.4/bin/unwrapped/win64.o/xelab.exe xil_defaultlib.apatb_VQFTAXIBUS_top -prj VQFTAXIBUS.prj --initfile C:/Xilinx/Vivado/2016.4/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s VQFTAXIBUS 
+Multi-threading is on. Using 6 slave threads.
+Determining compilation order of HDL files.
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/caos1/Desktop/AgustinSilva/Tesis/Definitivo/VQFTAXIBUS/solution1/sim/verilog/AESL_autobram_E.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_E
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/caos1/Desktop/AgustinSilva/Tesis/Definitivo/VQFTAXIBUS/solution1/sim/verilog/AESL_autobram_S.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_autobram_S
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/caos1/Desktop/AgustinSilva/Tesis/Definitivo/VQFTAXIBUS/solution1/sim/verilog/AESL_axi_slave_CRTL_BUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module AESL_axi_slave_CRTL_BUS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/caos1/Desktop/AgustinSilva/Tesis/Definitivo/VQFTAXIBUS/solution1/sim/verilog/VQFTAXIBUS.autotb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module apatb_VQFTAXIBUS_top
+INFO: [VRFC 10-2458] undeclared symbol bramE_Rst_A, assumed default net type wire [C:/Users/caos1/Desktop/AgustinSilva/Tesis/Definitivo/VQFTAXIBUS/solution1/sim/verilog/VQFTAXIBUS.autotb.v:233]
+INFO: [VRFC 10-2458] undeclared symbol bramE_Rst_B, assumed default net type wire [C:/Users/caos1/Desktop/AgustinSilva/Tesis/Definitivo/VQFTAXIBUS/solution1/sim/verilog/VQFTAXIBUS.autotb.v:240]
+INFO: [VRFC 10-2458] undeclared symbol bramS_Rst_A, assumed default net type wire [C:/Users/caos1/Desktop/AgustinSilva/Tesis/Definitivo/VQFTAXIBUS/solution1/sim/verilog/VQFTAXIBUS.autotb.v:276]
+INFO: [VRFC 10-2458] undeclared symbol bramS_Rst_B, assumed default net type wire [C:/Users/caos1/Desktop/AgustinSilva/Tesis/Definitivo/VQFTAXIBUS/solution1/sim/verilog/VQFTAXIBUS.autotb.v:283]
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/caos1/Desktop/AgustinSilva/Tesis/Definitivo/VQFTAXIBUS/solution1/sim/verilog/VQFTAXIBUS.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VQFTAXIBUS
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/caos1/Desktop/AgustinSilva/Tesis/Definitivo/VQFTAXIBUS/solution1/sim/verilog/VQFTAXIBUS_CRTL_BUS_s_axi.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VQFTAXIBUS_CRTL_BUS_s_axi
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/caos1/Desktop/AgustinSilva/Tesis/Definitivo/VQFTAXIBUS/solution1/sim/verilog/VQFTAXIBUS_faddfsbkb.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VQFTAXIBUS_faddfsbkb
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "C:/Users/caos1/Desktop/AgustinSilva/Tesis/Definitivo/VQFTAXIBUS/solution1/sim/verilog/VQFTAXIBUS_fmul_3cud.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module VQFTAXIBUS_fmul_3cud
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caos1/Desktop/AgustinSilva/Tesis/Definitivo/VQFTAXIBUS/solution1/sim/verilog/ip/xil_defaultlib/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity VQFTAXIBUS_ap_faddfsub_3_full_dsp_32
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/caos1/Desktop/AgustinSilva/Tesis/Definitivo/VQFTAXIBUS/solution1/sim/verilog/ip/xil_defaultlib/VQFTAXIBUS_ap_fmul_2_max_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-307] analyzing entity VQFTAXIBUS_ap_fmul_2_max_dsp_32
+Starting static elaboration
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:2255]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/mult_gen_v12_0/hdl/mult_gen_v12_0_vh_rfs.vhd:2240]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:90362]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:13629]
+WARNING: [VRFC 10-982] library name floating_point_v7_1_3 of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32.vhd:193]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:90362]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/xbip_pipe_v3_0/hdl/xbip_pipe_v3_0_vh_rfs.vhd:375]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:12604]
+WARNING: [VRFC 10-1303] range is empty (null range) [/wrk/2016.4/nightly/2017_01_23_1756540/packages/customer/vivado/data/ip/xilinx/floating_point_v7_1/hdl/floating_point_v7_1_vh_rfs.vhd:13629]
+WARNING: [VRFC 10-982] library name floating_point_v7_1_3 of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/VQFTAXIBUS_ap_fmul_2_max_dsp_32.vhd:189]
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling package floating_point_v7_1_3.floating_point_v7_1_3_viv_comp
+Compiling package xbip_utils_v3_0_7.xbip_utils_v3_0_7_pkg
+Compiling package axi_utils_v2_0_3.axi_utils_v2_0_3_pkg
+Compiling package floating_point_v7_1_3.floating_point_v7_1_3_consts
+Compiling package ieee.math_real
+Compiling package floating_point_v7_1_3.floating_point_v7_1_3_exp_table_...
+Compiling package mult_gen_v12_0_12.mult_gen_v12_0_12_pkg
+Compiling package ieee.std_logic_arith
+Compiling package ieee.std_logic_signed
+Compiling package floating_point_v7_1_3.floating_point_v7_1_3_pkg
+Compiling package floating_point_v7_1_3.flt_utils
+Compiling package xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv_comp
+Compiling package unisim.vcomponents
+Compiling package ieee.vital_timing
+Compiling package ieee.vital_primitives
+Compiling package unisim.vpkg
+Compiling module xil_defaultlib.VQFTAXIBUS_CRTL_BUS_s_axi(C_S_AX...
+Compiling architecture muxcy_v of entity unisim.MUXCY [muxcy_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=7,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_3.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_3.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture xorcy_v of entity unisim.XORCY [xorcy_default]
+Compiling architecture struct of entity floating_point_v7_1_3.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=24,length=0,fast_in...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=16,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=4,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=48,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=24,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_3.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,c_wi...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [delay_default]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=13,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=27,length=0)\]
+Compiling architecture synth of entity floating_point_v7_1_3.align_add_dsp48e1_sgl [\align_add_dsp48e1_sgl(c_xdevice...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000001111...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00000000000000000000...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=5,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_3.lead_zero_encode_shift [\lead_zero_encode_shift(ab_fw=24...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=3,length=0)\]
+Compiling architecture lut6_v of entity unisim.LUT6 [\LUT6(init="11111110010101001011...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="00010001010111110000...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11101110101000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=2)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=25,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(adreg=0,alumodereg=0,ca...]
+Compiling architecture rtl of entity floating_point_v7_1_3.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,c_wi...]
+Compiling architecture rtl of entity floating_point_v7_1_3.norm_and_round_dsp48e1_sgl [\norm_and_round_dsp48e1_sgl(c_mu...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="10011001100110011001...]
+Compiling architecture lut5_v of entity unisim.LUT5 [\LUT5(init="11111111000000001111...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=9,length=0)\]
+Compiling architecture struct of entity floating_point_v7_1_3.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=8,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=10)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=4,length=0,fast_inp...]
+Compiling architecture fdre_v of entity unisim.FDRE [fdre_default]
+Compiling architecture fde_v of entity unisim.FDE [fde_default]
+Compiling architecture struct of entity floating_point_v7_1_3.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_3.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(fast_input=true)\]
+Compiling architecture rtl of entity floating_point_v7_1_3.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture struct of entity floating_point_v7_1_3.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_3.compare_gt [\compare_gt(c_xdevicefamily="zyn...]
+Compiling architecture synth of entity floating_point_v7_1_3.compare [\compare(c_xdevicefamily="zynq",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=8)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=9)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=2,length=2,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(length=2,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(length=0,fast_input=true)...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=2,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=12,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_3.flt_add_exp_sp [\flt_add_exp_sp(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=23)\]
+Compiling architecture synth of entity floating_point_v7_1_3.flt_dec_op [\flt_dec_op(c_xdevicefamily="zyn...]
+Compiling architecture rtl of entity floating_point_v7_1_3.flt_add_dsp [\flt_add_dsp(c_xdevicefamily="zy...]
+Compiling architecture rtl of entity floating_point_v7_1_3.flt_add [\flt_add(c_xdevicefamily="zynq",...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=32,length=0)\]
+Compiling architecture xilinx of entity floating_point_v7_1_3.floating_point_v7_1_3_viv [\floating_point_v7_1_3_viv(c_xde...]
+Compiling architecture xilinx of entity floating_point_v7_1_3.floating_point_v7_1_3 [\floating_point_v7_1_3(c_xdevice...]
+Compiling architecture vqftaxibus_ap_faddfsub_3_full_dsp_32_arch of entity xil_defaultlib.VQFTAXIBUS_ap_faddfsub_3_full_dsp_32 [vqftaxibus_ap_faddfsub_3_full_ds...]
+Compiling module xil_defaultlib.VQFTAXIBUS_faddfsbkb(ID=1)
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=17,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_3.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_3.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=24,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_3.fix_mult_dsp48e1_sgl [\fix_mult_dsp48e1_sgl(registers=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.fix_mult [\fix_mult(c_xdevicefamily="zynq"...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=8,length=0,fast_inp...]
+Compiling architecture struct of entity floating_point_v7_1_3.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture struct of entity floating_point_v7_1_3.carry_chain [\carry_chain(c_xdevicefamily="zy...]
+Compiling architecture synth of entity floating_point_v7_1_3.compare_eq_im [\compare_eq_im(c_xdevicefamily="...]
+Compiling architecture rtl of entity floating_point_v7_1_3.special_detect [\special_detect(c_xdevicefamily=...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=2,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_latency=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=4,fast_input=true)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=3,length=0,fast_inp...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=14,length=0)\]
+Compiling architecture rtl of entity floating_point_v7_1_3.flt_mult_exp [\flt_mult_exp(c_xdevicefamily="z...]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=30,length=0)\]
+Compiling architecture synth of entity xbip_pipe_v3_0_3.xbip_pipe_v3_0_3_viv [\xbip_pipe_v3_0_3_viv(c_has_ce=1...]
+Compiling architecture rtl of entity floating_point_v7_1_3.delay [\delay(width=18,length=0)\]
+Compiling architecture dsp48e1_v of entity unisim.DSP48E1 [\DSP48E1(acascreg=0,adreg=0,alum...]
+Compiling architecture rtl of entity floating_point_v7_1_3.dsp48e1_wrapper [\dsp48e1_wrapper(a_width=30,b_wi...]
+Compiling architecture struct of entity floating_point_v7_1_3.flt_round_dsp_opt_full [\flt_round_dsp_opt_full(c_xdevic...]
+Compiling architecture rtl of entity floating_point_v7_1_3.flt_mult_round [\flt_mult_round(c_xdevicefamily=...]
+Compiling architecture synth of entity floating_point_v7_1_3.flt_dec_op_lat [\flt_dec_op_lat(c_xdevicefamily=...]
+Compiling architecture rtl of entity floating_point_v7_1_3.flt_mult [\flt_mult(c_xdevicefamily="zynq"...]
+Compiling architecture xilinx of entity floating_point_v7_1_3.floating_point_v7_1_3_viv [\floating_point_v7_1_3_viv(c_xde...]
+Compiling architecture xilinx of entity floating_point_v7_1_3.floating_point_v7_1_3 [\floating_point_v7_1_3(c_xdevice...]
+Compiling architecture vqftaxibus_ap_fmul_2_max_dsp_32_arch of entity xil_defaultlib.VQFTAXIBUS_ap_fmul_2_max_dsp_32 [vqftaxibus_ap_fmul_2_max_dsp_32_...]
+Compiling module xil_defaultlib.VQFTAXIBUS_fmul_3cud(ID=1)
+Compiling module xil_defaultlib.VQFTAXIBUS_default
+Compiling module xil_defaultlib.AESL_autobram_E
+Compiling module xil_defaultlib.AESL_autobram_S
+Compiling module xil_defaultlib.AESL_axi_slave_CRTL_BUS
+Compiling module xil_defaultlib.apatb_VQFTAXIBUS_top
+Built simulation snapshot VQFTAXIBUS
+
+****** Webtalk v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source C:/Users/caos1/Desktop/AgustinSilva/Tesis/Definitivo/VQFTAXIBUS/solution1/sim/verilog/xsim.dir/VQFTAXIBUS/webtalk/xsim_webtalk.tcl -notrace
+INFO: [Common 17-186] 'C:/Users/caos1/Desktop/AgustinSilva/Tesis/Definitivo/VQFTAXIBUS/solution1/sim/verilog/xsim.dir/VQFTAXIBUS/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat Jul 28 16:58:05 2018. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2016.4/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sat Jul 28 16:58:05 2018...
+
+****** xsim v2016.4 (64-bit)
+  **** SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+  **** IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+    ** Copyright 1986-2016 Xilinx, Inc. All Rights Reserved.
+
+source xsim.dir/VQFTAXIBUS/xsim_script.tcl
+# xsim {VQFTAXIBUS} -autoloadwcfg -tclbatch {VQFTAXIBUS.tcl}
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source VQFTAXIBUS.tcl
+## run all
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [0.00%] @ "125000"
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 295 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 345 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 895 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 895 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 895 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 895 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 895 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 895 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 895 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 895 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 895 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 895 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 945 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 945 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 945 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 945 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 945 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 945 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 945 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 945 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 945 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 945 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 995 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 995 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 995 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 995 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 995 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 995 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 995 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 995 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 995 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 995 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1045 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1045 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1045 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1045 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1045 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1045 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1045 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1045 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1045 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1045 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1095 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1095 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1095 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1095 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1095 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1095 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1095 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1095 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1095 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1095 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1145 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1145 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1145 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1145 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1145 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1145 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1145 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1145 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1145 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1145 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1195 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1195 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1195 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1195 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1195 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1195 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1195 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1195 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1195 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1195 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1245 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1245 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1245 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1245 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1245 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1245 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1245 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1245 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1245 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1245 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1295 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1295 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1295 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1295 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1295 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1295 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1295 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1295 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1295 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1295 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1345 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1345 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1345 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1345 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1345 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1345 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1345 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1345 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1345 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1345 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1395 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1445 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1495 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1545 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1595 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1645 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1695 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1745 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1795 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U6/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U7/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U8/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1845 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U9/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1875 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1875 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1875 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1875 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1875 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1875 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1925 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U0/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1925 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U1/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1925 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U2/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1925 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U3/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1925 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U4/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1925 ns  Iteration: 12  Process: /apatb_VQFTAXIBUS_top/AESL_inst_VQFTAXIBUS/VQFTAXIBUS_faddfsbkb_U5/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 1 / 1 [0.00%] @ "2285000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 2325 ns : File "C:/Users/caos1/Desktop/AgustinSilva/Tesis/Definitivo/VQFTAXIBUS/solution1/sim/verilog/VQFTAXIBUS.autotb.v" Line 388
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 207.805 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Sat Jul 28 16:58:19 2018...
+
+E = 
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+1.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+0.000000 + i* 0.000000
+
+S = 
+0.250000 + i* 0.000000
+-0.095655 + i* 0.230977
+-0.176802 + i* -0.176752
+0.230950 + i* -0.095720
+0.000071 + i* 0.250000
+-0.231004 + i* -0.095589
+0.176702 + i* -0.176852
+0.095785 + i* 0.230922
+-0.250000 + i* 0.000141
+0.095524 + i* -0.231031
+0.176902 + i* 0.176652
+-0.230895 + i* 0.095851
+-0.000212 + i* -0.250000
+0.231058 + i* 0.095458
+-0.176602 + i* 0.176952
+-0.095916 + i* -0.230868
+@I [SIM-1000] *** C/RTL co-simulation finished: PASS ***

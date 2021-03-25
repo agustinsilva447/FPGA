@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="VQFTAXIBUS" xd:componentRef="VQFTAXIBUS" xd:initiationInterval="197" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="E[]" xd:originalName="E" xd:direction="in" xd:interfaceRef="E_PORTA" xd:busTypeRef="bram" xd:arraySize="32" xd:dataWidth="32"/>
+  <xd:arg xd:name="S[]" xd:originalName="S" xd:direction="out" xd:interfaceRef="S_PORTA" xd:busTypeRef="bram" xd:arraySize="32" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="196" xd:worst-case="196" xd:average-case="196"/>
+  <xd:resourceEstimates xd:LUT="15046" xd:FF="6529" xd:BRAM="0" xd:DSP="50"/>
+</xd:acceleratorMap>

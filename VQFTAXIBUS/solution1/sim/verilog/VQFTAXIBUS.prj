@@ -1,0 +1,11 @@
+vhdl xil_defaultlib "ip/xil_defaultlib/VQFTAXIBUS_ap_faddfsub_3_full_dsp_32.vhd"
+vhdl xil_defaultlib "ip/xil_defaultlib/VQFTAXIBUS_ap_fmul_2_max_dsp_32.vhd"
+sv xil_defaultlib "AESL_autobram_E.v"
+sv xil_defaultlib "AESL_autobram_S.v"
+sv xil_defaultlib "AESL_axi_slave_CRTL_BUS.v"
+sv xil_defaultlib "VQFTAXIBUS.autotb.v"
+sv xil_defaultlib "VQFTAXIBUS.v"
+sv xil_defaultlib "VQFTAXIBUS_CRTL_BUS_s_axi.v"
+sv xil_defaultlib "VQFTAXIBUS_faddfsbkb.v"
+sv xil_defaultlib "VQFTAXIBUS_fmul_3cud.v"
+

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="VQFTAXIBUS.cpp" path="C:\Users\caos1\Desktop\AgustinSilva\Tesis\Definitivo\VQFTAXIBUS\VQFTAXIBUS.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="VQFTAXIBUS_test.cpp" path="C:\Users\caos1\Desktop\AgustinSilva\Tesis\Definitivo\VQFTAXIBUS\VQFTAXIBUS_test.cpp"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>
