@@ -1,0 +1,5 @@
+set_property SRC_FILE_INFO {cfile:C:/Users/caos1/Desktop/AgustinSilva/Tesis/Vivado/NGrover64/NGrover64.srcs/constrs_1/new/VGrover64.xdc rfile:../../../NGrover64.srcs/constrs_1/new/VGrover64.xdc id:1} [current_design]
+set_property src_info {type:XDC file:1 line:3 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN W8 [get_ports UART0_RX]
+set_property src_info {type:XDC file:1 line:4 export:INPUT save:INPUT read:READ} [current_design]
+set_property PACKAGE_PIN V12 [get_ports UART0_TX]
