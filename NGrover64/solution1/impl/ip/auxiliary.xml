@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xd:acceleratorMap xmlns:xd="http://www.xilinx.com/xidane" xd:functionName="NGrover64" xd:componentRef="NGrover64" xd:initiationInterval="x" xd:clockPeriod="10.000000" xd:sequential="true" xd:hostMachine="64" xd:reset="control">
+  <xd:controlReg xd:name="control" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:type="generic_axi_lite" xd:offset="0x0"/>
+  <xd:arg xd:name="E1[]" xd:originalName="E1" xd:direction="in" xd:interfaceRef="E1_PORTA" xd:busTypeRef="bram" xd:arraySize="64" xd:dataWidth="32"/>
+  <xd:arg xd:name="B[]" xd:originalName="B" xd:direction="inout" xd:interfaceRef="B_PORTA" xd:busTypeRef="bram" xd:arraySize="64" xd:dataWidth="32"/>
+  <xd:arg xd:name="C" xd:originalName="C" xd:direction="in" xd:interfaceRef="s_axi_CRTL_BUS" xd:busTypeRef="axilite" xd:offset="0x10" xd:handshakeRef="ap_none" xd:dataWidth="32"/>
+  <xd:latencyEstimates xd:best-case="undef" xd:worst-case="undef" xd:average-case="undef"/>
+  <xd:resourceEstimates xd:LUT="47021" xd:FF="26505" xd:BRAM="4" xd:DSP="156"/>
+</xd:acceleratorMap>
