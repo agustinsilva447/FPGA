@@ -1,0 +1,857 @@
+#-----------------------------------------------------------
+# xsim v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Mar 22 16:07:24 2017
+# Process ID: 4584
+# Current directory: C:/Users/caos1/Desktop/Tesis/Definitivo/NGrover64/solution1/sim/verilog
+# Command line: xsim.exe -mode tcl -source {xsim.dir/NGrover64/xsim_script.tcl}
+# Log file: C:/Users/caos1/Desktop/Tesis/Definitivo/NGrover64/solution1/sim/verilog/xsim.log
+# Journal file: C:/Users/caos1/Desktop/Tesis/Definitivo/NGrover64/solution1/sim/verilog\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/NGrover64/xsim_script.tcl
+# xsim {NGrover64} -autoloadwcfg -tclbatch {NGrover64.tcl}
+Vivado Simulator 2016.4
+Time resolution is 1 ps
+source NGrover64.tcl
+## run all
+Note: 
+******************************************************
+  renorm_and_round_logic.vhd :
+    FULL_MANT_RND1_DEL is using fast_input
+    which will be faster, but create more FFs.
+******************************************************
+Time: 0 ps  Iteration: 0
+Note: 
+******************************************************
+  renorm_and_round_logic.vhd :
+    FULL_MANT_RND1_DEL is using fast_input
+    which will be faster, but create more FFs.
+******************************************************
+Time: 0 ps  Iteration: 0
+Note: 
+******************************************************
+  renorm_and_round_logic.vhd :
+    FULL_MANT_RND1_DEL is using fast_input
+    which will be faster, but create more FFs.
+******************************************************
+Time: 0 ps  Iteration: 0
+Note: 
+******************************************************
+  renorm_and_round_logic.vhd :
+    FULL_MANT_RND1_DEL is using fast_input
+    which will be faster, but create more FFs.
+******************************************************
+Time: 0 ps  Iteration: 0
+Note: 
+******************************************************
+  renorm_and_round_logic.vhd :
+    FULL_MANT_RND1_DEL is using fast_input
+    which will be faster, but create more FFs.
+******************************************************
+Time: 0 ps  Iteration: 0
+Warning: OPMODE Input Warning : The OPMODE 011XX11 with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_dmul_64mb6_U72/NGrover64_ap_dmul_4_max_dsp_64_u/U0/i_synth/mult/OP/R_AND_R/logic/R_AND_R/dsp48_e1/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 011XX11 with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_dmul_64mb6_U71/NGrover64_ap_dmul_4_max_dsp_64_u/U0/i_synth/mult/OP/R_AND_R/logic/R_AND_R/dsp48_e1/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 001XXXX with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_dadd_64lbW_U70/NGrover64_ap_dadd_3_full_dsp_64_u/U0/i_synth/addsub_op/ADDSUB/speed_op/logic/OP/ALIGN_BLK/FRAC_ADDSUB/dsp_add/FRAC_ADDSUB/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U63/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U62/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U61/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U60/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U59/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U58/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U57/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U56/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U55/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U54/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U53/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U52/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U51/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U50/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U49/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U48/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U47/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U46/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U45/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U44/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U43/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U42/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U41/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U40/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U39/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U38/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U37/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U36/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U35/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U34/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U33/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U32/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U31/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U30/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U29/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U28/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U27/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U26/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U25/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U24/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U23/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U22/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U21/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U20/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U19/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U18/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U17/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U16/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U15/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U14/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U13/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U12/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U11/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U10/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U9/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U8/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U7/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U6/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U5/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U4/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U3/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U2/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_fsub_32eOg_U1/NGrover64_ap_fsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 100010 ps  Iteration: 0  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+////////////////////////////////////////////////////////////////////////////////////
+// Inter-Transaction Progress: Completed Transaction / Total Transaction
+// Intra-Transaction Progress: Measured Latency / Latency Estimation * 100%
+//
+// RTL Simulation : "Inter-Transaction Progress" ["Intra-Transaction Progress"] @ "Simulation Time"
+////////////////////////////////////////////////////////////////////////////////////
+// RTL Simulation : 0 / 1 [n/a] @ "125000"
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 405 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 455 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 505 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 555 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 605 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 655 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 705 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 755 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 805 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 855 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 905 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 955 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1005 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1055 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1105 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1155 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1205 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1255 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1305 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1355 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1405 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1455 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1505 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1555 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1605 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1655 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1705 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1755 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1805 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1855 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1905 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 1955 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2005 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2055 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2105 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2155 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2205 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2255 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2305 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2355 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2405 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2455 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2505 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2555 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2605 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2655 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2705 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2755 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2805 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2855 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2905 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 2955 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3005 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3055 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3105 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3155 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3205 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3255 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3305 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3355 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3405 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3455 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3505 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 011XX11 with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3745100 ps  Iteration: 10  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_dmul_64mb6_U71/NGrover64_ap_dmul_4_max_dsp_64_u/U0/i_synth/mult/OP/R_AND_R/logic/R_AND_R/dsp48_e1/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 011XX11 with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3805100 ps  Iteration: 10  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_dmul_64mb6_U71/NGrover64_ap_dmul_4_max_dsp_64_u/U0/i_synth/mult/OP/R_AND_R/logic/R_AND_R/dsp48_e1/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 011XX11 with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3865100 ps  Iteration: 10  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_dmul_64mb6_U71/NGrover64_ap_dmul_4_max_dsp_64_u/U0/i_synth/mult/OP/R_AND_R/logic/R_AND_R/dsp48_e1/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 011XX11 with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3925100 ps  Iteration: 10  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_dmul_64mb6_U71/NGrover64_ap_dmul_4_max_dsp_64_u/U0/i_synth/mult/OP/R_AND_R/logic/R_AND_R/dsp48_e1/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 001XXXX with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3955 ns  Iteration: 14  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_dadd_64lbW_U70/NGrover64_ap_dadd_3_full_dsp_64_u/U0/i_synth/addsub_op/ADDSUB/speed_op/logic/OP/ALIGN_BLK/FRAC_ADDSUB/dsp_add/FRAC_ADDSUB/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 011XX11 with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 3985100 ps  Iteration: 10  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_dmul_64mb6_U71/NGrover64_ap_dmul_4_max_dsp_64_u/U0/i_synth/mult/OP/R_AND_R/logic/R_AND_R/dsp48_e1/dsp48e1_add/DSP48E1_ADD/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5225 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5275 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5325 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5375 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5425 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5475 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5525 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5575 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5625 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5675 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5725 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5775 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5825 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5875 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5925 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 5975 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6025 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6075 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6125 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6175 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6225 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6275 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6325 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6375 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6425 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6475 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6525 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6575 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6625 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6675 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6725 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6775 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6825 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6875 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6925 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 6975 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7025 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7075 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7125 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7175 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7225 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7275 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7325 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7375 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7425 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7475 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7525 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7575 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7625 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7675 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7725 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7775 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7825 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7875 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7925 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 7975 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8025 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8075 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8125 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8175 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8225 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8275 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8325 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8375 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 8505 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 9935 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 9985 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10035 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10085 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10135 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10185 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10235 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10285 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10335 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10385 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10435 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10485 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10535 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10585 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10635 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10685 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10735 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10785 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10835 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10885 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10935 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 10985 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11035 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11085 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11135 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11185 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11235 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11285 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11335 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11385 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11435 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11485 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11535 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11585 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11635 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11685 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11735 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11785 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11835 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11885 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11935 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 11985 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12035 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12085 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12135 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12185 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12235 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12285 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12335 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12385 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12435 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12485 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12535 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12585 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12635 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12685 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12735 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12785 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12835 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12885 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12935 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 12985 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 13035 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 13085 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 13215 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 14645 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 14695 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 14745 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 14795 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 14845 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 14895 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 14945 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 14995 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15045 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15095 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15145 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15195 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15245 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15295 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15345 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15395 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15445 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15495 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15545 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15595 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15645 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15695 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15745 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15795 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15845 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15895 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15945 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 15995 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16045 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16095 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16145 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16195 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16245 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16295 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16345 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16395 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16445 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16495 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16545 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16595 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16645 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16695 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16745 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16795 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16845 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16895 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16945 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 16995 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 17045 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 17095 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 17145 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 17195 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 17245 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 17295 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 17345 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 17395 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 17445 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 17495 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 17545 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 17595 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 17645 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 17695 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 17745 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 17795 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 17925 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 19355 ns  Iteration: 12  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 19405 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 19455 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 19505 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 19555 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 19605 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 19655 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 19705 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 19755 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 19805 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 19855 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 19905 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 19955 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20005 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20055 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20105 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20155 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20205 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20255 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20305 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20355 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20405 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20455 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20505 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20555 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20605 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20655 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20705 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20755 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20805 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20855 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20905 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 20955 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21005 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21055 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21105 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21155 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21205 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21255 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21305 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21355 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21405 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21455 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21505 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21555 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21605 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21655 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21705 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21755 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21805 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21855 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21905 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 21955 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 22005 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 22055 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 22105 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 22155 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 22205 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 22255 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 22305 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 22355 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 22405 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 22455 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 22505 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+Warning: OPMODE Input Warning : The OPMODE 0110X0X with CARRYINSEL  000 to DSP48E1 instance is invalid.
+Time: 22635 ns  Iteration: 11  Process: /apatb_NGrover64_top/AESL_inst_NGrover64/NGrover64_faddfsudEe_U0/NGrover64_ap_faddfsub_3_full_dsp_32_u/U0/i_synth/addsub_op/ADDSUB/speed_op/dsp/OP/dsp48e1_body/ALIGN_ADD/DSP2/DSP/prcs_opmode_drc  File: C:\Xilinx\Vivado\2016.4\data/vhdl/src/unisims/primitive/DSP48E1.vhd
+// RTL Simulation : 1 / 1 [n/a] @ "23465000"
+////////////////////////////////////////////////////////////////////////////////////
+$finish called at time : 23505 ns : File "C:/Users/caos1/Desktop/Tesis/Definitivo/NGrover64/solution1/sim/verilog/NGrover64.autotb.v" Line 396
+run: Time (s): cpu = 00:00:00 ; elapsed = 00:00:17 . Memory (MB): peak = 207.563 ; gain = 0.000
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Mar 22 16:07:48 2017...

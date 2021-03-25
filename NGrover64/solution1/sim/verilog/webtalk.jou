@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2016.4 (64-bit)
+# SW Build 1756540 on Mon Jan 23 19:11:23 MST 2017
+# IP Build 1755317 on Mon Jan 23 20:30:07 MST 2017
+# Start of session at: Wed Mar 22 16:07:44 2017
+# Process ID: 5816
+# Current directory: C:/Users/caos1/Desktop/Tesis/Definitivo/NGrover64/solution1/sim/verilog
+# Command line: wbtcv.exe -mode batch -source C:/Users/caos1/Desktop/Tesis/Definitivo/NGrover64/solution1/sim/verilog/xsim.dir/NGrover64/webtalk/xsim_webtalk.tcl -notrace
+# Log file: C:/Users/caos1/Desktop/Tesis/Definitivo/NGrover64/solution1/sim/verilog/webtalk.log
+# Journal file: C:/Users/caos1/Desktop/Tesis/Definitivo/NGrover64/solution1/sim/verilog\webtalk.jou
+#-----------------------------------------------------------
+source C:/Users/caos1/Desktop/Tesis/Definitivo/NGrover64/solution1/sim/verilog/xsim.dir/NGrover64/webtalk/xsim_webtalk.tcl -notrace

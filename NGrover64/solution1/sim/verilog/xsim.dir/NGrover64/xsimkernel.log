@@ -1,0 +1,7 @@
+Running: xsim.dir/NGrover64/xsimk.exe -simmode gui -wdb NGrover64.wdb -simrunnum 0 -socket 52101
+Design successfully loaded
+Design Loading Memory Usage: 69920 KB (Peak: 69920 KB)
+Design Loading CPU Usage: 359 ms
+Simulation completed
+Simulation Memory Usage: 78200 KB (Peak: 78200 KB)
+Simulation CPU Usage: 5921 ms

@@ -1,0 +1,5 @@
+   Build using "C:/Xilinx/Vivado_HLS/2016.4/msys/bin/g++.exe"
+   Compiling NGrover64.cpp_pre.cpp.tb.cpp
+   Compiling NGrover64_test.cpp_pre.cpp.tb.cpp
+   Compiling apatb_NGrover64.cpp
+   Generating cosim.tv.exe

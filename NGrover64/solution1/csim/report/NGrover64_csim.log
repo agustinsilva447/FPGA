@@ -1,0 +1,14 @@
+INFO: [SIM 2] *************** CSIM start ***************
+WARNING: [SIM 51] HLS only supports CLANG compiler in Linux.
+INFO: [SIM 4] CSIM will launch GCC as the compiler.
+   Compiling ../../../NGrover64_test.cpp in debug mode
+   Compiling ../../../NGrover64.cpp in debug mode
+   Generating csim.exe
+El numero buscado es el 19.000000, en la posicion 13, con probabilidad 0.240330
+El numero buscado es el 17.000000, en la posicion 24, con probabilidad 0.240330
+El numero buscado es el 19.000000, en la posicion 32, con probabilidad 0.240330
+El numero buscado es el 17.000000, en la posicion 45, con probabilidad 0.240330
+Exito: 0.961319
+La cantidad de iteraciones es 3.000000
+INFO: [SIM 1] CSim done with 0 errors.
+INFO: [SIM 3] *************** CSIM finish ***************
