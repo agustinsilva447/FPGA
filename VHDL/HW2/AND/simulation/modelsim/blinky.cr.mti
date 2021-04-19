@@ -1,0 +1,9 @@
+/home/agustinsilva447/Escritorio/quartus/AND/simulation/modelsim/compuerta_AND.vo {1 {vlog -work work -stats=none /home/agustinsilva447/Escritorio/quartus/AND/simulation/modelsim/compuerta_AND.vo
+Model Technology ModelSim - Intel FPGA Edition vlog 2020.1 Compiler 2020.02 Feb 28 2020
+-- Compiling module compuerta_AND
+-- Compiling module hard_block
+
+Top level modules:
+	compuerta_AND
+
+} {} {}}
