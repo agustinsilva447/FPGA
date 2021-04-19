@@ -1,5 +1,5 @@
 Flow report for ej2
-Mon Apr 19 13:09:54 2021
+Mon Apr 19 16:47:07 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Apr 19 13:09:54 2021       ;
+; Flow Status                        ; Successful - Mon Apr 19 16:47:07 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ej2                                         ;
 ; Top-level Entity Name              ; ej2                                         ;
@@ -112,7 +112,13 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 598 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 594 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 598 MB              ; 00:00:01                           ;
-; Total                ; 00:00:32     ; --                      ; --                  ; 00:01:00                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 594 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 598 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 594 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 598 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 594 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 598 MB              ; 00:00:01                           ;
+; Total                ; 00:00:34     ; --                      ; --                  ; 00:01:06                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -125,6 +131,12 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; Assembler            ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; Timing Analyzer      ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
@@ -153,6 +165,12 @@ quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_f
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej2/simulation/qsim/ ej2 -c ej2
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ej2 -c ej2 --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej2/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej2/simulation/qsim/Waveform.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej2/simulation/qsim/ ej2 -c ej2
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ej2 -c ej2 --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej2/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej2/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej2/simulation/qsim/ ej2 -c ej2
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ej2 -c ej2 --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej2/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej2/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej2/simulation/qsim/ ej2 -c ej2
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ej2 -c ej2 --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej2/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej2/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej2/simulation/qsim/ ej2 -c ej2
 
 
 
