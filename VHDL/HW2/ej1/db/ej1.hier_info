@@ -1,0 +1,11 @@
+|ej1
+d[0] => num_bits.OUTPUTSELECT
+d[0] => num_bits.OUTPUTSELECT
+d[1] => num_bits.OUTPUTSELECT
+d[1] => num_bits.OUTPUTSELECT
+d[2] => Add0.IN2
+d[2] => num_bits.DATAA
+q[0] <= num_bits.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= num_bits.DB_MAX_OUTPUT_PORT_TYPE
+
+

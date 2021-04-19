@@ -1,0 +1,47 @@
+# do ej2.do
+# ** Warning: (vlib-34) Library already exists at "work".
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:09:55 on Apr 19,2021
+# vcom -work work ej2.vho 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Loading package VITAL_Timing
+# -- Loading package VITAL_Primitives
+# -- Loading package cycloneive_atom_pack
+# -- Loading package cycloneive_components
+# -- Compiling entity hard_block
+# -- Compiling architecture structure of hard_block
+# -- Loading package std_logic_arith
+# -- Compiling entity ej2
+# -- Compiling architecture structure of ej2
+# End time: 13:09:55 on Apr 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# Model Technology ModelSim - Intel FPGA Edition vcom 2020.1 Compiler 2020.02 Feb 28 2020
+# Start time: 13:09:55 on Apr 19,2021
+# vcom -work work Waveform.vwf.vht 
+# -- Loading package STANDARD
+# -- Loading package TEXTIO
+# -- Loading package std_logic_1164
+# -- Compiling entity ej2_vhd_vec_tst
+# -- Compiling architecture ej2_arch of ej2_vhd_vec_tst
+# End time: 13:09:55 on Apr 19,2021, Elapsed time: 0:00:00
+# Errors: 0, Warnings: 0
+# vsim -c -t 1ps -L cycloneive -L altera -L altera_mf -L 220model -L sgate -L altera_lnsim work.ej2_vhd_vec_tst 
+# Start time: 13:09:55 on Apr 19,2021
+# Loading std.standard
+# Loading std.textio(body)
+# Loading ieee.std_logic_1164(body)
+# Loading work.ej2_vhd_vec_tst(ej2_arch)
+# Loading ieee.vital_timing(body)
+# Loading ieee.vital_primitives(body)
+# Loading cycloneive.cycloneive_atom_pack(body)
+# Loading cycloneive.cycloneive_components
+# Loading ieee.std_logic_arith(body)
+# Loading work.ej2(structure)
+# ** Fatal: (vsim-3807) Types do not match between component and entity for port "op1".
+#    Time: 0 ps  Iteration: 0  Instance: /ej2_vhd_vec_tst/i1 File: ej2.vho Line: 83
+# FATAL ERROR while loading design
+# Error loading design
+# End time: 13:09:55 on Apr 19,2021, Elapsed time: 0:00:00
+# Errors: 1, Warnings: 0
