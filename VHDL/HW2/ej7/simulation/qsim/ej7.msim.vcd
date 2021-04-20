@@ -1,0 +1,74 @@
+$comment
+	File created using the following command:
+		vcd file ej7.msim.vcd -direction
+$end
+$date
+	Tue Apr 20 12:32:30 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module ej7_vlg_vec_tst $end
+$var reg 1 ! clock $end
+$var reg 1 " updown $end
+$var wire 1 # lsb $end
+$var wire 1 $ msb $end
+
+$scope module i1 $end
+$var wire 1 % gnd $end
+$var wire 1 & vcc $end
+$var wire 1 ' unknown $end
+$var tri1 1 ( devclrn $end
+$var tri1 1 ) devpor $end
+$var tri1 1 * devoe $end
+$var wire 1 + lsb~output_o $end
+$var wire 1 , msb~output_o $end
+$var wire 1 - clock~input_o $end
+$var wire 1 . clock~inputclkctrl_outclk $end
+$var wire 1 / updown~input_o $end
+$var wire 1 0 Selector1~0_combout $end
+$var wire 1 1 present_state.one~q $end
+$var wire 1 2 Selector2~0_combout $end
+$var wire 1 3 present_state.two~q $end
+$var wire 1 4 Selector5~1_combout $end
+$var wire 1 5 present_state.three~q $end
+$var wire 1 6 Selector0~0_combout $end
+$var wire 1 7 present_state.zero~q $end
+$var wire 1 8 Selector4~0_combout $end
+$var wire 1 9 Selector5~0_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+1&
+x'
+1(
+1)
+1*
+0+
+0,
+0-
+0.
+0/
+10
+01
+02
+03
+04
+05
+16
+07
+18
+09
+$end
+#1000000

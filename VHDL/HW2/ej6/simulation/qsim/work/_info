@@ -1,0 +1,122 @@
+m255
+K4
+z2
+!s11f MIXED_VERSIONS
+!s11e vcom 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej6/simulation/qsim
+vej6
+Z1 !s110 1618932116
+!i10b 1
+!s100 ;O3?V<9S@bc_V1z7EIA`Y3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+ITPa?M2FSSXVLgnAPR7zIh1
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1618932115
+Z5 8ej6.vo
+Z6 Fej6.vo
+!i122 6
+L0 32 2557
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1618932116.000000
+Z9 !s107 ej6.vo|
+Z10 !s90 -work|work|ej6.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+Eej6_vhd_vec_tst
+Z13 w1618931940
+Z14 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
+Z15 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
+!i122 3
+R0
+Z16 8Waveform.vwf.vht
+Z17 FWaveform.vwf.vht
+l0
+L32 1
+V1hlLB_`IQM`6Qjk`JG=M72
+!s100 L;MeUhBicFKOCCgVCW93>3
+Z18 OV;C;2020.1;71
+32
+Z19 !s110 1618931943
+!i10b 1
+Z20 !s108 1618931943.000000
+Z21 !s90 -work|work|Waveform.vwf.vht|
+Z22 !s107 Waveform.vwf.vht|
+!i113 1
+R11
+Z23 tExplicit 1 CvgOpt 0
+Aej6_arch
+R14
+R15
+DEx4 work 15 ej6_vhd_vec_tst 0 22 1hlLB_`IQM`6Qjk`JG=M72
+!i122 3
+l81
+L34 156
+V[e8k_`KKKU=IiHbN9F]gm3
+!s100 Y3XJL_a<MI@c2GjQO7T^c2
+R18
+32
+R19
+!i10b 1
+R20
+R21
+R22
+!i113 1
+R11
+R23
+vej6_vlg_vec_tst
+R1
+!i10b 1
+!s100 jdDXo>^Yf8Y?Y2;622m]M3
+R2
+ID;MHm7jGzPCBeFho@9RKY3
+R3
+R0
+w1618932113
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 7
+L0 30 124
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+vhard_block
+R1
+!i10b 1
+!s100 PECDTfcDYX[9l<^m5lUOM3
+R2
+Ik@BS3HPD6C7Ka4<D>SAE93
+R3
+R0
+R4
+R5
+R6
+!i122 6
+L0 2590 34
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12

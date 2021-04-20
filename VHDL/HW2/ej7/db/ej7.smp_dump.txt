@@ -1,0 +1,7 @@
+
+State Machine - |ej7|present_state
+Name present_state.three present_state.two present_state.one present_state.zero 
+present_state.zero 0 0 0 0 
+present_state.one 0 0 1 1 
+present_state.two 0 1 0 1 
+present_state.three 1 0 0 1 

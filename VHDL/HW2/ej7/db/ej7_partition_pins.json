@@ -1,0 +1,25 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "lsb",
+					"strict" : false
+				},
+				{
+					"name" : "msb",
+					"strict" : false
+				},
+				{
+					"name" : "updown",
+					"strict" : false
+				},
+				{
+					"name" : "clock",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
