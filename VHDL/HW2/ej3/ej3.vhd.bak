@@ -1,0 +1,21 @@
+library altera;
+use altera.maxplus2.all;
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+entity ej3 is
+port
+	( data, clock, clearn, presetn: in std_logic;
+	                        q_out : out std_logic;
+	                  a, b, c, gn : in std_logic;
+	                            d : in std_logic_vector( 7 downto 0 );
+	                        y, wn : out std_logic
+	);
+end ej3;
+
+architecture a of ej3 is
+begin
+	dff1 : dff port map (d =>data, q => q_out, clk => clock, clrn => clearn, prn => presetn);
+	mux : a_74151b port map (c, b, a, d, gn, y, wn);
+end a;
