@@ -1,0 +1,11 @@
+|ej14
+previous_meal.breakfast => next_meal.lunch.IN0
+previous_meal.lunch => next_meal.dinner.IN0
+previous_meal.dinner => next_meal.IN0
+previous_meal.midnight_snack => next_meal.IN1
+next_meal.breakfast <= next_meal.DB_MAX_OUTPUT_PORT_TYPE
+next_meal.lunch <= next_meal.lunch.DB_MAX_OUTPUT_PORT_TYPE
+next_meal.dinner <= next_meal.dinner.DB_MAX_OUTPUT_PORT_TYPE
+next_meal.midnight_snack <= next_meal.midnight_snack.DB_MAX_OUTPUT_PORT_TYPE
+
+

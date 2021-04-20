@@ -1,0 +1,8 @@
+|ej15
+a => c.IN0
+b => c.IN1
+e => d.DATAIN
+c <= c.DB_MAX_OUTPUT_PORT_TYPE
+d <= e.DB_MAX_OUTPUT_PORT_TYPE
+
+

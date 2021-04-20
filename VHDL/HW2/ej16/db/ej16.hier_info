@@ -1,0 +1,7 @@
+|ej16
+clk => state.CLK
+input0 => state.DATAB
+reset => state.ACLR
+output0 <= state.DB_MAX_OUTPUT_PORT_TYPE
+
+

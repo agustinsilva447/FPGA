@@ -1,0 +1,240 @@
+// Copyright (C) 2020  Intel Corporation. All rights reserved.
+// Your use of Intel Corporation's design tools, logic functions 
+// and other software and tools, and any partner logic 
+// functions, and any output files from any of the foregoing 
+// (including device programming or simulation files), and any 
+// associated documentation or information are expressly subject 
+// to the terms and conditions of the Intel Program License 
+// Subscription Agreement, the Intel Quartus Prime License Agreement,
+// the Intel FPGA IP License Agreement, or other applicable license
+// agreement, including, without limitation, that your use is for
+// the sole purpose of programming logic devices manufactured by
+// Intel and sold by Intel or its authorized distributors.  Please
+// refer to the applicable agreement for further details, at
+// https://fpgasoftware.intel.com/eula.
+
+// VENDOR "Altera"
+// PROGRAM "Quartus Prime"
+// VERSION "Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition"
+
+// DATE "04/20/2021 17:32:54"
+
+// 
+// Device: Altera EP4CE22F17C6 Package FBGA256
+// 
+
+// 
+// This Verilog file should be used for ModelSim-Altera (Verilog) only
+// 
+
+`timescale 1 ps/ 1 ps
+
+module ej14 (
+	\previous_meal.breakfast ,
+	\previous_meal.lunch ,
+	\previous_meal.dinner ,
+	\previous_meal.midnight_snack ,
+	\next_meal.breakfast ,
+	\next_meal.lunch ,
+	\next_meal.dinner ,
+	\next_meal.midnight_snack );
+input 	\previous_meal.breakfast ;
+input 	\previous_meal.lunch ;
+input 	\previous_meal.dinner ;
+input 	\previous_meal.midnight_snack ;
+output 	\next_meal.breakfast ;
+output 	\next_meal.lunch ;
+output 	\next_meal.dinner ;
+output 	\next_meal.midnight_snack ;
+
+// Design Ports Information
+// next_meal.breakfast	=>  Location: PIN_L2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// next_meal.lunch	=>  Location: PIN_F1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// next_meal.dinner	=>  Location: PIN_F3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// next_meal.midnight_snack	=>  Location: PIN_D11,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// previous_meal.dinner	=>  Location: PIN_L3,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// previous_meal.midnight_snack	=>  Location: PIN_L1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// previous_meal.breakfast	=>  Location: PIN_G2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// previous_meal.lunch	=>  Location: PIN_D1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+tri1 devclrn;
+tri1 devpor;
+tri1 devoe;
+wire \next_meal.breakfast~output_o ;
+wire \next_meal.lunch~output_o ;
+wire \next_meal.dinner~output_o ;
+wire \next_meal.midnight_snack~output_o ;
+wire \previous_meal.dinner~input_o ;
+wire \previous_meal.midnight_snack~input_o ;
+wire \next_meal~0_combout ;
+wire \previous_meal.breakfast~input_o ;
+wire \previous_meal.lunch~input_o ;
+
+
+hard_block auto_generated_inst(
+	.devpor(devpor),
+	.devclrn(devclrn),
+	.devoe(devoe));
+
+// Location: IOOBUF_X0_Y11_N2
+cycloneive_io_obuf \next_meal.breakfast~output (
+	.i(\next_meal~0_combout ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\next_meal.breakfast~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \next_meal.breakfast~output .bus_hold = "false";
+defparam \next_meal.breakfast~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y23_N2
+cycloneive_io_obuf \next_meal.lunch~output (
+	.i(\previous_meal.breakfast~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\next_meal.lunch~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \next_meal.lunch~output .bus_hold = "false";
+defparam \next_meal.lunch~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X0_Y26_N16
+cycloneive_io_obuf \next_meal.dinner~output (
+	.i(\previous_meal.lunch~input_o ),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\next_meal.dinner~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \next_meal.dinner~output .bus_hold = "false";
+defparam \next_meal.dinner~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOOBUF_X51_Y34_N16
+cycloneive_io_obuf \next_meal.midnight_snack~output (
+	.i(gnd),
+	.oe(vcc),
+	.seriesterminationcontrol(16'b0000000000000000),
+	.devoe(devoe),
+	.o(\next_meal.midnight_snack~output_o ),
+	.obar());
+// synopsys translate_off
+defparam \next_meal.midnight_snack~output .bus_hold = "false";
+defparam \next_meal.midnight_snack~output .open_drain_output = "false";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y10_N22
+cycloneive_io_ibuf \previous_meal.dinner~input (
+	.i(\previous_meal.dinner ),
+	.ibar(gnd),
+	.o(\previous_meal.dinner~input_o ));
+// synopsys translate_off
+defparam \previous_meal.dinner~input .bus_hold = "false";
+defparam \previous_meal.dinner~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y11_N8
+cycloneive_io_ibuf \previous_meal.midnight_snack~input (
+	.i(\previous_meal.midnight_snack ),
+	.ibar(gnd),
+	.o(\previous_meal.midnight_snack~input_o ));
+// synopsys translate_off
+defparam \previous_meal.midnight_snack~input .bus_hold = "false";
+defparam \previous_meal.midnight_snack~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: LCCOMB_X1_Y11_N16
+cycloneive_lcell_comb \next_meal~0 (
+// Equation(s):
+// \next_meal~0_combout  = (\previous_meal.dinner~input_o ) # (\previous_meal.midnight_snack~input_o )
+
+	.dataa(\previous_meal.dinner~input_o ),
+	.datab(gnd),
+	.datac(gnd),
+	.datad(\previous_meal.midnight_snack~input_o ),
+	.cin(gnd),
+	.combout(\next_meal~0_combout ),
+	.cout());
+// synopsys translate_off
+defparam \next_meal~0 .lut_mask = 16'hFFAA;
+defparam \next_meal~0 .sum_lutc_input = "datac";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y23_N15
+cycloneive_io_ibuf \previous_meal.breakfast~input (
+	.i(\previous_meal.breakfast ),
+	.ibar(gnd),
+	.o(\previous_meal.breakfast~input_o ));
+// synopsys translate_off
+defparam \previous_meal.breakfast~input .bus_hold = "false";
+defparam \previous_meal.breakfast~input .simulate_z_as = "z";
+// synopsys translate_on
+
+// Location: IOIBUF_X0_Y25_N8
+cycloneive_io_ibuf \previous_meal.lunch~input (
+	.i(\previous_meal.lunch ),
+	.ibar(gnd),
+	.o(\previous_meal.lunch~input_o ));
+// synopsys translate_off
+defparam \previous_meal.lunch~input .bus_hold = "false";
+defparam \previous_meal.lunch~input .simulate_z_as = "z";
+// synopsys translate_on
+
+assign \next_meal.breakfast  = \next_meal.breakfast~output_o ;
+
+assign \next_meal.lunch  = \next_meal.lunch~output_o ;
+
+assign \next_meal.dinner  = \next_meal.dinner~output_o ;
+
+assign \next_meal.midnight_snack  = \next_meal.midnight_snack~output_o ;
+
+endmodule
+
+module hard_block (
+
+	devpor,
+	devclrn,
+	devoe);
+
+// Design Ports Information
+// ~ALTERA_ASDO_DATA1~	=>  Location: PIN_C1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_FLASH_nCE_nCSO~	=>  Location: PIN_D2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DCLK~	=>  Location: PIN_H1,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_DATA0~	=>  Location: PIN_H2,	 I/O Standard: 2.5 V,	 Current Strength: Default
+// ~ALTERA_nCEO~	=>  Location: PIN_F16,	 I/O Standard: 2.5 V,	 Current Strength: 8mA
+
+input 	devpor;
+input 	devclrn;
+input 	devoe;
+
+wire gnd;
+wire vcc;
+wire unknown;
+
+assign gnd = 1'b0;
+assign vcc = 1'b1;
+assign unknown = 1'bx;
+
+wire \~ALTERA_ASDO_DATA1~~padout ;
+wire \~ALTERA_FLASH_nCE_nCSO~~padout ;
+wire \~ALTERA_DATA0~~padout ;
+wire \~ALTERA_ASDO_DATA1~~ibuf_o ;
+wire \~ALTERA_FLASH_nCE_nCSO~~ibuf_o ;
+wire \~ALTERA_DATA0~~ibuf_o ;
+
+
+endmodule

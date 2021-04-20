@@ -1,0 +1,37 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "next_meal.breakfast",
+					"strict" : false
+				},
+				{
+					"name" : "next_meal.lunch",
+					"strict" : false
+				},
+				{
+					"name" : "next_meal.dinner",
+					"strict" : false
+				},
+				{
+					"name" : "previous_meal.dinner",
+					"strict" : false
+				},
+				{
+					"name" : "previous_meal.midnight_snack",
+					"strict" : false
+				},
+				{
+					"name" : "previous_meal.breakfast",
+					"strict" : false
+				},
+				{
+					"name" : "previous_meal.lunch",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

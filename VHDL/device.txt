@@ -1,1 +1,4 @@
 Cyclone IV E - EP4CE22F17C6
+
+Ejercicio 10: No puedo sintentizar, no sé cómo importar paquete
+Ejercicio 14: Puedo sintetizar pero no puedo simular (posible error en importación de paquete o nombre de los archivos)
