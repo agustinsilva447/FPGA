@@ -1,0 +1,40 @@
+|ej5
+high => q.OUTPUTSELECT
+high => q.OUTPUTSELECT
+mid => q.OUTPUTSELECT
+mid => q.DATAA
+low => q.DATAA
+q[0] <= q.DB_MAX_OUTPUT_PORT_TYPE
+q[1] <= q.DB_MAX_OUTPUT_PORT_TYPE
+q[2] <= <GND>
+q[3] <= <GND>
+q[4] <= <GND>
+q[5] <= <GND>
+q[6] <= <GND>
+q[7] <= <GND>
+q[8] <= <GND>
+q[9] <= <GND>
+q[10] <= <GND>
+q[11] <= <GND>
+q[12] <= <GND>
+q[13] <= <GND>
+q[14] <= <GND>
+q[15] <= <GND>
+q[16] <= <GND>
+q[17] <= <GND>
+q[18] <= <GND>
+q[19] <= <GND>
+q[20] <= <GND>
+q[21] <= <GND>
+q[22] <= <GND>
+q[23] <= <GND>
+q[24] <= <GND>
+q[25] <= <GND>
+q[26] <= <GND>
+q[27] <= <GND>
+q[28] <= <GND>
+q[29] <= <GND>
+q[30] <= <GND>
+q[31] <= <GND>
+
+

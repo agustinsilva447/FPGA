@@ -1,0 +1,7 @@
+|ej4
+input0 => output0.DATAB
+input1 => output0.DATAA
+sel => output0.OUTPUTSELECT
+output0 <= output0.DB_MAX_OUTPUT_PORT_TYPE
+
+
