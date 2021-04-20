@@ -1,0 +1,128 @@
+$comment
+	File created using the following command:
+		vcd file ej12.msim.vcd -direction
+$end
+$date
+	Tue Apr 20 17:19:57 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module ej12_vlg_vec_tst $end
+$var reg 1 ! clk $end
+$var reg 1 " clr $end
+$var reg 1 # d $end
+$var reg 1 $ data $end
+$var reg 1 % load $end
+$var reg 1 & pre $end
+$var wire 1 ' q1 $end
+$var wire 1 ( q2 $end
+$var wire 1 ) q3 $end
+$var wire 1 * q4 $end
+$var wire 1 + q5 $end
+$var wire 1 , q6 $end
+$var wire 1 - q7 $end
+
+$scope module i1 $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var tri1 1 1 devclrn $end
+$var tri1 1 2 devpor $end
+$var tri1 1 3 devoe $end
+$var wire 1 4 q1~output_o $end
+$var wire 1 5 q2~output_o $end
+$var wire 1 6 q3~output_o $end
+$var wire 1 7 q4~output_o $end
+$var wire 1 8 q5~output_o $end
+$var wire 1 9 q6~output_o $end
+$var wire 1 : q7~output_o $end
+$var wire 1 ; clk~input_o $end
+$var wire 1 < clk~inputclkctrl_outclk $end
+$var wire 1 = d~input_o $end
+$var wire 1 > q1~reg0_q $end
+$var wire 1 ? q2~reg0_q $end
+$var wire 1 @ q3~reg0feeder_combout $end
+$var wire 1 A clr~input_o $end
+$var wire 1 B clr~inputclkctrl_outclk $end
+$var wire 1 C q3~reg0_q $end
+$var wire 1 D q4~reg0feeder_combout $end
+$var wire 1 E q4~reg0_q $end
+$var wire 1 F q5~0_combout $end
+$var wire 1 G pre~input_o $end
+$var wire 1 H q5~reg0_q $end
+$var wire 1 I load~input_o $end
+$var wire 1 J data~input_o $end
+$var wire 1 K q6~1_combout $end
+$var wire 1 L q6~3_combout $end
+$var wire 1 M q6~reg0_emulatedfeeder_combout $end
+$var wire 1 N q6~reg0_emulated_q $end
+$var wire 1 O q6~2_combout $end
+$var wire 1 P q7~1_combout $end
+$var wire 1 Q q7~3_combout $end
+$var wire 1 R q7~0_combout $end
+$var wire 1 S q7~reg0_emulated_q $end
+$var wire 1 T q7~2_combout $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+0"
+0#
+0$
+0%
+0&
+0'
+0(
+0)
+0*
+1+
+x,
+x-
+0.
+1/
+x0
+11
+12
+13
+04
+05
+06
+07
+18
+x9
+x:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
+0E
+1F
+0G
+0H
+0I
+0J
+xK
+xL
+xM
+0N
+xO
+xP
+xQ
+0R
+0S
+xT
+$end
+#1000000

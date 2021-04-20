@@ -1,0 +1,32 @@
+|ej12
+d => q7~reg0.DATAIN
+d => q6~reg0.DATAIN
+d => q5~reg0.DATAIN
+d => q4~reg0.DATAIN
+d => q3~reg0.DATAIN
+d => q2~reg0.DATAIN
+d => q1~reg0.DATAIN
+clk => q7~reg0.CLK
+clk => q6~reg0.CLK
+clk => q5~reg0.CLK
+clk => q3~reg0.CLK
+clk => q1~reg0.CLK
+clk => q2~reg0.CLK
+clk => q4~reg0.CLK
+clr => q7~reg0.ACLR
+clr => q3~reg0.ACLR
+clr => q4~reg0.ACLR
+clr => q7.IN0
+pre => q7.IN1
+pre => q5~reg0.PRESET
+load => q6~reg0.ALOAD
+data => q6~reg0.ADATA
+q1 <= q1~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q2 <= q2~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q3 <= q3~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q4 <= q4~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q5 <= q5~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q6 <= q6~reg0.DB_MAX_OUTPUT_PORT_TYPE
+q7 <= q7~reg0.DB_MAX_OUTPUT_PORT_TYPE
+
+

@@ -1,0 +1,10 @@
+|ej13
+d0 => Mux0.IN0
+d1 => Mux0.IN1
+d2 => Mux0.IN2
+d3 => Mux0.IN3
+s[0] => Mux0.IN5
+s[1] => Mux0.IN4
+output0 <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+
+
