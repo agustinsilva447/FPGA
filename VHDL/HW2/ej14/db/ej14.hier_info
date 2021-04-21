@@ -1,11 +1,11 @@
 |ej14
-previous_meal.breakfast => next_meal.lunch.IN0
-previous_meal.lunch => next_meal.dinner.IN0
-previous_meal.dinner => next_meal.IN0
-previous_meal.midnight_snack => next_meal.IN1
-next_meal.breakfast <= next_meal.DB_MAX_OUTPUT_PORT_TYPE
-next_meal.lunch <= next_meal.lunch.DB_MAX_OUTPUT_PORT_TYPE
-next_meal.dinner <= next_meal.dinner.DB_MAX_OUTPUT_PORT_TYPE
-next_meal.midnight_snack <= next_meal.midnight_snack.DB_MAX_OUTPUT_PORT_TYPE
+previous_meal0.breakfast => next_meal0.lunch.IN0
+previous_meal0.lunch => next_meal0.dinner.IN0
+previous_meal0.dinner => next_meal0.IN0
+previous_meal0.midnight_snack => next_meal0.IN1
+next_meal0.breakfast <= next_meal0.DB_MAX_OUTPUT_PORT_TYPE
+next_meal0.lunch <= next_meal0.lunch.DB_MAX_OUTPUT_PORT_TYPE
+next_meal0.dinner <= next_meal0.dinner.DB_MAX_OUTPUT_PORT_TYPE
+next_meal0.midnight_snack <= next_meal0.midnight_snack.DB_MAX_OUTPUT_PORT_TYPE
 
 

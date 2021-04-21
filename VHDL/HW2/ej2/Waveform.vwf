@@ -20,12 +20,13 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
 vlog -work work ej2.vo
 vlog -work work Waveform.vwf.vt
-vsim -novopt -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ej2_vlg_vec_tst
+vsim  -c -t 1ps -L cycloneive_ver -L altera_ver -L altera_mf_ver -L 220model_ver -L sgate_ver -L altera_lnsim_ver work.ej2_vlg_vec_tst
 vcd file -direction ej2.msim.vcd
 vcd add -internal ej2_vlg_vec_tst/*
 vcd add -internal ej2_vlg_vec_tst/i1/*
@@ -38,6 +39,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
 </simulation_settings>*/
@@ -1078,7 +1080,7 @@ TRANSITION_LIST("result[0]")
 DISPLAY_LINE
 {
 	CHANNEL = "op1";
-	EXPAND_STATUS = EXPANDED;
+	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
 	TREE_LEVEL = 0;
@@ -1168,7 +1170,7 @@ DISPLAY_LINE
 DISPLAY_LINE
 {
 	CHANNEL = "op2";
-	EXPAND_STATUS = EXPANDED;
+	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 9;
 	TREE_LEVEL = 0;

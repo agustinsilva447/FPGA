@@ -76,7 +76,7 @@ HEADER
 	GRID_DUTY_CYCLE = 50;
 }
 
-SIGNAL("next_meal.breakfast")
+SIGNAL("next_meal0.breakfast")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -86,7 +86,7 @@ SIGNAL("next_meal.breakfast")
 	PARENT = "";
 }
 
-SIGNAL("next_meal.dinner")
+SIGNAL("next_meal0.dinner")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -96,7 +96,7 @@ SIGNAL("next_meal.dinner")
 	PARENT = "";
 }
 
-SIGNAL("next_meal.lunch")
+SIGNAL("next_meal0.lunch")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -106,7 +106,7 @@ SIGNAL("next_meal.lunch")
 	PARENT = "";
 }
 
-SIGNAL("next_meal.midnight_snack")
+SIGNAL("next_meal0.midnight_snack")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -116,7 +116,7 @@ SIGNAL("next_meal.midnight_snack")
 	PARENT = "";
 }
 
-SIGNAL("previous_meal.breakfast")
+SIGNAL("previous_meal0.breakfast")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -126,7 +126,7 @@ SIGNAL("previous_meal.breakfast")
 	PARENT = "";
 }
 
-SIGNAL("previous_meal.dinner")
+SIGNAL("previous_meal0.dinner")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -136,7 +136,7 @@ SIGNAL("previous_meal.dinner")
 	PARENT = "";
 }
 
-SIGNAL("previous_meal.lunch")
+SIGNAL("previous_meal0.lunch")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -146,7 +146,7 @@ SIGNAL("previous_meal.lunch")
 	PARENT = "";
 }
 
-SIGNAL("previous_meal.midnight_snack")
+SIGNAL("previous_meal0.midnight_snack")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
@@ -156,7 +156,7 @@ SIGNAL("previous_meal.midnight_snack")
 	PARENT = "";
 }
 
-TRANSITION_LIST("next_meal.breakfast")
+TRANSITION_LIST("next_meal0.breakfast")
 {
 	NODE
 	{
@@ -165,7 +165,7 @@ TRANSITION_LIST("next_meal.breakfast")
 	}
 }
 
-TRANSITION_LIST("next_meal.dinner")
+TRANSITION_LIST("next_meal0.dinner")
 {
 	NODE
 	{
@@ -174,7 +174,7 @@ TRANSITION_LIST("next_meal.dinner")
 	}
 }
 
-TRANSITION_LIST("next_meal.lunch")
+TRANSITION_LIST("next_meal0.lunch")
 {
 	NODE
 	{
@@ -183,7 +183,7 @@ TRANSITION_LIST("next_meal.lunch")
 	}
 }
 
-TRANSITION_LIST("next_meal.midnight_snack")
+TRANSITION_LIST("next_meal0.midnight_snack")
 {
 	NODE
 	{
@@ -192,7 +192,7 @@ TRANSITION_LIST("next_meal.midnight_snack")
 	}
 }
 
-TRANSITION_LIST("previous_meal.breakfast")
+TRANSITION_LIST("previous_meal0.breakfast")
 {
 	NODE
 	{
@@ -201,7 +201,7 @@ TRANSITION_LIST("previous_meal.breakfast")
 	}
 }
 
-TRANSITION_LIST("previous_meal.dinner")
+TRANSITION_LIST("previous_meal0.dinner")
 {
 	NODE
 	{
@@ -210,7 +210,7 @@ TRANSITION_LIST("previous_meal.dinner")
 	}
 }
 
-TRANSITION_LIST("previous_meal.lunch")
+TRANSITION_LIST("previous_meal0.lunch")
 {
 	NODE
 	{
@@ -219,7 +219,7 @@ TRANSITION_LIST("previous_meal.lunch")
 	}
 }
 
-TRANSITION_LIST("previous_meal.midnight_snack")
+TRANSITION_LIST("previous_meal0.midnight_snack")
 {
 	NODE
 	{
@@ -230,7 +230,7 @@ TRANSITION_LIST("previous_meal.midnight_snack")
 
 DISPLAY_LINE
 {
-	CHANNEL = "next_meal.breakfast";
+	CHANNEL = "next_meal0.breakfast";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 0;
@@ -239,7 +239,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "next_meal.dinner";
+	CHANNEL = "next_meal0.dinner";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 1;
@@ -248,7 +248,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "next_meal.lunch";
+	CHANNEL = "next_meal0.lunch";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 2;
@@ -257,7 +257,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "next_meal.midnight_snack";
+	CHANNEL = "next_meal0.midnight_snack";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 3;
@@ -266,7 +266,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "previous_meal.breakfast";
+	CHANNEL = "previous_meal0.breakfast";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 4;
@@ -275,7 +275,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "previous_meal.dinner";
+	CHANNEL = "previous_meal0.dinner";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 5;
@@ -284,7 +284,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "previous_meal.lunch";
+	CHANNEL = "previous_meal0.lunch";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 6;
@@ -293,7 +293,7 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "previous_meal.midnight_snack";
+	CHANNEL = "previous_meal0.midnight_snack";
 	EXPAND_STATUS = COLLAPSED;
 	RADIX = Binary;
 	TREE_INDEX = 7;

@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 d/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej14/simulation/qsim
 vej14
-Z1 !s110 1618951211
+Z1 !s110 1619017931
 !i10b 1
-!s100 cXZe4cPH1FN<j@N45LaaS1
+!s100 UGIjGXKUL^B:nC?9dR4DH0
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IBdXPOXVg>X[1eV`3VeBGW0
+IjL?a<KH30=9jhXU28MNOf0
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1618951209
+Z4 w1619017930
 Z5 8ej14.vo
 Z6 Fej14.vo
-!i122 2
+!i122 5
 L0 32 174
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1618951211.000000
+Z8 !s108 1619017931.000000
 !s107 ej14.vo|
 Z9 !s90 -work|work|ej14.vo|
 !i113 1
@@ -43,7 +43,7 @@ R0
 R4
 R5
 R6
-!i122 2
+!i122 5
 L0 207 34
 R7
 r1

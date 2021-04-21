@@ -4,31 +4,31 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "next_meal.breakfast",
+					"name" : "next_meal0.breakfast",
 					"strict" : false
 				},
 				{
-					"name" : "next_meal.lunch",
+					"name" : "next_meal0.lunch",
 					"strict" : false
 				},
 				{
-					"name" : "next_meal.dinner",
+					"name" : "next_meal0.dinner",
 					"strict" : false
 				},
 				{
-					"name" : "previous_meal.dinner",
+					"name" : "previous_meal0.dinner",
 					"strict" : false
 				},
 				{
-					"name" : "previous_meal.midnight_snack",
+					"name" : "previous_meal0.midnight_snack",
 					"strict" : false
 				},
 				{
-					"name" : "previous_meal.breakfast",
+					"name" : "previous_meal0.breakfast",
 					"strict" : false
 				},
 				{
-					"name" : "previous_meal.lunch",
+					"name" : "previous_meal0.lunch",
 					"strict" : false
 				}
 			]

@@ -1,5 +1,5 @@
 Flow report for ej1
-Mon Apr 19 16:49:20 2021
+Wed Apr 21 12:21:13 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon Apr 19 16:49:20 2021       ;
+; Flow Status                        ; Successful - Wed Apr 21 12:21:13 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ej1                                         ;
 ; Top-level Entity Name              ; ej1                                         ;
@@ -114,7 +114,11 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 600 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 590 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 604 MB              ; 00:00:01                           ;
-; Total                ; 00:00:35     ; --                      ; --                  ; 00:01:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 590 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 598 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 590 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 604 MB              ; 00:00:01                           ;
+; Total                ; 00:00:37     ; --                      ; --                  ; 00:01:05                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -127,6 +131,10 @@ https://fpgasoftware.intel.com/eula.
 ; Fitter               ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; Assembler            ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; Timing Analyzer      ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
@@ -157,6 +165,10 @@ quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_setting
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej1/simulation/qsim/ ej1 -c ej1
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ej1 -c ej1 --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej1/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej1/simulation/qsim/Waveform.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej1/simulation/qsim/ ej1 -c ej1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ej1 -c ej1 --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej1/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej1/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej1/simulation/qsim/ ej1 -c ej1
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ej1 -c ej1 --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej1/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej1/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej1/simulation/qsim/ ej1 -c ej1
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ej1 -c ej1 --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej1/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej1/simulation/qsim/Waveform.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=off --flatten_buses=off --timescale=1ps --tool=modelsim_oem --format=verilog --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej1/simulation/qsim/ ej1 -c ej1
 

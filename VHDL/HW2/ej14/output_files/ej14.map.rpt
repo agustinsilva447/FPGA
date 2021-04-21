@@ -1,5 +1,5 @@
 Analysis & Synthesis report for ej14
-Tue Apr 20 17:32:38 2021
+Wed Apr 21 12:11:12 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -43,7 +43,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Apr 20 17:32:38 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed Apr 21 12:11:12 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ej14                                        ;
 ; Top-level Entity Name              ; ej14                                        ;
@@ -171,36 +171,36 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------+-----------------+-----------------+---------------------------------------------------------------------+---------+
 
 
-+-----------------------------------------------------------+
-; Analysis & Synthesis Resource Usage Summary               ;
-+---------------------------------------------+-------------+
-; Resource                                    ; Usage       ;
-+---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 1           ;
-;                                             ;             ;
-; Total combinational functions               ; 1           ;
-; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 0           ;
-;     -- 3 input functions                    ; 0           ;
-;     -- <=2 input functions                  ; 1           ;
-;                                             ;             ;
-; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 1           ;
-;     -- arithmetic mode                      ; 0           ;
-;                                             ;             ;
-; Total registers                             ; 0           ;
-;     -- Dedicated logic registers            ; 0           ;
-;     -- I/O registers                        ; 0           ;
-;                                             ;             ;
-; I/O pins                                    ; 8           ;
-;                                             ;             ;
-; Embedded Multiplier 9-bit elements          ; 0           ;
-;                                             ;             ;
-; Maximum fan-out node                        ; next_meal~0 ;
-; Maximum fan-out                             ; 1           ;
-; Total fan-out                               ; 13          ;
-; Average fan-out                             ; 0.76        ;
-+---------------------------------------------+-------------+
++------------------------------------------------------------+
+; Analysis & Synthesis Resource Usage Summary                ;
++---------------------------------------------+--------------+
+; Resource                                    ; Usage        ;
++---------------------------------------------+--------------+
+; Estimated Total logic elements              ; 1            ;
+;                                             ;              ;
+; Total combinational functions               ; 1            ;
+; Logic element usage by number of LUT inputs ;              ;
+;     -- 4 input functions                    ; 0            ;
+;     -- 3 input functions                    ; 0            ;
+;     -- <=2 input functions                  ; 1            ;
+;                                             ;              ;
+; Logic elements by mode                      ;              ;
+;     -- normal mode                          ; 1            ;
+;     -- arithmetic mode                      ; 0            ;
+;                                             ;              ;
+; Total registers                             ; 0            ;
+;     -- Dedicated logic registers            ; 0            ;
+;     -- I/O registers                        ; 0            ;
+;                                             ;              ;
+; I/O pins                                    ; 8            ;
+;                                             ;              ;
+; Embedded Multiplier 9-bit elements          ; 0            ;
+;                                             ;              ;
+; Maximum fan-out node                        ; next_meal0~0 ;
+; Maximum fan-out                             ; 1            ;
+; Total fan-out                               ; 13           ;
+; Average fan-out                             ; 0.76         ;
++---------------------------------------------+--------------+
 
 
 +----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------+
@@ -259,7 +259,7 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Apr 20 17:32:21 2021
+    Info: Processing started: Wed Apr 21 12:10:55 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off ej14 -c ej14
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -269,7 +269,7 @@ Info (12021): Found 3 design units, including 1 entities, in source file ej14.vh
     Info (12023): Found entity 1: ej14 File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej14/ej14.vhd Line: 7
 Info (12127): Elaborating entity "ej14" for the top level hierarchy
 Warning (13024): Output pins are stuck at VCC or GND
-    Warning (13410): Pin "next_meal.midnight_snack" is stuck at GND File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej14/ej14.vhd Line: 11
+    Warning (13410): Pin "next_meal0.midnight_snack" is stuck at GND File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej14/ej14.vhd Line: 11
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
@@ -278,8 +278,8 @@ Info (21057): Implemented 9 device resources after synthesis - the final resourc
     Info (21059): Implemented 4 output pins
     Info (21061): Implemented 1 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 3 warnings
-    Info: Peak virtual memory: 422 megabytes
-    Info: Processing ended: Tue Apr 20 17:32:38 2021
+    Info: Peak virtual memory: 421 megabytes
+    Info: Processing ended: Wed Apr 21 12:11:12 2021
     Info: Elapsed time: 00:00:17
     Info: Total CPU time (on all processors): 00:00:38
 
