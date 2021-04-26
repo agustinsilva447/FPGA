@@ -17,10 +17,8 @@ architecture a of ej11 is
 begin
 	reg12a : lpm_ff
 		generic map (lpm_width => 12)
-		port map (data => d(11 downto 0), clock => clk,
-		q => q(11 downto 0));
+		port map (data => d(11 downto 0), clock => clk,	q => q(11 downto 0));
 	reg12b : lpm_ff
 		generic map (lpm_width => 12)
-		port map (data => d(23 downto 12), clock => clk,
-		q => q(23 downto 12));
+		port map (data => d(23 downto 12), clock => clk, q => q(23 downto 12));
 end a;
