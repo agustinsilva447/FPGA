@@ -3,7 +3,7 @@ $comment
 		vcd file ej8.msim.vcd -direction
 $end
 $date
-	Tue Apr 20 12:41:40 2021
+	Mon Apr 26 18:23:56 2021
 $end
 $version
 	ModelSim Version 2020.1
@@ -12,226 +12,124 @@ $timescale
 	1ps
 $end
 
-$scope module ej8_vhd_vec_tst $end
-$var wire 1 ! address [7] $end
-$var wire 1 " address [6] $end
-$var wire 1 # address [5] $end
-$var wire 1 $ address [4] $end
-$var wire 1 % address [3] $end
-$var wire 1 & address [2] $end
-$var wire 1 ' address [1] $end
-$var wire 1 ( address [0] $end
-$var wire 1 ) data [7] $end
-$var wire 1 * data [6] $end
-$var wire 1 + data [5] $end
-$var wire 1 , data [4] $end
-$var wire 1 - data [3] $end
-$var wire 1 . data [2] $end
-$var wire 1 / data [1] $end
-$var wire 1 0 data [0] $end
-$var wire 1 1 inclock $end
-$var wire 1 2 outclock $end
-$var wire 1 3 q [7] $end
-$var wire 1 4 q [6] $end
-$var wire 1 5 q [5] $end
-$var wire 1 6 q [4] $end
-$var wire 1 7 q [3] $end
-$var wire 1 8 q [2] $end
-$var wire 1 9 q [1] $end
-$var wire 1 : q [0] $end
-$var wire 1 ; we $end
+$scope module ej8_vlg_vec_tst $end
+$var reg 8 ! address [7:0] $end
+$var reg 8 " data [7:0] $end
+$var reg 1 # inclock $end
+$var reg 1 $ outclock $end
+$var reg 1 % we $end
+$var wire 1 & q [7] $end
+$var wire 1 ' q [6] $end
+$var wire 1 ( q [5] $end
+$var wire 1 ) q [4] $end
+$var wire 1 * q [3] $end
+$var wire 1 + q [2] $end
+$var wire 1 , q [1] $end
+$var wire 1 - q [0] $end
 
 $scope module i1 $end
-$var wire 1 < gnd $end
-$var wire 1 = vcc $end
-$var wire 1 > unknown $end
-$var wire 1 ? devoe $end
-$var wire 1 @ devclrn $end
-$var wire 1 A devpor $end
-$var wire 1 B ww_devoe $end
-$var wire 1 C ww_devclrn $end
-$var wire 1 D ww_devpor $end
-$var wire 1 E ww_data [7] $end
-$var wire 1 F ww_data [6] $end
-$var wire 1 G ww_data [5] $end
-$var wire 1 H ww_data [4] $end
-$var wire 1 I ww_data [3] $end
-$var wire 1 J ww_data [2] $end
-$var wire 1 K ww_data [1] $end
-$var wire 1 L ww_data [0] $end
-$var wire 1 M ww_address [7] $end
-$var wire 1 N ww_address [6] $end
-$var wire 1 O ww_address [5] $end
-$var wire 1 P ww_address [4] $end
-$var wire 1 Q ww_address [3] $end
-$var wire 1 R ww_address [2] $end
-$var wire 1 S ww_address [1] $end
-$var wire 1 T ww_address [0] $end
-$var wire 1 U ww_we $end
-$var wire 1 V ww_inclock $end
-$var wire 1 W ww_outclock $end
-$var wire 1 X ww_q [7] $end
-$var wire 1 Y ww_q [6] $end
-$var wire 1 Z ww_q [5] $end
-$var wire 1 [ ww_q [4] $end
-$var wire 1 \ ww_q [3] $end
-$var wire 1 ] ww_q [2] $end
-$var wire 1 ^ ww_q [1] $end
-$var wire 1 _ ww_q [0] $end
-$var wire 1 ` \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [17] $end
-$var wire 1 a \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [16] $end
-$var wire 1 b \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [15] $end
-$var wire 1 c \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [14] $end
-$var wire 1 d \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [13] $end
-$var wire 1 e \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [12] $end
-$var wire 1 f \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [11] $end
-$var wire 1 g \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [10] $end
-$var wire 1 h \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [9] $end
-$var wire 1 i \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [8] $end
-$var wire 1 j \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [7] $end
-$var wire 1 k \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [6] $end
-$var wire 1 l \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [5] $end
-$var wire 1 m \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [4] $end
-$var wire 1 n \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [3] $end
-$var wire 1 o \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [2] $end
-$var wire 1 p \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [1] $end
-$var wire 1 q \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAIN_bus\ [0] $end
-$var wire 1 r \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTAADDR_bus\ [7] $end
-$var wire 1 s \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTAADDR_bus\ [6] $end
-$var wire 1 t \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTAADDR_bus\ [5] $end
-$var wire 1 u \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTAADDR_bus\ [4] $end
-$var wire 1 v \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTAADDR_bus\ [3] $end
-$var wire 1 w \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTAADDR_bus\ [2] $end
-$var wire 1 x \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTAADDR_bus\ [1] $end
-$var wire 1 y \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTAADDR_bus\ [0] $end
-$var wire 1 z \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [17] $end
-$var wire 1 { \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [16] $end
-$var wire 1 | \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [15] $end
-$var wire 1 } \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [14] $end
-$var wire 1 ~ \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [13] $end
-$var wire 1 !! \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [12] $end
-$var wire 1 "! \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [11] $end
-$var wire 1 #! \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [10] $end
-$var wire 1 $! \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [9] $end
-$var wire 1 %! \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [8] $end
-$var wire 1 &! \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [7] $end
-$var wire 1 '! \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [6] $end
-$var wire 1 (! \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [5] $end
-$var wire 1 )! \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [4] $end
-$var wire 1 *! \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [3] $end
-$var wire 1 +! \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [2] $end
-$var wire 1 ,! \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [1] $end
-$var wire 1 -! \inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus\ [0] $end
-$var wire 1 .! \outclock~inputclkctrl_INCLK_bus\ [3] $end
-$var wire 1 /! \outclock~inputclkctrl_INCLK_bus\ [2] $end
-$var wire 1 0! \outclock~inputclkctrl_INCLK_bus\ [1] $end
-$var wire 1 1! \outclock~inputclkctrl_INCLK_bus\ [0] $end
-$var wire 1 2! \inclock~inputclkctrl_INCLK_bus\ [3] $end
-$var wire 1 3! \inclock~inputclkctrl_INCLK_bus\ [2] $end
-$var wire 1 4! \inclock~inputclkctrl_INCLK_bus\ [1] $end
-$var wire 1 5! \inclock~inputclkctrl_INCLK_bus\ [0] $end
-$var wire 1 6! \q[0]~output_o\ $end
-$var wire 1 7! \q[1]~output_o\ $end
-$var wire 1 8! \q[2]~output_o\ $end
-$var wire 1 9! \q[3]~output_o\ $end
-$var wire 1 :! \q[4]~output_o\ $end
-$var wire 1 ;! \q[5]~output_o\ $end
-$var wire 1 <! \q[6]~output_o\ $end
-$var wire 1 =! \q[7]~output_o\ $end
-$var wire 1 >! \we~input_o\ $end
-$var wire 1 ?! \inclock~input_o\ $end
-$var wire 1 @! \inclock~inputclkctrl_outclk\ $end
-$var wire 1 A! \outclock~input_o\ $end
-$var wire 1 B! \outclock~inputclkctrl_outclk\ $end
-$var wire 1 C! \data[0]~input_o\ $end
-$var wire 1 D! \address[0]~input_o\ $end
-$var wire 1 E! \address[1]~input_o\ $end
-$var wire 1 F! \address[2]~input_o\ $end
-$var wire 1 G! \address[3]~input_o\ $end
-$var wire 1 H! \address[4]~input_o\ $end
-$var wire 1 I! \address[5]~input_o\ $end
-$var wire 1 J! \address[6]~input_o\ $end
-$var wire 1 K! \address[7]~input_o\ $end
-$var wire 1 L! \data[1]~input_o\ $end
-$var wire 1 M! \data[2]~input_o\ $end
-$var wire 1 N! \data[3]~input_o\ $end
-$var wire 1 O! \data[4]~input_o\ $end
-$var wire 1 P! \data[5]~input_o\ $end
-$var wire 1 Q! \data[6]~input_o\ $end
-$var wire 1 R! \data[7]~input_o\ $end
-$var wire 1 S! \inst_1|sram|ram_block|auto_generated|q_a\ [7] $end
-$var wire 1 T! \inst_1|sram|ram_block|auto_generated|q_a\ [6] $end
-$var wire 1 U! \inst_1|sram|ram_block|auto_generated|q_a\ [5] $end
-$var wire 1 V! \inst_1|sram|ram_block|auto_generated|q_a\ [4] $end
-$var wire 1 W! \inst_1|sram|ram_block|auto_generated|q_a\ [3] $end
-$var wire 1 X! \inst_1|sram|ram_block|auto_generated|q_a\ [2] $end
-$var wire 1 Y! \inst_1|sram|ram_block|auto_generated|q_a\ [1] $end
-$var wire 1 Z! \inst_1|sram|ram_block|auto_generated|q_a\ [0] $end
+$var wire 1 . gnd $end
+$var wire 1 / vcc $end
+$var wire 1 0 unknown $end
+$var tri1 1 1 devclrn $end
+$var tri1 1 2 devpor $end
+$var tri1 1 3 devoe $end
+$var wire 1 4 q[0]~output_o $end
+$var wire 1 5 q[1]~output_o $end
+$var wire 1 6 q[2]~output_o $end
+$var wire 1 7 q[3]~output_o $end
+$var wire 1 8 q[4]~output_o $end
+$var wire 1 9 q[5]~output_o $end
+$var wire 1 : q[6]~output_o $end
+$var wire 1 ; q[7]~output_o $end
+$var wire 1 < we~input_o $end
+$var wire 1 = inclock~input_o $end
+$var wire 1 > inclock~inputclkctrl_outclk $end
+$var wire 1 ? outclock~input_o $end
+$var wire 1 @ outclock~inputclkctrl_outclk $end
+$var wire 1 A data[0]~input_o $end
+$var wire 1 B address[0]~input_o $end
+$var wire 1 C address[1]~input_o $end
+$var wire 1 D address[2]~input_o $end
+$var wire 1 E address[3]~input_o $end
+$var wire 1 F address[4]~input_o $end
+$var wire 1 G address[5]~input_o $end
+$var wire 1 H address[6]~input_o $end
+$var wire 1 I address[7]~input_o $end
+$var wire 1 J data[1]~input_o $end
+$var wire 1 K data[2]~input_o $end
+$var wire 1 L data[3]~input_o $end
+$var wire 1 M data[4]~input_o $end
+$var wire 1 N data[5]~input_o $end
+$var wire 1 O data[6]~input_o $end
+$var wire 1 P data[7]~input_o $end
+$var wire 1 Q inst_1|sram|ram_block|auto_generated|q_a [7] $end
+$var wire 1 R inst_1|sram|ram_block|auto_generated|q_a [6] $end
+$var wire 1 S inst_1|sram|ram_block|auto_generated|q_a [5] $end
+$var wire 1 T inst_1|sram|ram_block|auto_generated|q_a [4] $end
+$var wire 1 U inst_1|sram|ram_block|auto_generated|q_a [3] $end
+$var wire 1 V inst_1|sram|ram_block|auto_generated|q_a [2] $end
+$var wire 1 W inst_1|sram|ram_block|auto_generated|q_a [1] $end
+$var wire 1 X inst_1|sram|ram_block|auto_generated|q_a [0] $end
+$var wire 1 Y inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [17] $end
+$var wire 1 Z inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [16] $end
+$var wire 1 [ inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [15] $end
+$var wire 1 \ inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [14] $end
+$var wire 1 ] inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [13] $end
+$var wire 1 ^ inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [12] $end
+$var wire 1 _ inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [11] $end
+$var wire 1 ` inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [10] $end
+$var wire 1 a inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [9] $end
+$var wire 1 b inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [8] $end
+$var wire 1 c inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [7] $end
+$var wire 1 d inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [6] $end
+$var wire 1 e inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [5] $end
+$var wire 1 f inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [4] $end
+$var wire 1 g inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [3] $end
+$var wire 1 h inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [2] $end
+$var wire 1 i inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [1] $end
+$var wire 1 j inst_1|sram|ram_block|auto_generated|ram_block1a0_PORTADATAOUT_bus [0] $end
 $upscope $end
 $upscope $end
 $enddefinitions $end
 #0
 $dumpvars
-01
-02
-0;
-0<
-1=
-x>
-1?
-1@
-1A
-1B
-1C
-1D
-0U
-0V
-0W
-06!
-07!
-08!
-09!
-0:!
-0;!
-0<!
-0=!
-0>!
-0?!
-0@!
-0A!
-0B!
-0C!
-0D!
-0E!
-0F!
-0G!
-0H!
-0I!
-0J!
-0K!
-0L!
-0M!
-0N!
-0O!
-0P!
-0Q!
-0R!
-0!
-0"
+b0 !
+b0 "
 0#
 0$
 0%
-0&
-0'
-0(
-0)
-0*
-0+
-0,
 0-
+0,
+0+
+0*
+0)
+0(
+0'
+0&
 0.
-0/
-00
+1/
+x0
+11
+12
+13
+04
+05
+06
+07
+08
+09
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0B
+0C
+0D
 0E
 0F
 0G
@@ -244,85 +142,3284 @@ x>
 0N
 0O
 0P
-0Q
-0R
-0S
-0T
 0X
-0Y
-0Z
-0[
-0\
-0]
-0^
-0_
-0z
-0{
-0|
-0}
-0~
-0!!
-0"!
-0#!
-0$!
-0%!
-0&!
-0'!
-0(!
-0)!
-0*!
-0+!
-0,!
-0-!
-0S!
-0T!
-0U!
-0V!
-0W!
-0X!
-0Y!
-0Z!
-12!
-13!
-14!
-05!
-1.!
-1/!
-10!
-01!
-03
-04
-05
-06
-07
-08
-09
-0:
-0`
-0a
-0b
-0c
-0d
-0e
-0f
-0g
-0h
-0i
+0W
+0V
+0U
+0T
+0S
+0R
+0Q
 0j
-0k
-0l
-0m
-0n
-0o
-0p
-0q
-0r
-0s
-0t
-0u
-0v
-0w
-0x
-0y
+0i
+0h
+0g
+0f
+0e
+0d
+0c
+0b
+0a
+0`
+0_
+0^
+0]
+0\
+0[
+0Z
+0Y
 $end
+#25000
+1$
+1?
+1@
+#50000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#75000
+1$
+1?
+1@
+#100000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#125000
+1$
+1?
+1@
+#150000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#175000
+1$
+1?
+1@
+#200000
+b1 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#225000
+1$
+1?
+1@
+#250000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#275000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#300000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#325000
+1$
+1?
+1@
+#350000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#375000
+1$
+1?
+1@
+#400000
+b1 !
+b11 "
+b10 "
+0#
+0%
+0$
+0A
+1J
+1B
+0=
+0<
+0?
+0@
+0>
+#425000
+1$
+1?
+1@
+#450000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#475000
+1$
+1?
+1@
+0j
+1i
+0X
+1W
+15
+04
+0-
+1,
+#500000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#525000
+1$
+1?
+1@
+#550000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#575000
+1$
+1?
+1@
+#600000
+b11 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#625000
+1$
+1?
+1@
+#650000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#675000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#700000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#725000
+1$
+1?
+1@
+#750000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#775000
+1$
+1?
+1@
+#800000
+b11 !
+b111 "
+b10 !
+b101 "
+b100 "
+0#
+0%
+0$
+0A
+0J
+1K
+0B
+1C
+0=
+0<
+0?
+0@
+0>
+#825000
+1$
+1?
+1@
+#850000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#875000
+1$
+1?
+1@
+0j
+0i
+1h
+0X
+0W
+1V
+16
+05
+04
+0-
+0,
+1+
+#900000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#925000
+1$
+1?
+1@
+#950000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#975000
+1$
+1?
+1@
 #1000000
+b101 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#1025000
+1$
+1?
+1@
+#1050000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#1075000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#1100000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#1125000
+1$
+1?
+1@
+#1150000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#1175000
+1$
+1?
+1@
+#1200000
+b11 !
+b111 "
+b110 "
+0#
+0%
+0$
+0A
+1J
+1B
+0=
+0<
+0?
+0@
+0>
+#1225000
+1$
+1?
+1@
+#1250000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#1275000
+1$
+1?
+1@
+0j
+1i
+0X
+1W
+15
+04
+0-
+1,
+#1300000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#1325000
+1$
+1?
+1@
+#1350000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#1375000
+1$
+1?
+1@
+#1400000
+b111 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#1425000
+1$
+1?
+1@
+#1450000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#1475000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#1500000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#1525000
+1$
+1?
+1@
+#1550000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#1575000
+1$
+1?
+1@
+#1600000
+b111 !
+b1111 "
+b101 !
+b1011 "
+b100 !
+b1001 "
+b1000 "
+0#
+0%
+0$
+0A
+0J
+0K
+1L
+0B
+0C
+1D
+0=
+0<
+0?
+0@
+0>
+#1625000
+1$
+1?
+1@
+#1650000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#1675000
+1$
+1?
+1@
+0j
+0i
+0h
+1g
+0X
+0W
+0V
+1U
+17
+06
+05
+04
+0-
+0,
+0+
+1*
+#1700000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#1725000
+1$
+1?
+1@
+#1750000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#1775000
+1$
+1?
+1@
+#1800000
+b1001 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#1825000
+1$
+1?
+1@
+#1850000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#1875000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#1900000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#1925000
+1$
+1?
+1@
+#1950000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#1975000
+1$
+1?
+1@
+#2000000
+b101 !
+b1011 "
+b1010 "
+0#
+0%
+0$
+0A
+1J
+1B
+0=
+0<
+0?
+0@
+0>
+#2025000
+1$
+1?
+1@
+#2050000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#2075000
+1$
+1?
+1@
+0j
+1i
+0X
+1W
+15
+04
+0-
+1,
+#2100000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#2125000
+1$
+1?
+1@
+#2150000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#2175000
+1$
+1?
+1@
+#2200000
+b1011 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#2225000
+1$
+1?
+1@
+#2250000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#2275000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#2300000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#2325000
+1$
+1?
+1@
+#2350000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#2375000
+1$
+1?
+1@
+#2400000
+b111 !
+b1111 "
+b110 !
+b1101 "
+b1100 "
+0#
+0%
+0$
+0A
+0J
+1K
+0B
+1C
+0=
+0<
+0?
+0@
+0>
+#2425000
+1$
+1?
+1@
+#2450000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#2475000
+1$
+1?
+1@
+0j
+0i
+1h
+0X
+0W
+1V
+16
+05
+04
+0-
+0,
+1+
+#2500000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#2525000
+1$
+1?
+1@
+#2550000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#2575000
+1$
+1?
+1@
+#2600000
+b1101 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#2625000
+1$
+1?
+1@
+#2650000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#2675000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#2700000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#2725000
+1$
+1?
+1@
+#2750000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#2775000
+1$
+1?
+1@
+#2800000
+b111 !
+b1111 "
+b1110 "
+0#
+0%
+0$
+0A
+1J
+1B
+0=
+0<
+0?
+0@
+0>
+#2825000
+1$
+1?
+1@
+#2850000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#2875000
+1$
+1?
+1@
+0j
+1i
+0X
+1W
+15
+04
+0-
+1,
+#2900000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#2925000
+1$
+1?
+1@
+#2950000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#2975000
+1$
+1?
+1@
+#3000000
+b1111 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#3025000
+1$
+1?
+1@
+#3050000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#3075000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#3100000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#3125000
+1$
+1?
+1@
+#3150000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#3175000
+1$
+1?
+1@
+#3200000
+b1111 !
+b11111 "
+b1011 !
+b10111 "
+b1001 !
+b10011 "
+b1000 !
+b10001 "
+b10000 "
+0#
+0%
+0$
+0A
+0J
+0K
+0L
+1M
+0B
+0C
+0D
+1E
+0=
+0<
+0?
+0@
+0>
+#3225000
+1$
+1?
+1@
+#3250000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#3275000
+1$
+1?
+1@
+0j
+0i
+0h
+0g
+1f
+0X
+0W
+0V
+0U
+1T
+18
+07
+06
+05
+04
+0-
+0,
+0+
+0*
+1)
+#3300000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#3325000
+1$
+1?
+1@
+#3350000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#3375000
+1$
+1?
+1@
+#3400000
+b10001 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#3425000
+1$
+1?
+1@
+#3450000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#3475000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#3500000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#3525000
+1$
+1?
+1@
+#3550000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#3575000
+1$
+1?
+1@
+#3600000
+b1001 !
+b10011 "
+b10010 "
+0#
+0%
+0$
+0A
+1J
+1B
+0=
+0<
+0?
+0@
+0>
+#3625000
+1$
+1?
+1@
+#3650000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#3675000
+1$
+1?
+1@
+0j
+1i
+0X
+1W
+15
+04
+0-
+1,
+#3700000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#3725000
+1$
+1?
+1@
+#3750000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#3775000
+1$
+1?
+1@
+#3800000
+b10011 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#3825000
+1$
+1?
+1@
+#3850000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#3875000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#3900000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#3925000
+1$
+1?
+1@
+#3950000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#3975000
+1$
+1?
+1@
+#4000000
+b1011 !
+b10111 "
+b1010 !
+b10101 "
+b10100 "
+0#
+0%
+0$
+0A
+0J
+1K
+0B
+1C
+0=
+0<
+0?
+0@
+0>
+#4025000
+1$
+1?
+1@
+#4050000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#4075000
+1$
+1?
+1@
+0j
+0i
+1h
+0X
+0W
+1V
+16
+05
+04
+0-
+0,
+1+
+#4100000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#4125000
+1$
+1?
+1@
+#4150000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#4175000
+1$
+1?
+1@
+#4200000
+b10101 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#4225000
+1$
+1?
+1@
+#4250000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#4275000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#4300000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#4325000
+1$
+1?
+1@
+#4350000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#4375000
+1$
+1?
+1@
+#4400000
+b1011 !
+b10111 "
+b10110 "
+0#
+0%
+0$
+0A
+1J
+1B
+0=
+0<
+0?
+0@
+0>
+#4425000
+1$
+1?
+1@
+#4450000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#4475000
+1$
+1?
+1@
+0j
+1i
+0X
+1W
+15
+04
+0-
+1,
+#4500000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#4525000
+1$
+1?
+1@
+#4550000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#4575000
+1$
+1?
+1@
+#4600000
+b10111 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#4625000
+1$
+1?
+1@
+#4650000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#4675000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#4700000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#4725000
+1$
+1?
+1@
+#4750000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#4775000
+1$
+1?
+1@
+#4800000
+b1111 !
+b11111 "
+b1101 !
+b11011 "
+b1100 !
+b11001 "
+b11000 "
+0#
+0%
+0$
+0A
+0J
+0K
+1L
+0B
+0C
+1D
+0=
+0<
+0?
+0@
+0>
+#4825000
+1$
+1?
+1@
+#4850000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#4875000
+1$
+1?
+1@
+0j
+0i
+0h
+1g
+0X
+0W
+0V
+1U
+17
+06
+05
+04
+0-
+0,
+0+
+1*
+#4900000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#4925000
+1$
+1?
+1@
+#4950000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#4975000
+1$
+1?
+1@
+#5000000
+b11001 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#5025000
+1$
+1?
+1@
+#5050000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#5075000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#5100000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#5125000
+1$
+1?
+1@
+#5150000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#5175000
+1$
+1?
+1@
+#5200000
+b1101 !
+b11011 "
+b11010 "
+0#
+0%
+0$
+0A
+1J
+1B
+0=
+0<
+0?
+0@
+0>
+#5225000
+1$
+1?
+1@
+#5250000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#5275000
+1$
+1?
+1@
+0j
+1i
+0X
+1W
+15
+04
+0-
+1,
+#5300000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#5325000
+1$
+1?
+1@
+#5350000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#5375000
+1$
+1?
+1@
+#5400000
+b11011 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#5425000
+1$
+1?
+1@
+#5450000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#5475000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#5500000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#5525000
+1$
+1?
+1@
+#5550000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#5575000
+1$
+1?
+1@
+#5600000
+b1111 !
+b11111 "
+b1110 !
+b11101 "
+b11100 "
+0#
+0%
+0$
+0A
+0J
+1K
+0B
+1C
+0=
+0<
+0?
+0@
+0>
+#5625000
+1$
+1?
+1@
+#5650000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#5675000
+1$
+1?
+1@
+0j
+0i
+1h
+0X
+0W
+1V
+16
+05
+04
+0-
+0,
+1+
+#5700000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#5725000
+1$
+1?
+1@
+#5750000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#5775000
+1$
+1?
+1@
+#5800000
+b11101 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#5825000
+1$
+1?
+1@
+#5850000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#5875000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#5900000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#5925000
+1$
+1?
+1@
+#5950000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#5975000
+1$
+1?
+1@
+#6000000
+b1111 !
+b11111 "
+b11110 "
+0#
+0%
+0$
+0A
+1J
+1B
+0=
+0<
+0?
+0@
+0>
+#6025000
+1$
+1?
+1@
+#6050000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#6075000
+1$
+1?
+1@
+0j
+1i
+0X
+1W
+15
+04
+0-
+1,
+#6100000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#6125000
+1$
+1?
+1@
+#6150000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#6175000
+1$
+1?
+1@
+#6200000
+b11111 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#6225000
+1$
+1?
+1@
+#6250000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#6275000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#6300000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#6325000
+1$
+1?
+1@
+#6350000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#6375000
+1$
+1?
+1@
+#6400000
+b11111 !
+b111111 "
+b10111 !
+b101111 "
+b10011 !
+b100111 "
+b10001 !
+b100011 "
+b10000 !
+b100001 "
+b100000 "
+0#
+0%
+0$
+0A
+0J
+0K
+0L
+0M
+1N
+0B
+0C
+0D
+0E
+1F
+0=
+0<
+0?
+0@
+0>
+#6425000
+1$
+1?
+1@
+#6450000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#6475000
+1$
+1?
+1@
+0j
+0i
+0h
+0g
+0f
+1e
+0X
+0W
+0V
+0U
+0T
+1S
+19
+08
+07
+06
+05
+04
+0-
+0,
+0+
+0*
+0)
+1(
+#6500000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#6525000
+1$
+1?
+1@
+#6550000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#6575000
+1$
+1?
+1@
+#6600000
+b100001 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#6625000
+1$
+1?
+1@
+#6650000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#6675000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#6700000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#6725000
+1$
+1?
+1@
+#6750000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#6775000
+1$
+1?
+1@
+#6800000
+b10001 !
+b100011 "
+b100010 "
+0#
+0%
+0$
+0A
+1J
+1B
+0=
+0<
+0?
+0@
+0>
+#6825000
+1$
+1?
+1@
+#6850000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#6875000
+1$
+1?
+1@
+0j
+1i
+0X
+1W
+15
+04
+0-
+1,
+#6900000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#6925000
+1$
+1?
+1@
+#6950000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#6975000
+1$
+1?
+1@
+#7000000
+b100011 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#7025000
+1$
+1?
+1@
+#7050000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#7075000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#7100000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#7125000
+1$
+1?
+1@
+#7150000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#7175000
+1$
+1?
+1@
+#7200000
+b10011 !
+b100111 "
+b10010 !
+b100101 "
+b100100 "
+0#
+0%
+0$
+0A
+0J
+1K
+0B
+1C
+0=
+0<
+0?
+0@
+0>
+#7225000
+1$
+1?
+1@
+#7250000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#7275000
+1$
+1?
+1@
+0j
+0i
+1h
+0X
+0W
+1V
+16
+05
+04
+0-
+0,
+1+
+#7300000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#7325000
+1$
+1?
+1@
+#7350000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#7375000
+1$
+1?
+1@
+#7400000
+b100101 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#7425000
+1$
+1?
+1@
+#7450000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#7475000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#7500000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#7525000
+1$
+1?
+1@
+#7550000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#7575000
+1$
+1?
+1@
+#7600000
+b10011 !
+b100111 "
+b100110 "
+0#
+0%
+0$
+0A
+1J
+1B
+0=
+0<
+0?
+0@
+0>
+#7625000
+1$
+1?
+1@
+#7650000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#7675000
+1$
+1?
+1@
+0j
+1i
+0X
+1W
+15
+04
+0-
+1,
+#7700000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#7725000
+1$
+1?
+1@
+#7750000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#7775000
+1$
+1?
+1@
+#7800000
+b100111 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#7825000
+1$
+1?
+1@
+#7850000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#7875000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#7900000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#7925000
+1$
+1?
+1@
+#7950000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#7975000
+1$
+1?
+1@
+#8000000
+b10111 !
+b101111 "
+b10101 !
+b101011 "
+b10100 !
+b101001 "
+b101000 "
+0#
+0%
+0$
+0A
+0J
+0K
+1L
+0B
+0C
+1D
+0=
+0<
+0?
+0@
+0>
+#8025000
+1$
+1?
+1@
+#8050000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#8075000
+1$
+1?
+1@
+0j
+0i
+0h
+1g
+0X
+0W
+0V
+1U
+17
+06
+05
+04
+0-
+0,
+0+
+1*
+#8100000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#8125000
+1$
+1?
+1@
+#8150000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#8175000
+1$
+1?
+1@
+#8200000
+b101001 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#8225000
+1$
+1?
+1@
+#8250000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#8275000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#8300000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#8325000
+1$
+1?
+1@
+#8350000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#8375000
+1$
+1?
+1@
+#8400000
+b10101 !
+b101011 "
+b101010 "
+0#
+0%
+0$
+0A
+1J
+1B
+0=
+0<
+0?
+0@
+0>
+#8425000
+1$
+1?
+1@
+#8450000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#8475000
+1$
+1?
+1@
+0j
+1i
+0X
+1W
+15
+04
+0-
+1,
+#8500000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#8525000
+1$
+1?
+1@
+#8550000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#8575000
+1$
+1?
+1@
+#8600000
+b101011 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#8625000
+1$
+1?
+1@
+#8650000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#8675000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#8700000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#8725000
+1$
+1?
+1@
+#8750000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#8775000
+1$
+1?
+1@
+#8800000
+b10111 !
+b101111 "
+b10110 !
+b101101 "
+b101100 "
+0#
+0%
+0$
+0A
+0J
+1K
+0B
+1C
+0=
+0<
+0?
+0@
+0>
+#8825000
+1$
+1?
+1@
+#8850000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#8875000
+1$
+1?
+1@
+0j
+0i
+1h
+0X
+0W
+1V
+16
+05
+04
+0-
+0,
+1+
+#8900000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#8925000
+1$
+1?
+1@
+#8950000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#8975000
+1$
+1?
+1@
+#9000000
+b101101 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#9025000
+1$
+1?
+1@
+#9050000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#9075000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#9100000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#9125000
+1$
+1?
+1@
+#9150000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#9175000
+1$
+1?
+1@
+#9200000
+b10111 !
+b101111 "
+b101110 "
+0#
+0%
+0$
+0A
+1J
+1B
+0=
+0<
+0?
+0@
+0>
+#9225000
+1$
+1?
+1@
+#9250000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#9275000
+1$
+1?
+1@
+0j
+1i
+0X
+1W
+15
+04
+0-
+1,
+#9300000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#9325000
+1$
+1?
+1@
+#9350000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#9375000
+1$
+1?
+1@
+#9400000
+b101111 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#9425000
+1$
+1?
+1@
+#9450000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#9475000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#9500000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#9525000
+1$
+1?
+1@
+#9550000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#9575000
+1$
+1?
+1@
+#9600000
+b11111 !
+b111111 "
+b11011 !
+b110111 "
+b11001 !
+b110011 "
+b11000 !
+b110001 "
+b110000 "
+0#
+0%
+0$
+0A
+0J
+0K
+0L
+1M
+0B
+0C
+0D
+1E
+0=
+0<
+0?
+0@
+0>
+#9625000
+1$
+1?
+1@
+#9650000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#9675000
+1$
+1?
+1@
+0j
+0i
+0h
+0g
+1f
+0X
+0W
+0V
+0U
+1T
+18
+07
+06
+05
+04
+0-
+0,
+0+
+0*
+1)
+#9700000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#9725000
+1$
+1?
+1@
+#9750000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#9775000
+1$
+1?
+1@
+#9800000
+b110001 "
+0#
+0%
+0$
+1A
+0=
+0<
+0?
+0@
+0>
+#9825000
+1$
+1?
+1@
+#9850000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#9875000
+1$
+1?
+1@
+1j
+1X
+14
+1-
+#9900000
+0#
+0%
+0$
+0=
+0<
+0?
+0@
+0>
+#9925000
+1$
+1?
+1@
+#9950000
+1#
+1%
+0$
+1=
+1<
+0?
+0@
+1>
+#9975000
+1$
+1?
+1@
+#10000000

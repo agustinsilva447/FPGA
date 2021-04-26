@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "04/20/2021 10:49:01"
+// Generated on "04/26/2021 13:06:16"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          ej5
 // 
@@ -50,21 +50,27 @@ begin
 end 
 
 // high
-initial
+always
 begin
 	high = 1'b0;
+	high = #25000 1'b1;
+	#25000;
 end 
 
 // low
-initial
+always
 begin
 	low = 1'b0;
+	low = #100000 1'b1;
+	#100000;
 end 
 
 // mid
-initial
+always
 begin
 	mid = 1'b0;
+	mid = #50000 1'b1;
+	#50000;
 end 
 endmodule
 

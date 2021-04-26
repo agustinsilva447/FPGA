@@ -1,25 +1,25 @@
 entity ej6 is
 port
 	(
-	d : in integer range 0 to 255;
+				 --d : in integer range 0 to 255;
 			  clk : in bit;
-		   clear : in bit;
-		 	   ld : in bit;
-		  enable : in bit;
-		 up_down : in bit;
-				qa : out integer range 0 to 255;
-				qb : out integer range 0 to 255;
-				qc : out integer range 0 to 255;
-				qd : out integer range 0 to 255;
-				qe : out integer range 0 to 255;
-				qf : out integer range 0 to 255;
-				qg : out integer range 0 to 255;
-				qh : out integer range 0 to 255;
-				qi : out integer range 0 to 255;
-				qj : out integer range 0 to 255;
-				qk : out integer range 0 to 255;
-				ql : out integer range 0 to 255;
-				qm : out integer range 0 to 255;
+		   --clear : in bit;
+		 	   --ld : in bit;
+		  --enable : in bit;
+		 --up_down : in bit;
+				--qa : out integer range 0 to 255;
+				--qb : out integer range 0 to 255;
+				--qc : out integer range 0 to 255;
+				--qd : out integer range 0 to 255;
+				--qe : out integer range 0 to 255;
+				--qf : out integer range 0 to 255;
+				--qg : out integer range 0 to 255;
+				--qh : out integer range 0 to 255;
+				--qi : out integer range 0 to 255;
+				--qj : out integer range 0 to 255;
+				--qk : out integer range 0 to 255;
+				--ql : out integer range 0 to 255;
+				--qm : out integer range 0 to 255;
 				qn : out integer range 0 to 255
 	);
 end ej6;

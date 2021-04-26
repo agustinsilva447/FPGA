@@ -33,8 +33,8 @@ begin
 			when one =>
 				if (updown = '0') then
 					next_state <= two;
-					lsb <= '1';
-					msb <= '0';
+					lsb <= '0';
+					msb <= '1';
 				else
 					next_state <= zero;
 					lsb <= '0';

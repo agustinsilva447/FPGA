@@ -1,5 +1,5 @@
 Flow report for ej10
-Tue Apr 20 12:56:59 2021
+Thu Apr 22 10:52:32 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -38,26 +38,26 @@ https://fpgasoftware.intel.com/eula.
 
 
 
-+----------------------------------------------------------------------------------+
-; Flow Summary                                                                     ;
-+------------------------------------+---------------------------------------------+
-; Flow Status                        ; Flow Failed - Tue Apr 20 12:56:59 2021      ;
-; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
-; Revision Name                      ; ej10                                        ;
-; Top-level Entity Name              ; ej10                                        ;
-; Family                             ; Cyclone IV E                                ;
-; Device                             ; EP4CE22F17C6                                ;
-; Timing Models                      ; Final                                       ;
-; Total logic elements               ; N/A until Partition Merge                   ;
-;     Total combinational functions  ; N/A until Partition Merge                   ;
-;     Dedicated logic registers      ; N/A until Partition Merge                   ;
-; Total registers                    ; N/A until Partition Merge                   ;
-; Total pins                         ; N/A until Partition Merge                   ;
-; Total virtual pins                 ; N/A until Partition Merge                   ;
-; Total memory bits                  ; N/A until Partition Merge                   ;
-; Embedded Multiplier 9-bit elements ; N/A until Partition Merge                   ;
-; Total PLLs                         ; N/A until Partition Merge                   ;
-+------------------------------------+---------------------------------------------+
++-------------------------------------------------------------------------------------------+
+; Flow Summary                                                                              ;
++------------------------------------+------------------------------------------------------+
+; Flow Status                        ; EDA Netlist Writer Failed - Thu Apr 22 10:52:32 2021 ;
+; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition          ;
+; Revision Name                      ; ej10                                                 ;
+; Top-level Entity Name              ; ej10                                                 ;
+; Family                             ; Cyclone IV E                                         ;
+; Device                             ; EP4CE22F17C6                                         ;
+; Timing Models                      ; Final                                                ;
+; Total logic elements               ; 24 / 22,320 ( < 1 % )                                ;
+;     Total combinational functions  ; 0 / 22,320 ( 0 % )                                   ;
+;     Dedicated logic registers      ; 24 / 22,320 ( < 1 % )                                ;
+; Total registers                    ; 24                                                   ;
+; Total pins                         ; 49 / 154 ( 32 % )                                    ;
+; Total virtual pins                 ; 0                                                    ;
+; Total memory bits                  ; 0 / 608,256 ( 0 % )                                  ;
+; Embedded Multiplier 9-bit elements ; 0 / 132 ( 0 % )                                      ;
+; Total PLLs                         ; 0 / 4 ( 0 % )                                        ;
++------------------------------------+------------------------------------------------------+
 
 
 +-----------------------------------------+
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 04/20/2021 12:56:44 ;
+; Start date & time ; 04/22/2021 10:44:35 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; ej10                ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 58128533960630.161893420412010         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 58128533960630.161909907506459         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -99,8 +99,14 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:15     ; 1.0                     ; 417 MB              ; 00:00:37                           ;
-; Total                ; 00:00:15     ; --                      ; --                  ; 00:00:37                           ;
+; Analysis & Synthesis ; 00:00:29     ; 1.0                     ; 421 MB              ; 00:00:48                           ;
+; Fitter               ; 00:00:12     ; 1.0                     ; 699 MB              ; 00:00:13                           ;
+; Assembler            ; 00:00:02     ; 1.0                     ; 350 MB              ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 443 MB              ; 00:00:03                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 598 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 592 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 592 MB              ; 00:00:01                           ;
+; Total                ; 00:00:49     ; --                      ; --                  ; 00:01:09                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -110,6 +116,12 @@ https://fpgasoftware.intel.com/eula.
 ; Module Name          ; Machine Hostname              ; OS Name        ; OS Version ; Processor type ;
 +----------------------+-------------------------------+----------------+------------+----------------+
 ; Analysis & Synthesis ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; Fitter               ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; Assembler            ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; Timing Analyzer      ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 +----------------------+-------------------------------+----------------+------------+----------------+
 
 
@@ -117,6 +129,12 @@ https://fpgasoftware.intel.com/eula.
 ; Flow Log ;
 ------------
 quartus_map --read_settings_files=on --write_settings_files=off ej10 -c ej10
+quartus_fit --read_settings_files=off --write_settings_files=off ej10 -c ej10
+quartus_asm --read_settings_files=off --write_settings_files=off ej10 -c ej10
+quartus_sta ej10 -c ej10
+quartus_eda --read_settings_files=off --write_settings_files=off ej10 -c ej10
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ej10 -c ej10 --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej9/Waveform1.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej10/simulation/qsim/../ej9/Waveform1.vwf.vt
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ej10 -c ej10 --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej9/Waveform1.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW2/ej10/simulation/qsim/../ej9/Waveform1.vwf.vt
 
 
 

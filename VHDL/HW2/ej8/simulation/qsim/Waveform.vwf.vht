@@ -19,7 +19,7 @@
 -- the top level entity of the current Quartus project .The user can use this   
 -- testbench to simulate his design using a third-party simulation tool .       
 -- *****************************************************************************
--- Generated on "04/20/2021 12:41:36"
+-- Generated on "04/26/2021 18:15:32"
                                                              
 -- Vhdl Test Bench(with test vectors) for design  :          ej8
 -- 
@@ -89,25 +89,43 @@ END PROCESS t_prcs_address_4;
 t_prcs_address_3: PROCESS
 BEGIN
 	address(3) <= '0';
+	WAIT FOR 800000 ps;
+	address(3) <= '1';
 WAIT;
 END PROCESS t_prcs_address_3;
 -- address[2]
 t_prcs_address_2: PROCESS
 BEGIN
 	address(2) <= '0';
+	WAIT FOR 400000 ps;
+	address(2) <= '1';
+	WAIT FOR 400000 ps;
+	address(2) <= '0';
 WAIT;
 END PROCESS t_prcs_address_2;
 -- address[1]
 t_prcs_address_1: PROCESS
 BEGIN
+	FOR i IN 1 TO 2
+	LOOP
+		address(1) <= '0';
+		WAIT FOR 200000 ps;
+		address(1) <= '1';
+		WAIT FOR 200000 ps;
+	END LOOP;
 	address(1) <= '0';
 WAIT;
 END PROCESS t_prcs_address_1;
 -- address[0]
 t_prcs_address_0: PROCESS
 BEGIN
+LOOP
 	address(0) <= '0';
-WAIT;
+	WAIT FOR 100000 ps;
+	address(0) <= '1';
+	WAIT FOR 100000 ps;
+	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
+END LOOP;
 END PROCESS t_prcs_address_0;
 -- data[7]
 t_prcs_data_7: PROCESS
@@ -143,17 +161,30 @@ END PROCESS t_prcs_data_3;
 t_prcs_data_2: PROCESS
 BEGIN
 	data(2) <= '0';
+	WAIT FOR 800000 ps;
+	data(2) <= '1';
 WAIT;
 END PROCESS t_prcs_data_2;
 -- data[1]
 t_prcs_data_1: PROCESS
 BEGIN
 	data(1) <= '0';
+	WAIT FOR 400000 ps;
+	data(1) <= '1';
+	WAIT FOR 400000 ps;
+	data(1) <= '0';
 WAIT;
 END PROCESS t_prcs_data_1;
 -- data[0]
 t_prcs_data_0: PROCESS
 BEGIN
+	FOR i IN 1 TO 2
+	LOOP
+		data(0) <= '0';
+		WAIT FOR 200000 ps;
+		data(0) <= '1';
+		WAIT FOR 200000 ps;
+	END LOOP;
 	data(0) <= '0';
 WAIT;
 END PROCESS t_prcs_data_0;
@@ -161,20 +192,37 @@ END PROCESS t_prcs_data_0;
 -- inclock
 t_prcs_inclock: PROCESS
 BEGIN
+LOOP
 	inclock <= '0';
-WAIT;
+	WAIT FOR 25000 ps;
+	inclock <= '1';
+	WAIT FOR 25000 ps;
+	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
+END LOOP;
 END PROCESS t_prcs_inclock;
 
 -- outclock
 t_prcs_outclock: PROCESS
 BEGIN
+LOOP
 	outclock <= '0';
-WAIT;
+	WAIT FOR 12500 ps;
+	outclock <= '1';
+	WAIT FOR 12500 ps;
+	IF (NOW >= 1000000 ps) THEN WAIT; END IF;
+END LOOP;
 END PROCESS t_prcs_outclock;
 
 -- we
 t_prcs_we: PROCESS
 BEGIN
+	FOR i IN 1 TO 2
+	LOOP
+		we <= '0';
+		WAIT FOR 200000 ps;
+		we <= '1';
+		WAIT FOR 200000 ps;
+	END LOOP;
 	we <= '0';
 WAIT;
 END PROCESS t_prcs_we;
