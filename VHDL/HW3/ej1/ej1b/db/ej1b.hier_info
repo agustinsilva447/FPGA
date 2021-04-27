@@ -1,0 +1,11 @@
+|ej1b
+a => Mux0.IN8
+a => Mux1.IN8
+b => Mux0.IN9
+b => Mux1.IN9
+cin => Mux0.IN10
+cin => Mux1.IN10
+s <= Mux0.DB_MAX_OUTPUT_PORT_TYPE
+cout <= Mux1.DB_MAX_OUTPUT_PORT_TYPE
+
+
