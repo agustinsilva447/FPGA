@@ -1,0 +1,21 @@
+|ej1c
+a => aggreg.IN0
+a => aggreg.IN0
+a => aggreg.IN0
+a => aggreg.IN0
+b => aggreg.IN1
+b => aggreg.IN1
+b => aggreg.IN1
+b => aggreg.IN1
+cin => aggreg.IN1
+cin => aggreg.IN1
+cin => aggreg.IN1
+cin => aggreg.IN1
+cin => aggreg.IN1
+cin => aggreg.IN1
+cin => aggreg.IN1
+cin => aggreg.IN1
+s <= s$latch.DB_MAX_OUTPUT_PORT_TYPE
+cout <= cout$latch.DB_MAX_OUTPUT_PORT_TYPE
+
+
