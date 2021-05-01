@@ -2,34 +2,33 @@ library ieee;
 use ieee.std_logic_1164.all;
 
 package ej1e_paquete is
-    function Suma (a,b,cin: std_logic) return std_logic_vector;
+    function Suma (entradas: std_logic_vector(0 to 2)) return std_logic_vector;
 end package ej1e_paquete;
 
 package body ej1e_paquete is 
-    function Suma(a,b,cin: std_logic) return std_logic_vector is
-    variable s: std_logic;
-    variable cout: std_logic;
+    function Suma(entradas: std_logic_vector(0 to 2)) return std_logic_vector is
+    variable salidas: std_logic_vector(0 to 1);
 
     begin
-        if std_logic_vector'(a,b,cin) = "000" then
-            (cout, s) := std_logic_vector("00");
-        elsif std_logic_vector'(a,b,cin) = "001" then
-            (cout, s) := std_logic_vector("01");
-        elsif std_logic_vector'(a,b,cin) = "010" then
-            (cout, s) := std_logic_vector("01");
-        elsif std_logic_vector'(a,b,cin) = "011" then
-            (cout, s) := std_logic_vector("10");
-        elsif std_logic_vector'(a,b,cin) = "100" then
-            (cout, s) := std_logic_vector("01");
-        elsif std_logic_vector'(a,b,cin) = "101" then
-            (cout, s) := std_logic_vector("10");
-        elsif std_logic_vector'(a,b,cin) = "110" then
-            (cout, s) := std_logic_vector("10");
-        elsif std_logic_vector'(a,b,cin) = "111" then
-            (cout, s) := std_logic_vector("11");               
+        if entradas = "000" then
+            salidas := "00";
+        elsif entradas = "001" then
+            salidas := "01";
+        elsif entradas = "010" then
+            salidas := "01";
+        elsif entradas = "011" then
+            salidas := "10";
+        elsif entradas = "100" then
+            salidas := "01";
+        elsif entradas = "101" then
+            salidas := "10";
+        elsif entradas = "110" then
+            salidas := "10";
+        elsif entradas = "111" then
+            salidas := "11";               
         else
-            (cout, s) := std_logic_vector("00");            
+            salidas := "00";            
         end if;
-        return (cout, s);
+        return salidas;
     end Suma;
 end package body ej1e_paquete;
