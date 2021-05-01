@@ -1,0 +1,80 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej4/ej4b/simulation/qsim
+vej4b
+Z1 !s110 1619891157
+!i10b 1
+!s100 KNdaIh52`^jTIm9JmG90n0
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+IH^=2Al8^fm:ZHeVzmj]dz3
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1619891156
+Z5 8ej4b.vo
+Z6 Fej4b.vo
+!i122 0
+L0 32 344
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1619891157.000000
+Z9 !s107 ej4b.vo|
+Z10 !s90 -work|work|ej4b.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vej4b_vlg_vec_tst
+R1
+!i10b 1
+!s100 Yj8DRE^<QePAHV82KAR;`0
+R2
+IU;@Z2VSN>T:_[M@:YA4NK2
+R3
+R0
+w1619891153
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 1
+L0 30 43
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+vhard_block
+R1
+!i10b 1
+!s100 Z3K]BhdgCc=md?XF2fXCK3
+R2
+InL_Y24>zAkne0QZ[9;Y410
+R3
+R0
+R4
+R5
+R6
+!i122 0
+L0 377 34
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
