@@ -1,0 +1,31 @@
+|ej5c
+a[0] => v[2].IN0
+a[1] => v[2].IN1
+a[1] => v[0].DATAA
+a[2] => v[0].OUTPUTSELECT
+a[2] => v[2].IN1
+a[2] => v[1].DATAA
+a[3] => v[0].OUTPUTSELECT
+a[3] => v[1].OUTPUTSELECT
+a[3] => v[2].IN1
+a[4] => v[0].OUTPUTSELECT
+a[4] => v[1].OUTPUTSELECT
+a[4] => v[2].IN1
+a[4] => v[2].DATAA
+a[5] => v[0].OUTPUTSELECT
+a[5] => v[1].OUTPUTSELECT
+a[5] => v[2].IN1
+a[5] => v[2].OUTPUTSELECT
+a[6] => v[0].OUTPUTSELECT
+a[6] => v[1].OUTPUTSELECT
+a[6] => v[2].IN1
+a[6] => v[2].OUTPUTSELECT
+a[7] => v[0].OUTPUTSELECT
+a[7] => v[1].OUTPUTSELECT
+a[7] => v[2].IN1
+a[7] => v[2].OUTPUTSELECT
+s[0] <= v[0].DB_MAX_OUTPUT_PORT_TYPE
+s[1] <= v[1].DB_MAX_OUTPUT_PORT_TYPE
+s[2] <= v[2].DB_MAX_OUTPUT_PORT_TYPE
+
+
