@@ -1,0 +1,57 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "salida[0]",
+					"strict" : false
+				},
+				{
+					"name" : "salida[1]",
+					"strict" : false
+				},
+				{
+					"name" : "salida[2]",
+					"strict" : false
+				},
+				{
+					"name" : "salida[3]",
+					"strict" : false
+				},
+				{
+					"name" : "carga[0]",
+					"strict" : false
+				},
+				{
+					"name" : "l",
+					"strict" : false
+				},
+				{
+					"name" : "clk",
+					"strict" : false
+				},
+				{
+					"name" : "areset",
+					"strict" : false
+				},
+				{
+					"name" : "ce",
+					"strict" : false
+				},
+				{
+					"name" : "carga[1]",
+					"strict" : false
+				},
+				{
+					"name" : "carga[2]",
+					"strict" : false
+				},
+				{
+					"name" : "carga[3]",
+					"strict" : false
+				}
+			]
+		}
+	]
+}

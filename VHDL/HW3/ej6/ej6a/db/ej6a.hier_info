@@ -1,0 +1,15 @@
+|ej6a
+clk => cuenta[0].CLK
+clk => cuenta[1].CLK
+clk => cuenta[2].CLK
+clk => cuenta[3].CLK
+areset => cuenta[0].ACLR
+areset => cuenta[1].ACLR
+areset => cuenta[2].ACLR
+areset => cuenta[3].ACLR
+salida[0] <= cuenta[0].DB_MAX_OUTPUT_PORT_TYPE
+salida[1] <= cuenta[1].DB_MAX_OUTPUT_PORT_TYPE
+salida[2] <= cuenta[2].DB_MAX_OUTPUT_PORT_TYPE
+salida[3] <= cuenta[3].DB_MAX_OUTPUT_PORT_TYPE
+
+

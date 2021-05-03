@@ -1,0 +1,622 @@
+$comment
+	File created using the following command:
+		vcd file ej6b.msim.vcd -direction
+$end
+$date
+	Mon May  3 10:54:21 2021
+$end
+$version
+	ModelSim Version 2020.1
+$end
+$timescale
+	1ps
+$end
+
+$scope module ej6b_vhd_vec_tst $end
+$var wire 1 ! areset $end
+$var wire 1 " carga [3] $end
+$var wire 1 # carga [2] $end
+$var wire 1 $ carga [1] $end
+$var wire 1 % carga [0] $end
+$var wire 1 & ce $end
+$var wire 1 ' clk $end
+$var wire 1 ( l $end
+$var wire 1 ) salida [3] $end
+$var wire 1 * salida [2] $end
+$var wire 1 + salida [1] $end
+$var wire 1 , salida [0] $end
+
+$scope module i1 $end
+$var wire 1 - gnd $end
+$var wire 1 . vcc $end
+$var wire 1 / unknown $end
+$var wire 1 0 devoe $end
+$var wire 1 1 devclrn $end
+$var wire 1 2 devpor $end
+$var wire 1 3 ww_devoe $end
+$var wire 1 4 ww_devclrn $end
+$var wire 1 5 ww_devpor $end
+$var wire 1 6 ww_clk $end
+$var wire 1 7 ww_areset $end
+$var wire 1 8 ww_ce $end
+$var wire 1 9 ww_l $end
+$var wire 1 : ww_carga [3] $end
+$var wire 1 ; ww_carga [2] $end
+$var wire 1 < ww_carga [1] $end
+$var wire 1 = ww_carga [0] $end
+$var wire 1 > ww_salida [3] $end
+$var wire 1 ? ww_salida [2] $end
+$var wire 1 @ ww_salida [1] $end
+$var wire 1 A ww_salida [0] $end
+$var wire 1 B \areset~inputclkctrl_INCLK_bus\ [3] $end
+$var wire 1 C \areset~inputclkctrl_INCLK_bus\ [2] $end
+$var wire 1 D \areset~inputclkctrl_INCLK_bus\ [1] $end
+$var wire 1 E \areset~inputclkctrl_INCLK_bus\ [0] $end
+$var wire 1 F \clk~inputclkctrl_INCLK_bus\ [3] $end
+$var wire 1 G \clk~inputclkctrl_INCLK_bus\ [2] $end
+$var wire 1 H \clk~inputclkctrl_INCLK_bus\ [1] $end
+$var wire 1 I \clk~inputclkctrl_INCLK_bus\ [0] $end
+$var wire 1 J \salida[0]~output_o\ $end
+$var wire 1 K \salida[1]~output_o\ $end
+$var wire 1 L \salida[2]~output_o\ $end
+$var wire 1 M \salida[3]~output_o\ $end
+$var wire 1 N \clk~input_o\ $end
+$var wire 1 O \clk~inputclkctrl_outclk\ $end
+$var wire 1 P \carga[0]~input_o\ $end
+$var wire 1 Q \l~input_o\ $end
+$var wire 1 R \cuenta~0_combout\ $end
+$var wire 1 S \areset~input_o\ $end
+$var wire 1 T \areset~inputclkctrl_outclk\ $end
+$var wire 1 U \ce~input_o\ $end
+$var wire 1 V \cuenta[0]~1_combout\ $end
+$var wire 1 W \carga[1]~input_o\ $end
+$var wire 1 X \cuenta~2_combout\ $end
+$var wire 1 Y \carga[2]~input_o\ $end
+$var wire 1 Z \cuenta~3_combout\ $end
+$var wire 1 [ \cuenta~4_combout\ $end
+$var wire 1 \ \carga[3]~input_o\ $end
+$var wire 1 ] \cuenta~5_combout\ $end
+$var wire 1 ^ \cuenta~6_combout\ $end
+$var wire 1 _ cuenta [3] $end
+$var wire 1 ` cuenta [2] $end
+$var wire 1 a cuenta [1] $end
+$var wire 1 b cuenta [0] $end
+$var wire 1 c \ALT_INV_clk~inputclkctrl_outclk\ $end
+$var wire 1 d \ALT_INV_areset~inputclkctrl_outclk\ $end
+$upscope $end
+$upscope $end
+$enddefinitions $end
+#0
+$dumpvars
+0!
+1&
+0'
+0(
+0-
+1.
+x/
+10
+11
+12
+13
+14
+15
+06
+07
+18
+09
+0J
+0K
+0L
+0M
+0N
+0O
+0P
+0Q
+1R
+0S
+0T
+1U
+1V
+0W
+0X
+0Y
+0Z
+0[
+0\
+1]
+0^
+1c
+1d
+0"
+0#
+0$
+0%
+0:
+0;
+0<
+0=
+0>
+0?
+0@
+0A
+0_
+0`
+0a
+0b
+1F
+1G
+1H
+0I
+1B
+1C
+1D
+0E
+0)
+0*
+0+
+0,
+$end
+#25000
+1'
+16
+1N
+1I
+1O
+0c
+#50000
+0'
+06
+0N
+0I
+0O
+1c
+1b
+0R
+1X
+1J
+1A
+1,
+#75000
+1'
+16
+1N
+1I
+1O
+0c
+#100000
+0'
+06
+0N
+0I
+0O
+1c
+0b
+1a
+1R
+1K
+0J
+1@
+0A
+0,
+1+
+#125000
+1'
+16
+1N
+1I
+1O
+0c
+#150000
+0'
+06
+0N
+0I
+0O
+1c
+1b
+0R
+0X
+1Z
+1[
+1J
+1A
+1,
+#175000
+1'
+16
+1N
+1I
+1O
+0c
+#200000
+0'
+06
+0N
+0I
+0O
+1c
+0b
+0a
+1`
+1R
+1L
+0K
+0J
+1?
+0@
+0A
+0,
+0+
+1*
+#225000
+1'
+16
+1N
+1I
+1O
+0c
+#250000
+0'
+06
+0N
+0I
+0O
+1c
+1b
+0R
+1X
+0]
+1J
+1A
+1,
+#275000
+1'
+16
+1N
+1I
+1O
+0c
+#300000
+0'
+06
+0N
+0I
+0O
+1c
+0b
+1a
+1^
+1R
+1]
+0^
+1K
+0J
+1@
+0A
+0,
+1+
+#325000
+1'
+16
+1N
+1I
+1O
+0c
+#350000
+0'
+06
+0N
+0I
+0O
+1c
+1b
+0R
+0X
+0Z
+0]
+1^
+0[
+1J
+1A
+1,
+#375000
+1'
+16
+1N
+1I
+1O
+0c
+#400000
+0'
+06
+0N
+0I
+0O
+1c
+0b
+0a
+0`
+1_
+1R
+1]
+1M
+0L
+0K
+0J
+1>
+0?
+0@
+0A
+0,
+0+
+0*
+1)
+#425000
+1'
+16
+1N
+1I
+1O
+0c
+#450000
+0'
+06
+0N
+0I
+0O
+1c
+1b
+0R
+1X
+1J
+1A
+1,
+#475000
+1'
+16
+1N
+1I
+1O
+0c
+#500000
+0'
+06
+0N
+0I
+0O
+1c
+0b
+1a
+1R
+1K
+0J
+1@
+0A
+0,
+1+
+#525000
+1'
+16
+1N
+1I
+1O
+0c
+#550000
+0'
+06
+0N
+0I
+0O
+1c
+1b
+0R
+0X
+1Z
+1[
+1J
+1A
+1,
+#575000
+1'
+16
+1N
+1I
+1O
+0c
+#600000
+0'
+06
+0N
+0I
+0O
+1c
+0b
+0a
+1`
+1R
+1L
+0K
+0J
+1?
+0@
+0A
+0,
+0+
+1*
+#625000
+1'
+16
+1N
+1I
+1O
+0c
+#650000
+0'
+06
+0N
+0I
+0O
+1c
+1b
+0R
+1X
+0]
+1J
+1A
+1,
+#675000
+1'
+16
+1N
+1I
+1O
+0c
+#700000
+0'
+06
+0N
+0I
+0O
+1c
+0b
+1a
+0^
+1R
+1]
+1^
+1K
+0J
+1@
+0A
+0,
+1+
+#725000
+1'
+16
+1N
+1I
+1O
+0c
+#750000
+0'
+06
+0N
+0I
+0O
+1c
+1b
+0R
+0X
+0Z
+0]
+0^
+0[
+1J
+1A
+1,
+#775000
+1'
+16
+1N
+1I
+1O
+0c
+#800000
+0'
+06
+0N
+0I
+0O
+1c
+0b
+0a
+0`
+0_
+1R
+1]
+0M
+0L
+0K
+0J
+0>
+0?
+0@
+0A
+0,
+0+
+0*
+0)
+#825000
+1'
+16
+1N
+1I
+1O
+0c
+#850000
+0'
+06
+0N
+0I
+0O
+1c
+1b
+0R
+1X
+1J
+1A
+1,
+#875000
+1'
+16
+1N
+1I
+1O
+0c
+#900000
+0'
+06
+0N
+0I
+0O
+1c
+0b
+1a
+1R
+1K
+0J
+1@
+0A
+0,
+1+
+#925000
+1'
+16
+1N
+1I
+1O
+0c
+#950000
+0'
+06
+0N
+0I
+0O
+1c
+1b
+0R
+0X
+1Z
+1[
+1J
+1A
+1,
+#975000
+1'
+16
+1N
+1I
+1O
+0c
+#1000000
