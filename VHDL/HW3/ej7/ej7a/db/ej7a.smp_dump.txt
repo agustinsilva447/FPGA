@@ -1,0 +1,12 @@
+
+State Machine - |ej7a|estado
+Name estado.inicio estado.sexto1 estado.quinto1 estado.cuarto1 estado.tercer1 estado.segundo1 estado.primer1 estado.primer0 estado.ereset 
+estado.ereset 0 0 0 0 0 0 0 0 0 
+estado.primer0 0 0 0 0 0 0 0 1 1 
+estado.primer1 0 0 0 0 0 0 1 0 1 
+estado.segundo1 0 0 0 0 0 1 0 0 1 
+estado.tercer1 0 0 0 0 1 0 0 0 1 
+estado.cuarto1 0 0 0 1 0 0 0 0 1 
+estado.quinto1 0 0 1 0 0 0 0 0 1 
+estado.sexto1 0 1 0 0 0 0 0 0 1 
+estado.inicio 1 0 0 0 0 0 0 0 1 

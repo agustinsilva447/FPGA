@@ -1,0 +1,15 @@
+|ej7a
+clk => estado~7.DATAIN
+din => estado.DATAB
+din => estado.DATAB
+din => estado.DATAB
+din => estado.DATAB
+din => estado.DATAB
+din => estado.DATAB
+din => estado.DATAB
+din => Selector0.IN1
+din => estado.DATAB
+reset => estado~9.DATAIN
+f <= f.DB_MAX_OUTPUT_PORT_TYPE
+
+
