@@ -78,6 +78,7 @@ begin
 			end case;
 		end if;
 	end process;
+	
 	process(estado)
 	begin
 		case estado is
