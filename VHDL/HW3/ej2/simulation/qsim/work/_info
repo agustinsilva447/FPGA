@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 d/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej2/simulation/qsim
 vej2
-Z1 !s110 1619828504
+Z1 !s110 1620397206
 !i10b 1
 !s100 RnTYi5?_H0m7j_K2czo=X1
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IzDHYSD@YUUmoh1mNbj8;`1
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1619828503
+Z4 w1620397205
 Z5 8ej2.vo
 Z6 Fej2.vo
-!i122 8
+!i122 10
 L0 32 561
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1619828504.000000
+Z8 !s108 1620397206.000000
 Z9 !s107 ej2.vo|
 Z10 !s90 -work|work|ej2.vo|
 !i113 1
@@ -40,10 +40,10 @@ R2
 II^@cc`h_ESk6@z7gMalee1
 R3
 R0
-w1619828501
+w1620397204
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 9
+!i122 11
 L0 30 90
 R7
 r1
@@ -66,7 +66,7 @@ R0
 R4
 R5
 R6
-!i122 8
+!i122 10
 L0 594 34
 R7
 r1
