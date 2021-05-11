@@ -11,7 +11,6 @@ end ej7a;
 architecture hdlc of ej7a is
 type e is (ereset, primer0, primer1, segundo1, tercer1, cuarto1, quinto1, sexto1, inicio);
 signal estado: e;
-
 begin
 	process(clk, reset)
 	begin
