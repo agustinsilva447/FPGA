@@ -1,5 +1,6 @@
 vendor_name = ModelSim
 source_file = 1, /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej3/ej3a/ej3a.vhd
+source_file = 1, /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej3/ej3a/Waveform.vwf
 source_file = 1, /home/agustinsilva447/intelFPGA_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_b.vhd
 source_file = 1, /home/agustinsilva447/intelFPGA_lite/20.1/quartus/libraries/vhdl/ieee/prmtvs_p.vhd
 source_file = 1, /home/agustinsilva447/intelFPGA_lite/20.1/quartus/libraries/vhdl/ieee/timing_b.vhd

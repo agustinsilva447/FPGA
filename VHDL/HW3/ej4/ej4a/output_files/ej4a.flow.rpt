@@ -1,5 +1,5 @@
 Flow report for ej4a
-Fri May  7 11:21:12 2021
+Thu May 13 11:32:54 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri May  7 11:21:12 2021       ;
+; Flow Status                        ; Successful - Thu May 13 11:32:54 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ej4a                                        ;
 ; Top-level Entity Name              ; ej4a                                        ;
@@ -108,7 +108,9 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 598 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 590 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 598 MB              ; 00:00:01                           ;
-; Total                ; 00:00:37     ; --                      ; --                  ; 00:01:04                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 590 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 598 MB              ; 00:00:01                           ;
+; Total                ; 00:00:38     ; --                      ; --                  ; 00:01:06                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -126,6 +128,8 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 +----------------------+-------------------------------+----------------+------------+----------------+
 
 
@@ -137,6 +141,8 @@ quartus_fit --read_settings_files=off --write_settings_files=off ej4a -c ej4a
 quartus_asm --read_settings_files=off --write_settings_files=off ej4a -c ej4a
 quartus_sta ej4a -c ej4a
 quartus_eda --read_settings_files=off --write_settings_files=off ej4a -c ej4a
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ej4a -c ej4a --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej4/ej4a/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej4/ej4a/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej4/ej4a/simulation/qsim/ ej4a -c ej4a
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ej4a -c ej4a --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej4/ej4a/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej4/ej4a/simulation/qsim/Waveform.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej4/ej4a/simulation/qsim/ ej4a -c ej4a
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off ej4a -c ej4a --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej4/ej4a/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej4/ej4a/simulation/qsim/Waveform.vwf.vt

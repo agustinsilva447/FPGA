@@ -1,5 +1,5 @@
 Flow report for ej6a
-Mon May  3 10:51:05 2021
+Thu May 13 11:34:21 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Mon May  3 10:51:05 2021       ;
+; Flow Status                        ; Successful - Thu May 13 11:34:21 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; ej6a                                        ;
 ; Top-level Entity Name              ; ej6a                                        ;
@@ -108,7 +108,11 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 598 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 590 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 596 MB              ; 00:00:01                           ;
-; Total                ; 00:00:30     ; --                      ; --                  ; 00:00:57                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 590 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 598 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 592 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 596 MB              ; 00:00:01                           ;
+; Total                ; 00:00:33     ; --                      ; --                  ; 00:01:01                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -126,6 +130,10 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 +----------------------+-------------------------------+----------------+------------+----------------+
 
 
@@ -137,6 +145,10 @@ quartus_fit --read_settings_files=off --write_settings_files=off ej6a -c ej6a
 quartus_asm --read_settings_files=off --write_settings_files=off ej6a -c ej6a
 quartus_sta ej6a -c ej6a
 quartus_eda --read_settings_files=off --write_settings_files=off ej6a -c ej6a
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ej6a -c ej6a --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej6/ej6a/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej6/ej6a/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej6/ej6a/simulation/qsim/ ej6a -c ej6a
+quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ej6a -c ej6a --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej6/ej6a/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej6/ej6a/simulation/qsim/Waveform.vwf.vht
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej6/ej6a/simulation/qsim/ ej6a -c ej6a
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ej6a -c ej6a --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej6/ej6a/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej6/ej6a/simulation/qsim/Waveform.vwf.vht
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=vhdl --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej6/ej6a/simulation/qsim/ ej6a -c ej6a
 quartus_eda --gen_testbench --tool=modelsim_oem --format=vhdl --write_settings_files=off ej6a -c ej6a --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej6/ej6a/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej6/ej6a/simulation/qsim/Waveform.vwf.vht

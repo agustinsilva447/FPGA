@@ -10,7 +10,7 @@ z2
 cModel Technology
 Z0 d/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/HW3/ej6/ej6a/simulation/qsim
 Eej6a
-Z1 w1620049865
+Z1 w1620916461
 Z2 DPx10 cycloneive 20 cycloneive_atom_pack 0 22 WOh:M[al;oVzG5c`<He>D0
 Z3 DPx10 cycloneive 21 cycloneive_components 0 22 zGMDhP>8e@2k@f0e<PY]k2
 Z4 DPx4 ieee 16 vital_primitives 0 22 G>kiXP8Q9dRClKfK1Zn7j1
@@ -19,7 +19,7 @@ Z6 DPx4 ieee 12 vital_timing 0 22 J>EBealN09f8GzldA[z2>3
 Z7 DPx3 std 6 textio 0 22 zE1`LPoLg^DX3Oz^4Fj1K3
 Z8 DPx4 ieee 14 std_logic_1164 0 22 cVAk:aDinOX8^VGI1ekP<3
 Z9 DPx6 altera 28 altera_primitives_components 0 22 ca:ehlQAg4;_gVV:^8MAg3
-!i122 12
+!i122 16
 R0
 Z10 8ej6a.vho
 Z11 Fej6a.vho
@@ -29,9 +29,9 @@ VF>AXl7mW=70DZ8@G6a;0[0
 !s100 b5jD=<_ciJc:>d5WKae441
 Z12 OV;C;2020.1;71
 32
-Z13 !s110 1620049866
+Z13 !s110 1620916462
 !i10b 1
-Z14 !s108 1620049866.000000
+Z14 !s108 1620916462.000000
 Z15 !s90 -work|work|ej6a.vho|
 Z16 !s107 ej6a.vho|
 !i113 1
@@ -47,7 +47,7 @@ R7
 R8
 R9
 DEx4 work 4 ej6a 0 22 F>AXl7mW=70DZ8@G6a;0[0
-!i122 12
+!i122 16
 l135
 L97 284
 ViPBWfKPH3fPjI^Aoa^0d72
@@ -63,10 +63,10 @@ R16
 R17
 R18
 Eej6a_vhd_vec_tst
-Z19 w1620049863
+Z19 w1620916459
 R7
 R8
-!i122 13
+!i122 17
 R0
 Z20 8Waveform.vwf.vht
 Z21 FWaveform.vwf.vht
@@ -88,7 +88,7 @@ Aej6a_arch
 R7
 R8
 Z24 DEx4 work 16 ej6a_vhd_vec_tst 0 22 P0OKU_nAWN>lL6A_CBOk@0
-!i122 13
+!i122 17
 l47
 Z25 L34 41
 Z26 VHDNd1n[aDE>3hWDO3=Qj^1
@@ -111,7 +111,7 @@ R6
 R7
 R8
 R3
-!i122 12
+!i122 16
 R0
 R10
 R11
@@ -137,7 +137,7 @@ R7
 R8
 R3
 DEx4 work 10 hard_block 0 22 B]0;STalBkCB1_B4BXQDW2
-!i122 12
+!i122 16
 l65
 L51 20
 Via>5o7W??azG@W@@eFOTF0

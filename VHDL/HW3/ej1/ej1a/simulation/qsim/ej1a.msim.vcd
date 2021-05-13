@@ -3,7 +3,7 @@ $comment
 		vcd file ej1a.msim.vcd -direction
 $end
 $date
-	Fri May  7 11:15:12 2021
+	Thu May 13 11:29:56 2021
 $end
 $version
 	ModelSim Version 2020.1

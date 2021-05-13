@@ -5,11 +5,3 @@ Cyclone IV E - EP4CE22F17C6
 3. crear un test bench
 4. tutorial de LBEbooks
 5. tutorial de nandland
-
----
-
-visti.buenosaires@esteri.it
-
-visa@ictp.it
-segr.mardelplata@esteri.it
-casadeitaliamdp@gmail.com
