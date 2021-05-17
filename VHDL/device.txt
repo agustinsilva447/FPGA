@@ -5,3 +5,15 @@ Cyclone IV E - EP4CE22F17C6
 3. crear un test bench
 4. tutorial de LBEbooks
 5. tutorial de nandland
+
+Preguntas de teoría:
+	VHDL 06 - 	Funciones adentro de architecture y procedimientos afuera?
+	VHDL 06 - 	Funciones de resolución
+	VHDL 07 - 	Función "resolved"
+	VHDL 08 - 	Diferencia entre maquina de estado con 1 y 2 procesos
+
+
+
+Quantum Reports 						| mail Miguel
+Conference of Computational Physics 	| https://ccp2021.complexity-coventry.org/index.php
+Trefemac 								| https://sites.google.com/view/trefemac2021/home
