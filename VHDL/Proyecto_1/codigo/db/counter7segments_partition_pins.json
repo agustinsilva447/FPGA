@@ -1,0 +1,109 @@
+{
+	"partitions" : [
+		{
+			"name" : "Top",
+			"pins" : [
+				{
+					"name" : "salida7u[1]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7u[2]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7u[3]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7u[4]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7u[5]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7u[6]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7u[7]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7d[1]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7d[2]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7d[3]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7d[4]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7d[5]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7d[6]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7d[7]",
+					"strict" : false
+				},
+				{
+					"name" : "salunidades[0]",
+					"strict" : false
+				},
+				{
+					"name" : "salunidades[1]",
+					"strict" : false
+				},
+				{
+					"name" : "salunidades[2]",
+					"strict" : false
+				},
+				{
+					"name" : "salunidades[3]",
+					"strict" : false
+				},
+				{
+					"name" : "saldecenas[0]",
+					"strict" : false
+				},
+				{
+					"name" : "saldecenas[1]",
+					"strict" : false
+				},
+				{
+					"name" : "saldecenas[2]",
+					"strict" : false
+				},
+				{
+					"name" : "saldecenas[3]",
+					"strict" : false
+				},
+				{
+					"name" : "sal",
+					"strict" : false
+				},
+				{
+					"name" : "reloj",
+					"strict" : false
+				},
+				{
+					"name" : "borrar",
+					"strict" : false
+				}
+			]
+		}
+	]
+}
