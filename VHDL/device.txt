@@ -14,5 +14,5 @@ Preguntas de teoría:
 
 
 Quantum Reports 						| mail Miguel 											(nada)
-Conference of Computational Physics 	| https://ccp2021.complexity-coventry.org/index.php		(falta perfeccionar el título y el resumen)
-Trefemac 								| https://sites.google.com/view/trefemac2021/home 		(falta perfeccionar el título y el resumen)
+Conference of Computational Physics 	| https://ccp2021.complexity-coventry.org/index.php		(listo)
+Trefemac 								| https://sites.google.com/view/trefemac2021/home 		(listo)
