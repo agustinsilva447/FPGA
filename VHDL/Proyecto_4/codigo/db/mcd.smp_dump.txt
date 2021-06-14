@@ -1,0 +1,11 @@
+
+State Machine - |mcd|estado
+Name estado.efin estado.ebmayor estado.eamayor estado.e4 estado.e3 estado.e2 estado.e1 estado.ereset 
+estado.ereset 0 0 0 0 0 0 0 0 
+estado.e1 0 0 0 0 0 0 1 1 
+estado.e2 0 0 0 0 0 1 0 1 
+estado.e3 0 0 0 0 1 0 0 1 
+estado.e4 0 0 0 1 0 0 0 1 
+estado.eamayor 0 0 1 0 0 0 0 1 
+estado.ebmayor 0 1 0 0 0 0 0 1 
+estado.efin 1 0 0 0 0 0 0 1 
