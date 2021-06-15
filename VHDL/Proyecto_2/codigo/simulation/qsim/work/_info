@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 d/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/simulation/qsim
 vbin2bcd
-Z1 !s110 1623626089
+Z1 !s110 1623772960
 !i10b 1
-!s100 >EYKKH0O`:_l?h_]EN<h22
+!s100 nSnBf5SRZ>mi<3G`Aa@Jz2
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IC:Vnc5<5>YP50<mP@zmD_3
+IJ_GBKIZo5>Rj6b:Bz`hhN2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1623626088
+Z4 w1623772959
 Z5 8bin2bcd.vo
 Z6 Fbin2bcd.vo
-!i122 8
-L0 32 2117
+!i122 14
+L0 32 2894
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1623626089.000000
+Z8 !s108 1623772960.000000
 Z9 !s107 bin2bcd.vo|
 Z10 !s90 -work|work|bin2bcd.vo|
 !i113 1
@@ -35,16 +35,16 @@ Z12 tCvgOpt 0
 vbin2bcd_vlg_vec_tst
 R1
 !i10b 1
-!s100 aXnj]DB[JX6FcZ<`Vl@Y<1
+!s100 Zn9e9m8blNSFB8`cJK58^0
 R2
-Ib`P;0XNY3ZN]V`>UQa7P;3
+IaW9Sgcijo3k>Fa7fmSl>O1
 R3
 R0
-w1623626086
+w1623772957
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 9
-L0 30 91
+!i122 15
+L0 30 97
 R7
 r1
 !s85 0
@@ -58,16 +58,16 @@ R12
 vhard_block
 R1
 !i10b 1
-!s100 HT7NeU=1i>jzz[;L]HGc;2
+!s100 DJ[D`4bX8RME66ZG5BRa[3
 R2
-Ijk=Jh`o?RVN0>;V=81lOe1
+I9ISX5lkBoDVBlfk98;0MY3
 R3
 R0
 R4
 R5
 R6
-!i122 8
-L0 2150 34
+!i122 14
+L0 2927 34
 R7
 r1
 !s85 0

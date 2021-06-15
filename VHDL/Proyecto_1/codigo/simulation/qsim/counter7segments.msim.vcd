@@ -3,7 +3,7 @@ $comment
 		vcd file counter7segments.msim.vcd -direction
 $end
 $date
-	Fri May 28 20:15:15 2021
+	Tue Jun 15 12:29:49 2021
 $end
 $version
 	ModelSim Version 2020.1

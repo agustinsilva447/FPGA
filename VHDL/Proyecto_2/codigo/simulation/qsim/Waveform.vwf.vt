@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/13/2021 20:14:46"
+// Generated on "06/15/2021 13:02:37"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          bin2bcd
 // 
@@ -34,17 +34,23 @@ reg [7:0] bin;
 reg ninicio;
 reg reloj;
 // wires                                               
-wire [11:0] bcd;
+wire [11:0] bcd_sal;
 wire fin;
+wire [7:0] salida7c;
+wire [7:0] salida7d;
+wire [7:0] salida7u;
 
 // assign statements (if any)                          
 bin2bcd i1 (
 // port map - connection between master ports and signals/registers   
-	.bcd(bcd),
+	.bcd_sal(bcd_sal),
 	.bin(bin),
 	.fin(fin),
 	.ninicio(ninicio),
-	.reloj(reloj)
+	.reloj(reloj),
+	.salida7c(salida7c),
+	.salida7d(salida7d),
+	.salida7u(salida7u)
 );
 initial 
 begin 

@@ -8,51 +8,135 @@
 					"strict" : false
 				},
 				{
-					"name" : "bcd[0]",
+					"name" : "bcd_sal[0]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd[1]",
+					"name" : "bcd_sal[1]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd[2]",
+					"name" : "bcd_sal[2]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd[3]",
+					"name" : "bcd_sal[3]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd[4]",
+					"name" : "bcd_sal[4]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd[5]",
+					"name" : "bcd_sal[5]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd[6]",
+					"name" : "bcd_sal[6]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd[7]",
+					"name" : "bcd_sal[7]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd[8]",
+					"name" : "bcd_sal[8]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd[9]",
+					"name" : "bcd_sal[9]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd[10]",
+					"name" : "bcd_sal[10]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd[11]",
+					"name" : "bcd_sal[11]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7u[1]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7u[2]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7u[3]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7u[4]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7u[5]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7u[6]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7u[7]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7d[1]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7d[2]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7d[3]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7d[4]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7d[5]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7d[6]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7d[7]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7c[1]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7c[2]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7c[3]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7c[4]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7c[5]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7c[6]",
+					"strict" : false
+				},
+				{
+					"name" : "salida7c[7]",
 					"strict" : false
 				},
 				{

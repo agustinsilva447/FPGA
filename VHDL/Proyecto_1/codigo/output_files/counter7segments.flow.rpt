@@ -1,5 +1,5 @@
 Flow report for counter7segments
-Fri May 28 20:15:14 2021
+Tue Jun 15 12:29:47 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Fri May 28 20:15:14 2021       ;
+; Flow Status                        ; Successful - Tue Jun 15 12:29:47 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; counter7segments                            ;
 ; Top-level Entity Name              ; counter7segments                            ;
@@ -112,7 +112,9 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 596 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 594 MB              ; 00:00:01                           ;
 ; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 598 MB              ; 00:00:01                           ;
-; Total                ; 00:00:36     ; --                      ; --                  ; 00:01:02                           ;
+; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 592 MB              ; 00:00:01                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 598 MB              ; 00:00:01                           ;
+; Total                ; 00:00:37     ; --                      ; --                  ; 00:01:04                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -134,6 +136,8 @@ https://fpgasoftware.intel.com/eula.
 ; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
+; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 +----------------------+-------------------------------+----------------+------------+----------------+
 
 
@@ -145,6 +149,8 @@ quartus_fit --read_settings_files=off --write_settings_files=off counter7segment
 quartus_asm --read_settings_files=off --write_settings_files=off counter7segments -c counter7segments
 quartus_sta counter7segments -c counter7segments
 quartus_eda --read_settings_files=off --write_settings_files=off counter7segments -c counter7segments
+quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off counter7segments -c counter7segments --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_1/codigo/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_1/codigo/simulation/qsim/Waveform.vwf.vt
+quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_1/codigo/simulation/qsim/ counter7segments -c counter7segments
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off counter7segments -c counter7segments --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_1/codigo/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_1/codigo/simulation/qsim/Waveform.vwf.vt
 quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_1/codigo/simulation/qsim/ counter7segments -c counter7segments
 quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off counter7segments -c counter7segments --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_1/codigo/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_1/codigo/simulation/qsim/Waveform.vwf.vt

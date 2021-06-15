@@ -1,5 +1,5 @@
 Analysis & Synthesis report for bin2bcd
-Sun Jun 13 20:03:43 2021
+Tue Jun 15 13:00:40 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -13,10 +13,12 @@ Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
   5. Analysis & Synthesis Source Files Read
   6. Analysis & Synthesis Resource Usage Summary
   7. Analysis & Synthesis Resource Utilization by Entity
-  8. General Register Statistics
-  9. Post-Synthesis Netlist Statistics for Top Partition
- 10. Elapsed Time Per Partition
- 11. Analysis & Synthesis Messages
+  8. User-Specified and Inferred Latches
+  9. General Register Statistics
+ 10. Multiplexer Restructuring Statistics (Restructuring Performed)
+ 11. Post-Synthesis Netlist Statistics for Top Partition
+ 12. Elapsed Time Per Partition
+ 13. Analysis & Synthesis Messages
 
 
 
@@ -43,16 +45,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Sun Jun 13 20:03:43 2021       ;
+; Analysis & Synthesis Status        ; Successful - Tue Jun 15 13:00:40 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; bin2bcd                                     ;
 ; Top-level Entity Name              ; bin2bcd                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 58                                          ;
-;     Total combinational functions  ; 47                                          ;
+; Total logic elements               ; 87                                          ;
+;     Total combinational functions  ; 76                                          ;
 ;     Dedicated logic registers      ; 35                                          ;
 ; Total registers                    ; 35                                          ;
-; Total pins                         ; 23                                          ;
+; Total pins                         ; 47                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -177,30 +179,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 58            ;
+; Estimated Total logic elements              ; 87            ;
 ;                                             ;               ;
-; Total combinational functions               ; 47            ;
+; Total combinational functions               ; 76            ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 21            ;
-;     -- 3 input functions                    ; 16            ;
+;     -- 4 input functions                    ; 43            ;
+;     -- 3 input functions                    ; 23            ;
 ;     -- <=2 input functions                  ; 10            ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 47            ;
+;     -- normal mode                          ; 76            ;
 ;     -- arithmetic mode                      ; 0             ;
 ;                                             ;               ;
 ; Total registers                             ; 35            ;
 ;     -- Dedicated logic registers            ; 35            ;
 ;     -- I/O registers                        ; 0             ;
 ;                                             ;               ;
-; I/O pins                                    ; 23            ;
+; I/O pins                                    ; 47            ;
 ;                                             ;               ;
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ;                                             ;               ;
 ; Maximum fan-out node                        ; ninicio~input ;
 ; Maximum fan-out                             ; 40            ;
-; Total fan-out                               ; 312           ;
-; Average fan-out                             ; 2.44          ;
+; Total fan-out                               ; 466           ;
+; Average fan-out                             ; 2.27          ;
 +---------------------------------------------+---------------+
 
 
@@ -209,9 +211,26 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |bin2bcd                   ; 47 (47)             ; 35 (35)                   ; 0           ; 0            ; 0       ; 0         ; 23   ; 0            ; |bin2bcd            ; bin2bcd     ; work         ;
+; |bin2bcd                   ; 76 (76)             ; 35 (35)                   ; 0           ; 0            ; 0       ; 0         ; 47   ; 0            ; |bin2bcd            ; bin2bcd     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
+
+
++---------------------------------------------------------------------------------------------------+
+; User-Specified and Inferred Latches                                                               ;
++----------------------------------------------------+---------------------+------------------------+
+; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
++----------------------------------------------------+---------------------+------------------------+
+; salida7c[1]$latch                                  ; Equal0              ; yes                    ;
+; salida7c[2]$latch                                  ; Equal0              ; yes                    ;
+; salida7c[3]$latch                                  ; Equal0              ; yes                    ;
+; salida7c[4]$latch                                  ; Equal0              ; yes                    ;
+; salida7c[5]$latch                                  ; Equal0              ; yes                    ;
+; salida7c[6]$latch                                  ; Equal0              ; yes                    ;
+; salida7c[7]$latch                                  ; Equal0              ; yes                    ;
+; Number of user-specified and inferred latches = 7  ;                     ;                        ;
++----------------------------------------------------+---------------------+------------------------+
+Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
 
 
 +------------------------------------------------------+
@@ -229,24 +248,36 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------+-------+
 
 
++------------------------------------------------------------------------------------------------------------------------------------------+
+; Multiplexer Restructuring Statistics (Restructuring Performed)                                                                           ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |bin2bcd|sietesal          ;
+; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |bin2bcd|sietesal          ;
++--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
+
+
 +-----------------------------------------------------+
 ; Post-Synthesis Netlist Statistics for Top Partition ;
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 23                          ;
+; boundary_port         ; 47                          ;
 ; cycloneiii_ff         ; 35                          ;
 ;     CLR               ; 4                           ;
 ;     ENA               ; 12                          ;
 ;     ENA CLR           ; 19                          ;
-; cycloneiii_lcell_comb ; 47                          ;
-;     normal            ; 47                          ;
+; cycloneiii_lcell_comb ; 80                          ;
+;     normal            ; 80                          ;
+;         0 data inputs ; 1                           ;
+;         1 data inputs ; 3                           ;
 ;         2 data inputs ; 10                          ;
-;         3 data inputs ; 16                          ;
-;         4 data inputs ; 21                          ;
+;         3 data inputs ; 23                          ;
+;         4 data inputs ; 43                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.90                        ;
+; Average LUT depth     ; 1.94                        ;
 +-----------------------+-----------------------------+
 
 
@@ -265,35 +296,64 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Sun Jun 13 20:03:23 2021
+    Info: Processing started: Tue Jun 15 13:00:23 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bin2bcd -c bin2bcd
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
-Info (12021): Found 2 design units, including 1 entities, in source file bin2bcd.vhd
-    Info (12022): Found design unit 1: bin2bcd-a File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 13
-    Info (12023): Found entity 1: bin2bcd File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 5
+Info (12021): Found 4 design units, including 1 entities, in source file bin2bcd.vhd
+    Info (12022): Found design unit 1: bin2bcd-a File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 15
+    Info (12022): Found design unit 2: bcd27seg File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 86
+    Info (12022): Found design unit 3: bcd27seg-body File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 90
+    Info (12023): Found entity 1: bin2bcd File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 6
 Info (12127): Elaborating entity "bin2bcd" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at bin2bcd.vhd(24): signal "bin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 24
+Warning (10492): VHDL Process Statement warning at bin2bcd.vhd(32): signal "bin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 32
+Warning (10631): VHDL Process Statement warning at bin2bcd.vhd(65): inferring latch(es) for signal or variable "salida7c", which holds its previous value in one or more paths through the process File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
+Info (10041): Inferred latch for "salida7c[0]" at bin2bcd.vhd(65) File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
+Info (10041): Inferred latch for "salida7c[1]" at bin2bcd.vhd(65) File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
+Info (10041): Inferred latch for "salida7c[2]" at bin2bcd.vhd(65) File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
+Info (10041): Inferred latch for "salida7c[3]" at bin2bcd.vhd(65) File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
+Info (10041): Inferred latch for "salida7c[4]" at bin2bcd.vhd(65) File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
+Info (10041): Inferred latch for "salida7c[5]" at bin2bcd.vhd(65) File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
+Info (10041): Inferred latch for "salida7c[6]" at bin2bcd.vhd(65) File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
+Info (10041): Inferred latch for "salida7c[7]" at bin2bcd.vhd(65) File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
+Warning (13012): Latch salida7c[1]$latch has unsafe behavior File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal bcd[11] File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 30
+Warning (13012): Latch salida7c[2]$latch has unsafe behavior File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal bcd[9] File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 30
+Warning (13012): Latch salida7c[3]$latch has unsafe behavior File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal bcd[11] File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 30
+Warning (13012): Latch salida7c[4]$latch has unsafe behavior File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal bcd[8] File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 30
+Warning (13012): Latch salida7c[5]$latch has unsafe behavior File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal bcd[8] File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 30
+Warning (13012): Latch salida7c[6]$latch has unsafe behavior File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal bcd[11] File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 30
+Warning (13012): Latch salida7c[7]$latch has unsafe behavior File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
+    Warning (13013): Ports D and ENA on the latch are fed by the same signal bcd[11] File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 30
 Warning (13004): Presettable and clearable registers converted to equivalent circuits with latches. Registers power-up to an undefined state, and DEVCLRn places the registers in an undefined state.
-    Warning (13310): Register "datobin[7]" is converted into an equivalent circuit using register "datobin[7]~_emulated" and latch "datobin[7]~1" File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 22
-    Warning (13310): Register "datobin[6]" is converted into an equivalent circuit using register "datobin[6]~_emulated" and latch "datobin[6]~5" File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 22
-    Warning (13310): Register "datobin[5]" is converted into an equivalent circuit using register "datobin[5]~_emulated" and latch "datobin[5]~9" File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 22
-    Warning (13310): Register "datobin[4]" is converted into an equivalent circuit using register "datobin[4]~_emulated" and latch "datobin[4]~13" File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 22
-    Warning (13310): Register "datobin[3]" is converted into an equivalent circuit using register "datobin[3]~_emulated" and latch "datobin[3]~17" File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 22
-    Warning (13310): Register "datobin[2]" is converted into an equivalent circuit using register "datobin[2]~_emulated" and latch "datobin[2]~21" File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 22
-    Warning (13310): Register "datobin[1]" is converted into an equivalent circuit using register "datobin[1]~_emulated" and latch "datobin[1]~25" File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 22
-    Warning (13310): Register "datobin[0]" is converted into an equivalent circuit using register "datobin[0]~_emulated" and latch "datobin[0]~29" File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 22
+    Warning (13310): Register "datobin[7]" is converted into an equivalent circuit using register "datobin[7]~_emulated" and latch "datobin[7]~1" File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 30
+    Warning (13310): Register "datobin[6]" is converted into an equivalent circuit using register "datobin[6]~_emulated" and latch "datobin[6]~5" File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 30
+    Warning (13310): Register "datobin[5]" is converted into an equivalent circuit using register "datobin[5]~_emulated" and latch "datobin[5]~9" File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 30
+    Warning (13310): Register "datobin[4]" is converted into an equivalent circuit using register "datobin[4]~_emulated" and latch "datobin[4]~13" File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 30
+    Warning (13310): Register "datobin[3]" is converted into an equivalent circuit using register "datobin[3]~_emulated" and latch "datobin[3]~17" File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 30
+    Warning (13310): Register "datobin[2]" is converted into an equivalent circuit using register "datobin[2]~_emulated" and latch "datobin[2]~21" File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 30
+    Warning (13310): Register "datobin[1]" is converted into an equivalent circuit using register "datobin[1]~_emulated" and latch "datobin[1]~25" File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 30
+    Warning (13310): Register "datobin[0]" is converted into an equivalent circuit using register "datobin[0]~_emulated" and latch "datobin[0]~29" File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 30
+Warning (13024): Output pins are stuck at VCC or GND
+    Warning (13410): Pin "salida7u[0]" is stuck at VCC File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 11
+    Warning (13410): Pin "salida7d[0]" is stuck at VCC File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 11
+    Warning (13410): Pin "salida7c[0]" is stuck at VCC File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 83 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 136 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
-    Info (21059): Implemented 13 output pins
-    Info (21061): Implemented 60 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 11 warnings
-    Info: Peak virtual memory: 421 megabytes
-    Info: Processing ended: Sun Jun 13 20:03:43 2021
-    Info: Elapsed time: 00:00:20
-    Info: Total CPU time (on all processors): 00:00:40
+    Info (21059): Implemented 37 output pins
+    Info (21061): Implemented 89 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 30 warnings
+    Info: Peak virtual memory: 422 megabytes
+    Info: Processing ended: Tue Jun 15 13:00:40 2021
+    Info: Elapsed time: 00:00:17
+    Info: Total CPU time (on all processors): 00:00:39
 
 

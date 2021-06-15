@@ -1,18 +1,26 @@
 library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
+use work.bcd27seg.all;
 
 entity bin2bcd is
 port(	reloj, ninicio: in std_logic;
 		bin: in std_logic_vector(7 downto 0);
 		fin: out std_logic;
-		bcd: out std_logic_vector(11 downto 0)
+		bcd_sal: out std_logic_vector(11 downto 0);
+		salida7u, salida7d, salida7c: out std_logic_vector(7 downto 0)
 );
 end bin2bcd;
 
 architecture a of bin2bcd is
 signal elfin: std_logic;
+signal bcd: std_logic_vector(11 downto 0);
+signal unidades: std_logic_vector(3 downto 0);
+signal decenas: std_logic_vector(3 downto 0);
+signal centenas: std_logic_vector(3 downto 0);
+
 begin
+	bcd_sal <= bcd;
 	fin <= elfin;
 	process(reloj, ninicio)
 	variable datobin: std_logic_vector(7 downto 0);
@@ -48,4 +56,65 @@ begin
 			end if;
 		end if;
 	end process;
+	
+	unidades <= bcd(3 downto 0);
+	decenas  <= bcd(7 downto 4);
+	centenas <= bcd(11 downto 8);
+	
+	
+	process(unidades, decenas, centenas)
+	begin
+		if centenas = "0000" then
+			salida7d <= bcd27seg2("1111");
+		else
+			salida7c <= bcd27seg2(centenas);
+		end if;
+		
+		if decenas = "0000" then
+			salida7d <= bcd27seg2("1111");
+		else 
+			salida7d <= bcd27seg2(decenas);
+		end if;
+		
+		salida7u <= bcd27seg2(unidades);
+	end process;
 end a;
+
+library ieee;
+use ieee.std_logic_1164.all;
+
+package bcd27seg is
+	function bcd27seg2(bcdin: std_logic_vector(3 downto 0)) return std_logic_vector;
+end bcd27seg;	
+
+package body bcd27seg is
+	function bcd27seg2(bcdin: std_logic_vector(3 downto 0)) return std_logic_vector is
+		variable sietesal: std_logic_vector(7 downto 0);
+		
+		begin
+			if bcdin = "0000" then
+				sietesal := "00000011";
+			elsif bcdin = "0001" then
+				sietesal := "00111111";
+			elsif bcdin = "0010" then
+				sietesal := "01001001";
+			elsif bcdin = "0011" then
+				sietesal := "00011001";
+			elsif bcdin = "0100" then
+				sietesal := "00110101";
+			elsif bcdin = "0101" then
+				sietesal := "10010001";
+			elsif bcdin = "0110" then
+				sietesal := "10000001";
+			elsif bcdin = "0111" then
+				sietesal := "00111011";
+			elsif bcdin = "1000" then
+				sietesal := "00000001";
+			elsif bcdin = "1001" then
+				sietesal := "00110001";
+			else
+				sietesal := "11111111";
+			end if;
+		return(sietesal);
+	end bcd27seg2;
+end bcd27seg;

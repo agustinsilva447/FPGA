@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 d/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_1/codigo/simulation/qsim
 vcounter7segments
-Z1 !s110 1622243715
+Z1 !s110 1623770989
 !i10b 1
 !s100 2D;]j90dT^AJHR1ZnW2d93
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
 IW@8X;kd:<C@n@49zUOBhW2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1622243714
+Z4 w1623770987
 Z5 8counter7segments.vo
 Z6 Fcounter7segments.vo
-!i122 6
+!i122 8
 L0 32 2332
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1622243715.000000
+Z8 !s108 1623770989.000000
 Z9 !s107 counter7segments.vo|
 Z10 !s90 -work|work|counter7segments.vo|
 !i113 1
@@ -40,10 +40,10 @@ R2
 IhZL6KSlOeU`G@VWOeTT:83
 R3
 R0
-w1622243712
+w1623770985
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 7
+!i122 9
 L0 30 43
 R7
 r1
@@ -66,7 +66,7 @@ R0
 R4
 R5
 R6
-!i122 6
+!i122 8
 L0 2365 34
 R7
 r1
