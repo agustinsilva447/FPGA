@@ -21,6 +21,7 @@ after 2500 simTimestamp
 run -all
 quit -f
 
+
 </modelsim_script>
 <modelsim_script_timing>onerror {exit -code 1}
 vlib work
@@ -39,6 +40,7 @@ proc simTimestamp {} {
 after 2500 simTimestamp
 run -all
 quit -f
+
 
 </modelsim_script_timing>
 <hdl_lang>verilog</hdl_lang>
@@ -333,114 +335,94 @@ GROUP("centenas")
 	MEMBERS = "bcd[11]", "bcd[10]", "bcd[9]", "bcd[8]";
 }
 
-SIGNAL("salida7c")
+SIGNAL("salida7u")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
+	WIDTH = 7;
 	LSB_INDEX = 0;
 	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
-SIGNAL("salida7c[7]")
+SIGNAL("salida7u[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "salida7c";
+	PARENT = "salida7u";
 }
 
-SIGNAL("salida7c[6]")
+SIGNAL("salida7u[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "salida7c";
+	PARENT = "salida7u";
 }
 
-SIGNAL("salida7c[5]")
+SIGNAL("salida7u[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "salida7c";
+	PARENT = "salida7u";
 }
 
-SIGNAL("salida7c[4]")
+SIGNAL("salida7u[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "salida7c";
+	PARENT = "salida7u";
 }
 
-SIGNAL("salida7c[3]")
+SIGNAL("salida7u[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "salida7c";
+	PARENT = "salida7u";
 }
 
-SIGNAL("salida7c[2]")
+SIGNAL("salida7u[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "salida7c";
+	PARENT = "salida7u";
 }
 
-SIGNAL("salida7c[1]")
+SIGNAL("salida7u[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "salida7c";
-}
-
-SIGNAL("salida7c[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "salida7c";
+	PARENT = "salida7u";
 }
 
 SIGNAL("salida7d")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
+	WIDTH = 7;
 	LSB_INDEX = 0;
 	DIRECTION = OUTPUT;
 	PARENT = "";
-}
-
-SIGNAL("salida7d[7]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "salida7d";
 }
 
 SIGNAL("salida7d[6]")
@@ -513,94 +495,84 @@ SIGNAL("salida7d[0]")
 	PARENT = "salida7d";
 }
 
-SIGNAL("salida7u")
+SIGNAL("salida7c")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = BUS;
-	WIDTH = 8;
+	WIDTH = 7;
 	LSB_INDEX = 0;
 	DIRECTION = OUTPUT;
 	PARENT = "";
 }
 
-SIGNAL("salida7u[7]")
+SIGNAL("salida7c[6]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "salida7u";
+	PARENT = "salida7c";
 }
 
-SIGNAL("salida7u[6]")
+SIGNAL("salida7c[5]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "salida7u";
+	PARENT = "salida7c";
 }
 
-SIGNAL("salida7u[5]")
+SIGNAL("salida7c[4]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "salida7u";
+	PARENT = "salida7c";
 }
 
-SIGNAL("salida7u[4]")
+SIGNAL("salida7c[3]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "salida7u";
+	PARENT = "salida7c";
 }
 
-SIGNAL("salida7u[3]")
+SIGNAL("salida7c[2]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "salida7u";
+	PARENT = "salida7c";
 }
 
-SIGNAL("salida7u[2]")
+SIGNAL("salida7c[1]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "salida7u";
+	PARENT = "salida7c";
 }
 
-SIGNAL("salida7u[1]")
+SIGNAL("salida7c[0]")
 {
 	VALUE_TYPE = NINE_LEVEL_BIT;
 	SIGNAL_TYPE = SINGLE_BIT;
 	WIDTH = 1;
 	LSB_INDEX = -1;
 	DIRECTION = OUTPUT;
-	PARENT = "salida7u";
-}
-
-SIGNAL("salida7u[0]")
-{
-	VALUE_TYPE = NINE_LEVEL_BIT;
-	SIGNAL_TYPE = SINGLE_BIT;
-	WIDTH = 1;
-	LSB_INDEX = -1;
-	DIRECTION = OUTPUT;
-	PARENT = "salida7u";
+	PARENT = "salida7c";
 }
 
 TRANSITION_LIST("bcd[11]")
@@ -828,7 +800,7 @@ TRANSITION_LIST("bcd[3]")
 	}
 }
 
-TRANSITION_LIST("salida7c[7]")
+TRANSITION_LIST("salida7u[6]")
 {
 	NODE
 	{
@@ -837,7 +809,7 @@ TRANSITION_LIST("salida7c[7]")
 	}
 }
 
-TRANSITION_LIST("salida7c[6]")
+TRANSITION_LIST("salida7u[5]")
 {
 	NODE
 	{
@@ -846,7 +818,7 @@ TRANSITION_LIST("salida7c[6]")
 	}
 }
 
-TRANSITION_LIST("salida7c[5]")
+TRANSITION_LIST("salida7u[4]")
 {
 	NODE
 	{
@@ -855,7 +827,7 @@ TRANSITION_LIST("salida7c[5]")
 	}
 }
 
-TRANSITION_LIST("salida7c[4]")
+TRANSITION_LIST("salida7u[3]")
 {
 	NODE
 	{
@@ -864,7 +836,7 @@ TRANSITION_LIST("salida7c[4]")
 	}
 }
 
-TRANSITION_LIST("salida7c[3]")
+TRANSITION_LIST("salida7u[2]")
 {
 	NODE
 	{
@@ -873,7 +845,7 @@ TRANSITION_LIST("salida7c[3]")
 	}
 }
 
-TRANSITION_LIST("salida7c[2]")
+TRANSITION_LIST("salida7u[1]")
 {
 	NODE
 	{
@@ -882,25 +854,7 @@ TRANSITION_LIST("salida7c[2]")
 	}
 }
 
-TRANSITION_LIST("salida7c[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("salida7c[0]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("salida7d[7]")
+TRANSITION_LIST("salida7u[0]")
 {
 	NODE
 	{
@@ -972,7 +926,7 @@ TRANSITION_LIST("salida7d[0]")
 	}
 }
 
-TRANSITION_LIST("salida7u[7]")
+TRANSITION_LIST("salida7c[6]")
 {
 	NODE
 	{
@@ -981,7 +935,7 @@ TRANSITION_LIST("salida7u[7]")
 	}
 }
 
-TRANSITION_LIST("salida7u[6]")
+TRANSITION_LIST("salida7c[5]")
 {
 	NODE
 	{
@@ -990,7 +944,7 @@ TRANSITION_LIST("salida7u[6]")
 	}
 }
 
-TRANSITION_LIST("salida7u[5]")
+TRANSITION_LIST("salida7c[4]")
 {
 	NODE
 	{
@@ -999,7 +953,7 @@ TRANSITION_LIST("salida7u[5]")
 	}
 }
 
-TRANSITION_LIST("salida7u[4]")
+TRANSITION_LIST("salida7c[3]")
 {
 	NODE
 	{
@@ -1008,7 +962,7 @@ TRANSITION_LIST("salida7u[4]")
 	}
 }
 
-TRANSITION_LIST("salida7u[3]")
+TRANSITION_LIST("salida7c[2]")
 {
 	NODE
 	{
@@ -1017,7 +971,7 @@ TRANSITION_LIST("salida7u[3]")
 	}
 }
 
-TRANSITION_LIST("salida7u[2]")
+TRANSITION_LIST("salida7c[1]")
 {
 	NODE
 	{
@@ -1026,16 +980,7 @@ TRANSITION_LIST("salida7u[2]")
 	}
 }
 
-TRANSITION_LIST("salida7u[1]")
-{
-	NODE
-	{
-		REPEAT = 1;
-		LEVEL X FOR 1000.0;
-	}
-}
-
-TRANSITION_LIST("salida7u[0]")
+TRANSITION_LIST("salida7c[0]")
 {
 	NODE
 	{
@@ -1313,19 +1258,19 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "salida7c";
+	CHANNEL = "salida7u";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 27;
 	TREE_LEVEL = 0;
-	CHILDREN = 28, 29, 30, 31, 32, 33, 34, 35;
+	CHILDREN = 28, 29, 30, 31, 32, 33, 34;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "salida7c[7]";
+	CHANNEL = "salida7u[6]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 28;
 	TREE_LEVEL = 1;
 	PARENT = 27;
@@ -1333,9 +1278,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "salida7c[6]";
+	CHANNEL = "salida7u[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 29;
 	TREE_LEVEL = 1;
 	PARENT = 27;
@@ -1343,9 +1288,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "salida7c[5]";
+	CHANNEL = "salida7u[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 30;
 	TREE_LEVEL = 1;
 	PARENT = 27;
@@ -1353,9 +1298,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "salida7c[4]";
+	CHANNEL = "salida7u[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 31;
 	TREE_LEVEL = 1;
 	PARENT = 27;
@@ -1363,9 +1308,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "salida7c[3]";
+	CHANNEL = "salida7u[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 32;
 	TREE_LEVEL = 1;
 	PARENT = 27;
@@ -1373,9 +1318,9 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "salida7c[2]";
+	CHANNEL = "salida7u[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 33;
 	TREE_LEVEL = 1;
 	PARENT = 27;
@@ -1383,20 +1328,10 @@ DISPLAY_LINE
 
 DISPLAY_LINE
 {
-	CHANNEL = "salida7c[1]";
+	CHANNEL = "salida7u[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 34;
-	TREE_LEVEL = 1;
-	PARENT = 27;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "salida7c[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 35;
 	TREE_LEVEL = 1;
 	PARENT = 27;
 }
@@ -1405,180 +1340,160 @@ DISPLAY_LINE
 {
 	CHANNEL = "salida7d";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 36;
+	RADIX = Binary;
+	TREE_INDEX = 35;
 	TREE_LEVEL = 0;
-	CHILDREN = 37, 38, 39, 40, 41, 42, 43, 44;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "salida7d[7]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 37;
-	TREE_LEVEL = 1;
-	PARENT = 36;
+	CHILDREN = 36, 37, 38, 39, 40, 41, 42;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "salida7d[6]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 38;
+	RADIX = Binary;
+	TREE_INDEX = 36;
 	TREE_LEVEL = 1;
-	PARENT = 36;
+	PARENT = 35;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "salida7d[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 39;
+	RADIX = Binary;
+	TREE_INDEX = 37;
 	TREE_LEVEL = 1;
-	PARENT = 36;
+	PARENT = 35;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "salida7d[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 40;
+	RADIX = Binary;
+	TREE_INDEX = 38;
 	TREE_LEVEL = 1;
-	PARENT = 36;
+	PARENT = 35;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "salida7d[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 41;
+	RADIX = Binary;
+	TREE_INDEX = 39;
 	TREE_LEVEL = 1;
-	PARENT = 36;
+	PARENT = 35;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "salida7d[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 42;
+	RADIX = Binary;
+	TREE_INDEX = 40;
 	TREE_LEVEL = 1;
-	PARENT = 36;
+	PARENT = 35;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "salida7d[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 43;
+	RADIX = Binary;
+	TREE_INDEX = 41;
 	TREE_LEVEL = 1;
-	PARENT = 36;
+	PARENT = 35;
 }
 
 DISPLAY_LINE
 {
 	CHANNEL = "salida7d[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
+	TREE_INDEX = 42;
+	TREE_LEVEL = 1;
+	PARENT = 35;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "salida7c";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
+	TREE_INDEX = 43;
+	TREE_LEVEL = 0;
+	CHILDREN = 44, 45, 46, 47, 48, 49, 50;
+}
+
+DISPLAY_LINE
+{
+	CHANNEL = "salida7c[6]";
+	EXPAND_STATUS = COLLAPSED;
+	RADIX = Binary;
 	TREE_INDEX = 44;
 	TREE_LEVEL = 1;
-	PARENT = 36;
+	PARENT = 43;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "salida7u";
+	CHANNEL = "salida7c[5]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 45;
-	TREE_LEVEL = 0;
-	CHILDREN = 46, 47, 48, 49, 50, 51, 52, 53;
+	TREE_LEVEL = 1;
+	PARENT = 43;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "salida7u[7]";
+	CHANNEL = "salida7c[4]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 46;
 	TREE_LEVEL = 1;
-	PARENT = 45;
+	PARENT = 43;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "salida7u[6]";
+	CHANNEL = "salida7c[3]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 47;
 	TREE_LEVEL = 1;
-	PARENT = 45;
+	PARENT = 43;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "salida7u[5]";
+	CHANNEL = "salida7c[2]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 48;
 	TREE_LEVEL = 1;
-	PARENT = 45;
+	PARENT = 43;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "salida7u[4]";
+	CHANNEL = "salida7c[1]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 49;
 	TREE_LEVEL = 1;
-	PARENT = 45;
+	PARENT = 43;
 }
 
 DISPLAY_LINE
 {
-	CHANNEL = "salida7u[3]";
+	CHANNEL = "salida7c[0]";
 	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
+	RADIX = Binary;
 	TREE_INDEX = 50;
 	TREE_LEVEL = 1;
-	PARENT = 45;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "salida7u[2]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 51;
-	TREE_LEVEL = 1;
-	PARENT = 45;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "salida7u[1]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 52;
-	TREE_LEVEL = 1;
-	PARENT = 45;
-}
-
-DISPLAY_LINE
-{
-	CHANNEL = "salida7u[0]";
-	EXPAND_STATUS = COLLAPSED;
-	RADIX = Unsigned;
-	TREE_INDEX = 53;
-	TREE_LEVEL = 1;
-	PARENT = 45;
+	PARENT = 43;
 }
 
 TIME_BAR

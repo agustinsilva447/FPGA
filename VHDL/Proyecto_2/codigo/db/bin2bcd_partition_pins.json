@@ -56,6 +56,10 @@
 					"strict" : false
 				},
 				{
+					"name" : "salida7u[0]",
+					"strict" : false
+				},
+				{
 					"name" : "salida7u[1]",
 					"strict" : false
 				},
@@ -80,7 +84,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "salida7u[7]",
+					"name" : "salida7d[0]",
 					"strict" : false
 				},
 				{
@@ -108,7 +112,7 @@
 					"strict" : false
 				},
 				{
-					"name" : "salida7d[7]",
+					"name" : "salida7c[0]",
 					"strict" : false
 				},
 				{
@@ -133,10 +137,6 @@
 				},
 				{
 					"name" : "salida7c[6]",
-					"strict" : false
-				},
-				{
-					"name" : "salida7c[7]",
 					"strict" : false
 				},
 				{

@@ -10,23 +10,23 @@ z2
 cModel Technology
 Z0 d/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_1/codigo/simulation/qsim
 vcounter7segments
-Z1 !s110 1623770989
+Z1 !s110 1623784712
 !i10b 1
-!s100 2D;]j90dT^AJHR1ZnW2d93
+!s100 <jV@J:n^hMGJTQF`B3[8:3
 Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
-IW@8X;kd:<C@n@49zUOBhW2
+I]l5>PdcAaVV7oWM=UjH?L2
 Z3 VDg1SIo80bB@j0V0VzS_@n1
 R0
-Z4 w1623770987
+Z4 w1623784711
 Z5 8counter7segments.vo
 Z6 Fcounter7segments.vo
-!i122 8
-L0 32 2332
+!i122 12
+L0 32 2316
 Z7 OV;L;2020.1;71
 r1
 !s85 0
 31
-Z8 !s108 1623770989.000000
+Z8 !s108 1623784712.000000
 Z9 !s107 counter7segments.vo|
 Z10 !s90 -work|work|counter7segments.vo|
 !i113 1
@@ -35,15 +35,15 @@ Z12 tCvgOpt 0
 vcounter7segments_vlg_vec_tst
 R1
 !i10b 1
-!s100 C^Xg1:4baOCWOUdOP71AH3
+!s100 Uodaj1jgo7Z`j^km<2VHS1
 R2
-IhZL6KSlOeU`G@VWOeTT:83
+I]]k[BG0gFaT:gdNNb3>iX0
 R3
 R0
-w1623770985
+w1623784709
 8Waveform.vwf.vt
 FWaveform.vwf.vt
-!i122 9
+!i122 13
 L0 30 43
 R7
 r1
@@ -58,16 +58,16 @@ R12
 vhard_block
 R1
 !i10b 1
-!s100 f75zb=I:0dH<7TQ>anhcM1
+!s100 CKM73kc>Y^hmB@@H@Kz`g3
 R2
-I27f_d6Cj8aS<FY20cm8WG3
+IgHk63GofO<AAo07OhkjPi2
 R3
 R0
 R4
 R5
 R6
-!i122 8
-L0 2365 34
+!i122 12
+L0 2349 34
 R7
 r1
 !s85 0

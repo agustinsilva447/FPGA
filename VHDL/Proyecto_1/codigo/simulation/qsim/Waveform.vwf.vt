@@ -19,7 +19,7 @@
 // the top level entity of the current Quartus project .The user can use this   
 // testbench to simulate his design using a third-party simulation tool .       
 // *****************************************************************************
-// Generated on "06/15/2021 12:29:45"
+// Generated on "06/15/2021 16:18:29"
                                                                                 
 // Verilog Test Bench (with test vectors) for design :                          counter7segments
 // 
@@ -35,8 +35,8 @@ reg reloj;
 // wires                                               
 wire sal;
 wire [3:0] saldecenas;
-wire [7:0] salida7d;
-wire [7:0] salida7u;
+wire [6:0] salida7d;
+wire [6:0] salida7u;
 wire [3:0] salunidades;
 
 // assign statements (if any)                          

@@ -1,15 +1,15 @@
-Fitter Status : Successful - Tue Jun 15 13:00:51 2021
+Fitter Status : Successful - Tue Jun 15 16:19:41 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : bin2bcd
 Top-level Entity Name : bin2bcd
 Family : Cyclone IV E
 Device : EP4CE22F17C6
 Timing Models : Final
-Total logic elements : 77 / 22,320 ( < 1 % )
+Total logic elements : 79 / 22,320 ( < 1 % )
     Total combinational functions : 76 / 22,320 ( < 1 % )
     Dedicated logic registers : 35 / 22,320 ( < 1 % )
 Total registers : 35
-Total pins : 47 / 154 ( 31 % )
+Total pins : 44 / 154 ( 29 % )
 Total virtual pins : 0
 Total memory bits : 0 / 608,256 ( 0 % )
 Embedded Multiplier 9-bit elements : 0 / 132 ( 0 % )

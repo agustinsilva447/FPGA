@@ -6,7 +6,7 @@ use work.bcd27seg.all;
 entity counter7segments is
 port(
 			reloj, borrar: in std_logic;
-			salida7u, salida7d: out std_logic_vector(7 downto 0);
+			salida7u, salida7d: out std_logic_vector(6 downto 0);
 			salunidades, saldecenas: out std_logic_vector(3 downto 0);
 			sal: out std_logic
 );
@@ -96,31 +96,31 @@ end bcd27seg;
 
 package body bcd27seg is
 	function bcd27seg2(bcdin: std_logic_vector(3 downto 0)) return std_logic_vector is
-		variable sietesal: std_logic_vector(7 downto 0);
+		variable sietesal: std_logic_vector(6 downto 0);
 		
 		begin
 			if bcdin = "0000" then
-				sietesal := "00000011";
+				sietesal := "1000000";
 			elsif bcdin = "0001" then
-				sietesal := "00111111";
+				sietesal := "1111001";
 			elsif bcdin = "0010" then
-				sietesal := "01001001";
+				sietesal := "0100100";
 			elsif bcdin = "0011" then
-				sietesal := "00011001";
+				sietesal := "0110000";
 			elsif bcdin = "0100" then
-				sietesal := "00110101";
+				sietesal := "0011001";
 			elsif bcdin = "0101" then
-				sietesal := "10010001";
+				sietesal := "0010010";
 			elsif bcdin = "0110" then
-				sietesal := "10000001";
+				sietesal := "0000010";
 			elsif bcdin = "0111" then
-				sietesal := "00111011";
+				sietesal := "1111000";
 			elsif bcdin = "1000" then
-				sietesal := "00000001";
+				sietesal := "0000000";
 			elsif bcdin = "1001" then
-				sietesal := "00110001";
+				sietesal := "0011000";
 			else
-				sietesal := "11111111";
+				sietesal := "1111111";
 			end if;
 		return(sietesal);
 	end bcd27seg2;
