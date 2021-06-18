@@ -4,103 +4,103 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "salida7u[0]",
+					"name" : "output",
 					"strict" : false
 				},
 				{
-					"name" : "salida7u[1]",
+					"name" : "out7segu[0]",
 					"strict" : false
 				},
 				{
-					"name" : "salida7u[2]",
+					"name" : "out7segu[1]",
 					"strict" : false
 				},
 				{
-					"name" : "salida7u[3]",
+					"name" : "out7segu[2]",
 					"strict" : false
 				},
 				{
-					"name" : "salida7u[4]",
+					"name" : "out7segu[3]",
 					"strict" : false
 				},
 				{
-					"name" : "salida7u[5]",
+					"name" : "out7segu[4]",
 					"strict" : false
 				},
 				{
-					"name" : "salida7u[6]",
+					"name" : "out7segu[5]",
 					"strict" : false
 				},
 				{
-					"name" : "salida7d[0]",
+					"name" : "out7segu[6]",
 					"strict" : false
 				},
 				{
-					"name" : "salida7d[1]",
+					"name" : "out7segd[0]",
 					"strict" : false
 				},
 				{
-					"name" : "salida7d[2]",
+					"name" : "out7segd[1]",
 					"strict" : false
 				},
 				{
-					"name" : "salida7d[3]",
+					"name" : "out7segd[2]",
 					"strict" : false
 				},
 				{
-					"name" : "salida7d[4]",
+					"name" : "out7segd[3]",
 					"strict" : false
 				},
 				{
-					"name" : "salida7d[5]",
+					"name" : "out7segd[4]",
 					"strict" : false
 				},
 				{
-					"name" : "salida7d[6]",
+					"name" : "out7segd[5]",
 					"strict" : false
 				},
 				{
-					"name" : "salunidades[0]",
+					"name" : "out7segd[6]",
 					"strict" : false
 				},
 				{
-					"name" : "salunidades[1]",
+					"name" : "unidades_out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "salunidades[2]",
+					"name" : "unidades_out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "salunidades[3]",
+					"name" : "unidades_out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "saldecenas[0]",
+					"name" : "unidades_out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "saldecenas[1]",
+					"name" : "decenas_out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "saldecenas[2]",
+					"name" : "decenas_out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "saldecenas[3]",
+					"name" : "decenas_out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "sal",
+					"name" : "decenas_out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "reloj",
+					"name" : "clock",
 					"strict" : false
 				},
 				{
-					"name" : "borrar",
+					"name" : "reset",
 					"strict" : false
 				}
 			]

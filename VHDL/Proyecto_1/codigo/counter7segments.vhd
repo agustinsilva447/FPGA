@@ -5,45 +5,45 @@ use work.bcd27seg.all;
 
 entity counter7segments is
 port(
-			reloj, borrar: in std_logic;
-			salida7u, salida7d: out std_logic_vector(6 downto 0);
-			salunidades, saldecenas: out std_logic_vector(3 downto 0);
-			sal: out std_logic
+			clock, reset: in std_logic;
+			output: out std_logic;
+			out7segu, out7segd: out std_logic_vector(6 downto 0);
+			unidades_out, decenas_out: out std_logic_vector(3 downto 0)
 );
 end counter7segments;
 
 architecture a of counter7segments is
 
-signal unhertz: std_logic;
 signal unidades: std_logic_vector(3 downto 0);
 signal decenas: std_logic_vector(3 downto 0);
+signal unciclo: std_logic;
 
 begin
-	process(reloj, borrar)
-	variable cuentaunhertz: integer range 0 to 67108863 := 0;
+	process(clock, reset)
+	variable contador: integer range 0 to 67108863 := 0;
 	begin
-		if not borrar = '1' then
-			cuentaunhertz := 0;
-			unhertz <= '0';
-		elsif rising_edge(reloj) then
-			if cuentaunhertz = 9 then
-				unhertz <= '1';
-				cuentaunhertz := 0;
+		if not reset = '1' then
+			contador := 0;
+			unciclo <= '0';
+		elsif rising_edge(clock) then
+			if contador = 9 then
+				unciclo <= '1';
+				contador := 0;
 			else 
-				cuentaunhertz := cuentaunhertz + 1;
-				unhertz <= '0';
+				contador := contador + 1;
+				unciclo <= '0';
 			end if;
 		end if;
 	end process;
 	
-	process(reloj, borrar)
+	process(clock, reset)
 	variable cuentau: integer range 0 to 9 := 0;
 	begin
-		if not borrar = '1' then
+		if not reset = '1' then
 			cuentau := 0;
 			unidades <= "0000";
-		elsif rising_edge(reloj) then
-			if unhertz = '1' then
+		elsif rising_edge(clock) then
+			if unciclo = '1' then
 				if cuentau = 9 then
 					cuentau := 0;
 				else 
@@ -54,14 +54,14 @@ begin
 		unidades <= std_logic_vector(to_unsigned(cuentau, 4));
 	end process;
 	
-	process(reloj, borrar)
+	process(clock, reset)
 	variable cuentad: integer range 0 to 9 := 0;
 	begin
-		if not borrar = '1' then
+		if not reset = '1' then
 			cuentad := 0;
 			decenas <= "0000";	
-		elsif rising_edge(reloj) then
-			if unhertz = '1' and unidades = "1001" then 
+		elsif rising_edge(clock) then
+			if unciclo = '1' and unidades = "1001" then 
 				if cuentad = 9 then
 					cuentad := 0;
 				else
@@ -72,18 +72,18 @@ begin
 		decenas <= std_logic_vector(to_unsigned(cuentad, 4));
 	end process;
 	
-	sal <= unhertz;
-	salunidades <= unidades;
-	saldecenas <= decenas; 
+	output <= unciclo;
+	unidades_out <= unidades;
+	decenas_out <= decenas; 
 	
 	process(unidades, decenas)
 	begin
 		if decenas = "0000" then
-			salida7d <= bcd27seg2("1111");
+			out7segd <= bcd27seg2("1111");
 		else 
-			salida7d <= bcd27seg2(decenas);
+			out7segd <= bcd27seg2(decenas);
 		end if;
-		salida7u <= bcd27seg2(unidades);
+		out7segu <= bcd27seg2(unidades);
 	end process;
 end a;
 	

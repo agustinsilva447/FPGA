@@ -4,36 +4,36 @@ use ieee.numeric_std.all;
 use work.bcd27seg.all;
 
 entity bin2bcd is
-port(	reloj, ninicio: in std_logic;
-		bin: in std_logic_vector(7 downto 0);
-		fin: out std_logic;
-		bcd_sal: out std_logic_vector(11 downto 0);		
+port(	clock, n_begin: in std_logic;
+		data_bin: in std_logic_vector(7 downto 0);
+		done: out std_logic;
+		bcd_out: out std_logic_vector(11 downto 0);		
 		salida7u, salida7d, salida7c: out std_logic_vector(6 downto 0)
 );
 end bin2bcd;
 
 architecture a of bin2bcd is
-signal elfin: std_logic;
+signal fin: std_logic;
 signal bcd: std_logic_vector(11 downto 0);
 signal unidades: std_logic_vector(3 downto 0);
 signal decenas: std_logic_vector(3 downto 0);
 signal centenas: std_logic_vector(3 downto 0);
 
 begin
-	bcd_sal <= bcd;
-	fin <= elfin;
-	process(reloj, ninicio)
+	bcd_out <= bcd;
+	done <= fin;
+	process(clock, n_begin)
 	variable datobin: std_logic_vector(7 downto 0);
 	variable datobcd: std_logic_vector(11 downto 0);
 	variable i: integer range 0 to 7;
 	begin
-		if ninicio = '0' then
+		if n_begin = '0' then
 			i := 0;
-			datobin := bin;
+			datobin := data_bin;
 			datobcd := (others => '0');
-			elfin <= '0';
-		elsif rising_edge(reloj) then
-			if elfin = '0' then
+			fin <= '0';
+		elsif rising_edge(clock) then
+			if fin = '0' then
 				datobcd(11 downto 1) := datobcd(10 downto 0);
 				datobcd(0) := datobin(7);
 				datobin(7 downto 1) := datobin(6 downto 0);
@@ -50,7 +50,7 @@ begin
 					end if;
 					i := i+1;
 				else 
-					elfin <= '1';
+					fin <= '1';
 					bcd <= datobcd;
 				end if;
 			end if;
@@ -70,7 +70,7 @@ begin
 			salida7c <= bcd27seg2(centenas);
 		end if;
 		
-		if decenas = "0000" then
+		if centenas = "0000" and decenas = "0000" then
 			salida7d <= bcd27seg2("1111");
 		else 
 			salida7d <= bcd27seg2(decenas);

@@ -2,112 +2,112 @@
 Timing Analyzer Summary
 ------------------------------------------------------------
 
-Type  : Slow 1200mV 85C Model Setup 'reloj'
-Slack : -2.466
-TNS   : -57.079
+Type  : Slow 1200mV 85C Model Setup 'clock'
+Slack : -2.533
+TNS   : -59.581
 
 Type  : Slow 1200mV 85C Model Setup 'bcd[10]'
-Slack : -1.365
-TNS   : -7.608
+Slack : -1.901
+TNS   : -8.210
 
 Type  : Slow 1200mV 85C Model Hold 'bcd[10]'
-Slack : 0.225
-TNS   : 0.000
+Slack : -0.195
+TNS   : -0.195
 
-Type  : Slow 1200mV 85C Model Hold 'reloj'
+Type  : Slow 1200mV 85C Model Hold 'clock'
 Slack : 0.358
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Recovery 'reloj'
+Type  : Slow 1200mV 85C Model Recovery 'clock'
 Slack : 0.016
 TNS   : 0.000
 
-Type  : Slow 1200mV 85C Model Removal 'reloj'
+Type  : Slow 1200mV 85C Model Removal 'clock'
 Slack : -0.089
 TNS   : -2.047
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'reloj'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'clock'
 Slack : -3.000
 TNS   : -38.000
 
-Type  : Slow 1200mV 85C Model Minimum Pulse Width 'ninicio'
+Type  : Slow 1200mV 85C Model Minimum Pulse Width 'n_begin'
 Slack : -3.000
 TNS   : -3.000
 
 Type  : Slow 1200mV 85C Model Minimum Pulse Width 'bcd[10]'
-Slack : 0.462
+Slack : 0.452
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Setup 'reloj'
-Slack : -2.127
-TNS   : -48.858
+Type  : Slow 1200mV 0C Model Setup 'clock'
+Slack : -2.204
+TNS   : -51.248
 
 Type  : Slow 1200mV 0C Model Setup 'bcd[10]'
-Slack : -1.203
-TNS   : -6.674
+Slack : -1.757
+TNS   : -7.404
 
 Type  : Slow 1200mV 0C Model Hold 'bcd[10]'
-Slack : 0.221
-TNS   : 0.000
+Slack : -0.189
+TNS   : -0.189
 
-Type  : Slow 1200mV 0C Model Hold 'reloj'
+Type  : Slow 1200mV 0C Model Hold 'clock'
 Slack : 0.312
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Recovery 'reloj'
+Type  : Slow 1200mV 0C Model Recovery 'clock'
 Slack : 0.080
 TNS   : 0.000
 
-Type  : Slow 1200mV 0C Model Removal 'reloj'
+Type  : Slow 1200mV 0C Model Removal 'clock'
 Slack : -0.089
-TNS   : -2.043
+TNS   : -2.044
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'reloj'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
 TNS   : -38.000
 
-Type  : Slow 1200mV 0C Model Minimum Pulse Width 'ninicio'
+Type  : Slow 1200mV 0C Model Minimum Pulse Width 'n_begin'
 Slack : -3.000
 TNS   : -3.000
 
 Type  : Slow 1200mV 0C Model Minimum Pulse Width 'bcd[10]'
-Slack : 0.479
+Slack : 0.486
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Setup 'reloj'
-Slack : -1.017
-TNS   : -22.938
+Type  : Fast 1200mV 0C Model Setup 'clock'
+Slack : -1.049
+TNS   : -23.747
 
 Type  : Fast 1200mV 0C Model Setup 'bcd[10]'
-Slack : -0.506
-TNS   : -2.392
-
-Type  : Fast 1200mV 0C Model Hold 'reloj'
-Slack : 0.168
-TNS   : 0.000
+Slack : -0.852
+TNS   : -2.747
 
 Type  : Fast 1200mV 0C Model Hold 'bcd[10]'
-Slack : 0.203
+Slack : -0.054
+TNS   : -0.054
+
+Type  : Fast 1200mV 0C Model Hold 'clock'
+Slack : 0.166
 TNS   : 0.000
 
-Type  : Fast 1200mV 0C Model Recovery 'reloj'
+Type  : Fast 1200mV 0C Model Recovery 'clock'
 Slack : -0.094
-TNS   : -2.162
+TNS   : -2.161
 
-Type  : Fast 1200mV 0C Model Removal 'reloj'
+Type  : Fast 1200mV 0C Model Removal 'clock'
 Slack : -0.076
-TNS   : -1.731
+TNS   : -1.728
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'reloj'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'clock'
 Slack : -3.000
-TNS   : -39.923
+TNS   : -39.971
 
-Type  : Fast 1200mV 0C Model Minimum Pulse Width 'ninicio'
+Type  : Fast 1200mV 0C Model Minimum Pulse Width 'n_begin'
 Slack : -3.000
 TNS   : -3.000
 
 Type  : Fast 1200mV 0C Model Minimum Pulse Width 'bcd[10]'
-Slack : 0.430
+Slack : 0.418
 TNS   : 0.000
 
 ------------------------------------------------------------

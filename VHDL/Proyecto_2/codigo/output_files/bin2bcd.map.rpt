@@ -1,5 +1,5 @@
 Analysis & Synthesis report for bin2bcd
-Tue Jun 15 16:19:29 2021
+Fri Jun 18 11:23:08 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -45,13 +45,13 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Tue Jun 15 16:19:29 2021       ;
+; Analysis & Synthesis Status        ; Successful - Fri Jun 18 11:23:08 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; bin2bcd                                     ;
 ; Top-level Entity Name              ; bin2bcd                                     ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 87                                          ;
-;     Total combinational functions  ; 76                                          ;
+; Total logic elements               ; 98                                          ;
+;     Total combinational functions  ; 87                                          ;
 ;     Dedicated logic registers      ; 35                                          ;
 ; Total registers                    ; 35                                          ;
 ; Total pins                         ; 44                                          ;
@@ -179,16 +179,16 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+---------------+
 ; Resource                                    ; Usage         ;
 +---------------------------------------------+---------------+
-; Estimated Total logic elements              ; 87            ;
+; Estimated Total logic elements              ; 98            ;
 ;                                             ;               ;
-; Total combinational functions               ; 76            ;
+; Total combinational functions               ; 87            ;
 ; Logic element usage by number of LUT inputs ;               ;
-;     -- 4 input functions                    ; 43            ;
-;     -- 3 input functions                    ; 23            ;
-;     -- <=2 input functions                  ; 10            ;
+;     -- 4 input functions                    ; 48            ;
+;     -- 3 input functions                    ; 28            ;
+;     -- <=2 input functions                  ; 11            ;
 ;                                             ;               ;
 ; Logic elements by mode                      ;               ;
-;     -- normal mode                          ; 76            ;
+;     -- normal mode                          ; 87            ;
 ;     -- arithmetic mode                      ; 0             ;
 ;                                             ;               ;
 ; Total registers                             ; 35            ;
@@ -199,10 +199,10 @@ https://fpgasoftware.intel.com/eula.
 ;                                             ;               ;
 ; Embedded Multiplier 9-bit elements          ; 0             ;
 ;                                             ;               ;
-; Maximum fan-out node                        ; ninicio~input ;
+; Maximum fan-out node                        ; n_begin~input ;
 ; Maximum fan-out                             ; 40            ;
-; Total fan-out                               ; 463           ;
-; Average fan-out                             ; 2.33          ;
+; Total fan-out                               ; 500           ;
+; Average fan-out                             ; 2.38          ;
 +---------------------------------------------+---------------+
 
 
@@ -211,7 +211,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |bin2bcd                   ; 76 (76)             ; 35 (35)                   ; 0           ; 0            ; 0       ; 0         ; 44   ; 0            ; |bin2bcd            ; bin2bcd     ; work         ;
+; |bin2bcd                   ; 87 (87)             ; 35 (35)                   ; 0           ; 0            ; 0       ; 0         ; 44   ; 0            ; |bin2bcd            ; bin2bcd     ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -221,13 +221,13 @@ Note: For table entries with two numbers listed, the numbers in parentheses indi
 +----------------------------------------------------+---------------------+------------------------+
 ; Latch Name                                         ; Latch Enable Signal ; Free of Timing Hazards ;
 +----------------------------------------------------+---------------------+------------------------+
-; salida7c[0]$latch                                  ; Equal0              ; yes                    ;
-; salida7c[1]$latch                                  ; Equal0              ; yes                    ;
-; salida7c[2]$latch                                  ; Equal0              ; yes                    ;
-; salida7c[3]$latch                                  ; Equal0              ; yes                    ;
-; salida7c[4]$latch                                  ; Equal0              ; yes                    ;
-; salida7c[5]$latch                                  ; Equal0              ; yes                    ;
-; salida7c[6]$latch                                  ; Equal0              ; yes                    ;
+; salida7c[0]$latch                                  ; Equal9              ; yes                    ;
+; salida7c[1]$latch                                  ; Equal9              ; yes                    ;
+; salida7c[2]$latch                                  ; Equal9              ; yes                    ;
+; salida7c[3]$latch                                  ; Equal9              ; yes                    ;
+; salida7c[4]$latch                                  ; Equal9              ; yes                    ;
+; salida7c[5]$latch                                  ; Equal9              ; yes                    ;
+; salida7c[6]$latch                                  ; Equal9              ; yes                    ;
 ; Number of user-specified and inferred latches = 7  ;                     ;                        ;
 +----------------------------------------------------+---------------------+------------------------+
 Note: All latches listed above may not be present at the end of synthesis due to various synthesis optimizations.
@@ -255,6 +255,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |bin2bcd|sietesal          ;
 ; 5:1                ; 2 bits    ; 6 LEs         ; 4 LEs                ; 2 LEs                  ; No         ; |bin2bcd|sietesal          ;
+; 6:1                ; 2 bits    ; 8 LEs         ; 6 LEs                ; 2 LEs                  ; No         ; |bin2bcd|salida7d          ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -268,15 +269,15 @@ Note: All latches listed above may not be present at the end of synthesis due to
 ;     CLR               ; 4                           ;
 ;     ENA               ; 12                          ;
 ;     ENA CLR           ; 19                          ;
-; cycloneiii_lcell_comb ; 79                          ;
-;     normal            ; 79                          ;
-;         1 data inputs ; 3                           ;
-;         2 data inputs ; 10                          ;
-;         3 data inputs ; 23                          ;
-;         4 data inputs ; 43                          ;
+; cycloneiii_lcell_comb ; 88                          ;
+;     normal            ; 88                          ;
+;         1 data inputs ; 1                           ;
+;         2 data inputs ; 11                          ;
+;         3 data inputs ; 28                          ;
+;         4 data inputs ; 48                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 3.00                        ;
-; Average LUT depth     ; 1.97                        ;
+; Average LUT depth     ; 2.07                        ;
 +-----------------------+-----------------------------+
 
 
@@ -295,7 +296,7 @@ Note: All latches listed above may not be present at the end of synthesis due to
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Tue Jun 15 16:19:12 2021
+    Info: Processing started: Fri Jun 18 11:22:52 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off bin2bcd -c bin2bcd
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
 Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
@@ -305,7 +306,7 @@ Info (12021): Found 4 design units, including 1 entities, in source file bin2bcd
     Info (12022): Found design unit 3: bcd27seg-body File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 90
     Info (12023): Found entity 1: bin2bcd File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 6
 Info (12127): Elaborating entity "bin2bcd" for the top level hierarchy
-Warning (10492): VHDL Process Statement warning at bin2bcd.vhd(32): signal "bin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 32
+Warning (10492): VHDL Process Statement warning at bin2bcd.vhd(32): signal "data_bin" is read inside the Process Statement but isn't in the Process Statement's sensitivity list File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 32
 Warning (10631): VHDL Process Statement warning at bin2bcd.vhd(65): inferring latch(es) for signal or variable "salida7c", which holds its previous value in one or more paths through the process File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
 Info (10041): Inferred latch for "salida7c[0]" at bin2bcd.vhd(65) File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
 Info (10041): Inferred latch for "salida7c[1]" at bin2bcd.vhd(65) File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_2/codigo/bin2bcd.vhd Line: 65
@@ -340,14 +341,14 @@ Warning (13004): Presettable and clearable registers converted to equivalent cir
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 133 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 144 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 10 input pins
     Info (21059): Implemented 34 output pins
-    Info (21061): Implemented 89 logic cells
+    Info (21061): Implemented 100 logic cells
 Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 26 warnings
-    Info: Peak virtual memory: 420 megabytes
-    Info: Processing ended: Tue Jun 15 16:19:29 2021
-    Info: Elapsed time: 00:00:17
+    Info: Peak virtual memory: 421 megabytes
+    Info: Processing ended: Fri Jun 18 11:23:08 2021
+    Info: Elapsed time: 00:00:16
     Info: Total CPU time (on all processors): 00:00:39
 
 

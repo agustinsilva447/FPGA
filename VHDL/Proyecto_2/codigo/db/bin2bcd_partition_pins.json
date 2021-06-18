@@ -4,55 +4,55 @@
 			"name" : "Top",
 			"pins" : [
 				{
-					"name" : "fin",
+					"name" : "done",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_sal[0]",
+					"name" : "bcd_out[0]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_sal[1]",
+					"name" : "bcd_out[1]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_sal[2]",
+					"name" : "bcd_out[2]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_sal[3]",
+					"name" : "bcd_out[3]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_sal[4]",
+					"name" : "bcd_out[4]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_sal[5]",
+					"name" : "bcd_out[5]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_sal[6]",
+					"name" : "bcd_out[6]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_sal[7]",
+					"name" : "bcd_out[7]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_sal[8]",
+					"name" : "bcd_out[8]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_sal[9]",
+					"name" : "bcd_out[9]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_sal[10]",
+					"name" : "bcd_out[10]",
 					"strict" : false
 				},
 				{
-					"name" : "bcd_sal[11]",
+					"name" : "bcd_out[11]",
 					"strict" : false
 				},
 				{
@@ -140,43 +140,43 @@
 					"strict" : false
 				},
 				{
-					"name" : "reloj",
+					"name" : "clock",
 					"strict" : false
 				},
 				{
-					"name" : "ninicio",
+					"name" : "n_begin",
 					"strict" : false
 				},
 				{
-					"name" : "bin[7]",
+					"name" : "data_bin[7]",
 					"strict" : false
 				},
 				{
-					"name" : "bin[6]",
+					"name" : "data_bin[6]",
 					"strict" : false
 				},
 				{
-					"name" : "bin[5]",
+					"name" : "data_bin[5]",
 					"strict" : false
 				},
 				{
-					"name" : "bin[4]",
+					"name" : "data_bin[4]",
 					"strict" : false
 				},
 				{
-					"name" : "bin[3]",
+					"name" : "data_bin[3]",
 					"strict" : false
 				},
 				{
-					"name" : "bin[2]",
+					"name" : "data_bin[2]",
 					"strict" : false
 				},
 				{
-					"name" : "bin[1]",
+					"name" : "data_bin[1]",
 					"strict" : false
 				},
 				{
-					"name" : "bin[0]",
+					"name" : "data_bin[0]",
 					"strict" : false
 				}
 			]

@@ -1,4 +1,5 @@
 Cyclone IV E - EP4CE22F17C6
+			   EP2C35F672C6
 
 1. simular en quartus
 2. simular en ghdl 			https://www.youtube.com/watch?v=dvLeDNbXfFw

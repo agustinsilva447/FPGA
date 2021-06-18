@@ -1,5 +1,5 @@
 Flow report for counter7segments
-Tue Jun 15 16:18:31 2021
+Fri Jun 18 10:04:24 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -41,7 +41,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Flow Summary                                                                     ;
 +------------------------------------+---------------------------------------------+
-; Flow Status                        ; Successful - Tue Jun 15 16:18:31 2021       ;
+; Flow Status                        ; Successful - Fri Jun 18 10:04:24 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; counter7segments                            ;
 ; Top-level Entity Name              ; counter7segments                            ;
@@ -65,7 +65,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------+---------------------+
 ; Option            ; Setting             ;
 +-------------------+---------------------+
-; Start date & time ; 06/15/2021 16:17:47 ;
+; Start date & time ; 06/18/2021 10:03:36 ;
 ; Main task         ; Compilation         ;
 ; Revision Name     ; counter7segments    ;
 +-------------------+---------------------+
@@ -76,7 +76,7 @@ https://fpgasoftware.intel.com/eula.
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
 ; Assignment Name                     ; Value                                  ; Default Value ; Entity Name ; Section Id                        ;
 +-------------------------------------+----------------------------------------+---------------+-------------+-----------------------------------+
-; COMPILER_SIGNATURE_ID               ; 58128533960630.162378466722099         ; --            ; --          ; --                                ;
+; COMPILER_SIGNATURE_ID               ; 58128533960630.162402141608231         ; --            ; --          ; --                                ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_timing           ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_boundary_scan    ;
 ; EDA_GENERATE_FUNCTIONAL_NETLIST     ; Off                                    ; --            ; --          ; eda_board_design_signal_integrity ;
@@ -99,14 +99,12 @@ https://fpgasoftware.intel.com/eula.
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 ; Module Name          ; Elapsed Time ; Average Processors Used ; Peak Virtual Memory ; Total CPU Time (on all processors) ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
-; Analysis & Synthesis ; 00:00:16     ; 1.0                     ; 423 MB              ; 00:00:39                           ;
-; Fitter               ; 00:00:09     ; 1.0                     ; 728 MB              ; 00:00:11                           ;
-; Assembler            ; 00:00:01     ; 1.0                     ; 350 MB              ; 00:00:02                           ;
-; Timing Analyzer      ; 00:00:03     ; 1.0                     ; 440 MB              ; 00:00:02                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 598 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:00     ; 1.0                     ; 594 MB              ; 00:00:01                           ;
-; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 597 MB              ; 00:00:01                           ;
-; Total                ; 00:00:30     ; --                      ; --                  ; 00:00:57                           ;
+; Analysis & Synthesis ; 00:00:21     ; 1.0                     ; 421 MB              ; 00:00:43                           ;
+; Fitter               ; 00:00:12     ; 1.0                     ; 715 MB              ; 00:00:14                           ;
+; Assembler            ; 00:00:03     ; 1.0                     ; 350 MB              ; 00:00:02                           ;
+; Timing Analyzer      ; 00:00:04     ; 1.0                     ; 438 MB              ; 00:00:04                           ;
+; EDA Netlist Writer   ; 00:00:01     ; 1.0                     ; 598 MB              ; 00:00:01                           ;
+; Total                ; 00:00:41     ; --                      ; --                  ; 00:01:04                           ;
 +----------------------+--------------+-------------------------+---------------------+------------------------------------+
 
 
@@ -120,8 +118,6 @@ https://fpgasoftware.intel.com/eula.
 ; Assembler            ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; Timing Analyzer      ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 ; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
-; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
-; EDA Netlist Writer   ; agustinsilva447-Lenovo-G50-80 ; Ubuntu 20.04.2 ; 20         ; x86_64         ;
 +----------------------+-------------------------------+----------------+------------+----------------+
 
 
@@ -133,8 +129,6 @@ quartus_fit --read_settings_files=off --write_settings_files=off counter7segment
 quartus_asm --read_settings_files=off --write_settings_files=off counter7segments -c counter7segments
 quartus_sta counter7segments -c counter7segments
 quartus_eda --read_settings_files=off --write_settings_files=off counter7segments -c counter7segments
-quartus_eda --gen_testbench --tool=modelsim_oem --format=verilog --write_settings_files=off counter7segments -c counter7segments --vector_source=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_1/codigo/Waveform.vwf --testbench_file=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_1/codigo/simulation/qsim/Waveform.vwf.vt
-quartus_eda --write_settings_files=off --simulation=on --functional=on --flatten_buses=off --tool=modelsim_oem --format=verilog --output_directory=/home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_1/codigo/simulation/qsim/ counter7segments -c counter7segments
 
 
 
