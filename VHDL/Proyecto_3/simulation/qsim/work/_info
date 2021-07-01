@@ -1,0 +1,80 @@
+m255
+K4
+z2
+!s11f vlog 2020.1 2020.02, Feb 28 2020
+13
+!s112 1.1
+!i10d 8192
+!i10e 25
+!i10f 100
+cModel Technology
+Z0 d/home/agustin/Escritorio/FPGA UNMDP/proyecto3/simulation/qsim
+vbcd2bin
+Z1 !s110 1625163191
+!i10b 1
+!s100 73VhPSOi]>dQ?U=dk<L1T3
+Z2 !s11b Dg1SIo80bB@j0V0VzS_@n1
+I<PbkbIUNS7@_=hLo2oJ3j0
+Z3 VDg1SIo80bB@j0V0VzS_@n1
+R0
+Z4 w1625163190
+Z5 8bcd2bin.vo
+Z6 Fbcd2bin.vo
+!i122 34
+L0 32 2100
+Z7 OV;L;2020.1;71
+r1
+!s85 0
+31
+Z8 !s108 1625163191.000000
+Z9 !s107 bcd2bin.vo|
+Z10 !s90 -work|work|bcd2bin.vo|
+!i113 1
+Z11 o-work work
+Z12 tCvgOpt 0
+vbcd2bin_vlg_vec_tst
+R1
+!i10b 1
+!s100 SQ?2fmRR=PTHXzBo=I>5c2
+R2
+I?BzB?^7YYLKK>KI;6K9@m1
+R3
+R0
+w1625163188
+8Waveform.vwf.vt
+FWaveform.vwf.vt
+!i122 35
+L0 30 128
+R7
+r1
+!s85 0
+31
+R8
+!s107 Waveform.vwf.vt|
+!s90 -work|work|Waveform.vwf.vt|
+!i113 1
+R11
+R12
+vhard_block
+R1
+!i10b 1
+!s100 6?@Img0NFKl=@l^k2K[mU1
+R2
+I8@mTKb0dkH1h;ajJ69^Fn3
+R3
+R0
+R4
+R5
+R6
+!i122 34
+L0 2133 34
+R7
+r1
+!s85 0
+31
+R8
+R9
+R10
+!i113 1
+R11
+R12
