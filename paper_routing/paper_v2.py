@@ -58,7 +58,8 @@ def uxi(U, A, B, C, T, V, I):
                 for j in range(T.shape[3]):
                     if y != j:
                         aux += T[x, i, y, j] * V[y, j]
-            U_n2[x, i] = U[-1][x, i] - A * U[-2][x, i] - B * U[-3][x, i] + C * (aux + I[x, i])
+            #U_n2[x, i] = U[-1][x, i] - A * U[-2][x, i] - B * U[-3][x, i] + C * (aux + I[x, i])
+            U_n2[x, i] = U[-1][x, i] - A * U[-2][x, i] + B * aux + C * I[x, i]
     return U_n2
 
 def energia(u1, u2, u3, u4, u5, C_xi, V, rho, d, s):
@@ -132,7 +133,7 @@ U.append(np.zeros(C_xi.shape))
 U.append(np.random.rand(C_xi.shape[0], C_xi.shape[1]))
 Energy = []
 
-for it in range(500):
+for it in range(1000):
     V = vxi_1(U[-1], l)
     U.append(uxi(U, A, B, C, T, V, I))
     E_i = energia(u1, u2, u3, u4, u5, C_xi, V, rho, source[0], destin[0])
