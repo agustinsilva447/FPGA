@@ -115,8 +115,8 @@ def generar_mapa(n1, n2):
         a = np.tril(a) + np.tril(a, -1).T
     return a
 
-n1 = 8 # cantidad de nodos
-n2 = 1 # distancia máxima
+n1 = 8      # cantidad de nodos
+n2 = 1      # distancia máxima
 paquetes = 1
 it_max = 1000
 
