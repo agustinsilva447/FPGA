@@ -95,6 +95,7 @@ def energia(u1, u2, u3, u4, u5, C_xi, V, rho, d, s):
     E_5 = (u5 / 2) * (1 - V[d, s])
     return (E_1 + E_2 + E_3 + E_4 + E_5)
 
+"""
 C_xi = np.array([[0,    0.91,  0.36, 0,     0,     0,    1.2,   0   ],
                  [0.91, 0,     0,    0.375, 0,     0,    0,     1.02],
                  [0.36, 0,     0,    0.47,  0.64,  0,    0,     0   ],
@@ -103,6 +104,23 @@ C_xi = np.array([[0,    0.91,  0.36, 0,     0,     0,    1.2,   0   ],
                  [0,    0,     0,    0.5,   0.56,  0,    0,     0.4 ],
                  [1.2,  0,     0,    0,     0.425, 0,    0,     1.1 ],
                  [0,    1.02,  0,    0,     0,     0.4,  1.1,   0   ]])
+"""
+
+def generar_mapa(n1, n2):
+    a = 0
+    while (np.linalg.matrix_rank(a)!=n1):
+        #a = np.random.randint(n2, size=(n1,n1))
+        a = n2 * np.random.rand(n1,n1)
+        np.fill_diagonal(a,0)
+        a = np.tril(a) + np.tril(a, -1).T
+    return a
+
+n1 = 8 # cantidad de nodos
+n2 = 1 # distancia máxima
+it_max = 1000
+C_xi = generar_mapa(n1, n2)
+
+
 u1 = 950
 u2 = 2500
 u3 = 1500
@@ -114,7 +132,7 @@ C = 0.0064
 l = 6
 
 net = nx.from_numpy_matrix(C_xi)
-paquetes = 10
+paquetes = 1
 source, destin, paths = dijkstra_sp(net, paquetes, C_xi)
 
 rho = np.where(C_xi == 0, 1, 0)
@@ -129,7 +147,7 @@ Energy.append(10000)
 
 flag = 1
 it = 0
-while (flag) and (it < 250):
+while (flag) and (it < it_max):
     it += 1
     V = vxi_1(U[-1], l)
     U.append(uxi(U, A, B, C, T, V, I))
@@ -145,6 +163,7 @@ print("Matriz de caminos:\n", C_xi)
 print("Matriz de Hopfield:\n", V)
 print("Energía final luego de {} iteraciones = {}".format(it, Energy[-1]))
 print("---------------")
+
 hopfield_spath = findall(1, V)
 dijkstra_spath = list_sp(paths[0])
 coincidencia = 100 * len(set(hopfield_spath).intersection(dijkstra_spath)) / len(hopfield_spath)
@@ -164,6 +183,7 @@ for i in dijkstra_spath:
     distancia_dijkstra[i[0], i[1]] = 1
 dist_dijkstra = np.sum(np.multiply(distancia_dijkstra, C_xi))
 print("Distancia de Dijkstra = {}".format(dist_dijkstra))
+
 accuracy = dist_dijkstra / dist_hopfield
 print("Accuracy = {}".format(accuracy))
 

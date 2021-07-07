@@ -4,9 +4,9 @@ use ieee.numeric_std.all;
 
 entity sqrt is
 port(	reloj, ninicio: in std_logic;
-		a,b: in unsigned(8 downto 0);
+		a,b: in unsigned(7 downto 0);
 		fin: out std_logic;
-		salida: out unsigned(8 downto 0)
+		salida: out unsigned(7 downto 0)
 );
 end sqrt;
 
@@ -15,9 +15,7 @@ signal elfin: std_logic;
 begin
 	fin <= elfin;
 	process(reloj, ninicio)
-	variable x,y,resultado: unsigned(8 downto 0);
-	--variable datobcd: std_logic_vector(11 downto 0);
-	--variable i: integer range 0 to 7;
+	variable x,y,resultado: unsigned(7 downto 0);
 	begin
 		if ninicio = '0' then
 			elfin <= '0';

@@ -1,13 +1,13 @@
-Analysis & Synthesis Status : Successful - Thu Jul  1 15:46:36 2021
+Analysis & Synthesis Status : Successful - Wed Jul  7 15:32:27 2021
 Quartus Prime Version : 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 Revision Name : mcd
 Top-level Entity Name : mcd
 Family : Cyclone IV E
-Total logic elements : 106
-    Total combinational functions : 104
-    Dedicated logic registers : 33
-Total registers : 33
-Total pins : 13
+Total logic elements : 115
+    Total combinational functions : 113
+    Dedicated logic registers : 41
+Total registers : 41
+Total pins : 21
 Total virtual pins : 0
 Total memory bits : 0
 Embedded Multiplier 9-bit elements : 0

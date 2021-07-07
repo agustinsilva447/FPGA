@@ -9,7 +9,7 @@ generic (	n: integer := 8
 port (	reloj, nreset, pulsoa, pulsob: in std_logic;
 			dato: in std_logic_vector(n-1 downto 0);
 			fin: out std_logic;
-			salida: out std_logic_vector(n-1 to 0)
+			salida: out std_logic_vector(n-1 downto 0)
 );
 end mcd;
 
@@ -45,13 +45,9 @@ begin
 					if a = b then
 						estado <= efin;
 					elsif a<b then
-						--r <= std_logic_vector(unsigned(b) - unsigned(a));
 						estado <= ebmayor;
-						--b <= r;
 					else 
-						--r <= std_logic_vector(unsigned(a) - unsigned(b));
 						estado <= eamayor;
-						--a <= r;
 					end if;
 				when efin =>
 					salida <= a;

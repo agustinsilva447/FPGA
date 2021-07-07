@@ -1,5 +1,5 @@
 Analysis & Synthesis report for mcd
-Thu Jul  1 15:46:36 2021
+Wed Jul  7 15:32:27 2021
 Quartus Prime Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
 
 
@@ -46,16 +46,16 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------------------------------------------------------------+
 ; Analysis & Synthesis Summary                                                     ;
 +------------------------------------+---------------------------------------------+
-; Analysis & Synthesis Status        ; Successful - Thu Jul  1 15:46:36 2021       ;
+; Analysis & Synthesis Status        ; Successful - Wed Jul  7 15:32:27 2021       ;
 ; Quartus Prime Version              ; 20.1.1 Build 720 11/11/2020 SJ Lite Edition ;
 ; Revision Name                      ; mcd                                         ;
 ; Top-level Entity Name              ; mcd                                         ;
 ; Family                             ; Cyclone IV E                                ;
-; Total logic elements               ; 106                                         ;
-;     Total combinational functions  ; 104                                         ;
-;     Dedicated logic registers      ; 33                                          ;
-; Total registers                    ; 33                                          ;
-; Total pins                         ; 13                                          ;
+; Total logic elements               ; 115                                         ;
+;     Total combinational functions  ; 113                                         ;
+;     Dedicated logic registers      ; 41                                          ;
+; Total registers                    ; 41                                          ;
+; Total pins                         ; 21                                          ;
 ; Total virtual pins                 ; 0                                           ;
 ; Total memory bits                  ; 0                                           ;
 ; Embedded Multiplier 9-bit elements ; 0                                           ;
@@ -154,26 +154,25 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+-------------+
 ; Processors                 ; Number      ;
 +----------------------------+-------------+
-; Number detected on machine ; 8           ;
-; Maximum allowed            ; 4           ;
+; Number detected on machine ; 4           ;
+; Maximum allowed            ; 2           ;
 ;                            ;             ;
 ; Average used               ; 1.00        ;
-; Maximum used               ; 4           ;
+; Maximum used               ; 2           ;
 ;                            ;             ;
 ; Usage by Processor         ; % Time Used ;
 ;     Processor 1            ; 100.0%      ;
 ;     Processor 2            ;   0.0%      ;
-;     Processors 3-4         ;   0.0%      ;
 +----------------------------+-------------+
 
 
-+----------------------------------------------------------------------------------------------------------------------------------------------+
-; Analysis & Synthesis Source Files Read                                                                                                       ;
-+----------------------------------+-----------------+-----------------------+-------------------------------------------------------+---------+
-; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                          ; Library ;
-+----------------------------------+-----------------+-----------------------+-------------------------------------------------------+---------+
-; mcd.vhd                          ; yes             ; Auto-Found VHDL File  ; /home/agustin/Escritorio/FPGA UNMDP/proyecto4/mcd.vhd ;         ;
-+----------------------------------+-----------------+-----------------------+-------------------------------------------------------+---------+
++-------------------------------------------------------------------------------------------------------------------------------------------------------------+
+; Analysis & Synthesis Source Files Read                                                                                                                      ;
++----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------+---------+
+; File Name with User-Entered Path ; Used in Netlist ; File Type             ; File Name with Absolute Path                                         ; Library ;
++----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------+---------+
+; mcd.vhd                          ; yes             ; Auto-Found VHDL File  ; /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_4/mcd.vhd ;         ;
++----------------------------------+-----------------+-----------------------+----------------------------------------------------------------------+---------+
 
 
 +-----------------------------------------------------------+
@@ -181,30 +180,30 @@ https://fpgasoftware.intel.com/eula.
 +---------------------------------------------+-------------+
 ; Resource                                    ; Usage       ;
 +---------------------------------------------+-------------+
-; Estimated Total logic elements              ; 106         ;
+; Estimated Total logic elements              ; 115         ;
 ;                                             ;             ;
-; Total combinational functions               ; 104         ;
+; Total combinational functions               ; 113         ;
 ; Logic element usage by number of LUT inputs ;             ;
-;     -- 4 input functions                    ; 32          ;
-;     -- 3 input functions                    ; 47          ;
+;     -- 4 input functions                    ; 40          ;
+;     -- 3 input functions                    ; 48          ;
 ;     -- <=2 input functions                  ; 25          ;
 ;                                             ;             ;
 ; Logic elements by mode                      ;             ;
-;     -- normal mode                          ; 76          ;
+;     -- normal mode                          ; 85          ;
 ;     -- arithmetic mode                      ; 28          ;
 ;                                             ;             ;
-; Total registers                             ; 33          ;
-;     -- Dedicated logic registers            ; 33          ;
+; Total registers                             ; 41          ;
+;     -- Dedicated logic registers            ; 41          ;
 ;     -- I/O registers                        ; 0           ;
 ;                                             ;             ;
-; I/O pins                                    ; 13          ;
+; I/O pins                                    ; 21          ;
 ;                                             ;             ;
 ; Embedded Multiplier 9-bit elements          ; 0           ;
 ;                                             ;             ;
 ; Maximum fan-out node                        ; reloj~input ;
-; Maximum fan-out                             ; 33          ;
-; Total fan-out                               ; 456         ;
-; Average fan-out                             ; 2.80        ;
+; Maximum fan-out                             ; 41          ;
+; Total fan-out                               ; 555         ;
+; Average fan-out                             ; 2.83        ;
 +---------------------------------------------+-------------+
 
 
@@ -213,7 +212,7 @@ https://fpgasoftware.intel.com/eula.
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 ; Compilation Hierarchy Node ; Combinational ALUTs ; Dedicated Logic Registers ; Memory Bits ; DSP Elements ; DSP 9x9 ; DSP 18x18 ; Pins ; Virtual Pins ; Full Hierarchy Name ; Entity Name ; Library Name ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
-; |mcd                       ; 104 (104)           ; 33 (33)                   ; 0           ; 0            ; 0       ; 0         ; 13   ; 0            ; |mcd                ; mcd         ; work         ;
+; |mcd                       ; 113 (113)           ; 41 (41)                   ; 0           ; 0            ; 0       ; 0         ; 21   ; 0            ; |mcd                ; mcd         ; work         ;
 +----------------------------+---------------------+---------------------------+-------------+--------------+---------+-----------+------+--------------+---------------------+-------------+--------------+
 Note: For table entries with two numbers listed, the numbers in parentheses indicate the number of resources of the given type used by the specific entity alone. The numbers listed outside of parentheses indicate the total resources of the given type used by the specific entity and all of its sub-entities in the hierarchy.
 
@@ -240,12 +239,12 @@ Encoding Type:  One-Hot
 +----------------------------------------------+-------+
 ; Statistic                                    ; Value ;
 +----------------------------------------------+-------+
-; Total registers                              ; 33    ;
+; Total registers                              ; 41    ;
 ; Number of registers using Synchronous Clear  ; 0     ;
-; Number of registers using Synchronous Load   ; 0     ;
-; Number of registers using Asynchronous Clear ; 33    ;
+; Number of registers using Synchronous Load   ; 8     ;
+; Number of registers using Asynchronous Clear ; 41    ;
 ; Number of registers using Asynchronous Load  ; 0     ;
-; Number of registers using Clock Enable       ; 24    ;
+; Number of registers using Clock Enable       ; 32    ;
 ; Number of registers using Preset             ; 0     ;
 +----------------------------------------------+-------+
 
@@ -255,10 +254,11 @@ Encoding Type:  One-Hot
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 ; Multiplexer Inputs ; Bus Width ; Baseline Area ; Area if Restructured ; Saving if Restructured ; Registered ; Example Multiplexer Output ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
-; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |mcd|b[7]                  ;
 ; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |mcd|a[0]                  ;
-; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |mcd|Selector8             ;
-; 11:1               ; 2 bits    ; 14 LEs        ; 10 LEs               ; 4 LEs                  ; No         ; |mcd|Selector14            ;
+; 4:1                ; 8 bits    ; 16 LEs        ; 8 LEs                ; 8 LEs                  ; Yes        ; |mcd|b[7]                  ;
+; 6:1                ; 8 bits    ; 32 LEs        ; 8 LEs                ; 24 LEs                 ; Yes        ; |mcd|salida[6]~reg0        ;
+; 5:1                ; 3 bits    ; 9 LEs         ; 6 LEs                ; 3 LEs                  ; No         ; |mcd|Selector18            ;
+; 11:1               ; 2 bits    ; 14 LEs        ; 10 LEs               ; 4 LEs                  ; No         ; |mcd|Selector22            ;
 +--------------------+-----------+---------------+----------------------+------------------------+------------+----------------------------+
 
 
@@ -277,20 +277,21 @@ Note: In order to hide this table in the UI and the text report file, please set
 +-----------------------+-----------------------------+
 ; Type                  ; Count                       ;
 +-----------------------+-----------------------------+
-; boundary_port         ; 13                          ;
-; cycloneiii_ff         ; 33                          ;
+; boundary_port         ; 21                          ;
+; cycloneiii_ff         ; 41                          ;
 ;     CLR               ; 9                           ;
 ;     ENA CLR           ; 24                          ;
-; cycloneiii_lcell_comb ; 104                         ;
+;     ENA CLR SLD       ; 8                           ;
+; cycloneiii_lcell_comb ; 113                         ;
 ;     arith             ; 28                          ;
 ;         3 data inputs ; 28                          ;
-;     normal            ; 76                          ;
+;     normal            ; 85                          ;
 ;         2 data inputs ; 25                          ;
-;         3 data inputs ; 19                          ;
-;         4 data inputs ; 32                          ;
+;         3 data inputs ; 20                          ;
+;         4 data inputs ; 40                          ;
 ;                       ;                             ;
 ; Max LUT depth         ; 6.00                        ;
-; Average LUT depth     ; 3.60                        ;
+; Average LUT depth     ; 3.31                        ;
 +-----------------------+-----------------------------+
 
 
@@ -309,31 +310,25 @@ Note: In order to hide this table in the UI and the text report file, please set
 Info: *******************************************************************
 Info: Running Quartus Prime Analysis & Synthesis
     Info: Version 20.1.1 Build 720 11/11/2020 SJ Lite Edition
-    Info: Processing started: Thu Jul  1 15:46:23 2021
+    Info: Processing started: Wed Jul  7 15:32:06 2021
 Info: Command: quartus_map --read_settings_files=on --write_settings_files=off mcd -c mcd
 Warning (18236): Number of processors has not been specified which may cause overloading on shared machines.  Set the global assignment NUM_PARALLEL_PROCESSORS in your QSF to an appropriate value for best performance.
-Info (20030): Parallel compilation is enabled and will use 4 of the 4 processors detected
+Info (20030): Parallel compilation is enabled and will use 2 of the 2 processors detected
 Warning (12125): Using design file mcd.vhd, which is not specified as a design file for the current project, but contains definitions for 2 design units and 1 entities in project
-    Info (12022): Found design unit 1: mcd-a File: /home/agustin/Escritorio/FPGA UNMDP/proyecto4/mcd.vhd Line: 16
-    Info (12023): Found entity 1: mcd File: /home/agustin/Escritorio/FPGA UNMDP/proyecto4/mcd.vhd Line: 5
+    Info (12022): Found design unit 1: mcd-a File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_4/mcd.vhd Line: 16
+    Info (12023): Found entity 1: mcd File: /home/agustinsilva447/Escritorio/Github/FPGA/VHDL/Proyecto_4/mcd.vhd Line: 5
 Info (12127): Elaborating entity "mcd" for the top level hierarchy
-Warning (10445): VHDL Subtype or Type Declaration warning at mcd.vhd(12): subtype or type has null range File: /home/agustin/Escritorio/FPGA UNMDP/proyecto4/mcd.vhd Line: 12
-Warning (10296): VHDL warning at mcd.vhd(29): ignored assignment of value to null range File: /home/agustin/Escritorio/FPGA UNMDP/proyecto4/mcd.vhd Line: 29
-Warning (10296): VHDL warning at mcd.vhd(34): ignored assignment of value to null range File: /home/agustin/Escritorio/FPGA UNMDP/proyecto4/mcd.vhd Line: 34
-Warning (10296): VHDL warning at mcd.vhd(40): ignored assignment of value to null range File: /home/agustin/Escritorio/FPGA UNMDP/proyecto4/mcd.vhd Line: 40
-Warning (10296): VHDL warning at mcd.vhd(57): ignored assignment of value to null range File: /home/agustin/Escritorio/FPGA UNMDP/proyecto4/mcd.vhd Line: 57
-Warning (10296): VHDL warning at mcd.vhd(60): ignored assignment of value to null range File: /home/agustin/Escritorio/FPGA UNMDP/proyecto4/mcd.vhd Line: 60
 Info (286030): Timing-Driven Synthesis is running
 Info (16010): Generating hard_block partition "hard_block:auto_generated_inst"
     Info (16011): Adding 0 node(s), including 0 DDIO, 0 PLL, 0 transceiver and 0 LCELL
-Info (21057): Implemented 119 device resources after synthesis - the final resource count might be different
+Info (21057): Implemented 137 device resources after synthesis - the final resource count might be different
     Info (21058): Implemented 12 input pins
-    Info (21059): Implemented 1 output pins
-    Info (21061): Implemented 106 logic cells
-Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 8 warnings
-    Info: Peak virtual memory: 436 megabytes
-    Info: Processing ended: Thu Jul  1 15:46:36 2021
-    Info: Elapsed time: 00:00:13
-    Info: Total CPU time (on all processors): 00:00:33
+    Info (21059): Implemented 9 output pins
+    Info (21061): Implemented 116 logic cells
+Info: Quartus Prime Analysis & Synthesis was successful. 0 errors, 2 warnings
+    Info: Peak virtual memory: 421 megabytes
+    Info: Processing ended: Wed Jul  7 15:32:27 2021
+    Info: Elapsed time: 00:00:21
+    Info: Total CPU time (on all processors): 00:00:44
 
 
