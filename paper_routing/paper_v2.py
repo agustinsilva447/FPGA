@@ -72,7 +72,6 @@ def uxi(U, A, B, C, T, V, I):
                 for j in range(T.shape[3]):
                     if y != j:
                         aux += T[x, i, y, j] * V[y, j]
-            #U_n2[x, i] = U[-1][x, i] - A * U[-2][x, i] - B * U[-3][x, i] + C * (aux + I[x, i])
             U_n2[x, i] = U[-1][x, i] - A * U[-2][x, i] + B * aux + C * I[x, i]
     return U_n2
 
@@ -124,29 +123,49 @@ I = ixi(u1, u2, u4, u5, C_xi, rho, source[0], destin[0])
 
 U = []
 U.append(np.zeros(C_xi.shape))
-U.append(np.zeros(C_xi.shape))
 U.append(np.random.rand(C_xi.shape[0], C_xi.shape[1]))
 Energy = []
+Energy.append(10000)
 
-for it in range(100):
+flag = 1
+it = 0
+while (flag) and (it < 250):
+    it += 1
     V = vxi_1(U[-1], l)
     U.append(uxi(U, A, B, C, T, V, I))
     E_i = energia(u1, u2, u3, u4, u5, C_xi, V, rho, source[0], destin[0])
+    if (E_i == Energy[-1]):
+        flag = 0
     Energy.append(E_i)
 V = vxi_2(V)
 
-print("Matriz de caminos:\n", C_xi)
 print("Origen:", source[0])
 print("Destino:", destin[0])
+print("Matriz de caminos:\n", C_xi)
 print("Matriz de Hopfield:\n", V)
-print("Energía final = {}".format(Energy[-1]))
-
+print("Energía final luego de {} iteraciones = {}".format(it, Energy[-1]))
+print("---------------")
 hopfield_spath = findall(1, V)
 dijkstra_spath = list_sp(paths[0])
-accuracy = 100 * len(set(hopfield_spath).intersection(dijkstra_spath)) / len(hopfield_spath)
+coincidencia = 100 * len(set(hopfield_spath).intersection(dijkstra_spath)) / len(hopfield_spath)
 print("Camino de Hopfield: {}".format(hopfield_spath))
 print("Camino de Dijkstra: {}".format(dijkstra_spath))
-print("Coincidencia = {}%".format(accuracy))
+print("Coincidencia = {}%".format(coincidencia))
+print("---------------")
+
+distancia_hopfield = np.zeros(C_xi.shape)
+for i in hopfield_spath:
+    distancia_hopfield[i[0], i[1]] = 1
+dist_hopfield = np.sum(np.multiply(distancia_hopfield, C_xi))
+print("Distancia de Hopfield = {}".format(dist_hopfield))
+
+distancia_dijkstra = np.zeros(C_xi.shape)
+for i in dijkstra_spath:
+    distancia_dijkstra[i[0], i[1]] = 1
+dist_dijkstra = np.sum(np.multiply(distancia_dijkstra, C_xi))
+print("Distancia de Dijkstra = {}".format(dist_dijkstra))
+accuracy = dist_dijkstra / dist_hopfield
+print("Accuracy = {}".format(accuracy))
 
 fig = plt.figure(figsize=(12, 5))
 plt.subplot(121)

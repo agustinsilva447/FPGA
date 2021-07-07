@@ -7,15 +7,13 @@ Cyclone IV E - EP4CE22F17C6
 4. tutorial de LBEbooks
 5. tutorial de nandland
 
-Trefemac 								| https://sites.google.com/view/trefemac2021/home 		(filminas)
+Trefemac 								| https://sites.google.com/view/trefemac2021/home 		(done)
 Conference of Computational Physics 	| https://ccp2021.complexity-coventry.org/index.php		(filminas)
 Quantum Reports 						| mail Miguel 											(ESCRIBIR, 30 June 2021)
 
 paper 1: Óptimo de Pareto (Estrategia pura)
 paper 2: Esquilibrio de Nash (Estrategia mixta)
 paper 3: Ruido (Estado de Werner e IBM)
-paper 4: RL vs QRL (Cooperativo)
-paper 5: MARL vs QMARL (Nash)
-
-
-Escribir por curso XXII Giambiagi Winter School
+paper 4: RL vs QRL (Óptimo)
+paper 5: DRL vs DQRL (F. aprox)
+paper 6: MARL vs QMARL (Equilibrio)
