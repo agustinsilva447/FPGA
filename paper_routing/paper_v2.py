@@ -16,6 +16,20 @@ def dijkstra_sp(net, paquetes, C_xi):
         paths.append(s_path)
     return source, destin, paths
 
+def findall(element, matrix):
+    result = []
+    for i in range(len(matrix)):
+        for j in range(len(matrix[i])):
+            if matrix[i][j] == element:
+                result.append((i, j))
+    return result
+
+def list_sp(path):
+    compare_paths = []
+    for n,m in enumerate(path):
+        compare_paths.append((path[n-1], path[n]))
+    return compare_paths
+
 def delta_kronecker(a, b):
     if a == b:
         return 1
@@ -42,7 +56,7 @@ def txiyj(u3, u4):
     return T
 
 def vxi_1(l, U):
-    V = expit(-1 * l * U)
+    V = expit(l * U)
     np.fill_diagonal(V,0)
     return V
 
@@ -82,15 +96,14 @@ def energia(u1, u2, u3, u4, u5, C_xi, V, rho, d, s):
     E_5 = (u5 / 2) * (1 - V[d, s])
     return (E_1 + E_2 + E_3 + E_4 + E_5)
 
-"""
-C_xi = np.array([[0,    0.91, 0.36, 0,    0,     0,    1.2,   0   ],
-                 [0.91, 0,    0,    37.5, 0,     0,    0,     1.02],
-                 [0.36, 0,    0,    0.47, 0.64,  0,    0,     0   ],
-                 [0,    37.5, 0.47, 0,    0,     0.5,  0,     0   ],
-                 [0,    0,    0.64, 0,    0,     0.56, 0.425, 0   ],
-                 [0,    0,    0,    0.5,  0.56,  0,    0,     0.4 ],
-                 [1.2,  0,    0,    0,    0.425, 0,    0,     1.1 ],
-                 [0,    1.02, 0,    0,    0,     0.4,  1.1,   0   ]])
+C_xi = np.array([[0,    0.91,  0.36, 0,     0,     0,    1.2,   0   ],
+                 [0.91, 0,     0,    0.375, 0,     0,    0,     1.02],
+                 [0.36, 0,     0,    0.47,  0.64,  0,    0,     0   ],
+                 [0,    0.375, 0.47, 0,     0,     0.5,  0,     0   ],
+                 [0,    0,     0.64, 0,     0,     0.56, 0.425, 0   ],
+                 [0,    0,     0,    0.5,   0.56,  0,    0,     0.4 ],
+                 [1.2,  0,     0,    0,     0.425, 0,    0,     1.1 ],
+                 [0,    1.02,  0,    0,     0,     0.4,  1.1,   0   ]])
 u1 = 950
 u2 = 2500
 u3 = 1500
@@ -100,24 +113,6 @@ A = 0.0057
 B = 0.0072
 C = 0.0064
 l = 6
-"""
-
-C_xi = np.array([[0,   70,  0,   30,  0,   0],
-                [70,  0,   100, 70,  110, 0],
-                [0,   100, 0,   120, 40,  80],
-                [30,  70,  120, 0,   90,  0],
-                [0,   110, 40,  90,  0,   50],
-                [0,   0,   80,  0,   50,  0]])   
-u1 = 950
-u2 = 2500
-u3 = 1500
-u4 = 475
-u5 = 2500
-A = 0.0001
-B = 0.00001
-C = 0.00001
-l = 1
-
 
 net = nx.from_numpy_matrix(C_xi)
 paquetes = 10
@@ -133,21 +128,29 @@ U.append(np.zeros(C_xi.shape))
 U.append(np.random.rand(C_xi.shape[0], C_xi.shape[1]))
 Energy = []
 
-for it in range(1000):
+for it in range(100):
     V = vxi_1(U[-1], l)
     U.append(uxi(U, A, B, C, T, V, I))
     E_i = energia(u1, u2, u3, u4, u5, C_xi, V, rho, source[0], destin[0])
     Energy.append(E_i)
 V = vxi_2(V)
 
-print(C_xi)
+print("Matriz de caminos:\n", C_xi)
 print("Origen:", source[0])
 print("Destino:", destin[0])
-print("Camino más corto:", paths[0])
-print(V)
+print("Matriz de Hopfield:\n", V)
+print("Energía final = {}".format(Energy[-1]))
 
+hopfield_spath = findall(1, V)
+dijkstra_spath = list_sp(paths[0])
+accuracy = 100 * len(set(hopfield_spath).intersection(dijkstra_spath)) / len(hopfield_spath)
+print("Camino de Hopfield: {}".format(hopfield_spath))
+print("Camino de Dijkstra: {}".format(dijkstra_spath))
+print("Coincidencia = {}%".format(accuracy))
+
+fig = plt.figure(figsize=(12, 5))
+plt.subplot(121)
+nx.draw(net, with_labels = True)
+plt.subplot(122)
 plt.plot(Energy)
 plt.show()
-
-#nx.draw(net, with_labels = True)           # graficar red
-#plt.show()
