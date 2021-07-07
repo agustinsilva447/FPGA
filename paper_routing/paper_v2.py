@@ -115,8 +115,8 @@ def generar_mapa(n1, n2):
         a = np.tril(a) + np.tril(a, -1).T
     return a
 
-n1 = 8      # cantidad de nodos
-n2 = 1      # distancia máxima
+n1 = 8       # cantidad de nodos
+n2 = 5       # distancia máxima
 paquetes = 1
 it_max = 1000
 
@@ -165,9 +165,13 @@ print("---------------")
 
 hopfield_spath = findall(1, V)
 dijkstra_spath = list_sp(paths[0])
-coincidencia = 100 * len(set(hopfield_spath).intersection(dijkstra_spath)) / len(hopfield_spath)
 print("Camino de Hopfield: {}".format(hopfield_spath))
 print("Camino de Dijkstra: {}".format(dijkstra_spath))
+
+if len(hopfield_spath)>len(dijkstra_spath):
+    coincidencia = 100 * len(set(hopfield_spath).intersection(dijkstra_spath)) / len(hopfield_spath)
+else:
+    coincidencia = 100 * len(set(dijkstra_spath).intersection(hopfield_spath)) / len(dijkstra_spath)
 print("Coincidencia = {}%".format(coincidencia))
 print("---------------")
 
@@ -183,8 +187,12 @@ for i in dijkstra_spath:
 dist_dijkstra = np.sum(np.multiply(distancia_dijkstra, C_xi))
 print("Distancia de Dijkstra = {}".format(dist_dijkstra))
 
-accuracy = dist_dijkstra / dist_hopfield
+if dist_dijkstra < dist_hopfield:
+    accuracy = dist_dijkstra / dist_hopfield
+else:
+    accuracy = dist_hopfield / dist_dijkstra
 print("Accuracy = {}".format(accuracy))
+print("---------------")
 
 fig = plt.figure(figsize=(12, 5))
 plt.subplot(121)
