@@ -117,9 +117,12 @@ def generar_mapa(n1, n2):
 
 n1 = 8 # cantidad de nodos
 n2 = 1 # distancia máxima
+paquetes = 1
 it_max = 1000
-C_xi = generar_mapa(n1, n2)
 
+C_xi = generar_mapa(n1, n2)
+net = nx.from_numpy_matrix(C_xi)
+source, destin, paths = dijkstra_sp(net, paquetes, C_xi)
 
 u1 = 950
 u2 = 2500
@@ -130,10 +133,6 @@ A = 0.0057
 B = 0.0072
 C = 0.0064
 l = 6
-
-net = nx.from_numpy_matrix(C_xi)
-paquetes = 1
-source, destin, paths = dijkstra_sp(net, paquetes, C_xi)
 
 rho = np.where(C_xi == 0, 1, 0)
 T = txiyj(u3, u4)
