@@ -96,16 +96,6 @@ def energia(u1, u2, u3, u4, u5, C_xi, V, rho, d, s):
     return (E_1 + E_2 + E_3 + E_4 + E_5)
 
 """
-C_xi = np.array([[0,    0.91,  0.36, 0,     0,     0,    1.2,   0   ],
-                 [0.91, 0,     0,    0.375, 0,     0,    0,     1.02],
-                 [0.36, 0,     0,    0.47,  0.64,  0,    0,     0   ],
-                 [0,    0.375, 0.47, 0,     0,     0.5,  0,     0   ],
-                 [0,    0,     0.64, 0,     0,     0.56, 0.425, 0   ],
-                 [0,    0,     0,    0.5,   0.56,  0,    0,     0.4 ],
-                 [1.2,  0,     0,    0,     0.425, 0,    0,     1.1 ],
-                 [0,    1.02,  0,    0,     0,     0.4,  1.1,   0   ]])
-"""
-
 def generar_mapa(n1, n2):
     a = 0
     while (np.linalg.matrix_rank(a)!=n1):
@@ -114,13 +104,22 @@ def generar_mapa(n1, n2):
         np.fill_diagonal(a,0)
         a = np.tril(a) + np.tril(a, -1).T
     return a
-
 n1 = 8       # cantidad de nodos
-n2 = 5       # distancia máxima
-paquetes = 1
-it_max = 1000
-
+n2 = 1       # distancia máxima
 C_xi = generar_mapa(n1, n2)
+"""
+
+C_xi = np.array([[0,    0.91,  0.36, 0,     0,     0,    1.2,   0   ],
+                 [0.91, 0,     0,    0.375, 0,     0,    0,     1.02],
+                 [0.36, 0,     0,    0.47,  0.64,  0,    0,     0   ],
+                 [0,    0.375, 0.47, 0,     0,     0.5,  0,     0   ],
+                 [0,    0,     0.64, 0,     0,     0.56, 0.425, 0   ],
+                 [0,    0,     0,    0.5,   0.56,  0,    0,     0.4 ],
+                 [1.2,  0,     0,    0,     0.425, 0,    0,     1.1 ],
+                 [0,    1.02,  0,    0,     0,     0.4,  1.1,   0   ]])
+
+paquetes = 1
+it_max = 100
 net = nx.from_numpy_matrix(C_xi)
 source, destin, paths = dijkstra_sp(net, paquetes, C_xi)
 
@@ -143,6 +142,10 @@ U.append(np.zeros(C_xi.shape))
 U.append(np.random.rand(C_xi.shape[0], C_xi.shape[1]))
 Energy = []
 Energy.append(10000)
+
+print(rho)
+print(T)
+print(I)
 
 flag = 1
 it = 0

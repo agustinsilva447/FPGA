@@ -1,0 +1,999 @@
+
+
+================================================================
+== Vivado HLS Report for 'hopfield_routing'
+================================================================
+* Date:           Fri Jul  9 20:13:22 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        hopfield_routing
+* Solution:       solution1
+* Product family: zynq
+* Target device:  xc7z020-clg484-1
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 7.954 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-------+-------+---------+
+    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
+    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
+    +---------+---------+----------+----------+-------+-------+---------+
+    |    47724|    49964| 0.477 ms | 0.500 ms |  47724|  49964|   none  |
+    +---------+---------+----------+----------+-------+-------+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1             |      144|     2384| 18 ~ 298 |          -|          -|     8|    no    |
+        | + Loop 1.1          |       16|      296|  2 ~ 37  |          -|          -|     8|    no    |
+        |- Loop 2             |    47568|    47568|      5946|          -|          -|     8|    no    |
+        | + Loop 2.1          |     5944|     5944|       743|          -|          -|     8|    no    |
+        |  ++ Loop 2.1.1      |      720|      720|        90|          -|          -|     8|    no    |
+        |   +++ Loop 2.1.1.1  |       88|       88|        11|          -|          -|     8|    no    |
+        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+============================================================
++ Verbose Summary: Synthesis Manager
+============================================================
+InlineROM: 1
+ExposeGlobal: 0
+============================================================
++ Verbose Summary: CDFG Model
+============================================================
+IsTopModel: 1
+ResetActiveHigh: 1
+IsCombinational: 0
+IsDatapathOnly: 0
+HasWiredReturn: 1
+HasMFsm: 0
+HasVarLatency: 1
+IsPipeline: 0
+IsRtlPipelined: 0
+IsInstanceOverlapped: 0
+IsDontTouch: 0
+HasImplIP: 0
+IsGatedGlobalClock: 0
+
+
+============================================================
++ Verbose Summary: Schedule
+============================================================
+* Number of FSM states : 84
+* Pipeline : 0
+* Dataflow Pipeline: 0
+
+* FSM state transitions: 
+1 --> 2 
+2 --> 3 
+3 --> 4 
+4 --> 5 
+5 --> 6 
+6 --> 7 
+7 --> 45 8 
+8 --> 9 44 7 
+9 --> 10 
+10 --> 11 
+11 --> 12 
+12 --> 13 
+13 --> 14 
+14 --> 15 
+15 --> 16 
+16 --> 17 
+17 --> 18 
+18 --> 19 
+19 --> 20 
+20 --> 21 
+21 --> 22 
+22 --> 23 
+23 --> 24 
+24 --> 25 
+25 --> 26 
+26 --> 27 
+27 --> 28 
+28 --> 29 
+29 --> 30 
+30 --> 31 
+31 --> 32 
+32 --> 33 
+33 --> 34 
+34 --> 35 
+35 --> 36 
+36 --> 37 
+37 --> 38 
+38 --> 39 
+39 --> 40 
+40 --> 41 
+41 --> 42 
+42 --> 43 
+43 --> 44 
+44 --> 8 
+45 --> 46 
+46 --> 47 
+47 --> 48 
+48 --> 49 
+49 --> 50 
+50 --> 51 
+51 --> 52 50 
+52 --> 64 53 
+53 --> 54 52 
+54 --> 55 
+55 --> 56 
+56 --> 57 
+57 --> 58 
+58 --> 59 
+59 --> 60 
+60 --> 61 
+61 --> 62 
+62 --> 63 
+63 --> 53 
+64 --> 65 
+65 --> 66 
+66 --> 67 
+67 --> 68 
+68 --> 69 
+69 --> 70 
+70 --> 71 
+71 --> 72 
+72 --> 73 
+73 --> 74 
+74 --> 75 
+75 --> 76 
+76 --> 77 
+77 --> 78 
+78 --> 79 
+79 --> 80 
+80 --> 81 
+81 --> 82 
+82 --> 83 
+83 --> 84 
+84 --> 51 
+
+* FSM state operations: 
+
+State 1 <SV = 0> <Delay = 6.41>
+ST_1 : Operation 85 [1/1] (0.00ns)   --->   "%l_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %l) nounwind" [hopfield_routing.cpp:5]   --->   Operation 85 'read' 'l_read' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 86 [6/6] (6.41ns)   --->   "%tmp = sitofp i32 %l_read to float" [hopfield_routing.cpp:27]   --->   Operation 86 'sitofp' 'tmp' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 2 <SV = 1> <Delay = 6.41>
+ST_2 : Operation 87 [5/6] (6.41ns)   --->   "%tmp = sitofp i32 %l_read to float" [hopfield_routing.cpp:27]   --->   Operation 87 'sitofp' 'tmp' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 3 <SV = 2> <Delay = 6.41>
+ST_3 : Operation 88 [4/6] (6.41ns)   --->   "%tmp = sitofp i32 %l_read to float" [hopfield_routing.cpp:27]   --->   Operation 88 'sitofp' 'tmp' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 4 <SV = 3> <Delay = 6.41>
+ST_4 : Operation 89 [3/6] (6.41ns)   --->   "%tmp = sitofp i32 %l_read to float" [hopfield_routing.cpp:27]   --->   Operation 89 'sitofp' 'tmp' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 5 <SV = 4> <Delay = 6.41>
+ST_5 : Operation 90 [2/6] (6.41ns)   --->   "%tmp = sitofp i32 %l_read to float" [hopfield_routing.cpp:27]   --->   Operation 90 'sitofp' 'tmp' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 6 <SV = 5> <Delay = 6.41>
+ST_6 : Operation 91 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %V) nounwind, !map !84"   --->   Operation 91 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 92 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %U_0) nounwind, !map !88"   --->   Operation 92 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 93 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %U_1) nounwind, !map !92"   --->   Operation 93 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 94 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %U_2) nounwind, !map !96"   --->   Operation 94 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 95 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([64 x float]* %I) nounwind, !map !100"   --->   Operation 95 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 96 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([4096 x float]* %T) nounwind, !map !104"   --->   Operation 96 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 97 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %A) nounwind, !map !110"   --->   Operation 97 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 98 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %B) nounwind, !map !116"   --->   Operation 98 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 99 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %C) nounwind, !map !120"   --->   Operation 99 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 100 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %l) nounwind, !map !124"   --->   Operation 100 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 101 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([17 x i8]* @hopfield_routing_str) nounwind"   --->   Operation 101 'spectopmodule' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 102 [1/1] (0.00ns)   --->   "%C_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %C) nounwind" [hopfield_routing.cpp:5]   --->   Operation 102 'read' 'C_read' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 103 [1/1] (0.00ns)   --->   "%B_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %B) nounwind" [hopfield_routing.cpp:5]   --->   Operation 103 'read' 'B_read' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 104 [1/1] (0.00ns)   --->   "%A_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %A) nounwind" [hopfield_routing.cpp:5]   --->   Operation 104 'read' 'A_read' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 105 [1/6] (6.41ns)   --->   "%tmp = sitofp i32 %l_read to float" [hopfield_routing.cpp:27]   --->   Operation 105 'sitofp' 'tmp' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_6 : Operation 106 [1/1] (1.76ns)   --->   "br label %.loopexit" [hopfield_routing.cpp:19]   --->   Operation 106 'br' <Predicate = true> <Delay = 1.76>
+
+State 7 <SV = 6> <Delay = 6.41>
+ST_7 : Operation 107 [1/1] (0.00ns)   --->   "%x_0 = phi i4 [ 0, %0 ], [ %x, %.loopexit.loopexit ]"   --->   Operation 107 'phi' 'x_0' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 108 [1/1] (0.00ns)   --->   "%zext_ln19 = zext i4 %x_0 to i6" [hopfield_routing.cpp:19]   --->   Operation 108 'zext' 'zext_ln19' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 109 [1/1] (1.30ns)   --->   "%icmp_ln19 = icmp eq i4 %x_0, -8" [hopfield_routing.cpp:19]   --->   Operation 109 'icmp' 'icmp_ln19' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 110 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8) nounwind"   --->   Operation 110 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 111 [1/1] (1.73ns)   --->   "%x = add i4 %x_0, 1" [hopfield_routing.cpp:19]   --->   Operation 111 'add' 'x' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 112 [1/1] (0.00ns)   --->   "br i1 %icmp_ln19, label %.preheader3.preheader, label %.preheader4.preheader" [hopfield_routing.cpp:19]   --->   Operation 112 'br' <Predicate = true> <Delay = 0.00>
+ST_7 : Operation 113 [1/1] (0.00ns)   --->   "%trunc_ln25 = trunc i4 %x_0 to i3" [hopfield_routing.cpp:25]   --->   Operation 113 'trunc' 'trunc_ln25' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_7 : Operation 114 [1/1] (0.00ns)   --->   "%shl_ln = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %trunc_ln25, i3 0)" [hopfield_routing.cpp:25]   --->   Operation 114 'bitconcatenate' 'shl_ln' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_7 : Operation 115 [1/1] (1.82ns)   --->   "%add_ln25 = add i6 %shl_ln, %zext_ln19" [hopfield_routing.cpp:25]   --->   Operation 115 'add' 'add_ln25' <Predicate = (!icmp_ln19)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_7 : Operation 116 [1/1] (0.00ns)   --->   "%zext_ln25 = zext i6 %add_ln25 to i64" [hopfield_routing.cpp:25]   --->   Operation 116 'zext' 'zext_ln25' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_7 : Operation 117 [1/1] (0.00ns)   --->   "%V_addr = getelementptr [64 x float]* %V, i64 0, i64 %zext_ln25" [hopfield_routing.cpp:25]   --->   Operation 117 'getelementptr' 'V_addr' <Predicate = (!icmp_ln19)> <Delay = 0.00>
+ST_7 : Operation 118 [1/1] (1.76ns)   --->   "br label %.preheader4" [hopfield_routing.cpp:21]   --->   Operation 118 'br' <Predicate = (!icmp_ln19)> <Delay = 1.76>
+ST_7 : Operation 119 [6/6] (6.41ns)   --->   "%tmp_1 = sitofp i32 %A_read to float" [hopfield_routing.cpp:47]   --->   Operation 119 'sitofp' 'tmp_1' <Predicate = (icmp_ln19)> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_7 : Operation 120 [6/6] (6.41ns)   --->   "%tmp_2 = sitofp i32 %B_read to float" [hopfield_routing.cpp:47]   --->   Operation 120 'sitofp' 'tmp_2' <Predicate = (icmp_ln19)> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_7 : Operation 121 [6/6] (6.41ns)   --->   "%tmp_3 = sitofp i32 %C_read to float" [hopfield_routing.cpp:47]   --->   Operation 121 'sitofp' 'tmp_3' <Predicate = (icmp_ln19)> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 8 <SV = 7> <Delay = 5.07>
+ST_8 : Operation 122 [1/1] (0.00ns)   --->   "%i_0 = phi i4 [ %i, %4 ], [ 0, %.preheader4.preheader ]"   --->   Operation 122 'phi' 'i_0' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 123 [1/1] (0.00ns)   --->   "%zext_ln21 = zext i4 %i_0 to i6" [hopfield_routing.cpp:21]   --->   Operation 123 'zext' 'zext_ln21' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 124 [1/1] (1.30ns)   --->   "%icmp_ln21 = icmp eq i4 %i_0, -8" [hopfield_routing.cpp:21]   --->   Operation 124 'icmp' 'icmp_ln21' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 125 [1/1] (0.00ns)   --->   "%empty_2 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8) nounwind"   --->   Operation 125 'speclooptripcount' 'empty_2' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 126 [1/1] (1.73ns)   --->   "%i = add i4 %i_0, 1" [hopfield_routing.cpp:21]   --->   Operation 126 'add' 'i' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 127 [1/1] (0.00ns)   --->   "br i1 %icmp_ln21, label %.loopexit.loopexit, label %1" [hopfield_routing.cpp:21]   --->   Operation 127 'br' <Predicate = true> <Delay = 0.00>
+ST_8 : Operation 128 [1/1] (1.30ns)   --->   "%icmp_ln23 = icmp eq i4 %x_0, %i_0" [hopfield_routing.cpp:23]   --->   Operation 128 'icmp' 'icmp_ln23' <Predicate = (!icmp_ln21)> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 129 [1/1] (0.00ns)   --->   "br i1 %icmp_ln23, label %2, label %3" [hopfield_routing.cpp:23]   --->   Operation 129 'br' <Predicate = (!icmp_ln21)> <Delay = 0.00>
+ST_8 : Operation 130 [1/1] (1.82ns)   --->   "%add_ln27 = add i6 %zext_ln21, %shl_ln" [hopfield_routing.cpp:27]   --->   Operation 130 'add' 'add_ln27' <Predicate = (!icmp_ln21 & !icmp_ln23)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 131 [1/1] (0.00ns)   --->   "%zext_ln27 = zext i6 %add_ln27 to i64" [hopfield_routing.cpp:27]   --->   Operation 131 'zext' 'zext_ln27' <Predicate = (!icmp_ln21 & !icmp_ln23)> <Delay = 0.00>
+ST_8 : Operation 132 [1/1] (0.00ns)   --->   "%U_1_addr = getelementptr [64 x float]* %U_1, i64 0, i64 %zext_ln27" [hopfield_routing.cpp:27]   --->   Operation 132 'getelementptr' 'U_1_addr' <Predicate = (!icmp_ln21 & !icmp_ln23)> <Delay = 0.00>
+ST_8 : Operation 133 [2/2] (3.25ns)   --->   "%U_1_load = load float* %U_1_addr, align 4" [hopfield_routing.cpp:27]   --->   Operation 133 'load' 'U_1_load' <Predicate = (!icmp_ln21 & !icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+ST_8 : Operation 134 [1/1] (3.25ns)   --->   "store float 0.000000e+00, float* %V_addr, align 4" [hopfield_routing.cpp:25]   --->   Operation 134 'store' <Predicate = (!icmp_ln21 & icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+ST_8 : Operation 135 [1/1] (0.00ns)   --->   "br label %4" [hopfield_routing.cpp:26]   --->   Operation 135 'br' <Predicate = (!icmp_ln21 & icmp_ln23)> <Delay = 0.00>
+ST_8 : Operation 136 [1/1] (0.00ns)   --->   "br label %.loopexit"   --->   Operation 136 'br' <Predicate = (icmp_ln21)> <Delay = 0.00>
+
+State 9 <SV = 8> <Delay = 3.25>
+ST_9 : Operation 137 [1/2] (3.25ns)   --->   "%U_1_load = load float* %U_1_addr, align 4" [hopfield_routing.cpp:27]   --->   Operation 137 'load' 'U_1_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+
+State 10 <SV = 9> <Delay = 6.69>
+ST_10 : Operation 138 [1/1] (0.00ns)   --->   "%bitcast_ln27 = bitcast float %U_1_load to i32" [hopfield_routing.cpp:27]   --->   Operation 138 'bitcast' 'bitcast_ln27' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 139 [1/1] (0.99ns)   --->   "%xor_ln27 = xor i32 %bitcast_ln27, -2147483648" [hopfield_routing.cpp:27]   --->   Operation 139 'xor' 'xor_ln27' <Predicate = true> <Delay = 0.99> <Core = "LogicGate">   --->   Core 27 'LogicGate' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'and' 'or' 'xor'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 140 [1/1] (0.00ns)   --->   "%bitcast_ln27_1 = bitcast i32 %xor_ln27 to float" [hopfield_routing.cpp:27]   --->   Operation 140 'bitcast' 'bitcast_ln27_1' <Predicate = true> <Delay = 0.00>
+ST_10 : Operation 141 [4/4] (5.70ns)   --->   "%x_assign = fmul float %bitcast_ln27_1, %tmp" [hopfield_routing.cpp:27]   --->   Operation 141 'fmul' 'x_assign' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 11 <SV = 10> <Delay = 5.70>
+ST_11 : Operation 142 [3/4] (5.70ns)   --->   "%x_assign = fmul float %bitcast_ln27_1, %tmp" [hopfield_routing.cpp:27]   --->   Operation 142 'fmul' 'x_assign' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 12 <SV = 11> <Delay = 5.70>
+ST_12 : Operation 143 [2/4] (5.70ns)   --->   "%x_assign = fmul float %bitcast_ln27_1, %tmp" [hopfield_routing.cpp:27]   --->   Operation 143 'fmul' 'x_assign' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 13 <SV = 12> <Delay = 5.70>
+ST_13 : Operation 144 [1/4] (5.70ns)   --->   "%x_assign = fmul float %bitcast_ln27_1, %tmp" [hopfield_routing.cpp:27]   --->   Operation 144 'fmul' 'x_assign' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 14 <SV = 13> <Delay = 7.68>
+ST_14 : Operation 145 [9/9] (7.68ns)   --->   "%tmp_i_i = call float @llvm.exp.f32(float %x_assign) nounwind" [/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27]   --->   Operation 145 'fexp' 'tmp_i_i' <Predicate = true> <Delay = 7.68> <Core = "FExp">   --->   Core 127 'FExp' <Latency = 8> <II = 1> <Delay = 7.68> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+
+State 15 <SV = 14> <Delay = 7.68>
+ST_15 : Operation 146 [8/9] (7.68ns)   --->   "%tmp_i_i = call float @llvm.exp.f32(float %x_assign) nounwind" [/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27]   --->   Operation 146 'fexp' 'tmp_i_i' <Predicate = true> <Delay = 7.68> <Core = "FExp">   --->   Core 127 'FExp' <Latency = 8> <II = 1> <Delay = 7.68> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+
+State 16 <SV = 15> <Delay = 7.68>
+ST_16 : Operation 147 [7/9] (7.68ns)   --->   "%tmp_i_i = call float @llvm.exp.f32(float %x_assign) nounwind" [/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27]   --->   Operation 147 'fexp' 'tmp_i_i' <Predicate = true> <Delay = 7.68> <Core = "FExp">   --->   Core 127 'FExp' <Latency = 8> <II = 1> <Delay = 7.68> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+
+State 17 <SV = 16> <Delay = 7.68>
+ST_17 : Operation 148 [6/9] (7.68ns)   --->   "%tmp_i_i = call float @llvm.exp.f32(float %x_assign) nounwind" [/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27]   --->   Operation 148 'fexp' 'tmp_i_i' <Predicate = true> <Delay = 7.68> <Core = "FExp">   --->   Core 127 'FExp' <Latency = 8> <II = 1> <Delay = 7.68> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+
+State 18 <SV = 17> <Delay = 7.68>
+ST_18 : Operation 149 [5/9] (7.68ns)   --->   "%tmp_i_i = call float @llvm.exp.f32(float %x_assign) nounwind" [/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27]   --->   Operation 149 'fexp' 'tmp_i_i' <Predicate = true> <Delay = 7.68> <Core = "FExp">   --->   Core 127 'FExp' <Latency = 8> <II = 1> <Delay = 7.68> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+
+State 19 <SV = 18> <Delay = 7.68>
+ST_19 : Operation 150 [4/9] (7.68ns)   --->   "%tmp_i_i = call float @llvm.exp.f32(float %x_assign) nounwind" [/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27]   --->   Operation 150 'fexp' 'tmp_i_i' <Predicate = true> <Delay = 7.68> <Core = "FExp">   --->   Core 127 'FExp' <Latency = 8> <II = 1> <Delay = 7.68> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+
+State 20 <SV = 19> <Delay = 7.68>
+ST_20 : Operation 151 [3/9] (7.68ns)   --->   "%tmp_i_i = call float @llvm.exp.f32(float %x_assign) nounwind" [/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27]   --->   Operation 151 'fexp' 'tmp_i_i' <Predicate = true> <Delay = 7.68> <Core = "FExp">   --->   Core 127 'FExp' <Latency = 8> <II = 1> <Delay = 7.68> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+
+State 21 <SV = 20> <Delay = 7.68>
+ST_21 : Operation 152 [2/9] (7.68ns)   --->   "%tmp_i_i = call float @llvm.exp.f32(float %x_assign) nounwind" [/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27]   --->   Operation 152 'fexp' 'tmp_i_i' <Predicate = true> <Delay = 7.68> <Core = "FExp">   --->   Core 127 'FExp' <Latency = 8> <II = 1> <Delay = 7.68> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+
+State 22 <SV = 21> <Delay = 7.68>
+ST_22 : Operation 153 [1/9] (7.68ns)   --->   "%tmp_i_i = call float @llvm.exp.f32(float %x_assign) nounwind" [/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27]   --->   Operation 153 'fexp' 'tmp_i_i' <Predicate = true> <Delay = 7.68> <Core = "FExp">   --->   Core 127 'FExp' <Latency = 8> <II = 1> <Delay = 7.68> <FuncUnit> <Opcode : 'fexp'> <InPorts = 1> <OutPorts = 1>
+
+State 23 <SV = 22> <Delay = 7.25>
+ST_23 : Operation 154 [5/5] (7.25ns)   --->   "%tmp_7 = fadd float %tmp_i_i, 1.000000e+00" [hopfield_routing.cpp:27]   --->   Operation 154 'fadd' 'tmp_7' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 24 <SV = 23> <Delay = 7.25>
+ST_24 : Operation 155 [4/5] (7.25ns)   --->   "%tmp_7 = fadd float %tmp_i_i, 1.000000e+00" [hopfield_routing.cpp:27]   --->   Operation 155 'fadd' 'tmp_7' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 25 <SV = 24> <Delay = 7.25>
+ST_25 : Operation 156 [3/5] (7.25ns)   --->   "%tmp_7 = fadd float %tmp_i_i, 1.000000e+00" [hopfield_routing.cpp:27]   --->   Operation 156 'fadd' 'tmp_7' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 26 <SV = 25> <Delay = 7.25>
+ST_26 : Operation 157 [2/5] (7.25ns)   --->   "%tmp_7 = fadd float %tmp_i_i, 1.000000e+00" [hopfield_routing.cpp:27]   --->   Operation 157 'fadd' 'tmp_7' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 27 <SV = 26> <Delay = 7.25>
+ST_27 : Operation 158 [1/5] (7.25ns)   --->   "%tmp_7 = fadd float %tmp_i_i, 1.000000e+00" [hopfield_routing.cpp:27]   --->   Operation 158 'fadd' 'tmp_7' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 28 <SV = 27> <Delay = 6.07>
+ST_28 : Operation 159 [16/16] (6.07ns)   --->   "%tmp_8 = fdiv float 1.000000e+00, %tmp_7" [hopfield_routing.cpp:27]   --->   Operation 159 'fdiv' 'tmp_8' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 29 <SV = 28> <Delay = 6.07>
+ST_29 : Operation 160 [15/16] (6.07ns)   --->   "%tmp_8 = fdiv float 1.000000e+00, %tmp_7" [hopfield_routing.cpp:27]   --->   Operation 160 'fdiv' 'tmp_8' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 30 <SV = 29> <Delay = 6.07>
+ST_30 : Operation 161 [14/16] (6.07ns)   --->   "%tmp_8 = fdiv float 1.000000e+00, %tmp_7" [hopfield_routing.cpp:27]   --->   Operation 161 'fdiv' 'tmp_8' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 31 <SV = 30> <Delay = 6.07>
+ST_31 : Operation 162 [13/16] (6.07ns)   --->   "%tmp_8 = fdiv float 1.000000e+00, %tmp_7" [hopfield_routing.cpp:27]   --->   Operation 162 'fdiv' 'tmp_8' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 32 <SV = 31> <Delay = 6.07>
+ST_32 : Operation 163 [12/16] (6.07ns)   --->   "%tmp_8 = fdiv float 1.000000e+00, %tmp_7" [hopfield_routing.cpp:27]   --->   Operation 163 'fdiv' 'tmp_8' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 33 <SV = 32> <Delay = 6.07>
+ST_33 : Operation 164 [11/16] (6.07ns)   --->   "%tmp_8 = fdiv float 1.000000e+00, %tmp_7" [hopfield_routing.cpp:27]   --->   Operation 164 'fdiv' 'tmp_8' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 34 <SV = 33> <Delay = 6.07>
+ST_34 : Operation 165 [10/16] (6.07ns)   --->   "%tmp_8 = fdiv float 1.000000e+00, %tmp_7" [hopfield_routing.cpp:27]   --->   Operation 165 'fdiv' 'tmp_8' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 35 <SV = 34> <Delay = 6.07>
+ST_35 : Operation 166 [9/16] (6.07ns)   --->   "%tmp_8 = fdiv float 1.000000e+00, %tmp_7" [hopfield_routing.cpp:27]   --->   Operation 166 'fdiv' 'tmp_8' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 36 <SV = 35> <Delay = 6.07>
+ST_36 : Operation 167 [8/16] (6.07ns)   --->   "%tmp_8 = fdiv float 1.000000e+00, %tmp_7" [hopfield_routing.cpp:27]   --->   Operation 167 'fdiv' 'tmp_8' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 37 <SV = 36> <Delay = 6.07>
+ST_37 : Operation 168 [7/16] (6.07ns)   --->   "%tmp_8 = fdiv float 1.000000e+00, %tmp_7" [hopfield_routing.cpp:27]   --->   Operation 168 'fdiv' 'tmp_8' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 38 <SV = 37> <Delay = 6.07>
+ST_38 : Operation 169 [6/16] (6.07ns)   --->   "%tmp_8 = fdiv float 1.000000e+00, %tmp_7" [hopfield_routing.cpp:27]   --->   Operation 169 'fdiv' 'tmp_8' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 39 <SV = 38> <Delay = 6.07>
+ST_39 : Operation 170 [5/16] (6.07ns)   --->   "%tmp_8 = fdiv float 1.000000e+00, %tmp_7" [hopfield_routing.cpp:27]   --->   Operation 170 'fdiv' 'tmp_8' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 40 <SV = 39> <Delay = 6.07>
+ST_40 : Operation 171 [4/16] (6.07ns)   --->   "%tmp_8 = fdiv float 1.000000e+00, %tmp_7" [hopfield_routing.cpp:27]   --->   Operation 171 'fdiv' 'tmp_8' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 41 <SV = 40> <Delay = 6.07>
+ST_41 : Operation 172 [3/16] (6.07ns)   --->   "%tmp_8 = fdiv float 1.000000e+00, %tmp_7" [hopfield_routing.cpp:27]   --->   Operation 172 'fdiv' 'tmp_8' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 42 <SV = 41> <Delay = 6.07>
+ST_42 : Operation 173 [2/16] (6.07ns)   --->   "%tmp_8 = fdiv float 1.000000e+00, %tmp_7" [hopfield_routing.cpp:27]   --->   Operation 173 'fdiv' 'tmp_8' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 43 <SV = 42> <Delay = 6.07>
+ST_43 : Operation 174 [1/16] (6.07ns)   --->   "%tmp_8 = fdiv float 1.000000e+00, %tmp_7" [hopfield_routing.cpp:27]   --->   Operation 174 'fdiv' 'tmp_8' <Predicate = true> <Delay = 6.07> <Core = "FDiv">   --->   Core 107 'FDiv' <Latency = 15> <II = 1> <Delay = 6.07> <FuncUnit> <Opcode : 'fdiv' 'frem'> <InPorts = 2> <OutPorts = 1>
+
+State 44 <SV = 43> <Delay = 3.25>
+ST_44 : Operation 175 [1/1] (0.00ns)   --->   "%V_addr_1 = getelementptr [64 x float]* %V, i64 0, i64 %zext_ln27" [hopfield_routing.cpp:27]   --->   Operation 175 'getelementptr' 'V_addr_1' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_44 : Operation 176 [1/1] (3.25ns)   --->   "store float %tmp_8, float* %V_addr_1, align 4" [hopfield_routing.cpp:27]   --->   Operation 176 'store' <Predicate = (!icmp_ln23)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+ST_44 : Operation 177 [1/1] (0.00ns)   --->   "br label %4"   --->   Operation 177 'br' <Predicate = (!icmp_ln23)> <Delay = 0.00>
+ST_44 : Operation 178 [1/1] (0.00ns)   --->   "br label %.preheader4" [hopfield_routing.cpp:21]   --->   Operation 178 'br' <Predicate = true> <Delay = 0.00>
+
+State 45 <SV = 7> <Delay = 6.41>
+ST_45 : Operation 179 [5/6] (6.41ns)   --->   "%tmp_1 = sitofp i32 %A_read to float" [hopfield_routing.cpp:47]   --->   Operation 179 'sitofp' 'tmp_1' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_45 : Operation 180 [5/6] (6.41ns)   --->   "%tmp_2 = sitofp i32 %B_read to float" [hopfield_routing.cpp:47]   --->   Operation 180 'sitofp' 'tmp_2' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_45 : Operation 181 [5/6] (6.41ns)   --->   "%tmp_3 = sitofp i32 %C_read to float" [hopfield_routing.cpp:47]   --->   Operation 181 'sitofp' 'tmp_3' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 46 <SV = 8> <Delay = 6.41>
+ST_46 : Operation 182 [4/6] (6.41ns)   --->   "%tmp_1 = sitofp i32 %A_read to float" [hopfield_routing.cpp:47]   --->   Operation 182 'sitofp' 'tmp_1' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_46 : Operation 183 [4/6] (6.41ns)   --->   "%tmp_2 = sitofp i32 %B_read to float" [hopfield_routing.cpp:47]   --->   Operation 183 'sitofp' 'tmp_2' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_46 : Operation 184 [4/6] (6.41ns)   --->   "%tmp_3 = sitofp i32 %C_read to float" [hopfield_routing.cpp:47]   --->   Operation 184 'sitofp' 'tmp_3' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 47 <SV = 9> <Delay = 6.41>
+ST_47 : Operation 185 [3/6] (6.41ns)   --->   "%tmp_1 = sitofp i32 %A_read to float" [hopfield_routing.cpp:47]   --->   Operation 185 'sitofp' 'tmp_1' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_47 : Operation 186 [3/6] (6.41ns)   --->   "%tmp_2 = sitofp i32 %B_read to float" [hopfield_routing.cpp:47]   --->   Operation 186 'sitofp' 'tmp_2' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_47 : Operation 187 [3/6] (6.41ns)   --->   "%tmp_3 = sitofp i32 %C_read to float" [hopfield_routing.cpp:47]   --->   Operation 187 'sitofp' 'tmp_3' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 48 <SV = 10> <Delay = 6.41>
+ST_48 : Operation 188 [2/6] (6.41ns)   --->   "%tmp_1 = sitofp i32 %A_read to float" [hopfield_routing.cpp:47]   --->   Operation 188 'sitofp' 'tmp_1' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_48 : Operation 189 [2/6] (6.41ns)   --->   "%tmp_2 = sitofp i32 %B_read to float" [hopfield_routing.cpp:47]   --->   Operation 189 'sitofp' 'tmp_2' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_48 : Operation 190 [2/6] (6.41ns)   --->   "%tmp_3 = sitofp i32 %C_read to float" [hopfield_routing.cpp:47]   --->   Operation 190 'sitofp' 'tmp_3' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+
+State 49 <SV = 11> <Delay = 6.41>
+ST_49 : Operation 191 [1/6] (6.41ns)   --->   "%tmp_1 = sitofp i32 %A_read to float" [hopfield_routing.cpp:47]   --->   Operation 191 'sitofp' 'tmp_1' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_49 : Operation 192 [1/6] (6.41ns)   --->   "%tmp_2 = sitofp i32 %B_read to float" [hopfield_routing.cpp:47]   --->   Operation 192 'sitofp' 'tmp_2' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_49 : Operation 193 [1/6] (6.41ns)   --->   "%tmp_3 = sitofp i32 %C_read to float" [hopfield_routing.cpp:47]   --->   Operation 193 'sitofp' 'tmp_3' <Predicate = true> <Delay = 6.41> <Core = "Int2Float">   --->   Core 112 'Int2Float' <Latency = 5> <II = 1> <Delay = 6.41> <FuncUnit> <Opcode : 'sitofp' 'uitofp'> <InPorts = 1> <OutPorts = 1>
+ST_49 : Operation 194 [1/1] (1.76ns)   --->   "br label %.preheader3" [hopfield_routing.cpp:32]   --->   Operation 194 'br' <Predicate = true> <Delay = 1.76>
+
+State 50 <SV = 12> <Delay = 1.76>
+ST_50 : Operation 195 [1/1] (0.00ns)   --->   "%x_1 = phi i4 [ 0, %.preheader3.preheader ], [ %x_2, %.preheader3.loopexit ]"   --->   Operation 195 'phi' 'x_1' <Predicate = true> <Delay = 0.00>
+ST_50 : Operation 196 [1/1] (1.30ns)   --->   "%icmp_ln32 = icmp eq i4 %x_1, -8" [hopfield_routing.cpp:32]   --->   Operation 196 'icmp' 'icmp_ln32' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 197 [1/1] (0.00ns)   --->   "%empty_3 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8) nounwind"   --->   Operation 197 'speclooptripcount' 'empty_3' <Predicate = true> <Delay = 0.00>
+ST_50 : Operation 198 [1/1] (1.73ns)   --->   "%x_2 = add i4 %x_1, 1" [hopfield_routing.cpp:32]   --->   Operation 198 'add' 'x_2' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_50 : Operation 199 [1/1] (0.00ns)   --->   "br i1 %icmp_ln32, label %6, label %.preheader2.preheader" [hopfield_routing.cpp:32]   --->   Operation 199 'br' <Predicate = true> <Delay = 0.00>
+ST_50 : Operation 200 [1/1] (0.00ns)   --->   "%trunc_ln47 = trunc i4 %x_1 to i3" [hopfield_routing.cpp:47]   --->   Operation 200 'trunc' 'trunc_ln47' <Predicate = (!icmp_ln32)> <Delay = 0.00>
+ST_50 : Operation 201 [1/1] (0.00ns)   --->   "%shl_ln1 = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %trunc_ln47, i3 0)" [hopfield_routing.cpp:47]   --->   Operation 201 'bitconcatenate' 'shl_ln1' <Predicate = (!icmp_ln32)> <Delay = 0.00>
+ST_50 : Operation 202 [1/1] (1.76ns)   --->   "br label %.preheader2" [hopfield_routing.cpp:34]   --->   Operation 202 'br' <Predicate = (!icmp_ln32)> <Delay = 1.76>
+ST_50 : Operation 203 [1/1] (0.00ns)   --->   "ret void" [hopfield_routing.cpp:50]   --->   Operation 203 'ret' <Predicate = (icmp_ln32)> <Delay = 0.00>
+
+State 51 <SV = 13> <Delay = 1.76>
+ST_51 : Operation 204 [1/1] (0.00ns)   --->   "%i_1 = phi i4 [ %i_2, %5 ], [ 0, %.preheader2.preheader ]"   --->   Operation 204 'phi' 'i_1' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 205 [1/1] (0.00ns)   --->   "%zext_ln34 = zext i4 %i_1 to i6" [hopfield_routing.cpp:34]   --->   Operation 205 'zext' 'zext_ln34' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 206 [1/1] (1.30ns)   --->   "%icmp_ln34 = icmp eq i4 %i_1, -8" [hopfield_routing.cpp:34]   --->   Operation 206 'icmp' 'icmp_ln34' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_51 : Operation 207 [1/1] (0.00ns)   --->   "%empty_4 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8) nounwind"   --->   Operation 207 'speclooptripcount' 'empty_4' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 208 [1/1] (1.73ns)   --->   "%i_2 = add i4 %i_1, 1" [hopfield_routing.cpp:34]   --->   Operation 208 'add' 'i_2' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_51 : Operation 209 [1/1] (0.00ns)   --->   "br i1 %icmp_ln34, label %.preheader3.loopexit, label %.preheader1.preheader" [hopfield_routing.cpp:34]   --->   Operation 209 'br' <Predicate = true> <Delay = 0.00>
+ST_51 : Operation 210 [1/1] (0.00ns)   --->   "%trunc_ln43 = trunc i4 %i_1 to i3" [hopfield_routing.cpp:43]   --->   Operation 210 'trunc' 'trunc_ln43' <Predicate = (!icmp_ln34)> <Delay = 0.00>
+ST_51 : Operation 211 [1/1] (1.76ns)   --->   "br label %.preheader1" [hopfield_routing.cpp:37]   --->   Operation 211 'br' <Predicate = (!icmp_ln34)> <Delay = 1.76>
+ST_51 : Operation 212 [1/1] (0.00ns)   --->   "br label %.preheader3"   --->   Operation 212 'br' <Predicate = (icmp_ln34)> <Delay = 0.00>
+
+State 52 <SV = 14> <Delay = 5.07>
+ST_52 : Operation 213 [1/1] (0.00ns)   --->   "%y_0 = phi i4 [ 0, %.preheader1.preheader ], [ %y, %.preheader1.loopexit ]"   --->   Operation 213 'phi' 'y_0' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 214 [1/1] (0.00ns)   --->   "%aux_0 = phi float [ 0.000000e+00, %.preheader1.preheader ], [ %aux_1, %.preheader1.loopexit ]" [hopfield_routing.cpp:41]   --->   Operation 214 'phi' 'aux_0' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 215 [1/1] (1.30ns)   --->   "%icmp_ln37 = icmp eq i4 %y_0, -8" [hopfield_routing.cpp:37]   --->   Operation 215 'icmp' 'icmp_ln37' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 216 [1/1] (0.00ns)   --->   "%empty_5 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8) nounwind"   --->   Operation 216 'speclooptripcount' 'empty_5' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 217 [1/1] (1.73ns)   --->   "%y = add i4 %y_0, 1" [hopfield_routing.cpp:37]   --->   Operation 217 'add' 'y' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 218 [1/1] (0.00ns)   --->   "br i1 %icmp_ln37, label %5, label %.preheader.preheader" [hopfield_routing.cpp:37]   --->   Operation 218 'br' <Predicate = true> <Delay = 0.00>
+ST_52 : Operation 219 [1/1] (0.00ns)   --->   "%trunc_ln43_1 = trunc i4 %y_0 to i3" [hopfield_routing.cpp:43]   --->   Operation 219 'trunc' 'trunc_ln43_1' <Predicate = (!icmp_ln37)> <Delay = 0.00>
+ST_52 : Operation 220 [1/1] (0.00ns)   --->   "%shl_ln2 = call i6 @_ssdm_op_BitConcatenate.i6.i3.i3(i3 %trunc_ln43_1, i3 0)" [hopfield_routing.cpp:43]   --->   Operation 220 'bitconcatenate' 'shl_ln2' <Predicate = (!icmp_ln37)> <Delay = 0.00>
+ST_52 : Operation 221 [1/1] (1.76ns)   --->   "br label %.preheader" [hopfield_routing.cpp:39]   --->   Operation 221 'br' <Predicate = (!icmp_ln37)> <Delay = 1.76>
+ST_52 : Operation 222 [1/1] (1.82ns)   --->   "%add_ln47 = add i6 %shl_ln1, %zext_ln34" [hopfield_routing.cpp:47]   --->   Operation 222 'add' 'add_ln47' <Predicate = (icmp_ln37)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_52 : Operation 223 [1/1] (0.00ns)   --->   "%zext_ln47 = zext i6 %add_ln47 to i64" [hopfield_routing.cpp:47]   --->   Operation 223 'zext' 'zext_ln47' <Predicate = (icmp_ln37)> <Delay = 0.00>
+ST_52 : Operation 224 [1/1] (0.00ns)   --->   "%U_2_addr = getelementptr [64 x float]* %U_2, i64 0, i64 %zext_ln47" [hopfield_routing.cpp:47]   --->   Operation 224 'getelementptr' 'U_2_addr' <Predicate = (icmp_ln37)> <Delay = 0.00>
+ST_52 : Operation 225 [2/2] (3.25ns)   --->   "%U_2_load = load float* %U_2_addr, align 4" [hopfield_routing.cpp:47]   --->   Operation 225 'load' 'U_2_load' <Predicate = (icmp_ln37)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+
+State 53 <SV = 15> <Delay = 5.07>
+ST_53 : Operation 226 [1/1] (0.00ns)   --->   "%j_0 = phi i4 [ %j, %_ifconv ], [ 0, %.preheader.preheader ]"   --->   Operation 226 'phi' 'j_0' <Predicate = true> <Delay = 0.00>
+ST_53 : Operation 227 [1/1] (0.00ns)   --->   "%aux_1 = phi float [ %aux_2, %_ifconv ], [ %aux_0, %.preheader.preheader ]"   --->   Operation 227 'phi' 'aux_1' <Predicate = true> <Delay = 0.00>
+ST_53 : Operation 228 [1/1] (0.00ns)   --->   "%zext_ln39 = zext i4 %j_0 to i6" [hopfield_routing.cpp:39]   --->   Operation 228 'zext' 'zext_ln39' <Predicate = true> <Delay = 0.00>
+ST_53 : Operation 229 [1/1] (1.30ns)   --->   "%icmp_ln39 = icmp eq i4 %j_0, -8" [hopfield_routing.cpp:39]   --->   Operation 229 'icmp' 'icmp_ln39' <Predicate = true> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 230 [1/1] (0.00ns)   --->   "%empty_6 = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 8, i64 8, i64 8) nounwind"   --->   Operation 230 'speclooptripcount' 'empty_6' <Predicate = true> <Delay = 0.00>
+ST_53 : Operation 231 [1/1] (1.73ns)   --->   "%j = add i4 %j_0, 1" [hopfield_routing.cpp:39]   --->   Operation 231 'add' 'j' <Predicate = true> <Delay = 1.73> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 232 [1/1] (0.00ns)   --->   "br i1 %icmp_ln39, label %.preheader1.loopexit, label %_ifconv" [hopfield_routing.cpp:39]   --->   Operation 232 'br' <Predicate = true> <Delay = 0.00>
+ST_53 : Operation 233 [1/1] (1.30ns)   --->   "%icmp_ln41 = icmp eq i4 %y_0, %j_0" [hopfield_routing.cpp:41]   --->   Operation 233 'icmp' 'icmp_ln41' <Predicate = (!icmp_ln39)> <Delay = 1.30> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 1.30> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 234 [1/1] (1.82ns)   --->   "%add_ln43 = add i6 %zext_ln39, %shl_ln2" [hopfield_routing.cpp:43]   --->   Operation 234 'add' 'add_ln43' <Predicate = (!icmp_ln39)> <Delay = 1.82> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.82> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_53 : Operation 235 [1/1] (0.00ns)   --->   "%add_ln43_2 = call i12 @_ssdm_op_BitConcatenate.i12.i3.i3.i6(i3 %trunc_ln47, i3 %trunc_ln43, i6 %add_ln43)" [hopfield_routing.cpp:43]   --->   Operation 235 'bitconcatenate' 'add_ln43_2' <Predicate = (!icmp_ln39)> <Delay = 0.00>
+ST_53 : Operation 236 [1/1] (0.00ns)   --->   "%zext_ln43 = zext i12 %add_ln43_2 to i64" [hopfield_routing.cpp:43]   --->   Operation 236 'zext' 'zext_ln43' <Predicate = (!icmp_ln39)> <Delay = 0.00>
+ST_53 : Operation 237 [1/1] (0.00ns)   --->   "%T_addr = getelementptr [4096 x float]* %T, i64 0, i64 %zext_ln43" [hopfield_routing.cpp:43]   --->   Operation 237 'getelementptr' 'T_addr' <Predicate = (!icmp_ln39)> <Delay = 0.00>
+ST_53 : Operation 238 [2/2] (3.25ns)   --->   "%T_load = load float* %T_addr, align 4" [hopfield_routing.cpp:43]   --->   Operation 238 'load' 'T_load' <Predicate = (!icmp_ln39)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+ST_53 : Operation 239 [1/1] (0.00ns)   --->   "%zext_ln43_1 = zext i6 %add_ln43 to i64" [hopfield_routing.cpp:43]   --->   Operation 239 'zext' 'zext_ln43_1' <Predicate = (!icmp_ln39)> <Delay = 0.00>
+ST_53 : Operation 240 [1/1] (0.00ns)   --->   "%V_addr_2 = getelementptr [64 x float]* %V, i64 0, i64 %zext_ln43_1" [hopfield_routing.cpp:43]   --->   Operation 240 'getelementptr' 'V_addr_2' <Predicate = (!icmp_ln39)> <Delay = 0.00>
+ST_53 : Operation 241 [2/2] (3.25ns)   --->   "%V_load = load float* %V_addr_2, align 4" [hopfield_routing.cpp:43]   --->   Operation 241 'load' 'V_load' <Predicate = (!icmp_ln39)> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+ST_53 : Operation 242 [1/1] (0.00ns)   --->   "br label %.preheader1"   --->   Operation 242 'br' <Predicate = (icmp_ln39)> <Delay = 0.00>
+
+State 54 <SV = 16> <Delay = 3.25>
+ST_54 : Operation 243 [1/2] (3.25ns)   --->   "%T_load = load float* %T_addr, align 4" [hopfield_routing.cpp:43]   --->   Operation 243 'load' 'T_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+ST_54 : Operation 244 [1/2] (3.25ns)   --->   "%V_load = load float* %V_addr_2, align 4" [hopfield_routing.cpp:43]   --->   Operation 244 'load' 'V_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+
+State 55 <SV = 17> <Delay = 5.70>
+ST_55 : Operation 245 [4/4] (5.70ns)   --->   "%tmp_11 = fmul float %T_load, %V_load" [hopfield_routing.cpp:43]   --->   Operation 245 'fmul' 'tmp_11' <Predicate = (!icmp_ln41)> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 56 <SV = 18> <Delay = 5.70>
+ST_56 : Operation 246 [3/4] (5.70ns)   --->   "%tmp_11 = fmul float %T_load, %V_load" [hopfield_routing.cpp:43]   --->   Operation 246 'fmul' 'tmp_11' <Predicate = (!icmp_ln41)> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 57 <SV = 19> <Delay = 5.70>
+ST_57 : Operation 247 [2/4] (5.70ns)   --->   "%tmp_11 = fmul float %T_load, %V_load" [hopfield_routing.cpp:43]   --->   Operation 247 'fmul' 'tmp_11' <Predicate = (!icmp_ln41)> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 58 <SV = 20> <Delay = 5.70>
+ST_58 : Operation 248 [1/4] (5.70ns)   --->   "%tmp_11 = fmul float %T_load, %V_load" [hopfield_routing.cpp:43]   --->   Operation 248 'fmul' 'tmp_11' <Predicate = (!icmp_ln41)> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 59 <SV = 21> <Delay = 7.25>
+ST_59 : Operation 249 [5/5] (7.25ns)   --->   "%aux = fadd float %aux_1, %tmp_11" [hopfield_routing.cpp:43]   --->   Operation 249 'fadd' 'aux' <Predicate = (!icmp_ln41)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 60 <SV = 22> <Delay = 7.25>
+ST_60 : Operation 250 [4/5] (7.25ns)   --->   "%aux = fadd float %aux_1, %tmp_11" [hopfield_routing.cpp:43]   --->   Operation 250 'fadd' 'aux' <Predicate = (!icmp_ln41)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 61 <SV = 23> <Delay = 7.25>
+ST_61 : Operation 251 [3/5] (7.25ns)   --->   "%aux = fadd float %aux_1, %tmp_11" [hopfield_routing.cpp:43]   --->   Operation 251 'fadd' 'aux' <Predicate = (!icmp_ln41)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 62 <SV = 24> <Delay = 7.25>
+ST_62 : Operation 252 [2/5] (7.25ns)   --->   "%aux = fadd float %aux_1, %tmp_11" [hopfield_routing.cpp:43]   --->   Operation 252 'fadd' 'aux' <Predicate = (!icmp_ln41)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 63 <SV = 25> <Delay = 7.95>
+ST_63 : Operation 253 [1/5] (7.25ns)   --->   "%aux = fadd float %aux_1, %tmp_11" [hopfield_routing.cpp:43]   --->   Operation 253 'fadd' 'aux' <Predicate = (!icmp_ln41)> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_63 : Operation 254 [1/1] (0.69ns)   --->   "%aux_2 = select i1 %icmp_ln41, float %aux_1, float %aux" [hopfield_routing.cpp:41]   --->   Operation 254 'select' 'aux_2' <Predicate = true> <Delay = 0.69> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.69> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
+ST_63 : Operation 255 [1/1] (0.00ns)   --->   "br label %.preheader" [hopfield_routing.cpp:39]   --->   Operation 255 'br' <Predicate = true> <Delay = 0.00>
+
+State 64 <SV = 15> <Delay = 5.70>
+ST_64 : Operation 256 [1/2] (3.25ns)   --->   "%U_2_load = load float* %U_2_addr, align 4" [hopfield_routing.cpp:47]   --->   Operation 256 'load' 'U_2_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+ST_64 : Operation 257 [4/4] (5.70ns)   --->   "%tmp_4 = fmul float %tmp_2, %aux_0" [hopfield_routing.cpp:47]   --->   Operation 257 'fmul' 'tmp_4' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 65 <SV = 16> <Delay = 5.70>
+ST_65 : Operation 258 [4/4] (5.70ns)   --->   "%tmp_9 = fmul float %tmp_1, %U_2_load" [hopfield_routing.cpp:47]   --->   Operation 258 'fmul' 'tmp_9' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_65 : Operation 259 [3/4] (5.70ns)   --->   "%tmp_4 = fmul float %tmp_2, %aux_0" [hopfield_routing.cpp:47]   --->   Operation 259 'fmul' 'tmp_4' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 66 <SV = 17> <Delay = 5.70>
+ST_66 : Operation 260 [3/4] (5.70ns)   --->   "%tmp_9 = fmul float %tmp_1, %U_2_load" [hopfield_routing.cpp:47]   --->   Operation 260 'fmul' 'tmp_9' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_66 : Operation 261 [2/4] (5.70ns)   --->   "%tmp_4 = fmul float %tmp_2, %aux_0" [hopfield_routing.cpp:47]   --->   Operation 261 'fmul' 'tmp_4' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 67 <SV = 18> <Delay = 5.70>
+ST_67 : Operation 262 [1/1] (0.00ns)   --->   "%U_1_addr_1 = getelementptr [64 x float]* %U_1, i64 0, i64 %zext_ln47" [hopfield_routing.cpp:47]   --->   Operation 262 'getelementptr' 'U_1_addr_1' <Predicate = true> <Delay = 0.00>
+ST_67 : Operation 263 [2/2] (3.25ns)   --->   "%U_1_load_1 = load float* %U_1_addr_1, align 4" [hopfield_routing.cpp:47]   --->   Operation 263 'load' 'U_1_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+ST_67 : Operation 264 [2/4] (5.70ns)   --->   "%tmp_9 = fmul float %tmp_1, %U_2_load" [hopfield_routing.cpp:47]   --->   Operation 264 'fmul' 'tmp_9' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+ST_67 : Operation 265 [1/4] (5.70ns)   --->   "%tmp_4 = fmul float %tmp_2, %aux_0" [hopfield_routing.cpp:47]   --->   Operation 265 'fmul' 'tmp_4' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 68 <SV = 19> <Delay = 5.70>
+ST_68 : Operation 266 [1/2] (3.25ns)   --->   "%U_1_load_1 = load float* %U_1_addr_1, align 4" [hopfield_routing.cpp:47]   --->   Operation 266 'load' 'U_1_load_1' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+ST_68 : Operation 267 [1/4] (5.70ns)   --->   "%tmp_9 = fmul float %tmp_1, %U_2_load" [hopfield_routing.cpp:47]   --->   Operation 267 'fmul' 'tmp_9' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 69 <SV = 20> <Delay = 7.25>
+ST_69 : Operation 268 [5/5] (7.25ns)   --->   "%tmp_s = fsub float %U_1_load_1, %tmp_9" [hopfield_routing.cpp:47]   --->   Operation 268 'fsub' 'tmp_s' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 70 <SV = 21> <Delay = 7.25>
+ST_70 : Operation 269 [4/5] (7.25ns)   --->   "%tmp_s = fsub float %U_1_load_1, %tmp_9" [hopfield_routing.cpp:47]   --->   Operation 269 'fsub' 'tmp_s' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 71 <SV = 22> <Delay = 7.25>
+ST_71 : Operation 270 [3/5] (7.25ns)   --->   "%tmp_s = fsub float %U_1_load_1, %tmp_9" [hopfield_routing.cpp:47]   --->   Operation 270 'fsub' 'tmp_s' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 72 <SV = 23> <Delay = 7.25>
+ST_72 : Operation 271 [2/5] (7.25ns)   --->   "%tmp_s = fsub float %U_1_load_1, %tmp_9" [hopfield_routing.cpp:47]   --->   Operation 271 'fsub' 'tmp_s' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 73 <SV = 24> <Delay = 7.25>
+ST_73 : Operation 272 [1/5] (7.25ns)   --->   "%tmp_s = fsub float %U_1_load_1, %tmp_9" [hopfield_routing.cpp:47]   --->   Operation 272 'fsub' 'tmp_s' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_73 : Operation 273 [1/1] (0.00ns)   --->   "%I_addr = getelementptr [64 x float]* %I, i64 0, i64 %zext_ln47" [hopfield_routing.cpp:47]   --->   Operation 273 'getelementptr' 'I_addr' <Predicate = true> <Delay = 0.00>
+ST_73 : Operation 274 [2/2] (3.25ns)   --->   "%I_load = load float* %I_addr, align 4" [hopfield_routing.cpp:47]   --->   Operation 274 'load' 'I_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+
+State 74 <SV = 25> <Delay = 7.25>
+ST_74 : Operation 275 [5/5] (7.25ns)   --->   "%tmp_5 = fadd float %tmp_s, %tmp_4" [hopfield_routing.cpp:47]   --->   Operation 275 'fadd' 'tmp_5' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_74 : Operation 276 [1/2] (3.25ns)   --->   "%I_load = load float* %I_addr, align 4" [hopfield_routing.cpp:47]   --->   Operation 276 'load' 'I_load' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+
+State 75 <SV = 26> <Delay = 7.25>
+ST_75 : Operation 277 [4/5] (7.25ns)   --->   "%tmp_5 = fadd float %tmp_s, %tmp_4" [hopfield_routing.cpp:47]   --->   Operation 277 'fadd' 'tmp_5' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_75 : Operation 278 [4/4] (5.70ns)   --->   "%tmp_6 = fmul float %tmp_3, %I_load" [hopfield_routing.cpp:47]   --->   Operation 278 'fmul' 'tmp_6' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 76 <SV = 27> <Delay = 7.25>
+ST_76 : Operation 279 [3/5] (7.25ns)   --->   "%tmp_5 = fadd float %tmp_s, %tmp_4" [hopfield_routing.cpp:47]   --->   Operation 279 'fadd' 'tmp_5' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_76 : Operation 280 [3/4] (5.70ns)   --->   "%tmp_6 = fmul float %tmp_3, %I_load" [hopfield_routing.cpp:47]   --->   Operation 280 'fmul' 'tmp_6' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 77 <SV = 28> <Delay = 7.25>
+ST_77 : Operation 281 [2/5] (7.25ns)   --->   "%tmp_5 = fadd float %tmp_s, %tmp_4" [hopfield_routing.cpp:47]   --->   Operation 281 'fadd' 'tmp_5' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_77 : Operation 282 [2/4] (5.70ns)   --->   "%tmp_6 = fmul float %tmp_3, %I_load" [hopfield_routing.cpp:47]   --->   Operation 282 'fmul' 'tmp_6' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 78 <SV = 29> <Delay = 7.25>
+ST_78 : Operation 283 [1/5] (7.25ns)   --->   "%tmp_5 = fadd float %tmp_s, %tmp_4" [hopfield_routing.cpp:47]   --->   Operation 283 'fadd' 'tmp_5' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+ST_78 : Operation 284 [1/4] (5.70ns)   --->   "%tmp_6 = fmul float %tmp_3, %I_load" [hopfield_routing.cpp:47]   --->   Operation 284 'fmul' 'tmp_6' <Predicate = true> <Delay = 5.70> <Core = "FMul">   --->   Core 106 'FMul' <Latency = 3> <II = 1> <Delay = 5.70> <FuncUnit> <Opcode : 'fmul'> <InPorts = 2> <OutPorts = 1>
+
+State 79 <SV = 30> <Delay = 7.25>
+ST_79 : Operation 285 [5/5] (7.25ns)   --->   "%tmp_10 = fadd float %tmp_5, %tmp_6" [hopfield_routing.cpp:47]   --->   Operation 285 'fadd' 'tmp_10' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 80 <SV = 31> <Delay = 7.25>
+ST_80 : Operation 286 [4/5] (7.25ns)   --->   "%tmp_10 = fadd float %tmp_5, %tmp_6" [hopfield_routing.cpp:47]   --->   Operation 286 'fadd' 'tmp_10' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 81 <SV = 32> <Delay = 7.25>
+ST_81 : Operation 287 [3/5] (7.25ns)   --->   "%tmp_10 = fadd float %tmp_5, %tmp_6" [hopfield_routing.cpp:47]   --->   Operation 287 'fadd' 'tmp_10' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 82 <SV = 33> <Delay = 7.25>
+ST_82 : Operation 288 [2/5] (7.25ns)   --->   "%tmp_10 = fadd float %tmp_5, %tmp_6" [hopfield_routing.cpp:47]   --->   Operation 288 'fadd' 'tmp_10' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 83 <SV = 34> <Delay = 7.25>
+ST_83 : Operation 289 [1/5] (7.25ns)   --->   "%tmp_10 = fadd float %tmp_5, %tmp_6" [hopfield_routing.cpp:47]   --->   Operation 289 'fadd' 'tmp_10' <Predicate = true> <Delay = 7.25> <Core = "FAddSub">   --->   Core 105 'FAddSub' <Latency = 4> <II = 1> <Delay = 7.25> <FuncUnit> <Opcode : 'fadd' 'fsub'> <InPorts = 2> <OutPorts = 1>
+
+State 84 <SV = 35> <Delay = 3.25>
+ST_84 : Operation 290 [1/1] (0.00ns)   --->   "%U_0_addr = getelementptr [64 x float]* %U_0, i64 0, i64 %zext_ln47" [hopfield_routing.cpp:47]   --->   Operation 290 'getelementptr' 'U_0_addr' <Predicate = true> <Delay = 0.00>
+ST_84 : Operation 291 [1/1] (3.25ns)   --->   "store float %tmp_10, float* %U_0_addr, align 4" [hopfield_routing.cpp:47]   --->   Operation 291 'store' <Predicate = true> <Delay = 3.25> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 3.25> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 64> <RAM>
+ST_84 : Operation 292 [1/1] (0.00ns)   --->   "br label %.preheader2" [hopfield_routing.cpp:34]   --->   Operation 292 'br' <Predicate = true> <Delay = 0.00>
+
+
+============================================================
++ Verbose Summary: Timing violations
+============================================================
+Target clock period: 10ns, clock uncertainty: 1.25ns.
+
+ <State 1>: 6.41ns
+The critical path consists of the following:
+	wire read on port 'l' (hopfield_routing.cpp:5) [22]  (0 ns)
+	'sitofp' operation ('tmp', hopfield_routing.cpp:27) [26]  (6.41 ns)
+
+ <State 2>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp', hopfield_routing.cpp:27) [26]  (6.41 ns)
+
+ <State 3>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp', hopfield_routing.cpp:27) [26]  (6.41 ns)
+
+ <State 4>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp', hopfield_routing.cpp:27) [26]  (6.41 ns)
+
+ <State 5>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp', hopfield_routing.cpp:27) [26]  (6.41 ns)
+
+ <State 6>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp', hopfield_routing.cpp:27) [26]  (6.41 ns)
+
+ <State 7>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_1', hopfield_routing.cpp:47) [75]  (6.41 ns)
+
+ <State 8>: 5.08ns
+The critical path consists of the following:
+	'phi' operation ('i') with incoming values : ('i', hopfield_routing.cpp:21) [43]  (0 ns)
+	'add' operation ('add_ln27', hopfield_routing.cpp:27) [53]  (1.83 ns)
+	'getelementptr' operation ('U_1_addr', hopfield_routing.cpp:27) [55]  (0 ns)
+	'load' operation ('U_1_load', hopfield_routing.cpp:27) on array 'U_1' [56]  (3.25 ns)
+
+ <State 9>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('U_1_load', hopfield_routing.cpp:27) on array 'U_1' [56]  (3.25 ns)
+
+ <State 10>: 6.7ns
+The critical path consists of the following:
+	'xor' operation ('xor_ln27', hopfield_routing.cpp:27) [58]  (0.993 ns)
+	'fmul' operation ('x', hopfield_routing.cpp:27) [60]  (5.7 ns)
+
+ <State 11>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('x', hopfield_routing.cpp:27) [60]  (5.7 ns)
+
+ <State 12>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('x', hopfield_routing.cpp:27) [60]  (5.7 ns)
+
+ <State 13>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('x', hopfield_routing.cpp:27) [60]  (5.7 ns)
+
+ <State 14>: 7.68ns
+The critical path consists of the following:
+	'fexp' operation ('tmp_i_i', /wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27) [61]  (7.68 ns)
+
+ <State 15>: 7.68ns
+The critical path consists of the following:
+	'fexp' operation ('tmp_i_i', /wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27) [61]  (7.68 ns)
+
+ <State 16>: 7.68ns
+The critical path consists of the following:
+	'fexp' operation ('tmp_i_i', /wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27) [61]  (7.68 ns)
+
+ <State 17>: 7.68ns
+The critical path consists of the following:
+	'fexp' operation ('tmp_i_i', /wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27) [61]  (7.68 ns)
+
+ <State 18>: 7.68ns
+The critical path consists of the following:
+	'fexp' operation ('tmp_i_i', /wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27) [61]  (7.68 ns)
+
+ <State 19>: 7.68ns
+The critical path consists of the following:
+	'fexp' operation ('tmp_i_i', /wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27) [61]  (7.68 ns)
+
+ <State 20>: 7.68ns
+The critical path consists of the following:
+	'fexp' operation ('tmp_i_i', /wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27) [61]  (7.68 ns)
+
+ <State 21>: 7.68ns
+The critical path consists of the following:
+	'fexp' operation ('tmp_i_i', /wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27) [61]  (7.68 ns)
+
+ <State 22>: 7.68ns
+The critical path consists of the following:
+	'fexp' operation ('tmp_i_i', /wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/common/hls_exp_float.cpp:16->/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:16->hopfield_routing.cpp:27) [61]  (7.68 ns)
+
+ <State 23>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_7', hopfield_routing.cpp:27) [62]  (7.26 ns)
+
+ <State 24>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_7', hopfield_routing.cpp:27) [62]  (7.26 ns)
+
+ <State 25>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_7', hopfield_routing.cpp:27) [62]  (7.26 ns)
+
+ <State 26>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_7', hopfield_routing.cpp:27) [62]  (7.26 ns)
+
+ <State 27>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_7', hopfield_routing.cpp:27) [62]  (7.26 ns)
+
+ <State 28>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_8', hopfield_routing.cpp:27) [63]  (6.08 ns)
+
+ <State 29>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_8', hopfield_routing.cpp:27) [63]  (6.08 ns)
+
+ <State 30>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_8', hopfield_routing.cpp:27) [63]  (6.08 ns)
+
+ <State 31>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_8', hopfield_routing.cpp:27) [63]  (6.08 ns)
+
+ <State 32>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_8', hopfield_routing.cpp:27) [63]  (6.08 ns)
+
+ <State 33>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_8', hopfield_routing.cpp:27) [63]  (6.08 ns)
+
+ <State 34>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_8', hopfield_routing.cpp:27) [63]  (6.08 ns)
+
+ <State 35>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_8', hopfield_routing.cpp:27) [63]  (6.08 ns)
+
+ <State 36>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_8', hopfield_routing.cpp:27) [63]  (6.08 ns)
+
+ <State 37>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_8', hopfield_routing.cpp:27) [63]  (6.08 ns)
+
+ <State 38>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_8', hopfield_routing.cpp:27) [63]  (6.08 ns)
+
+ <State 39>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_8', hopfield_routing.cpp:27) [63]  (6.08 ns)
+
+ <State 40>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_8', hopfield_routing.cpp:27) [63]  (6.08 ns)
+
+ <State 41>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_8', hopfield_routing.cpp:27) [63]  (6.08 ns)
+
+ <State 42>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_8', hopfield_routing.cpp:27) [63]  (6.08 ns)
+
+ <State 43>: 6.08ns
+The critical path consists of the following:
+	'fdiv' operation ('tmp_8', hopfield_routing.cpp:27) [63]  (6.08 ns)
+
+ <State 44>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('V_addr_1', hopfield_routing.cpp:27) [64]  (0 ns)
+	'store' operation ('store_ln27', hopfield_routing.cpp:27) of variable 'tmp_8', hopfield_routing.cpp:27 on array 'V' [65]  (3.25 ns)
+
+ <State 45>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_1', hopfield_routing.cpp:47) [75]  (6.41 ns)
+
+ <State 46>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_1', hopfield_routing.cpp:47) [75]  (6.41 ns)
+
+ <State 47>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_1', hopfield_routing.cpp:47) [75]  (6.41 ns)
+
+ <State 48>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_1', hopfield_routing.cpp:47) [75]  (6.41 ns)
+
+ <State 49>: 6.41ns
+The critical path consists of the following:
+	'sitofp' operation ('tmp_1', hopfield_routing.cpp:47) [75]  (6.41 ns)
+
+ <State 50>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('i') with incoming values : ('i', hopfield_routing.cpp:34) [90]  (1.77 ns)
+
+ <State 51>: 1.77ns
+The critical path consists of the following:
+	multiplexor before 'phi' operation ('y') with incoming values : ('y', hopfield_routing.cpp:37) [100]  (1.77 ns)
+
+ <State 52>: 5.08ns
+The critical path consists of the following:
+	'add' operation ('add_ln47', hopfield_routing.cpp:47) [135]  (1.83 ns)
+	'getelementptr' operation ('U_2_addr', hopfield_routing.cpp:47) [139]  (0 ns)
+	'load' operation ('U_2_load', hopfield_routing.cpp:47) on array 'U_2' [140]  (3.25 ns)
+
+ <State 53>: 5.08ns
+The critical path consists of the following:
+	'phi' operation ('j') with incoming values : ('j', hopfield_routing.cpp:39) [111]  (0 ns)
+	'add' operation ('add_ln43', hopfield_routing.cpp:43) [120]  (1.83 ns)
+	'getelementptr' operation ('T_addr', hopfield_routing.cpp:43) [123]  (0 ns)
+	'load' operation ('T_load', hopfield_routing.cpp:43) on array 'T' [124]  (3.25 ns)
+
+ <State 54>: 3.25ns
+The critical path consists of the following:
+	'load' operation ('T_load', hopfield_routing.cpp:43) on array 'T' [124]  (3.25 ns)
+
+ <State 55>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_11', hopfield_routing.cpp:43) [128]  (5.7 ns)
+
+ <State 56>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_11', hopfield_routing.cpp:43) [128]  (5.7 ns)
+
+ <State 57>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_11', hopfield_routing.cpp:43) [128]  (5.7 ns)
+
+ <State 58>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_11', hopfield_routing.cpp:43) [128]  (5.7 ns)
+
+ <State 59>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('aux', hopfield_routing.cpp:43) [129]  (7.26 ns)
+
+ <State 60>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('aux', hopfield_routing.cpp:43) [129]  (7.26 ns)
+
+ <State 61>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('aux', hopfield_routing.cpp:43) [129]  (7.26 ns)
+
+ <State 62>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('aux', hopfield_routing.cpp:43) [129]  (7.26 ns)
+
+ <State 63>: 7.95ns
+The critical path consists of the following:
+	'fadd' operation ('aux', hopfield_routing.cpp:43) [129]  (7.26 ns)
+	'select' operation ('aux', hopfield_routing.cpp:41) [130]  (0.698 ns)
+
+ <State 64>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_4', hopfield_routing.cpp:47) [143]  (5.7 ns)
+
+ <State 65>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_9', hopfield_routing.cpp:47) [141]  (5.7 ns)
+
+ <State 66>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_9', hopfield_routing.cpp:47) [141]  (5.7 ns)
+
+ <State 67>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_9', hopfield_routing.cpp:47) [141]  (5.7 ns)
+
+ <State 68>: 5.7ns
+The critical path consists of the following:
+	'fmul' operation ('tmp_9', hopfield_routing.cpp:47) [141]  (5.7 ns)
+
+ <State 69>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_s', hopfield_routing.cpp:47) [142]  (7.26 ns)
+
+ <State 70>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_s', hopfield_routing.cpp:47) [142]  (7.26 ns)
+
+ <State 71>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_s', hopfield_routing.cpp:47) [142]  (7.26 ns)
+
+ <State 72>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_s', hopfield_routing.cpp:47) [142]  (7.26 ns)
+
+ <State 73>: 7.26ns
+The critical path consists of the following:
+	'fsub' operation ('tmp_s', hopfield_routing.cpp:47) [142]  (7.26 ns)
+
+ <State 74>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_5', hopfield_routing.cpp:47) [144]  (7.26 ns)
+
+ <State 75>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_5', hopfield_routing.cpp:47) [144]  (7.26 ns)
+
+ <State 76>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_5', hopfield_routing.cpp:47) [144]  (7.26 ns)
+
+ <State 77>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_5', hopfield_routing.cpp:47) [144]  (7.26 ns)
+
+ <State 78>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_5', hopfield_routing.cpp:47) [144]  (7.26 ns)
+
+ <State 79>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_10', hopfield_routing.cpp:47) [148]  (7.26 ns)
+
+ <State 80>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_10', hopfield_routing.cpp:47) [148]  (7.26 ns)
+
+ <State 81>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_10', hopfield_routing.cpp:47) [148]  (7.26 ns)
+
+ <State 82>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_10', hopfield_routing.cpp:47) [148]  (7.26 ns)
+
+ <State 83>: 7.26ns
+The critical path consists of the following:
+	'fadd' operation ('tmp_10', hopfield_routing.cpp:47) [148]  (7.26 ns)
+
+ <State 84>: 3.25ns
+The critical path consists of the following:
+	'getelementptr' operation ('U_0_addr', hopfield_routing.cpp:47) [149]  (0 ns)
+	'store' operation ('store_ln47', hopfield_routing.cpp:47) of variable 'tmp_10', hopfield_routing.cpp:47 on array 'U_0' [150]  (3.25 ns)
+
+
+============================================================
++ Verbose Summary: Binding
+============================================================
+N/A
+* FSMD analyzer results:
+  - Output states:
+ - Input state : 
+  - Chain level:
+	State 1
+	State 2
+	State 3
+	State 4
+	State 5
+	State 6
+	State 7
+	State 8
+	State 9
+	State 10
+	State 11
+	State 12
+	State 13
+	State 14
+	State 15
+	State 16
+	State 17
+	State 18
+	State 19
+	State 20
+	State 21
+	State 22
+	State 23
+	State 24
+	State 25
+	State 26
+	State 27
+	State 28
+	State 29
+	State 30
+	State 31
+	State 32
+	State 33
+	State 34
+	State 35
+	State 36
+	State 37
+	State 38
+	State 39
+	State 40
+	State 41
+	State 42
+	State 43
+	State 44
+	State 45
+	State 46
+	State 47
+	State 48
+	State 49
+	State 50
+	State 51
+	State 52
+	State 53
+	State 54
+	State 55
+	State 56
+	State 57
+	State 58
+	State 59
+	State 60
+	State 61
+	State 62
+	State 63
+	State 64
+	State 65
+	State 66
+	State 67
+	State 68
+	State 69
+	State 70
+	State 71
+	State 72
+	State 73
+	State 74
+	State 75
+	State 76
+	State 77
+	State 78
+	State 79
+	State 80
+	State 81
+	State 82
+	State 83
+	State 84
+
+
+============================================================
++ Verbose Summary: Datapath Resource usage 
+============================================================
+N/A
