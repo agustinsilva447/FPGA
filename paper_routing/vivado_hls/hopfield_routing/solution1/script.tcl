@@ -1,0 +1,17 @@
+############################################################
+## This file is generated automatically by Vivado HLS.
+## Please DO NOT edit it.
+## Copyright (C) 1986-2019 Xilinx, Inc. All Rights Reserved.
+############################################################
+open_project hopfield_routing
+set_top hopfield_routing
+add_files hopfield_routing/.apc/hopfield_routing.cpp
+add_files -tb hopfield_routing/.apc/.tb/tb_hopfield_routing.cpp
+open_solution "solution1"
+set_part {xc7z020clg484-1}
+create_clock -period 10 -name default
+#source "./hopfield_routing/solution1/directives.tcl"
+csim_design
+csynth_design
+cosim_design
+export_design -format ip_catalog

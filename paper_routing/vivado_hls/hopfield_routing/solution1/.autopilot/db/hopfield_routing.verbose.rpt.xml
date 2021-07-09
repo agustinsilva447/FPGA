@@ -1,0 +1,358 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'hopfield_routing'" level="0">
+<item name = "Date">Fri Jul  9 17:23:42 2021
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">hopfield_routing</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynq</item>
+<item name = "Target device">xc7z020-clg484-1</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 10.130 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">7231, 8447, 73.248 us, 85.566 us, 7231, 8447, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+<column name="grp_sin_or_cos_double_s_fu_881">sin_or_cos_double_s, 44, 52, 0.446 us, 0.527 us, 44, 52, none</column>
+<column name="grp_sin_or_cos_double_s_fu_902">sin_or_cos_double_s, 44, 52, 0.446 us, 0.527 us, 44, 52, none</column>
+<column name="grp_sin_or_cos_double_s_fu_922">sin_or_cos_double_s, 44, 52, 0.446 us, 0.527 us, 44, 52, none</column>
+<column name="grp_sin_or_cos_double_s_fu_942">sin_or_cos_double_s, 44, 52, 0.446 us, 0.527 us, 44, 52, none</column>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, 0, 2, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">32, 436, 24700, 36048, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 5305, -</column>
+<column name="Register">-, -, 5476, -, -</column>
+<specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
+<specialColumn name="Utilization (%)">11, 198, 28, 77, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="hopfield_routing_CRTL_BUS_s_axi_U">hopfield_routing_CRTL_BUS_s_axi, 0, 0, 36, 40, 0</column>
+<column name="hopfield_routing_qcK_U34">hopfield_routing_qcK, 0, 2, 205, 390, 0</column>
+<column name="hopfield_routing_qcK_U36">hopfield_routing_qcK, 0, 2, 205, 390, 0</column>
+<column name="hopfield_routing_qcK_U38">hopfield_routing_qcK, 0, 2, 205, 390, 0</column>
+<column name="hopfield_routing_qcK_U40">hopfield_routing_qcK, 0, 2, 205, 390, 0</column>
+<column name="hopfield_routing_rcU_U35">hopfield_routing_rcU, 0, 2, 205, 390, 0</column>
+<column name="hopfield_routing_rcU_U37">hopfield_routing_rcU, 0, 2, 205, 390, 0</column>
+<column name="hopfield_routing_rcU_U39">hopfield_routing_rcU, 0, 2, 205, 390, 0</column>
+<column name="hopfield_routing_rcU_U41">hopfield_routing_rcU, 0, 2, 205, 390, 0</column>
+<column name="hopfield_routing_sc4_U42">hopfield_routing_sc4, 0, 3, 143, 321, 0</column>
+<column name="hopfield_routing_sc4_U43">hopfield_routing_sc4, 0, 3, 143, 321, 0</column>
+<column name="hopfield_routing_sc4_U44">hopfield_routing_sc4, 0, 3, 143, 321, 0</column>
+<column name="hopfield_routing_sc4_U45">hopfield_routing_sc4, 0, 3, 143, 321, 0</column>
+<column name="hopfield_routing_sc4_U46">hopfield_routing_sc4, 0, 3, 143, 321, 0</column>
+<column name="hopfield_routing_sc4_U47">hopfield_routing_sc4, 0, 3, 143, 321, 0</column>
+<column name="hopfield_routing_sc4_U48">hopfield_routing_sc4, 0, 3, 143, 321, 0</column>
+<column name="hopfield_routing_sc4_U49">hopfield_routing_sc4, 0, 3, 143, 321, 0</column>
+<column name="hopfield_routing_tde_U50">hopfield_routing_tde, 0, 0, 128, 277, 0</column>
+<column name="hopfield_routing_tde_U51">hopfield_routing_tde, 0, 0, 128, 277, 0</column>
+<column name="hopfield_routing_tde_U52">hopfield_routing_tde, 0, 0, 128, 277, 0</column>
+<column name="hopfield_routing_tde_U53">hopfield_routing_tde, 0, 0, 128, 277, 0</column>
+<column name="hopfield_routing_udo_U54">hopfield_routing_udo, 0, 11, 317, 578, 0</column>
+<column name="hopfield_routing_udo_U55">hopfield_routing_udo, 0, 11, 317, 578, 0</column>
+<column name="hopfield_routing_udo_U56">hopfield_routing_udo, 0, 11, 317, 578, 0</column>
+<column name="hopfield_routing_udo_U57">hopfield_routing_udo, 0, 11, 317, 578, 0</column>
+<column name="grp_sin_or_cos_double_s_fu_881">sin_or_cos_double_s, 8, 88, 5025, 6725, 0</column>
+<column name="grp_sin_or_cos_double_s_fu_902">sin_or_cos_double_s, 8, 88, 5025, 6725, 0</column>
+<column name="grp_sin_or_cos_double_s_fu_922">sin_or_cos_double_s, 8, 88, 5025, 6725, 0</column>
+<column name="grp_sin_or_cos_double_s_fu_942">sin_or_cos_double_s, 8, 88, 5025, 6725, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+<column name="ap_block_state106_on_subcall_done">or, 0, 0, 2, 1, 1</column>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="E_Addr_A_orig">293, 65, 32, 2080</column>
+<column name="S_Addr_A_orig">293, 65, 32, 2080</column>
+<column name="S_Din_A">233, 54, 32, 1728</column>
+<column name="S_WEN_A">9, 2, 4, 8</column>
+<column name="ap_NS_fsm">2193, 545, 1, 545</column>
+<column name="grp_fu_1139_opcode">15, 3, 2, 6</column>
+<column name="grp_fu_1139_p0">113, 24, 32, 768</column>
+<column name="grp_fu_1139_p1">38, 7, 32, 224</column>
+<column name="grp_fu_1144_p0">93, 19, 32, 608</column>
+<column name="grp_fu_1144_p1">33, 6, 32, 192</column>
+<column name="grp_fu_1149_opcode">15, 3, 2, 6</column>
+<column name="grp_fu_1149_p0">50, 11, 32, 352</column>
+<column name="grp_fu_1149_p1">27, 5, 32, 160</column>
+<column name="grp_fu_1154_p0">44, 9, 32, 288</column>
+<column name="grp_fu_1154_p1">21, 4, 32, 128</column>
+<column name="grp_fu_1158_opcode">15, 3, 2, 6</column>
+<column name="grp_fu_1158_p0">44, 9, 32, 288</column>
+<column name="grp_fu_1158_p1">21, 4, 32, 128</column>
+<column name="grp_fu_1162_p0">41, 8, 32, 256</column>
+<column name="grp_fu_1162_p1">21, 4, 32, 128</column>
+<column name="grp_fu_1166_opcode">15, 3, 2, 6</column>
+<column name="grp_fu_1166_p0">44, 9, 32, 288</column>
+<column name="grp_fu_1166_p1">21, 4, 32, 128</column>
+<column name="grp_fu_1170_p0">41, 8, 32, 256</column>
+<column name="grp_fu_1170_p1">21, 4, 32, 128</column>
+<column name="grp_fu_1174_p0">33, 6, 32, 192</column>
+<column name="grp_fu_1174_p1">38, 7, 32, 224</column>
+<column name="grp_fu_1178_p0">33, 6, 32, 192</column>
+<column name="grp_fu_1178_p1">38, 7, 32, 224</column>
+<column name="grp_fu_1182_p0">41, 8, 32, 256</column>
+<column name="grp_fu_1182_p1">38, 7, 32, 224</column>
+<column name="grp_fu_1186_p0">21, 4, 32, 128</column>
+<column name="grp_fu_1186_p1">38, 7, 32, 224</column>
+<column name="grp_fu_1190_p0">21, 4, 32, 128</column>
+<column name="grp_fu_1190_p1">38, 7, 32, 224</column>
+<column name="grp_fu_1194_p0">21, 4, 32, 128</column>
+<column name="grp_fu_1194_p1">38, 7, 32, 224</column>
+<column name="grp_fu_1198_p0">21, 4, 32, 128</column>
+<column name="grp_fu_1198_p1">38, 7, 32, 224</column>
+<column name="grp_fu_1202_p0">21, 4, 32, 128</column>
+<column name="grp_fu_1202_p1">38, 7, 32, 224</column>
+<column name="grp_fu_1206_p0">15, 3, 64, 192</column>
+<column name="grp_fu_1209_p0">15, 3, 64, 192</column>
+<column name="grp_fu_1212_p0">15, 3, 64, 192</column>
+<column name="grp_fu_1215_p0">15, 3, 64, 192</column>
+<column name="grp_fu_1218_p0">38, 7, 64, 448</column>
+<column name="grp_fu_1223_p0">27, 5, 64, 320</column>
+<column name="grp_fu_1228_p0">27, 5, 64, 320</column>
+<column name="grp_fu_1233_p0">27, 5, 64, 320</column>
+<column name="grp_sin_or_cos_double_s_fu_881_do_cos">15, 3, 1, 3</column>
+<column name="grp_sin_or_cos_double_s_fu_881_t_in">145, 32, 64, 2048</column>
+<column name="grp_sin_or_cos_double_s_fu_902_do_cos">15, 3, 1, 3</column>
+<column name="grp_sin_or_cos_double_s_fu_902_t_in">229, 53, 64, 3392</column>
+<column name="grp_sin_or_cos_double_s_fu_922_do_cos">15, 3, 1, 3</column>
+<column name="grp_sin_or_cos_double_s_fu_922_t_in">197, 45, 64, 2880</column>
+<column name="grp_sin_or_cos_double_s_fu_942_do_cos">15, 3, 1, 3</column>
+<column name="grp_sin_or_cos_double_s_fu_942_t_in">225, 52, 64, 3328</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">544, 0, 544, 0</column>
+<column name="grp_sin_or_cos_double_s_fu_881_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_sin_or_cos_double_s_fu_902_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_sin_or_cos_double_s_fu_922_ap_start_reg">1, 0, 1, 0</column>
+<column name="grp_sin_or_cos_double_s_fu_942_ap_start_reg">1, 0, 1, 0</column>
+<column name="reg_1238">64, 0, 64, 0</column>
+<column name="reg_1243">64, 0, 64, 0</column>
+<column name="reg_1248">64, 0, 64, 0</column>
+<column name="reg_1253">64, 0, 64, 0</column>
+<column name="reg_1258">64, 0, 64, 0</column>
+<column name="reg_1263">64, 0, 64, 0</column>
+<column name="reg_1268">32, 0, 32, 0</column>
+<column name="reg_1275">32, 0, 32, 0</column>
+<column name="reg_1287">32, 0, 32, 0</column>
+<column name="reg_1299">64, 0, 64, 0</column>
+<column name="reg_1304">32, 0, 32, 0</column>
+<column name="reg_1311">64, 0, 64, 0</column>
+<column name="reg_1316">32, 0, 32, 0</column>
+<column name="reg_1322">32, 0, 32, 0</column>
+<column name="reg_1329">32, 0, 32, 0</column>
+<column name="reg_1335">32, 0, 32, 0</column>
+<column name="reg_1341">32, 0, 32, 0</column>
+<column name="reg_1347">32, 0, 32, 0</column>
+<column name="reg_1354">32, 0, 32, 0</column>
+<column name="reg_1360">32, 0, 32, 0</column>
+<column name="reg_1366">32, 0, 32, 0</column>
+<column name="reg_1378">32, 0, 32, 0</column>
+<column name="reg_1384">32, 0, 32, 0</column>
+<column name="reg_1390">32, 0, 32, 0</column>
+<column name="reg_1402">32, 0, 32, 0</column>
+<column name="reg_1410">32, 0, 32, 0</column>
+<column name="reg_1416">32, 0, 32, 0</column>
+<column name="reg_1422">32, 0, 32, 0</column>
+<column name="reg_1430">32, 0, 32, 0</column>
+<column name="reg_1437">32, 0, 32, 0</column>
+<column name="reg_1443">32, 0, 32, 0</column>
+<column name="reg_1450">32, 0, 32, 0</column>
+<column name="reg_1457">32, 0, 32, 0</column>
+<column name="reg_1463">32, 0, 32, 0</column>
+<column name="reg_1469">32, 0, 32, 0</column>
+<column name="reg_1477">32, 0, 32, 0</column>
+<column name="reg_1484">32, 0, 32, 0</column>
+<column name="reg_1490">32, 0, 32, 0</column>
+<column name="reg_1497">32, 0, 32, 0</column>
+<column name="reg_1504">32, 0, 32, 0</column>
+<column name="reg_1511">32, 0, 32, 0</column>
+<column name="reg_1518">32, 0, 32, 0</column>
+<column name="reg_1525">32, 0, 32, 0</column>
+<column name="reg_1532">64, 0, 64, 0</column>
+<column name="reg_1537">64, 0, 64, 0</column>
+<column name="reg_1542">64, 0, 64, 0</column>
+<column name="reg_1547">32, 0, 32, 0</column>
+<column name="reg_1553">32, 0, 32, 0</column>
+<column name="reg_1560">32, 0, 32, 0</column>
+<column name="reg_1567">64, 0, 64, 0</column>
+<column name="reg_1572">64, 0, 64, 0</column>
+<column name="reg_1577">64, 0, 64, 0</column>
+<column name="reg_1582">32, 0, 32, 0</column>
+<column name="reg_1589">32, 0, 32, 0</column>
+<column name="reg_1596">64, 0, 64, 0</column>
+<column name="reg_1601">64, 0, 64, 0</column>
+<column name="reg_1606">64, 0, 64, 0</column>
+<column name="reg_1611">32, 0, 32, 0</column>
+<column name="reg_1618">32, 0, 32, 0</column>
+<column name="reg_1624">32, 0, 32, 0</column>
+<column name="reg_1630">32, 0, 32, 0</column>
+<column name="reg_1636">32, 0, 32, 0</column>
+<column name="reg_1642">64, 0, 64, 0</column>
+<column name="reg_1647">64, 0, 64, 0</column>
+<column name="reg_1652">64, 0, 64, 0</column>
+<column name="reg_1657">32, 0, 32, 0</column>
+<column name="reg_1664">32, 0, 32, 0</column>
+<column name="reg_1671">32, 0, 32, 0</column>
+<column name="reg_1676">32, 0, 32, 0</column>
+<column name="reg_1681">32, 0, 32, 0</column>
+<column name="reg_1686">32, 0, 32, 0</column>
+<column name="reg_1691">32, 0, 32, 0</column>
+<column name="reg_1696">64, 0, 64, 0</column>
+<column name="reg_1701">64, 0, 64, 0</column>
+<column name="reg_1706">64, 0, 64, 0</column>
+<column name="reg_1711">32, 0, 32, 0</column>
+<column name="reg_1717">32, 0, 32, 0</column>
+<column name="reg_1723">32, 0, 32, 0</column>
+<column name="reg_1729">32, 0, 32, 0</column>
+<column name="reg_1735">32, 0, 32, 0</column>
+<column name="reg_1741">32, 0, 32, 0</column>
+<column name="reg_1747">32, 0, 32, 0</column>
+<column name="reg_1753">32, 0, 32, 0</column>
+<column name="reg_1759">64, 0, 64, 0</column>
+<column name="reg_1764">64, 0, 64, 0</column>
+<column name="reg_1769">64, 0, 64, 0</column>
+<column name="reg_1774">32, 0, 32, 0</column>
+<column name="reg_1786">32, 0, 32, 0</column>
+<column name="reg_1791">32, 0, 32, 0</column>
+<column name="reg_1796">32, 0, 32, 0</column>
+<column name="reg_1801">32, 0, 32, 0</column>
+<column name="reg_1806">32, 0, 32, 0</column>
+<column name="reg_1811">32, 0, 32, 0</column>
+<column name="reg_1823">32, 0, 32, 0</column>
+<column name="reg_1829">32, 0, 32, 0</column>
+<column name="reg_1835">32, 0, 32, 0</column>
+<column name="reg_1841">32, 0, 32, 0</column>
+<column name="reg_1846">32, 0, 32, 0</column>
+<column name="reg_1851">32, 0, 32, 0</column>
+<column name="reg_1856">32, 0, 32, 0</column>
+<column name="reg_1861">32, 0, 32, 0</column>
+<column name="reg_1866">32, 0, 32, 0</column>
+<column name="reg_1871">32, 0, 32, 0</column>
+<column name="reg_1877">32, 0, 32, 0</column>
+<column name="reg_1883">32, 0, 32, 0</column>
+<column name="reg_1889">32, 0, 32, 0</column>
+<column name="reg_1895">32, 0, 32, 0</column>
+<column name="reg_1901">32, 0, 32, 0</column>
+<column name="reg_1907">32, 0, 32, 0</column>
+<column name="reg_1913">32, 0, 32, 0</column>
+<column name="reg_1919">32, 0, 32, 0</column>
+<column name="reg_1925">32, 0, 32, 0</column>
+<column name="reg_1931">32, 0, 32, 0</column>
+<column name="reg_1937">32, 0, 32, 0</column>
+<column name="reg_1943">32, 0, 32, 0</column>
+<column name="reg_1949">32, 0, 32, 0</column>
+<column name="reg_1955">32, 0, 32, 0</column>
+<column name="reg_1961">32, 0, 32, 0</column>
+<column name="reg_1967">32, 0, 32, 0</column>
+<column name="tmp_13_13_reg_2183">32, 0, 32, 0</column>
+<column name="tmp_13_14_reg_2199">32, 0, 32, 0</column>
+<column name="tmp_15_10_reg_2177">32, 0, 32, 0</column>
+<column name="tmp_15_3_reg_2143">32, 0, 32, 0</column>
+<column name="tmp_15_7_reg_2155">32, 0, 32, 0</column>
+<column name="tmp_17_13_reg_2188">32, 0, 32, 0</column>
+<column name="tmp_19_11_reg_2193">32, 0, 32, 0</column>
+<column name="tmp_19_4_reg_2149">32, 0, 32, 0</column>
+<column name="tmp_19_8_reg_2171">32, 0, 32, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_CRTL_BUS_AWVALID">in, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_AWREADY">out, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_AWADDR">in, 4, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_WVALID">in, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_WREADY">out, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_WDATA">in, 32, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_WSTRB">in, 4, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_ARVALID">in, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_ARREADY">out, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_ARADDR">in, 4, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_RVALID">out, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_RREADY">in, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_RDATA">out, 32, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_RRESP">out, 2, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_BVALID">out, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_BREADY">in, 1, s_axi, CRTL_BUS, return void</column>
+<column name="s_axi_CRTL_BUS_BRESP">out, 2, s_axi, CRTL_BUS, return void</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, hopfield_routing, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, hopfield_routing, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, hopfield_routing, return value</column>
+<column name="E_Addr_A">out, 32, bram, E, array</column>
+<column name="E_EN_A">out, 1, bram, E, array</column>
+<column name="E_WEN_A">out, 4, bram, E, array</column>
+<column name="E_Din_A">out, 32, bram, E, array</column>
+<column name="E_Dout_A">in, 32, bram, E, array</column>
+<column name="E_Clk_A">out, 1, bram, E, array</column>
+<column name="E_Rst_A">out, 1, bram, E, array</column>
+<column name="S_Addr_A">out, 32, bram, S, array</column>
+<column name="S_EN_A">out, 1, bram, S, array</column>
+<column name="S_WEN_A">out, 4, bram, S, array</column>
+<column name="S_Din_A">out, 32, bram, S, array</column>
+<column name="S_Dout_A">in, 32, bram, S, array</column>
+<column name="S_Clk_A">out, 1, bram, S, array</column>
+<column name="S_Rst_A">out, 1, bram, S, array</column>
+</table>
+</item>
+</section>
+</profile>

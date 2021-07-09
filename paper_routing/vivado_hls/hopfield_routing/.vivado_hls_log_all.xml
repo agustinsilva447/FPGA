@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="hopfield_routing" solutionName="solution1" date="2021-07-09T17:43:11.831-0300"/>
+        <logs message="ERROR: [HLS 200-627] Cannot find C test bench. Please specify test bench files using 'add_files -tb'." projectName="hopfield_routing" solutionName="solution1" date="2021-07-09T17:43:11.799-0300"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="hopfield_routing" solutionName="solution1" date="2021-07-09T17:33:47.345-0300"/>
+        <logs message="ERROR: [HLS 200-627] Cannot find C test bench. Please specify test bench files using 'add_files -tb'." projectName="hopfield_routing" solutionName="solution1" date="2021-07-09T17:33:47.325-0300"/>
+        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="hopfield_routing" solutionName="solution1" date="2021-07-09T17:27:41.915-0300"/>
+        <logs message="ERROR: [HLS 200-627] Cannot find C test bench. Please specify test bench files using 'add_files -tb'." projectName="hopfield_routing" solutionName="solution1" date="2021-07-09T17:27:41.899-0300"/>
+      </csimLog>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'hopfield_routing/E_Din_A' to 0." projectName="hopfield_routing" solutionName="solution1" date="2021-07-09T17:23:42.181-0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'hopfield_routing/E_WEN_A' to 0." projectName="hopfield_routing" solutionName="solution1" date="2021-07-09T17:23:40.672-0300" type="Warning"/>
+        <logs message="WARNING: [SYN 201-103] Legalizing function name 'sin_or_cos&lt;double>' to 'sin_or_cos_double_s'." projectName="hopfield_routing" solutionName="solution1" date="2021-07-09T17:21:16.765-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'hotbm_::sin_or_cos&lt;double>' to 'sin_or_cos&lt;double>' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_hotbm.h:238)" projectName="hopfield_routing" solutionName="solution1" date="2021-07-09T17:21:11.447-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'scaled_fixed2ieee&lt;63, 1>' to 'scaled_fixed2ieee' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls/utils/x_hls_float_utils.h:110:37)" projectName="hopfield_routing" solutionName="solution1" date="2021-07-09T17:21:11.189-0300" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] /wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/hls_sqrt_apfixed.h:272: variable-indexed range selection may cause suboptimal QoR." projectName="hopfield_routing" solutionName="solution1" date="2021-07-09T17:21:01.805-0300" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>
