@@ -6,7 +6,13 @@
       <simLog/>
       <mgLog/>
       <packageLog/>
-      <csimLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hopfield_routing" solutionName="solution1" date="2021-07-11T17:23:14.010-0300"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hopfield_routing" solutionName="solution1" date="2021-07-11T17:22:50.904-0300"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hopfield_routing" solutionName="solution1" date="2021-07-11T17:22:17.760-0300"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hopfield_routing" solutionName="solution1" date="2021-07-11T16:41:37.671-0300"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hopfield_routing" solutionName="solution1" date="2021-07-11T16:40:02.048-0300"/>
+      </csimLog>
     </logs>
   </errorLogs>
   <warningLogs>

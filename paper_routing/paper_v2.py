@@ -123,6 +123,9 @@ it_max = 100
 net = nx.from_numpy_matrix(C_xi)
 source, destin, paths = dijkstra_sp(net, paquetes, C_xi)
 
+source = [0]
+destin = [1]
+
 u1 = 950
 u2 = 2500
 u3 = 1500
@@ -139,13 +142,14 @@ I = ixi(u1, u2, u4, u5, C_xi, rho, source[0], destin[0])
 
 U = []
 U.append(np.zeros(C_xi.shape))
-U.append(np.random.rand(C_xi.shape[0], C_xi.shape[1]))
+U.append(np.zeros(C_xi.shape))
+#U.append(np.random.rand(C_xi.shape[0], C_xi.shape[1]))
 Energy = []
 Energy.append(10000)
 
-print(rho)
-print(T)
-print(I)
+print("rho = ", rho)
+print("T = ", T)
+print("I = ", I)
 
 flag = 1
 it = 0

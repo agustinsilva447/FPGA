@@ -6,9 +6,9 @@
 open_project hopfield_routing
 set_top hopfield_routing
 add_files hopfield_routing.cpp
-add_files -tb tb_hopfield_routing.cpp -cflags "-Wno-unknown-pragmas" -csimflags "-Wno-unknown-pragmas"
+add_files -tb tb_hopfield_routing.cpp
 open_solution "solution1"
-set_part {xc7z020-clg484-1}
+set_part {xc7z020clg484-1}
 create_clock -period 10 -name default
 #source "./hopfield_routing/solution1/directives.tcl"
 csim_design
