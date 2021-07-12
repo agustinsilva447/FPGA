@@ -27051,9 +27051,9 @@ void hopfield_routing( float V[8 * 8],
       float U_2[8 * 8],
       float I[8 * 8],
       float T[8 * 8 * 8 * 8],
-      int A,
-      int B,
-      int C,
+      float A,
+      float B,
+      float C,
       int l)
 {_ssdm_SpecArrayDimSize(V, 64);_ssdm_SpecArrayDimSize(U_0, 64);_ssdm_SpecArrayDimSize(U_1, 64);_ssdm_SpecArrayDimSize(U_2, 64);_ssdm_SpecArrayDimSize(I, 64);_ssdm_SpecArrayDimSize(T, 4096);
  int x, i, y, j;
@@ -27087,7 +27087,7 @@ void hopfield_routing( float V[8 * 8],
      }
     }
    }
-  U_0[x * 8 + i] = U_1[x * 8 + i] - A * U_2[x * 8 + i] + B * aux + C * I[x * 8 + i];
+   U_0[x * 8 + i] = U_1[x * 8 + i] - A * U_2[x * 8 + i] + B * aux + C * I[x * 8 + i];
   }
  }
 }

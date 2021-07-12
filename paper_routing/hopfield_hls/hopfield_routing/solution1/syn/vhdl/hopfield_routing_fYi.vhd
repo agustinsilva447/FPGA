@@ -7,7 +7,7 @@ use ieee.std_logic_1164.all;
 
 entity hopfield_routing_fYi is
     generic (
-        ID         : integer := 7;
+        ID         : integer := 5;
         NUM_STAGE  : integer := 9;
         din0_WIDTH : integer := 32;
         din1_WIDTH : integer := 32;

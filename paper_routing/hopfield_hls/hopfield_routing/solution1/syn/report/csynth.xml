@@ -21,14 +21,14 @@
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
 <unit>clock cycles</unit>
-<Best-caseLatency>47724</Best-caseLatency>
-<Average-caseLatency>48876</Average-caseLatency>
-<Worst-caseLatency>49964</Worst-caseLatency>
+<Best-caseLatency>47719</Best-caseLatency>
+<Average-caseLatency>48871</Average-caseLatency>
+<Worst-caseLatency>49959</Worst-caseLatency>
 <Best-caseRealTimeLatency>0.477 ms</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>0.489 ms</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>0.500 ms</Worst-caseRealTimeLatency>
-<Interval-min>47725</Interval-min>
-<Interval-max>49965</Interval-max>
+<Interval-min>47720</Interval-min>
+<Interval-max>49960</Interval-max>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
 <Loop1>
@@ -87,8 +87,8 @@
 <AreaEstimates>
 <Resources>
 <DSP48E>12</DSP48E>
-<FF>3057</FF>
-<LUT>5218</LUT>
+<FF>2308</FF>
+<LUT>4075</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -430,7 +430,7 @@
 <Dir>in</Dir>
 <Bits>32</Bits>
 <Attribute>data</Attribute>
-<CType>int</CType>
+<CType>float</CType>
 </RtlPorts>
 <RtlPorts>
 <name>B</name>
@@ -442,7 +442,7 @@
 <Dir>in</Dir>
 <Bits>32</Bits>
 <Attribute>data</Attribute>
-<CType>int</CType>
+<CType>float</CType>
 </RtlPorts>
 <RtlPorts>
 <name>C</name>
@@ -454,7 +454,7 @@
 <Dir>in</Dir>
 <Bits>32</Bits>
 <Attribute>data</Attribute>
-<CType>int</CType>
+<CType>float</CType>
 </RtlPorts>
 <RtlPorts>
 <name>l</name>

@@ -20,9 +20,9 @@ set C_modelArgList {
 	{ U_2 float 32 regular {array 64 { 1 3 } 1 1 }  }
 	{ I float 32 regular {array 64 { 1 3 } 1 1 }  }
 	{ T float 32 regular {array 4096 { 1 3 } 1 1 }  }
-	{ A int 32 regular  }
-	{ B int 32 regular  }
-	{ C int 32 regular  }
+	{ A float 32 regular  }
+	{ B float 32 regular  }
+	{ C float 32 regular  }
 	{ l int 32 regular  }
 }
 set C_modelArgMapList {[ 
@@ -32,9 +32,9 @@ set C_modelArgMapList {[
  	{ "Name" : "U_2", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "U_2","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 63,"step" : 1}]}]}]} , 
  	{ "Name" : "I", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "I","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 63,"step" : 1}]}]}]} , 
  	{ "Name" : "T", "interface" : "memory", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "T","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 4095,"step" : 1}]}]}]} , 
- 	{ "Name" : "A", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "A","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
- 	{ "Name" : "B", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "B","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
- 	{ "Name" : "C", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "C","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
+ 	{ "Name" : "A", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "A","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
+ 	{ "Name" : "B", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "B","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
+ 	{ "Name" : "C", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "C","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} , 
  	{ "Name" : "l", "interface" : "wire", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "l","cData": "int","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}]} ]}
 # RTL Port declarations: 
 set portNum 31
@@ -105,13 +105,13 @@ set NewPortList {[
  	{ "name": "l", "direction": "in", "datatype": "sc_lv", "bitwidth":32, "type": "signal", "bundle":{"name": "l", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5", "6", "7"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3", "4", "5"],
 		"CDFG" : "hopfield_routing",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
 		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
 		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "47724", "EstimateLatencyMax" : "49964",
+		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "47719", "EstimateLatencyMax" : "49959",
 		"Combinational" : "0",
 		"Datapath" : "0",
 		"ClockEnable" : "0",
@@ -133,19 +133,17 @@ set RtlHierarchyInfo {[
 	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hopfield_routing_cud_U2", "Parent" : "0"},
 	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hopfield_routing_dEe_U3", "Parent" : "0"},
 	{"ID" : "4", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hopfield_routing_eOg_U4", "Parent" : "0"},
-	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hopfield_routing_eOg_U5", "Parent" : "0"},
-	{"ID" : "6", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hopfield_routing_eOg_U6", "Parent" : "0"},
-	{"ID" : "7", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hopfield_routing_fYi_U7", "Parent" : "0"}]}
+	{"ID" : "5", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.hopfield_routing_fYi_U5", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	hopfield_routing {
-		V {Type IO LastRead 15 FirstWrite 7}
-		U_0 {Type O LastRead -1 FirstWrite 35}
-		U_1 {Type I LastRead 18 FirstWrite -1}
-		U_2 {Type I LastRead 14 FirstWrite -1}
-		I {Type I LastRead 24 FirstWrite -1}
-		T {Type I LastRead 15 FirstWrite -1}
+		V {Type IO LastRead 10 FirstWrite 7}
+		U_0 {Type O LastRead -1 FirstWrite 30}
+		U_1 {Type I LastRead 13 FirstWrite -1}
+		U_2 {Type I LastRead 9 FirstWrite -1}
+		I {Type I LastRead 19 FirstWrite -1}
+		T {Type I LastRead 10 FirstWrite -1}
 		A {Type I LastRead 5 FirstWrite -1}
 		B {Type I LastRead 5 FirstWrite -1}
 		C {Type I LastRead 5 FirstWrite -1}
@@ -154,8 +152,8 @@ set ArgLastReadFirstWriteLatency {
 set hasDtUnsupportedChannel 0
 
 set PerformanceInfo {[
-	{"Name" : "Latency", "Min" : "47724", "Max" : "49964"}
-	, {"Name" : "Interval", "Min" : "47725", "Max" : "49965"}
+	{"Name" : "Latency", "Min" : "47719", "Max" : "49959"}
+	, {"Name" : "Interval", "Min" : "47720", "Max" : "49960"}
 ]}
 
 set PipelineEnableSignalInfo {[

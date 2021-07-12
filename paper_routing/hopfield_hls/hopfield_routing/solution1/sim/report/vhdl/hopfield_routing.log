@@ -1,0 +1,139 @@
+INFO: [COSIM-47] Using XSIM for RTL simulation.
+INFO: [COSIM-14] Instrumenting C test bench ...
+   Build using "/home/agustinsilva447/Vivado/Vivado/2019.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_hopfield_routing.cpp
+   Compiling hopfield_routing.cpp_pre.cpp.tb.cpp
+   Compiling tb_hopfield_routing.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe
+INFO: [COSIM-302] Starting C TB testing ... 
+INFO: [COSIM-333] Generating C post check test bench ...
+INFO: [COSIM-12] Generating RTL test bench ...
+INFO: [COSIM-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM-322] Starting VHDL simulation. 
+INFO: [COSIM-15] Starting XSIM ...
+
+C_xi = 
+[0.000000, 0.910000, 0.360000, 0.000000, 0.000000, 0.000000, 1.200000, 0.000000, ]
+[0.910000, 0.000000, 0.000000, 0.375000, 0.000000, 0.000000, 0.000000, 1.020000, ]
+[0.360000, 0.000000, 0.000000, 0.470000, 0.640000, 0.000000, 0.000000, 0.000000, ]
+[0.000000, 0.375000, 0.470000, 0.000000, 0.000000, 0.500000, 0.000000, 0.000000, ]
+[0.000000, 0.000000, 0.640000, 0.000000, 0.000000, 0.560000, 0.425000, 0.000000, ]
+[0.000000, 0.000000, 0.000000, 0.500000, 0.560000, 0.000000, 0.000000, 0.400000, ]
+[1.200000, 0.000000, 0.000000, 0.000000, 0.425000, 0.000000, 0.000000, 1.100000, ]
+[0.000000, 1.020000, 0.000000, 0.000000, 0.000000, 0.400000, 1.100000, 0.000000, ]
+
+Iteración 0: Energía = 27507.875000. 
+Iteración 1: Energía = 1125010.000000. 
+Iteración 2: Energía = 12378078.000000. 
+Iteración 3: Energía = 34878068.000000. 
+Iteración 4: Energía = 50631280.000000. 
+Iteración 5: Energía = 40503352.000000. 
+Iteración 6: Energía = 29253262.000000. 
+Iteración 7: Energía = 25876772.000000. 
+Iteración 8: Energía = 22502204.000000. 
+Iteración 9: Energía = 17009562.000000. 
+Iteración 10: Energía = 12789524.000000. 
+Iteración 11: Energía = 6750651.000000. 
+Iteración 12: Energía = 2250781.500000. 
+Iteración 13: Energía = 2250223.250000. 
+Iteración 14: Energía = 2250781.500000. 
+Iteración 15: Energía = 2195989.000000. 
+Iteración 16: Energía = 2236548.250000. 
+Iteración 17: Energía = 1125000.500000. 
+Iteración 18: Energía = 1125000.000000. 
+Iteración 19: Energía = 2095534.375000. 
+Iteración 20: Energía = 2250223.250000. 
+Iteración 21: Energía = 12005.300781. 
+Iteración 22: Energía = 432.250000. 
+Iteración 23: Energía = 432.250000. 
+V = 
+[0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, ]
+[1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, ]
+[0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, ]
+[0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, ]
+[0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, ]
+[0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, ]
+[0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, ]
+[0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, ]
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/home/agustinsilva447/Vivado/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_hopfield_routing_top glbl -prj hopfield_routing.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims -L unisims_ver -L xpm --initfile /home/agustinsilva447/Vivado/Vivado/2019.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s hopfield_routing 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/AESL_sim_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/ip/xil_defaultlib/hopfield_routing_ap_fdiv_14_no_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hopfield_routing_ap_fdiv_14_no_dsp_32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/ip/xil_defaultlib/hopfield_routing_ap_faddfsub_3_full_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hopfield_routing_ap_faddfsub_3_full_dsp_32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/ip/xil_defaultlib/hopfield_routing_ap_sitofp_4_no_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hopfield_routing_ap_sitofp_4_no_dsp_32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/ip/xil_defaultlib/hopfield_routing_ap_fexp_7_full_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hopfield_routing_ap_fexp_7_full_dsp_32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/ip/xil_defaultlib/hopfield_routing_ap_fmul_2_max_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hopfield_routing_ap_fmul_2_max_dsp_32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/hopfield_routing_dEe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hopfield_routing_dEe'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/hopfield_routing_fYi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hopfield_routing_fYi'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/hopfield_routing_eOg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hopfield_routing_eOg'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/hopfield_routing_bkb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hopfield_routing_bkb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/hopfield_routing.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hopfield_routing'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/AESL_automem_U_0.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_U_0'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/hopfield_routing.autotb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'apatb_hopfield_routing_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/AESL_automem_U_1.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_U_1'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/AESL_automem_V.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_V'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/AESL_automem_I.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_I'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/hopfield_routing_cud.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'hopfield_routing_cud'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/AESL_automem_U_2.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_U_2'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/sim/vhdl/AESL_automem_T.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_automem_T'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_9' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/hopfield_routing_ap_faddfsub_3_full_dsp_32.vhd:206]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_9' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/hopfield_routing_ap_fmul_2_max_dsp_32.vhd:201]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_9' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/hopfield_routing_ap_fdiv_14_no_dsp_32.vhd:201]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_9' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/hopfield_routing_ap_sitofp_4_no_dsp_32.vhd:196]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_9' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/hopfield_routing_ap_fexp_7_full_dsp_32.vhd:196]
+Completed static elaboration
+ERROR: [XSIM 43-3316] Signal SIGSEGV received.
+Printing stacktrace...
+
+[0] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x77388f]
+[1] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x773b07]
+[2] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x734aa2]
+[3] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x73502e]
+[4] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7353f1]
+[5] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[6] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[7] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[8] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[9] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[10] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[11] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[12] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7345e6]
+[13] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x73502e]
+[14] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x6e1e34]
+[15] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x476697]
+[16] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x480253]
+[17] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x45241d]
+[18] /usr/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f9bea72a0b3]
+[19] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x46a3d0]
+
+Done
+ERROR: Please check the snapshot name which is created during 'xelab',the current snapshot name "xsim.dir/hopfield_routing/xsimk" does not exist 
+ERROR: [COSIM-4] *** C/RTL co-simulation finished: FAIL ***

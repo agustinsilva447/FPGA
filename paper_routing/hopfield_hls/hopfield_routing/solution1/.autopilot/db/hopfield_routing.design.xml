@@ -16,13 +16,13 @@
 <EstimatedClockPeriod>8.400</EstimatedClockPeriod>
 </SummaryOfTimingAnalysis>
 <SummaryOfOverallLatency>
-<Best-caseLatency>47724</Best-caseLatency>
-<Average-caseLatency>48876</Average-caseLatency>
-<Worst-caseLatency>49964</Worst-caseLatency>
+<Best-caseLatency>47719</Best-caseLatency>
+<Average-caseLatency>48871</Average-caseLatency>
+<Worst-caseLatency>49959</Worst-caseLatency>
 <Best-caseRealTimeLatency>0.477 ms</Best-caseRealTimeLatency>
 <Average-caseRealTimeLatency>0.489 ms</Average-caseRealTimeLatency>
 <Worst-caseRealTimeLatency>0.500 ms</Worst-caseRealTimeLatency>
-<PipelineInitiationInterval>47725 ~ 49965</PipelineInitiationInterval>
+<PipelineInitiationInterval>47720 ~ 49960</PipelineInitiationInterval>
 <PipelineType>none</PipelineType>
 </SummaryOfOverallLatency>
 <SummaryOfLoopLatency>
@@ -83,8 +83,8 @@
 <AreaEstimates>
 <Resources>
 <DSP48E>12</DSP48E>
-<FF>3057</FF>
-<LUT>5218</LUT>
+<FF>2308</FF>
+<LUT>4075</LUT>
 <BRAM_18K>0</BRAM_18K>
 <URAM>0</URAM>
 </Resources>
@@ -418,7 +418,7 @@
 <Dir>in</Dir>
 <Bits>32</Bits>
 <Attribute>data</Attribute>
-<CType>int</CType>
+<CType>float</CType>
 </RtlPorts>
 <RtlPorts>
 <name>B</name>
@@ -430,7 +430,7 @@
 <Dir>in</Dir>
 <Bits>32</Bits>
 <Attribute>data</Attribute>
-<CType>int</CType>
+<CType>float</CType>
 </RtlPorts>
 <RtlPorts>
 <name>C</name>
@@ -442,7 +442,7 @@
 <Dir>in</Dir>
 <Bits>32</Bits>
 <Attribute>data</Attribute>
-<CType>int</CType>
+<CType>float</CType>
 </RtlPorts>
 <RtlPorts>
 <name>l</name>

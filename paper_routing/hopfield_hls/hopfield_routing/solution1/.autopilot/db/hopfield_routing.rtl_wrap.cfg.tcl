@@ -85,7 +85,7 @@ set Pointer6 "0"
 set Reference6 "0"
 set Dims6 [list 0]
 set Interface6 "wire"
-set DataType6 "int"
+set DataType6 "float"
 set Port6 [list $PortName6 $Interface6 $DataType6 $Pointer6 $Dims6 $Const6 $Volatile6 $ArrayOpt6]
 lappend PortList $Port6
 set PortName7 "B"
@@ -97,7 +97,7 @@ set Pointer7 "0"
 set Reference7 "0"
 set Dims7 [list 0]
 set Interface7 "wire"
-set DataType7 "int"
+set DataType7 "float"
 set Port7 [list $PortName7 $Interface7 $DataType7 $Pointer7 $Dims7 $Const7 $Volatile7 $ArrayOpt7]
 lappend PortList $Port7
 set PortName8 "C"
@@ -109,7 +109,7 @@ set Pointer8 "0"
 set Reference8 "0"
 set Dims8 [list 0]
 set Interface8 "wire"
-set DataType8 "int"
+set DataType8 "float"
 set Port8 [list $PortName8 $Interface8 $DataType8 $Pointer8 $Dims8 $Const8 $Volatile8 $ArrayOpt8]
 lappend PortList $Port8
 set PortName9 "l"

@@ -7,7 +7,7 @@
 
 module hopfield_routing_fYi
 #(parameter
-    ID         = 7,
+    ID         = 5,
     NUM_STAGE  = 9,
     din0_WIDTH = 32,
     din1_WIDTH = 32,

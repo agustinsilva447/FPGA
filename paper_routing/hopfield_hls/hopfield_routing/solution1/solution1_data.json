@@ -98,7 +98,7 @@
     "A": {
       "index": "6",
       "type": {
-        "dataType": "int",
+        "dataType": "float",
         "dataWidth": "32",
         "interfaceRef": "A"
       }
@@ -106,7 +106,7 @@
     "B": {
       "index": "7",
       "type": {
-        "dataType": "int",
+        "dataType": "float",
         "dataWidth": "32",
         "interfaceRef": "B"
       }
@@ -114,7 +114,7 @@
     "C": {
       "index": "8",
       "type": {
-        "dataType": "int",
+        "dataType": "float",
         "dataWidth": "32",
         "interfaceRef": "C"
       }
@@ -136,7 +136,7 @@
     "ClockPeriod": "10",
     "IsCombLogic": "0",
     "II": "x",
-    "Latency": "47724",
+    "Latency": "47719",
     "Uncertainty": "1.25"
   },
   "Xdc": {"OocClocks": ["create_clock -name ap_clk -period 10.000 [get_ports ap_clk]"]},
@@ -218,7 +218,7 @@
       "dir": "in",
       "width": "32",
       "ctype": {"DATA": {
-          "Type": "integer signed",
+          "Type": "real float",
           "Width": "32"
         }},
       "bundle_name": "A",
@@ -253,7 +253,7 @@
       "dir": "in",
       "width": "32",
       "ctype": {"DATA": {
-          "Type": "integer signed",
+          "Type": "real float",
           "Width": "32"
         }},
       "bundle_name": "B",
@@ -264,7 +264,7 @@
       "dir": "in",
       "width": "32",
       "ctype": {"DATA": {
-          "Type": "integer signed",
+          "Type": "real float",
           "Width": "32"
         }},
       "bundle_name": "C",
@@ -562,12 +562,12 @@
       }},
     "Metrics": {"hopfield_routing": {
         "Latency": {
-          "LatencyBest": "47724",
-          "LatencyAvg": "48876",
-          "LatencyWorst": "49964",
-          "PipelineIIMin": "47725",
-          "PipelineIIMax": "49965",
-          "PipelineII": "47725 ~ 49965",
+          "LatencyBest": "47719",
+          "LatencyAvg": "48871",
+          "LatencyWorst": "49959",
+          "PipelineIIMin": "47720",
+          "PipelineIIMax": "49960",
+          "PipelineII": "47720 ~ 49960",
           "PipelineDepth": "",
           "PipelineType": "none"
         },
@@ -630,8 +630,8 @@
         ],
         "Area": {
           "DSP48E": "12",
-          "FF": "3057",
-          "LUT": "5218",
+          "FF": "2308",
+          "LUT": "4075",
           "BRAM_18K": "0",
           "URAM": "0"
         }
@@ -647,7 +647,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2021-07-09 20:13:26 -03",
+    "Time": "2021-07-11 22:38:58 -03",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }

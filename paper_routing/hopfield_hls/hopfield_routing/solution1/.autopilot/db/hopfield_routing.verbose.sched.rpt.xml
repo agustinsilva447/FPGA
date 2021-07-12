@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'hopfield_routing'" level="0">
-<item name = "Date">Fri Jul  9 20:13:22 2021
+<item name = "Date">Sun Jul 11 22:38:55 2021
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">hopfield_routing</item>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">47724, 49964, 0.477 ms, 0.500 ms, 47724, 49964, none</column>
+<column name="">47719, 49959, 0.477 ms, 0.500 ms, 47719, 49959, none</column>
 </table>
 </item>
 <item name = "Detail">
