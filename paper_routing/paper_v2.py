@@ -9,7 +9,11 @@ def dijkstra_sp(net, paquetes, C_xi):
     paths = []
     for i in range(paquetes):
         rng = np.random.default_rng()
-        s, d = rng.choice(C_xi.shape[0], size=2, replace=False)
+
+        #s, d = rng.choice(C_xi.shape[0], size=2, replace=False)
+        s = 0
+        d = 1
+
         s_path = nx.dijkstra_path(net, s, d)
         source.append(s)
         destin.append(d)
@@ -75,7 +79,7 @@ def uxi(U, A, B, C, T, V, I):
             U_n2[x, i] = U[-1][x, i] - A * U[-2][x, i] + B * aux + C * I[x, i]
     return U_n2
 
-def energia(u1, u2, u3, u4, u5, C_xi, V, rho, d, s):
+def energia(u1, u2, u3, u4, u5, C_xi, V, rho, s, d):
     E_1 = 0
     E_2 = 0
     E_3 = 0
@@ -93,7 +97,7 @@ def energia(u1, u2, u3, u4, u5, C_xi, V, rho, d, s):
                 E_4 += (u4/2) * V[x, i] * (1 - V[x, i])
         E_3 += np.power(E_3_1 - E_3_2, 2)
     E_5 = (u5 / 2) * (1 - V[d, s])
-    return (E_1 + E_2 + E_3 + E_4 + E_5)
+    return np.float32(E_1 + E_2 + E_3 + E_4 + E_5)
 
 """
 def generar_mapa(n1, n2):
@@ -119,12 +123,9 @@ C_xi = np.array([[0,    0.91,  0.36, 0,     0,     0,    1.2,   0   ],
                  [0,    1.02,  0,    0,     0,     0.4,  1.1,   0   ]])
 
 paquetes = 1
-it_max = 100
+it_max = 50
 net = nx.from_numpy_matrix(C_xi)
 source, destin, paths = dijkstra_sp(net, paquetes, C_xi)
-
-source = [0]
-destin = [1]
 
 u1 = 950
 u2 = 2500
@@ -147,20 +148,17 @@ U.append(np.zeros(C_xi.shape))
 Energy = []
 Energy.append(10000)
 
-print("rho = ", rho)
-print("T = ", T)
-print("I = ", I)
-
 flag = 1
 it = 0
 while (flag) and (it < it_max):
-    it += 1
     V = vxi_1(U[-1], l)
     U.append(uxi(U, A, B, C, T, V, I))
     E_i = energia(u1, u2, u3, u4, u5, C_xi, V, rho, source[0], destin[0])
+    print("Iteración {}: Energía = {}. ".format(it, E_i))
     if (E_i == Energy[-1]):
         flag = 0
     Energy.append(E_i)
+    it += 1
 V = vxi_2(V)
 
 print("Origen:", source[0])

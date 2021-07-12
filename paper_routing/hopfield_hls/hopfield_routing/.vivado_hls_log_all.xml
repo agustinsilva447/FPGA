@@ -7,6 +7,10 @@
       <mgLog/>
       <packageLog/>
       <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hopfield_routing" solutionName="solution1" date="2021-07-11T21:25:43.631-0300"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hopfield_routing" solutionName="solution1" date="2021-07-11T21:05:46.419-0300"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hopfield_routing" solutionName="solution1" date="2021-07-11T20:54:29.750-0300"/>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hopfield_routing" solutionName="solution1" date="2021-07-11T20:39:19.824-0300"/>
         <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hopfield_routing" solutionName="solution1" date="2021-07-11T17:23:14.010-0300"/>
         <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hopfield_routing" solutionName="solution1" date="2021-07-11T17:22:50.904-0300"/>
         <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="hopfield_routing" solutionName="solution1" date="2021-07-11T17:22:17.760-0300"/>

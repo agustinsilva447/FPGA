@@ -8,9 +8,9 @@ void hopfield_routing(	float V[N1 * N1],
 						float U_2[N1 * N1],
 						float I[N1 * N1],
 						float T[N1 * N1 * N1 * N1],
-						int A,
-						int B,
-						int C,
+						float A,
+						float B,
+						float C,
 						int l)
 {
 	int x, i, y, j;
@@ -44,7 +44,7 @@ void hopfield_routing(	float V[N1 * N1],
 					}
 				}
 			}
-		U_0[x * N1 + i] = U_1[x * N1 + i] - A * U_2[x * N1 + i] + B * aux + C * I[x * N1 + i];
+			U_0[x * N1 + i] = U_1[x * N1 + i] - A * U_2[x * N1 + i] + B * aux + C * I[x * N1 + i];
 		}
 	}
 }
