@@ -1,0 +1,8 @@
+/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/tb_hopfield_routing.cpp: En la función ‘int main()’:
+/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/tb_hopfield_routing.cpp:191:29: error: invalid initialization of non-const reference of type ‘float&’ from an rvalue of type ‘float’
+   hopfield_routing(V, U_1, l);
+                             ^
+/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/tb_hopfield_routing.cpp:6:6: nota:   argumento de inicialización 3 de ‘void hopfield_routing(float*, float*, float&)’
+ void hopfield_routing( float V[N1 * N1],
+      ^~~~~~~~~~~~~~~~
+make: *** [cosim.tv.mk:62: obj/tb_hopfield_routing.cpp_pre.cpp.tb.o] Error 1

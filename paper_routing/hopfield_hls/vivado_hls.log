@@ -1,59 +1,40 @@
 INFO: [HLS 200-10] Running '/home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/vivado_hls'
-INFO: [HLS 200-10] For user 'agustinsilva447' on host 'agustinsilva447-Lenovo-G50-80' (Linux_x86_64 version 5.8.0-55-generic) on Mon Jul 12 12:02:58 -03 2021
+INFO: [HLS 200-10] For user 'agustinsilva447' on host 'agustinsilva447-Lenovo-G50-80' (Linux_x86_64 version 5.8.0-55-generic) on Mon Jul 12 18:09:40 -03 2021
 INFO: [HLS 200-10] On os Ubuntu 20.04.2 LTS
 INFO: [HLS 200-10] In directory '/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls'
-Sourcing Tcl script '/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/csim.tcl'
+Sourcing Tcl script '/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/cosim.tcl'
 INFO: [HLS 200-10] Opening project '/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing'.
 INFO: [HLS 200-10] Opening solution '/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-   Compiling ../../../../tb_hopfield_routing.cpp in debug mode
-   Generating csim.exe
-
-C_xi = 
-[0.000000, 0.910000, 0.360000, 0.000000, 0.000000, 0.000000, 1.200000, 0.000000, ]
-[0.910000, 0.000000, 0.000000, 0.375000, 0.000000, 0.000000, 0.000000, 1.020000, ]
-[0.360000, 0.000000, 0.000000, 0.470000, 0.640000, 0.000000, 0.000000, 0.000000, ]
-[0.000000, 0.375000, 0.470000, 0.000000, 0.000000, 0.500000, 0.000000, 0.000000, ]
-[0.000000, 0.000000, 0.640000, 0.000000, 0.000000, 0.560000, 0.425000, 0.000000, ]
-[0.000000, 0.000000, 0.000000, 0.500000, 0.560000, 0.000000, 0.000000, 0.400000, ]
-[1.200000, 0.000000, 0.000000, 0.000000, 0.425000, 0.000000, 0.000000, 1.100000, ]
-[0.000000, 1.020000, 0.000000, 0.000000, 0.000000, 0.400000, 1.100000, 0.000000, ]
-
-Iteración 0: Energía = 27507.875000. 
-Iteración 1: Energía = 1125010.000000. 
-Iteración 2: Energía = 12378078.000000. 
-Iteración 3: Energía = 34878068.000000. 
-Iteración 4: Energía = 50631280.000000. 
-Iteración 5: Energía = 40503352.000000. 
-Iteración 6: Energía = 29253262.000000. 
-Iteración 7: Energía = 25876772.000000. 
-Iteración 8: Energía = 22502204.000000. 
-Iteración 9: Energía = 17009562.000000. 
-Iteración 10: Energía = 12789524.000000. 
-Iteración 11: Energía = 6750651.000000. 
-Iteración 12: Energía = 2250781.500000. 
-Iteración 13: Energía = 2250223.250000. 
-Iteración 14: Energía = 2250781.500000. 
-Iteración 15: Energía = 2195989.000000. 
-Iteración 16: Energía = 2236548.250000. 
-Iteración 17: Energía = 1125000.500000. 
-Iteración 18: Energía = 1125000.000000. 
-Iteración 19: Energía = 2095534.375000. 
-Iteración 20: Energía = 2250223.250000. 
-Iteración 21: Energía = 12005.300781. 
-Iteración 22: Energía = 432.250000. 
-Iteración 23: Energía = 432.250000. 
-V = 
-[0.000000, 1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, ]
-[1.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, ]
-[0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, ]
-[0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, ]
-[0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, ]
-[0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, ]
-[0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, ]
-[0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, 0.000000, ]
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+   Build using "/home/agustinsilva447/Vivado/Vivado/2019.2/tps/lnx64/gcc-6.2.0/bin/g++"
+   Compiling apatb_hopfield_routing.cpp
+   Compiling hopfield_routing.cpp_pre.cpp.tb.cpp
+   Compiling tb_hopfield_routing.cpp_pre.cpp.tb.cpp
+/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/tb_hopfield_routing.cpp: En la función ‘int main()’:
+/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/tb_hopfield_routing.cpp:191:29: error: invalid initialization of non-const reference of type ‘float&’ from an rvalue of type ‘float’
+   hopfield_routing(V, U_1, l);
+                             ^
+/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/tb_hopfield_routing.cpp:6:6: nota:   argumento de inicialización 3 de ‘void hopfield_routing(float*, float*, float&)’
+ void hopfield_routing( float V[N1 * N1],
+      ^~~~~~~~~~~~~~~~
+make: *** [cosim.tv.mk:62: obj/tb_hopfield_routing.cpp_pre.cpp.tb.o] Error 1
+ERROR: [COSIM 212-317] C++ compile error.
+ERROR: [COSIM 212-321] EXE file generate failed.
+ERROR: [COSIM 212-321] EXE file generate failed.
+ERROR: [COSIM 212-331] Aborting co-simulation: C simulation failed, compilation errors.
+ERROR: [COSIM 212-5] *** C/RTL co-simulation file generation failed. ***
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+command 'ap_source' returned error code
+    while executing
+"source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/cosim.tcl"
+    invoked from within
+"hls::main /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/cosim.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$args"
+    (procedure "hls_proc" line 5)
+    invoked from within
+"hls_proc $argv"

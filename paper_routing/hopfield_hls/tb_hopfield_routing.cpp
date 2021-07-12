@@ -4,19 +4,37 @@
 #define N1 8	//Cantidad de nodos
 
 void hopfield_routing(	float V[N1 * N1],
-						float U_0[N1 * N1],
 						float U_1[N1 * N1],
-						float U_2[N1 * N1],
-						float I[N1 * N1],
-						float T[N1 * N1 * N1 * N1],
-						float A,
-						float B,
-						float C,
-						int l);
+						float &l);
+
+void hopfield_routing_2(float T[N1 * N1 * N1 * N1], float V[N1 * N1], float U_0[N1 * N1], float U_1[N1 * N1], float U_2[N1 * N1], float I[N1 * N1], float A, float B, float C)
+{
+	int x, i, y, j;
+	float aux;
+
+	for(x = 0; x < N1; x++)
+	{
+		for(i = 0; i < N1; i++)
+		{
+			aux = 0;
+			for(y = 0; y < N1; y++)
+			{
+				for(j = 0; j < N1; j++)
+				{
+					if (y != j)
+					{
+						aux = aux + T[x * N1 * N1 * N1 + i * N1 * N1 + y * N1 + j] * V[y * N1 + j];
+					}
+				}
+			}
+			U_0[x * N1 + i] = U_1[x * N1 + i] - A * U_2[x * N1 + i] + B * aux + C * I[x * N1 + i];
+		}
+	}
+}
 
 void rhoxi(int rho[N1 * N1], float C_xi[N1 * N1])
 {
-	int x,i;
+	int x, i;
 
 	for(x = 0; x < N1; x++)
 	{
@@ -46,7 +64,7 @@ int deltak(int a, int b)
 
 void txiyj(int u3, int u4, float T[N1 * N1 * N1 * N1])
 {
-	int x,i, y, j;
+	int x, i, y, j;
 
 	for(x = 0; x < N1; x++)
 	{
@@ -65,7 +83,7 @@ void txiyj(int u3, int u4, float T[N1 * N1 * N1 * N1])
 
 void ixi(int u1, int u2, int u4, int u5, float C_xi[N1 * N1], int rho[N1 * N1], int source, int destin, float I[N1 * N1])
 {
-	int x,i;
+	int x, i;
 
 	for(x = 0; x < N1; x++)
 	{
@@ -170,7 +188,8 @@ int main ()
 
 	while((flag) and (it < it_max))
 	{
-		hopfield_routing(V, U_0, U_1, U_2, I, T, A, B, C, l);
+		hopfield_routing(V, U_1, l);
+		hopfield_routing_2(T, V, U_0, U_1, U_2, I, A, B, C);
 		E_aux = energy(u1, u2, u3, u4, u5, C_xi, V, rho, source, destin);
 		if (E_i == E_aux)
 		{

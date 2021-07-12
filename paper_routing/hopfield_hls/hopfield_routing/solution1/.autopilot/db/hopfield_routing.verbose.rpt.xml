@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'hopfield_routing'" level="0">
-<item name = "Date">Sun Jul 11 22:38:56 2021
+<item name = "Date">Mon Jul 12 18:07:24 2021
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">hopfield_routing</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 8.400 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 7.684 ns, 1.25 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">47719, 49959, 0.477 ms, 0.500 ms, 47719, 49959, none</column>
+<column name="">145, 2385, 1.450 us, 23.850 us, 145, 2385, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -37,10 +37,6 @@
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">144, 2384, 18 ~ 298, -, -, 8, no</column>
 <column name=" + Loop 1.1">16, 296, 2 ~ 37, -, -, 8, no</column>
-<column name="- Loop 2">47568, 47568, 5946, -, -, 8, no</column>
-<column name=" + Loop 2.1">5944, 5944, 743, -, -, 8, no</column>
-<column name="  ++ Loop 2.1.1">720, 720, 90, -, -, 8, no</column>
-<column name="   +++ Loop 2.1.1.1">88, 88, 11, -, -, 8, no</column>
 </table>
 </item>
 </section>
@@ -53,25 +49,25 @@
 <item name = "Summary"><table name="" hasTotal="1">
 <keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
 <column name="DSP">-, -, -, -, -</column>
-<column name="Expression">-, -, 0, 287, -</column>
+<column name="Expression">-, -, 0, 120, -</column>
 <column name="FIFO">-, -, -, -, -</column>
-<column name="Instance">-, 12, 1726, 3183, -</column>
+<column name="Instance">0, 12, 1460, 2733, -</column>
 <column name="Memory">-, -, -, -, -</column>
-<column name="Multiplexer">-, -, -, 605, -</column>
-<column name="Register">-, -, 582, -, -</column>
+<column name="Multiplexer">-, -, -, 234, -</column>
+<column name="Register">-, -, 231, -, -</column>
 <specialColumn name="Available">280, 220, 106400, 53200, 0</specialColumn>
-<specialColumn name="Utilization (%)">0, 5, 2, 7, 0</specialColumn>
+<specialColumn name="Utilization (%)">0, 5, 1, 5, 0</specialColumn>
 </table>
 </item>
 <item name = "Detail">
 <section name = "" level="1">
 <item name = "Instance"><table name="" hasTotal="1">
 <keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="hopfield_routing_CRTL_BUS_s_axi_U">hopfield_routing_CRTL_BUS_s_axi, 0, 0, 74, 104, 0</column>
 <column name="hopfield_routing_bkb_U1">hopfield_routing_bkb, 0, 2, 205, 390, 0</column>
 <column name="hopfield_routing_cud_U2">hopfield_routing_cud, 0, 3, 143, 321, 0</column>
 <column name="hopfield_routing_dEe_U3">hopfield_routing_dEe, 0, 0, 761, 994, 0</column>
-<column name="hopfield_routing_eOg_U4">hopfield_routing_eOg, 0, 0, 340, 554, 0</column>
-<column name="hopfield_routing_fYi_U5">hopfield_routing_fYi, 0, 7, 277, 924, 0</column>
+<column name="hopfield_routing_eOg_U4">hopfield_routing_eOg, 0, 7, 277, 924, 0</column>
 </table>
 </item>
 <item name = "DSP48E"><table name="" hasTotal="0">
@@ -88,88 +84,42 @@
 </item>
 <item name = "Expression"><table name="" hasTotal="1">
 <keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
-<column name="add_ln25_fu_345_p2">+, 0, 0, 15, 6, 6</column>
-<column name="add_ln27_fu_378_p2">+, 0, 0, 15, 6, 6</column>
-<column name="add_ln43_fu_502_p2">+, 0, 0, 15, 6, 6</column>
-<column name="add_ln47_fu_471_p2">+, 0, 0, 15, 6, 6</column>
-<column name="i_2_fu_437_p2">+, 0, 0, 13, 4, 1</column>
-<column name="i_fu_366_p2">+, 0, 0, 13, 4, 1</column>
-<column name="j_fu_490_p2">+, 0, 0, 13, 4, 1</column>
-<column name="x_2_fu_409_p2">+, 0, 0, 13, 4, 1</column>
-<column name="x_fu_327_p2">+, 0, 0, 13, 4, 1</column>
-<column name="y_fu_453_p2">+, 0, 0, 13, 4, 1</column>
-<column name="icmp_ln19_fu_321_p2">icmp, 0, 0, 11, 4, 5</column>
-<column name="icmp_ln21_fu_360_p2">icmp, 0, 0, 11, 4, 5</column>
-<column name="icmp_ln23_fu_372_p2">icmp, 0, 0, 9, 4, 4</column>
-<column name="icmp_ln32_fu_403_p2">icmp, 0, 0, 11, 4, 5</column>
-<column name="icmp_ln34_fu_431_p2">icmp, 0, 0, 11, 4, 5</column>
-<column name="icmp_ln37_fu_447_p2">icmp, 0, 0, 11, 4, 5</column>
-<column name="icmp_ln39_fu_484_p2">icmp, 0, 0, 11, 4, 5</column>
-<column name="icmp_ln41_fu_496_p2">icmp, 0, 0, 9, 4, 4</column>
-<column name="aux_2_fu_525_p3">select, 0, 0, 32, 1, 32</column>
-<column name="xor_ln27_fu_392_p2">xor, 0, 0, 33, 32, 33</column>
+<column name="add_ln23_fu_161_p2">+, 0, 0, 15, 6, 6</column>
+<column name="add_ln25_fu_194_p2">+, 0, 0, 15, 6, 6</column>
+<column name="i_fu_182_p2">+, 0, 0, 13, 4, 1</column>
+<column name="x_fu_143_p2">+, 0, 0, 13, 4, 1</column>
+<column name="icmp_ln17_fu_137_p2">icmp, 0, 0, 11, 4, 5</column>
+<column name="icmp_ln19_fu_176_p2">icmp, 0, 0, 11, 4, 5</column>
+<column name="icmp_ln21_fu_188_p2">icmp, 0, 0, 9, 4, 4</column>
+<column name="xor_ln25_fu_207_p2">xor, 0, 0, 33, 32, 33</column>
 </table>
 </item>
 <item name = "Multiplexer"><table name="" hasTotal="1">
 <keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
-<column name="U_1_address0">15, 3, 6, 18</column>
-<column name="V_address0">21, 4, 6, 24</column>
-<column name="V_d0">15, 3, 32, 96</column>
-<column name="ap_NS_fsm">353, 80, 1, 80</column>
-<column name="aux_0_reg_239">9, 2, 32, 64</column>
-<column name="aux_1_reg_262">9, 2, 32, 64</column>
-<column name="grp_fu_274_opcode">15, 3, 2, 6</column>
-<column name="grp_fu_274_p0">27, 5, 32, 160</column>
-<column name="grp_fu_274_p1">21, 4, 32, 128</column>
-<column name="grp_fu_280_p0">33, 6, 32, 192</column>
-<column name="grp_fu_280_p1">33, 6, 32, 192</column>
-<column name="i_0_reg_194">9, 2, 4, 8</column>
-<column name="i_1_reg_216">9, 2, 4, 8</column>
-<column name="j_0_reg_251">9, 2, 4, 8</column>
-<column name="x_0_reg_182">9, 2, 4, 8</column>
-<column name="x_1_reg_205">9, 2, 4, 8</column>
-<column name="y_0_reg_227">9, 2, 4, 8</column>
+<column name="V_Addr_A_orig">15, 3, 32, 96</column>
+<column name="V_Din_A">15, 3, 32, 96</column>
+<column name="V_WEN_A">9, 2, 4, 8</column>
+<column name="ap_NS_fsm">177, 40, 1, 40</column>
+<column name="i_0_reg_102">9, 2, 4, 8</column>
+<column name="x_0_reg_90">9, 2, 4, 8</column>
 </table>
 </item>
 <item name = "Register"><table name="" hasTotal="1">
 <keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
-<column name="I_load_reg_731">32, 0, 32, 0</column>
-<column name="T_load_reg_696">32, 0, 32, 0</column>
-<column name="U_2_load_reg_711">32, 0, 32, 0</column>
-<column name="V_addr_reg_570">6, 0, 6, 0</column>
-<column name="V_load_reg_701">32, 0, 32, 0</column>
-<column name="ap_CS_fsm">79, 0, 79, 0</column>
-<column name="aux_0_reg_239">32, 0, 32, 0</column>
-<column name="aux_1_reg_262">32, 0, 32, 0</column>
-<column name="i_0_reg_194">4, 0, 4, 0</column>
-<column name="i_1_reg_216">4, 0, 4, 0</column>
-<column name="i_2_reg_638">4, 0, 4, 0</column>
-<column name="i_reg_578">4, 0, 4, 0</column>
-<column name="icmp_ln23_reg_583">1, 0, 1, 0</column>
-<column name="icmp_ln41_reg_681">1, 0, 1, 0</column>
-<column name="j_0_reg_251">4, 0, 4, 0</column>
-<column name="j_reg_676">4, 0, 4, 0</column>
-<column name="reg_299">32, 0, 32, 0</column>
-<column name="reg_304">32, 0, 32, 0</column>
-<column name="reg_310">32, 0, 32, 0</column>
-<column name="shl_ln1_reg_625">3, 0, 6, 3</column>
-<column name="shl_ln2_reg_656">3, 0, 6, 3</column>
-<column name="shl_ln_reg_565">3, 0, 6, 3</column>
-<column name="tmp_5_reg_607">32, 0, 32, 0</column>
-<column name="tmp_6_reg_721">32, 0, 32, 0</column>
-<column name="tmp_i_i_reg_602">32, 0, 32, 0</column>
-<column name="tmp_reg_552">32, 0, 32, 0</column>
-<column name="trunc_ln43_reg_643">3, 0, 3, 0</column>
-<column name="trunc_ln47_reg_620">3, 0, 3, 0</column>
-<column name="x_0_reg_182">4, 0, 4, 0</column>
-<column name="x_1_reg_205">4, 0, 4, 0</column>
-<column name="x_2_reg_615">4, 0, 4, 0</column>
-<column name="x_reg_560">4, 0, 4, 0</column>
-<column name="y_0_reg_227">4, 0, 4, 0</column>
-<column name="y_reg_651">4, 0, 4, 0</column>
-<column name="zext_ln27_reg_587">6, 0, 64, 58</column>
-<column name="zext_ln34_reg_630">4, 0, 6, 2</column>
-<column name="zext_ln47_reg_661">6, 0, 64, 58</column>
+<column name="U_1_load_reg_258">32, 0, 32, 0</column>
+<column name="V_addr_reg_231">6, 0, 6, 0</column>
+<column name="ap_CS_fsm">39, 0, 39, 0</column>
+<column name="i_0_reg_102">4, 0, 4, 0</column>
+<column name="i_reg_239">4, 0, 4, 0</column>
+<column name="icmp_ln21_reg_244">1, 0, 1, 0</column>
+<column name="shl_ln_reg_226">3, 0, 6, 3</column>
+<column name="tmp_4_reg_283">32, 0, 32, 0</column>
+<column name="tmp_5_reg_288">32, 0, 32, 0</column>
+<column name="tmp_i_i_reg_278">32, 0, 32, 0</column>
+<column name="x_0_reg_90">4, 0, 4, 0</column>
+<column name="x_assign_reg_273">32, 0, 32, 0</column>
+<column name="x_reg_221">4, 0, 4, 0</column>
+<column name="zext_ln25_reg_248">6, 0, 64, 58</column>
 </table>
 </item>
 </section>
@@ -179,37 +129,40 @@
 <section name = "Interface" level="0">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_CRTL_BUS_AWVALID">in, 1, s_axi, CRTL_BUS, pointer</column>
+<column name="s_axi_CRTL_BUS_AWREADY">out, 1, s_axi, CRTL_BUS, pointer</column>
+<column name="s_axi_CRTL_BUS_AWADDR">in, 5, s_axi, CRTL_BUS, pointer</column>
+<column name="s_axi_CRTL_BUS_WVALID">in, 1, s_axi, CRTL_BUS, pointer</column>
+<column name="s_axi_CRTL_BUS_WREADY">out, 1, s_axi, CRTL_BUS, pointer</column>
+<column name="s_axi_CRTL_BUS_WDATA">in, 32, s_axi, CRTL_BUS, pointer</column>
+<column name="s_axi_CRTL_BUS_WSTRB">in, 4, s_axi, CRTL_BUS, pointer</column>
+<column name="s_axi_CRTL_BUS_ARVALID">in, 1, s_axi, CRTL_BUS, pointer</column>
+<column name="s_axi_CRTL_BUS_ARREADY">out, 1, s_axi, CRTL_BUS, pointer</column>
+<column name="s_axi_CRTL_BUS_ARADDR">in, 5, s_axi, CRTL_BUS, pointer</column>
+<column name="s_axi_CRTL_BUS_RVALID">out, 1, s_axi, CRTL_BUS, pointer</column>
+<column name="s_axi_CRTL_BUS_RREADY">in, 1, s_axi, CRTL_BUS, pointer</column>
+<column name="s_axi_CRTL_BUS_RDATA">out, 32, s_axi, CRTL_BUS, pointer</column>
+<column name="s_axi_CRTL_BUS_RRESP">out, 2, s_axi, CRTL_BUS, pointer</column>
+<column name="s_axi_CRTL_BUS_BVALID">out, 1, s_axi, CRTL_BUS, pointer</column>
+<column name="s_axi_CRTL_BUS_BREADY">in, 1, s_axi, CRTL_BUS, pointer</column>
+<column name="s_axi_CRTL_BUS_BRESP">out, 2, s_axi, CRTL_BUS, pointer</column>
 <column name="ap_clk">in, 1, ap_ctrl_hs, hopfield_routing, return value</column>
-<column name="ap_rst">in, 1, ap_ctrl_hs, hopfield_routing, return value</column>
-<column name="ap_start">in, 1, ap_ctrl_hs, hopfield_routing, return value</column>
-<column name="ap_done">out, 1, ap_ctrl_hs, hopfield_routing, return value</column>
-<column name="ap_idle">out, 1, ap_ctrl_hs, hopfield_routing, return value</column>
-<column name="ap_ready">out, 1, ap_ctrl_hs, hopfield_routing, return value</column>
-<column name="V_address0">out, 6, ap_memory, V, array</column>
-<column name="V_ce0">out, 1, ap_memory, V, array</column>
-<column name="V_we0">out, 1, ap_memory, V, array</column>
-<column name="V_d0">out, 32, ap_memory, V, array</column>
-<column name="V_q0">in, 32, ap_memory, V, array</column>
-<column name="U_0_address0">out, 6, ap_memory, U_0, array</column>
-<column name="U_0_ce0">out, 1, ap_memory, U_0, array</column>
-<column name="U_0_we0">out, 1, ap_memory, U_0, array</column>
-<column name="U_0_d0">out, 32, ap_memory, U_0, array</column>
-<column name="U_1_address0">out, 6, ap_memory, U_1, array</column>
-<column name="U_1_ce0">out, 1, ap_memory, U_1, array</column>
-<column name="U_1_q0">in, 32, ap_memory, U_1, array</column>
-<column name="U_2_address0">out, 6, ap_memory, U_2, array</column>
-<column name="U_2_ce0">out, 1, ap_memory, U_2, array</column>
-<column name="U_2_q0">in, 32, ap_memory, U_2, array</column>
-<column name="I_address0">out, 6, ap_memory, I, array</column>
-<column name="I_ce0">out, 1, ap_memory, I, array</column>
-<column name="I_q0">in, 32, ap_memory, I, array</column>
-<column name="T_address0">out, 12, ap_memory, T, array</column>
-<column name="T_ce0">out, 1, ap_memory, T, array</column>
-<column name="T_q0">in, 32, ap_memory, T, array</column>
-<column name="A">in, 32, ap_none, A, scalar</column>
-<column name="B">in, 32, ap_none, B, scalar</column>
-<column name="C">in, 32, ap_none, C, scalar</column>
-<column name="l">in, 32, ap_none, l, scalar</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, hopfield_routing, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, hopfield_routing, return value</column>
+<column name="V_Addr_A">out, 32, bram, V, array</column>
+<column name="V_EN_A">out, 1, bram, V, array</column>
+<column name="V_WEN_A">out, 4, bram, V, array</column>
+<column name="V_Din_A">out, 32, bram, V, array</column>
+<column name="V_Dout_A">in, 32, bram, V, array</column>
+<column name="V_Clk_A">out, 1, bram, V, array</column>
+<column name="V_Rst_A">out, 1, bram, V, array</column>
+<column name="U_1_Addr_A">out, 32, bram, U_1, array</column>
+<column name="U_1_EN_A">out, 1, bram, U_1, array</column>
+<column name="U_1_WEN_A">out, 4, bram, U_1, array</column>
+<column name="U_1_Din_A">out, 32, bram, U_1, array</column>
+<column name="U_1_Dout_A">in, 32, bram, U_1, array</column>
+<column name="U_1_Clk_A">out, 1, bram, U_1, array</column>
+<column name="U_1_Rst_A">out, 1, bram, U_1, array</column>
 </table>
 </item>
 </section>

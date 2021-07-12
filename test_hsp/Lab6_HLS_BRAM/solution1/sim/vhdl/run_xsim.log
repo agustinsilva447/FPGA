@@ -1,0 +1,199 @@
+Result[0]=0.502506
+Result[1]=0.923242
+Result[2]=0.957155
+Result[3]=0.573066
+Result[4]=0.124105
+Result[5]=0.023044
+Result[6]=0.362799
+Result[7]=0.830999
+Result[8]=0.997185
+Result[9]=0.708565
+Result[10]=0.230496
+Result[11]=0.002511
+Result[12]=0.234220
+Result[13]=0.712590
+Result[14]=0.997810
+Result[15]=0.827650
+Result[16]=0.358555
+Result[17]=0.021808
+Result[18]=0.127013
+Result[19]=0.577445
+Result[20]=0.958979
+Result[21]=0.920834
+Result[22]=0.498081
+Result[23]=0.079396
+Result[24]=0.049717
+Result[25]=0.436330
+Result[26]=0.883785
+Result[27]=0.980694
+Result[28]=0.637959
+Result[29]=0.170689
+Result[30]=0.008490
+Result[31]=0.300487
+Result[32]=0.778220
+Result[33]=1.002462
+Result[34]=0.767048
+Result[35]=0.288415
+Result[36]=0.006617
+Result[37]=0.180737
+Result[38]=0.650691
+Result[39]=0.984404
+Result[40]=0.875063
+Result[41]=0.423195
+Result[42]=0.044246
+Result[43]=0.086619
+Result[44]=0.511357
+Result[45]=0.927958
+Result[46]=0.953400
+Result[47]=0.564293
+Result[48]=0.118379
+Result[49]=0.025630
+Result[50]=0.371319
+Result[51]=0.837621
+Result[52]=0.995820
+Result[53]=0.700469
+Result[54]=0.223112
+Result[55]=0.002629
+Result[56]=0.241731
+Result[57]=0.720589
+Result[58]=0.998943
+Result[59]=0.820875
+Result[60]=0.350101
+Result[61]=0.019447
+Result[62]=0.132916
+Result[63]=0.586184
+Result[64]=0.962519
+Result[65]=0.915921
+Result[66]=0.489231
+Result[67]=0.074746
+Result[68]=0.053542
+Result[69]=0.445114
+Result[70]=0.889452
+Result[71]=0.978034
+Result[72]=0.629418
+Result[73]=0.164120
+Result[74]=0.009933
+Result[75]=0.308615
+Result[76]=0.785560
+Result[77]=1.002266
+Result[78]=0.759495
+Result[79]=0.280450
+Result[80]=0.005562
+Result[81]=0.187562
+Result[82]=0.659121
+Result[83]=0.986688
+Result[84]=0.869101
+Result[85]=0.414468
+Result[86]=0.040777
+Result[87]=0.091597
+Result[88]=0.520205
+Result[89]=0.932541
+Result[90]=0.949505
+Result[91]=0.555500
+Result[92]=0.112773
+Result[93]=0.028365
+Result[94]=0.379880
+Result[95]=0.844137
+Result[96]=0.994300
+Result[97]=0.692310
+Result[98]=0.215815
+Result[99]=0.002903
+INFO: [XSIM 43-3496] Using init file passed via -initfile option "/home/agustinsilva447/Vivado/Vivado/2019.2/data/xsim/ip/xsim_ip.ini".
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab xil_defaultlib.apatb_crazyFunction_top glbl -prj crazyFunction.prj -L smartconnect_v1_0 -L axi_protocol_checker_v1_1_12 -L axi_protocol_checker_v1_1_13 -L axis_protocol_checker_v1_1_11 -L axis_protocol_checker_v1_1_12 -L xil_defaultlib -L unisims -L unisims_ver -L xpm --initfile /home/agustinsilva447/Vivado/Vivado/2019.2/data/xsim/ip/xsim_ip.ini --lib ieee_proposed=./ieee_proposed -s crazyFunction 
+Multi-threading is on. Using 2 slave threads.
+Determining compilation order of HDL files.
+WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the "-mt off -v 1" switches to see more information from the C compiler. The following environment variables have been detected:
+    LIBRARY_PATH
+INFO: [VRFC 10-2263] Analyzing SystemVerilog file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/glbl.v" into library work
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/AESL_sim_pkg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/ip/xil_defaultlib/crazyFunction_ap_fsqrt_10_no_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_ap_fsqrt_10_no_dsp_32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/ip/xil_defaultlib/crazyFunction_ap_fexp_7_full_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_ap_fexp_7_full_dsp_32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/ip/xil_defaultlib/crazyFunction_ap_fadd_3_full_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_ap_fadd_3_full_dsp_32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/ip/xil_defaultlib/crazyFunction_ap_fmul_2_max_dsp_32.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_ap_fmul_2_max_dsp_32'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/crazyFunction_CRTL_BUS_s_axi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_CRTL_BUS_s_axi'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/AESL_axi_slave_CRTL_BUS.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_axi_slave_CRTL_BUS'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/crazyFunction_muljbC.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_muljbC_MulnS_0'
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_muljbC'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/AESL_autobram_res.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_autobram_res'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/crazyFunction_fsqhbi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_fsqhbi'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/AESL_autobram_x.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'AESL_autobram_x'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/crazyFunction.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/crazyFunction_mulmb6.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_mulmb6_DSP48_0'
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_mulmb6'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/crazyFunction_seccud.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_seccud_rom'
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_seccud'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/crazyFunction_secdEe.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_secdEe_rom'
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_secdEe'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/crazyFunction_refbkb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_refbkb_rom'
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_refbkb'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/crazyFunction_seceOg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_seceOg_rom'
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_seceOg'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/crazyFunction_fmug8j.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_fmug8j'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/crazyFunction.autotb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'apatb_crazyFunction_top'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/crazyFunction_muxkbM.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_muxkbM'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/crazyFunction_fadfYi.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_fadfYi'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/crazyFunction_mulncg.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_mulncg_DSP48_1'
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_mulncg'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/crazyFunction_muxlbW.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_muxlbW'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/scaled_fixed2ieee.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'scaled_fixed2ieee'
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/sim/vhdl/crazyFunction_fexibs.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'crazyFunction_fexibs'
+Starting static elaboration
+Pass Through NonSizing Optimizer
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_9' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/crazyFunction_ap_fadd_3_full_dsp_32.vhd:201]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_9' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/crazyFunction_ap_fmul_2_max_dsp_32.vhd:201]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_9' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/crazyFunction_ap_fsqrt_10_no_dsp_32.vhd:196]
+WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_9' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/crazyFunction_ap_fexp_7_full_dsp_32.vhd:196]
+Completed static elaboration
+ERROR: [XSIM 43-3316] Signal SIGSEGV received.
+Printing stacktrace...
+
+[0] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x77388f]
+[1] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x773b07]
+[2] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x734aa2]
+[3] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x73502e]
+[4] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7353f1]
+[5] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[6] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[7] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[8] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[9] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[10] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[11] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]
+[12] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7345e6]
+[13] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x73502e]
+[14] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x6e1e34]
+[15] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x476697]
+[16] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x480253]
+[17] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x45241d]
+[18] /usr/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f7c491100b3]
+[19] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x46a3d0]
+
+Done
+ERROR: Please check the snapshot name which is created during 'xelab',the current snapshot name "xsim.dir/crazyFunction/xsimk" does not exist 

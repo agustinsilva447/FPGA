@@ -8,8 +8,9 @@ use ieee.std_logic_1164.all;
 entity hopfield_routing_eOg is
     generic (
         ID         : integer := 4;
-        NUM_STAGE  : integer := 6;
+        NUM_STAGE  : integer := 9;
         din0_WIDTH : integer := 32;
+        din1_WIDTH : integer := 32;
         dout_WIDTH : integer := 32
     );
     port (
@@ -17,13 +18,14 @@ entity hopfield_routing_eOg is
         reset : in  std_logic;
         ce    : in  std_logic;
         din0  : in  std_logic_vector(din0_WIDTH-1 downto 0);
+        din1  : in  std_logic_vector(din1_WIDTH-1 downto 0);
         dout  : out std_logic_vector(dout_WIDTH-1 downto 0)
     );
 end entity;
 
 architecture arch of hopfield_routing_eOg is
     --------------------- Component ---------------------
-    component hopfield_routing_ap_sitofp_4_no_dsp_32 is
+    component hopfield_routing_ap_fexp_7_full_dsp_32 is
         port (
             aclk                 : in  std_logic;
             aclken               : in  std_logic;
@@ -40,13 +42,13 @@ architecture arch of hopfield_routing_eOg is
     signal a_tdata   : std_logic_vector(31 downto 0);
     signal r_tvalid  : std_logic;
     signal r_tdata   : std_logic_vector(31 downto 0);
-    signal din0_buf1 : std_logic_vector(din0_WIDTH-1 downto 0);
+    signal din1_buf1 : std_logic_vector(din1_WIDTH-1 downto 0);
     signal ce_r      : std_logic;
     signal dout_i    : std_logic_vector(dout_WIDTH-1 downto 0);
     signal dout_r    : std_logic_vector(dout_WIDTH-1 downto 0);
 begin
     --------------------- Instantiation -----------------
-    hopfield_routing_ap_sitofp_4_no_dsp_32_u : component hopfield_routing_ap_sitofp_4_no_dsp_32
+    hopfield_routing_ap_fexp_7_full_dsp_32_u : component hopfield_routing_ap_fexp_7_full_dsp_32
     port map (
         aclk                 => aclk,
         aclken               => aclken,
@@ -60,14 +62,14 @@ begin
     aclk     <= clk;
     aclken   <= ce_r;
     a_tvalid <= '1';
-    a_tdata  <= din0_buf1;
+    a_tdata  <= din1_buf1;
     dout_i   <= r_tdata;
 
     --------------------- Input buffer ------------------
     process (clk) begin
         if clk'event and clk = '1' then
             if ce = '1' then
-                din0_buf1 <= din0;
+                din1_buf1 <= din1;
             end if;
         end if;
     end process;

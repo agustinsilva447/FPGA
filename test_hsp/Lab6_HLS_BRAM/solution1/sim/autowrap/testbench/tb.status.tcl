@@ -1,0 +1,1 @@
+set ::AESL_AUTOSIM::gTopFileName /home/agustinsilva447/Escritorio/Github/FPGA/test_hsp/Lab6_HLS_BRAM/solution1/./sim/autowrap/testbench/core.cpp_pre.cpp.tb.cpp

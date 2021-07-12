@@ -3,48 +3,27 @@
 #define N1 8	//Cantidad de nodos
 
 void hopfield_routing(	float V[N1 * N1],
-						float U_0[N1 * N1],
 						float U_1[N1 * N1],
-						float U_2[N1 * N1],
-						float I[N1 * N1],
-						float T[N1 * N1 * N1 * N1],
-						float A,
-						float B,
-						float C,
-						int l)
+						float &l)
 {
-	int x, i, y, j;
-	float aux;
 
-	for(x = 0; x < N1; x++)
-		{
-			for(i = 0; i < N1; i++)
-			{
-				if (x == i)
-				{
-					V[x * N1 + i] = 0;
-				} else {
-					V[x * N1 + i] = 1 / (1 + hls::exp(-1 * U_1[x * N1 + i] * l));
-				}
-			}
-		}
+	#pragma HLS INTERFACE s_axilite port=return bundle=CRTL_BUS
+	#pragma HLS INTERFACE s_axilite port=l bundle=CRTL_BUS
+	#pragma HLS INTERFACE bram port=V
+	#pragma HLS INTERFACE bram port=U_1
+
+	int x, i;
 
 	for(x = 0; x < N1; x++)
 	{
 		for(i = 0; i < N1; i++)
 		{
-			aux = 0;
-			for(y = 0; y < N1; y++)
+			if (x == i)
 			{
-				for(j = 0; j < N1; j++)
-				{
-					if (y != j)
-					{
-						aux = aux + T[x * N1 * N1 * N1 + i * N1 * N1 + y * N1 + j] * V[y * N1 + j];
-					}
-				}
+				V[x * N1 + i] = 0;
+			} else {
+				V[x * N1 + i] = 1 / (1 + hls::expf(-1 * U_1[x * N1 + i] * l));
 			}
-			U_0[x * N1 + i] = U_1[x * N1 + i] - A * U_2[x * N1 + i] + B * aux + C * I[x * N1 + i];
 		}
 	}
 }

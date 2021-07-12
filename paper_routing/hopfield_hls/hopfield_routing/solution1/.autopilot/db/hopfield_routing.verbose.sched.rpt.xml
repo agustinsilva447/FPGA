@@ -1,7 +1,7 @@
 <profile>
 
 <section name = "Vivado HLS Report for 'hopfield_routing'" level="0">
-<item name = "Date">Sun Jul 11 22:38:55 2021
+<item name = "Date">Mon Jul 12 18:07:24 2021
 </item>
 <item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
 <item name = "Project">hopfield_routing</item>
@@ -15,7 +15,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="4">Clock, Target, Estimated, Uncertainty</keys>
-<column name="ap_clk">10.00 ns, 7.954 ns, 1.25 ns</column>
+<column name="ap_clk">10.00 ns, 7.684 ns, 1.25 ns</column>
 </table>
 </item>
 </section>
@@ -24,7 +24,7 @@
 <section name = "" level="1">
 <item name = "Summary"><table name="" hasTotal="0">
 <keys size="8">, min, max, min, max, min, max, Type</keys>
-<column name="">47719, 49959, 0.477 ms, 0.500 ms, 47719, 49959, none</column>
+<column name="">145, 2385, 1.450 us, 23.850 us, 145, 2385, none</column>
 </table>
 </item>
 <item name = "Detail">
@@ -37,10 +37,6 @@
 <keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
 <column name="- Loop 1">144, 2384, 18 ~ 298, -, -, 8, no</column>
 <column name=" + Loop 1.1">16, 296, 2 ~ 37, -, -, 8, no</column>
-<column name="- Loop 2">47568, 47568, 5946, -, -, 8, no</column>
-<column name=" + Loop 2.1">5944, 5944, 743, -, -, 8, no</column>
-<column name="  ++ Loop 2.1.1">720, 720, 90, -, -, 8, no</column>
-<column name="   +++ Loop 2.1.1.1">88, 88, 11, -, -, 8, no</column>
 </table>
 </item>
 </section>

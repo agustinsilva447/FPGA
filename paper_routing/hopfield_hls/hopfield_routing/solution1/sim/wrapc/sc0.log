@@ -1,5 +1,0 @@
-   Build using "/home/agustinsilva447/Vivado/Vivado/2019.2/tps/lnx64/gcc-6.2.0/bin/g++"
-   Compiling apatb_hopfield_routing.cpp
-   Compiling hopfield_routing.cpp_pre.cpp.tb.cpp
-   Compiling tb_hopfield_routing.cpp_pre.cpp.tb.cpp
-   Generating cosim.tv.exe

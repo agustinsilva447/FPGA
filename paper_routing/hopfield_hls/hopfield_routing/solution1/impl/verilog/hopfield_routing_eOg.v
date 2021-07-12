@@ -8,14 +8,16 @@
 module hopfield_routing_eOg
 #(parameter
     ID         = 4,
-    NUM_STAGE  = 6,
+    NUM_STAGE  = 9,
     din0_WIDTH = 32,
+    din1_WIDTH = 32,
     dout_WIDTH = 32
 )(
     input  wire                  clk,
     input  wire                  reset,
     input  wire                  ce,
     input  wire [din0_WIDTH-1:0] din0,
+    input  wire [din1_WIDTH-1:0] din1,
     output wire [dout_WIDTH-1:0] dout
 );
 //------------------------Local signal-------------------
@@ -25,12 +27,12 @@ wire                  a_tvalid;
 wire [31:0]           a_tdata;
 wire                  r_tvalid;
 wire [31:0]           r_tdata;
-reg  [din0_WIDTH-1:0] din0_buf1;
+reg  [din1_WIDTH-1:0] din1_buf1;
 reg                   ce_r;
 wire [dout_WIDTH-1:0] dout_i;
 reg  [dout_WIDTH-1:0] dout_r;
 //------------------------Instantiation------------------
-hopfield_routing_ap_sitofp_4_no_dsp_32 hopfield_routing_ap_sitofp_4_no_dsp_32_u (
+hopfield_routing_ap_fexp_7_full_dsp_32 hopfield_routing_ap_fexp_7_full_dsp_32_u (
     .aclk                 ( aclk ),
     .aclken               ( aclken ),
     .s_axis_a_tvalid      ( a_tvalid ),
@@ -42,12 +44,12 @@ hopfield_routing_ap_sitofp_4_no_dsp_32 hopfield_routing_ap_sitofp_4_no_dsp_32_u 
 assign aclk     = clk;
 assign aclken   = ce_r;
 assign a_tvalid = 1'b1;
-assign a_tdata  = din0_buf1;
+assign a_tdata  = din1_buf1;
 assign dout_i   = r_tdata;
 
 always @(posedge clk) begin
     if (ce) begin
-        din0_buf1 <= din0;
+        din1_buf1 <= din1;
     end
 end
 

@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog/>
+      <simLog>
+        <logs message="ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***" projectName="Lab6_HLS_BRAM" solutionName="solution1" date="2021-07-12T18:59:58.356-0300"/>
+        <logs message="ERROR: Please check the snapshot name which is created during 'xelab',the current snapshot name &quot;xsim.dir/crazyFunction/xsimk&quot; does not exist " projectName="Lab6_HLS_BRAM" solutionName="solution1" date="2021-07-12T18:59:58.337-0300"/>
+        <logs message="ERROR: [XSIM 43-3316] Signal SIGSEGV received.&#xA;Printing stacktrace...&#xA;&#xA;&#xA;[0] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x77388f]&#xA;[1] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x773b07]&#xA;[2] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x734aa2]&#xA;[3] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x73502e]&#xA;[4] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7353f1]&#xA;[5] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]&#xA;[6] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]&#xA;[7] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]&#xA;[8] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]&#xA;[9] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]&#xA;[10] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]&#xA;[11] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7351e0]&#xA;[12] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x7345e6]&#xA;[13] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x73502e]&#xA;[14] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x6e1e34]&#xA;[15] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x476697]&#xA;[16] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x480253]&#xA;[17] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x45241d]&#xA;[18] /usr/lib/x86_64-linux-gnu/libc.so.6(__libc_start_main+0xf3) [0x7f7c491100b3]&#xA;[19] /home/agustinsilva447/Vivado/Vivado/2019.2/bin/unwrapped/lnx64.o/xelab() [0x46a3d0]&#xA;&#xA;&#xA;Done" projectName="Lab6_HLS_BRAM" solutionName="solution1" date="2021-07-12T18:59:58.270-0300"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'crazyFunction/x_Din_A' to 0." projectName="Lab6_HLS_BRAM" solutionName="solution1" date="2021-07-12T18:56:37.162-0300" type="Warning"/>
+        <logs message="WARNING: [RTGEN 206-101] Setting dangling out port 'crazyFunction/x_WEN_A' to 0." projectName="Lab6_HLS_BRAM" solutionName="solution1" date="2021-07-12T18:56:37.142-0300" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-631] Renaming function 'scaled_fixed2ieee&lt;29, 1>' to 'scaled_fixed2ieee' (/wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls/utils/x_hls_float_utils.h:110:37)" projectName="Lab6_HLS_BRAM" solutionName="solution1" date="2021-07-12T18:56:34.318-0300" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] /wrk/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls/utils/x_hls_float_utils.h:297: variable-indexed range selection may cause suboptimal QoR." projectName="Lab6_HLS_BRAM" solutionName="solution1" date="2021-07-12T18:56:31.100-0300" type="Warning"/>
+      </synLog>
+      <simLog>
+        <logs message="WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_9' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/crazyFunction_ap_fexp_7_full_dsp_32.vhd:196]&#xA;Completed static elaboration" projectName="Lab6_HLS_BRAM" solutionName="solution1" date="2021-07-12T18:59:56.209-0300" type="Warning"/>
+        <logs message="WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_9' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/crazyFunction_ap_fsqrt_10_no_dsp_32.vhd:196]" projectName="Lab6_HLS_BRAM" solutionName="solution1" date="2021-07-12T18:59:55.317-0300" type="Warning"/>
+        <logs message="WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_9' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/crazyFunction_ap_fmul_2_max_dsp_32.vhd:201]" projectName="Lab6_HLS_BRAM" solutionName="solution1" date="2021-07-12T18:59:44.212-0300" type="Warning"/>
+        <logs message="WARNING: [VRFC 10-3499] library name 'floating_point_v7_1_9' of instantiated unit conflicts with visible identifier [ip/xil_defaultlib/crazyFunction_ap_fadd_3_full_dsp_32.vhd:201]" projectName="Lab6_HLS_BRAM" solutionName="solution1" date="2021-07-12T18:59:41.443-0300" type="Warning"/>
+        <logs message="WARNING: [XSIM 43-3431] One or more environment variables have been detected which affect the operation of the C compiler. These are typically not set in standard installations and are not tested by Xilinx, however they may be appropriate for your system, so the flow will attempt to continue.  If errors occur, try running xelab with the &quot;-mt off -v 1&quot; switches to see more information from the C compiler. The following environment variables have been detected:&#xA;    LIBRARY_PATH" projectName="Lab6_HLS_BRAM" solutionName="solution1" date="2021-07-12T18:59:23.559-0300" type="Warning"/>
+      </simLog>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

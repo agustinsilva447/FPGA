@@ -4,7 +4,7 @@
 // ==============================================================
 #ifndef __hopfield_routing_bkb__HH__
 #define __hopfield_routing_bkb__HH__
-#include "ACMP_faddfsub.h"
+#include "ACMP_fadd.h"
 #include <systemc>
 
 template<
@@ -19,21 +19,19 @@ SC_MODULE(hopfield_routing_bkb) {
     sc_core::sc_in<sc_dt::sc_logic> ce;
     sc_core::sc_in< sc_dt::sc_lv<din0_WIDTH> >   din0;
     sc_core::sc_in< sc_dt::sc_lv<din1_WIDTH> >   din1;
-    sc_core::sc_in< sc_dt::sc_lv<2> >   opcode;
     sc_core::sc_out< sc_dt::sc_lv<dout_WIDTH> >   dout;
 
 
 
-    ACMP_faddfsub<ID, 5, din0_WIDTH, din1_WIDTH, dout_WIDTH> ACMP_faddfsub_U;
+    ACMP_fadd<ID, 5, din0_WIDTH, din1_WIDTH, dout_WIDTH> ACMP_fadd_U;
 
-    SC_CTOR(hopfield_routing_bkb):  ACMP_faddfsub_U ("ACMP_faddfsub_U") {
-        ACMP_faddfsub_U.clk(clk);
-        ACMP_faddfsub_U.reset(reset);
-        ACMP_faddfsub_U.ce(ce);
-        ACMP_faddfsub_U.din0(din0);
-        ACMP_faddfsub_U.din1(din1);
-        ACMP_faddfsub_U.dout(dout);
-        ACMP_faddfsub_U.opcode(opcode);
+    SC_CTOR(hopfield_routing_bkb):  ACMP_fadd_U ("ACMP_fadd_U") {
+        ACMP_fadd_U.clk(clk);
+        ACMP_fadd_U.reset(reset);
+        ACMP_fadd_U.ce(ce);
+        ACMP_fadd_U.din0(din0);
+        ACMP_fadd_U.din1(din1);
+        ACMP_fadd_U.dout(dout);
 
     }
 

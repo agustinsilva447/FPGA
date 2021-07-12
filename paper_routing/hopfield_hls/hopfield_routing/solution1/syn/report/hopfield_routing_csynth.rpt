@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'hopfield_routing'
 ================================================================
-* Date:           Sun Jul 11 22:38:56 2021
+* Date:           Mon Jul 12 18:07:24 2021
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        hopfield_routing
@@ -20,34 +20,30 @@
     +--------+----------+----------+------------+
     |  Clock |  Target  | Estimated| Uncertainty|
     +--------+----------+----------+------------+
-    |ap_clk  | 10.00 ns | 8.400 ns |   1.25 ns  |
+    |ap_clk  | 10.00 ns | 7.684 ns |   1.25 ns  |
     +--------+----------+----------+------------+
 
 + Latency: 
     * Summary: 
-    +---------+---------+----------+----------+-------+-------+---------+
-    |  Latency (cycles) |  Latency (absolute) |    Interval   | Pipeline|
-    |   min   |   max   |    min   |    max   |  min  |  max  |   Type  |
-    +---------+---------+----------+----------+-------+-------+---------+
-    |    47719|    49959| 0.477 ms | 0.500 ms |  47719|  49959|   none  |
-    +---------+---------+----------+----------+-------+-------+---------+
+    +---------+---------+----------+-----------+-----+------+---------+
+    |  Latency (cycles) |  Latency (absolute)  |  Interval  | Pipeline|
+    |   min   |   max   |    min   |    max    | min |  max |   Type  |
+    +---------+---------+----------+-----------+-----+------+---------+
+    |      145|     2385| 1.450 us | 23.850 us |  145|  2385|   none  |
+    +---------+---------+----------+-----------+-----+------+---------+
 
     + Detail: 
         * Instance: 
         N/A
 
         * Loop: 
-        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |                     |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
-        |      Loop Name      |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
-        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
-        |- Loop 1             |      144|     2384| 18 ~ 298 |          -|          -|     8|    no    |
-        | + Loop 1.1          |       16|      296|  2 ~ 37  |          -|          -|     8|    no    |
-        |- Loop 2             |    47568|    47568|      5946|          -|          -|     8|    no    |
-        | + Loop 2.1          |     5944|     5944|       743|          -|          -|     8|    no    |
-        |  ++ Loop 2.1.1      |      720|      720|        90|          -|          -|     8|    no    |
-        |   +++ Loop 2.1.1.1  |       88|       88|        11|          -|          -|     8|    no    |
-        +---------------------+---------+---------+----------+-----------+-----------+------+----------+
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |             |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |  Loop Name  |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1     |      144|     2384| 18 ~ 298 |          -|          -|     8|    no    |
+        | + Loop 1.1  |       16|      296|  2 ~ 37  |          -|          -|     8|    no    |
+        +-------------+---------+---------+----------+-----------+-----------+------+----------+
 
 
 
@@ -59,33 +55,33 @@
 |       Name      | BRAM_18K| DSP48E|   FF   |  LUT  | URAM|
 +-----------------+---------+-------+--------+-------+-----+
 |DSP              |        -|      -|       -|      -|    -|
-|Expression       |        -|      -|       0|    287|    -|
+|Expression       |        -|      -|       0|    120|    -|
 |FIFO             |        -|      -|       -|      -|    -|
-|Instance         |        -|     12|    1726|   3183|    -|
+|Instance         |        0|     12|    1460|   2733|    -|
 |Memory           |        -|      -|       -|      -|    -|
-|Multiplexer      |        -|      -|       -|    605|    -|
-|Register         |        -|      -|     582|      -|    -|
+|Multiplexer      |        -|      -|       -|    234|    -|
+|Register         |        -|      -|     231|      -|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |        0|     12|    2308|   4075|    0|
+|Total            |        0|     12|    1691|   3087|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
-|Utilization (%)  |        0|      5|       2|      7|    0|
+|Utilization (%)  |        0|      5|       1|      5|    0|
 +-----------------+---------+-------+--------+-------+-----+
 
 + Detail: 
     * Instance: 
-    +-------------------------+----------------------+---------+-------+-----+-----+-----+
-    |         Instance        |        Module        | BRAM_18K| DSP48E|  FF | LUT | URAM|
-    +-------------------------+----------------------+---------+-------+-----+-----+-----+
-    |hopfield_routing_bkb_U1  |hopfield_routing_bkb  |        0|      2|  205|  390|    0|
-    |hopfield_routing_cud_U2  |hopfield_routing_cud  |        0|      3|  143|  321|    0|
-    |hopfield_routing_dEe_U3  |hopfield_routing_dEe  |        0|      0|  761|  994|    0|
-    |hopfield_routing_eOg_U4  |hopfield_routing_eOg  |        0|      0|  340|  554|    0|
-    |hopfield_routing_fYi_U5  |hopfield_routing_fYi  |        0|      7|  277|  924|    0|
-    +-------------------------+----------------------+---------+-------+-----+-----+-----+
-    |Total                    |                      |        0|     12| 1726| 3183|    0|
-    +-------------------------+----------------------+---------+-------+-----+-----+-----+
+    +-----------------------------------+---------------------------------+---------+-------+-----+-----+-----+
+    |              Instance             |              Module             | BRAM_18K| DSP48E|  FF | LUT | URAM|
+    +-----------------------------------+---------------------------------+---------+-------+-----+-----+-----+
+    |hopfield_routing_CRTL_BUS_s_axi_U  |hopfield_routing_CRTL_BUS_s_axi  |        0|      0|   74|  104|    0|
+    |hopfield_routing_bkb_U1            |hopfield_routing_bkb             |        0|      2|  205|  390|    0|
+    |hopfield_routing_cud_U2            |hopfield_routing_cud             |        0|      3|  143|  321|    0|
+    |hopfield_routing_dEe_U3            |hopfield_routing_dEe             |        0|      0|  761|  994|    0|
+    |hopfield_routing_eOg_U4            |hopfield_routing_eOg             |        0|      7|  277|  924|    0|
+    +-----------------------------------+---------------------------------+---------+-------+-----+-----+-----+
+    |Total                              |                                 |        0|     12| 1460| 2733|    0|
+    +-----------------------------------+---------------------------------+---------+-------+-----+-----+-----+
 
     * DSP48E: 
     N/A
@@ -100,99 +96,53 @@
     +---------------------+----------+-------+---+----+------------+------------+
     |    Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +---------------------+----------+-------+---+----+------------+------------+
-    |add_ln25_fu_345_p2   |     +    |      0|  0|  15|           6|           6|
-    |add_ln27_fu_378_p2   |     +    |      0|  0|  15|           6|           6|
-    |add_ln43_fu_502_p2   |     +    |      0|  0|  15|           6|           6|
-    |add_ln47_fu_471_p2   |     +    |      0|  0|  15|           6|           6|
-    |i_2_fu_437_p2        |     +    |      0|  0|  13|           4|           1|
-    |i_fu_366_p2          |     +    |      0|  0|  13|           4|           1|
-    |j_fu_490_p2          |     +    |      0|  0|  13|           4|           1|
-    |x_2_fu_409_p2        |     +    |      0|  0|  13|           4|           1|
-    |x_fu_327_p2          |     +    |      0|  0|  13|           4|           1|
-    |y_fu_453_p2          |     +    |      0|  0|  13|           4|           1|
-    |icmp_ln19_fu_321_p2  |   icmp   |      0|  0|  11|           4|           5|
-    |icmp_ln21_fu_360_p2  |   icmp   |      0|  0|  11|           4|           5|
-    |icmp_ln23_fu_372_p2  |   icmp   |      0|  0|   9|           4|           4|
-    |icmp_ln32_fu_403_p2  |   icmp   |      0|  0|  11|           4|           5|
-    |icmp_ln34_fu_431_p2  |   icmp   |      0|  0|  11|           4|           5|
-    |icmp_ln37_fu_447_p2  |   icmp   |      0|  0|  11|           4|           5|
-    |icmp_ln39_fu_484_p2  |   icmp   |      0|  0|  11|           4|           5|
-    |icmp_ln41_fu_496_p2  |   icmp   |      0|  0|   9|           4|           4|
-    |aux_2_fu_525_p3      |  select  |      0|  0|  32|           1|          32|
-    |xor_ln27_fu_392_p2   |    xor   |      0|  0|  33|          32|          33|
+    |add_ln23_fu_161_p2   |     +    |      0|  0|  15|           6|           6|
+    |add_ln25_fu_194_p2   |     +    |      0|  0|  15|           6|           6|
+    |i_fu_182_p2          |     +    |      0|  0|  13|           4|           1|
+    |x_fu_143_p2          |     +    |      0|  0|  13|           4|           1|
+    |icmp_ln17_fu_137_p2  |   icmp   |      0|  0|  11|           4|           5|
+    |icmp_ln19_fu_176_p2  |   icmp   |      0|  0|  11|           4|           5|
+    |icmp_ln21_fu_188_p2  |   icmp   |      0|  0|   9|           4|           4|
+    |xor_ln25_fu_207_p2   |    xor   |      0|  0|  33|          32|          33|
     +---------------------+----------+-------+---+----+------------+------------+
-    |Total                |          |      0|  0| 287|         113|         133|
+    |Total                |          |      0|  0| 120|          64|          61|
     +---------------------+----------+-------+---+----+------------+------------+
 
     * Multiplexer: 
-    +-------------------+-----+-----------+-----+-----------+
-    |        Name       | LUT | Input Size| Bits| Total Bits|
-    +-------------------+-----+-----------+-----+-----------+
-    |U_1_address0       |   15|          3|    6|         18|
-    |V_address0         |   21|          4|    6|         24|
-    |V_d0               |   15|          3|   32|         96|
-    |ap_NS_fsm          |  353|         80|    1|         80|
-    |aux_0_reg_239      |    9|          2|   32|         64|
-    |aux_1_reg_262      |    9|          2|   32|         64|
-    |grp_fu_274_opcode  |   15|          3|    2|          6|
-    |grp_fu_274_p0      |   27|          5|   32|        160|
-    |grp_fu_274_p1      |   21|          4|   32|        128|
-    |grp_fu_280_p0      |   33|          6|   32|        192|
-    |grp_fu_280_p1      |   33|          6|   32|        192|
-    |i_0_reg_194        |    9|          2|    4|          8|
-    |i_1_reg_216        |    9|          2|    4|          8|
-    |j_0_reg_251        |    9|          2|    4|          8|
-    |x_0_reg_182        |    9|          2|    4|          8|
-    |x_1_reg_205        |    9|          2|    4|          8|
-    |y_0_reg_227        |    9|          2|    4|          8|
-    +-------------------+-----+-----------+-----+-----------+
-    |Total              |  605|        130|  263|       1072|
-    +-------------------+-----+-----------+-----+-----------+
+    +---------------+-----+-----------+-----+-----------+
+    |      Name     | LUT | Input Size| Bits| Total Bits|
+    +---------------+-----+-----------+-----+-----------+
+    |V_Addr_A_orig  |   15|          3|   32|         96|
+    |V_Din_A        |   15|          3|   32|         96|
+    |V_WEN_A        |    9|          2|    4|          8|
+    |ap_NS_fsm      |  177|         40|    1|         40|
+    |i_0_reg_102    |    9|          2|    4|          8|
+    |x_0_reg_90     |    9|          2|    4|          8|
+    +---------------+-----+-----------+-----+-----------+
+    |Total          |  234|         52|   77|        256|
+    +---------------+-----+-----------+-----+-----------+
 
     * Register: 
-    +--------------------+----+----+-----+-----------+
-    |        Name        | FF | LUT| Bits| Const Bits|
-    +--------------------+----+----+-----+-----------+
-    |I_load_reg_731      |  32|   0|   32|          0|
-    |T_load_reg_696      |  32|   0|   32|          0|
-    |U_2_load_reg_711    |  32|   0|   32|          0|
-    |V_addr_reg_570      |   6|   0|    6|          0|
-    |V_load_reg_701      |  32|   0|   32|          0|
-    |ap_CS_fsm           |  79|   0|   79|          0|
-    |aux_0_reg_239       |  32|   0|   32|          0|
-    |aux_1_reg_262       |  32|   0|   32|          0|
-    |i_0_reg_194         |   4|   0|    4|          0|
-    |i_1_reg_216         |   4|   0|    4|          0|
-    |i_2_reg_638         |   4|   0|    4|          0|
-    |i_reg_578           |   4|   0|    4|          0|
-    |icmp_ln23_reg_583   |   1|   0|    1|          0|
-    |icmp_ln41_reg_681   |   1|   0|    1|          0|
-    |j_0_reg_251         |   4|   0|    4|          0|
-    |j_reg_676           |   4|   0|    4|          0|
-    |reg_299             |  32|   0|   32|          0|
-    |reg_304             |  32|   0|   32|          0|
-    |reg_310             |  32|   0|   32|          0|
-    |shl_ln1_reg_625     |   3|   0|    6|          3|
-    |shl_ln2_reg_656     |   3|   0|    6|          3|
-    |shl_ln_reg_565      |   3|   0|    6|          3|
-    |tmp_5_reg_607       |  32|   0|   32|          0|
-    |tmp_6_reg_721       |  32|   0|   32|          0|
-    |tmp_i_i_reg_602     |  32|   0|   32|          0|
-    |tmp_reg_552         |  32|   0|   32|          0|
-    |trunc_ln43_reg_643  |   3|   0|    3|          0|
-    |trunc_ln47_reg_620  |   3|   0|    3|          0|
-    |x_0_reg_182         |   4|   0|    4|          0|
-    |x_1_reg_205         |   4|   0|    4|          0|
-    |x_2_reg_615         |   4|   0|    4|          0|
-    |x_reg_560           |   4|   0|    4|          0|
-    |y_0_reg_227         |   4|   0|    4|          0|
-    |y_reg_651           |   4|   0|    4|          0|
-    |zext_ln27_reg_587   |   6|   0|   64|         58|
-    |zext_ln34_reg_630   |   4|   0|    6|          2|
-    |zext_ln47_reg_661   |   6|   0|   64|         58|
-    +--------------------+----+----+-----+-----------+
-    |Total               | 582|   0|  709|        127|
-    +--------------------+----+----+-----+-----------+
+    +-------------------+----+----+-----+-----------+
+    |        Name       | FF | LUT| Bits| Const Bits|
+    +-------------------+----+----+-----+-----------+
+    |U_1_load_reg_258   |  32|   0|   32|          0|
+    |V_addr_reg_231     |   6|   0|    6|          0|
+    |ap_CS_fsm          |  39|   0|   39|          0|
+    |i_0_reg_102        |   4|   0|    4|          0|
+    |i_reg_239          |   4|   0|    4|          0|
+    |icmp_ln21_reg_244  |   1|   0|    1|          0|
+    |shl_ln_reg_226     |   3|   0|    6|          3|
+    |tmp_4_reg_283      |  32|   0|   32|          0|
+    |tmp_5_reg_288      |  32|   0|   32|          0|
+    |tmp_i_i_reg_278    |  32|   0|   32|          0|
+    |x_0_reg_90         |   4|   0|    4|          0|
+    |x_assign_reg_273   |  32|   0|   32|          0|
+    |x_reg_221          |   4|   0|    4|          0|
+    |zext_ln25_reg_248  |   6|   0|   64|         58|
+    +-------------------+----+----+-----+-----------+
+    |Total              | 231|   0|  292|         61|
+    +-------------------+----+----+-----+-----------+
 
 
 
@@ -200,39 +150,42 @@
 == Interface
 ================================================================
 * Summary: 
-+--------------+-----+-----+------------+------------------+--------------+
-|   RTL Ports  | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
-+--------------+-----+-----+------------+------------------+--------------+
-|ap_clk        |  in |    1| ap_ctrl_hs | hopfield_routing | return value |
-|ap_rst        |  in |    1| ap_ctrl_hs | hopfield_routing | return value |
-|ap_start      |  in |    1| ap_ctrl_hs | hopfield_routing | return value |
-|ap_done       | out |    1| ap_ctrl_hs | hopfield_routing | return value |
-|ap_idle       | out |    1| ap_ctrl_hs | hopfield_routing | return value |
-|ap_ready      | out |    1| ap_ctrl_hs | hopfield_routing | return value |
-|V_address0    | out |    6|  ap_memory |         V        |     array    |
-|V_ce0         | out |    1|  ap_memory |         V        |     array    |
-|V_we0         | out |    1|  ap_memory |         V        |     array    |
-|V_d0          | out |   32|  ap_memory |         V        |     array    |
-|V_q0          |  in |   32|  ap_memory |         V        |     array    |
-|U_0_address0  | out |    6|  ap_memory |        U_0       |     array    |
-|U_0_ce0       | out |    1|  ap_memory |        U_0       |     array    |
-|U_0_we0       | out |    1|  ap_memory |        U_0       |     array    |
-|U_0_d0        | out |   32|  ap_memory |        U_0       |     array    |
-|U_1_address0  | out |    6|  ap_memory |        U_1       |     array    |
-|U_1_ce0       | out |    1|  ap_memory |        U_1       |     array    |
-|U_1_q0        |  in |   32|  ap_memory |        U_1       |     array    |
-|U_2_address0  | out |    6|  ap_memory |        U_2       |     array    |
-|U_2_ce0       | out |    1|  ap_memory |        U_2       |     array    |
-|U_2_q0        |  in |   32|  ap_memory |        U_2       |     array    |
-|I_address0    | out |    6|  ap_memory |         I        |     array    |
-|I_ce0         | out |    1|  ap_memory |         I        |     array    |
-|I_q0          |  in |   32|  ap_memory |         I        |     array    |
-|T_address0    | out |   12|  ap_memory |         T        |     array    |
-|T_ce0         | out |    1|  ap_memory |         T        |     array    |
-|T_q0          |  in |   32|  ap_memory |         T        |     array    |
-|A             |  in |   32|   ap_none  |         A        |    scalar    |
-|B             |  in |   32|   ap_none  |         B        |    scalar    |
-|C             |  in |   32|   ap_none  |         C        |    scalar    |
-|l             |  in |   32|   ap_none  |         l        |    scalar    |
-+--------------+-----+-----+------------+------------------+--------------+
++------------------------+-----+-----+------------+------------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  |   Source Object  |    C Type    |
++------------------------+-----+-----+------------+------------------+--------------+
+|s_axi_CRTL_BUS_AWVALID  |  in |    1|    s_axi   |     CRTL_BUS     |    pointer   |
+|s_axi_CRTL_BUS_AWREADY  | out |    1|    s_axi   |     CRTL_BUS     |    pointer   |
+|s_axi_CRTL_BUS_AWADDR   |  in |    5|    s_axi   |     CRTL_BUS     |    pointer   |
+|s_axi_CRTL_BUS_WVALID   |  in |    1|    s_axi   |     CRTL_BUS     |    pointer   |
+|s_axi_CRTL_BUS_WREADY   | out |    1|    s_axi   |     CRTL_BUS     |    pointer   |
+|s_axi_CRTL_BUS_WDATA    |  in |   32|    s_axi   |     CRTL_BUS     |    pointer   |
+|s_axi_CRTL_BUS_WSTRB    |  in |    4|    s_axi   |     CRTL_BUS     |    pointer   |
+|s_axi_CRTL_BUS_ARVALID  |  in |    1|    s_axi   |     CRTL_BUS     |    pointer   |
+|s_axi_CRTL_BUS_ARREADY  | out |    1|    s_axi   |     CRTL_BUS     |    pointer   |
+|s_axi_CRTL_BUS_ARADDR   |  in |    5|    s_axi   |     CRTL_BUS     |    pointer   |
+|s_axi_CRTL_BUS_RVALID   | out |    1|    s_axi   |     CRTL_BUS     |    pointer   |
+|s_axi_CRTL_BUS_RREADY   |  in |    1|    s_axi   |     CRTL_BUS     |    pointer   |
+|s_axi_CRTL_BUS_RDATA    | out |   32|    s_axi   |     CRTL_BUS     |    pointer   |
+|s_axi_CRTL_BUS_RRESP    | out |    2|    s_axi   |     CRTL_BUS     |    pointer   |
+|s_axi_CRTL_BUS_BVALID   | out |    1|    s_axi   |     CRTL_BUS     |    pointer   |
+|s_axi_CRTL_BUS_BREADY   |  in |    1|    s_axi   |     CRTL_BUS     |    pointer   |
+|s_axi_CRTL_BUS_BRESP    | out |    2|    s_axi   |     CRTL_BUS     |    pointer   |
+|ap_clk                  |  in |    1| ap_ctrl_hs | hopfield_routing | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs | hopfield_routing | return value |
+|interrupt               | out |    1| ap_ctrl_hs | hopfield_routing | return value |
+|V_Addr_A                | out |   32|    bram    |         V        |     array    |
+|V_EN_A                  | out |    1|    bram    |         V        |     array    |
+|V_WEN_A                 | out |    4|    bram    |         V        |     array    |
+|V_Din_A                 | out |   32|    bram    |         V        |     array    |
+|V_Dout_A                |  in |   32|    bram    |         V        |     array    |
+|V_Clk_A                 | out |    1|    bram    |         V        |     array    |
+|V_Rst_A                 | out |    1|    bram    |         V        |     array    |
+|U_1_Addr_A              | out |   32|    bram    |        U_1       |     array    |
+|U_1_EN_A                | out |    1|    bram    |        U_1       |     array    |
+|U_1_WEN_A               | out |    4|    bram    |        U_1       |     array    |
+|U_1_Din_A               | out |   32|    bram    |        U_1       |     array    |
+|U_1_Dout_A              |  in |   32|    bram    |        U_1       |     array    |
+|U_1_Clk_A               | out |    1|    bram    |        U_1       |     array    |
+|U_1_Rst_A               | out |    1|    bram    |        U_1       |     array    |
++------------------------+-----+-----+------------+------------------+--------------+
 

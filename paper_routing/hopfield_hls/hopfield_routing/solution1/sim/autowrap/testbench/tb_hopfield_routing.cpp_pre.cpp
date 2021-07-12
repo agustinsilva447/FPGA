@@ -83837,19 +83837,37 @@ namespace hls {
 
 
 void hopfield_routing( float V[8 * 8],
-      float U_0[8 * 8],
       float U_1[8 * 8],
-      float U_2[8 * 8],
-      float I[8 * 8],
-      float T[8 * 8 * 8 * 8],
-      float A,
-      float B,
-      float C,
-      int l);
+      float &l);
+
+void hopfield_routing_2(float T[8 * 8 * 8 * 8], float V[8 * 8], float U_0[8 * 8], float U_1[8 * 8], float U_2[8 * 8], float I[8 * 8], float A, float B, float C)
+{
+ int x, i, y, j;
+ float aux;
+
+ for(x = 0; x < 8; x++)
+ {
+  for(i = 0; i < 8; i++)
+  {
+   aux = 0;
+   for(y = 0; y < 8; y++)
+   {
+    for(j = 0; j < 8; j++)
+    {
+     if (y != j)
+     {
+      aux = aux + T[x * 8 * 8 * 8 + i * 8 * 8 + y * 8 + j] * V[y * 8 + j];
+     }
+    }
+   }
+   U_0[x * 8 + i] = U_1[x * 8 + i] - A * U_2[x * 8 + i] + B * aux + C * I[x * 8 + i];
+  }
+ }
+}
 
 void rhoxi(int rho[8 * 8], float C_xi[8 * 8])
 {
- int x,i;
+ int x, i;
 
  for(x = 0; x < 8; x++)
  {
@@ -83879,7 +83897,7 @@ int deltak(int a, int b)
 
 void txiyj(int u3, int u4, float T[8 * 8 * 8 * 8])
 {
- int x,i, y, j;
+ int x, i, y, j;
 
  for(x = 0; x < 8; x++)
  {
@@ -83898,7 +83916,7 @@ void txiyj(int u3, int u4, float T[8 * 8 * 8 * 8])
 
 void ixi(int u1, int u2, int u4, int u5, float C_xi[8 * 8], int rho[8 * 8], int source, int destin, float I[8 * 8])
 {
- int x,i;
+ int x, i;
 
  for(x = 0; x < 8; x++)
  {
@@ -83948,13 +83966,11 @@ float energy(int u1, int u2, int u3, int u4, int u5, float C_xi[8 * 8], float V[
 
 int main ()
 {
- int source, destin, it_max, u1, u2, u3, u4, u5, l, x, i;
- int flag = 1;
- int it = 0;
+ int it_max = 50, source = 0, destin = 1, flag = 1, it = 0, x, i;
+ int u1 = 950, u2 = 2500, u3 = 1500, u4 = 475, u5 = 2500, l = 6;
+ float A = 0.0057, B = 0.0072, C = 0.0064, E_aux, E_i = 10000;
  int rho[8 * 8];
- float A, B, C, E_aux, E_i = 10000;
- float T[8 * 8 * 8 * 8], I[8 * 8];
- float V[8 * 8];
+ float T[8 * 8 * 8 * 8], I[8 * 8], V[8 * 8];
  float U_0[8 * 8] = { 0, 0, 0, 0, 0, 0, 0, 0,
        0, 0, 0, 0, 0, 0, 0, 0,
        0, 0, 0, 0, 0, 0, 0, 0,
@@ -83999,26 +84015,14 @@ int main ()
   printf("]\n");
  }
 
- source = 0;
- destin = 1;
- it_max = 50;
- u1 = 950;
- u2 = 2500;
- u3 = 1500;
- u4 = 475;
- u5 = 2500;
- A = 0.0057;
- B = 0.0072;
- C = 0.0064;
- l = 6;
-
  rhoxi(rho, C_xi);
  txiyj(u3, u4, T);
  ixi(u1, u2, u4, u5, C_xi, rho, source, destin, I);
 
  while((flag) and (it < it_max))
  {
-  hopfield_routing(V, U_0, U_1, U_2, I, T, A, B, C, l);
+  hopfield_routing(V, U_1, l);
+  hopfield_routing_2(T, V, U_0, U_1, U_2, I, A, B, C);
   E_aux = energy(u1, u2, u3, u4, u5, C_xi, V, rho, source, destin);
   if (E_i == E_aux)
   {

@@ -27046,48 +27046,27 @@ namespace hls {
 
 
 void hopfield_routing( float V[8 * 8],
-      float U_0[8 * 8],
       float U_1[8 * 8],
-      float U_2[8 * 8],
-      float I[8 * 8],
-      float T[8 * 8 * 8 * 8],
-      float A,
-      float B,
-      float C,
-      int l)
-{_ssdm_SpecArrayDimSize(V, 64);_ssdm_SpecArrayDimSize(U_0, 64);_ssdm_SpecArrayDimSize(U_1, 64);_ssdm_SpecArrayDimSize(U_2, 64);_ssdm_SpecArrayDimSize(I, 64);_ssdm_SpecArrayDimSize(T, 4096);
- int x, i, y, j;
- float aux;
+      float &l)
+{_ssdm_SpecArrayDimSize(V, 64);_ssdm_SpecArrayDimSize(U_1, 64);
 
- for(x = 0; x < 8; x++)
-  {
-   for(i = 0; i < 8; i++)
-   {
-    if (x == i)
-    {
-     V[x * 8 + i] = 0;
-    } else {
-     V[x * 8 + i] = 1 / (1 + hls::exp(-1 * U_1[x * 8 + i] * l));
-    }
-   }
-  }
+_ssdm_op_SpecInterface(0, "s_axilite", 0, 0, "", 0, 0, "CRTL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(l, "s_axilite", 0, 0, "", 0, 0, "CRTL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(V, "bram", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(U_1, "bram", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+
+ int x, i;
 
  for(x = 0; x < 8; x++)
  {
   for(i = 0; i < 8; i++)
   {
-   aux = 0;
-   for(y = 0; y < 8; y++)
+   if (x == i)
    {
-    for(j = 0; j < 8; j++)
-    {
-     if (y != j)
-     {
-      aux = aux + T[x * 8 * 8 * 8 + i * 8 * 8 + y * 8 + j] * V[y * 8 + j];
-     }
-    }
+    V[x * 8 + i] = 0;
+   } else {
+    V[x * 8 + i] = 1 / (1 + hls::exp(-1 * U_1[x * 8 + i] * l));
    }
-   U_0[x * 8 + i] = U_1[x * 8 + i] - A * U_2[x * 8 + i] + B * aux + C * I[x * 8 + i];
   }
  }
 }

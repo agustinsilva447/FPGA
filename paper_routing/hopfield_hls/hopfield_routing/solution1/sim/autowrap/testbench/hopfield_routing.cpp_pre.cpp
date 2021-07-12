@@ -83839,48 +83839,27 @@ namespace hls {
 
 
 void hopfield_routing( float V[8 * 8],
-      float U_0[8 * 8],
       float U_1[8 * 8],
-      float U_2[8 * 8],
-      float I[8 * 8],
-      float T[8 * 8 * 8 * 8],
-      float A,
-      float B,
-      float C,
-      int l)
+      float &l)
 {
- int x, i, y, j;
- float aux;
 
- for(x = 0; x < 8; x++)
-  {
-   for(i = 0; i < 8; i++)
-   {
-    if (x == i)
-    {
-     V[x * 8 + i] = 0;
-    } else {
-     V[x * 8 + i] = 1 / (1 + hls::exp(-1 * U_1[x * 8 + i] * l));
-    }
-   }
-  }
+#pragma HLS INTERFACE s_axilite port=return bundle=CRTL_BUS
+#pragma HLS INTERFACE s_axilite port=l bundle=CRTL_BUS
+#pragma HLS INTERFACE bram port=V
+#pragma HLS INTERFACE bram port=U_1
+
+ int x, i;
 
  for(x = 0; x < 8; x++)
  {
   for(i = 0; i < 8; i++)
   {
-   aux = 0;
-   for(y = 0; y < 8; y++)
+   if (x == i)
    {
-    for(j = 0; j < 8; j++)
-    {
-     if (y != j)
-     {
-      aux = aux + T[x * 8 * 8 * 8 + i * 8 * 8 + y * 8 + j] * V[y * 8 + j];
-     }
-    }
+    V[x * 8 + i] = 0;
+   } else {
+    V[x * 8 + i] = 1 / (1 + hls::exp(-1 * U_1[x * 8 + i] * l));
    }
-   U_0[x * 8 + i] = U_1[x * 8 + i] - A * U_2[x * 8 + i] + B * aux + C * I[x * 8 + i];
   }
  }
 }

@@ -18,7 +18,6 @@ module hopfield_routing_bkb
     input  wire                  ce,
     input  wire [din0_WIDTH-1:0] din0,
     input  wire [din1_WIDTH-1:0] din1,
-    input  wire [1:0]            opcode,
     output wire [dout_WIDTH-1:0] dout
 );
 //------------------------Local signal-------------------
@@ -28,45 +27,37 @@ wire                  a_tvalid;
 wire [31:0]           a_tdata;
 wire                  b_tvalid;
 wire [31:0]           b_tdata;
-wire                  op_tvalid;
-wire [7:0]            op_tdata;
 wire                  r_tvalid;
 wire [31:0]           r_tdata;
 reg  [din0_WIDTH-1:0] din0_buf1;
 reg  [din1_WIDTH-1:0] din1_buf1;
-reg  [1:0]            opcode_buf1;
 reg                   ce_r;
 wire [dout_WIDTH-1:0] dout_i;
 reg  [dout_WIDTH-1:0] dout_r;
 //------------------------Instantiation------------------
-hopfield_routing_ap_faddfsub_3_full_dsp_32 hopfield_routing_ap_faddfsub_3_full_dsp_32_u (
-    .aclk                    ( aclk ),
-    .aclken                  ( aclken ),
-    .s_axis_a_tvalid         ( a_tvalid ),
-    .s_axis_a_tdata          ( a_tdata ),
-    .s_axis_b_tvalid         ( b_tvalid ),
-    .s_axis_b_tdata          ( b_tdata ),
-    .s_axis_operation_tvalid ( op_tvalid ),
-    .s_axis_operation_tdata  ( op_tdata ),
-    .m_axis_result_tvalid    ( r_tvalid ),
-    .m_axis_result_tdata     ( r_tdata )
+hopfield_routing_ap_fadd_3_full_dsp_32 hopfield_routing_ap_fadd_3_full_dsp_32_u (
+    .aclk                 ( aclk ),
+    .aclken               ( aclken ),
+    .s_axis_a_tvalid      ( a_tvalid ),
+    .s_axis_a_tdata       ( a_tdata ),
+    .s_axis_b_tvalid      ( b_tvalid ),
+    .s_axis_b_tdata       ( b_tdata ),
+    .m_axis_result_tvalid ( r_tvalid ),
+    .m_axis_result_tdata  ( r_tdata )
 );
 //------------------------Body---------------------------
-assign aclk      = clk;
-assign aclken    = ce_r;
-assign a_tvalid  = 1'b1;
-assign a_tdata   = din0_buf1;
-assign b_tvalid  = 1'b1;
-assign b_tdata   = din1_buf1;
-assign op_tvalid = 1'b1;
-assign op_tdata  = {6'b0, opcode_buf1};
-assign dout_i    = r_tdata;
+assign aclk     = clk;
+assign aclken   = ce_r;
+assign a_tvalid = 1'b1;
+assign a_tdata  = din0_buf1;
+assign b_tvalid = 1'b1;
+assign b_tdata  = din1_buf1;
+assign dout_i   = r_tdata;
 
 always @(posedge clk) begin
     if (ce) begin
-        din0_buf1   <= din0;
-        din1_buf1   <= din1;
-        opcode_buf1 <= opcode;
+        din0_buf1 <= din0;
+        din1_buf1 <= din1;
     end
 end
 
