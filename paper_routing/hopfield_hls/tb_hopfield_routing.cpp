@@ -115,13 +115,11 @@ float energy(int u1, int u2, int u3, int u4, int u5, float C_xi[N1 * N1], float 
 
 int main ()
 {
-	int source, destin, it_max, u1, u2, u3, u4, u5, l, x, i;
-	int flag = 1;
-	int it = 0;
+	int it_max = 50, source = 0, destin = 1, flag = 1, it = 0, x, i;
+	int u1 = 950, u2 = 2500, u3 = 1500, u4 = 475, u5 = 2500, l = 6;
+	float A = 0.0057, B = 0.0072, C = 0.0064, E_aux, E_i = 10000;
 	int rho[N1 * N1];
-	float A, B, C, E_aux, E_i = 10000;
-	float T[N1 * N1 * N1 * N1], I[N1 * N1];
-	float V[N1 * N1];
+	float T[N1 * N1 * N1 * N1], I[N1 * N1], V[N1 * N1];
 	float U_0[N1 * N1]  = { 0, 0, 0, 0, 0, 0, 0, 0,
 							0, 0, 0, 0, 0, 0, 0, 0,
 							0, 0, 0, 0, 0, 0, 0, 0,
@@ -165,19 +163,6 @@ int main ()
 		}
 		printf("]\n");
 	}
-
-	source = 0;
-	destin = 1;
-	it_max = 50;
-	u1 = 950;
-	u2 = 2500;
-	u3 = 1500;
-	u4 = 475;
-	u5 = 2500;
-	A = 0.0057;
-	B = 0.0072;
-	C = 0.0064;
-	l = 6;
 
 	rhoxi(rho, C_xi);
 	txiyj(u3, u4, T);

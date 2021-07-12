@@ -1,6 +1,7 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
-make: 'csim.exe' está actualizado.
+   Compiling ../../../../tb_hopfield_routing.cpp in debug mode
+   Generating csim.exe
 
 C_xi = 
 [0.000000, 0.910000, 0.360000, 0.000000, 0.000000, 0.000000, 1.200000, 0.000000, ]

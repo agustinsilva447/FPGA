@@ -13,5 +13,5 @@ create_clock -period 10 -name default
 #source "./hopfield_routing/solution1/directives.tcl"
 csim_design
 csynth_design
-cosim_design -rtl vhdl
+cosim_design
 export_design -format ip_catalog

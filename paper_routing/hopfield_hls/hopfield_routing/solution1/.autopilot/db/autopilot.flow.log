@@ -737,3 +737,517 @@ ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
 Command   cosim_design done; error code: 2; 153.21 sec.
 Command ap_source done; error code: 1; 156.53 sec.
 Execute cleanup_all 
+INFO-FLOW: Workspace /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1 opened at Mon Jul 12 11:49:47 -03 2021
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.23 sec.
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.33 sec.
+Command     ap_source done; 0.34 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg484-1 
+Execute       ap_part_info -name xc7z020-clg484-1 -data single -quiet 
+Command       ap_part_info done; 3.2 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg484-1 
+Execute         ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 3.53 sec.
+Execute     ap_part_info -data single -name xc7z020-clg484-1 
+Execute     ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 4.07 sec.
+Execute   csim_design -quiet 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/tb_hopfield_routing.cpp 
+Execute     is_xip /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/tb_hopfield_routing.cpp 
+Execute     is_encrypted /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing.cpp 
+Execute     is_xip /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing.cpp 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 1.38 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 1.53 sec.
+Command ap_source done; 5.6 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1 opened at Mon Jul 12 11:50:35 -03 2021
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.13 sec.
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.19 sec.
+Command     ap_source done; 0.19 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg484-1 
+Execute       ap_part_info -name xc7z020-clg484-1 -data single -quiet 
+Command       ap_part_info done; 2.92 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg484-1 
+Execute         ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 3.18 sec.
+Execute     ap_part_info -data single -name xc7z020-clg484-1 
+Execute     ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 3.51 sec.
+Execute   cosim_design 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/global.setting.tcl 
+INFO-FLOW: DBG:CMD: read_platform_lib /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/global.setting.tcl
+Execute     source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/generic/autopilot/common.gen 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/generic/autopilot/APCoreGen.gen 
+Execute     source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/generic/autopilot/op.gen 
+Execute     source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/generic/autopilot/op_simcore.gen 
+Execute     source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/generic/autopilot/interface.gen 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.11 sec.
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.18 sec.
+Command     ap_source done; 0.18 sec.
+Execute     source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+INFO-FLOW: DBG:CMD:   using AESL_AUTOCG::g_clock_period=10.000 (was NA)
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.rtl_wrap.cfg.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     is_encrypted /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/tb_hopfield_routing.cpp 
+Execute     is_encrypted /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing.cpp 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: TB processing: /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/tb_hopfield_routing.cpp /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/./sim/autowrap/testbench/tb_hopfield_routing.cpp_pre.cpp
+Execute     tidy_31 xilinx-tb-xfmat /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/./sim/autowrap/testbench/tb_hopfield_routing.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec /home/agustinsilva447/Vivado/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/./sim/autowrap/testbench/tb_hopfield_routing.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 9.8 sec.
+Execute     tidy_31 xilinx-tb31-process /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/./sim/autowrap/testbench/tb_hopfield_routing.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec /home/agustinsilva447/Vivado/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/./sim/autowrap/testbench/tb_hopfield_routing.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 12.64 sec.
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+INFO-FLOW: TB processing: /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing.cpp /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/./sim/autowrap/testbench/hopfield_routing.cpp_pre.cpp
+Execute     tidy_31 xilinx-tb-xfmat /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/./sim/autowrap/testbench/hopfield_routing.cpp_pre.cpp std=c++11 
+INFO-FLOW: exec /home/agustinsilva447/Vivado/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb-xfmat -quiet -fix-errors /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/./sim/autowrap/testbench/hopfield_routing.cpp_pre.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 10.23 sec.
+Execute     tidy_31 xilinx-tb31-process /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/./sim/autowrap/testbench/hopfield_routing.cpp_pre.cpp.tb.cpp std=c++11 
+INFO-FLOW: exec /home/agustinsilva447/Vivado/Vivado/2019.2/lnx64/tools/clang-3.9-csynth/bin/tidy-3.1 -header-filter=.* -checks=-*,xilinx-tb31-process -quiet -fix-errors /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/./sim/autowrap/testbench/hopfield_routing.cpp_pre.cpp.tb.cpp -- -std=c++11 -fhls -ferror-limit=0
+Command     tidy_31 done; 10.33 sec.
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/./sim/autowrap/testbench/tb.status.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/global.setting.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.rtl_wrap.cfg.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.rtl_wrap.cfg.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.rtl_wrap.cfg.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     source .run_sim.tcl 
+INFO: [COSIM 212-302] Starting C TB testing ... 
+Command     ap_source done; 2.22 sec.
+INFO: [COSIM 212-333] Generating C post check test bench ...
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+INFO: [COSIM 212-12] Generating RTL test bench ...
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source ../tv/cdatafile/ref.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/hopfield_routing.tbgen.tcl 
+Execute     ap_part_info -name xc7z020-clg484-1 -data names -quiet 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info -quiet 
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+Execute     source .run_sim.tcl 
+Execute       source check_sim.tcl 
+Execute       source .sim.status.tcl 
+INFO: [COSIM 212-323] Starting verilog simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+Command     ap_source done; error code: 1; 31.99 sec.
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+Command   cosim_design done; error code: 2; 154.23 sec.
+Command ap_source done; error code: 1; 157.74 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1 opened at Mon Jul 12 11:57:09 -03 2021
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.13 sec.
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.19 sec.
+Command     ap_source done; 0.19 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg484-1 
+Execute       ap_part_info -name xc7z020-clg484-1 -data single -quiet 
+Command       ap_part_info done; 2.94 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg484-1 
+Execute         ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 3.18 sec.
+Execute     ap_part_info -data single -name xc7z020-clg484-1 
+Execute     ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 3.53 sec.
+Execute   csim_design -quiet 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/tb_hopfield_routing.cpp 
+Execute     is_xip /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/tb_hopfield_routing.cpp 
+Execute     is_encrypted /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing.cpp 
+Execute     is_xip /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing.cpp 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 1.18 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 10.9 sec.
+Command ap_source done; 14.43 sec.
+Execute cleanup_all 
+INFO-FLOW: Workspace /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1 opened at Mon Jul 12 12:02:58 -03 2021
+Execute     config_clock -quiet -name default -period 10 -default=false 
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/plb46.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/fsl.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/axi4.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.lib 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfir.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfft.lib 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.lib 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/dsp48e1.hlp 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq.gen 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/plb46.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/fsl.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/axi4.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/nativeAXI4.gen 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.gen 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/scripts/xilinxcoregen.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/XilEDKCoreGen.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/dds_compiler.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/util.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfft.gen 
+Command         ap_source done; 0.12 sec.
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/ip/xfir.gen 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.gen 
+Command       ap_source done; 0.17 sec.
+Command     ap_source done; 0.17 sec.
+Execute     open_platform DefaultPlatform 
+Execute     import_lib /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.lib 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.hlp 
+Execute         source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/target_info.tcl 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/xilinx_interface.hlp 
+Execute             source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/maxi.hlp 
+Execute             source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/interface/saxilite.hlp 
+Execute           source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/dsp48.hlp 
+Execute     source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/zynq/zynq_fpv6.gen 
+Execute       source /home/agustinsilva447/Vivado/Vivado/2019.2/common/technology/xilinx/common/xilinx_fp.gen 
+Execute     set_part xc7z020-clg484-1 
+Execute       ap_part_info -name xc7z020-clg484-1 -data single -quiet 
+Command       ap_part_info done; 2.94 sec.
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       add_library xilinx/zynq/zynq:xc7z020:-clg484:-1 
+Execute         get_default_platform 
+Execute         ap_part_info -data single -name xc7z020-clg484-1 
+Execute         ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute         ap_part_info -name xc7z020-clg484-1 -data info 
+Execute         config_chip_info -quiet -speed slow 
+Execute       add_library xilinx/zynq/zynq_fpv6 
+Execute         get_default_platform 
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+Execute       ap_part_info -name xc7z020-clg484-1 -data info 
+Execute       get_default_platform 
+Command     set_part done; 3.2 sec.
+Execute     ap_part_info -data single -name xc7z020-clg484-1 
+Execute     ap_part_info -name xc7z020-clg484-1 -data resources 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_chip_info -quiet -resource {SLICE 13300} {LUT 53200} {FF 106400} {DSP48E 220} {BRAM 280} {URAM 0} 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     config_chip_info -quiet -speed slow 
+Command   open_solution done; 3.53 sec.
+Execute   csim_design -quiet 
+Execute     source /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/.autopilot/db/global.setting.tcl 
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+Execute     source csim/.lst_opt.tcl 
+Execute     is_encrypted /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/tb_hopfield_routing.cpp 
+Execute     is_xip /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/tb_hopfield_routing.cpp 
+Execute     is_encrypted /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing.cpp 
+Execute     is_xip /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing.cpp 
+Execute     ap_part_info -name xc7z020-clg484-1 -data info 
+Execute     source run_sim.tcl 
+Command     ap_source done; 1.23 sec.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+Command   csim_design done; 10.64 sec.
+Command ap_source done; 14.17 sec.
+Execute cleanup_all 
