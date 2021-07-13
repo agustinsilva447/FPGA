@@ -154,7 +154,7 @@ while (flag) and (it < it_max):
     V = vxi_1(U[-1], l)
     U.append(uxi(U, A, B, C, T, V, I))
     E_i = energia(u1, u2, u3, u4, u5, C_xi, V, rho, source[0], destin[0])
-    print("Iteración {}: Energía = {}. ".format(it, E_i))
+    #print("Iteración {}: Energía = {}. ".format(it, E_i))
     if (E_i == Energy[-1]):
         flag = 0
     Energy.append(E_i)
