@@ -91,12 +91,12 @@ class INTER_TCL_FILE {
 extern void hopfield_vitis (
 float V[64],
 float U_1[64],
-float l);
+float (&l));
 
 void AESL_WRAP_hopfield_vitis (
 float V[64],
 float U_1[64],
-float l)
+float (&l))
 {
 	refine_signal_handler();
 	fstream wrapc_switch_file_token;
@@ -373,19 +373,21 @@ float l)
 		sprintf(tvin_l, "[[transaction]] %d\n", AESL_transaction);
 		aesl_fh.write(AUTOTB_TVIN_l, tvin_l);
 
-		sc_bv<32> l_tvin_wrapc_buffer;
+		sc_bv<32>* l_tvin_wrapc_buffer = new sc_bv<32>[1];
 
 		// RTL Name: l
 		{
 			// bitslice(31, 0)
 			{
+				int hls_map_index = 0;
 				// celement: l(31, 0)
 				{
-					// carray: (0) => (0) @ (0)
+					// carray: (0) => (0) @ (1)
+					for (int i_0 = 0; i_0 <= 0; i_0 += 1)
 					{
-						// sub                   : 
+						// sub                   : i_0
 						// ori_name              : l
-						// sub_1st_elem          : 
+						// sub_1st_elem          : 0
 						// ori_name_1st_elem     : l
 						// regulate_c_name       : l
 						// input_type_conversion : *(int*)&l
@@ -393,7 +395,8 @@ float l)
 						{
 							sc_lv<32> l_tmp_mem;
 							l_tmp_mem = *(int*)&l;
-							l_tvin_wrapc_buffer.range(31, 0) = l_tmp_mem.range(31, 0);
+							l_tvin_wrapc_buffer[hls_map_index].range(31, 0) = l_tmp_mem.range(31, 0);
+                                 	       hls_map_index++;
 						}
 					}
 				}
@@ -403,13 +406,16 @@ float l)
 		// dump tv to file
 		for (int i = 0; i < 1; i++)
 		{
-			sprintf(tvin_l, "%s\n", (l_tvin_wrapc_buffer).to_string(SC_HEX).c_str());
+			sprintf(tvin_l, "%s\n", (l_tvin_wrapc_buffer[i]).to_string(SC_HEX).c_str());
 			aesl_fh.write(AUTOTB_TVIN_l, tvin_l);
 		}
 
 		tcl_file.set_num(1, &tcl_file.l_depth);
 		sprintf(tvin_l, "[[/transaction]] \n");
 		aesl_fh.write(AUTOTB_TVIN_l, tvin_l);
+
+		// release memory allocation
+		delete [] l_tvin_wrapc_buffer;
 
 // [call_c_dut] ---------->
 

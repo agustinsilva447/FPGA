@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'hopfield_vitis'
 ================================================================
-* Date:           Wed Jul 14 12:00:37 2021
+* Date:           Wed Jul 14 12:31:38 2021
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        hopfield_vitis
@@ -60,9 +60,9 @@
 |Instance         |        0|     12|    1460|   2733|    -|
 |Memory           |        -|      -|       -|      -|    -|
 |Multiplexer      |        -|      -|       -|    234|    -|
-|Register         |        -|      -|     263|      -|    -|
+|Register         |        -|      -|     231|      -|    -|
 +-----------------+---------+-------+--------+-------+-----+
-|Total            |        0|     12|    1723|   3087|    0|
+|Total            |        0|     12|    1691|   3087|    0|
 +-----------------+---------+-------+--------+-------+-----+
 |Available        |      280|    220|  106400|  53200|    0|
 +-----------------+---------+-------+--------+-------+-----+
@@ -96,14 +96,14 @@
     +---------------------+----------+-------+---+----+------------+------------+
     |    Variable Name    | Operation| DSP48E| FF| LUT| Bitwidth P0| Bitwidth P1|
     +---------------------+----------+-------+---+----+------------+------------+
-    |add_ln21_fu_160_p2   |     +    |      0|  0|  15|           6|           6|
-    |add_ln23_fu_193_p2   |     +    |      0|  0|  15|           6|           6|
-    |i_fu_181_p2          |     +    |      0|  0|  13|           4|           1|
-    |x_fu_142_p2          |     +    |      0|  0|  13|           4|           1|
-    |icmp_ln15_fu_136_p2  |   icmp   |      0|  0|  11|           4|           5|
-    |icmp_ln17_fu_175_p2  |   icmp   |      0|  0|  11|           4|           5|
-    |icmp_ln19_fu_187_p2  |   icmp   |      0|  0|   9|           4|           4|
-    |xor_ln23_fu_206_p2   |    xor   |      0|  0|  33|          32|          33|
+    |add_ln23_fu_167_p2   |     +    |      0|  0|  15|           6|           6|
+    |add_ln25_fu_200_p2   |     +    |      0|  0|  15|           6|           6|
+    |i_fu_188_p2          |     +    |      0|  0|  13|           4|           1|
+    |x_fu_149_p2          |     +    |      0|  0|  13|           4|           1|
+    |icmp_ln17_fu_143_p2  |   icmp   |      0|  0|  11|           4|           5|
+    |icmp_ln19_fu_182_p2  |   icmp   |      0|  0|  11|           4|           5|
+    |icmp_ln21_fu_194_p2  |   icmp   |      0|  0|   9|           4|           4|
+    |xor_ln25_fu_213_p2   |    xor   |      0|  0|  33|          32|          33|
     +---------------------+----------+-------+---+----+------------+------------+
     |Total                |          |      0|  0| 120|          64|          61|
     +---------------------+----------+-------+---+----+------------+------------+
@@ -116,8 +116,8 @@
     |V_Din_A        |   15|          3|   32|         96|
     |V_WEN_A        |    9|          2|    4|          8|
     |ap_NS_fsm      |  177|         40|    1|         40|
-    |i_0_reg_102    |    9|          2|    4|          8|
-    |x_0_reg_90     |    9|          2|    4|          8|
+    |i_0_reg_108    |    9|          2|    4|          8|
+    |x_0_reg_96     |    9|          2|    4|          8|
     +---------------+-----+-----------+-----+-----------+
     |Total          |  234|         52|   77|        256|
     +---------------+-----+-----------+-----+-----------+
@@ -126,23 +126,22 @@
     +-------------------+----+----+-----+-----------+
     |        Name       | FF | LUT| Bits| Const Bits|
     +-------------------+----+----+-----+-----------+
-    |U_1_load_reg_262   |  32|   0|   32|          0|
-    |V_addr_reg_235     |   6|   0|    6|          0|
+    |U_1_load_reg_264   |  32|   0|   32|          0|
+    |V_addr_reg_237     |   6|   0|    6|          0|
     |ap_CS_fsm          |  39|   0|   39|          0|
-    |i_0_reg_102        |   4|   0|    4|          0|
-    |i_reg_243          |   4|   0|    4|          0|
-    |icmp_ln19_reg_248  |   1|   0|    1|          0|
-    |l_read_reg_217     |  32|   0|   32|          0|
-    |shl_ln_reg_230     |   3|   0|    6|          3|
-    |tmp_4_reg_282      |  32|   0|   32|          0|
-    |tmp_5_reg_287      |  32|   0|   32|          0|
-    |tmp_i_i_reg_277    |  32|   0|   32|          0|
-    |x_0_reg_90         |   4|   0|    4|          0|
-    |x_assign_reg_272   |  32|   0|   32|          0|
-    |x_reg_225          |   4|   0|    4|          0|
-    |zext_ln23_reg_252  |   6|   0|   64|         58|
+    |i_0_reg_108        |   4|   0|    4|          0|
+    |i_reg_245          |   4|   0|    4|          0|
+    |icmp_ln21_reg_250  |   1|   0|    1|          0|
+    |shl_ln_reg_232     |   3|   0|    6|          3|
+    |tmp_4_reg_289      |  32|   0|   32|          0|
+    |tmp_5_reg_294      |  32|   0|   32|          0|
+    |tmp_i_i_reg_284    |  32|   0|   32|          0|
+    |x_0_reg_96         |   4|   0|    4|          0|
+    |x_assign_reg_279   |  32|   0|   32|          0|
+    |x_reg_227          |   4|   0|    4|          0|
+    |zext_ln25_reg_254  |   6|   0|   64|         58|
     +-------------------+----+----+-----+-----------+
-    |Total              | 263|   0|  324|         61|
+    |Total              | 231|   0|  292|         61|
     +-------------------+----+----+-----+-----------+
 
 
@@ -154,23 +153,23 @@
 +------------------------+-----+-----+------------+----------------+--------------+
 |        RTL Ports       | Dir | Bits|  Protocol  |  Source Object |    C Type    |
 +------------------------+-----+-----+------------+----------------+--------------+
-|s_axi_CRTL_BUS_AWVALID  |  in |    1|    s_axi   |    CRTL_BUS    |    scalar    |
-|s_axi_CRTL_BUS_AWREADY  | out |    1|    s_axi   |    CRTL_BUS    |    scalar    |
-|s_axi_CRTL_BUS_AWADDR   |  in |    5|    s_axi   |    CRTL_BUS    |    scalar    |
-|s_axi_CRTL_BUS_WVALID   |  in |    1|    s_axi   |    CRTL_BUS    |    scalar    |
-|s_axi_CRTL_BUS_WREADY   | out |    1|    s_axi   |    CRTL_BUS    |    scalar    |
-|s_axi_CRTL_BUS_WDATA    |  in |   32|    s_axi   |    CRTL_BUS    |    scalar    |
-|s_axi_CRTL_BUS_WSTRB    |  in |    4|    s_axi   |    CRTL_BUS    |    scalar    |
-|s_axi_CRTL_BUS_ARVALID  |  in |    1|    s_axi   |    CRTL_BUS    |    scalar    |
-|s_axi_CRTL_BUS_ARREADY  | out |    1|    s_axi   |    CRTL_BUS    |    scalar    |
-|s_axi_CRTL_BUS_ARADDR   |  in |    5|    s_axi   |    CRTL_BUS    |    scalar    |
-|s_axi_CRTL_BUS_RVALID   | out |    1|    s_axi   |    CRTL_BUS    |    scalar    |
-|s_axi_CRTL_BUS_RREADY   |  in |    1|    s_axi   |    CRTL_BUS    |    scalar    |
-|s_axi_CRTL_BUS_RDATA    | out |   32|    s_axi   |    CRTL_BUS    |    scalar    |
-|s_axi_CRTL_BUS_RRESP    | out |    2|    s_axi   |    CRTL_BUS    |    scalar    |
-|s_axi_CRTL_BUS_BVALID   | out |    1|    s_axi   |    CRTL_BUS    |    scalar    |
-|s_axi_CRTL_BUS_BREADY   |  in |    1|    s_axi   |    CRTL_BUS    |    scalar    |
-|s_axi_CRTL_BUS_BRESP    | out |    2|    s_axi   |    CRTL_BUS    |    scalar    |
+|s_axi_CRTL_BUS_AWVALID  |  in |    1|    s_axi   |    CRTL_BUS    |    pointer   |
+|s_axi_CRTL_BUS_AWREADY  | out |    1|    s_axi   |    CRTL_BUS    |    pointer   |
+|s_axi_CRTL_BUS_AWADDR   |  in |    5|    s_axi   |    CRTL_BUS    |    pointer   |
+|s_axi_CRTL_BUS_WVALID   |  in |    1|    s_axi   |    CRTL_BUS    |    pointer   |
+|s_axi_CRTL_BUS_WREADY   | out |    1|    s_axi   |    CRTL_BUS    |    pointer   |
+|s_axi_CRTL_BUS_WDATA    |  in |   32|    s_axi   |    CRTL_BUS    |    pointer   |
+|s_axi_CRTL_BUS_WSTRB    |  in |    4|    s_axi   |    CRTL_BUS    |    pointer   |
+|s_axi_CRTL_BUS_ARVALID  |  in |    1|    s_axi   |    CRTL_BUS    |    pointer   |
+|s_axi_CRTL_BUS_ARREADY  | out |    1|    s_axi   |    CRTL_BUS    |    pointer   |
+|s_axi_CRTL_BUS_ARADDR   |  in |    5|    s_axi   |    CRTL_BUS    |    pointer   |
+|s_axi_CRTL_BUS_RVALID   | out |    1|    s_axi   |    CRTL_BUS    |    pointer   |
+|s_axi_CRTL_BUS_RREADY   |  in |    1|    s_axi   |    CRTL_BUS    |    pointer   |
+|s_axi_CRTL_BUS_RDATA    | out |   32|    s_axi   |    CRTL_BUS    |    pointer   |
+|s_axi_CRTL_BUS_RRESP    | out |    2|    s_axi   |    CRTL_BUS    |    pointer   |
+|s_axi_CRTL_BUS_BVALID   | out |    1|    s_axi   |    CRTL_BUS    |    pointer   |
+|s_axi_CRTL_BUS_BREADY   |  in |    1|    s_axi   |    CRTL_BUS    |    pointer   |
+|s_axi_CRTL_BUS_BRESP    | out |    2|    s_axi   |    CRTL_BUS    |    pointer   |
 |ap_clk                  |  in |    1| ap_ctrl_hs | hopfield_vitis | return value |
 |ap_rst_n                |  in |    1| ap_ctrl_hs | hopfield_vitis | return value |
 |interrupt               | out |    1| ap_ctrl_hs | hopfield_vitis | return value |

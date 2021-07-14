@@ -79016,7 +79016,7 @@ namespace hls {
 
 void hopfield_vitis( float V[8 * 8],
       float U_1[8 * 8],
-      float l);
+      float &l);
 
 void hopfield_vitis_2(float V[8 * 8], float U_0[8 * 8], float U_1[8 * 8], float U_2[8 * 8], float I[8 * 8], float T[8 * 8 * 8 * 8], float A, float B, float C)
 {

@@ -5,7 +5,7 @@
 
 void hopfield_vitis(	float V[N1 * N1],
 						float U_1[N1 * N1],
-						float l);
+						float &l);
 
 void hopfield_vitis_2(float V[N1 * N1], float U_0[N1 * N1], float U_1[N1 * N1], float U_2[N1 * N1], float I[N1 * N1], float T[N1 * N1 * N1 * N1], float A, float B, float C)
 {

@@ -6,4 +6,4 @@
 extern void AESL_WRAP_hopfield_vitis (
 float V[64],
 float U_1[64],
-float l);
+float (&l));

@@ -760,8 +760,6 @@ bramV_Addr_A <= V_ADDR_A;
 bramV_EN_A <= V_EN_A;
 bramV_WEN_A <= V_WEN_A;
 bramV_Din_A <= V_DIN_A;
-bramV_WEN_B <= (others => '0');
-bramV_Din_B <= (others => '0');
 bramV_ready <= ready_initial or bramV_done;
 bramV_done <=	AESL_done_delay;
 
@@ -792,8 +790,6 @@ bramU_1_EN_A <= U_1_EN_A;
 U_1_DOUT_A <= bramU_1_Dout_A;
 bramU_1_WEN_A <= (others => '0');
 bramU_1_Din_A <= (others => '0');
-bramU_1_WEN_B <= (others => '0');
-bramU_1_Din_B <= (others => '0');
 bramU_1_ready <=	ready;
 bramU_1_done <= '0';
 

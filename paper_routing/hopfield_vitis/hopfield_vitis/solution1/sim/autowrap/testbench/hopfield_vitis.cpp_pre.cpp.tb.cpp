@@ -79103,13 +79103,15 @@ namespace hls {
 
 void hopfield_vitis( float V[8 * 8],
                         float U_1[8 * 8],
-                        float l)
+                        float &l)
 {
 
-#pragma HLS INTERFACE bram port=V
-#pragma HLS INTERFACE bram port=U_1
-#pragma HLS INTERFACE s_axilite port=l bundle=CRTL_BUS
 #pragma HLS INTERFACE s_axilite port=return bundle=CRTL_BUS
+#pragma HLS INTERFACE bram port=V
+#pragma HLS RESOURCE variable=V core=RAM_1P_BRAM
+#pragma HLS INTERFACE bram port=U_1
+#pragma HLS RESOURCE variable=U_1 core=RAM_1P_BRAM
+#pragma HLS INTERFACE s_axilite port=l bundle=CRTL_BUS
 
     for(int x = 0; x < 8; x++)
     {

@@ -14,14 +14,14 @@ set isEnableWaveformDebug 1
 set C_modelName {hopfield_vitis}
 set C_modelType { void 0 }
 set C_modelArgList {
-	{ V float 32 regular {bram 64 { 0 3 } 0 1 }  }
-	{ U_1 float 32 regular {bram 64 { 1 3 } 1 1 }  }
+	{ V float 32 regular {bram 64 { 0 } 0 1 }  }
+	{ U_1 float 32 regular {bram 64 { 1 } 1 1 }  }
 	{ l float 32 regular {axi_slave 0}  }
 }
 set C_modelArgMapList {[ 
 	{ "Name" : "V", "interface" : "bram", "bitwidth" : 32, "direction" : "WRITEONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "V","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 63,"step" : 1}]}]}]} , 
  	{ "Name" : "U_1", "interface" : "bram", "bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "U_1","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 63,"step" : 1}]}]}]} , 
- 	{ "Name" : "l", "interface" : "axi_slave", "bundle":"CRTL_BUS","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "l","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 0}]}]}], "offset" : {"in":16}, "offset_end" : {"in":23}} ]}
+ 	{ "Name" : "l", "interface" : "axi_slave", "bundle":"CRTL_BUS","type":"ap_none","bitwidth" : 32, "direction" : "READONLY", "bitSlice":[{"low":0,"up":31,"cElement": [{"cName": "l","cData": "float","bit_use": { "low": 0,"up": 31},"cArray": [{"low" : 0,"up" : 0,"step" : 1}]}]}], "offset" : {"in":16}, "offset_end" : {"in":23}} ]}
 # RTL Port declarations: 
 set portNum 34
 set portList { 
@@ -125,7 +125,7 @@ set ArgLastReadFirstWriteLatency {
 	hopfield_vitis {
 		V {Type O LastRead -1 FirstWrite 2}
 		U_1 {Type I LastRead 2 FirstWrite -1}
-		l {Type I LastRead 0 FirstWrite -1}}}
+		l {Type I LastRead 4 FirstWrite -1}}}
 
 set hasDtUnsupportedChannel 0
 

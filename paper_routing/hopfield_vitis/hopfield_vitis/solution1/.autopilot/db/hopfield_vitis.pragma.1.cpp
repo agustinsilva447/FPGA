@@ -24804,13 +24804,15 @@ namespace hls {
 
 void hopfield_vitis( float V[8 * 8],
                         float U_1[8 * 8],
-                        float l)
+                        float &l)
 {_ssdm_SpecArrayDimSize(V, 64);_ssdm_SpecArrayDimSize(U_1, 64);
 
-_ssdm_op_SpecInterface(V, "bram", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(U_1, "bram", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(l, "s_axilite", 0, 0, "", 0, 0, "CRTL_BUS", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(0, "s_axilite", 0, 0, "", 0, 0, "CRTL_BUS", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecInterface(V, "bram", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecResource(V, "", "RAM_1P_BRAM", "", -1, "", "", "", "", "");
+_ssdm_op_SpecInterface(U_1, "bram", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+_ssdm_op_SpecResource(U_1, "", "RAM_1P_BRAM", "", -1, "", "", "", "", "");
+_ssdm_op_SpecInterface(l, "s_axilite", 0, 0, "", 0, 0, "CRTL_BUS", "", "", 0, 0, 0, 0, "", "");
 
  for(int x = 0; x < 8; x++)
     {

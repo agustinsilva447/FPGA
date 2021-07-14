@@ -68,7 +68,7 @@
 <Resources>
 <BRAM_18K>0</BRAM_18K>
 <DSP48E>12</DSP48E>
-<FF>1723</FF>
+<FF>1691</FF>
 <LUT>3087</LUT>
 <URAM>0</URAM>
 </Resources>
@@ -85,7 +85,7 @@
 <RtlPorts>
 <name>s_axi_CRTL_BUS_AWVALID</name>
 <Object>CRTL_BUS</Object>
-<Type>scalar</Type>
+<Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig></IOConfig>
@@ -98,7 +98,7 @@
 <RtlPorts>
 <name>s_axi_CRTL_BUS_AWREADY</name>
 <Object>CRTL_BUS</Object>
-<Type>scalar</Type>
+<Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig></IOConfig>
@@ -111,7 +111,7 @@
 <RtlPorts>
 <name>s_axi_CRTL_BUS_AWADDR</name>
 <Object>CRTL_BUS</Object>
-<Type>scalar</Type>
+<Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig></IOConfig>
@@ -124,7 +124,7 @@
 <RtlPorts>
 <name>s_axi_CRTL_BUS_WVALID</name>
 <Object>CRTL_BUS</Object>
-<Type>scalar</Type>
+<Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig></IOConfig>
@@ -137,7 +137,7 @@
 <RtlPorts>
 <name>s_axi_CRTL_BUS_WREADY</name>
 <Object>CRTL_BUS</Object>
-<Type>scalar</Type>
+<Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig></IOConfig>
@@ -150,7 +150,7 @@
 <RtlPorts>
 <name>s_axi_CRTL_BUS_WDATA</name>
 <Object>CRTL_BUS</Object>
-<Type>scalar</Type>
+<Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig></IOConfig>
@@ -163,7 +163,7 @@
 <RtlPorts>
 <name>s_axi_CRTL_BUS_WSTRB</name>
 <Object>CRTL_BUS</Object>
-<Type>scalar</Type>
+<Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig></IOConfig>
@@ -176,7 +176,7 @@
 <RtlPorts>
 <name>s_axi_CRTL_BUS_ARVALID</name>
 <Object>CRTL_BUS</Object>
-<Type>scalar</Type>
+<Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig></IOConfig>
@@ -189,7 +189,7 @@
 <RtlPorts>
 <name>s_axi_CRTL_BUS_ARREADY</name>
 <Object>CRTL_BUS</Object>
-<Type>scalar</Type>
+<Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig></IOConfig>
@@ -202,7 +202,7 @@
 <RtlPorts>
 <name>s_axi_CRTL_BUS_ARADDR</name>
 <Object>CRTL_BUS</Object>
-<Type>scalar</Type>
+<Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig></IOConfig>
@@ -215,7 +215,7 @@
 <RtlPorts>
 <name>s_axi_CRTL_BUS_RVALID</name>
 <Object>CRTL_BUS</Object>
-<Type>scalar</Type>
+<Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig></IOConfig>
@@ -228,7 +228,7 @@
 <RtlPorts>
 <name>s_axi_CRTL_BUS_RREADY</name>
 <Object>CRTL_BUS</Object>
-<Type>scalar</Type>
+<Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig></IOConfig>
@@ -241,7 +241,7 @@
 <RtlPorts>
 <name>s_axi_CRTL_BUS_RDATA</name>
 <Object>CRTL_BUS</Object>
-<Type>scalar</Type>
+<Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig></IOConfig>
@@ -254,7 +254,7 @@
 <RtlPorts>
 <name>s_axi_CRTL_BUS_RRESP</name>
 <Object>CRTL_BUS</Object>
-<Type>scalar</Type>
+<Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig></IOConfig>
@@ -267,7 +267,7 @@
 <RtlPorts>
 <name>s_axi_CRTL_BUS_BVALID</name>
 <Object>CRTL_BUS</Object>
-<Type>scalar</Type>
+<Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig></IOConfig>
@@ -280,7 +280,7 @@
 <RtlPorts>
 <name>s_axi_CRTL_BUS_BREADY</name>
 <Object>CRTL_BUS</Object>
-<Type>scalar</Type>
+<Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig></IOConfig>
@@ -293,7 +293,7 @@
 <RtlPorts>
 <name>s_axi_CRTL_BUS_BRESP</name>
 <Object>CRTL_BUS</Object>
-<Type>scalar</Type>
+<Type>pointer</Type>
 <Scope></Scope>
 <IOProtocol>s_axi</IOProtocol>
 <IOConfig></IOConfig>
