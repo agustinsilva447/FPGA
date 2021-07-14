@@ -196,7 +196,7 @@ int main ()
 			flag = 0;
 		}
 		E_i = E_aux;
-		printf("\nIteración %d: Energía = %f. ", it, E_i);
+		printf("\nIteraciï¿½n %d: Energï¿½a = %f. ", it, E_i);
 		for(x = 0; x < N1; x++)
 		{
 			for(i = 0; i < N1; i++)

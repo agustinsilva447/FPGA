@@ -252,7 +252,7 @@ int main()
 	XHopfield_vitis_Initialize(&goHopfield_vitis, XPAR_HOPFIELD_VITIS_0_DEVICE_ID);
 	printf("\n");
 
-	//// FALTA LO MÁS IMPORTANTE: IMPLEMENTAR EL ALGORITMO EN LA FPGA ADENTRO DEL WHILE
+	////
 
 	while((flag) and (it < it_max))
 	{
@@ -276,6 +276,8 @@ int main()
 		}
 		it += 1;
 	}
+
+	////
 
 	printf("\nV = \n");
 	for(x = 0; x < N1; x++)

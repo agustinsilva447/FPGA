@@ -8,7 +8,7 @@
 #include <time.h>
 #include <xparameters.h>
 
-void hopfield_vitis(float V[N1 * N1], float U_1[N1 * N1], float l)
+void hopfield_vitis(float V[N1 * N1], float U_1[N1 * N1], float &l)
 {
     for(int x = 0; x < N1; x++)
     {
@@ -18,7 +18,7 @@ void hopfield_vitis(float V[N1 * N1], float U_1[N1 * N1], float l)
             {
                 V[x * N1 + i] = 0;
             } else {
-                V[x * N1 + i] = 1 / (1 + expf(-1 * U_1[x * N1 + i] * l));
+                V[x * N1 + i] = 1 / (1 + hls::expf(-1 * U_1[x * N1 + i] * l));
             }
         }
     }
@@ -178,58 +178,7 @@ int main()
 	XTime tStart;
 	XTime tEnd;
 
-	int it_max = 50, source = 0, destin = 1, flag = 1, it = 0, x, i;
-	int u1 = 950, u2 = 2500, u3 = 1500, u4 = 475, u5 = 2500;
-	float A = 0.0057, B = 0.0072, C = 0.0064, l = 6, E_aux, E_i = 10000;
-	int rho[N1 * N1];
-	float T[N1 * N1 * N1 * N1], I[N1 * N1], V[N1 * N1];
-	float U_0[N1 * N1]  = { 0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0};
-	float U_1[N1 * N1]  = { 0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0};
-	float U_2[N1 * N1]  = { 0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0,
-							0, 0, 0, 0, 0, 0, 0, 0};
-	float C_xi[N1 * N1]  = {0,    0.91,  0.36, 0,     0,     0,     1.2,   0,
-							0.91, 0,     0,    0.375, 0,     0,     0,     1.02,
-							0.36, 0,     0,    0.47,  0.64,  0,     0,     0,
-							0,    0.375, 0.47, 0,     0,     0.5,   0,     0,
-							0,    0,     0.64, 0,     0,     0.56,  0.425, 0,
-							0,    0,     0,    0.5,   0.56,  0,     0,     0.4,
-							1.2,  0,     0,    0,     0.425, 0,     0,     1.1,
-							0,    1.02,  0,    0,     0,     0.4,   1.1,   0};
 
-	printf("\nC_xi = \n");
-	for(x = 0; x < N1; x++)
-	{
-		printf("[");
-		for(i = 0; i < N1; i++)
-		{
-			printf("%f, ", (float) C_xi[x * N1 + i]);
-		}
-		printf("]\n");
-	}
-
-	rhoxi(rho, C_xi);
-	txiyj(u3, u4, T);
-	ixi(u1, u2, u4, u5, C_xi, rho, source, destin, I);
 
 	int status;
 	XHopfield_vitis goHopfield_vitis;
@@ -251,48 +200,6 @@ int main()
 
 	XHopfield_vitis_Initialize(&goHopfield_vitis, XPAR_HOPFIELD_VITIS_0_DEVICE_ID);
 	printf("\n");
-
-	//// FALTA LO MÁS IMPORTANTE: IMPLEMENTAR EL ALGORITMO EN LA FPGA ADENTRO DEL WHILE
-
-	while((flag) and (it < it_max))
-	{
-		hopfield_vitis(V, U_1, l);
-		hopfield_vitis_2(V, U_0, U_1, U_2, I, T, A, B, C);
-		E_aux = energy(u1, u2, u3, u4, u5, C_xi, V, rho, source, destin);
-		if (E_i == E_aux)
-		{
-			flag = 0;
-		}
-		E_i = E_aux;
-		printf("\nIteración %d: Energía = %f. ", it, E_i);
-		for(x = 0; x < N1; x++)
-		{
-			for(i = 0; i < N1; i++)
-			{
-				U_2[x * N1 + i] = U_1[x * N1 + i];
-				U_1[x * N1 + i] = U_0[x * N1 + i];
-				U_0[x * N1 + i] = 0;
-			}
-		}
-		it += 1;
-	}
-
-	printf("\nV = \n");
-	for(x = 0; x < N1; x++)
-	{
-		printf("[");
-		for(i = 0; i < N1; i++)
-		{
-			if (V[x * N1 + i] > 0.5)
-			{
-				V[x * N1 + i] = 1;
-			} else {
-				V[x * N1 + i] = 0;
-			}
-			printf("%f, ", (float) V[x * N1 + i]);
-		}
-		printf("]\n");
-	}
 
 	return 0;
 }

@@ -231,6 +231,8 @@ int main()
 	txiyj(u3, u4, T);
 	ixi(u1, u2, u4, u5, C_xi, rho, source, destin, I);
 
+
+
 	int status;
 	XHopfield_vitis goHopfield_vitis;
 	XHopfield_vitis_Config *goGrecia_cfg;
@@ -251,48 +253,6 @@ int main()
 
 	XHopfield_vitis_Initialize(&goHopfield_vitis, XPAR_HOPFIELD_VITIS_0_DEVICE_ID);
 	printf("\n");
-
-	//// FALTA LO MÁS IMPORTANTE: IMPLEMENTAR EL ALGORITMO EN LA FPGA ADENTRO DEL WHILE
-
-	while((flag) and (it < it_max))
-	{
-		hopfield_vitis(V, U_1, l);
-		hopfield_vitis_2(V, U_0, U_1, U_2, I, T, A, B, C);
-		E_aux = energy(u1, u2, u3, u4, u5, C_xi, V, rho, source, destin);
-		if (E_i == E_aux)
-		{
-			flag = 0;
-		}
-		E_i = E_aux;
-		printf("\nIteración %d: Energía = %f. ", it, E_i);
-		for(x = 0; x < N1; x++)
-		{
-			for(i = 0; i < N1; i++)
-			{
-				U_2[x * N1 + i] = U_1[x * N1 + i];
-				U_1[x * N1 + i] = U_0[x * N1 + i];
-				U_0[x * N1 + i] = 0;
-			}
-		}
-		it += 1;
-	}
-
-	printf("\nV = \n");
-	for(x = 0; x < N1; x++)
-	{
-		printf("[");
-		for(i = 0; i < N1; i++)
-		{
-			if (V[x * N1 + i] > 0.5)
-			{
-				V[x * N1 + i] = 1;
-			} else {
-				V[x * N1 + i] = 0;
-			}
-			printf("%f, ", (float) V[x * N1 + i]);
-		}
-		printf("]\n");
-	}
 
 	return 0;
 }
