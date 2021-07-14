@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
-  <source>
-    <originFiles name="hopfield_routing.cpp" path="/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing.cpp"/>
-  </source>
-  <testbench>
-    <originFiles name="tb_hopfield_routing.cpp" path="/home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/tb_hopfield_routing.cpp"/>
-  </testbench>
-</autopilotfilemapping:AutoPilotFileMapping>

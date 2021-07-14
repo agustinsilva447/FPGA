@@ -1,1 +1,0 @@
-set ::AESL_AUTOSIM::gTopFileName /home/agustinsilva447/Escritorio/Github/FPGA/paper_routing/hopfield_hls/hopfield_routing/solution1/./sim/autowrap/testbench/hopfield_routing.cpp_pre.cpp.tb.cpp

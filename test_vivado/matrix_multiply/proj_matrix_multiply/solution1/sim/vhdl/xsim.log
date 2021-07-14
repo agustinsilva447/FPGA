@@ -1,0 +1,24 @@
+#-----------------------------------------------------------
+# xsim v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+# Start of session at: Wed Jul 14 11:38:38 2021
+# Process ID: 5148
+# Current directory: C:/Users/aguss/Desktop/Github/FPGA/test_hsp2/matrix_multiply/proj_matrix_multiply/solution1/sim/vhdl
+# Command line: xsim.exe -mode tcl -source {xsim.dir/matrix_multiply_top/xsim_script.tcl}
+# Log file: C:/Users/aguss/Desktop/Github/FPGA/test_hsp2/matrix_multiply/proj_matrix_multiply/solution1/sim/vhdl/xsim.log
+# Journal file: C:/Users/aguss/Desktop/Github/FPGA/test_hsp2/matrix_multiply/proj_matrix_multiply/solution1/sim/vhdl\xsim.jou
+#-----------------------------------------------------------
+source xsim.dir/matrix_multiply_top/xsim_script.tcl
+# xsim {matrix_multiply_top} -autoloadwcfg -tclbatch {matrix_multiply_top.tcl}
+Vivado Simulator 2019.2
+Time resolution is 1 ps
+source matrix_multiply_top.tcl
+## run all
+Note: simulation done!
+Time: 610 ns  Iteration: 1  Process: /apatb_matrix_multiply_top_top/generate_sim_done_proc  File: C:/Users/aguss/Desktop/Github/FPGA/test_hsp2/matrix_multiply/proj_matrix_multiply/solution1/sim/vhdl/matrix_multiply_top.autotb.vhd
+Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
+Time: 610 ns  Iteration: 1  Process: /apatb_matrix_multiply_top_top/generate_sim_done_proc  File: C:/Users/aguss/Desktop/Github/FPGA/test_hsp2/matrix_multiply/proj_matrix_multiply/solution1/sim/vhdl/matrix_multiply_top.autotb.vhd
+$finish called at time : 610 ns
+## quit
+INFO: [Common 17-206] Exiting xsim at Wed Jul 14 11:38:50 2021...

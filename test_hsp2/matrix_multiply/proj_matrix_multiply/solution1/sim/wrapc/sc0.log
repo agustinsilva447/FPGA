@@ -1,5 +1,0 @@
-   Build using "/home/agustinsilva447/Vivado/Vivado/2019.2/tps/lnx64/gcc-6.2.0/bin/g++"
-   Compiling matrix_multiply.cpp_pre.cpp.tb.cpp
-   Compiling apatb_matrix_multiply_top.cpp
-   Compiling matrix_multiply_tb.cpp_pre.cpp.tb.cpp
-   Generating cosim.tv.exe
