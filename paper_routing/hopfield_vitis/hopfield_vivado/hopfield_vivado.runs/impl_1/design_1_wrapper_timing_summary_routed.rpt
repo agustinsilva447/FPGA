@@ -1,0 +1,1331 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Jul 14 18:16:36 2021
+| Host         : DESKTOP-UCL1PSP running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -max_paths 10 -file design_1_wrapper_timing_summary_routed.rpt -pb design_1_wrapper_timing_summary_routed.pb -rpx design_1_wrapper_timing_summary_routed.rpx -warn_on_violation
+| Design       : design_1_wrapper
+| Device       : 7z020-clg484
+| Speed File   : -1  PRODUCTION 1.11 2014-09-11
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock
+2. checking constant_clock
+3. checking pulse_width_clock
+4. checking unconstrained_internal_endpoints
+5. checking no_input_delay
+6. checking no_output_delay
+7. checking multiple_clock
+8. checking generated_clocks
+9. checking loops
+10. checking partial_input_delay
+11. checking partial_output_delay
+12. checking latch_loops
+
+1. checking no_clock
+--------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock
+--------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock
+-----------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints
+--------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay
+--------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay
+---------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock
+--------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks
+----------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops
+-----------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay
+--------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay
+---------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops
+------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      0.441        0.000                      0                 7082        0.007        0.000                      0                 7082        4.020        0.000                       0                  3375  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock       Waveform(ns)       Period(ns)      Frequency(MHz)
+-----       ------------       ----------      --------------
+clk_fpga_0  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+clk_fpga_0          0.441        0.000                      0                 7082        0.007        0.000                      0                 7082        4.020        0.000                       0                  3375  
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  clk_fpga_0
+  To Clock:  clk_fpga_0
+
+Setup :            0  Failing Endpoints,  Worst Slack        0.441ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.007ns,  Total Violation        0.000ns
+PW    :            0  Failing Endpoints,  Worst Slack        4.020ns,  Total Violation        0.000ns
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.441ns  (required time - arrival time)
+  Source:                 design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[35]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.434ns  (logic 3.025ns (40.694%)  route 4.409ns (59.306%))
+  Logic Levels:           3  (DSP48E1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.270ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.738ns = ( 12.738 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.137ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.843     3.137    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/aclk
+    SLICE_X39Y108        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y108        FDRE (Prop_fdre_C_Q)         0.456     3.593 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/Q
+                         net (fo=43, routed)          1.032     4.625    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/op_state_pcntrl[1]
+    SLICE_X35Y109        LUT4 (Prop_lut4_I1_O)        0.124     4.749 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/g0_b0__0_i_4/O
+                         net (fo=6, routed)           1.182     5.931    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/XFix_signed[3]
+    SLICE_X36Y101        LUT3 (Prop_lut3_I1_O)        0.157     6.088 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/g0_b5__0/O
+                         net (fo=1, routed)           1.171     7.259    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/B[5]
+    DSP48_X2Y33          DSP48E1 (Prop_dsp48e1_B[5]_P[10])
+                                                      2.288     9.547 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/P[10]
+                         net (fo=38, routed)          1.024    10.571    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP_2[10]
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[35]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.559    12.738    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/aclk
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/CLK
+                         clock pessimism              0.129    12.867    
+                         clock uncertainty           -0.154    12.713    
+    DSP48_X2Y32          DSP48E1 (Setup_dsp48e1_CLK_C[35])
+                                                     -1.701    11.012    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP
+  -------------------------------------------------------------------
+                         required time                         11.012    
+                         arrival time                         -10.571    
+  -------------------------------------------------------------------
+                         slack                                  0.441    
+
+Slack (MET) :             0.452ns  (required time - arrival time)
+  Source:                 design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[42]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.423ns  (logic 3.025ns (40.750%)  route 4.398ns (59.250%))
+  Logic Levels:           3  (DSP48E1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.270ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.738ns = ( 12.738 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.137ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.843     3.137    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/aclk
+    SLICE_X39Y108        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y108        FDRE (Prop_fdre_C_Q)         0.456     3.593 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/Q
+                         net (fo=43, routed)          1.032     4.625    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/op_state_pcntrl[1]
+    SLICE_X35Y109        LUT4 (Prop_lut4_I1_O)        0.124     4.749 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/g0_b0__0_i_4/O
+                         net (fo=6, routed)           1.182     5.931    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/XFix_signed[3]
+    SLICE_X36Y101        LUT3 (Prop_lut3_I1_O)        0.157     6.088 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/g0_b5__0/O
+                         net (fo=1, routed)           1.171     7.259    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/B[5]
+    DSP48_X2Y33          DSP48E1 (Prop_dsp48e1_B[5]_P[10])
+                                                      2.288     9.547 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/P[10]
+                         net (fo=38, routed)          1.014    10.560    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP_2[10]
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[42]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.559    12.738    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/aclk
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/CLK
+                         clock pessimism              0.129    12.867    
+                         clock uncertainty           -0.154    12.713    
+    DSP48_X2Y32          DSP48E1 (Setup_dsp48e1_CLK_C[42])
+                                                     -1.701    11.012    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP
+  -------------------------------------------------------------------
+                         required time                         11.012    
+                         arrival time                         -10.560    
+  -------------------------------------------------------------------
+                         slack                                  0.452    
+
+Slack (MET) :             0.452ns  (required time - arrival time)
+  Source:                 design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[43]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.423ns  (logic 3.025ns (40.750%)  route 4.398ns (59.250%))
+  Logic Levels:           3  (DSP48E1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.270ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.738ns = ( 12.738 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.137ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.843     3.137    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/aclk
+    SLICE_X39Y108        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y108        FDRE (Prop_fdre_C_Q)         0.456     3.593 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/Q
+                         net (fo=43, routed)          1.032     4.625    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/op_state_pcntrl[1]
+    SLICE_X35Y109        LUT4 (Prop_lut4_I1_O)        0.124     4.749 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/g0_b0__0_i_4/O
+                         net (fo=6, routed)           1.182     5.931    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/XFix_signed[3]
+    SLICE_X36Y101        LUT3 (Prop_lut3_I1_O)        0.157     6.088 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/g0_b5__0/O
+                         net (fo=1, routed)           1.171     7.259    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/B[5]
+    DSP48_X2Y33          DSP48E1 (Prop_dsp48e1_B[5]_P[10])
+                                                      2.288     9.547 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/P[10]
+                         net (fo=38, routed)          1.014    10.560    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP_2[10]
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[43]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.559    12.738    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/aclk
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/CLK
+                         clock pessimism              0.129    12.867    
+                         clock uncertainty           -0.154    12.713    
+    DSP48_X2Y32          DSP48E1 (Setup_dsp48e1_CLK_C[43])
+                                                     -1.701    11.012    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP
+  -------------------------------------------------------------------
+                         required time                         11.012    
+                         arrival time                         -10.560    
+  -------------------------------------------------------------------
+                         slack                                  0.452    
+
+Slack (MET) :             0.509ns  (required time - arrival time)
+  Source:                 design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[28]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.366ns  (logic 3.025ns (41.067%)  route 4.341ns (58.933%))
+  Logic Levels:           3  (DSP48E1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.270ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.738ns = ( 12.738 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.137ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.843     3.137    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/aclk
+    SLICE_X39Y108        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y108        FDRE (Prop_fdre_C_Q)         0.456     3.593 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/Q
+                         net (fo=43, routed)          1.032     4.625    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/op_state_pcntrl[1]
+    SLICE_X35Y109        LUT4 (Prop_lut4_I1_O)        0.124     4.749 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/g0_b0__0_i_4/O
+                         net (fo=6, routed)           1.182     5.931    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/XFix_signed[3]
+    SLICE_X36Y101        LUT3 (Prop_lut3_I1_O)        0.157     6.088 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/g0_b5__0/O
+                         net (fo=1, routed)           1.171     7.259    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/B[5]
+    DSP48_X2Y33          DSP48E1 (Prop_dsp48e1_B[5]_P[10])
+                                                      2.288     9.547 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/P[10]
+                         net (fo=38, routed)          0.956    10.503    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP_2[10]
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[28]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.559    12.738    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/aclk
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/CLK
+                         clock pessimism              0.129    12.867    
+                         clock uncertainty           -0.154    12.713    
+    DSP48_X2Y32          DSP48E1 (Setup_dsp48e1_CLK_C[28])
+                                                     -1.701    11.012    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP
+  -------------------------------------------------------------------
+                         required time                         11.012    
+                         arrival time                         -10.503    
+  -------------------------------------------------------------------
+                         slack                                  0.509    
+
+Slack (MET) :             0.551ns  (required time - arrival time)
+  Source:                 design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[29]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.324ns  (logic 3.025ns (41.301%)  route 4.299ns (58.699%))
+  Logic Levels:           3  (DSP48E1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.270ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.738ns = ( 12.738 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.137ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.843     3.137    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/aclk
+    SLICE_X39Y108        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y108        FDRE (Prop_fdre_C_Q)         0.456     3.593 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/Q
+                         net (fo=43, routed)          1.032     4.625    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/op_state_pcntrl[1]
+    SLICE_X35Y109        LUT4 (Prop_lut4_I1_O)        0.124     4.749 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/g0_b0__0_i_4/O
+                         net (fo=6, routed)           1.182     5.931    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/XFix_signed[3]
+    SLICE_X36Y101        LUT3 (Prop_lut3_I1_O)        0.157     6.088 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/g0_b5__0/O
+                         net (fo=1, routed)           1.171     7.259    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/B[5]
+    DSP48_X2Y33          DSP48E1 (Prop_dsp48e1_B[5]_P[10])
+                                                      2.288     9.547 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/P[10]
+                         net (fo=38, routed)          0.915    10.461    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP_2[10]
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[29]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.559    12.738    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/aclk
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/CLK
+                         clock pessimism              0.129    12.867    
+                         clock uncertainty           -0.154    12.713    
+    DSP48_X2Y32          DSP48E1 (Setup_dsp48e1_CLK_C[29])
+                                                     -1.701    11.012    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP
+  -------------------------------------------------------------------
+                         required time                         11.012    
+                         arrival time                         -10.461    
+  -------------------------------------------------------------------
+                         slack                                  0.551    
+
+Slack (MET) :             0.551ns  (required time - arrival time)
+  Source:                 design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[30]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.324ns  (logic 3.025ns (41.301%)  route 4.299ns (58.699%))
+  Logic Levels:           3  (DSP48E1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.270ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.738ns = ( 12.738 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.137ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.843     3.137    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/aclk
+    SLICE_X39Y108        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y108        FDRE (Prop_fdre_C_Q)         0.456     3.593 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/Q
+                         net (fo=43, routed)          1.032     4.625    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/op_state_pcntrl[1]
+    SLICE_X35Y109        LUT4 (Prop_lut4_I1_O)        0.124     4.749 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/g0_b0__0_i_4/O
+                         net (fo=6, routed)           1.182     5.931    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/XFix_signed[3]
+    SLICE_X36Y101        LUT3 (Prop_lut3_I1_O)        0.157     6.088 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/g0_b5__0/O
+                         net (fo=1, routed)           1.171     7.259    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/B[5]
+    DSP48_X2Y33          DSP48E1 (Prop_dsp48e1_B[5]_P[10])
+                                                      2.288     9.547 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/P[10]
+                         net (fo=38, routed)          0.915    10.461    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP_2[10]
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[30]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.559    12.738    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/aclk
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/CLK
+                         clock pessimism              0.129    12.867    
+                         clock uncertainty           -0.154    12.713    
+    DSP48_X2Y32          DSP48E1 (Setup_dsp48e1_CLK_C[30])
+                                                     -1.701    11.012    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP
+  -------------------------------------------------------------------
+                         required time                         11.012    
+                         arrival time                         -10.461    
+  -------------------------------------------------------------------
+                         slack                                  0.551    
+
+Slack (MET) :             0.560ns  (required time - arrival time)
+  Source:                 design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[16]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.315ns  (logic 3.025ns (41.353%)  route 4.290ns (58.647%))
+  Logic Levels:           3  (DSP48E1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.270ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.738ns = ( 12.738 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.137ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.843     3.137    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/aclk
+    SLICE_X39Y108        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y108        FDRE (Prop_fdre_C_Q)         0.456     3.593 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/Q
+                         net (fo=43, routed)          1.032     4.625    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/op_state_pcntrl[1]
+    SLICE_X35Y109        LUT4 (Prop_lut4_I1_O)        0.124     4.749 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/g0_b0__0_i_4/O
+                         net (fo=6, routed)           1.182     5.931    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/XFix_signed[3]
+    SLICE_X36Y101        LUT3 (Prop_lut3_I1_O)        0.157     6.088 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/g0_b5__0/O
+                         net (fo=1, routed)           1.171     7.259    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/B[5]
+    DSP48_X2Y33          DSP48E1 (Prop_dsp48e1_B[5]_P[10])
+                                                      2.288     9.547 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/P[10]
+                         net (fo=38, routed)          0.905    10.452    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP_2[10]
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[16]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.559    12.738    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/aclk
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/CLK
+                         clock pessimism              0.129    12.867    
+                         clock uncertainty           -0.154    12.713    
+    DSP48_X2Y32          DSP48E1 (Setup_dsp48e1_CLK_C[16])
+                                                     -1.701    11.012    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP
+  -------------------------------------------------------------------
+                         required time                         11.012    
+                         arrival time                         -10.452    
+  -------------------------------------------------------------------
+                         slack                                  0.560    
+
+Slack (MET) :             0.560ns  (required time - arrival time)
+  Source:                 design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[36]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.315ns  (logic 3.025ns (41.353%)  route 4.290ns (58.647%))
+  Logic Levels:           3  (DSP48E1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.270ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.738ns = ( 12.738 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.137ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.843     3.137    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/aclk
+    SLICE_X39Y108        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y108        FDRE (Prop_fdre_C_Q)         0.456     3.593 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/Q
+                         net (fo=43, routed)          1.032     4.625    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/op_state_pcntrl[1]
+    SLICE_X35Y109        LUT4 (Prop_lut4_I1_O)        0.124     4.749 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/g0_b0__0_i_4/O
+                         net (fo=6, routed)           1.182     5.931    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/XFix_signed[3]
+    SLICE_X36Y101        LUT3 (Prop_lut3_I1_O)        0.157     6.088 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/g0_b5__0/O
+                         net (fo=1, routed)           1.171     7.259    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/B[5]
+    DSP48_X2Y33          DSP48E1 (Prop_dsp48e1_B[5]_P[10])
+                                                      2.288     9.547 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/P[10]
+                         net (fo=38, routed)          0.905    10.452    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP_2[10]
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[36]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.559    12.738    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/aclk
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/CLK
+                         clock pessimism              0.129    12.867    
+                         clock uncertainty           -0.154    12.713    
+    DSP48_X2Y32          DSP48E1 (Setup_dsp48e1_CLK_C[36])
+                                                     -1.701    11.012    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP
+  -------------------------------------------------------------------
+                         required time                         11.012    
+                         arrival time                         -10.452    
+  -------------------------------------------------------------------
+                         slack                                  0.560    
+
+Slack (MET) :             0.562ns  (required time - arrival time)
+  Source:                 design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[24]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.313ns  (logic 3.025ns (41.366%)  route 4.288ns (58.634%))
+  Logic Levels:           3  (DSP48E1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.270ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.738ns = ( 12.738 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.137ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.843     3.137    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/aclk
+    SLICE_X39Y108        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y108        FDRE (Prop_fdre_C_Q)         0.456     3.593 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/Q
+                         net (fo=43, routed)          1.032     4.625    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/op_state_pcntrl[1]
+    SLICE_X35Y109        LUT4 (Prop_lut4_I1_O)        0.124     4.749 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/g0_b0__0_i_4/O
+                         net (fo=6, routed)           1.182     5.931    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/XFix_signed[3]
+    SLICE_X36Y101        LUT3 (Prop_lut3_I1_O)        0.157     6.088 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/g0_b5__0/O
+                         net (fo=1, routed)           1.171     7.259    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/B[5]
+    DSP48_X2Y33          DSP48E1 (Prop_dsp48e1_B[5]_P[10])
+                                                      2.288     9.547 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/P[10]
+                         net (fo=38, routed)          0.903    10.450    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP_2[10]
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[24]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.559    12.738    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/aclk
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/CLK
+                         clock pessimism              0.129    12.867    
+                         clock uncertainty           -0.154    12.713    
+    DSP48_X2Y32          DSP48E1 (Setup_dsp48e1_CLK_C[24])
+                                                     -1.701    11.012    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP
+  -------------------------------------------------------------------
+                         required time                         11.012    
+                         arrival time                         -10.450    
+  -------------------------------------------------------------------
+                         slack                                  0.562    
+
+Slack (MET) :             0.571ns  (required time - arrival time)
+  Source:                 design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[13]
+                            (rising edge-triggered cell DSP48E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Setup (Max at Slow Process Corner)
+  Requirement:            10.000ns  (clk_fpga_0 rise@10.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        7.304ns  (logic 3.025ns (41.416%)  route 4.279ns (58.584%))
+  Logic Levels:           3  (DSP48E1=1 LUT3=1 LUT4=1)
+  Clock Path Skew:        -0.270ns (DCD - SCD + CPR)
+    Destination Clock Delay (DCD):    2.738ns = ( 12.738 - 10.000 ) 
+    Source Clock Delay      (SCD):    3.137ns
+    Clock Pessimism Removal (CPR):    0.129ns
+  Clock Uncertainty:      0.154ns  ((TSJ^2 + TIJ^2)^1/2 + DJ) / 2 + PE
+    Total System Jitter     (TSJ):    0.071ns
+    Total Input Jitter      (TIJ):    0.300ns
+    Discrete Jitter          (DJ):    0.000ns
+    Phase Error              (PE):    0.000ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.193     1.193    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.101     1.294 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.843     3.137    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/aclk
+    SLICE_X39Y108        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X39Y108        FDRE (Prop_fdre_C_Q)         0.456     3.593 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/opt_has_pipe.first_q_reg[1]/Q
+                         net (fo=43, routed)          1.032     4.625    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/op_state_pcntrl[1]
+    SLICE_X35Y109        LUT4 (Prop_lut4_I1_O)        0.124     4.749 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/g0_b0__0_i_4/O
+                         net (fo=6, routed)           1.182     5.931    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/XFix_signed[3]
+    SLICE_X36Y101        LUT3 (Prop_lut3_I1_O)        0.157     6.088 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_shift_to_fixed/OP_STATE_P1_REG/i_pipe/g0_b5__0/O
+                         net (fo=1, routed)           1.171     7.259    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/B[5]
+    DSP48_X2Y33          DSP48E1 (Prop_dsp48e1_B[5]_P[10])
+                                                      2.288     9.547 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/P[10]
+                         net (fo=38, routed)          0.894    10.441    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP_2[10]
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/C[13]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                     10.000    10.000 r  
+    PS7_X0Y0             PS7                          0.000    10.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           1.088    11.088    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.091    11.179 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        1.559    12.738    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/aclk
+    DSP48_X2Y32          DSP48E1                                      r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/CLK
+                         clock pessimism              0.129    12.867    
+                         clock uncertainty           -0.154    12.713    
+    DSP48_X2Y32          DSP48E1 (Setup_dsp48e1_CLK_C[13])
+                                                     -1.701    11.012    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_feeOg_U4/hopfield_vitis_ap_fexp_7_full_dsp_32_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP
+  -------------------------------------------------------------------
+                         required time                         11.012    
+                         arrival time                         -10.441    
+  -------------------------------------------------------------------
+                         slack                                  0.571    
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.007ns  (arrival time - required time)
+  Source:                 design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[12]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.492ns  (logic 0.390ns (79.269%)  route 0.102ns (20.731%))
+  Logic Levels:           4  (CARRY4=3 LUT3=1)
+  Clock Path Skew:        0.351ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.300ns
+    Source Clock Delay      (SCD):    0.914ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.578     0.914    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].MANT_DEL/i_pipe/aclk
+    SLICE_X59Y98         FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X59Y98         FDRE (Prop_fdre_C_Q)         0.141     1.055 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[6]/Q
+                         net (fo=3, routed)           0.101     1.156    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/maNew[2]_25[6]
+    SLICE_X58Y98         LUT3 (Prop_lut3_I2_O)        0.045     1.201 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/CHAIN_GEN[6].C_MUX.CARRY_MUX_i_1/O
+                         net (fo=1, routed)           0.000     1.201    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/a_xor_b_sub[6]
+    SLICE_X58Y98         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.111     1.312 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[4].C_MUX.CARRY_MUX_CARRY4/CO[3]
+                         net (fo=1, routed)           0.000     1.312    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[7].C_MUX.CARRY_MUX_n_1
+    SLICE_X58Y99         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     1.352 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[8].C_MUX.CARRY_MUX_CARRY4/CO[3]
+                         net (fo=1, routed)           0.001     1.353    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[11].C_MUX.CARRY_MUX_n_1
+    SLICE_X58Y100        CARRY4 (Prop_carry4_CI_O[0])
+                                                      0.053     1.406 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[12].C_MUX.CARRY_MUX_CARRY4/O[0]
+                         net (fo=1, routed)           0.000     1.406    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/q_int[12]
+    SLICE_X58Y100        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[12]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.934     1.300    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/aclk
+    SLICE_X58Y100        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[12]/C
+                         clock pessimism             -0.035     1.265    
+    SLICE_X58Y100        FDRE (Hold_fdre_C_D)         0.134     1.399    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[12]
+  -------------------------------------------------------------------
+                         required time                         -1.399    
+                         arrival time                           1.406    
+  -------------------------------------------------------------------
+                         slack                                  0.007    
+
+Slack (MET) :             0.017ns  (arrival time - required time)
+  Source:                 design_1_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_WRDATA[24].bram_wrdata_int_reg[24]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/DIBDI[8]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.318ns  (logic 0.148ns (46.566%)  route 0.170ns (53.434%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.057ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.233ns
+    Source Clock Delay      (SCD):    0.895ns
+    Clock Pessimism Removal (CPR):    0.281ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.559     0.895    design_1_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/s_axi_aclk
+    SLICE_X32Y97         FDRE                                         r  design_1_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_WRDATA[24].bram_wrdata_int_reg[24]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y97         FDRE (Prop_fdre_C_Q)         0.148     1.043 r  design_1_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_WRDATA[24].bram_wrdata_int_reg[24]/Q
+                         net (fo=1, routed)           0.170     1.212    design_1_i/hopfield_vitis_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/dinb[8]
+    RAMB36_X2Y19         RAMB36E1                                     r  design_1_i/hopfield_vitis_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/DIBDI[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.867     1.233    design_1_i/hopfield_vitis_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/clkb
+    RAMB36_X2Y19         RAMB36E1                                     r  design_1_i/hopfield_vitis_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/CLKBWRCLK
+                         clock pessimism             -0.281     0.952    
+    RAMB36_X2Y19         RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_DIBDI[8])
+                                                      0.243     1.195    design_1_i/hopfield_vitis_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram
+  -------------------------------------------------------------------
+                         required time                         -1.195    
+                         arrival time                           1.212    
+  -------------------------------------------------------------------
+                         slack                                  0.017    
+
+Slack (MET) :             0.020ns  (arrival time - required time)
+  Source:                 design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[14]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.505ns  (logic 0.403ns (79.803%)  route 0.102ns (20.197%))
+  Logic Levels:           4  (CARRY4=3 LUT3=1)
+  Clock Path Skew:        0.351ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.300ns
+    Source Clock Delay      (SCD):    0.914ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.578     0.914    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].MANT_DEL/i_pipe/aclk
+    SLICE_X59Y98         FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X59Y98         FDRE (Prop_fdre_C_Q)         0.141     1.055 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[6]/Q
+                         net (fo=3, routed)           0.101     1.156    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/maNew[2]_25[6]
+    SLICE_X58Y98         LUT3 (Prop_lut3_I2_O)        0.045     1.201 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/CHAIN_GEN[6].C_MUX.CARRY_MUX_i_1/O
+                         net (fo=1, routed)           0.000     1.201    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/a_xor_b_sub[6]
+    SLICE_X58Y98         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.111     1.312 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[4].C_MUX.CARRY_MUX_CARRY4/CO[3]
+                         net (fo=1, routed)           0.000     1.312    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[7].C_MUX.CARRY_MUX_n_1
+    SLICE_X58Y99         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     1.352 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[8].C_MUX.CARRY_MUX_CARRY4/CO[3]
+                         net (fo=1, routed)           0.001     1.353    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[11].C_MUX.CARRY_MUX_n_1
+    SLICE_X58Y100        CARRY4 (Prop_carry4_CI_O[2])
+                                                      0.066     1.419 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[12].C_MUX.CARRY_MUX_CARRY4/O[2]
+                         net (fo=1, routed)           0.000     1.419    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/q_int[14]
+    SLICE_X58Y100        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[14]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.934     1.300    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/aclk
+    SLICE_X58Y100        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[14]/C
+                         clock pessimism             -0.035     1.265    
+    SLICE_X58Y100        FDRE (Hold_fdre_C_D)         0.134     1.399    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[14]
+  -------------------------------------------------------------------
+                         required time                         -1.399    
+                         arrival time                           1.419    
+  -------------------------------------------------------------------
+                         slack                                  0.020    
+
+Slack (MET) :             0.020ns  (arrival time - required time)
+  Source:                 design_1_i/hopfield_vitis_0/inst/tmp_4_reg_289_reg[0]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/din1_buf1_reg[0]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.261ns  (logic 0.141ns (54.043%)  route 0.120ns (45.957%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.182ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.215ns
+    Source Clock Delay      (SCD):    0.998ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.662     0.998    design_1_i/hopfield_vitis_0/inst/ap_clk
+    SLICE_X64Y100        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/tmp_4_reg_289_reg[0]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X64Y100        FDRE (Prop_fdre_C_Q)         0.141     1.139 r  design_1_i/hopfield_vitis_0/inst/tmp_4_reg_289_reg[0]/Q
+                         net (fo=1, routed)           0.120     1.259    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/Q[0]
+    SLICE_X62Y99         FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/din1_buf1_reg[0]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.849     1.215    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/ap_clk
+    SLICE_X62Y99         FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/din1_buf1_reg[0]/C
+                         clock pessimism             -0.035     1.180    
+    SLICE_X62Y99         FDRE (Hold_fdre_C_D)         0.059     1.239    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/din1_buf1_reg[0]
+  -------------------------------------------------------------------
+                         required time                         -1.239    
+                         arrival time                           1.259    
+  -------------------------------------------------------------------
+                         slack                                  0.020    
+
+Slack (MET) :             0.029ns  (arrival time - required time)
+  Source:                 design_1_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_WRDATA[25].bram_wrdata_int_reg[25]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/DIBDI[9]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.378ns  (logic 0.164ns (43.406%)  route 0.214ns (56.594%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.052ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.224ns
+    Source Clock Delay      (SCD):    0.891ns
+    Clock Pessimism Removal (CPR):    0.281ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.555     0.891    design_1_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/s_axi_aclk
+    SLICE_X32Y87         FDRE                                         r  design_1_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_WRDATA[25].bram_wrdata_int_reg[25]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y87         FDRE (Prop_fdre_C_Q)         0.164     1.055 r  design_1_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_WRDATA[25].bram_wrdata_int_reg[25]/Q
+                         net (fo=1, routed)           0.214     1.268    design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/dinb[9]
+    RAMB36_X2Y16         RAMB36E1                                     r  design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/DIBDI[9]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.858     1.224    design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/clkb
+    RAMB36_X2Y16         RAMB36E1                                     r  design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/CLKBWRCLK
+                         clock pessimism             -0.281     0.943    
+    RAMB36_X2Y16         RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_DIBDI[9])
+                                                      0.296     1.239    design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram
+  -------------------------------------------------------------------
+                         required time                         -1.239    
+                         arrival time                           1.268    
+  -------------------------------------------------------------------
+                         slack                                  0.029    
+
+Slack (MET) :             0.040ns  (arrival time - required time)
+  Source:                 design_1_i/hopfield_vitis_0/inst/hopfield_vitis_CRTL_BUS_s_axi_U/rdata_reg[8]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][8]_srl32/D
+                            (rising edge-triggered cell SRLC32E clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.257ns  (logic 0.141ns (54.785%)  route 0.116ns (45.215%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.034ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.189ns
+    Source Clock Delay      (SCD):    0.891ns
+    Clock Pessimism Removal (CPR):    0.264ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.555     0.891    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_CRTL_BUS_s_axi_U/ap_clk
+    SLICE_X45Y91         FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_CRTL_BUS_s_axi_U/rdata_reg[8]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X45Y91         FDRE (Prop_fdre_C_Q)         0.141     1.032 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_CRTL_BUS_s_axi_U/rdata_reg[8]/Q
+                         net (fo=1, routed)           0.116     1.148    design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/in[8]
+    SLICE_X42Y91         SRLC32E                                      r  design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][8]_srl32/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.823     1.189    design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/aclk
+    SLICE_X42Y91         SRLC32E                                      r  design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][8]_srl32/CLK
+                         clock pessimism             -0.264     0.925    
+    SLICE_X42Y91         SRLC32E (Hold_srlc32e_CLK_D)
+                                                      0.183     1.108    design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/rd_data_fifo_0/memory_reg[31][8]_srl32
+  -------------------------------------------------------------------
+                         required time                         -1.108    
+                         arrival time                           1.148    
+  -------------------------------------------------------------------
+                         slack                                  0.040    
+
+Slack (MET) :             0.041ns  (arrival time - required time)
+  Source:                 design_1_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_WRDATA[27].bram_wrdata_int_reg[27]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/DIBDI[11]
+                            (rising edge-triggered cell RAMB36E1 clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.389ns  (logic 0.164ns (42.106%)  route 0.225ns (57.894%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.052ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.224ns
+    Source Clock Delay      (SCD):    0.891ns
+    Clock Pessimism Removal (CPR):    0.281ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.555     0.891    design_1_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/s_axi_aclk
+    SLICE_X32Y87         FDRE                                         r  design_1_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_WRDATA[27].bram_wrdata_int_reg[27]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X32Y87         FDRE (Prop_fdre_C_Q)         0.164     1.055 r  design_1_i/axi_bram_ctrl_1/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/GEN_WRDATA[27].bram_wrdata_int_reg[27]/Q
+                         net (fo=1, routed)           0.225     1.280    design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/dinb[11]
+    RAMB36_X2Y16         RAMB36E1                                     r  design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/DIBDI[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.858     1.224    design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/clkb
+    RAMB36_X2Y16         RAMB36E1                                     r  design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/CLKBWRCLK
+                         clock pessimism             -0.281     0.943    
+    RAMB36_X2Y16         RAMB36E1 (Hold_ramb36e1_CLKBWRCLK_DIBDI[11])
+                                                      0.296     1.239    design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram
+  -------------------------------------------------------------------
+                         required time                         -1.239    
+                         arrival time                           1.280    
+  -------------------------------------------------------------------
+                         slack                                  0.041    
+
+Slack (MET) :             0.042ns  (arrival time - required time)
+  Source:                 design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fmcud_U2/hopfield_vitis_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.OP/RESULT_REG.NORMAL.mant_op_reg[2]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0/inst/x_assign_reg_279_reg[2]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.446ns  (logic 0.164ns (36.797%)  route 0.282ns (63.203%))
+  Logic Levels:           0  
+  Clock Path Skew:        0.348ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.276ns
+    Source Clock Delay      (SCD):    0.893ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.557     0.893    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fmcud_U2/hopfield_vitis_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.OP/aclk
+    SLICE_X38Y97         FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fmcud_U2/hopfield_vitis_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.OP/RESULT_REG.NORMAL.mant_op_reg[2]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X38Y97         FDRE (Prop_fdre_C_Q)         0.164     1.057 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fmcud_U2/hopfield_vitis_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.OP/RESULT_REG.NORMAL.mant_op_reg[2]/Q
+                         net (fo=1, routed)           0.282     1.338    design_1_i/hopfield_vitis_0/inst/r_tdata_2[2]
+    SLICE_X41Y105        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/x_assign_reg_279_reg[2]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.910     1.276    design_1_i/hopfield_vitis_0/inst/ap_clk
+    SLICE_X41Y105        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/x_assign_reg_279_reg[2]/C
+                         clock pessimism             -0.035     1.241    
+    SLICE_X41Y105        FDRE (Hold_fdre_C_D)         0.055     1.296    design_1_i/hopfield_vitis_0/inst/x_assign_reg_279_reg[2]
+  -------------------------------------------------------------------
+                         required time                         -1.296    
+                         arrival time                           1.338    
+  -------------------------------------------------------------------
+                         slack                                  0.042    
+
+Slack (MET) :             0.043ns  (arrival time - required time)
+  Source:                 design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[13]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.528ns  (logic 0.426ns (80.683%)  route 0.102ns (19.317%))
+  Logic Levels:           4  (CARRY4=3 LUT3=1)
+  Clock Path Skew:        0.351ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.300ns
+    Source Clock Delay      (SCD):    0.914ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.578     0.914    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].MANT_DEL/i_pipe/aclk
+    SLICE_X59Y98         FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X59Y98         FDRE (Prop_fdre_C_Q)         0.141     1.055 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[6]/Q
+                         net (fo=3, routed)           0.101     1.156    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/maNew[2]_25[6]
+    SLICE_X58Y98         LUT3 (Prop_lut3_I2_O)        0.045     1.201 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/CHAIN_GEN[6].C_MUX.CARRY_MUX_i_1/O
+                         net (fo=1, routed)           0.000     1.201    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/a_xor_b_sub[6]
+    SLICE_X58Y98         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.111     1.312 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[4].C_MUX.CARRY_MUX_CARRY4/CO[3]
+                         net (fo=1, routed)           0.000     1.312    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[7].C_MUX.CARRY_MUX_n_1
+    SLICE_X58Y99         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     1.352 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[8].C_MUX.CARRY_MUX_CARRY4/CO[3]
+                         net (fo=1, routed)           0.001     1.353    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[11].C_MUX.CARRY_MUX_n_1
+    SLICE_X58Y100        CARRY4 (Prop_carry4_CI_O[1])
+                                                      0.089     1.442 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[12].C_MUX.CARRY_MUX_CARRY4/O[1]
+                         net (fo=1, routed)           0.000     1.442    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/q_int[13]
+    SLICE_X58Y100        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[13]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.934     1.300    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/aclk
+    SLICE_X58Y100        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[13]/C
+                         clock pessimism             -0.035     1.265    
+    SLICE_X58Y100        FDRE (Hold_fdre_C_D)         0.134     1.399    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[13]
+  -------------------------------------------------------------------
+                         required time                         -1.399    
+                         arrival time                           1.442    
+  -------------------------------------------------------------------
+                         slack                                  0.043    
+
+Slack (MET) :             0.045ns  (arrival time - required time)
+  Source:                 design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[6]/C
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[15]/D
+                            (rising edge-triggered cell FDRE clocked by clk_fpga_0  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             clk_fpga_0
+  Path Type:              Hold (Min at Fast Process Corner)
+  Requirement:            0.000ns  (clk_fpga_0 rise@0.000ns - clk_fpga_0 rise@0.000ns)
+  Data Path Delay:        0.530ns  (logic 0.428ns (80.755%)  route 0.102ns (19.245%))
+  Logic Levels:           4  (CARRY4=3 LUT3=1)
+  Clock Path Skew:        0.351ns (DCD - SCD - CPR)
+    Destination Clock Delay (DCD):    1.300ns
+    Source Clock Delay      (SCD):    0.914ns
+    Clock Pessimism Removal (CPR):    0.035ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.310     0.310    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.026     0.336 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.578     0.914    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].MANT_DEL/i_pipe/aclk
+    SLICE_X59Y98         FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[6]/C
+  -------------------------------------------------------------------    -------------------
+    SLICE_X59Y98         FDRE (Prop_fdre_C_Q)         0.141     1.055 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[1].MANT_DEL/i_pipe/opt_has_pipe.first_q_reg[6]/Q
+                         net (fo=3, routed)           0.101     1.156    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/maNew[2]_25[6]
+    SLICE_X58Y98         LUT3 (Prop_lut3_I2_O)        0.045     1.201 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/CHAIN_GEN[6].C_MUX.CARRY_MUX_i_1/O
+                         net (fo=1, routed)           0.000     1.201    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/a_xor_b_sub[6]
+    SLICE_X58Y98         CARRY4 (Prop_carry4_S[2]_CO[3])
+                                                      0.111     1.312 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[4].C_MUX.CARRY_MUX_CARRY4/CO[3]
+                         net (fo=1, routed)           0.000     1.312    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[7].C_MUX.CARRY_MUX_n_1
+    SLICE_X58Y99         CARRY4 (Prop_carry4_CI_CO[3])
+                                                      0.040     1.352 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[8].C_MUX.CARRY_MUX_CARRY4/CO[3]
+                         net (fo=1, routed)           0.001     1.353    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[11].C_MUX.CARRY_MUX_n_1
+    SLICE_X58Y100        CARRY4 (Prop_carry4_CI_O[3])
+                                                      0.091     1.444 r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/CHAIN_GEN[12].C_MUX.CARRY_MUX_CARRY4/O[3]
+                         net (fo=1, routed)           0.000     1.444    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/q_int[15]
+    SLICE_X58Y100        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[15]/D
+  -------------------------------------------------------------------    -------------------
+
+                         (clock clk_fpga_0 rise edge)
+                                                      0.000     0.000 r  
+    PS7_X0Y0             PS7                          0.000     0.000 r  design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0]
+                         net (fo=1, routed)           0.337     0.337    design_1_i/processing_system7_0/inst/FCLK_CLK_unbuffered[0]
+    BUFGCTRL_X0Y16       BUFG (Prop_bufg_I_O)         0.029     0.366 r  design_1_i/processing_system7_0/inst/buffer_fclk_clk_0.FCLK_CLK_0_BUFG/O
+                         net (fo=3383, routed)        0.934     1.300    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/aclk
+    SLICE_X58Y100        FDRE                                         r  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[15]/C
+                         clock pessimism             -0.035     1.265    
+    SLICE_X58Y100        FDRE (Hold_fdre_C_D)         0.134     1.399    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/MANT_DIV/RT[3].ADDSUB/ADDSUB/Q_DEL/i_pipe/opt_has_pipe.first_q_reg[15]
+  -------------------------------------------------------------------
+                         required time                         -1.399    
+                         arrival time                           1.444    
+  -------------------------------------------------------------------
+                         slack                                  0.045    
+
+
+
+
+
+Pulse Width Checks
+--------------------------------------------------------------------------------------
+Clock Name:         clk_fpga_0
+Waveform(ns):       { 0.000 5.000 }
+Period(ns):         10.000
+Sources:            { design_1_i/processing_system7_0/inst/PS7_i/FCLKCLK[0] }
+
+Check Type        Corner  Lib Pin             Reference Pin  Required(ns)  Actual(ns)  Slack(ns)  Location       Pin
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB36_X2Y18   design_1_i/hopfield_vitis_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB36_X2Y18   design_1_i/hopfield_vitis_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB36_X2Y19   design_1_i/hopfield_vitis_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB36_X2Y19   design_1_i/hopfield_vitis_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB36_X2Y17   design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB36_X2Y17   design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[0].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/CLKBWRCLK
+Min Period        n/a     RAMB36E1/CLKARDCLK  n/a            2.576         10.000      7.424      RAMB36_X2Y16   design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/CLKARDCLK
+Min Period        n/a     RAMB36E1/CLKBWRCLK  n/a            2.576         10.000      7.424      RAMB36_X2Y16   design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/prim_noinit.ram/DEVICE_7SERIES.WITH_BMM_INFO.TRUE_DP.SIMPLE_PRIM36.TDP_SP36_NO_ECC_ATTR.ram/CLKBWRCLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.545         10.000      7.455      DSP48_X2Y37    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fmcud_U2/hopfield_vitis_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/CLK
+Min Period        n/a     DSP48E1/CLK         n/a            2.545         10.000      7.455      DSP48_X3Y42    design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fabkb_U1/hopfield_vitis_ap_fadd_3_full_dsp_32_u/U0/i_synth/ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.ALIGN_ADD/DSP2/DSP/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X46Y82   design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[3]_srl3/CLK
+Low Pulse Width   Fast    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X38Y78   design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][11]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X38Y78   design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][12]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X38Y78   design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][6]_srl32/CLK
+Low Pulse Width   Fast    SRLC32E/CLK         n/a            0.980         5.000       4.020      SLICE_X38Y78   design_1_i/ps7_0_axi_periph/m00_couplers/auto_pc/inst/gen_axilite.gen_b2s_conv.axilite_b2s/RD.r_channel_0/transaction_fifo_0/memory_reg[31][8]_srl32/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X50Y107  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/FLOW_DEC_DEL/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]_srl10/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X54Y106  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/STATE_UP_DELAY/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][0]_srl10/CLK
+Low Pulse Width   Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X54Y106  design_1_i/hopfield_vitis_0/inst/hopfield_vitis_fddEe_U3/hopfield_vitis_ap_fdiv_14_no_dsp_32_u/U0/i_synth/DIV_OP.SPD.OP/EXP/STATE_UP_DELAY/i_pipe/opt_has_pipe.i_pipe[11].pipe_reg[11][1]_srl10/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X46Y94   design_1_i/hopfield_vitis_0_bram/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/SAFETY_CKT_GEN.RSTA_SHFT_REG_reg[3]_srl3/CLK
+Low Pulse Width   Fast    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X46Y82   design_1_i/hopfield_vitis_0_bram_0/U0/inst_blk_mem_gen/gnbram.gnative_mem_map_bmg.native_mem_map_blk_mem_gen/valid.cstr/ramloop[1].ram.r/SAFETY_CKT_GEN.RSTB_SHFT_REG_reg[3]_srl3/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X34Y93   design_1_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/FIFO_RAM[0].SRL16E_I/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X32Y93   design_1_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/FIFO_RAM[10].SRL16E_I/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X32Y93   design_1_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/FIFO_RAM[11].SRL16E_I/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X34Y93   design_1_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/FIFO_RAM[1].SRL16E_I/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X34Y93   design_1_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/FIFO_RAM[2].SRL16E_I/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X34Y93   design_1_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/FIFO_RAM[3].SRL16E_I/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X34Y93   design_1_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/FIFO_RAM[4].SRL16E_I/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X34Y93   design_1_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/FIFO_RAM[5].SRL16E_I/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X34Y93   design_1_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/FIFO_RAM[6].SRL16E_I/CLK
+High Pulse Width  Slow    SRL16E/CLK          n/a            0.980         5.000       4.020      SLICE_X34Y93   design_1_i/axi_bram_ctrl_0/U0/gext_inst.abcv4_0_ext_inst/GEN_AXI4.I_FULL_AXI/I_WR_CHNL/BID_FIFO/FIFO_RAM[7].SRL16E_I/CLK
+
+
+
