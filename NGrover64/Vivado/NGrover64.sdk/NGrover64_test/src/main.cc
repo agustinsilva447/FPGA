@@ -9,7 +9,7 @@
 #include "AxiTimerHelper.h"
 
 #define PI 3.1416
-#define L 64   // tamaño del vector
+#define L 64   // tamaï¿½o del vector
 
 float *E1HW = (float*)0x40000000;
 float *BHW = (float*)0x42000000;
@@ -152,8 +152,8 @@ int main()
 			//printf("El numero buscado es el %f, en la posicion %d, con probabilidad %f\n\n", E1HW[i],i,XHW*XHW);
 		}
 	}
-	//printf("\nGrover Software tardó: %f segundos\n", myTimerSW.getElapsedTimerInSeconds());
-	//printf("Grover Hardware tardó: %f segundos\n", myTimerHW.getElapsedTimerInSeconds());
+	//printf("\nGrover Software tardï¿½: %f segundos\n", myTimerSW.getElapsedTimerInSeconds());
+	//printf("Grover Hardware tardï¿½: %f segundos\n", myTimerHW.getElapsedTimerInSeconds());
 
 	printf("%d\n",iM);
 	for (i=1;i<L;i++)

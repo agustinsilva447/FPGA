@@ -8,6 +8,12 @@
 #include <time.h>
 #include <xparameters.h>
 
+#define N1 8    //Cantidad de nodos
+
+float *V_hw = (float*)0x40000000;
+float *U_1_hw = (float*)0x42000000;
+
+
 void hopfield_vitis(float V[N1 * N1], float U_1[N1 * N1], float l)
 {
     for(int x = 0; x < N1; x++)
@@ -141,7 +147,7 @@ float energy(int u1, int u2, int u3, int u4, int u5, float C_xi[N1 * N1], float 
 				E_4 += (u4/2) * V[x * N1 + i] * (1 - V[x * N1 + i]);
 			}
 		}
-		E_3 += pow(E_3_1 - E_3_2, 2);
+		E_3 += powf(E_3_1 - E_3_2, 2);
 	}
 	E_5 = (u5 / 2) * (1 - V[destin * N1 + source]);
 
@@ -175,15 +181,17 @@ float u32_to_float(unsigned int val)
 
 int main()
 {
-	XTime tStart;
-	XTime tEnd;
+	XTime tStart_sw;
+	XTime tEnd_sw;
+	XTime tStart_hw;
+	XTime tEnd_hw;
 
-	int it_max = 50, source = 0, destin = 1, flag = 1, it = 0, x, i;
+	int it_max = 50, source = 0, destin = 1, flag, it, x, i;
 	int u1 = 950, u2 = 2500, u3 = 1500, u4 = 475, u5 = 2500;
-	float A = 0.0057, B = 0.0072, C = 0.0064, l = 6, E_aux, E_i = 10000;
+	float A = 0.0057, B = 0.0072, C = 0.0064, l = 6, E_aux, E_i_sw = 10000, E_i_hw = 10000, time_sw, time_hw;
 	int rho[N1 * N1];
-	float T[N1 * N1 * N1 * N1], I[N1 * N1], V[N1 * N1];
-	float U_0[N1 * N1]  = { 0, 0, 0, 0, 0, 0, 0, 0,
+	float T[N1 * N1 * N1 * N1], I[N1 * N1], V_sw[N1 * N1], V_hw[N1 * N1];
+	float U_0_sw[N1 * N1]  = { 0, 0, 0, 0, 0, 0, 0, 0,
 							0, 0, 0, 0, 0, 0, 0, 0,
 							0, 0, 0, 0, 0, 0, 0, 0,
 							0, 0, 0, 0, 0, 0, 0, 0,
@@ -191,7 +199,7 @@ int main()
 							0, 0, 0, 0, 0, 0, 0, 0,
 							0, 0, 0, 0, 0, 0, 0, 0,
 							0, 0, 0, 0, 0, 0, 0, 0};
-	float U_1[N1 * N1]  = { 0, 0, 0, 0, 0, 0, 0, 0,
+	float U_1_sw[N1 * N1]  = { 0, 0, 0, 0, 0, 0, 0, 0,
 							0, 0, 0, 0, 0, 0, 0, 0,
 							0, 0, 0, 0, 0, 0, 0, 0,
 							0, 0, 0, 0, 0, 0, 0, 0,
@@ -199,7 +207,31 @@ int main()
 							0, 0, 0, 0, 0, 0, 0, 0,
 							0, 0, 0, 0, 0, 0, 0, 0,
 							0, 0, 0, 0, 0, 0, 0, 0};
-	float U_2[N1 * N1]  = { 0, 0, 0, 0, 0, 0, 0, 0,
+	float U_2_sw[N1 * N1]  = { 0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0};
+	float U_0_hw[N1 * N1]  = { 0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0};
+	float U_1_hw[N1 * N1]  = { 0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0,
+							0, 0, 0, 0, 0, 0, 0, 0};
+	float U_2_hw[N1 * N1]  = { 0, 0, 0, 0, 0, 0, 0, 0,
 							0, 0, 0, 0, 0, 0, 0, 0,
 							0, 0, 0, 0, 0, 0, 0, 0,
 							0, 0, 0, 0, 0, 0, 0, 0,
@@ -231,9 +263,55 @@ int main()
 	txiyj(u3, u4, T);
 	ixi(u1, u2, u4, u5, C_xi, rho, source, destin, I);
 
+	printf("\nSOFTWARE HOPFIELD NEURAL NETWORK FOR THE SHORTEST PATH PROBLEM: \n");
+	flag = 1; it = 0;
+	XTime_GetTime(&tStart_sw);
+	while((flag) && (it < it_max))
+	{
+		hopfield_vitis(V_sw, U_1_sw, l);
+		hopfield_vitis_2(V_sw, U_0_sw, U_1_sw, U_2_sw, I, T, A, B, C);
+		E_aux = energy(u1, u2, u3, u4, u5, C_xi, V_sw, rho, source, destin);
+		if (E_i_sw == E_aux)
+		{
+			flag = 0;
+		}
+		E_i_sw = E_aux;
+		printf("\nIteración %d: Energía = %f. ", it, E_i_sw);
+		for(x = 0; x < N1; x++)
+		{
+			for(i = 0; i < N1; i++)
+			{
+				U_2_sw[x * N1 + i] = U_1_sw[x * N1 + i];
+				U_1_sw[x * N1 + i] = U_0_sw[x * N1 + i];
+				U_0_sw[x * N1 + i] = 0;
+			}
+		}
+		it += 1;
+	}
+	XTime_GetTime(&tEnd_sw);
+
+	printf("\nV_sw = \n");
+	for(x = 0; x < N1; x++)
+	{
+		printf("[");
+		for(i = 0; i < N1; i++)
+		{
+			if (V_sw[x * N1 + i] > 0.5)
+			{
+				V_sw[x * N1 + i] = 1;
+			} else {
+				V_sw[x * N1 + i] = 0;
+			}
+			printf("%f, ", (float) V_sw[x * N1 + i]);
+		}
+		printf("]\n");
+	}
+
+	printf("\nHARDWARE HOPFIELD NEURAL NETWORK FOR THE SHORTEST PATH PROBLEM: \n");
+
 	int status;
 	XHopfield_vitis goHopfield_vitis;
-	XHopfield_vitis_Config *goGrecia_cfg;
+	XHopfield_vitis_Config *goHopfield_vitis_cfg;
 
 	goHopfield_vitis_cfg = XHopfield_vitis_LookupConfig(XPAR_HOPFIELD_VITIS_0_DEVICE_ID);
 	if (!goHopfield_vitis_cfg){
@@ -242,7 +320,7 @@ int main()
 		printf("Hopfield_vitis configurado correctamente.\n");
 	}
 
-	status = XHopfield_vitis_CfgInitialize(&goHopfield_vitis, &goHopfield_vitis_cfg);
+	status = XHopfield_vitis_CfgInitialize(&goHopfield_vitis, goHopfield_vitis_cfg);
 	if (status != XST_SUCCESS){
 		printf("Error inicializando goHopfield_vitis.\n");
 	} else {
@@ -252,48 +330,56 @@ int main()
 	XHopfield_vitis_Initialize(&goHopfield_vitis, XPAR_HOPFIELD_VITIS_0_DEVICE_ID);
 	printf("\n");
 
-	//// FALTA LO MÁS IMPORTANTE: IMPLEMENTAR EL ALGORITMO EN LA FPGA ADENTRO DEL WHILE
-
-	while((flag) and (it < it_max))
+	XHopfield_vitis_Set_l(&goHopfield_vitis, float_to_u32(l));
+	flag = 1; it = 0;
+	XTime_GetTime(&tStart_hw);
+	while((flag) && (it < it_max))
 	{
-		hopfield_vitis(V, U_1, l);
-		hopfield_vitis_2(V, U_0, U_1, U_2, I, T, A, B, C);
-		E_aux = energy(u1, u2, u3, u4, u5, C_xi, V, rho, source, destin);
-		if (E_i == E_aux)
+		XHopfield_vitis_Start(&goHopfield_vitis);
+		while(!XHopfield_vitis_IsDone(&goHopfield_vitis));
+
+		hopfield_vitis_2(V_hw, U_0_hw, U_1_hw, U_2_hw, I, T, A, B, C);
+		E_aux = energy(u1, u2, u3, u4, u5, C_xi, V_hw, rho, source, destin);
+		if (E_i_hw == E_aux)
 		{
 			flag = 0;
 		}
-		E_i = E_aux;
-		printf("\nIteración %d: Energía = %f. ", it, E_i);
+		E_i_hw = E_aux;
+		printf("\nIteración %d: Energía = %f. ", it, E_i_hw);
 		for(x = 0; x < N1; x++)
 		{
 			for(i = 0; i < N1; i++)
 			{
-				U_2[x * N1 + i] = U_1[x * N1 + i];
-				U_1[x * N1 + i] = U_0[x * N1 + i];
-				U_0[x * N1 + i] = 0;
+				U_2_hw[x * N1 + i] = U_1_hw[x * N1 + i];
+				U_1_hw[x * N1 + i] = U_0_hw[x * N1 + i];
+				U_0_hw[x * N1 + i] = 0;
 			}
 		}
 		it += 1;
 	}
+	XTime_GetTime(&tEnd_hw);
 
-	printf("\nV = \n");
+	printf("\nV_hw = \n");
 	for(x = 0; x < N1; x++)
 	{
 		printf("[");
 		for(i = 0; i < N1; i++)
 		{
-			if (V[x * N1 + i] > 0.5)
+			if (V_hw[x * N1 + i] > 0.5)
 			{
-				V[x * N1 + i] = 1;
+				V_hw[x * N1 + i] = 1;
 			} else {
-				V[x * N1 + i] = 0;
+				V_hw[x * N1 + i] = 0;
 			}
-			printf("%f, ", (float) V[x * N1 + i]);
+			printf("%f, ", (float) V_hw[x * N1 + i]);
 		}
 		printf("]\n");
 	}
 
+	time_sw = (float)((tEnd_sw - tStart_sw));
+	printf("El tiempo que le llevó al Software implementar la HNN para resolver el SPP es %f", time_sw);
+	time_hw = (float)((tEnd_hw - tStart_hw));
+	printf("El tiempo que le llevó al Software implementar la HNN para resolver el SPP es %f", time_hw);
 	return 0;
 }
 
