@@ -31,22 +31,24 @@ def dijkstra_sp(net, paquetes, C_xi_shape):
     return source, destin, paths, tiempo_prom
 
 desde = 250
-hasta = 2000
-print("Total de iteraciones: {}.".format((hasta/desde)))
+hasta = 5000
+print("Total de iteraciones: {}.".format(int(hasta/desde)-1))
 n1_list = np.arange(desde, hasta, desde)    # cantidad de nodos
 n2 = 1                                      # distancia máxima
 p = 0.5                                     # probabilidad de cerrar camino
 temp = np.zeros(n1_list.shape)
-paquetes = 5
-iteraciones = 50
+paquetes = 1
+iteraciones = 25
 
 
 for t, n1 in tqdm(enumerate(n1_list)):
+    print("\n\nCálculo de tiempo del Shortest Path para {} nodos.".format(n1))
     for it in tqdm(range(iteraciones)):
         C_xi = generar_mapa(n1, n2, p)
         net = nx.from_numpy_matrix(C_xi)
         source, destin, paths, tiempo = dijkstra_sp(net, paquetes, C_xi.shape[0])
         temp[t] += tiempo
+    print("\nTotal de iteraciones: {}/{}.".format(t+1, int(hasta/desde)-1))
 
 #print(np.round(C_xi, 3))
 print("Origines: {}".format(source))
