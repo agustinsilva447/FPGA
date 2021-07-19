@@ -1,0 +1,221 @@
+1 nodos (con unroll) ->     Latency (cycles)    min: 0
+                                                max: 0
+                            DSP48E              0/220 (0)
+                            FF                  0/106400 (0)
+                            LUT                 0/53200 (0)
+
+2 nodos (con unroll) ->     Latency (cycles)    min: 37
+                                                max: 37
+                            DSP48E              12/220 (5)
+                            FF                  1786/106400 (1)
+                            LUT                 3113/53200 (5)                            
+
+3 nodos (con unroll) ->     Latency (cycles)    min: 41
+                                                max: 41
+                            DSP48E              12/220 (5)
+                            FF                  2142/106400 (2)
+                            LUT                 3391/53200 (6)
+
+4 nodos (con unroll) ->     Latency (cycles)    min: 47
+                                                max: 47 
+                            DSP48E              12/220 (5)
+                            FF                  2436/106400 (2)
+                            LUT                 3714/53200 (6)                 
+
+5 nodos (con unroll) ->     Latency (cycles)    min: 55
+                                                max: 55
+                            DSP48E              12/220 (5)
+                            FF                  2572/106400 (2)
+                            LUT                 4165/53200 (7)                  
+
+6 nodos (con unroll) ->     Latency (cycles)    min: 65 
+                                                max: 65 
+                            DSP48E              12/220 (5)
+                            FF                  2582/106400 (2)
+                            LUT                 4675/53200 (8)                      
+
+7 nodos (con unroll) ->     Latency (cycles)    min: 77 
+                                                max: 77 
+                            DSP48E              12/220 (5)
+                            FF                  2594/106400 (2)
+                            LUT                 5267/53200 (9)                 
+
+8 nodos (sin unroll) ->     Latency (cycles)    min: 145 
+                                                max: 2385 
+                            DSP48E              12/220 (5)
+                            FF                  1691/106400 (1)
+                            LUT                 3087/53200 (5)
+
+8 nodos (con unroll) ->     Latency (cycles)    min: 91 
+                                                max: 91
+                            DSP48E              12/220 (5)
+                            FF                  2608/106400 (2)
+                            LUT                 5973/53200 (11)
+
+9 nodos (con unroll) ->     Latency (cycles)    min: 107
+                                                max: 107
+                            DSP48E              12/220 (2)
+                            FF                  2624/106400 (2)
+                            LUT                 6801/53200 (12)
+
+10 nodos (con unroll) ->    Latency (cycles)    min: 125 
+                                                max: 125 
+                            DSP48E              12/220 (5)
+                            FF                  2642/106400 (2)
+                            LUT                 7688/53200 (14) 
+
+11 nodos (con unroll) ->    Latency (cycles)    min: 145
+                                                max: 145
+                            DSP48E              12/220 (5)
+                            FF                  2694/106400 (2)
+                            LUT                 8741/53200 (16)
+
+12 nodos (con unroll) ->    Latency (cycles)    min: 167 
+                                                max: 167 
+                            DSP48E              12/220 (5)
+                            FF                  2716/106400 (2)
+                            LUT                 9879/53200 (18)  
+
+13 nodos (con unroll) ->    Latency (cycles)    min: 191
+                                                max: 191
+                            DSP48E              12/220 (5)
+                            FF                  2740/106400 (2)
+                            LUT                 11059/53200 (20)  
+
+14 nodos (con unroll) ->    Latency (cycles)    min: 217 
+                                                max: 217 
+                            DSP48E              12/220 (5)
+                            FF                  2798/106400 (2)
+                            LUT                 12343/53200 (23) 
+
+15 nodos (con unroll) ->    Latency (cycles)    min: 245 
+                                                max: 245 
+                            DSP48E              12/220 (5)
+                            FF                  2826/106400 (2)
+                            LUT                 13719/53200 (25)
+
+16 nodos (con unroll) ->    Latency (cycles)    min: 275
+                                                max: 275
+                            DSP48E              12/220 (5)
+                            FF                  2856/106400 (2)
+                            LUT                 15353/53200 (28)  
+
+17 nodos (con unroll) ->    Latency (cycles)    min: 307
+                                                max: 
+                            DSP48E              12/220 (5)
+                            FF                  2920/106400 (2)
+                            LUT                 17091/53200 (32)
+
+18 nodos (con unroll) ->    Latency (cycles)    min: 341
+                                                max: 341
+                            DSP48E              12/220 (5)
+                            FF                  2954/106400 (2)
+                            LUT                 18761/53200 (35)
+
+19 nodos (con unroll) ->    Latency (cycles)    min: 377
+                                                max: 377
+                            DSP48E              12/220 (5)
+                            FF                  2990/106400 (2)
+                            LUT                 20529/53200 (38) 
+
+20 nodos (con unroll) ->    Latency (cycles)    min: 415 
+                                                max: 415
+                            DSP48E              12/220 (5)
+                            FF                  3060/106400 (2)
+                            LUT                 22400/53200 (42)    
+
+21 nodos (con unroll) ->    Latency (cycles)    min: 455
+                                                max: 455
+                            DSP48E              12/220 (5)
+                            FF                  3100/106400 (2)
+                            LUT                 24364/53200 (45)         
+
+22 nodos (con unroll) ->    Latency (cycles)    min: 497
+                                                max: 497
+                            DSP48E              12/220 (5)
+                            FF                  3174/106400 (2)
+                            LUT                 26429/53200 (49)         
+
+23 nodos (con unroll) ->    Latency (cycles)    min: 541
+                                                max: 541 
+                            DSP48E              12/220 (5)
+                            FF                  3218/106400 (3)
+                            LUT                 28393/53200 (53)         
+
+24 nodos (con unroll) ->    Latency (cycles)    min: 587
+                                                max: 587
+                            DSP48E              12/220 (5)
+                            FF                  3296/106400 (3)
+                            LUT                 29954/53200 (56)         
+
+25 nodos (con unroll) ->    Latency (cycles)    min: 635 
+                                                max: 635 
+                            DSP48E              12/220 (5)
+                            FF                  3344/106400 (3)
+                            LUT                 31538/53200 (59)         
+
+26 nodos (con unroll) ->    Latency (cycles)    min: 685
+                                                max: 685
+                            DSP48E              12/220 (5)
+                            FF                  3426/106400 (3)
+                            LUT                 33191/53200 (62)         
+
+27 nodos (con unroll) ->    Latency (cycles)    min: 737
+                                                max: 737
+                            DSP48E              12/220 (5)
+                            FF                  3478/106400 (3)
+                            LUT                 34907/53200 (65)         
+
+28 nodos (con unroll) ->    Latency (cycles)    min: 791
+                                                max: 791
+                            DSP48E              12/220 (5)
+                            FF                  3564/106400 (3)
+                            LUT                 36692/53200 (68)         
+
+29 nodos (con unroll) ->    Latency (cycles)    min: 847
+                                                max: 847
+                            DSP48E              12/220 (5)
+                            FF                  3620/106400 (3)
+                            LUT                 38540/53200 (72)         
+
+30 nodos (con unroll) ->    Latency (cycles)    min: 905
+                                                max: 905
+                            DSP48E              12/220 (5)
+                            FF                  3710/106400 (3)
+                            LUT                 40457/53200 (76)         
+
+31 nodos (con unroll) ->    Latency (cycles)    min: 965
+                                                max: 965
+                            DSP48E              12/220 (5)
+                            FF                  3802/106400 (3)
+                            LUT                 42440/53200 (79)         
+
+32 nodos (con unroll) ->    Latency (cycles)    min: 1027
+                                                max: 1027
+                            DSP48E              12/220 (5)
+                            FF                  3864/106400 (3)
+                            LUT                 44486/53200 (83)         
+
+33 nodos (con unroll) ->    Latency (cycles)    min: 1091 
+                                                max: 1091
+                            DSP48E              12/220 (5)
+                            FF                  3960/106400 (3)
+                            LUT                 46601/53200 (87)         
+
+34 nodos (con unroll) ->    Latency (cycles)    min: 1157
+                                                max: 1157
+                            DSP48E              12/220 (5)
+                            FF                  4058/106400 (3)
+                            LUT                 48782/53200 (91)         
+
+35 nodos (con unroll) ->    Latency (cycles)    min: 1225
+                                                max: 1225
+                            DSP48E              12/220 (5)
+                            FF                  4158/106400 (3)
+                            LUT                 51029/53200 (95)         
+
+36 nodos (con unroll) ->    Latency (cycles)    min: 1295
+                                                max: 1295
+                            DSP48E              12/220 (5)
+                            FF                  4228/106400 (3)
+                            LUT                 53339/53200 (100)
