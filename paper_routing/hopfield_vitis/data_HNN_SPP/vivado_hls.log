@@ -1,0 +1,123 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'aguss' on host 'desktop-ucl1psp' (Windows NT_amd64 version 6.2) on Mon Jul 19 19:33:25 -0300 2021
+INFO: [HLS 200-10] In directory 'C:/Users/aguss/Desktop/data_HNN_SPP'
+Sourcing Tcl script 'C:/Users/aguss/Desktop/data_HNN_SPP/data_HNN_SPP/solution1/csynth.tcl'
+INFO: [HLS 200-10] Opening project 'C:/Users/aguss/Desktop/data_HNN_SPP/data_HNN_SPP'.
+INFO: [HLS 200-10] Adding design file 'data_HNN_SPP/data_HNN_SPP.cpp' to the project
+INFO: [HLS 200-10] Adding test bench file 'data_HNN_SPP/data_HNN_SPP_tb.cpp' to the project
+INFO: [HLS 200-10] Opening solution 'C:/Users/aguss/Desktop/data_HNN_SPP/data_HNN_SPP/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'data_HNN_SPP/data_HNN_SPP.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:43 . Memory (MB): peak = 194.797 ; gain = 105.617
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:43 . Memory (MB): peak = 194.797 ; gain = 105.617
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:05 ; elapsed = 00:00:46 . Memory (MB): peak = 216.465 ; gain = 127.285
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'exp_reduce_::exp' into 'hls::expf' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::expf' into 'data_HNN_SPP' (data_HNN_SPP/data_HNN_SPP.cpp:27) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:06 ; elapsed = 00:00:46 . Memory (MB): peak = 233.805 ; gain = 144.625
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (data_HNN_SPP/data_HNN_SPP.cpp:17) in function 'data_HNN_SPP' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (data_HNN_SPP/data_HNN_SPP.cpp:20) in function 'data_HNN_SPP' completely with a factor of 8.
+INFO: [XFORM 203-602] Inlining function 'exp_reduce_::exp' into 'hls::expf' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c++/expfloat.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function 'hls::expf' into 'data_HNN_SPP' (data_HNN_SPP/data_HNN_SPP.cpp:27) automatically.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:47 . Memory (MB): peak = 284.418 ; gain = 195.238
+INFO: [HLS 200-472] Inferring partial write operation for 'V' (data_HNN_SPP/data_HNN_SPP.cpp:25:17)
+INFO: [HLS 200-472] Inferring partial write operation for 'V' (data_HNN_SPP/data_HNN_SPP.cpp:27:41)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INTERNAL-INFO: never seen llvm instruction 'fexp'(507)
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:07 ; elapsed = 00:00:48 . Memory (MB): peak = 285.422 ; gain = 196.242
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'data_HNN_SPP' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'data_HNN_SPP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 49.758 seconds; current allocated memory: 223.242 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 3.702 seconds; current allocated memory: 226.950 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'data_HNN_SPP' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'data_HNN_SPP/V' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'data_HNN_SPP/U_1' to 'bram'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'data_HNN_SPP/l' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'data_HNN_SPP' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return' and 'l' to AXI-Lite port CRTL_BUS.
+INFO: [SYN 201-210] Renamed object name 'data_HNN_SPP_fadd_32ns_32ns_32_5_full_dsp_1' to 'data_HNN_SPP_faddbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'data_HNN_SPP_fmul_32ns_32ns_32_4_max_dsp_1' to 'data_HNN_SPP_fmulcud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'data_HNN_SPP_fdiv_32ns_32ns_32_16_1' to 'data_HNN_SPP_fdivdEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'data_HNN_SPP_fexp_32ns_32ns_32_9_full_dsp_1' to 'data_HNN_SPP_fexpeOg' due to the length limit 20
+WARNING: [RTGEN 206-101] Setting dangling out port 'data_HNN_SPP/U_1_WEN_A' to 0.
+WARNING: [RTGEN 206-101] Setting dangling out port 'data_HNN_SPP/U_1_Din_A' to 0.
+INFO: [RTGEN 206-100] Generating core module 'data_HNN_SPP_faddbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'data_HNN_SPP_fdivdEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'data_HNN_SPP_fexpeOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'data_HNN_SPP_fmulcud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'data_HNN_SPP'.
+INFO: [HLS 200-111]  Elapsed time: 5.369 seconds; current allocated memory: 230.934 MB.
+INFO: [HLS 200-789] **** Estimated Fmax: 118.46 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:23 ; elapsed = 00:01:08 . Memory (MB): peak = 310.293 ; gain = 221.113
+INFO: [VHDL 208-304] Generating VHDL RTL for data_HNN_SPP.
+INFO: [VLOG 209-307] Generating Verilog RTL for data_HNN_SPP.
+INFO: [HLS 200-112] Total elapsed time: 68.227 seconds; peak allocated memory: 230.934 MB.
