@@ -1,0 +1,151 @@
+3 nodos (con unroll) ->     Latency (cycles)    min: 41
+                                                max: 41
+                            BRAM_18K            0/280 (0)
+                            DSP48E              12/220 (5)
+                            FF                  2142/106400 (2)
+                            LUT                 3391/53200 (6)
+                            URAM                0/0 (?)
+
+4 nodos (con unroll) ->     Latency (cycles)    min: 47
+                                                max: 47 
+                            BRAM_18K            0/280 (0)
+                            DSP48E              12/220 (5)
+                            FF                  2436/106400 (2)
+                            LUT                 3714/53200 (6)
+                            URAM                0/0 (?)                            
+
+5 nodos (con unroll) ->     Latency (cycles)    min: 55
+                                                max: 55
+                            BRAM_18K            0/280 (0)
+                            DSP48E              12/220 (5)
+                            FF                  2572/106400 (2)
+                            LUT                 4165/53200 (7)
+                            URAM                0/0 (?)                            
+
+6 nodos (con unroll) ->     Latency (cycles)    min: 65 
+                                                max: 65 
+                            BRAM_18K            0/280 (0)
+                            DSP48E              12/220 (5)
+                            FF                  2582/106400 (2)
+                            LUT                 4675/53200 (8)
+                            URAM                0/0 (?)                                
+
+7 nodos (con unroll) ->     Latency (cycles)    min: 77 
+                                                max: 77 
+                            BRAM_18K            0/280 (0)
+                            DSP48E              12/220 (5)
+                            FF                  2594/106400 (2)
+                            LUT                 5267/53200 (9)
+                            URAM                0/0 (?)                                
+
+8 nodos (sin unroll) ->     Latency (cycles)    min: 145 
+                                                max: 2385 
+                            BRAM_18K            0/280 (0)
+                            DSP48E              12/220 (5)
+                            FF                  1691/106400 (1)
+                            LUT                 3087/53200 (5)
+                            URAM                0/0 (?)
+
+8 nodos (con unroll) ->     Latency (cycles)    min: 91 
+                                                max: 91
+                            BRAM_18K            0/280 (0)
+                            DSP48E              12/220 (5)
+                            FF                  2608/106400 (2)
+                            LUT                 5973/53200 (11)
+                            URAM                0/0 (?)    
+
+9 nodos (con unroll) ->     Latency (cycles)    min: 107
+                                                max: 107
+                            BRAM_18K            0/280 (5)
+                            DSP48E              12/220 (2)
+                            FF                  2624/106400 (2)
+                            LUT                 6801/53200 (12)
+                            URAM                0/0 (?)       
+
+10 nodos (con unroll) ->    Latency (cycles)    min: 
+                                                max: 
+                            BRAM_18K            /280 ()
+                            DSP48E              /220 ()
+                            FF                  /106400 ()
+                            LUT                 /53200 ()
+                            URAM                0/0 (?)     
+
+11 nodos (con unroll) ->    Latency (cycles)    min: 
+                                                max: 
+                            BRAM_18K            /280 ()
+                            DSP48E              /220 ()
+                            FF                  /106400 ()
+                            LUT                 /53200 ()
+                            URAM                0/0 (?)     
+
+12 nodos (con unroll) ->    Latency (cycles)    min: 
+                                                max: 
+                            BRAM_18K            /280 ()
+                            DSP48E              /220 ()
+                            FF                  /106400 ()
+                            LUT                 /53200 ()
+                            URAM                0/0 (?)     
+
+13 nodos (con unroll) ->    Latency (cycles)    min: 
+                                                max: 
+                            BRAM_18K            /280 ()
+                            DSP48E              /220 ()
+                            FF                  /106400 ()
+                            LUT                 /53200 ()
+                            URAM                0/0 (?)     
+
+14 nodos (con unroll) ->    Latency (cycles)    min: 
+                                                max: 
+                            BRAM_18K            /280 ()
+                            DSP48E              /220 ()
+                            FF                  /106400 ()
+                            LUT                 /53200 ()
+                            URAM                0/0 (?)     
+
+15 nodos (con unroll) ->    Latency (cycles)    min: 
+                                                max: 
+                            BRAM_18K            /280 ()
+                            DSP48E              /220 ()
+                            FF                  /106400 ()
+                            LUT                 /53200 ()
+                            URAM                0/0 (?)     
+
+16 nodos (con unroll) ->    Latency (cycles)    min: 
+                                                max: 
+                            BRAM_18K            /280 ()
+                            DSP48E              /220 ()
+                            FF                  /106400 ()
+                            LUT                 /53200 ()
+                            URAM                0/0 (?)     
+
+17 nodos (con unroll) ->    Latency (cycles)    min: 
+                                                max: 
+                            BRAM_18K            /280 ()
+                            DSP48E              /220 ()
+                            FF                  /106400 ()
+                            LUT                 /53200 ()
+                            URAM                0/0 (?)     
+
+18 nodos (con unroll) ->    Latency (cycles)    min: 
+                                                max: 
+                            BRAM_18K            /280 ()
+                            DSP48E              /220 ()
+                            FF                  /106400 ()
+                            LUT                 /53200 ()
+                            URAM                0/0 (?)     
+
+19 nodos (con unroll) ->    Latency (cycles)    min: 
+                                                max: 
+                            BRAM_18K            /280 ()
+                            DSP48E              /220 ()
+                            FF                  /106400 ()
+                            LUT                 /53200 ()
+                            URAM                0/0 (?)     
+
+20 nodos (con unroll) ->    Latency (cycles)    min: 
+                                                max: 
+                            BRAM_18K            /280 ()
+                            DSP48E              /220 ()
+                            FF                  /106400 ()
+                            LUT                 /53200 ()
+                            URAM                0/0 (?)                            
