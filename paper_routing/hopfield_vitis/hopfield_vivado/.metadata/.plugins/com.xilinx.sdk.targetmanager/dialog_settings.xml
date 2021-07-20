@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<section name="Workbench">
+	<item value="false" key="hopfield_vitis-skip_rev_check"/>
+	<item value="false" key="hopfield_vitis-partial_bit"/>
+	<item value="_ide/bitstream/design_1_wrapper.mmi" key="hopfield_vitis-bmmFile"/>
+	<item value="hopfield_vitis" key="programfpga.sdxproject"/>
+	<item value="Local" key="hopfield_vitis-target"/>
+	<item value="_ide/bitstream/design_1_wrapper.bit" key="hopfield_vitis-bitFile"/>
+	<item value="Auto Detect" key="hopfield_vitis-device"/>
+</section>

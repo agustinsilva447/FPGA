@@ -6,3 +6,10 @@ timestamp=[2021-07-14 16:53:51], mode=WORKBENCH_UI_INIT, duration=0:00:05.095, d
 timestamp=[2021-07-15 16:31:45], mode=WORKBENCH_START, duration=0:01:13.122, duration_ms=73122, data={}
 timestamp=[2021-07-15 16:31:51], mode=WORKBENCH_UI_INIT, duration=0:00:05.859, duration_ms=5859, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,design_1_wrapper,hopfield_vitis,hopfield_vitis_system}
 timestamp=[2021-07-15 14:53:50], mode=PLATFORM_GENERATION, duration=0:03:06.834, duration_ms=186834, data={name=design_1_wrapper}
+timestamp=[2021-07-19 23:15:55], mode=WORKBENCH_START, duration=0:00:52.422, duration_ms=52422, data={}
+timestamp=[2021-07-19 23:16:02], mode=WORKBENCH_UI_INIT, duration=0:00:07.001, duration_ms=7001, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,design_1_wrapper,hopfield_vitis,hopfield_vitis_system}
+timestamp=[2021-07-20 03:36:31], mode=WORKBENCH_START, duration=0:00:38.116, duration_ms=38116, data={}
+timestamp=[2021-07-20 03:36:35], mode=WORKBENCH_UI_INIT, duration=0:00:04.310, duration_ms=4310, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,design_1_wrapper,hopfield_vitis,hopfield_vitis_system}
+timestamp=[2021-07-20 04:02:29], mode=WORKBENCH_START, duration=0:00:33.750, duration_ms=33750, data={}
+timestamp=[2021-07-20 04:02:34], mode=WORKBENCH_UI_INIT, duration=0:00:04.518, duration_ms=4518, data={editors_count=2, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,design_1_wrapper,hopfield_vitis,hopfield_vitis_system}
+timestamp=[2021-07-20 04:04:39], mode=PLATFORM_GENERATION, duration=0:01:44.384, duration_ms=104384, data={name=design_1_wrapper}

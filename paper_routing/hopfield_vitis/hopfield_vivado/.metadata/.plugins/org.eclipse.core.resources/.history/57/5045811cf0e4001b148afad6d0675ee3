@@ -1,7 +1,0 @@
-#include "xil_printf.h"
-#include "sleep.h"
-#include <stdio.h>
-#include <math.h>
-#include <xtime_l.h>
-#include <time.h>
-#include <xparameters.h>
