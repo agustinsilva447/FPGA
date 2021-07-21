@@ -7014,3 +7014,2393 @@ Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-17: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2021-07-20 05:06:04.814
 !MESSAGE XSCT command with result: [disconnect tcfchan#7], Result: [null, ]. Thread: Thread-417
+!SESSION 2021-07-21 01:45:30.954 -----------------------------------------------
+eclipse.buildId=2019.2
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=es_AR
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+!ENTRY org.eclipse.emf.ecore 2 0 2021-07-21 01:46:28.153
+!MESSAGE Both 'com.autoesl.autopilot.ui.models' and 'com.autoesl.autopilot.ui.models' register a package for 'com.autoesl.autopilot.solution'
+
+!ENTRY org.eclipse.ui 4 4 2021-07-21 01:46:52.099
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY org.eclipse.ui 4 4 2021-07-21 01:46:52.115
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:47:00.682
+!MESSAGE XSCT Command: [plnx-install-path  ; ::scw::scw_mode gui], Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:47:00.682
+!MESSAGE XSCT Command: [set sdk::sdk_chan tcfchan#0], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:47:00.713
+!MESSAGE XSCT command with result: [plnx-install-path  ; ::scw::scw_mode gui], Result: [null, ]. Thread: Thread-5
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:47:00.729
+!MESSAGE XSCT command with result: [set sdk::sdk_chan tcfchan#0], Result: [null, tcfchan#0]. Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:47:00.745
+!MESSAGE XSCT Command: [setws C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado], Thread: Thread-15
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:47:00.745
+!MESSAGE XSCT command with result: [setws C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado], Result: [null, ]. Thread: Thread-15
+
+!ENTRY org.eclipse.egit.ui 2 0 2021-07-21 01:47:05.479
+!MESSAGE Warning: The environment variable HOME is not set. The following directory will be used to store the Git
+user global configuration and to define the default location to store repositories: 'C:\Users\aguss'. If this is
+not correct please set the HOME environment variable and restart Eclipse. Otherwise Git for Windows and
+EGit might behave differently since they see different configuration options.
+This warning can be switched off on the Team > Git > Confirmations and Warnings preference page.
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:47:17.183
+!MESSAGE XSCT Command: [::hsi::utils::init_repo], Thread: Worker-6: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:47:21.097
+!MESSAGE XSCT command with result: [::hsi::utils::init_repo], Result: [null, ]. Thread: Worker-6: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:47:21.112
+!MESSAGE XSCT Command: [set query_var1 $::env(RDI_DATADIR)], Thread: Worker-6: Initializing s/w repositories
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:47:21.112
+!MESSAGE XSCT command with result: [set query_var1 $::env(RDI_DATADIR)], Result: [null, C:/Xilinx/Vitis/2019.2/data]. Thread: Worker-6: Initializing s/w repositories
+
+!ENTRY org.eclipse.ui 4 4 2021-07-21 01:47:45.090
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler@7e1d16b} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY org.eclipse.ui 2 2 2021-07-21 01:47:45.168
+!MESSAGE Invalid preference category path: com.xilinx.sdk.ui.preferences.page (bundle: com.xilinx.sdk.ui.customize, page: com.xilinx.sdk.ui.customize.sdkCustomizationPreferences)
+
+!ENTRY org.eclipse.ui 2 2 2021-07-21 01:47:45.168
+!MESSAGE Invalid preference category path: com.autoesl.autopilot.ui.startup.preferences.AutoPilotRootPreferencePage (bundle: com.autoesl.autopilot.ui.cdfg.diagram, page: com.autoesl.autopilot.ui.cdfg.diagram.general)
+
+!ENTRY org.eclipse.ui 4 4 2021-07-21 01:48:20.618
+!MESSAGE Conflicting handlers for com.xilinx.sdx.system.core.importSourcesCommand: {com.xilinx.sdx.system.core.handler.ImportSourcesHandler@7e1d16b} vs {com.xilinx.sdx.system.core.handler.ImportSourcesHandler}
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:48:20.712
+!MESSAGE XSCT Command: [::hsi::utils::openhw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:48:27.265
+!MESSAGE XSCT command with result: [::hsi::utils::openhw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, ]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:48:27.265
+!MESSAGE XSCT Command: [::hsi::utils::get_design_properties -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:48:27.280
+!MESSAGE XSCT command with result: [::hsi::utils::get_design_properties -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"device": "7z020",
+"family": "zynq",
+"timestamp": "Wed Jul 14 17:58:24 2021",
+"vivado_version": "2019.2",
+"part": "xc7z020clg484-1",
+}]. Thread: main
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:48:30.686
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:48:30.764
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:48:30.780
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:48:30.811
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-07-21 01:48:30.811
+!MESSAGE Generating MD5 hash for file: C:\Users\aguss\Desktop\Github\FPGA\paper_routing\hopfield_vitis\hopfield_vivado\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:48:30.858
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:48:30.858
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:48:45.125
+!MESSAGE XSCT Command: [::hsi::utils::get_all_periphs -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: Worker-5: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:48:45.250
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_periphs -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"axi_bram_ctrl_0": {"hier_name": "axi_bram_ctrl_0",
+"type": "axi_bram_ctrl",
+"version": "4.1",
+"ip_type": "MEMORY_CNTLR",
+},
+"axi_bram_ctrl_1": {"hier_name": "axi_bram_ctrl_1",
+"type": "axi_bram_ctrl",
+"version": "4.1",
+"ip_type": "MEMORY_CNTLR",
+},
+"hopfield_vitis_0": {"hier_name": "hopfield_vitis_0",
+"type": "hopfield_vitis",
+"version": "1.0",
+"ip_type": "PERIPHERAL",
+},
+"hopfield_vitis_0_bram": {"hier_name": "hopfield_vitis_0_bram",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"hopfield_vitis_0_bram_0": {"hier_name": "hopfield_vitis_0_bram_0",
+"type": "blk_mem_gen",
+"version": "8.4",
+"ip_type": "MEMORY",
+},
+"processing_system7_0": {"hier_name": "processing_system7_0",
+"type": "processing_system7",
+"version": "5.5",
+"ip_type": "",
+},
+"ps7_0_axi_periph": {"hier_name": "ps7_0_axi_periph",
+"type": "axi_interconnect",
+"version": "2.1",
+"ip_type": "BUS",
+},
+"rst_ps7_0_100M": {"hier_name": "rst_ps7_0_100M",
+"type": "proc_sys_reset",
+"version": "5.0",
+"ip_type": "PERIPHERAL",
+},
+"ps7_clockc_0": {"hier_name": "ps7_clockc_0",
+"type": "ps7_clockc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_uart_1": {"hier_name": "ps7_uart_1",
+"type": "ps7_uart",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pl310_0": {"hier_name": "ps7_pl310_0",
+"type": "ps7_pl310",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_pmu_0": {"hier_name": "ps7_pmu_0",
+"type": "ps7_pmu",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_0": {"hier_name": "ps7_qspi_0",
+"type": "ps7_qspi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_qspi_linear_0": {"hier_name": "ps7_qspi_linear_0",
+"type": "ps7_qspi_linear",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_axi_interconnect_0": {"hier_name": "ps7_axi_interconnect_0",
+"type": "ps7_axi_interconnect",
+"version": "1.00.a",
+"ip_type": "BUS",
+},
+"ps7_cortexa9_0": {"hier_name": "ps7_cortexa9_0",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_cortexa9_1": {"hier_name": "ps7_cortexa9_1",
+"type": "ps7_cortexa9",
+"version": "5.2",
+"ip_type": "PROCESSOR",
+},
+"ps7_ddr_0": {"hier_name": "ps7_ddr_0",
+"type": "ps7_ddr",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ethernet_0": {"hier_name": "ps7_ethernet_0",
+"type": "ps7_ethernet",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_usb_0": {"hier_name": "ps7_usb_0",
+"type": "ps7_usb",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_sd_0": {"hier_name": "ps7_sd_0",
+"type": "ps7_sdio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ttc_0": {"hier_name": "ps7_ttc_0",
+"type": "ps7_ttc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpio_0": {"hier_name": "ps7_gpio_0",
+"type": "ps7_gpio",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ddrc_0": {"hier_name": "ps7_ddrc_0",
+"type": "ps7_ddrc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dev_cfg_0": {"hier_name": "ps7_dev_cfg_0",
+"type": "ps7_dev_cfg",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_xadc_0": {"hier_name": "ps7_xadc_0",
+"type": "ps7_xadc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ocmc_0": {"hier_name": "ps7_ocmc_0",
+"type": "ps7_ocmc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_coresight_comp_0": {"hier_name": "ps7_coresight_comp_0",
+"type": "ps7_coresight_comp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_gpv_0": {"hier_name": "ps7_gpv_0",
+"type": "ps7_gpv",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuc_0": {"hier_name": "ps7_scuc_0",
+"type": "ps7_scuc",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_globaltimer_0": {"hier_name": "ps7_globaltimer_0",
+"type": "ps7_globaltimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_intc_dist_0": {"hier_name": "ps7_intc_dist_0",
+"type": "ps7_intc_dist",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_l2cachec_0": {"hier_name": "ps7_l2cachec_0",
+"type": "ps7_l2cachec",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_s": {"hier_name": "ps7_dma_s",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_iop_bus_config_0": {"hier_name": "ps7_iop_bus_config_0",
+"type": "ps7_iop_bus_config",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_ram_0": {"hier_name": "ps7_ram_0",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_ram_1": {"hier_name": "ps7_ram_1",
+"type": "ps7_ram",
+"version": "1.00.a",
+"ip_type": "MEMORY_CNTLR",
+},
+"ps7_scugic_0": {"hier_name": "ps7_scugic_0",
+"type": "ps7_scugic",
+"version": "1.00.a",
+"ip_type": "INTERRUPT_CNTLR",
+},
+"ps7_scutimer_0": {"hier_name": "ps7_scutimer_0",
+"type": "ps7_scutimer",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_scuwdt_0": {"hier_name": "ps7_scuwdt_0",
+"type": "ps7_scuwdt",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_slcr_0": {"hier_name": "ps7_slcr_0",
+"type": "ps7_slcr",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_dma_ns": {"hier_name": "ps7_dma_ns",
+"type": "ps7_dma",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_0": {"hier_name": "ps7_afi_0",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_1": {"hier_name": "ps7_afi_1",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_2": {"hier_name": "ps7_afi_2",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_afi_3": {"hier_name": "ps7_afi_3",
+"type": "ps7_afi",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+"ps7_m_axi_gp0": {"hier_name": "ps7_m_axi_gp0",
+"type": "ps7_m_axi_gp",
+"version": "1.00.a",
+"ip_type": "PERIPHERAL",
+},
+}]. Thread: Worker-5: Build Project
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-07-21 01:49:22.207
+!MESSAGE Enablement expression is missing for descriptor type org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-07-21 01:49:22.207
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY org.eclipse.launchbar.core 2 0 2021-07-21 01:49:22.223
+!MESSAGE Enablement expression is missing for config provider for org.eclipse.cdt.debug.core.coreBuildDescriptorType
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-07-21 01:49:24.473
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:27.426
+!MESSAGE XSCT Command: [::hsi::utils::get_ps_config_params -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:27.551
+!MESSAGE XSCT command with result: [::hsi::utils::get_ps_config_params -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"PCW_APU_PERIPHERAL_FREQMHZ": "666.666667",
+"PCW_DDR_HPRLPR_QUEUE_PARTITION": "HPR(0)/LPR(32)",
+"PCW_DDR_HPR_TO_CRITICAL_PRIORITY_LEVEL": "15",
+"PCW_DDR_LPR_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_DDR_PORT0_HPR_ENABLE": "0",
+"PCW_DDR_PORT1_HPR_ENABLE": "0",
+"PCW_DDR_PORT2_HPR_ENABLE": "0",
+"PCW_DDR_PORT3_HPR_ENABLE": "0",
+"PCW_DDR_WRITE_TO_CRITICAL_PRIORITY_LEVEL": "2",
+"PCW_FPGA0_PERIPHERAL_FREQMHZ": "100.000000",
+"PCW_UIPARAM_DDR_BUS_WIDTH": "32 Bit",
+"PCW_UIPARAM_DDR_FREQ_MHZ": "533.333313",
+}]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:27.551
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:29.848
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Result: [null, {"axi_bram_ctrl_0": {},
+"axi_bram_ctrl_1": {},
+"hopfield_vitis_0": {"CTRL": {"description": "Control signals",
+"address_offset": "0",
+"access": "read-write",
+"size": "32",
+"interface": "s_axi_CRTL_BUS",
+"fields": {"AP_START": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Control signal Register for 'ap_start'.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"AP_DONE": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Control signal Register for 'ap_done'.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+"AP_IDLE": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Control signal Register for 'ap_idle'.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+"AP_READY": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Control signal Register for 'ap_ready'.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+"RESERVED_1": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "3",
+"desc": "Reserved.  0s on read.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+"AUTO_RESTART": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Control signal Register for 'auto_restart'.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RESERVED_2": {"access": "read-only",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "24",
+"desc": "Reserved.  0s on read.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+},
+"memoryAddr": 0,
+},
+"GIER": {"description": "Global Interrupt Enable Register",
+"address_offset": "4",
+"access": "read-write",
+"size": "32",
+"interface": "s_axi_CRTL_BUS",
+"fields": {"Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RESERVED": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "31",
+"desc": "Reserved.  0s on read.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+},
+"memoryAddr": 4,
+},
+"IP_IER": {"description": "IP Interrupt Enable Register",
+"address_offset": "8",
+"access": "read-write",
+"size": "32",
+"interface": "s_axi_CRTL_BUS",
+"fields": {"CHAN0_INT_EN": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CHAN1_INT_EN": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RESERVED": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "30",
+"desc": "Reserved.  0s on read.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+},
+"memoryAddr": 8,
+},
+"IP_ISR": {"description": "IP Interrupt Status Register",
+"address_offset": "12",
+"access": "read-write",
+"size": "32",
+"interface": "s_axi_CRTL_BUS",
+"fields": {"CHAN0_INT_ST": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 input interrupt, 1 = Channel 0 input interrup",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+"CHAN1_INT_ST": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 input interrupt, 1 = Channel 1 input interrup",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+"RESERVED": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "30",
+"desc": "Reserved.  0s on read.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+},
+"memoryAddr": 12,
+},
+"l": {"description": "Data signal of l",
+"address_offset": "16",
+"access": "write-only",
+"size": "32",
+"interface": "s_axi_CRTL_BUS",
+"fields": {"l": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Bit 31 to 0 Data signal of l",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 16,
+},
+},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_ttc_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:29.863
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.035
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Result: [null, {"hopfield_vitis_0_s_axi_CRTL_BUS": {"name": "hopfield_vitis_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "s_axi_CRTL_BUS",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ttc_0": {"name": "ps7_ttc_0",
+"base": "0xF8001000",
+"high": "0xF8001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_bram_ctrl_0_S_AXI_Mem0": {"name": "axi_bram_ctrl_0",
+"base": "0x40000000",
+"high": "0x40001FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+"axi_bram_ctrl_1_S_AXI_Mem0": {"name": "axi_bram_ctrl_1",
+"base": "0x42000000",
+"high": "0x42001FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x1FFFFFFF",
+"size": "535822336",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.051
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.051
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.051
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.082
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.082
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.082
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.098
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.113
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.113
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_FREQ], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.160
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_FREQ], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.160
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.160
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.160
+!MESSAGE XSCT Command: [::hsi::utils::get_cpu_nr -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.176
+!MESSAGE XSCT command with result: [::hsi::utils::get_cpu_nr -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa], Result: [null, {"ps7_cortexa9_0": {"bscan": "",
+"index": "0",
+},
+"ps7_cortexa9_1": {"bscan": "",
+"index": "1",
+},
+}]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.191
+!MESSAGE XSCT Command: [::hsi::utils::get_all_register_data -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.254
+!MESSAGE XSCT command with result: [::hsi::utils::get_all_register_data -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1], Result: [null, {"axi_bram_ctrl_0": {},
+"axi_bram_ctrl_1": {},
+"hopfield_vitis_0": {"CTRL": {"description": "Control signals",
+"address_offset": "0",
+"access": "read-write",
+"size": "32",
+"interface": "s_axi_CRTL_BUS",
+"fields": {"AP_START": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Control signal Register for 'ap_start'.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"AP_DONE": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Control signal Register for 'ap_done'.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+"AP_IDLE": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Control signal Register for 'ap_idle'.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+"AP_READY": {"access": "read-only",
+"bit_offset": "3",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Control signal Register for 'ap_ready'.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+"RESERVED_1": {"access": "read-only",
+"bit_offset": "4",
+"bit_range": "",
+"bit_width": "3",
+"desc": "Reserved.  0s on read.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+"AUTO_RESTART": {"access": "read-write",
+"bit_offset": "7",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Control signal Register for 'auto_restart'.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RESERVED_2": {"access": "read-only",
+"bit_offset": "8",
+"bit_range": "",
+"bit_width": "24",
+"desc": "Reserved.  0s on read.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+},
+"memoryAddr": 0,
+},
+"GIER": {"description": "Global Interrupt Enable Register",
+"address_offset": "4",
+"access": "read-write",
+"size": "32",
+"interface": "s_axi_CRTL_BUS",
+"fields": {"Enable": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Master enable for the device interrupt output to the system interrupt controller: 0 = Disabled, 1 = Enabled",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RESERVED": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "31",
+"desc": "Reserved.  0s on read.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+},
+"memoryAddr": 4,
+},
+"IP_IER": {"description": "IP Interrupt Enable Register",
+"address_offset": "8",
+"access": "read-write",
+"size": "32",
+"interface": "s_axi_CRTL_BUS",
+"fields": {"CHAN0_INT_EN": {"access": "read-write",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 0 (ap_done) Interrupt.  0 = Disabled, 1 = Enabled.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"CHAN1_INT_EN": {"access": "read-write",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Enable Channel 1 (ap_ready) Interrupt.  0 = Disabled, 1 = Enabled.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+"RESERVED": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "30",
+"desc": "Reserved.  0s on read.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+},
+"memoryAddr": 8,
+},
+"IP_ISR": {"description": "IP Interrupt Status Register",
+"address_offset": "12",
+"access": "read-write",
+"size": "32",
+"interface": "s_axi_CRTL_BUS",
+"fields": {"CHAN0_INT_ST": {"access": "read-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 0 (ap_done) Interrupt Status. 0 = No Channel 0 input interrupt, 1 = Channel 0 input interrup",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+"CHAN1_INT_ST": {"access": "read-only",
+"bit_offset": "1",
+"bit_range": "",
+"bit_width": "1",
+"desc": "Channel 1 (ap_ready) Interrupt Status. 0 = No Channel 1 input interrupt, 1 = Channel 1 input interrup",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+"RESERVED": {"access": "read-only",
+"bit_offset": "2",
+"bit_range": "",
+"bit_width": "30",
+"desc": "Reserved.  0s on read.",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "modify",
+},
+},
+"memoryAddr": 12,
+},
+"l": {"description": "Data signal of l",
+"address_offset": "16",
+"access": "write-only",
+"size": "32",
+"interface": "s_axi_CRTL_BUS",
+"fields": {"l": {"access": "write-only",
+"bit_offset": "0",
+"bit_range": "",
+"bit_width": "32",
+"desc": "Bit 31 to 0 Data signal of l",
+"enum_values": "",
+"lsb": "",
+"mod_write_val": "",
+"msb": "",
+"read_action": "",
+},
+},
+"memoryAddr": 16,
+},
+},
+"ps7_afi_0": {},
+"ps7_afi_1": {},
+"ps7_afi_2": {},
+"ps7_afi_3": {},
+"ps7_coresight_comp_0": {},
+"ps7_ddr_0": {},
+"ps7_ddrc_0": {},
+"ps7_dev_cfg_0": {},
+"ps7_dma_ns": {},
+"ps7_dma_s": {},
+"ps7_ethernet_0": {},
+"ps7_globaltimer_0": {},
+"ps7_gpio_0": {},
+"ps7_gpv_0": {},
+"ps7_intc_dist_0": {},
+"ps7_iop_bus_config_0": {},
+"ps7_l2cachec_0": {},
+"ps7_ocmc_0": {},
+"ps7_pl310_0": {},
+"ps7_pmu_0": {},
+"ps7_qspi_0": {},
+"ps7_qspi_linear_0": {},
+"ps7_ram_0": {},
+"ps7_ram_1": {},
+"ps7_scuc_0": {},
+"ps7_scugic_0": {},
+"ps7_scutimer_0": {},
+"ps7_scuwdt_0": {},
+"ps7_sd_0": {},
+"ps7_slcr_0": {},
+"ps7_ttc_0": {},
+"ps7_uart_1": {},
+"ps7_usb_0": {},
+"ps7_xadc_0": {},
+}]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.269
+!MESSAGE XSCT Command: [::hsi::utils::get_addr_ranges -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.332
+!MESSAGE XSCT command with result: [::hsi::utils::get_addr_ranges -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1], Result: [null, {"hopfield_vitis_0_s_axi_CRTL_BUS": {"name": "hopfield_vitis_0",
+"base": "0x43C00000",
+"high": "0x43C0FFFF",
+"size": "65536",
+"slaveintf": "s_axi_CRTL_BUS",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_0": {"name": "ps7_afi_0",
+"base": "0xF8008000",
+"high": "0xF8008FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_1": {"name": "ps7_afi_1",
+"base": "0xF8009000",
+"high": "0xF8009FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_2": {"name": "ps7_afi_2",
+"base": "0xF800A000",
+"high": "0xF800AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_afi_3": {"name": "ps7_afi_3",
+"base": "0xF800B000",
+"high": "0xF800BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_coresight_comp_0": {"name": "ps7_coresight_comp_0",
+"base": "0xF8800000",
+"high": "0xF88FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddrc_0": {"name": "ps7_ddrc_0",
+"base": "0xF8006000",
+"high": "0xF8006FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dev_cfg_0": {"name": "ps7_dev_cfg_0",
+"base": "0xF8007000",
+"high": "0xF80070FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_ns": {"name": "ps7_dma_ns",
+"base": "0xF8004000",
+"high": "0xF8004FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_dma_s": {"name": "ps7_dma_s",
+"base": "0xF8003000",
+"high": "0xF8003FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ethernet_0": {"name": "ps7_ethernet_0",
+"base": "0xE000B000",
+"high": "0xE000BFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_globaltimer_0": {"name": "ps7_globaltimer_0",
+"base": "0xF8F00200",
+"high": "0xF8F002FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpio_0": {"name": "ps7_gpio_0",
+"base": "0xE000A000",
+"high": "0xE000AFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_gpv_0": {"name": "ps7_gpv_0",
+"base": "0xF8900000",
+"high": "0xF89FFFFF",
+"size": "1048576",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_intc_dist_0": {"name": "ps7_intc_dist_0",
+"base": "0xF8F01000",
+"high": "0xF8F01FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_iop_bus_config_0": {"name": "ps7_iop_bus_config_0",
+"base": "0xE0200000",
+"high": "0xE0200FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_l2cachec_0": {"name": "ps7_l2cachec_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ocmc_0": {"name": "ps7_ocmc_0",
+"base": "0xF800C000",
+"high": "0xF800CFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pl310_0": {"name": "ps7_pl310_0",
+"base": "0xF8F02000",
+"high": "0xF8F02FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_pmu_0": {"name": "ps7_pmu_0",
+"base": "0xF8893000",
+"high": "0xF8893FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_0": {"name": "ps7_qspi_0",
+"base": "0xE000D000",
+"high": "0xE000DFFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_qspi_linear_0": {"name": "ps7_qspi_linear_0",
+"base": "0xFC000000",
+"high": "0xFCFFFFFF",
+"size": "16777216",
+"slaveintf": "",
+"type": "FLASH",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuc_0": {"name": "ps7_scuc_0",
+"base": "0xF8F00000",
+"high": "0xF8F000FC",
+"size": "253",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scugic_0": {"name": "ps7_scugic_0",
+"base": "0xF8F00100",
+"high": "0xF8F001FF",
+"size": "256",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scutimer_0": {"name": "ps7_scutimer_0",
+"base": "0xF8F00600",
+"high": "0xF8F0061F",
+"size": "32",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_scuwdt_0": {"name": "ps7_scuwdt_0",
+"base": "0xF8F00620",
+"high": "0xF8F006FF",
+"size": "224",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_sd_0": {"name": "ps7_sd_0",
+"base": "0xE0100000",
+"high": "0xE0100FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_slcr_0": {"name": "ps7_slcr_0",
+"base": "0xF8000000",
+"high": "0xF8000FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ttc_0": {"name": "ps7_ttc_0",
+"base": "0xF8001000",
+"high": "0xF8001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_uart_1": {"name": "ps7_uart_1",
+"base": "0xE0001000",
+"high": "0xE0001FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_usb_0": {"name": "ps7_usb_0",
+"base": "0xE0002000",
+"high": "0xE0002FFF",
+"size": "4096",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_xadc_0": {"name": "ps7_xadc_0",
+"base": "0xF8007100",
+"high": "0xF8007120",
+"size": "33",
+"slaveintf": "",
+"type": "REGISTER",
+"flags": "3",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"axi_bram_ctrl_0_S_AXI_Mem0": {"name": "axi_bram_ctrl_0",
+"base": "0x40000000",
+"high": "0x40001FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+"axi_bram_ctrl_1_S_AXI_Mem0": {"name": "axi_bram_ctrl_1",
+"base": "0x42000000",
+"high": "0x42001FFF",
+"size": "8192",
+"slaveintf": "S_AXI",
+"type": "MEMORY",
+"flags": "7",
+"segment": "Mem0",
+"acctype": "",
+"tz": "",
+},
+"ps7_ddr_0": {"name": "ps7_ddr_0",
+"base": "0x00100000",
+"high": "0x1FFFFFFF",
+"size": "535822336",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_0": {"name": "ps7_ram_0",
+"base": "0x00000000",
+"high": "0x0002FFFF",
+"size": "196608",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+"ps7_ram_1": {"name": "ps7_ram_1",
+"base": "0xFFFF0000",
+"high": "0xFFFFFDFF",
+"size": "65024",
+"slaveintf": "",
+"type": "MEMORY",
+"flags": "7",
+"segment": "",
+"acctype": "",
+"tz": "",
+},
+}]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.332
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.348
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_ENABLED], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.348
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.426
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_EVENT_COUNTERS], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.426
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.473
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_LATENCY_COUNTERS], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.473
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.504
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_DEBUG_COUNTER_WIDTH], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.504
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_FREQ], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.504
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_FREQ], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.519
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.551
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_param_value C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_1 C_CPU_CLK_FREQ_HZ], Result: [null, 666666687]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.566
+!MESSAGE XSCT Command: [::hsi::utils::get_connected_periphs C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.582
+!MESSAGE XSCT command with result: [::hsi::utils::get_connected_periphs C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa ps7_cortexa9_0], Result: [null, axi_bram_ctrl_0 axi_bram_ctrl_1 hopfield_vitis_0 ps7_afi_0 ps7_afi_1 ps7_afi_2 ps7_afi_3 ps7_coresight_comp_0 ps7_ddr_0 ps7_ddrc_0 ps7_dev_cfg_0 ps7_dma_ns ps7_dma_s ps7_ethernet_0 ps7_globaltimer_0 ps7_gpio_0 ps7_gpv_0 ps7_intc_dist_0 ps7_iop_bus_config_0 ps7_l2cachec_0 ps7_ocmc_0 ps7_pl310_0 ps7_pmu_0 ps7_qspi_0 ps7_qspi_linear_0 ps7_ram_0 ps7_ram_1 ps7_scuc_0 ps7_scugic_0 ps7_scutimer_0 ps7_scuwdt_0 ps7_sd_0 ps7_slcr_0 ps7_ttc_0 ps7_uart_1 ps7_usb_0 ps7_xadc_0]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.598
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_files_on_hw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa bit], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.598
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_files_on_hw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa bit], Result: [null, design_1_wrapper.bit]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:30.598
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY org.eclipse.tcf 4 0 2021-07-21 01:49:34.915
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.001
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#2]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.001
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.485
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248AA56D1]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.485
+!MESSAGE XSCT Command: [version -server], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.501
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.501
+!MESSAGE XSCT Command: [version], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.501
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.516
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.547
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248AA56D1]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.547
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.610
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.610
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.641
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248AA56D1]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.641
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.704
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.719
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.751
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248AA56D1]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.751
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.813
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.813
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.844
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248AA56D1]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.860
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.907
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.922
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.938
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248AA56D1]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:35.938
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:36.001
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:36.016
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:36.032
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1  Digilent Zed 210248AA56D1]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:36.032
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:36.094
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:36.110
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248AA56D1" && level == 0}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:36.172
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248AA56D1" && level == 0}], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:36.188
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:36.188
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:36.188
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:36.251
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:36.251
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:36.329
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:36.344
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:39.348
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:39.426
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:39.442
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248AA56D1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:39.442
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:39.520
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:39.520
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:39.598
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:39.598
+!MESSAGE XSCT Command: [fpga -file C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/hopfield_vitis/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:41.997
+!MESSAGE XSCT command with result: [fpga -file C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/hopfield_vitis/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:42.091
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:42.200
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:42.200
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:42.419
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:42.419
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:42.435
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:42.435
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:42.466
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:42.466
+!MESSAGE XSCT Command: [source C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/hopfield_vitis/_ide/psinit/ps7_init.tcl], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:42.575
+!MESSAGE XSCT command with result: [source C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/hopfield_vitis/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:42.575
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:43.356
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:43.356
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:43.372
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:43.372
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:43.403
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:43.403
+!MESSAGE XSCT Command: [dow C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/hopfield_vitis/Debug/hopfield_vitis.elf], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:43.803
+!MESSAGE XSCT command with result: [dow C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/hopfield_vitis/Debug/hopfield_vitis.elf], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:43.819
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:43.944
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:44.006
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:44.069
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:44.069
+!MESSAGE XSCT Command: [con], Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:44.147
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-10: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:44.163
+!MESSAGE XSCT Command: [disconnect tcfchan#2], Thread: Thread-102
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:49:44.178
+!MESSAGE XSCT command with result: [disconnect tcfchan#2], Result: [null, ]. Thread: Thread-102
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:54:42.961
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:54:49.914
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:54:49.929
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:54:49.929
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-07-21 01:54:49.929
+!MESSAGE Generating MD5 hash for file: C:\Users\aguss\Desktop\Github\FPGA\paper_routing\hopfield_vitis\hopfield_vivado\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:54:49.945
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:54:49.945
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-4: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-07-21 01:55:03.432
+!MESSAGE Tool usage for 'SDX_NO_OP_BUILD' updated to '1'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:55:38.674
+!MESSAGE XSCT Command: [ ::hsi::utils::set_current_hw_sw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:55:38.689
+!MESSAGE XSCT command with result: [ ::hsi::utils::set_current_hw_sw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss ], Result: [null, ]. Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:55:38.689
+!MESSAGE XSCT Command: [::hsi::utils::get_hw_sw_details -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:55:38.705
+!MESSAGE XSCT command with result: [::hsi::utils::get_hw_sw_details -json C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, {"procname": "ps7_cortexa9_0",
+"osname": "standalone",
+"osver": "7.1",
+}]. Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-07-21 01:55:38.705
+!MESSAGE Generating MD5 hash for file: C:\Users\aguss\Desktop\Github\FPGA\paper_routing\hopfield_vitis\hopfield_vivado\design_1_wrapper\export\design_1_wrapper\sw\design_1_wrapper\standalone_domain\system.mss ...
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:55:38.705
+!MESSAGE XSCT Command: [::hsi::utils::closesw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:55:38.736
+!MESSAGE XSCT command with result: [::hsi::utils::closesw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/system.mss], Result: [null, ]. Thread: Worker-9: Build Project
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-07-21 01:56:00.305
+!MESSAGE Tool usage for 'SDX_BUILD' updated to '2'
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:09.429
+!MESSAGE XSCT Command: [connect -url tcp:127.0.0.1:3121], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY org.eclipse.tcf 4 0 2021-07-21 01:56:12.907
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2021-07-21 01:56:12.907
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2021-07-21 01:56:12.907
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.028
+!MESSAGE XSCT command with result: [connect -url tcp:127.0.0.1:3121], Result: [null, tcfchan#5]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.028
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.309
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248AA56D1]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.309
+!MESSAGE XSCT Command: [version -server], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.325
+!MESSAGE XSCT command with result: [version -server], Result: [null, 2019.2]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.325
+!MESSAGE XSCT Command: [version], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.356
+!MESSAGE XSCT command with result: [version], Result: [null, xsct 2019.2
+SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+Copyright 1986-2018 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.356
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.419
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248AA56D1]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.419
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.512
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.528
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.544
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248AA56D1]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.559
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.653
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.653
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.700
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248AA56D1]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.700
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.794
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.809
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.840
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248AA56D1]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.840
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.903
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.903
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.950
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248AA56D1]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:13.950
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:14.044
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:14.044
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:14.075
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248AA56D1]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:14.075
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:14.137
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:14.137
+!MESSAGE XSCT Command: [jtag targets -set -filter {name =~ "Digilent Zed 210248AA56D1" && level == 0}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:14.200
+!MESSAGE XSCT command with result: [jtag targets -set -filter {name =~ "Digilent Zed 210248AA56D1" && level == 0}], Result: [null, ]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:14.215
+!MESSAGE XSCT Command: [jtag frequency], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:14.215
+!MESSAGE XSCT command with result: [jtag frequency], Result: [null, 15000000]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:14.215
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:14.262
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:14.262
+!MESSAGE XSCT Command: [rst -system], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:14.372
+!MESSAGE XSCT command with result: [rst -system], Result: [null, ]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:14.372
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:17.403
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:17.465
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:17.496
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248AA56D1]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:17.512
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:17.575
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:17.575
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:17.715
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:17.715
+!MESSAGE XSCT Command: [fpga -file C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/hopfield_vitis/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:20.251
+!MESSAGE XSCT command with result: [fpga -file C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/hopfield_vitis/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:20.329
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:20.438
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:20.438
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:20.782
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_0]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:20.782
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:20.798
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:20.813
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:20.844
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:20.844
+!MESSAGE XSCT Command: [source C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/hopfield_vitis/_ide/psinit/ps7_init.tcl], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:20.860
+!MESSAGE XSCT command with result: [source C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/hopfield_vitis/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:20.860
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:21.547
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:21.563
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:21.579
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:21.579
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:21.610
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:21.610
+!MESSAGE XSCT Command: [dow C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/hopfield_vitis/Debug/hopfield_vitis.elf], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:22.077
+!MESSAGE XSCT command with result: [dow C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/hopfield_vitis/Debug/hopfield_vitis.elf], Result: [null, ]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:22.077
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:22.155
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:22.186
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:22.280
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:22.280
+!MESSAGE XSCT Command: [con], Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:22.483
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-12: Launching Debugger_hopfield_vitis-GDB
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:22.515
+!MESSAGE XSCT Command: [disconnect tcfchan#5], Thread: Thread-204
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-07-21 01:56:22.530
+!MESSAGE XSCT command with result: [disconnect tcfchan#5], Result: [null, ]. Thread: Thread-204
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-07-21 01:56:58.241
+!MESSAGE Executing command: cmd /C C:\Xilinx\Vitis\2019.2\bin\wbtcv.bat -mode batch -source vitis_webtalk.tcl
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-07-21 01:56:58.366
+!MESSAGE Executed Webtalk command

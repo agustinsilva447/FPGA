@@ -1,4 +1,4 @@
-04:48:41 **** Incremental Build of configuration Debug for project hopfield_vitis ****
+01:55:38 **** Incremental Build of configuration Debug for project hopfield_vitis ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -13,21 +13,6 @@ C:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/
          ^~~~~~~
 'Finished building: ../src/src/main.c'
 ' '
-'Building file: ../src/src/xhopfield_vitis.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/src/xhopfield_vitis.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/src/xhopfield_vitis.d" -MT"src/src/xhopfield_vitis.o" -o "src/src/xhopfield_vitis.o" "../src/src/xhopfield_vitis.c"
-'Finished building: ../src/src/xhopfield_vitis.c'
-' '
-'Building file: ../src/src/xhopfield_vitis_linux.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/src/xhopfield_vitis_linux.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/src/xhopfield_vitis_linux.d" -MT"src/src/xhopfield_vitis_linux.o" -o "src/src/xhopfield_vitis_linux.o" "../src/src/xhopfield_vitis_linux.c"
-'Finished building: ../src/src/xhopfield_vitis_linux.c'
-' '
-'Building file: ../src/src/xhopfield_vitis_sinit.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/src/xhopfield_vitis_sinit.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/src/xhopfield_vitis_sinit.d" -MT"src/src/xhopfield_vitis_sinit.o" -o "src/src/xhopfield_vitis_sinit.o" "../src/src/xhopfield_vitis_sinit.c"
-'Finished building: ../src/src/xhopfield_vitis_sinit.c'
-' '
 'Building target: hopfield_vitis.elf'
 'Invoking: ARM v7 gcc linker'
 arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/aguss/Desktop/Github/FPGA/paper_routing/hopfield_vitis/hopfield_vivado/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bsplib/lib -o "hopfield_vitis.elf"  ./src/src/main.o ./src/src/xhopfield_vitis.o ./src/src/xhopfield_vitis_linux.o ./src/src/xhopfield_vitis_sinit.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
@@ -36,9 +21,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size hopfield_vitis.elf  |tee "hopfield_vitis.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  69568	   2600	  23328	  95496	  17508	hopfield_vitis.elf
+  69588	   2600	  23328	  95516	  1751c	hopfield_vitis.elf
 'Finished building: hopfield_vitis.elf.size'
 ' '
 
-04:48:45 Build Finished (took 4s.582ms)
+01:55:42 Build Finished (took 3s.578ms)
 
