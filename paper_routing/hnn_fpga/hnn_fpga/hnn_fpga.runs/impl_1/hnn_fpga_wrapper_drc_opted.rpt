@@ -1,0 +1,515 @@
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
+| Date         : Wed Jul 21 20:23:51 2021
+| Host         : DESKTOP-UCL1PSP running 64-bit major release  (build 9200)
+| Command      : report_drc -file hnn_fpga_wrapper_drc_opted.rpt -pb hnn_fpga_wrapper_drc_opted.pb -rpx hnn_fpga_wrapper_drc_opted.rpx
+| Design       : hnn_fpga_wrapper
+| Device       : xc7z020clg484-1
+| Speed File   : -1
+| Design State : Synthesized
+---------------------------------------------------------------------------------------------------------------------------------------
+
+Report DRC
+
+Table of Contents
+-----------------
+1. REPORT SUMMARY
+2. REPORT DETAILS
+
+1. REPORT SUMMARY
+-----------------
+            Netlist: netlist
+          Floorplan: design_1
+      Design limits: <entire design considered>
+           Ruledeck: default
+             Max violations: <unlimited>
+             Violations found: 95
++--------+----------+-------------------------------------------------------------------+------------+
+| Rule   | Severity | Description                                                       | Violations |
++--------+----------+-------------------------------------------------------------------+------------+
+| DPIP-1 | Warning  | Input pipelining                                                  | 39         |
+| DPOP-1 | Warning  | PREG Output pipelining                                            | 20         |
+| DPOP-2 | Warning  | MREG Output pipelining                                            | 4          |
+| AVAL-4 | Advisory | enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND | 17         |
+| AVAL-5 | Advisory | enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND   | 15         |
++--------+----------+-------------------------------------------------------------------+------------+
+
+2. REPORT DETAILS
+-----------------
+DPIP-1#1 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#2 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#3 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#4 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#5 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#6 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#7 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#8 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#9 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#10 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#11 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_hi/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_hi/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#12 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_hi/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_hi/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#13 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_lo/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_lo/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#14 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_lo/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_lo/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#15 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_lo/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_lo/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#16 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.multadd_1.madd/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.multadd_1.madd/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#17 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.multadd_1.madd/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.multadd_1.madd/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#18 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.multadd_1.madd/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.multadd_1.madd/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#19 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.multadd_1.madd/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.multadd_1.madd/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#20 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.multadd_2.madd/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.multadd_2.madd/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#21 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#22 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#23 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#24 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#25 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#26 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#27 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_lo/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_lo/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#28 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_lo/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_lo/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#29 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_lo/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_lo/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#30 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#31 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#32 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#33 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#34 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#35 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#36 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/A[29:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#37 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#38 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP/B[17:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPIP-1#39 Warning
+Input pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP input hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/C[47:0] is not pipelined. Pipelining DSP48 input will improve performance.
+Related violations: <none>
+
+DPOP-1#1 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#2 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[2].use_dsp.use_dsp48e1.iDSP48E1 output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[2].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#3 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[2].bppDSP48[2].use_dsp.use_dsp48e1.iDSP48E1 output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[2].bppDSP48[2].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#4 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_e2zm1/dsp.one.dsp48e1_add/DSP output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_e2zm1/dsp.one.dsp48e1_add/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#5 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_hi/DSP output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_hi/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#6 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_lo/DSP output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_lo/DSP/CARRYCASCOUT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#7 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_lo/DSP output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_lo/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#8 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.multadd_1.madd/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.multadd_1.madd/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#9 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.multadd_2.madd/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.multadd_2.madd/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[1].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#10 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/DSP output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/DSP/CARRYCASCOUT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#11 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/DSP output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#12 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_lo/DSP output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_lo/DSP/CARRYCASCOUT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#13 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_lo/DSP output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_lo/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#14 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#15 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#16 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#17 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP/PATTERNDETECT is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#18 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#19 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/CARRYOUT[3:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-1#20 Warning
+PREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP output hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP/P[47:0] is not pipelined (PREG=0). Pipelining the DSP48 output will improve performance and often saves power so it is suggested whenever possible to fully pipeline this function.  If this DSP48 function was inferred, it is suggested to describe an additional register stage after this function.  If the DSP48 was instantiated in the design, it is suggested to set the PREG attribute to 1.
+Related violations: <none>
+
+DPOP-2#1 Warning
+MREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[2].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[2].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#2 Warning
+MREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[2].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[2].bppDSP48[1].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#3 Warning
+MREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.multadd_2.madd/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1 multiplier stage hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.multadd_2.madd/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[1].bppDSP48[0].use_dsp.use_dsp48e1.iDSP48E1/P[47:0] is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+DPOP-2#4 Warning
+MREG Output pipelining  
+DSP hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP multiplier stage hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP/PATTERNDETECT is not pipelined (MREG=0). Pipelining the multiplier function will improve performance and will save significant power so it is suggested whenever possible to fully pipeline this function.  If this multiplier was inferred, it is suggested to describe an additional register stage after this function.  If there is no registered adder/accumulator following the multiply function, two pipeline stages are suggested to allow both the MREG and PREG registers to be used.  If the DSP48 was instantiated in the design, it is suggested to set both the MREG and PREG attributes to 1 when performing multiply functions.
+Related violations: <none>
+
+AVAL-4#1 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#2 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#3 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#4 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_e2zm1/dsp.one.dsp48e1_add/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#5 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_hi/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#6 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_lo/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#7 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#8 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#9 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#10 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_lo/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#11 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#12 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#13 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#14 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#15 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP1/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#16 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.MULT/DSP48E1_SPD_SGL_VARIANT.FIX_MULT/DSP2/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-4#17 Advisory
+enum_USE_DPORT_FALSE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP: DSP48E1 is not using the D port (USE_DPORT = FALSE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#1 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#2 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/FRAC_ADDSUB/DSP_ADD.FRAC_ADDSUB/DSP48E1_GEN.DSP48E1_DEL/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#3 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#4 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_e2zm1/dsp.one.dsp48e1_add/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#5 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_hi/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#6 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_Xf/dsp.two.dsp48e1_add_lo/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#7 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_hi/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#8 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_addsub/dsp.two.dsp48e1_add_lo/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#9 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_hi/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#10 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_addsub/dsp.two.dsp48e1_add_lo/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#11 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_addsub/dsp.one.dsp48e1_add/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#12 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_addsub/dsp.one.dsp48e1_add/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#13 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_addsub/dsp.one.dsp48e1_add/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#14 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_16_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/DSP48_E1.DSP48E1_ADD.DSP48E1_ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+AVAL-5#15 Advisory
+enum_USE_MULT_NONE_enum_DREG_ADREG_0_connects_CED_CEAD_RSTD_GND  
+hnn_fpga_i/hnn_fpga_0/U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_2_max_dsp_32_u/U0/i_synth/MULT.OP/i_non_prim.R_AND_R/LAT_OPT.FULL.R_AND_R/DSP48E1_SGL_EXP_IP.OLD_ADD.ADD/DSP: DSP48E1 is not using the Multiplier (USE_MULT = NONE). For improved power characteristics, set DREG and ADREG to '1', tie CED, CEAD, and RSTD to logic '0'.
+Related violations: <none>
+
+

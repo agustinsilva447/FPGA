@@ -15,7 +15,7 @@
 #include "hnn_fpga_types.h"
 
 /* Function Declarations */
-extern void hnn_fpga(const double U[64], double l, double V[64]);
+extern void hnn_fpga(const float U[64], float l, float V[64]);
 
 #endif
 

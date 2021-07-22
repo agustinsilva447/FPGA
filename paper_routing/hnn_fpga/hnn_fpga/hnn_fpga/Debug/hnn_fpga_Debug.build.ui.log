@@ -1,0 +1,10 @@
+2021-07-21T22:25:02.621496500255-22:25:02 **** Incremental Build of configuration Debug for project hnn_fpga ****
+000-make all 
+000-make --no-print-directory pre-build
+000-a9-linaro-pre-build-step
+000-' '
+000-make --no-print-directory main-build
+000-make[1]: Nothing to be done for 'main-build'.
+00255-
+22:25:03 Build Finished (took 745ms)
+

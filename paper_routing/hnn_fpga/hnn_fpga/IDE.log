@@ -1,0 +1,114 @@
+20:38:26 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\aguss\Desktop\hnn_fpga\hnn_fpga\temp_xsdb_launch_script.tcl
+20:38:33 INFO  : XSCT server has started successfully.
+20:38:33 INFO  : plnx-install-location is set to ''
+20:38:41 INFO  : Registering command handlers for Vitis TCF services
+20:38:47 INFO  : Successfully done setting XSCT server connection channel  
+20:38:47 INFO  : Successfully done query RDI_DATADIR 
+20:38:47 INFO  : Successfully done setting workspace for the tool. 
+21:41:21 ERROR : (XSDB Server)In file included from usleep.c:54:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+
+21:41:26 ERROR : (XSDB Server)In file included from xil_sleeptimer.c:52:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+
+21:41:27 ERROR : (XSDB Server)In file included from xtime_l.c:47:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+
+21:41:29 ERROR : (XSDB Server)In file included from sleep.c:51:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+
+21:41:50 ERROR : (XSDB Server)In file included from main.c:135:
+zynq_fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+
+21:41:51 ERROR : (XSDB Server)In file included from pcap.c:98:
+zynq_fsbl_bsp/ps7_cortexa9_0/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+
+21:41:59 ERROR : (XSDB Server)arm-none-eabi-ar: creating ../../../lib/libxil.a
+
+21:42:26 ERROR : (XSDB Server)In file included from usleep.c:54:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+
+21:42:30 ERROR : (XSDB Server)In file included from xil_sleeptimer.c:52:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+
+21:42:31 ERROR : (XSDB Server)In file included from xtime_l.c:47:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+
+21:42:33 ERROR : (XSDB Server)In file included from sleep.c:51:
+xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+
+21:46:47 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+22:00:12 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+22:01:21 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+22:11:25 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+22:11:57 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+22:12:38 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+22:14:00 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+22:14:35 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+22:15:53 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+22:25:02 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+22:27:18 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+22:27:19 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+22:27:19 INFO  : 'jtag frequency' command is executed.
+22:27:19 INFO  : Context for 'APU' is selected.
+22:27:20 INFO  : System reset is completed.
+22:27:23 INFO  : 'after 3000' command is executed.
+22:27:23 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+22:27:25 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+22:27:25 INFO  : Context for 'APU' is selected.
+22:27:25 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+22:27:25 INFO  : 'configparams force-mem-access 1' command is executed.
+22:27:26 INFO  : Context for 'APU' is selected.
+22:27:26 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+22:27:26 INFO  : 'ps7_init' command is executed.
+22:27:26 INFO  : 'ps7_post_config' command is executed.
+22:27:26 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:27:27 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+22:27:27 INFO  : 'configparams force-mem-access 0' command is executed.
+22:27:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+22:27:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+22:27:27 INFO  : 'con' command is executed.
+22:27:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+22:27:27 INFO  : Disconnected from the channel tcfchan#13.

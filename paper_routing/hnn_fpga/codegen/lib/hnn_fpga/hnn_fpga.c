@@ -1,29 +1,19 @@
-/*
- * File: hnn_fpga.c
- *
- * MATLAB Coder version            : 5.0
- * C/C++ source code generated on  : 21-Jul-2021 18:48:13
- */
-
-/* Include Files */
 #include "hnn_fpga.h"
 #include <math.h>
 
-/* Function Definitions */
-
-/*
- * Arguments    : const double U[64]
- *                double l
- *                double V[64]
- * Return Type  : void
- */
-void hnn_fpga(const double U[64], double l, double V[64])
+void hnn_fpga(const float U[64], float l, float V[64])
 {
+#pragma HLS INTERFACE s_axilite port=V
+#pragma HLS INTERFACE s_axilite port=l
+#pragma HLS INTERFACE s_axilite port=U
+#pragma HLS INTERFACE s_axilite port=return
   int x;
   int i;
   int V_tmp;
   for (x = 0; x < 8; x++) {
+#pragma HLS UNROLL
     for (i = 0; i < 8; i++) {
+#pragma HLS UNROLL
       if (x == i) {
         V[(x << 3) + i] = 0.0;
       } else {
@@ -33,9 +23,3 @@ void hnn_fpga(const double U[64], double l, double V[64])
     }
   }
 }
-
-/*
- * File trailer for hnn_fpga.c
- *
- * [EOF]
- */
