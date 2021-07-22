@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="hnn_fpga.c" path="C:\Users\aguss\Desktop\hnn_fpga\codegen\lib\hnn_fpga\hnn_fpga.c"/>
+    <originFiles name="hnn_fpga.h" path="C:\Users\aguss\Desktop\hnn_fpga\codegen\lib\hnn_fpga\hnn_fpga.h"/>
+    <originFiles name="hnn_fpga_initialize.c" path="C:\Users\aguss\Desktop\hnn_fpga\codegen\lib\hnn_fpga\hnn_fpga_initialize.c"/>
+    <originFiles name="hnn_fpga_initialize.h" path="C:\Users\aguss\Desktop\hnn_fpga\codegen\lib\hnn_fpga\hnn_fpga_initialize.h"/>
+    <originFiles name="hnn_fpga_terminate.c" path="C:\Users\aguss\Desktop\hnn_fpga\codegen\lib\hnn_fpga\hnn_fpga_terminate.c"/>
+    <originFiles name="hnn_fpga_terminate.h" path="C:\Users\aguss\Desktop\hnn_fpga\codegen\lib\hnn_fpga\hnn_fpga_terminate.h"/>
+    <originFiles name="hnn_fpga_types.h" path="C:\Users\aguss\Desktop\hnn_fpga\codegen\lib\hnn_fpga\hnn_fpga_types.h"/>
+    <originFiles name="rtwtypes.h" path="C:\Users\aguss\Desktop\hnn_fpga\codegen\lib\hnn_fpga\rtwtypes.h"/>
+    <originFiles name="tmwtypes.h" path="C:\Users\aguss\Desktop\hnn_fpga\codegen\lib\hnn_fpga\tmwtypes.h"/>
+  </source>
+  <testbench>
+    <originFiles name="main.c" path="C:\Users\aguss\Desktop\hnn_fpga\codegen\lib\hnn_fpga\main.c"/>
+    <originFiles name="main.h" path="C:\Users\aguss\Desktop\hnn_fpga\codegen\lib\hnn_fpga\main.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

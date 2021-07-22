@@ -1,10 +1,44 @@
-22:25:02 **** Incremental Build of configuration Debug for project hnn_fpga ****
+13:41:10 **** Incremental Build of configuration Debug for project hnn_fpga ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-make[1]: Nothing to be done for 'main-build'.
+'Building file: ../src/src/main.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/src/main.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/sw/hnn_fpga_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/src/main.d" -MT"src/src/main.o" -o "src/src/main.o" "../src/src/main.c"
+In file included from ../src/src/main.c:5:
+C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/sw/hnn_fpga_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/src/main.c: In function 'main':
+../src/src/main.c:303:43: warning: pointer targets in passing argument 3 of 'XHnn_fpga_Write_U_Words' differ in signedness [-Wpointer-sign]
+   XHnn_fpga_Write_U_Words(&goHnn_fpga, 0, U_hw, N1 * N1);
+                                           ^~~~
+In file included from ../src/src/main.c:10:
+../src/src/xhnn_fpga.h:94:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ u32 XHnn_fpga_Write_U_Words(XHnn_fpga *InstancePtr, int offset, int *data, int length);
+     ^~~~~~~~~~~~~~~~~~~~~~~
+../src/src/main.c:312:42: warning: pointer targets in passing argument 3 of 'XHnn_fpga_Read_V_Words' differ in signedness [-Wpointer-sign]
+   XHnn_fpga_Read_V_Words(&goHnn_fpga, 0, V_hw, N1 * N1);
+                                          ^~~~
+In file included from ../src/src/main.c:10:
+../src/src/xhnn_fpga.h:104:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ u32 XHnn_fpga_Read_V_Words(XHnn_fpga *InstancePtr, int offset, int *data, int length);
+     ^~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/src/main.c'
+' '
+'Building target: hnn_fpga.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/sw/hnn_fpga_wrapper/standalone_domain/bsplib/lib -o "hnn_fpga.elf"  ./src/src/main.o ./src/src/xhnn_fpga.o ./src/src/xhnn_fpga_linux.o ./src/src/xhnn_fpga_sinit.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hnn_fpga.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size hnn_fpga.elf  |tee "hnn_fpga.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  75160	   2592	  23328	 101080	  18ad8	hnn_fpga.elf
+'Finished building: hnn_fpga.elf.size'
+' '
 
-22:25:03 Build Finished (took 745ms)
+13:41:12 Build Finished (took 1s.974ms)
 

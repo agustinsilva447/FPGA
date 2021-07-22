@@ -1,0 +1,288 @@
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../../../../Desktop/hnn_fpga/codegen/lib/hnn_fpga/hnn_fpga_terminate.c' ... 
+INFO: [HLS 200-10] Analyzing design file '../../../../Desktop/hnn_fpga/codegen/lib/hnn_fpga/hnn_fpga_initialize.c' ... 
+INFO: [HLS 200-10] Analyzing design file '../../../../Desktop/hnn_fpga/codegen/lib/hnn_fpga/hnn_fpga.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:01:00 . Memory (MB): peak = 195.168 ; gain = 106.027
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:01:00 . Memory (MB): peak = 195.168 ; gain = 106.027
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:01:03 . Memory (MB): peak = 195.168 ; gain = 106.027
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:05 ; elapsed = 00:01:03 . Memory (MB): peak = 195.168 ; gain = 106.027
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:01:03 . Memory (MB): peak = 195.168 ; gain = 106.027
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:01:04 . Memory (MB): peak = 195.168 ; gain = 106.027
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hnn_fpga' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hnn_fpga' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 64.142 seconds; current allocated memory: 108.401 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.532 seconds; current allocated memory: 108.732 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hnn_fpga' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hnn_fpga/U' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hnn_fpga/l' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hnn_fpga/V' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hnn_fpga' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'l' and 'V' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_fmul_32ns_32ns_32_4_max_dsp_1' to 'hnn_fpga_fmul_32nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_fptrunc_64ns_32_2_1' to 'hnn_fpga_fptrunc_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_fpext_32ns_64_2_1' to 'hnn_fpga_fpext_32dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_dadd_64ns_64ns_64_5_full_dsp_1' to 'hnn_fpga_dadd_64neOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_ddiv_64ns_64ns_64_31_1' to 'hnn_fpga_ddiv_64nfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_dexp_64ns_64ns_64_18_full_dsp_1' to 'hnn_fpga_dexp_64ng8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_dadd_64neOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_ddiv_64nfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_dexp_64ng8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_fmul_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_fpext_32dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_fptrunc_cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hnn_fpga'.
+INFO: [HLS 200-111]  Elapsed time: 0.744 seconds; current allocated memory: 109.624 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 116.00 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:09 ; elapsed = 00:01:11 . Memory (MB): peak = 195.168 ; gain = 106.027
+INFO: [VHDL 208-304] Generating VHDL RTL for hnn_fpga.
+INFO: [VLOG 209-307] Generating Verilog RTL for hnn_fpga.
+INFO: [HLS 200-112] Total elapsed time: 70.747 seconds; peak allocated memory: 109.624 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../../../../Desktop/hnn_fpga/codegen/lib/hnn_fpga/hnn_fpga_terminate.c' ... 
+INFO: [HLS 200-10] Analyzing design file '../../../../Desktop/hnn_fpga/codegen/lib/hnn_fpga/hnn_fpga_initialize.c' ... 
+INFO: [HLS 200-10] Analyzing design file '../../../../Desktop/hnn_fpga/codegen/lib/hnn_fpga/hnn_fpga.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:40 . Memory (MB): peak = 194.949 ; gain = 105.633
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:40 . Memory (MB): peak = 194.949 ; gain = 105.633
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:41 . Memory (MB): peak = 194.949 ; gain = 105.633
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:41 . Memory (MB): peak = 194.949 ; gain = 105.633
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (../../../../Desktop/hnn_fpga/codegen/lib/hnn_fpga/hnn_fpga.c:29) in function 'hnn_fpga' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (../../../../Desktop/hnn_fpga/codegen/lib/hnn_fpga/hnn_fpga.c:31) in function 'hnn_fpga' completely with a factor of 8.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:42 . Memory (MB): peak = 194.949 ; gain = 105.633
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:42 . Memory (MB): peak = 194.949 ; gain = 105.633
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hnn_fpga' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hnn_fpga' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 44.249 seconds; current allocated memory: 115.841 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 8.933 seconds; current allocated memory: 121.604 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hnn_fpga' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hnn_fpga/U' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hnn_fpga/l' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hnn_fpga/V' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hnn_fpga' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'l' and 'V' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_fmul_32ns_32ns_32_4_max_dsp_1' to 'hnn_fpga_fmul_32nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_fptrunc_64ns_32_2_1' to 'hnn_fpga_fptrunc_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_fpext_32ns_64_2_1' to 'hnn_fpga_fpext_32dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_dadd_64ns_64ns_64_5_full_dsp_1' to 'hnn_fpga_dadd_64neOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_ddiv_64ns_64ns_64_31_1' to 'hnn_fpga_ddiv_64nfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_dexp_64ns_64ns_64_18_full_dsp_1' to 'hnn_fpga_dexp_64ng8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_dadd_64neOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_ddiv_64nfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_dexp_64ng8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_fmul_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_fpext_32dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_fptrunc_cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hnn_fpga'.
+INFO: [HLS 200-111]  Elapsed time: 9.695 seconds; current allocated memory: 126.395 MB.
+INFO: [HLS 200-789] **** Estimated Fmax: 101.97 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:35 ; elapsed = 00:01:18 . Memory (MB): peak = 204.078 ; gain = 114.762
+INFO: [VHDL 208-304] Generating VHDL RTL for hnn_fpga.
+INFO: [VLOG 209-307] Generating Verilog RTL for hnn_fpga.
+INFO: [HLS 200-112] Total elapsed time: 78.527 seconds; peak allocated memory: 126.395 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s).
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file '../../../../Desktop/hnn_fpga/codegen/lib/hnn_fpga/hnn_fpga_terminate.c' ... 
+INFO: [HLS 200-10] Analyzing design file '../../../../Desktop/hnn_fpga/codegen/lib/hnn_fpga/hnn_fpga_initialize.c' ... 
+INFO: [HLS 200-10] Analyzing design file '../../../../Desktop/hnn_fpga/codegen/lib/hnn_fpga/hnn_fpga.c' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:40 . Memory (MB): peak = 194.945 ; gain = 102.746
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:40 . Memory (MB): peak = 194.945 ; gain = 102.746
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:04 ; elapsed = 00:00:41 . Memory (MB): peak = 194.945 ; gain = 102.746
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:04 ; elapsed = 00:00:41 . Memory (MB): peak = 194.945 ; gain = 102.746
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (../../../../Desktop/hnn_fpga/codegen/lib/hnn_fpga/hnn_fpga.c:13) in function 'hnn_fpga' completely with a factor of 8.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (../../../../Desktop/hnn_fpga/codegen/lib/hnn_fpga/hnn_fpga.c:15) in function 'hnn_fpga' completely with a factor of 8.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:42 . Memory (MB): peak = 194.945 ; gain = 102.746
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:05 ; elapsed = 00:00:42 . Memory (MB): peak = 194.945 ; gain = 102.746
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'hnn_fpga' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'hnn_fpga' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 44.011 seconds; current allocated memory: 115.840 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 8.859 seconds; current allocated memory: 121.588 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'hnn_fpga' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'hnn_fpga/U' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hnn_fpga/l' to 's_axilite & ap_none'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'hnn_fpga/V' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'hnn_fpga' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'l' and 'V' to AXI-Lite port AXILiteS.
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_fmul_32ns_32ns_32_4_max_dsp_1' to 'hnn_fpga_fmul_32nbkb' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_fptrunc_64ns_32_2_1' to 'hnn_fpga_fptrunc_cud' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_fpext_32ns_64_2_1' to 'hnn_fpga_fpext_32dEe' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_dadd_64ns_64ns_64_5_full_dsp_1' to 'hnn_fpga_dadd_64neOg' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_ddiv_64ns_64ns_64_31_1' to 'hnn_fpga_ddiv_64nfYi' due to the length limit 20
+INFO: [SYN 201-210] Renamed object name 'hnn_fpga_dexp_64ns_64ns_64_18_full_dsp_1' to 'hnn_fpga_dexp_64ng8j' due to the length limit 20
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_dadd_64neOg': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_ddiv_64nfYi': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_dexp_64ng8j': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_fmul_32nbkb': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_fpext_32dEe': 1 instance(s).
+INFO: [RTGEN 206-100] Generating core module 'hnn_fpga_fptrunc_cud': 1 instance(s).
+INFO: [RTGEN 206-100] Finished creating RTL model for 'hnn_fpga'.
+INFO: [HLS 200-111]  Elapsed time: 9.388 seconds; current allocated memory: 126.364 MB.
+INFO: [HLS 200-789] **** Estimated Fmax: 101.97 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:35 ; elapsed = 00:01:17 . Memory (MB): peak = 205.145 ; gain = 112.945
+INFO: [VHDL 208-304] Generating VHDL RTL for hnn_fpga.
+INFO: [VLOG 209-307] Generating Verilog RTL for hnn_fpga.
+INFO: [HLS 200-112] Total elapsed time: 77.466 seconds; peak allocated memory: 126.364 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-322] Starting VHDL simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+INFO: [COSIM 212-316] Starting C post checking ...
+INFO: [COSIM 212-1000] *** C/RTL co-simulation finished: PASS ***
+INFO: [COSIM 212-211] II is measurable only when transaction number is greater than 1 in RTL simulation. Otherwise, they will be marked as all NA. If user wants to calculate them, please make sure there are at least 2 transactions in RTL simulation.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xc7z020-clg484-1'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.

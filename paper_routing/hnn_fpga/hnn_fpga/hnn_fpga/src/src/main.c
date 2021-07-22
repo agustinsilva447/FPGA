@@ -81,13 +81,12 @@ int main()
 {
 	XTime tStart;
 	XTime tEnd;
-	XTime tStart_hw;
-	XTime tEnd_hw;
 
 	int it_max = 50, source = 0, destin = 1, flag, it, x, i, y, j;
 	int u1 = 950, u2 = 2500, u3 = 1500, u4 = 475, u5 = 2500, aux;
 	unsigned int U_hw[N1 * N1], V_hw[N1 * N1];
-	float A = 0.0057, B = 0.0072, C = 0.0064, l = 6, E_aux, E_i, time_sw, time_hw;
+	double t_aux, time_sw = 0, time_hw = 0;
+	float A = 0.0057, B = 0.0072, C = 0.0064, l = 6, E_aux, E_i;
 	float V[N1 * N1]  = { 		0, 0, 0, 0, 0, 0, 0, 0,
 								0, 0, 0, 0, 0, 0, 0, 0,
 								0, 0, 0, 0, 0, 0, 0, 0,
@@ -187,9 +186,9 @@ int main()
 	printf("\nSOFTWARE HOPFIELD NEURAL NETWORK FOR THE SHORTEST PATH PROBLEM: \n");
 	flag = 1; it = 0; E_i = 10000;
 
-	XTime_GetTime(&tStart);
 	while((flag) && (it < it_max))
 	{
+		XTime_GetTime(&tStart);
 	    for(int x = 0; x < N1; x++)
 	    {
 	        for(int i = 0; i < N1; i++)
@@ -202,6 +201,9 @@ int main()
 	            }
 	        }
 	    }
+		XTime_GetTime(&tEnd);
+		t_aux = (double)((tEnd - tStart));
+		time_sw = time_sw + t_aux;
 
 	    for(x = 0; x < N1; x++)
 	    {
@@ -228,7 +230,7 @@ int main()
 			flag = 0;
 		}
 		E_i = E_aux;
-		printf("\nIteracion %d: Energia = %f. ", it, E_i);
+		printf("\nIteracion %d: Energia = %f. Time = %f.", it, E_i, t_aux/(COUNTS_PER_SECOND/1000000));
 		for(x = 0; x < N1; x++)
 		{
 			for(i = 0; i < N1; i++)
@@ -240,8 +242,6 @@ int main()
 		}
 		it += 1;
 	}
-	XTime_GetTime(&tEnd);
-	time_sw = (float)((tEnd - tStart)/(COUNTS_PER_SECOND/1000000));
 
 	printf("\nV_sw = \n");
 	for(x = 0; x < N1; x++)
@@ -291,7 +291,6 @@ int main()
 	XHnn_fpga_Set_l(&goHnn_fpga, float_to_u32(l));
 	flag = 1; it = 0; E_i = 10000;
 
-	XTime_GetTime(&tStart_hw);
 	while((flag) && (it < it_max))
 	{
 		for(x = 0; x < N1; x++)
@@ -303,8 +302,12 @@ int main()
 		}
 		XHnn_fpga_Write_U_Words(&goHnn_fpga, 0, U_hw, N1 * N1);
 
+		XTime_GetTime(&tStart);
 		XHnn_fpga_Start(&goHnn_fpga);
 		while(!XHnn_fpga_IsDone(&goHnn_fpga));
+		XTime_GetTime(&tEnd);
+		t_aux = (double)((tEnd - tStart));
+		time_hw = time_hw + t_aux;
 
 		XHnn_fpga_Read_V_Words(&goHnn_fpga, 0, V_hw, N1 * N1);
 		for(x = 0; x < N1; x++)
@@ -340,7 +343,7 @@ int main()
 			flag = 0;
 		}
 		E_i = E_aux;
-		printf("\nIteracion %d: Energia = %f. ", it, E_i);
+		printf("\nIteracion %d: Energia = %f. Time = %f.", it, E_i, t_aux/(COUNTS_PER_SECOND/1000000));
 		for(x = 0; x < N1; x++)
 		{
 			for(i = 0; i < N1; i++)
@@ -352,8 +355,6 @@ int main()
 		}
 		it += 1;
 	}
-	XTime_GetTime(&tEnd_hw);
-	time_hw = (float)((tEnd_hw - tStart_hw)/(COUNTS_PER_SECOND/1000000));
 
 	printf("\nV_hw = \n");
 	for(x = 0; x < N1; x++)
@@ -372,8 +373,9 @@ int main()
 		printf("]\n");
 	}
 
-	printf("\nEl tiempo que le llevo al Software implementar la HNN para resolver el SPP es %f us", time_sw);
-	printf("\nEl tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es %f us", time_hw);
+	printf("\nOrigen: %d. Destino: %d.", source, destin);
+	printf("\nEl tiempo que le llevo al Software implementar la HNN para resolver el SPP es %f us", time_sw/(COUNTS_PER_SECOND/1000000));
+	printf("\nEl tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es %f us", time_hw/(COUNTS_PER_SECOND/1000000));
 
 	return 0;
 }

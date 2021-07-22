@@ -1,0 +1,50 @@
+   Build using "C:/Xilinx/Vivado/2019.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_hnn_fpga.cpp
+   Compiling (apcc) main.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'aguss' on host 'desktop-ucl1psp' (Windows NT_amd64 version 6.2) on Wed Jul 21 19:48:12 -0300 2021
+INFO: [HLS 200-10] In directory 'C:/Users/aguss/AppData/Roaming/Xilinx/Vivado/hnn_fpga/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+In file included from C:/Users/aguss/Desktop/hnn_fpga/codegen/lib/hnn_fpga/main.c:1:
+C:/Users/aguss/Desktop/hnn_fpga/codegen/lib/hnn_fpga/main.c:29:10: warning: incompatible pointer types passing 'double [64]' to parameter of type 'const float *' [-Wincompatible-pointer-types]
+hnn_fpga(dv, argInit_real_T(), V);
+         ^~
+./apatb_hnn_fpga.h:7:13: note: passing argument to parameter 'U' here
+const float U[64],
+            ^
+In file included from C:/Users/aguss/Desktop/hnn_fpga/codegen/lib/hnn_fpga/main.c:1:
+C:/Users/aguss/Desktop/hnn_fpga/codegen/lib/hnn_fpga/main.c:29:32: warning: incompatible pointer types passing 'double [64]' to parameter of type 'float *' [-Wincompatible-pointer-types]
+hnn_fpga(dv, argInit_real_T(), V);
+                               ^
+./apatb_hnn_fpga.h:9:7: note: passing argument to parameter 'V' here
+float V[64]);
+      ^
+2 warnings generated.
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) hnn_fpga_terminate.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'aguss' on host 'desktop-ucl1psp' (Windows NT_amd64 version 6.2) on Wed Jul 21 19:48:22 -0300 2021
+INFO: [HLS 200-10] In directory 'C:/Users/aguss/AppData/Roaming/Xilinx/Vivado/hnn_fpga/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) hnn_fpga.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'aguss' on host 'desktop-ucl1psp' (Windows NT_amd64 version 6.2) on Wed Jul 21 19:48:31 -0300 2021
+INFO: [HLS 200-10] In directory 'C:/Users/aguss/AppData/Roaming/Xilinx/Vivado/hnn_fpga/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Compiling (apcc) hnn_fpga_initialize.c_pre.c.tb.c
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/apcc.exe'
+INFO: [HLS 200-10] For user 'aguss' on host 'desktop-ucl1psp' (Windows NT_amd64 version 6.2) on Wed Jul 21 19:48:41 -0300 2021
+INFO: [HLS 200-10] In directory 'C:/Users/aguss/AppData/Roaming/Xilinx/Vivado/hnn_fpga/solution1/sim/wrapc'
+clang: warning: argument unused during compilation: '-fno-builtin-isinf'
+clang: warning: argument unused during compilation: '-fno-builtin-isnan'
+INFO: [APCC 202-3] Tmp directory is apcc_db
+INFO: [APCC 202-1] APCC is done.
+   Generating cosim.tv.exe

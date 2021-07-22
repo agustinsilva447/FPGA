@@ -1,0 +1,381 @@
+#include "xil_printf.h"
+#include "sleep.h"
+#include <stdio.h>
+#include <math.h>
+#include <xtime_l.h>
+#include <time.h>
+#include <xparameters.h>
+
+#include "xhnn_fpga_hw.h"
+#include "xhnn_fpga.h"
+
+#define N1 8    //Cantidad de nodos
+
+float energy(int u1, int u2, int u3, int u4, int u5, float C_xi[N1 * N1], float V[N1 * N1], int rho[N1 * N1], int source, int destin)
+{
+	float E_1 = 0, E_2 = 0, E_3 = 0, E_4 = 0, E_5 = 0;
+	float E_3_1, E_3_2;
+	int x, i;
+
+	for(x = 0; x < N1; x++)
+	{
+		E_3_1 = 0;
+		E_3_2 = 0;
+		for(i = 0; i < N1; i++)
+		{
+			if (x != i)
+			{
+				if ((x != destin) || (i != source))
+				{
+					E_1 += (u1/2) * C_xi[x * N1 + i] * V[x * N1 + i];
+					E_2 += (u2/2) * rho[x * N1 + i] * V[x * N1 + i];
+				}
+				E_3_1 += (u3/2) * V[x * N1 + i];
+				E_3_2 += (u3/2) * V[i * N1 + x];
+				E_4 += (u4/2) * V[x * N1 + i] * (1 - V[x * N1 + i]);
+			}
+		}
+		E_3 += powf(E_3_1 - E_3_2, 2);
+	}
+	E_5 = (u5 / 2) * (1 - V[destin * N1 + source]);
+
+	return (E_1 + E_2 + E_3 + E_4 + E_5);
+}
+
+int deltak(int a, int b)
+{
+	if (a == b)
+	{
+		return 1;
+	} else {
+		return 0;
+	}
+}
+
+unsigned int float_to_u32(float val)
+{
+	unsigned int result;
+	union float_bytes{
+		float v;
+		unsigned char bytes[4];
+	} data;
+	data.v = val;
+	result = (data.bytes[3]<<24) + (data.bytes[2]<<16) + (data.bytes[1]<<8) + (data.bytes[0]);
+	return result;
+}
+
+float u32_to_float(unsigned int val)
+{
+	union{
+		float val_float;
+		unsigned char bytes[4];
+	} data;
+	data.bytes[3] = (val >> (8*3)) & 0xff;
+	data.bytes[2] = (val >> (8*2)) & 0xff;
+	data.bytes[1] = (val >> (8*1)) & 0xff;
+	data.bytes[0] = (val >> (8*0)) & 0xff;
+	return data.val_float;
+}
+
+int main()
+{
+	XTime tStart;
+	XTime tEnd;
+	XTime tStart_hw;
+	XTime tEnd_hw;
+
+	int it_max = 50, source = 0, destin = 1, flag, it, x, i, y, j;
+	int u1 = 950, u2 = 2500, u3 = 1500, u4 = 475, u5 = 2500, aux;
+	unsigned int U_hw[N1 * N1], V_hw[N1 * N1];
+	float A = 0.0057, B = 0.0072, C = 0.0064, l = 6, E_aux, E_i; t_aux, time_sw = 0, time_hw = 0;
+	float V[N1 * N1]  = { 		0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0};
+	float Ua[N1 * N1]  = { 		0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0};
+	float Ub[N1 * N1]  = { 		0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0};
+	float Uc[N1 * N1]  = { 		0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0,
+								0, 0, 0, 0, 0, 0, 0, 0};
+	float C_xi[N1 * N1]  = {	0,    0.91,  0.36, 0,     0,     0,     1.2,   0,
+								0.91, 0,     0,    0.375, 0,     0,     0,     1.02,
+								0.36, 0,     0,    0.47,  0.64,  0,     0,     0,
+								0,    0.375, 0.47, 0,     0,     0.5,   0,     0,
+								0,    0,     0.64, 0,     0,     0.56,  0.425, 0,
+								0,    0,     0,    0.5,   0.56,  0,     0,     0.4,
+								1.2,  0,     0,    0,     0.425, 0,     0,     1.1,
+								0,    1.02,  0,    0,     0,     0.4,   1.1,   0};
+	int rho[N1 * N1];
+	for(x = 0; x < N1; x++)
+	{
+		for(i = 0; i < N1; i++)
+		{
+			if (C_xi[x * N1 + i] == 0)
+			{
+				rho[x * N1 + i] = 1;
+			} else {
+				rho[x * N1 + i] = 0;
+			}
+
+		}
+	}
+
+
+	float T[N1 * N1 * N1 * N1];
+	for(x = 0; x < N1; x++)
+	{
+		for(i = 0; i < N1; i++)
+		{
+			for(y = 0; y < N1; y++)
+			{
+				for(j = 0; j < N1; j++)
+				{
+					T[x * N1 * N1 * N1 + i * N1 * N1 + y * N1 + j] = u4 * deltak(x, y) * deltak(i, j) - u3 * (deltak(x, y) + deltak(i, j) - deltak(j, x) - deltak(i, y));
+				}
+			}
+		}
+	}
+
+	float I[N1 * N1];
+	for(x = 0; x < N1; x++)
+	{
+		for(i = 0; i < N1; i++)
+		{
+			if (x != i)
+			{
+				I[x * N1 + i] = - (u1 / 2) * C_xi[x * N1 + i] * (1 - deltak(x, destin) * deltak(i, source)) - (u2 / 2) * rho[x * N1 + i] * (1 - deltak(x, destin) * deltak(i, source)) - (u4/2) + (u5/2) * deltak(x, destin) * deltak(i, source);
+			} else {
+				I[x * N1 + i] = 0;
+			}
+		}
+	}
+
+	printf("\nC_xi = \n");
+	for(x = 0; x < N1; x++)
+	{
+		printf("[");
+		for(i = 0; i < N1; i++)
+		{
+			printf("%f, ", (float) C_xi[x * N1 + i]);
+		}
+		printf("]\n");
+	}
+
+	printf("\nSOFTWARE HOPFIELD NEURAL NETWORK FOR THE SHORTEST PATH PROBLEM: \n");
+	flag = 1; it = 0; E_i = 10000;
+
+	while((flag) && (it < it_max))
+	{
+		XTime_GetTime(&tStart);
+	    for(int x = 0; x < N1; x++)
+	    {
+	        for(int i = 0; i < N1; i++)
+	        {
+	            if (x == i)
+	            {
+	            	V[x * N1 + i] = 0;
+	            } else {
+	            	V[x * N1 + i] = 1 / (1 + expf(-1 * Ub[x * N1 + i] * l));
+	            }
+	        }
+	    }
+		XTime_GetTime(&tEnd);
+		t_aux = (float)((tEnd - tStart)/(COUNTS_PER_SECOND/1000000));
+		time_sw = time_sw + t_aux;
+
+	    for(x = 0; x < N1; x++)
+	    {
+	        for(i = 0; i < N1; i++)
+	        {
+	            aux = 0;
+	            for(y = 0; y < N1; y++)
+	            {
+	                for(j = 0; j < N1; j++)
+	                {
+	                    if (y != j)
+	                    {
+	                        aux = aux + T[x * N1 * N1 * N1 + i * N1 * N1 + y * N1 + j] * V[y * N1 + j];
+	                    }
+	                }
+	            }
+	            Ua[x * N1 + i] = Ub[x * N1 + i] - A * Uc[x * N1 + i] + B * aux + C * I[x * N1 + i];
+	        }
+	    }
+
+		E_aux = energy(u1, u2, u3, u4, u5, C_xi, V, rho, source, destin);
+		if (E_i == E_aux)
+		{
+			flag = 0;
+		}
+		E_i = E_aux;
+		printf("\nIteracion %d: Energia = %f. Tiempo = %f.", it, E_i, t_aux);
+		for(x = 0; x < N1; x++)
+		{
+			for(i = 0; i < N1; i++)
+			{
+				Uc[x * N1 + i] = Ub[x * N1 + i];
+				Ub[x * N1 + i] = Ua[x * N1 + i];
+				Ua[x * N1 + i] = 0;
+			}
+		}
+		it += 1;
+	}
+
+	printf("\nV_sw = \n");
+	for(x = 0; x < N1; x++)
+	{
+		printf("[");
+		for(i = 0; i < N1; i++)
+		{
+			if (V[x * N1 + i] > 0.5)
+			{
+				V[x * N1 + i] = 1;
+			} else {
+				V[x * N1 + i] = 0;
+			}
+			printf("%f, ", (float) V[x * N1 + i]);
+		}
+		printf("]\n");
+	}
+
+	for(x = 0; x < N1; x++)
+	{
+		for(i = 0; i < N1; i++)
+		{
+			V[x * N1 + i] = 0;
+			Ua[x * N1 + i] = 0;
+			Ub[x * N1 + i] = 0;
+			Uc[x * N1 + i] = 0;
+		}
+	}
+
+	printf("\nHARDWARE HOPFIELD NEURAL NETWORK FOR THE SHORTEST PATH PROBLEM: \n");
+	int status;
+	XHnn_fpga goHnn_fpga;
+	XHnn_fpga_Config *goHnn_fpga_cfg;
+	goHnn_fpga_cfg = XHnn_fpga_LookupConfig(XPAR_HNN_FPGA_0_DEVICE_ID);
+	if (!goHnn_fpga_cfg){
+		printf("Error cargando la configuracion de goHnn_fpga.\n");
+	} else {
+		printf("Hnn_fpga configurado correctamente.\n");
+	}
+	status = XHnn_fpga_CfgInitialize(&goHnn_fpga, goHnn_fpga_cfg);
+	if (status != XST_SUCCESS){
+		printf("Error inicializando goHnn_fpga.\n");
+	} else {
+		printf("Hnn_fpga inicializado correctamente.\n");
+	}
+	XHnn_fpga_Initialize(&goHnn_fpga, XPAR_HNN_FPGA_0_DEVICE_ID);
+	XHnn_fpga_Set_l(&goHnn_fpga, float_to_u32(l));
+	flag = 1; it = 0; E_i = 10000;
+
+	while((flag) && (it < it_max))
+	{
+		for(x = 0; x < N1; x++)
+		{
+		    for(i = 0; i < N1; i++)
+		    {
+		        U_hw[x * N1 + i] = float_to_u32(Ub[x * N1 + i]);
+		    }
+		}
+		XHnn_fpga_Write_U_Words(&goHnn_fpga, 0, U_hw, N1 * N1);
+
+		XTime_GetTime(&tStart_hw);
+		XHnn_fpga_Start(&goHnn_fpga);
+		while(!XHnn_fpga_IsDone(&goHnn_fpga));
+		XTime_GetTime(&tEnd_hw);
+		t_aux = (float)((tEnd_hw - tStart_hw)/(COUNTS_PER_SECOND/1000000));
+		time_hw = time_hw + t_aux;
+
+		XHnn_fpga_Read_V_Words(&goHnn_fpga, 0, V_hw, N1 * N1);
+		for(x = 0; x < N1; x++)
+		{
+		    for(i = 0; i < N1; i++)
+		    {
+		        V[x * N1 + i] = u32_to_float(V_hw[x * N1 + i]);
+		    }
+		}
+
+	    for(x = 0; x < N1; x++)
+	    {
+	        for(i = 0; i < N1; i++)
+	        {
+	            aux = 0;
+	            for(y = 0; y < N1; y++)
+	            {
+	                for(j = 0; j < N1; j++)
+	                {
+	                    if (y != j)
+	                    {
+	                        aux = aux + T[x * N1 * N1 * N1 + i * N1 * N1 + y * N1 + j] * V[y * N1 + j];
+	                    }
+	                }
+	            }
+	            Ua[x * N1 + i] = Ub[x * N1 + i] - A * Uc[x * N1 + i] + B * aux + C * I[x * N1 + i];
+	        }
+	    }
+
+		E_aux = energy(u1, u2, u3, u4, u5, C_xi, V, rho, source, destin);
+		if (E_i == E_aux)
+		{
+			flag = 0;
+		}
+		E_i = E_aux;
+		printf("\nIteracion %d: Energia = %f. Tiempo = %f.", it, E_i, t_aux);
+		for(x = 0; x < N1; x++)
+		{
+			for(i = 0; i < N1; i++)
+			{
+				Uc[x * N1 + i] = Ub[x * N1 + i];
+				Ub[x * N1 + i] = Ua[x * N1 + i];
+				Ua[x * N1 + i] = 0;
+			}
+		}
+		it += 1;
+	}
+
+	printf("\nV_hw = \n");
+	for(x = 0; x < N1; x++)
+	{
+		printf("[");
+		for(i = 0; i < N1; i++)
+		{
+			if (V[x * N1 + i] > 0.5)
+			{
+				V[x * N1 + i] = 1;
+			} else {
+				V[x * N1 + i] = 0;
+			}
+			printf("%f, ", (float) V[x * N1 + i]);
+		}
+		printf("]\n");
+	}
+
+	printf("\nEl tiempo que le llevo al Software implementar la HNN para resolver el SPP es %f us", time_sw);
+	printf("\nEl tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es %f us", time_hw);
+
+	return 0;
+}
