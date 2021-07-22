@@ -1,4 +1,4 @@
-13:41:10 **** Incremental Build of configuration Debug for project hnn_fpga ****
+19:22:26 **** Incremental Build of configuration Debug for project hnn_fpga ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
@@ -12,14 +12,14 @@ C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrappe
  #pragma message ("For the sleep routines, Global timer is being used")
          ^~~~~~~
 ../src/src/main.c: In function 'main':
-../src/src/main.c:303:43: warning: pointer targets in passing argument 3 of 'XHnn_fpga_Write_U_Words' differ in signedness [-Wpointer-sign]
+../src/src/main.c:296:43: warning: pointer targets in passing argument 3 of 'XHnn_fpga_Write_U_Words' differ in signedness [-Wpointer-sign]
    XHnn_fpga_Write_U_Words(&goHnn_fpga, 0, U_hw, N1 * N1);
                                            ^~~~
 In file included from ../src/src/main.c:10:
 ../src/src/xhnn_fpga.h:94:5: note: expected 'int *' but argument is of type 'unsigned int *'
  u32 XHnn_fpga_Write_U_Words(XHnn_fpga *InstancePtr, int offset, int *data, int length);
      ^~~~~~~~~~~~~~~~~~~~~~~
-../src/src/main.c:312:42: warning: pointer targets in passing argument 3 of 'XHnn_fpga_Read_V_Words' differ in signedness [-Wpointer-sign]
+../src/src/main.c:303:42: warning: pointer targets in passing argument 3 of 'XHnn_fpga_Read_V_Words' differ in signedness [-Wpointer-sign]
    XHnn_fpga_Read_V_Words(&goHnn_fpga, 0, V_hw, N1 * N1);
                                           ^~~~
 In file included from ../src/src/main.c:10:
@@ -36,9 +36,9 @@ arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=non
 'Invoking: ARM v7 Print Size'
 arm-none-eabi-size hnn_fpga.elf  |tee "hnn_fpga.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  75160	   2592	  23328	 101080	  18ad8	hnn_fpga.elf
+  74568	   2592	  23328	 100488	  18888	hnn_fpga.elf
 'Finished building: hnn_fpga.elf.size'
 ' '
 
-13:41:12 Build Finished (took 1s.974ms)
+19:22:28 Build Finished (took 2s.37ms)
 

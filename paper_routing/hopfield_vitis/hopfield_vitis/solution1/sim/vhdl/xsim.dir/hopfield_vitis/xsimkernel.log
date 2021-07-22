@@ -1,7 +1,0 @@
-Running: xsim.dir/hopfield_vitis/xsimk.exe -simmode gui -wdb hopfield_vitis.wdb -simrunnum 0 -socket 49278
-Design successfully loaded
-Design Loading Memory Usage: 10672 KB (Peak: 10672 KB)
-Design Loading CPU Usage: 46 ms
-Simulation completed
-Simulation Memory Usage: 13520 KB (Peak: 13520 KB)
-Simulation CPU Usage: 8390 ms

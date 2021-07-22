@@ -816,3 +816,1809 @@ con
 ----------------End of Script----------------
 
 13:41:39 INFO  : Disconnected from the channel tcfchan#28.
+14:46:05 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\aguss\Desktop\hnn_fpga\hnn_fpga\temp_xsdb_launch_script.tcl
+14:46:15 INFO  : XSCT server has started successfully.
+14:46:15 INFO  : plnx-install-location is set to ''
+14:46:15 INFO  : Successfully done setting XSCT server connection channel  
+14:46:15 INFO  : Successfully done setting workspace for the tool. 
+14:46:16 INFO  : Registering command handlers for Vitis TCF services
+14:46:19 INFO  : Successfully done query RDI_DATADIR 
+14:47:59 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+14:48:18 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+14:48:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:48:40 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+14:48:40 INFO  : 'jtag frequency' command is executed.
+14:48:40 INFO  : Context for 'APU' is selected.
+14:48:40 INFO  : System reset is completed.
+14:48:43 INFO  : 'after 3000' command is executed.
+14:48:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+14:48:45 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+14:48:45 INFO  : Context for 'APU' is selected.
+14:48:46 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+14:48:46 INFO  : 'configparams force-mem-access 1' command is executed.
+14:48:46 INFO  : Context for 'APU' is selected.
+14:48:46 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+14:48:46 INFO  : 'ps7_init' command is executed.
+14:48:46 INFO  : 'ps7_post_config' command is executed.
+14:48:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:48:47 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:48:47 INFO  : 'configparams force-mem-access 0' command is executed.
+14:48:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:48:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:48:47 INFO  : 'con' command is executed.
+14:48:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:48:47 INFO  : Disconnected from the channel tcfchan#2.
+14:54:10 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+14:54:23 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+14:54:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:54:42 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+14:54:42 INFO  : 'jtag frequency' command is executed.
+14:54:42 INFO  : Context for 'APU' is selected.
+14:54:42 INFO  : System reset is completed.
+14:54:45 INFO  : 'after 3000' command is executed.
+14:54:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+14:54:48 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+14:54:48 INFO  : Context for 'APU' is selected.
+14:54:48 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+14:54:48 INFO  : 'configparams force-mem-access 1' command is executed.
+14:54:48 INFO  : Context for 'APU' is selected.
+14:54:48 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+14:54:49 INFO  : 'ps7_init' command is executed.
+14:54:49 INFO  : 'ps7_post_config' command is executed.
+14:54:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:54:49 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:54:49 INFO  : 'configparams force-mem-access 0' command is executed.
+14:54:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:54:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:54:49 INFO  : 'con' command is executed.
+14:54:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:54:49 INFO  : Disconnected from the channel tcfchan#4.
+15:00:34 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+15:00:45 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] Th
+15:00:45 ERROR : (XSDB Server)e design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+15:01:17 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+15:01:24 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+15:01:41 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:01:42 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+15:01:42 INFO  : 'jtag frequency' command is executed.
+15:01:42 INFO  : Context for 'APU' is selected.
+15:01:42 INFO  : System reset is completed.
+15:01:45 INFO  : 'after 3000' command is executed.
+15:01:45 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+15:01:48 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+15:01:48 INFO  : Context for 'APU' is selected.
+15:01:48 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+15:01:48 INFO  : 'configparams force-mem-access 1' command is executed.
+15:01:48 INFO  : Context for 'APU' is selected.
+15:01:48 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+15:01:48 INFO  : 'ps7_init' command is executed.
+15:01:48 INFO  : 'ps7_post_config' command is executed.
+15:01:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:01:49 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:01:49 INFO  : 'configparams force-mem-access 0' command is executed.
+15:01:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:01:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:01:49 INFO  : 'con' command is executed.
+15:01:49 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:01:49 INFO  : Disconnected from the channel tcfchan#7.
+15:07:00 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+15:11:57 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] Th
+15:11:57 ERROR : (XSDB Server)e design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+15:15:12 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+18:27:57 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\aguss\Desktop\hnn_fpga\hnn_fpga\temp_xsdb_launch_script.tcl
+18:28:18 INFO  : XSCT server has started successfully.
+18:28:18 INFO  : plnx-install-location is set to ''
+18:28:18 INFO  : Successfully done setting XSCT server connection channel  
+18:28:18 INFO  : Successfully done setting workspace for the tool. 
+18:28:24 INFO  : Registering command handlers for Vitis TCF services
+18:29:11 INFO  : Successfully done query RDI_DATADIR 
+18:35:23 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+18:35:47 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design fil
+18:35:47 ERROR : (XSDB Server)e C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrap
+18:35:47 ERROR : (XSDB Server)per/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+18:36:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:36:39 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+18:36:40 INFO  : 'jtag frequency' command is executed.
+18:36:40 INFO  : Context for 'APU' is selected.
+18:36:40 INFO  : System reset is completed.
+18:36:43 INFO  : 'after 3000' command is executed.
+18:36:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+18:36:45 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+18:36:45 INFO  : Context for 'APU' is selected.
+18:36:46 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+18:36:46 INFO  : 'configparams force-mem-access 1' command is executed.
+18:36:46 INFO  : Context for 'APU' is selected.
+18:36:46 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+18:36:46 INFO  : 'ps7_init' command is executed.
+18:36:46 INFO  : 'ps7_post_config' command is executed.
+18:36:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:36:46 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:36:46 INFO  : 'configparams force-mem-access 0' command is executed.
+18:36:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:36:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:36:48 INFO  : 'con' command is executed.
+18:36:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:36:48 INFO  : Disconnected from the channel tcfchan#2.
+18:40:54 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+18:41:09 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+18:41:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:41:52 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+18:41:52 INFO  : 'jtag frequency' command is executed.
+18:41:52 INFO  : Context for 'APU' is selected.
+18:41:52 INFO  : System reset is completed.
+18:41:55 INFO  : 'after 3000' command is executed.
+18:41:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+18:41:57 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+18:41:57 INFO  : Context for 'APU' is selected.
+18:41:58 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+18:41:58 INFO  : 'configparams force-mem-access 1' command is executed.
+18:41:58 INFO  : Context for 'APU' is selected.
+18:41:58 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+18:41:58 INFO  : 'ps7_init' command is executed.
+18:41:58 INFO  : 'ps7_post_config' command is executed.
+18:41:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:41:58 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:41:58 INFO  : 'configparams force-mem-access 0' command is executed.
+18:41:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:41:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:41:59 INFO  : 'con' command is executed.
+18:41:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:41:59 INFO  : Disconnected from the channel tcfchan#4.
+18:43:39 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+18:43:51 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+18:44:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:44:08 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+18:44:08 INFO  : 'jtag frequency' command is executed.
+18:44:08 INFO  : Context for 'APU' is selected.
+18:44:08 INFO  : System reset is completed.
+18:44:11 INFO  : 'after 3000' command is executed.
+18:44:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+18:44:14 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+18:44:14 INFO  : Context for 'APU' is selected.
+18:44:14 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+18:44:14 INFO  : 'configparams force-mem-access 1' command is executed.
+18:44:14 INFO  : Context for 'APU' is selected.
+18:44:14 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+18:44:14 INFO  : 'ps7_init' command is executed.
+18:44:14 INFO  : 'ps7_post_config' command is executed.
+18:44:14 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:44:15 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:44:15 INFO  : 'configparams force-mem-access 0' command is executed.
+18:44:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:44:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:44:15 INFO  : 'con' command is executed.
+18:44:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:44:15 INFO  : Disconnected from the channel tcfchan#6.
+18:46:33 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+18:46:45 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+18:47:07 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:47:08 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+18:47:08 INFO  : 'jtag frequency' command is executed.
+18:47:08 INFO  : Context for 'APU' is selected.
+18:47:08 INFO  : System reset is completed.
+18:47:11 INFO  : 'after 3000' command is executed.
+18:47:11 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+18:47:14 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+18:47:14 INFO  : Context for 'APU' is selected.
+18:47:14 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+18:47:14 INFO  : 'configparams force-mem-access 1' command is executed.
+18:47:14 INFO  : Context for 'APU' is selected.
+18:47:14 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+18:47:15 INFO  : 'ps7_init' command is executed.
+18:47:15 INFO  : 'ps7_post_config' command is executed.
+18:47:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:47:15 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:47:15 INFO  : 'configparams force-mem-access 0' command is executed.
+18:47:15 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:47:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:47:15 INFO  : 'con' command is executed.
+18:47:15 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:47:15 INFO  : Disconnected from the channel tcfchan#8.
+18:48:58 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+18:49:09 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+18:49:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:49:26 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+18:49:26 INFO  : 'jtag frequency' command is executed.
+18:49:26 INFO  : Context for 'APU' is selected.
+18:49:26 INFO  : System reset is completed.
+18:49:29 INFO  : 'after 3000' command is executed.
+18:49:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+18:49:31 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+18:49:31 INFO  : Context for 'APU' is selected.
+18:49:32 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+18:49:32 INFO  : 'configparams force-mem-access 1' command is executed.
+18:49:32 INFO  : Context for 'APU' is selected.
+18:49:32 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+18:49:32 INFO  : 'ps7_init' command is executed.
+18:49:32 INFO  : 'ps7_post_config' command is executed.
+18:49:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:49:32 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:49:32 INFO  : 'configparams force-mem-access 0' command is executed.
+18:49:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:49:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:49:33 INFO  : 'con' command is executed.
+18:49:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:49:33 INFO  : Disconnected from the channel tcfchan#10.
+18:50:21 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+18:50:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_f
+18:50:33 ERROR : (XSDB Server)pga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+18:50:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:50:48 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+18:50:48 INFO  : 'jtag frequency' command is executed.
+18:50:48 INFO  : Context for 'APU' is selected.
+18:50:48 INFO  : System reset is completed.
+18:50:51 INFO  : 'after 3000' command is executed.
+18:50:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+18:50:54 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+18:50:54 INFO  : Context for 'APU' is selected.
+18:50:54 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+18:50:54 INFO  : 'configparams force-mem-access 1' command is executed.
+18:50:54 INFO  : Context for 'APU' is selected.
+18:50:54 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+18:50:54 INFO  : 'ps7_init' command is executed.
+18:50:54 INFO  : 'ps7_post_config' command is executed.
+18:50:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:50:55 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:50:55 INFO  : 'configparams force-mem-access 0' command is executed.
+18:50:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:50:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:50:55 INFO  : 'con' command is executed.
+18:50:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:50:55 INFO  : Disconnected from the channel tcfchan#12.
+18:51:16 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+18:51:27 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] 
+18:51:27 ERROR : (XSDB Server)The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+18:51:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:51:48 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+18:51:48 INFO  : 'jtag frequency' command is executed.
+18:51:48 INFO  : Context for 'APU' is selected.
+18:51:48 INFO  : System reset is completed.
+18:51:51 INFO  : 'after 3000' command is executed.
+18:51:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+18:51:54 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+18:51:54 INFO  : Context for 'APU' is selected.
+18:51:54 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+18:51:54 INFO  : 'configparams force-mem-access 1' command is executed.
+18:51:54 INFO  : Context for 'APU' is selected.
+18:51:54 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+18:51:54 INFO  : 'ps7_init' command is executed.
+18:51:54 INFO  : 'ps7_post_config' command is executed.
+18:51:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:51:55 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:51:55 INFO  : 'configparams force-mem-access 0' command is executed.
+18:51:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:51:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:51:55 INFO  : 'con' command is executed.
+18:51:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:51:55 INFO  : Disconnected from the channel tcfchan#14.
+18:52:44 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+18:52:55 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+18:53:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:53:16 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+18:53:16 INFO  : 'jtag frequency' command is executed.
+18:53:16 INFO  : Context for 'APU' is selected.
+18:53:17 INFO  : System reset is completed.
+18:53:20 INFO  : 'after 3000' command is executed.
+18:53:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+18:53:22 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+18:53:22 INFO  : Context for 'APU' is selected.
+18:53:22 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+18:53:22 INFO  : 'configparams force-mem-access 1' command is executed.
+18:53:22 INFO  : Context for 'APU' is selected.
+18:53:22 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+18:53:23 INFO  : 'ps7_init' command is executed.
+18:53:23 INFO  : 'ps7_post_config' command is executed.
+18:53:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:53:23 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:53:23 INFO  : 'configparams force-mem-access 0' command is executed.
+18:53:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:53:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:53:24 INFO  : 'con' command is executed.
+18:53:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:53:24 INFO  : Disconnected from the channel tcfchan#16.
+18:53:44 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+18:53:55 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+18:54:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:54:17 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+18:54:17 INFO  : 'jtag frequency' command is executed.
+18:54:17 INFO  : Context for 'APU' is selected.
+18:54:17 INFO  : System reset is completed.
+18:54:20 INFO  : 'after 3000' command is executed.
+18:54:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+18:54:23 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+18:54:23 INFO  : Context for 'APU' is selected.
+18:54:23 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+18:54:23 INFO  : 'configparams force-mem-access 1' command is executed.
+18:54:23 INFO  : Context for 'APU' is selected.
+18:54:23 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+18:54:23 INFO  : 'ps7_init' command is executed.
+18:54:23 INFO  : 'ps7_post_config' command is executed.
+18:54:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:54:24 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:54:24 INFO  : 'configparams force-mem-access 0' command is executed.
+18:54:24 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:54:24 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:54:24 INFO  : 'con' command is executed.
+18:54:24 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:54:24 INFO  : Disconnected from the channel tcfchan#18.
+18:54:47 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+18:54:59 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+18:55:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:55:47 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+18:55:47 INFO  : 'jtag frequency' command is executed.
+18:55:47 INFO  : Context for 'APU' is selected.
+18:55:47 INFO  : System reset is completed.
+18:55:50 INFO  : 'after 3000' command is executed.
+18:55:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+18:55:53 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+18:55:53 INFO  : Context for 'APU' is selected.
+18:55:53 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+18:55:53 INFO  : 'configparams force-mem-access 1' command is executed.
+18:55:53 INFO  : Context for 'APU' is selected.
+18:55:53 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+18:55:54 INFO  : 'ps7_init' command is executed.
+18:55:54 INFO  : 'ps7_post_config' command is executed.
+18:55:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:55:54 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:55:54 INFO  : 'configparams force-mem-access 0' command is executed.
+18:55:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:55:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:55:54 INFO  : 'con' command is executed.
+18:55:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:55:54 INFO  : Disconnected from the channel tcfchan#20.
+18:56:23 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+18:56:35 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+18:56:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:56:52 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+18:56:52 INFO  : 'jtag frequency' command is executed.
+18:56:52 INFO  : Context for 'APU' is selected.
+18:56:52 INFO  : System reset is completed.
+18:56:55 INFO  : 'after 3000' command is executed.
+18:56:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+18:56:57 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+18:56:57 INFO  : Context for 'APU' is selected.
+18:56:58 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+18:56:58 INFO  : 'configparams force-mem-access 1' command is executed.
+18:56:58 INFO  : Context for 'APU' is selected.
+18:56:58 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+18:56:58 INFO  : 'ps7_init' command is executed.
+18:56:58 INFO  : 'ps7_post_config' command is executed.
+18:56:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:56:59 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:56:59 INFO  : 'configparams force-mem-access 0' command is executed.
+18:56:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:56:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:56:59 INFO  : 'con' command is executed.
+18:56:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:56:59 INFO  : Disconnected from the channel tcfchan#22.
+18:57:44 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+18:57:56 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+18:58:14 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:58:14 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+18:58:14 INFO  : 'jtag frequency' command is executed.
+18:58:15 INFO  : Context for 'APU' is selected.
+18:58:15 INFO  : System reset is completed.
+18:58:18 INFO  : 'after 3000' command is executed.
+18:58:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+18:58:20 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+18:58:20 INFO  : Context for 'APU' is selected.
+18:58:20 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+18:58:20 INFO  : 'configparams force-mem-access 1' command is executed.
+18:58:20 INFO  : Context for 'APU' is selected.
+18:58:20 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+18:58:21 INFO  : 'ps7_init' command is executed.
+18:58:21 INFO  : 'ps7_post_config' command is executed.
+18:58:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:58:21 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:58:21 INFO  : 'configparams force-mem-access 0' command is executed.
+18:58:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:58:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:58:21 INFO  : 'con' command is executed.
+18:58:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:58:21 INFO  : Disconnected from the channel tcfchan#24.
+18:58:50 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+18:59:03 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+18:59:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:59:21 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+18:59:21 INFO  : 'jtag frequency' command is executed.
+18:59:21 INFO  : Context for 'APU' is selected.
+18:59:21 INFO  : System reset is completed.
+18:59:24 INFO  : 'after 3000' command is executed.
+18:59:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+18:59:27 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+18:59:27 INFO  : Context for 'APU' is selected.
+18:59:27 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+18:59:27 INFO  : 'configparams force-mem-access 1' command is executed.
+18:59:27 INFO  : Context for 'APU' is selected.
+18:59:27 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+18:59:28 INFO  : 'ps7_init' command is executed.
+18:59:28 INFO  : 'ps7_post_config' command is executed.
+18:59:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:59:28 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:59:28 INFO  : 'configparams force-mem-access 0' command is executed.
+18:59:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:59:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:59:28 INFO  : 'con' command is executed.
+18:59:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:59:28 INFO  : Disconnected from the channel tcfchan#26.
+18:59:58 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:00:09 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:00:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:00:25 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:00:25 INFO  : 'jtag frequency' command is executed.
+19:00:25 INFO  : Context for 'APU' is selected.
+19:00:25 INFO  : System reset is completed.
+19:00:28 INFO  : 'after 3000' command is executed.
+19:00:28 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:00:31 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:00:31 INFO  : Context for 'APU' is selected.
+19:00:31 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:00:31 INFO  : 'configparams force-mem-access 1' command is executed.
+19:00:31 INFO  : Context for 'APU' is selected.
+19:00:31 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:00:32 INFO  : 'ps7_init' command is executed.
+19:00:32 INFO  : 'ps7_post_config' command is executed.
+19:00:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:00:32 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:00:32 INFO  : 'configparams force-mem-access 0' command is executed.
+19:00:32 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:00:32 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:00:32 INFO  : 'con' command is executed.
+19:00:32 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:00:32 INFO  : Disconnected from the channel tcfchan#28.
+19:01:09 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:01:20 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:01:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:01:39 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:01:39 INFO  : 'jtag frequency' command is executed.
+19:01:39 INFO  : Context for 'APU' is selected.
+19:01:39 INFO  : System reset is completed.
+19:01:42 INFO  : 'after 3000' command is executed.
+19:01:42 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:01:44 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:01:44 INFO  : Context for 'APU' is selected.
+19:01:45 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:01:45 INFO  : 'configparams force-mem-access 1' command is executed.
+19:01:45 INFO  : Context for 'APU' is selected.
+19:01:45 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:01:45 INFO  : 'ps7_init' command is executed.
+19:01:45 INFO  : 'ps7_post_config' command is executed.
+19:01:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:01:45 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:01:45 INFO  : 'configparams force-mem-access 0' command is executed.
+19:01:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:01:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:01:46 INFO  : 'con' command is executed.
+19:01:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:01:46 INFO  : Disconnected from the channel tcfchan#30.
+19:02:05 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:02:17 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:02:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:02:46 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:02:46 INFO  : 'jtag frequency' command is executed.
+19:02:46 INFO  : Context for 'APU' is selected.
+19:02:46 INFO  : System reset is completed.
+19:02:49 INFO  : 'after 3000' command is executed.
+19:02:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:02:51 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:02:51 INFO  : Context for 'APU' is selected.
+19:02:51 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:02:51 INFO  : 'configparams force-mem-access 1' command is executed.
+19:02:51 INFO  : Context for 'APU' is selected.
+19:02:51 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:02:52 INFO  : 'ps7_init' command is executed.
+19:02:52 INFO  : 'ps7_post_config' command is executed.
+19:02:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:02:52 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:02:52 INFO  : 'configparams force-mem-access 0' command is executed.
+19:02:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:02:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:02:52 INFO  : 'con' command is executed.
+19:02:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:02:52 INFO  : Disconnected from the channel tcfchan#32.
+19:03:18 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:03:30 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:03:46 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:03:47 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:03:47 INFO  : 'jtag frequency' command is executed.
+19:03:47 INFO  : Context for 'APU' is selected.
+19:03:47 INFO  : System reset is completed.
+19:03:50 INFO  : 'after 3000' command is executed.
+19:03:50 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:03:53 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:03:53 INFO  : Context for 'APU' is selected.
+19:03:53 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:03:53 INFO  : 'configparams force-mem-access 1' command is executed.
+19:03:53 INFO  : Context for 'APU' is selected.
+19:03:53 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:03:53 INFO  : 'ps7_init' command is executed.
+19:03:53 INFO  : 'ps7_post_config' command is executed.
+19:03:53 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:03:54 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:03:54 INFO  : 'configparams force-mem-access 0' command is executed.
+19:03:54 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:03:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:03:54 INFO  : 'con' command is executed.
+19:03:54 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:03:54 INFO  : Disconnected from the channel tcfchan#34.
+19:04:17 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:04:28 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:04:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:04:43 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:04:43 INFO  : 'jtag frequency' command is executed.
+19:04:43 INFO  : Context for 'APU' is selected.
+19:04:43 INFO  : System reset is completed.
+19:04:46 INFO  : 'after 3000' command is executed.
+19:04:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:04:49 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:04:49 INFO  : Context for 'APU' is selected.
+19:04:49 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:04:49 INFO  : 'configparams force-mem-access 1' command is executed.
+19:04:49 INFO  : Context for 'APU' is selected.
+19:04:49 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:04:50 INFO  : 'ps7_init' command is executed.
+19:04:50 INFO  : 'ps7_post_config' command is executed.
+19:04:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:04:50 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:04:50 INFO  : 'configparams force-mem-access 0' command is executed.
+19:04:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:04:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:04:50 INFO  : 'con' command is executed.
+19:04:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:04:50 INFO  : Disconnected from the channel tcfchan#36.
+19:05:10 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:05:22 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:05:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:05:39 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:05:39 INFO  : 'jtag frequency' command is executed.
+19:05:39 INFO  : Context for 'APU' is selected.
+19:05:39 INFO  : System reset is completed.
+19:05:42 INFO  : 'after 3000' command is executed.
+19:05:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:05:45 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:05:45 INFO  : Context for 'APU' is selected.
+19:05:45 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:05:45 INFO  : 'configparams force-mem-access 1' command is executed.
+19:05:45 INFO  : Context for 'APU' is selected.
+19:05:45 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:05:46 INFO  : 'ps7_init' command is executed.
+19:05:46 INFO  : 'ps7_post_config' command is executed.
+19:05:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:05:46 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:05:46 INFO  : 'configparams force-mem-access 0' command is executed.
+19:05:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:05:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:05:46 INFO  : 'con' command is executed.
+19:05:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:05:46 INFO  : Disconnected from the channel tcfchan#38.
+19:06:04 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:06:15 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:06:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:06:35 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:06:35 INFO  : 'jtag frequency' command is executed.
+19:06:35 INFO  : Context for 'APU' is selected.
+19:06:35 INFO  : System reset is completed.
+19:06:38 INFO  : 'after 3000' command is executed.
+19:06:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:06:41 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:06:41 INFO  : Context for 'APU' is selected.
+19:06:41 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:06:41 INFO  : 'configparams force-mem-access 1' command is executed.
+19:06:41 INFO  : Context for 'APU' is selected.
+19:06:41 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:06:41 INFO  : 'ps7_init' command is executed.
+19:06:41 INFO  : 'ps7_post_config' command is executed.
+19:06:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:06:42 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:06:42 INFO  : 'configparams force-mem-access 0' command is executed.
+19:06:42 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:06:42 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:06:42 INFO  : 'con' command is executed.
+19:06:42 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:06:42 INFO  : Disconnected from the channel tcfchan#40.
+19:07:45 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:07:56 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:08:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:08:22 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:08:22 INFO  : 'jtag frequency' command is executed.
+19:08:22 INFO  : Context for 'APU' is selected.
+19:08:23 INFO  : System reset is completed.
+19:08:26 INFO  : 'after 3000' command is executed.
+19:08:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:08:28 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:08:28 INFO  : Context for 'APU' is selected.
+19:08:28 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:08:28 INFO  : 'configparams force-mem-access 1' command is executed.
+19:08:28 INFO  : Context for 'APU' is selected.
+19:08:28 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:08:29 INFO  : 'ps7_init' command is executed.
+19:08:29 INFO  : 'ps7_post_config' command is executed.
+19:08:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:08:29 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:08:29 INFO  : 'configparams force-mem-access 0' command is executed.
+19:08:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:08:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:08:29 INFO  : 'con' command is executed.
+19:08:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:08:29 INFO  : Disconnected from the channel tcfchan#42.
+19:08:48 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:09:00 ERROR : (XSDB Server)ERROR: [Hsi 55-15
+19:09:00 ERROR : (XSDB Server)71] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:10:00 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:10:01 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:10:01 INFO  : 'jtag frequency' command is executed.
+19:10:01 INFO  : Context for 'APU' is selected.
+19:10:01 INFO  : System reset is completed.
+19:10:04 INFO  : 'after 3000' command is executed.
+19:10:04 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:10:07 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:10:07 INFO  : Context for 'APU' is selected.
+19:10:07 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:10:07 INFO  : 'configparams force-mem-access 1' command is executed.
+19:10:07 INFO  : Context for 'APU' is selected.
+19:10:07 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:10:08 INFO  : 'ps7_init' command is executed.
+19:10:08 INFO  : 'ps7_post_config' command is executed.
+19:10:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:10:08 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:10:08 INFO  : 'configparams force-mem-access 0' command is executed.
+19:10:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:10:08 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:10:08 INFO  : 'con' command is executed.
+19:10:08 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:10:08 INFO  : Disconnected from the channel tcfchan#44.
+19:10:40 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:10:51 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/expor
+19:10:51 ERROR : (XSDB Server)t/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:11:08 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:11:09 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:11:09 INFO  : 'jtag frequency' command is executed.
+19:11:09 INFO  : Context for 'APU' is selected.
+19:11:09 INFO  : System reset is completed.
+19:11:12 INFO  : 'after 3000' command is executed.
+19:11:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:11:14 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:11:14 INFO  : Context for 'APU' is selected.
+19:11:15 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:11:15 INFO  : 'configparams force-mem-access 1' command is executed.
+19:11:15 INFO  : Context for 'APU' is selected.
+19:11:15 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:11:15 INFO  : 'ps7_init' command is executed.
+19:11:15 INFO  : 'ps7_post_config' command is executed.
+19:11:15 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:11:15 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:11:16 INFO  : 'configparams force-mem-access 0' command is executed.
+19:11:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:11:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:11:16 INFO  : 'con' command is executed.
+19:11:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:11:16 INFO  : Disconnected from the channel tcfchan#46.
+19:12:00 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:12:11 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:12:33 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:12:34 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:12:34 INFO  : 'jtag frequency' command is executed.
+19:12:34 INFO  : Context for 'APU' is selected.
+19:12:34 INFO  : System reset is completed.
+19:12:37 INFO  : 'after 3000' command is executed.
+19:12:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:12:39 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:12:40 INFO  : Context for 'APU' is selected.
+19:12:40 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:12:40 INFO  : 'configparams force-mem-access 1' command is executed.
+19:12:40 INFO  : Context for 'APU' is selected.
+19:12:40 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:12:40 INFO  : 'ps7_init' command is executed.
+19:12:40 INFO  : 'ps7_post_config' command is executed.
+19:12:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:12:41 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:12:41 INFO  : 'configparams force-mem-access 0' command is executed.
+19:12:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:12:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:12:41 INFO  : 'con' command is executed.
+19:12:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:12:41 INFO  : Disconnected from the channel tcfchan#48.
+19:13:13 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:13:24 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:13:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:13:43 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:13:43 INFO  : 'jtag frequency' command is executed.
+19:13:43 INFO  : Context for 'APU' is selected.
+19:13:43 INFO  : System reset is completed.
+19:13:46 INFO  : 'after 3000' command is executed.
+19:13:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:13:48 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:13:48 INFO  : Context for 'APU' is selected.
+19:13:48 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:13:48 INFO  : 'configparams force-mem-access 1' command is executed.
+19:13:49 INFO  : Context for 'APU' is selected.
+19:13:49 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:13:49 INFO  : 'ps7_init' command is executed.
+19:13:49 INFO  : 'ps7_post_config' command is executed.
+19:13:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:13:49 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:13:49 INFO  : 'configparams force-mem-access 0' command is executed.
+19:13:49 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:13:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:13:50 INFO  : 'con' command is executed.
+19:13:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:13:50 INFO  : Disconnected from the channel tcfchan#50.
+19:14:04 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:14:16 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:14:47 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:14:48 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:14:48 INFO  : 'jtag frequency' command is executed.
+19:14:48 INFO  : Context for 'APU' is selected.
+19:14:48 INFO  : System reset is completed.
+19:14:51 INFO  : 'after 3000' command is executed.
+19:14:51 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:14:54 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:14:54 INFO  : Context for 'APU' is selected.
+19:14:54 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:14:54 INFO  : 'configparams force-mem-access 1' command is executed.
+19:14:54 INFO  : Context for 'APU' is selected.
+19:14:54 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:14:54 INFO  : 'ps7_init' command is executed.
+19:14:54 INFO  : 'ps7_post_config' command is executed.
+19:14:54 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:14:55 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:14:55 INFO  : 'configparams force-mem-access 0' command is executed.
+19:14:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:14:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:14:55 INFO  : 'con' command is executed.
+19:14:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:14:55 INFO  : Disconnected from the channel tcfchan#52.
+19:15:14 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:15:25 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:15:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:15:40 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:15:40 INFO  : 'jtag frequency' command is executed.
+19:15:40 INFO  : Context for 'APU' is selected.
+19:15:40 INFO  : System reset is completed.
+19:15:43 INFO  : 'after 3000' command is executed.
+19:15:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:15:46 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:15:46 INFO  : Context for 'APU' is selected.
+19:15:46 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:15:46 INFO  : 'configparams force-mem-access 1' command is executed.
+19:15:46 INFO  : Context for 'APU' is selected.
+19:15:46 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:15:46 INFO  : 'ps7_init' command is executed.
+19:15:46 INFO  : 'ps7_post_config' command is executed.
+19:15:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:15:47 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:15:47 INFO  : 'configparams force-mem-access 0' command is executed.
+19:15:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:15:47 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:15:47 INFO  : 'con' command is executed.
+19:15:47 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:15:47 INFO  : Disconnected from the channel tcfchan#54.
+19:16:05 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:16:17 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:16:45 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:16:45 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:16:45 INFO  : 'jtag frequency' command is executed.
+19:16:45 INFO  : Context for 'APU' is selected.
+19:16:45 INFO  : System reset is completed.
+19:16:49 INFO  : 'after 3000' command is executed.
+19:16:49 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:16:51 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:16:51 INFO  : Context for 'APU' is selected.
+19:16:51 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:16:51 INFO  : 'configparams force-mem-access 1' command is executed.
+19:16:51 INFO  : Context for 'APU' is selected.
+19:16:51 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:16:52 INFO  : 'ps7_init' command is executed.
+19:16:52 INFO  : 'ps7_post_config' command is executed.
+19:16:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:16:52 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:16:52 INFO  : 'configparams force-mem-access 0' command is executed.
+19:16:52 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:16:52 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:16:52 INFO  : 'con' command is executed.
+19:16:52 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:16:52 INFO  : Disconnected from the channel tcfchan#56.
+19:17:10 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:17:22 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:17:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:17:38 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:17:38 INFO  : 'jtag frequency' command is executed.
+19:17:38 INFO  : Context for 'APU' is selected.
+19:17:38 INFO  : System reset is completed.
+19:17:41 INFO  : 'after 3000' command is executed.
+19:17:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:17:44 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:17:44 INFO  : Context for 'APU' is selected.
+19:17:44 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:17:44 INFO  : 'configparams force-mem-access 1' command is executed.
+19:17:44 INFO  : Context for 'APU' is selected.
+19:17:44 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:17:44 INFO  : 'ps7_init' command is executed.
+19:17:44 INFO  : 'ps7_post_config' command is executed.
+19:17:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:17:45 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:17:45 INFO  : 'configparams force-mem-access 0' command is executed.
+19:17:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:17:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:17:45 INFO  : 'con' command is executed.
+19:17:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:17:45 INFO  : Disconnected from the channel tcfchan#58.
+19:18:02 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:18:14 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:18:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:18:32 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:18:32 INFO  : 'jtag frequency' command is executed.
+19:18:32 INFO  : Context for 'APU' is selected.
+19:18:32 INFO  : System reset is completed.
+19:18:35 INFO  : 'after 3000' command is executed.
+19:18:35 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:18:38 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:18:38 INFO  : Context for 'APU' is selected.
+19:18:38 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:18:38 INFO  : 'configparams force-mem-access 1' command is executed.
+19:18:38 INFO  : Context for 'APU' is selected.
+19:18:38 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:18:39 INFO  : 'ps7_init' command is executed.
+19:18:39 INFO  : 'ps7_post_config' command is executed.
+19:18:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:18:39 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:18:39 INFO  : 'configparams force-mem-access 0' command is executed.
+19:18:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:18:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:18:39 INFO  : 'con' command is executed.
+19:18:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:18:39 INFO  : Disconnected from the channel tcfchan#60.
+19:18:58 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:19:09 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:19:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:19:29 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:19:29 INFO  : 'jtag frequency' command is executed.
+19:19:29 INFO  : Context for 'APU' is selected.
+19:19:29 INFO  : System reset is completed.
+19:19:32 INFO  : 'after 3000' command is executed.
+19:19:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:19:34 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:19:34 INFO  : Context for 'APU' is selected.
+19:19:34 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:19:34 INFO  : 'configparams force-mem-access 1' command is executed.
+19:19:34 INFO  : Context for 'APU' is selected.
+19:19:34 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:19:35 INFO  : 'ps7_init' command is executed.
+19:19:35 INFO  : 'ps7_post_config' command is executed.
+19:19:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:19:35 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:19:35 INFO  : 'configparams force-mem-access 0' command is executed.
+19:19:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:19:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:19:35 INFO  : 'con' command is executed.
+19:19:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:19:36 INFO  : Disconnected from the channel tcfchan#62.
+19:20:08 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:20:19 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] Th
+19:20:19 ERROR : (XSDB Server)e design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:20:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:20:36 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:20:36 INFO  : 'jtag frequency' command is executed.
+19:20:36 INFO  : Context for 'APU' is selected.
+19:20:36 INFO  : System reset is completed.
+19:20:39 INFO  : 'after 3000' command is executed.
+19:20:39 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:20:42 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:20:42 INFO  : Context for 'APU' is selected.
+19:20:42 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:20:42 INFO  : 'configparams force-mem-access 1' command is executed.
+19:20:42 INFO  : Context for 'APU' is selected.
+19:20:42 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:20:43 INFO  : 'ps7_init' command is executed.
+19:20:43 INFO  : 'ps7_post_config' command is executed.
+19:20:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:20:43 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:20:43 INFO  : 'configparams force-mem-access 0' command is executed.
+19:20:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:20:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:20:43 INFO  : 'con' command is executed.
+19:20:43 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:20:43 INFO  : Disconnected from the channel tcfchan#64.
+19:20:59 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:21:10 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:21:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:21:30 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:21:30 INFO  : 'jtag frequency' command is executed.
+19:21:30 INFO  : Context for 'APU' is selected.
+19:21:30 INFO  : System reset is completed.
+19:21:33 INFO  : 'after 3000' command is executed.
+19:21:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:21:36 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:21:36 INFO  : Context for 'APU' is selected.
+19:21:36 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:21:36 INFO  : 'configparams force-mem-access 1' command is executed.
+19:21:36 INFO  : Context for 'APU' is selected.
+19:21:36 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:21:37 INFO  : 'ps7_init' command is executed.
+19:21:37 INFO  : 'ps7_post_config' command is executed.
+19:21:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:21:37 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:21:37 INFO  : 'configparams force-mem-access 0' command is executed.
+19:21:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:21:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:21:37 INFO  : 'con' command is executed.
+19:21:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:21:37 INFO  : Disconnected from the channel tcfchan#66.
+19:22:21 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+19:22:33 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa is already opened
+
+19:22:48 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:22:48 INFO  : Jtag cable 'Digilent Zed 210248AA56D1' is selected.
+19:22:48 INFO  : 'jtag frequency' command is executed.
+19:22:48 INFO  : Context for 'APU' is selected.
+19:22:49 INFO  : System reset is completed.
+19:22:52 INFO  : 'after 3000' command is executed.
+19:22:52 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1' command is executed.
+19:22:54 INFO  : FPGA configured successfully with bitstream "C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit"
+19:22:54 INFO  : Context for 'APU' is selected.
+19:22:54 INFO  : Hardware design information is loaded from 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa'.
+19:22:54 INFO  : 'configparams force-mem-access 1' command is executed.
+19:22:54 INFO  : Context for 'APU' is selected.
+19:22:54 INFO  : Sourcing of 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl' is done.
+19:22:55 INFO  : 'ps7_init' command is executed.
+19:22:55 INFO  : 'ps7_post_config' command is executed.
+19:22:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:22:55 INFO  : The application 'C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:22:55 INFO  : 'configparams force-mem-access 0' command is executed.
+19:22:55 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248AA56D1" && level==0} -index 1
+fpga -file C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/bitstream/hnn_fpga_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hw/hnn_fpga_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga/Debug/hnn_fpga.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:22:55 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:22:55 INFO  : 'con' command is executed.
+19:22:55 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:22:55 INFO  : Disconnected from the channel tcfchan#68.

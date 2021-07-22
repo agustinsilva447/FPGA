@@ -214,3 +214,354 @@ TRACE::2021-07-22.13:41:16::SCWBifWriter::proc[0] : ps7_cortexa9_0
 TRACE::2021-07-22.13:41:16::SCWBifWriter::Device type is : zynq
 TRACE::2021-07-22.13:41:16::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
 TRACE::2021-07-22.13:41:16::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.14:48:18::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.14:48:18::SCWBifWriter::hardware databse : hnn_fpga_wrapper
+TRACE::2021-07-22.14:48:18::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.14:48:18::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.14:48:18::SCWBifWriter::proc type : 
+TRACE::2021-07-22.14:48:18::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.14:48:18::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.14:48:18::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.14:48:18::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.14:54:22::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.14:54:23::SCWBifWriter::hardware databse : hnn_fpga_wrapper_0
+TRACE::2021-07-22.14:54:23::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.14:54:23::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.14:54:23::SCWBifWriter::proc type : 
+TRACE::2021-07-22.14:54:23::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.14:54:23::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.14:54:23::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.14:54:23::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.15:00:45::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.15:00:45::SCWBifWriter::hardware databse : hnn_fpga_wrapper_1
+TRACE::2021-07-22.15:00:45::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.15:00:45::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.15:00:45::SCWBifWriter::proc type : 
+TRACE::2021-07-22.15:00:45::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.15:00:45::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.15:00:45::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.15:00:45::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.15:01:24::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.15:01:24::SCWBifWriter::hardware databse : hnn_fpga_wrapper_1
+TRACE::2021-07-22.15:01:24::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.15:01:24::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.15:01:24::SCWBifWriter::proc type : 
+TRACE::2021-07-22.15:01:24::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.15:01:24::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.15:01:24::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.15:01:24::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.15:11:56::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.15:11:57::SCWBifWriter::hardware databse : hnn_fpga_wrapper_2
+TRACE::2021-07-22.15:11:57::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.15:11:57::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.15:11:57::SCWBifWriter::proc type : 
+TRACE::2021-07-22.15:11:57::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.15:11:57::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.15:11:57::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.15:11:57::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.18:35:47::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.18:35:47::SCWBifWriter::hardware databse : hnn_fpga_wrapper
+TRACE::2021-07-22.18:35:47::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.18:35:47::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.18:35:47::SCWBifWriter::proc type : 
+TRACE::2021-07-22.18:35:47::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.18:35:47::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.18:35:47::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.18:35:47::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.18:41:08::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.18:41:09::SCWBifWriter::hardware databse : hnn_fpga_wrapper_0
+TRACE::2021-07-22.18:41:09::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.18:41:09::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.18:41:09::SCWBifWriter::proc type : 
+TRACE::2021-07-22.18:41:09::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.18:41:09::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.18:41:09::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.18:41:09::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.18:43:51::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.18:43:51::SCWBifWriter::hardware databse : hnn_fpga_wrapper_1
+TRACE::2021-07-22.18:43:51::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.18:43:51::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.18:43:51::SCWBifWriter::proc type : 
+TRACE::2021-07-22.18:43:51::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.18:43:51::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.18:43:51::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.18:43:51::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.18:46:45::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.18:46:45::SCWBifWriter::hardware databse : hnn_fpga_wrapper_2
+TRACE::2021-07-22.18:46:45::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.18:46:45::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.18:46:45::SCWBifWriter::proc type : 
+TRACE::2021-07-22.18:46:45::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.18:46:45::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.18:46:45::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.18:46:45::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.18:49:09::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.18:49:09::SCWBifWriter::hardware databse : hnn_fpga_wrapper_3
+TRACE::2021-07-22.18:49:09::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.18:49:09::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.18:49:09::SCWBifWriter::proc type : 
+TRACE::2021-07-22.18:49:09::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.18:49:09::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.18:49:09::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.18:49:09::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.18:50:33::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.18:50:33::SCWBifWriter::hardware databse : hnn_fpga_wrapper_4
+TRACE::2021-07-22.18:50:33::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.18:50:33::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.18:50:33::SCWBifWriter::proc type : 
+TRACE::2021-07-22.18:50:33::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.18:50:33::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.18:50:33::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.18:50:33::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.18:51:27::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.18:51:27::SCWBifWriter::hardware databse : hnn_fpga_wrapper_5
+TRACE::2021-07-22.18:51:27::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.18:51:27::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.18:51:27::SCWBifWriter::proc type : 
+TRACE::2021-07-22.18:51:27::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.18:51:27::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.18:51:27::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.18:51:27::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.18:52:55::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.18:52:55::SCWBifWriter::hardware databse : hnn_fpga_wrapper_6
+TRACE::2021-07-22.18:52:55::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.18:52:55::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.18:52:55::SCWBifWriter::proc type : 
+TRACE::2021-07-22.18:52:55::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.18:52:55::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.18:52:55::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.18:52:55::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.18:53:55::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.18:53:55::SCWBifWriter::hardware databse : hnn_fpga_wrapper_7
+TRACE::2021-07-22.18:53:55::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.18:53:55::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.18:53:55::SCWBifWriter::proc type : 
+TRACE::2021-07-22.18:53:55::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.18:53:55::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.18:53:55::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.18:53:55::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.18:54:59::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.18:54:59::SCWBifWriter::hardware databse : hnn_fpga_wrapper_8
+TRACE::2021-07-22.18:54:59::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.18:54:59::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.18:54:59::SCWBifWriter::proc type : 
+TRACE::2021-07-22.18:54:59::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.18:54:59::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.18:54:59::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.18:54:59::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.18:56:34::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.18:56:35::SCWBifWriter::hardware databse : hnn_fpga_wrapper_9
+TRACE::2021-07-22.18:56:35::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.18:56:35::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.18:56:35::SCWBifWriter::proc type : 
+TRACE::2021-07-22.18:56:35::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.18:56:35::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.18:56:35::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.18:56:35::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.18:57:56::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.18:57:56::SCWBifWriter::hardware databse : hnn_fpga_wrapper_10
+TRACE::2021-07-22.18:57:56::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.18:57:56::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.18:57:56::SCWBifWriter::proc type : 
+TRACE::2021-07-22.18:57:56::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.18:57:56::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.18:57:56::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.18:57:56::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.18:59:02::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.18:59:03::SCWBifWriter::hardware databse : hnn_fpga_wrapper_11
+TRACE::2021-07-22.18:59:03::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.18:59:03::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.18:59:03::SCWBifWriter::proc type : 
+TRACE::2021-07-22.18:59:03::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.18:59:03::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.18:59:03::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.18:59:03::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:00:09::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:00:09::SCWBifWriter::hardware databse : hnn_fpga_wrapper_12
+TRACE::2021-07-22.19:00:09::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:00:09::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:00:09::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:00:09::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:00:09::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:00:09::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:00:09::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:01:20::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:01:20::SCWBifWriter::hardware databse : hnn_fpga_wrapper_13
+TRACE::2021-07-22.19:01:20::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:01:20::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:01:20::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:01:20::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:01:20::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:01:20::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:01:20::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:02:17::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:02:17::SCWBifWriter::hardware databse : hnn_fpga_wrapper_14
+TRACE::2021-07-22.19:02:17::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:02:17::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:02:17::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:02:17::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:02:17::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:02:17::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:02:17::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:03:30::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:03:30::SCWBifWriter::hardware databse : hnn_fpga_wrapper_15
+TRACE::2021-07-22.19:03:30::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:03:30::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:03:30::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:03:30::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:03:30::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:03:30::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:03:30::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:04:27::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:04:28::SCWBifWriter::hardware databse : hnn_fpga_wrapper_16
+TRACE::2021-07-22.19:04:28::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:04:28::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:04:28::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:04:28::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:04:28::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:04:28::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:04:28::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:05:22::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:05:22::SCWBifWriter::hardware databse : hnn_fpga_wrapper_17
+TRACE::2021-07-22.19:05:22::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:05:22::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:05:22::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:05:22::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:05:22::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:05:22::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:05:22::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:06:15::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:06:15::SCWBifWriter::hardware databse : hnn_fpga_wrapper_18
+TRACE::2021-07-22.19:06:15::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:06:15::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:06:15::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:06:15::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:06:15::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:06:15::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:06:15::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:07:56::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:07:56::SCWBifWriter::hardware databse : hnn_fpga_wrapper_19
+TRACE::2021-07-22.19:07:56::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:07:56::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:07:56::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:07:56::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:07:56::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:07:56::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:07:56::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:09:00::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:09:00::SCWBifWriter::hardware databse : hnn_fpga_wrapper_20
+TRACE::2021-07-22.19:09:00::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:09:00::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:09:00::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:09:00::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:09:00::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:09:00::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:09:00::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:10:51::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:10:51::SCWBifWriter::hardware databse : hnn_fpga_wrapper_21
+TRACE::2021-07-22.19:10:51::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:10:51::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:10:51::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:10:51::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:10:51::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:10:51::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:10:51::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:12:10::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:12:11::SCWBifWriter::hardware databse : hnn_fpga_wrapper_22
+TRACE::2021-07-22.19:12:11::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:12:11::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:12:11::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:12:11::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:12:11::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:12:11::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:12:11::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:13:24::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:13:24::SCWBifWriter::hardware databse : hnn_fpga_wrapper_23
+TRACE::2021-07-22.19:13:24::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:13:24::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:13:24::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:13:24::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:13:24::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:13:24::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:13:24::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:14:15::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:14:16::SCWBifWriter::hardware databse : hnn_fpga_wrapper_24
+TRACE::2021-07-22.19:14:16::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:14:16::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:14:16::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:14:16::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:14:16::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:14:16::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:14:16::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:15:25::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:15:25::SCWBifWriter::hardware databse : hnn_fpga_wrapper_25
+TRACE::2021-07-22.19:15:25::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:15:25::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:15:25::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:15:25::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:15:25::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:15:25::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:15:25::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:16:16::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:16:17::SCWBifWriter::hardware databse : hnn_fpga_wrapper_26
+TRACE::2021-07-22.19:16:17::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:16:17::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:16:17::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:16:17::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:16:17::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:16:17::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:16:17::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:17:22::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:17:22::SCWBifWriter::hardware databse : hnn_fpga_wrapper_27
+TRACE::2021-07-22.19:17:22::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:17:22::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:17:22::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:17:22::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:17:22::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:17:22::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:17:22::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:18:14::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:18:14::SCWBifWriter::hardware databse : hnn_fpga_wrapper_28
+TRACE::2021-07-22.19:18:14::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:18:14::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:18:14::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:18:14::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:18:14::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:18:14::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:18:14::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:19:09::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:19:09::SCWBifWriter::hardware databse : hnn_fpga_wrapper_29
+TRACE::2021-07-22.19:19:09::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:19:09::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:19:09::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:19:09::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:19:09::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:19:09::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:19:09::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:20:19::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:20:19::SCWBifWriter::hardware databse : hnn_fpga_wrapper_30
+TRACE::2021-07-22.19:20:19::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:20:19::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:20:19::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:20:19::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:20:19::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:20:19::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:20:19::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:21:10::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:21:10::SCWBifWriter::hardware databse : hnn_fpga_wrapper_31
+TRACE::2021-07-22.19:21:10::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:21:10::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:21:10::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:21:10::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:21:10::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:21:10::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:21:10::SCWBifWriter::Writing the Zynq Baremetal bif 
+TRACE::2021-07-22.19:22:32::SCWBifWriter::Found the complete platform C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm
+TRACE::2021-07-22.19:22:33::SCWBifWriter::hardware databse : hnn_fpga_wrapper_32
+TRACE::2021-07-22.19:22:33::SCWBifWriter::bitstream found in the design
+TRACE::2021-07-22.19:22:33::SCWBifWriter::Found a baremetal domain, proc: ps7_cortexa9_0
+TRACE::2021-07-22.19:22:33::SCWBifWriter::proc type : 
+TRACE::2021-07-22.19:22:33::SCWBifWriter::proc[0] : ps7_cortexa9_0
+TRACE::2021-07-22.19:22:33::SCWBifWriter::Device type is : zynq
+TRACE::2021-07-22.19:22:33::SCWBifWriter::Writing BIF to file : C:/Users/aguss/Desktop/hnn_fpga/hnn_fpga/hnn_fpga_system/Debug/system.bif
+TRACE::2021-07-22.19:22:33::SCWBifWriter::Writing the Zynq Baremetal bif 

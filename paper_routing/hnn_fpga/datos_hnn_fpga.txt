@@ -1,0 +1,111 @@
+Origen: 0. Destino: 1.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 180.414414 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 42.714715 us
+
+Origen: 0. Destino: 2.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 117.117117 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 26.387387 us
+
+Origen: 0. Destino: 3.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 139.570571 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 31.630631 us
+
+Origen: 0. Destino: 4.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 126.336336 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 27.930931 us
+
+Origen: 0. Destino: 5.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 196.510511 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 45.228228 us
+
+Origen: 0. Destino: 6.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 230.756757 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 54.285285 us
+
+Origen: 0. Destino: 7.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 190.207207 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 43.969970 us
+
+Origen: 1. Destino: 2.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 125.882883 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 27.930931 us
+
+Origen: 1. Destino: 3.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 111.414414 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 24.582583 us
+
+Origen: 1. Destino: 4.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 224.522523 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 50.459459 us
+
+Origen: 1. Destino: 5.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 119.474474 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 26.282282 us
+
+    Origen: 1. Destino: 6.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 313.069069 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 72.975976 us
+
+Origen: 1. Destino: 7.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 166.213213 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 38.513514 us
+
+Origen: 2. Destino: 3.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 117.960961 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 26.822823 us
+
+Origen: 2. Destino: 4.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 125.612613 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 28.069069 us
+
+Origen: 2. Destino: 5.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 149.744745 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 35.234234 us
+
+Origen: 2. Destino: 6.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 115.762763 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 26.372372 us
+
+Origen: 2. Destino: 7.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 151.711712 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 35.327327 us
+
+Origen: 3. Destino: 4.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 268.780781 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 64.639640 us
+
+Origen: 3. Destino: 5.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 110.624625 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 24.882883 us
+
+Origen: 3. Destino: 6.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 258.369369 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 61.063063 us
+
+Origen: 3. Destino: 7.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 145.447447 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 33.198198 us
+
+Origen: 4. Destino: 5.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 117.183183 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 29.834835 us
+
+Origen: 4. Destino: 6.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 124.588589 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 28.015015 us
+
+Origen: 4. Destino: 7.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 111.513514 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 24.624625 us
+
+Origen: 5. Destino: 6.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 103.753754 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 23.225225 us
+
+Origen: 5. Destino: 7.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 117.486486 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 26.102102 us
+
+Origen: 6. Destino: 7.
+El tiempo que le llevo al Software implementar la HNN para resolver el SPP es 187.060060 us
+El tiempo que le llevo al Hardware implementar la HNN para resolver el SPP es 43.585586 us
