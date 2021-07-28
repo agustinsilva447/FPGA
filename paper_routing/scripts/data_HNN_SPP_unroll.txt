@@ -38,13 +38,7 @@
                                                 max: 77 
                             DSP48E              12/220 (5)
                             FF                  2594/106400 (2)
-                            LUT                 5267/53200 (9)                 
-
-8 nodos (sin unroll) ->     Latency (cycles)    min: 145 
-                                                max: 2385 
-                            DSP48E              12/220 (5)
-                            FF                  1691/106400 (1)
-                            LUT                 3087/53200 (5)
+                            LUT                 5267/53200 (9)    
 
 8 nodos (con unroll) ->     Latency (cycles)    min: 91 
                                                 max: 91
