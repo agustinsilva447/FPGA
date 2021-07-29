@@ -165,40 +165,40 @@
                             FF                  10137/106400 (9)
                             LUT                 35705/53200 (67)
 
-25 nodos (con axi) ->       Latency (cycles)    min: 
-                                                max: 
-                            BRAM_18K            /280 ()
-                            DSP48E              /220 ()
-                            FF                  /106400 ()
-                            LUT                 /53200 ()
+25 nodos (con axi) ->       Latency (cycles)    min: 662
+                                                max: 662
+                            BRAM_18K            4/280 (1)
+                            DSP48E              32/220 (14)
+                            FF                  10185/106400 (9)
+                            LUT                 37289/53200 (70)
 
-26 nodos (con axi) ->       Latency (cycles)    min: 
-                                                max: 
-                            BRAM_18K            /280 ()
-                            DSP48E              /220 ()
-                            FF                  /106400 ()
-                            LUT                 /53200 ()
+26 nodos (con axi) ->       Latency (cycles)    min: 712
+                                                max: 712
+                            BRAM_18K            4/280 (1)
+                            DSP48E              32/220 (14)
+                            FF                  10235/106400 (9)
+                            LUT                 38938/53200 (73)
 
-27 nodos (con axi) ->       Latency (cycles)    min: 
-                                                max: 
-                            BRAM_18K            /280 ()
-                            DSP48E              /220 ()
-                            FF                  /106400 ()
-                            LUT                 /53200 ()
+27 nodos (con axi) ->       Latency (cycles)    min: 764
+                                                max: 764
+                            BRAM_18K            4/280 (1)
+                            DSP48E              32/220 (14)
+                            FF                  10287/106400 (9)
+                            LUT                 40655/53200 (76)
 
-28 nodos (con axi) ->       Latency (cycles)    min: 
-                                                max: 
-                            BRAM_18K            /280 ()
-                            DSP48E              /220 ()
-                            FF                  /106400 ()
-                            LUT                 /53200 ()
+28 nodos (con axi) ->       Latency (cycles)    min: 818
+                                                max: 818
+                            BRAM_18K            4/280 (1)
+                            DSP48E              32/220 (14)
+                            FF                  10341/106400 (9)
+                            LUT                 42437/53200 (79)
 
-29 nodos (con axi) ->       Latency (cycles)    min: 
-                                                max: 
-                            BRAM_18K            /280 ()
-                            DSP48E              /220 ()
-                            FF                  /106400 ()
-                            LUT                 /53200 ()
+29 nodos (con axi) ->       Latency (cycles)    min: 874
+                                                max: 874
+                            BRAM_18K            4/280 (1)
+                            DSP48E              32/220 (14)
+                            FF                  10397/106400 (9)
+                            LUT                 44285/53200 (83)
 
 30 nodos (con axi) ->       Latency (cycles)    min: 
                                                 max: 

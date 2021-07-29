@@ -1,7 +1,7 @@
 #include "hnn_fpga.h"
 #include <math.h>
 
-#define N1 24    //Cantidad de nodos
+#define N1 30    //Cantidad de nodos
 
 void hnn_fpga(const float U[N1 * N1], float l, float V[N1 * N1])
 {
