@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from scipy.special import expit
 
+"""
 def dijkstra_sp(net, paquetes, C_xi):
     source = []
     destin = []
@@ -19,6 +20,14 @@ def dijkstra_sp(net, paquetes, C_xi):
         destin.append(d)
         paths.append(s_path)
     return source, destin, paths
+"""
+
+def dijkstra_sp(net, C_xi, s, d):
+    paths = []
+    for i in range(len(s)):
+        s_path = nx.dijkstra_path(net, s[i], d[i])
+        paths.append(s_path)
+    return paths
 
 def findall(element, matrix):
     result = []
@@ -121,11 +130,14 @@ C_xi = np.array([[0,    0.91,  0.36, 0,     0,     0,    1.2,   0   ],
                  [0,    0,     0,    0.5,   0.56,  0,    0,     0.4 ],
                  [1.2,  0,     0,    0,     0.425, 0,    0,     1.1 ],
                  [0,    1.02,  0,    0,     0,     0.4,  1.1,   0   ]])
+print("Matriz de caminos:\n", C_xi)
 
-paquetes = 1
 it_max = 50
 net = nx.from_numpy_matrix(C_xi)
-source, destin, paths = dijkstra_sp(net, paquetes, C_xi)
+source = [1, 0, 4, 3]
+destin = [6, 1, 6, 5]
+paths = dijkstra_sp(net, C_xi, source, destin)
+
 
 u1 = 950
 u2 = 2500
@@ -139,69 +151,77 @@ l = 6
 
 rho = np.where(C_xi == 0, 1, 0)
 T = txiyj(u3, u4)
-I = ixi(u1, u2, u4, u5, C_xi, rho, source[0], destin[0])
 
-U = []
-U.append(np.zeros(C_xi.shape))
-U.append(np.zeros(C_xi.shape))
-#U.append(np.random.rand(C_xi.shape[0], C_xi.shape[1]))
-Energy = []
-Energy.append(10000)
+def hnn_spp(s,d):
+    I = ixi(u1, u2, u4, u5, C_xi, rho, s, d)
+    U = []
+    U.append(np.zeros(C_xi.shape))
+    U.append(np.zeros(C_xi.shape))
+    Energy = []
+    Energy.append(10000)
 
-flag = 1
-it = 0
-while (flag) and (it < it_max):
-    V = vxi_1(U[-1], l)
-    U.append(uxi(U, A, B, C, T, V, I))
-    E_i = energia(u1, u2, u3, u4, u5, C_xi, V, rho, source[0], destin[0])
-    #print("Iteración {}: Energía = {}. ".format(it, E_i))
-    if (E_i == Energy[-1]):
-        flag = 0
-    Energy.append(E_i)
-    it += 1
-V = vxi_2(V)
+    flag = 1
+    it = 0
+    while (flag) and (it < it_max):
+        V = vxi_1(U[-1], l)
+        U.append(uxi(U, A, B, C, T, V, I))
+        E_i = energia(u1, u2, u3, u4, u5, C_xi, V, rho, s, d)
+        #print("Iteración {}: Energía = {}. ".format(it, E_i))
+        if (E_i == Energy[-1]):
+            flag = 0
+        Energy.append(E_i)
+        it += 1
+    V = vxi_2(V)
+    return Energy, V, it
 
-print("Origen:", source[0])
-print("Destino:", destin[0])
-print("Matriz de caminos:\n", C_xi)
-print("Matriz de Hopfield:\n", V)
-print("Energía final luego de {} iteraciones = {}".format(it, Energy[-1]))
-print("---------------")
+Energy_list = []
+V_list = []
+it_list = []
 
-hopfield_spath = findall(1, V)
-dijkstra_spath = list_sp(paths[0])
-print("Camino de Hopfield: {}".format(hopfield_spath))
-print("Camino de Dijkstra: {}".format(dijkstra_spath))
+for i in range(len(source)):
+    Energy, V, it = hnn_spp(source[i], destin[i])
+    Energy_list.append(Energy)
+    V_list.append(V)
+    it_list.append(it)
 
-if len(hopfield_spath)>len(dijkstra_spath):
-    coincidencia = 100 * len(set(hopfield_spath).intersection(dijkstra_spath)) / len(hopfield_spath)
-else:
-    coincidencia = 100 * len(set(dijkstra_spath).intersection(hopfield_spath)) / len(dijkstra_spath)
-print("Coincidencia = {}%".format(coincidencia))
-print("---------------")
+    print("---------------> ORIGEN: {}. DESTINO: {}.".format(source[i], destin[i]))
+    #print("Matriz de Hopfield:\n", V_list[i])
+    print("Energía final luego de {} iteraciones = {}".format(it_list[i], Energy_list[i][-1]))
+    print("---------------")
 
-distancia_hopfield = np.zeros(C_xi.shape)
-for i in hopfield_spath:
-    distancia_hopfield[i[0], i[1]] = 1
-dist_hopfield = np.sum(np.multiply(distancia_hopfield, C_xi))
-print("Distancia de Hopfield = {}".format(dist_hopfield))
+    hopfield_spath = findall(1, V_list[i])
+    dijkstra_spath = list_sp(paths[i])
+    print("Camino de Hopfield: {}".format(hopfield_spath))
+    print("Camino de Dijkstra: {}".format(dijkstra_spath))
+    if len(hopfield_spath)>len(dijkstra_spath):
+        coincidencia = 100 * len(set(hopfield_spath).intersection(dijkstra_spath)) / len(hopfield_spath)
+    else:
+        coincidencia = 100 * len(set(dijkstra_spath).intersection(hopfield_spath)) / len(dijkstra_spath)
+    print("Coincidencia = {}%".format(coincidencia))
+    print("---------------")
 
-distancia_dijkstra = np.zeros(C_xi.shape)
-for i in dijkstra_spath:
-    distancia_dijkstra[i[0], i[1]] = 1
-dist_dijkstra = np.sum(np.multiply(distancia_dijkstra, C_xi))
-print("Distancia de Dijkstra = {}".format(dist_dijkstra))
-
-if dist_dijkstra < dist_hopfield:
-    accuracy = dist_dijkstra / dist_hopfield
-else:
-    accuracy = dist_hopfield / dist_dijkstra
-print("Accuracy = {}".format(accuracy))
-print("---------------")
+    distancia_hopfield = np.zeros(C_xi.shape)
+    for j in hopfield_spath:
+        distancia_hopfield[j[0], j[1]] = 1
+    dist_hopfield = np.sum(np.multiply(distancia_hopfield, C_xi))
+    print("Distancia de Hopfield = {}".format(dist_hopfield))
+    distancia_dijkstra = np.zeros(C_xi.shape)
+    for j in dijkstra_spath:
+        distancia_dijkstra[j[0], j[1]] = 1
+    dist_dijkstra = np.sum(np.multiply(distancia_dijkstra, C_xi))
+    print("Distancia de Dijkstra = {}".format(dist_dijkstra))
+    if dist_dijkstra < dist_hopfield:
+        accuracy = dist_dijkstra / dist_hopfield
+    else:
+        accuracy = dist_hopfield / dist_dijkstra
+    print("Accuracy = {}".format(accuracy))
+    print("---------------")
 
 fig = plt.figure(figsize=(12, 5))
 plt.subplot(121)
 nx.draw(net, with_labels = True)
 plt.subplot(122)
-plt.plot(Energy)
+for i in range(len(source)):
+    plt.plot(Energy_list[i], label = "from {} to {}".format(source[i], destin[i]))
+plt.legend(loc='upper right')
 plt.show()
