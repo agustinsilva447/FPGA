@@ -31,14 +31,14 @@ def dijkstra_sp(net, paquetes, C_xi_shape):
     return source, destin, paths, tiempo_prom
 
 desde = 10
-hasta = 500
+hasta = 100
 print("Total de iteraciones: {}.".format(int(hasta/desde)-1))
 n1_list = np.arange(desde, hasta, desde)    # cantidad de nodos
 n2 = 1                                      # distancia máxima
 p = 0.5                                     # probabilidad de cerrar camino
 temp = np.zeros(n1_list.shape)
 paquetes = 1
-iteraciones = 10
+iteraciones = 1
 
 
 for t, n1 in tqdm(enumerate(n1_list)):

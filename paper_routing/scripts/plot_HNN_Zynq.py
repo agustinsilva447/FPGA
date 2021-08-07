@@ -54,7 +54,7 @@ t_sci = []
 U = np.random.rand(1,1)
 V = vxi_1(l, U)
 V = vxi_2(l, U)
-it = 1
+it = 10
 
 nodes_s = np.arange(2, 500, 1)
 
