@@ -1,0 +1,12 @@
+timestamp=[2021-08-11 21:17:46], mode=WORKBENCH_START, duration=0:00:15.138, duration_ms=15138, data={}
+timestamp=[2021-08-11 21:17:50], mode=WORKBENCH_UI_INIT, duration=0:00:03.684, duration_ms=3684, data={editors_count=0, platform_editors_count=0, projects_count=0, platform_projects_count=0, active_platform_editor=false, projects=}
+timestamp=[2021-08-11 21:28:19], mode=APP_CREATION, duration=0:01:23.659, duration_ms=83659, data={name=project_uscale, project_type=sdk, os=standalone, processor=psv_cortexa72, runtime=cpp, platform=vck190, application_type=application}
+timestamp=[2021-08-11 21:33:57], mode=PLATFORM_GENERATION, duration=0:01:29.199, duration_ms=89199, data={name=vck190}
+timestamp=[2021-08-11 22:09:14], mode=WORKBENCH_START, duration=0:00:20.685, duration_ms=20685, data={}
+timestamp=[2021-08-11 22:09:15], mode=WORKBENCH_UI_INIT, duration=0:00:01.873, duration_ms=1873, data={editors_count=0, platform_editors_count=0, projects_count=4, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,project_uscale,project_uscale_system,vck190}
+timestamp=[2021-08-11 22:10:41], mode=WORKBENCH_START, duration=0:00:14.045, duration_ms=14045, data={}
+timestamp=[2021-08-11 22:10:43], mode=WORKBENCH_UI_INIT, duration=0:00:02.530, duration_ms=2530, data={editors_count=0, platform_editors_count=0, projects_count=2, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,vck190}
+timestamp=[2021-08-11 22:11:23], mode=WORKBENCH_START, duration=0:00:12.297, duration_ms=12297, data={}
+timestamp=[2021-08-11 22:11:26], mode=WORKBENCH_UI_INIT, duration=0:00:02.547, duration_ms=2547, data={editors_count=0, platform_editors_count=0, projects_count=2, platform_projects_count=1, active_platform_editor=false, projects=RemoteSystemsTempFiles,vck190}
+timestamp=[2021-08-11 22:14:56], mode=APP_CREATION, duration=0:02:07.347, duration_ms=127347, data={name=project_uscale, project_type=sdk, os=standalone, processor=psu_cortexa53, runtime=cpp, platform=design_1_wrapper, application_type=application}
+timestamp=[2021-08-11 22:41:10], mode=PLATFORM_GENERATION, duration=0:07:26.210, duration_ms=446210, data={name=design_1_wrapper}
