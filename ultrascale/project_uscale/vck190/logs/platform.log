@@ -1,0 +1,1202 @@
+TRACE::2021-08-11.21:26:55::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:26:55::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:26:55::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:00::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:00::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:00::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:00::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-08-11.21:27:21::SCWPlatform::Opened new HwDB with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:21::SCWWriter::formatted JSON is {
+	"platformName":	"vck190",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"vck190",
+	"platHandOff":	"C:/Xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2021-08-11.21:27:21::SCWWriter::formatted JSON is {
+	"platformName":	"vck190",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"vck190",
+	"platHandOff":	"C:/Xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"vck190",
+	"systems":	[{
+			"systemName":	"vck190",
+			"systemDesc":	"vck190",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"vck190"
+		}]
+}
+TRACE::2021-08-11.21:27:21::SCWPlatform::Boot application domains not present, creating them
+TRACE::2021-08-11.21:27:21::SCWWriter::formatted JSON is {
+	"platformName":	"vck190",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"vck190",
+	"platHandOff":	"C:/Xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"vck190",
+	"systems":	[{
+			"systemName":	"vck190",
+			"systemDesc":	"vck190",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"vck190"
+		}]
+}
+TRACE::2021-08-11.21:27:21::SCWWriter::formatted JSON is {
+	"platformName":	"vck190",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"vck190",
+	"platHandOff":	"C:/Xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"vck190",
+	"systems":	[{
+			"systemName":	"vck190",
+			"systemDesc":	"vck190",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"vck190"
+		}]
+}
+TRACE::2021-08-11.21:27:21::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:21::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:21::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:21::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:21::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:21::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:21::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:21::SCWDomain::checking for install qemu data   : 
+TRACE::2021-08-11.21:27:21::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/
+TRACE::2021-08-11.21:27:21::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt
+TRACE::2021-08-11.21:27:21::SCWDomain:: Using the PMCQEMU args from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/pmc_args.txt
+TRACE::2021-08-11.21:27:21::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:21::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:21::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:21::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:21::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:21::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:21::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:21::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:21::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:21::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:21::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:21::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:21::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:21::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:21::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:21::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:21::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-08-11.21:27:21::SCWMssOS::No sw design opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:21::SCWMssOS::mss does not exists at C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:21::SCWMssOS::Creating sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:21::SCWMssOS::Adding the swdes entry, created swdb C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss with des name C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:21::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:21::SCWMssOS::Writing mss at C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:21::SCWMssOS::Completed writing the mss file at C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp
+TRACE::2021-08-11.21:27:21::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2021-08-11.21:27:22::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2021-08-11.21:27:22::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:22::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:22::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:22::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:22::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:22::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:22::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:22::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:22::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss||
+
+TRACE::2021-08-11.21:27:22::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:22::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:22::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:22::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:22::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:22::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:22::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:22::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:22::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:22::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss||
+
+TRACE::2021-08-11.21:27:22::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:22::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:22::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:22::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:22::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:22::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:22::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:22::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:22::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:22::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss||
+
+TRACE::2021-08-11.21:27:22::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:22::SCWWriter::formatted JSON is {
+	"platformName":	"vck190",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"vck190",
+	"platHandOff":	"C:/Xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"vck190",
+	"systems":	[{
+			"systemName":	"vck190",
+			"systemDesc":	"vck190",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"vck190",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psv_cortexa72_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psv_cortexa72_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/",
+					"pmuQemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/pmc_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-08-11.21:27:22::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:22::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:22::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:22::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:22::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:22::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:22::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:22::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:22::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:22::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:22::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss||
+
+TRACE::2021-08-11.21:27:22::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:22::SCWMssOS::Completed writing the mss file at C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp
+TRACE::2021-08-11.21:27:22::SCWMssOS::Forcing BSP Sources regeneration.
+LOG::2021-08-11.21:27:46::SCWPlatform::Started generating the artifacts platform vck190
+TRACE::2021-08-11.21:27:46::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-08-11.21:27:46::SCWPlatform::Started generating the artifacts for system configuration vck190
+LOG::2021-08-11.21:27:46::SCWSystem::Checking the domain standalone_domain
+LOG::2021-08-11.21:27:46::SCWSystem::Not a boot domain 
+LOG::2021-08-11.21:27:46::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-08-11.21:27:46::SCWDomain::Generating domain artifcats
+TRACE::2021-08-11.21:27:46::SCWMssOS::Generating standalone artifcats
+TRACE::2021-08-11.21:27:46::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt To C:/Users/aguss/Desktop/project_uscale/vck190/export/vck190/sw/vck190/qemu/
+TRACE::2021-08-11.21:27:46::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt To C:/Users/aguss/Desktop/project_uscale/vck190/export/vck190/sw/vck190/qemu/
+TRACE::2021-08-11.21:27:46::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt To C:/Users/aguss/Desktop/project_uscale/vck190/export/vck190/sw/vck190/standalone_domain/qemu/
+TRACE::2021-08-11.21:27:46::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt To C:/Users/aguss/Desktop/project_uscale/vck190/export/vck190/sw/vck190/standalone_domain/qemu/
+TRACE::2021-08-11.21:27:46::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:46::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss||
+
+KEYINFO::2021-08-11.21:27:46::SCWMssOS::Could not open the swdb for C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+KEYINFO::2021-08-11.21:27:46::SCWMssOS::Could not open the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss is not found
+
+TRACE::2021-08-11.21:27:46::SCWMssOS::Cleared the swdb table entry
+TRACE::2021-08-11.21:27:46::SCWMssOS::No sw design opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::mss exists loading the mss file  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::Opened the sw design from mss  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::Adding the swdes entry C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss with des name system
+TRACE::2021-08-11.21:27:46::SCWMssOS::updating the scw layer about changes
+TRACE::2021-08-11.21:27:46::SCWMssOS::Opened the sw design.  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::Completed writing the mss file at C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp
+TRACE::2021-08-11.21:27:46::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-08-11.21:27:46::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-08-11.21:27:46::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2021-08-11.21:27:46::SCWMssOS::skipping the bsp build ... 
+TRACE::2021-08-11.21:27:46::SCWMssOS::Copying to export directory.
+TRACE::2021-08-11.21:27:46::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-08-11.21:27:46::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2021-08-11.21:27:46::SCWMssOS:: Using the pmcfw from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/plm.elf
+LOG::2021-08-11.21:27:46::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-08-11.21:27:46::SCWSystem::Completed Processing the sysconfig vck190
+LOG::2021-08-11.21:27:46::SCWPlatform::Completed generating the artifacts for system configuration vck190
+TRACE::2021-08-11.21:27:46::SCWPlatform::Started preparing the platform 
+TRACE::2021-08-11.21:27:46::SCWSystem:: Using the cdo from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/pmc_cdo.bin
+TRACE::2021-08-11.21:27:46::SCWSystem:: Using the psm fw from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/psm_fw.elf
+TRACE::2021-08-11.21:27:46::SCWSystem:: Using the fpd cdo from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/fpd_cdo.bin
+TRACE::2021-08-11.21:27:46::SCWSystem::Writing the bif file for system config vck190
+TRACE::2021-08-11.21:27:46::SCWSystem::dir created 
+TRACE::2021-08-11.21:27:46::SCWSystem::Writing the bif 
+TRACE::2021-08-11.21:27:46::SCWPlatform::Started writing the spfm file 
+TRACE::2021-08-11.21:27:46::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-08-11.21:27:46::SCWPlatform::Completed generating the platform
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:46::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:27:46::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:46::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:27:46::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:46::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:27:46::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWWriter::formatted JSON is {
+	"platformName":	"vck190",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"vck190",
+	"platHandOff":	"C:/Xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"vck190",
+	"systems":	[{
+			"systemName":	"vck190",
+			"systemDesc":	"vck190",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"vck190",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psv_cortexa72_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psv_cortexa72_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/",
+					"pmuQemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/pmc_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"90c874d019fabf25f10be15ecaeaec38",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-08-11.21:27:46::SCWPlatform::updated the xpfm file.
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:46::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:27:46::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:46::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:27:46::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:46::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:27:46::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:46::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:27:46::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWWriter::formatted JSON is {
+	"platformName":	"vck190",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"vck190",
+	"platHandOff":	"C:/Xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"vck190",
+	"systems":	[{
+			"systemName":	"vck190",
+			"systemDesc":	"vck190",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"vck190",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psv_cortexa72_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psv_cortexa72_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/",
+					"pmuQemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/pmc_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"90c874d019fabf25f10be15ecaeaec38",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:46::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:27:46::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:46::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:27:46::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:46::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:27:46::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:46::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:27:46::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:46::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:46::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:46::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:27:46::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:46::SCWWriter::formatted JSON is {
+	"platformName":	"vck190",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"vck190",
+	"platHandOff":	"C:/Xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"vck190",
+	"systems":	[{
+			"systemName":	"vck190",
+			"systemDesc":	"vck190",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"vck190",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psv_cortexa72_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psv_cortexa72_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/",
+					"pmuQemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/pmc_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"90c874d019fabf25f10be15ecaeaec38",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2021-08-11.21:27:47::SCWPlatform::Started generating the artifacts platform vck190
+TRACE::2021-08-11.21:27:47::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-08-11.21:27:47::SCWPlatform::Started generating the artifacts for system configuration vck190
+LOG::2021-08-11.21:27:47::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-08-11.21:27:47::SCWDomain::Generating domain artifcats
+TRACE::2021-08-11.21:27:47::SCWMssOS::Generating standalone artifcats
+TRACE::2021-08-11.21:27:47::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt To C:/Users/aguss/Desktop/project_uscale/vck190/export/vck190/sw/vck190/qemu/
+TRACE::2021-08-11.21:27:47::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt To C:/Users/aguss/Desktop/project_uscale/vck190/export/vck190/sw/vck190/qemu/
+TRACE::2021-08-11.21:27:47::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt To C:/Users/aguss/Desktop/project_uscale/vck190/export/vck190/sw/vck190/standalone_domain/qemu/
+TRACE::2021-08-11.21:27:47::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt To C:/Users/aguss/Desktop/project_uscale/vck190/export/vck190/sw/vck190/standalone_domain/qemu/
+TRACE::2021-08-11.21:27:47::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-08-11.21:27:47::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:47::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:47::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:47::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:47::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:47::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:47::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:47::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:47::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:47::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:47::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:27:47::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:47::SCWMssOS::Completed writing the mss file at C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp
+TRACE::2021-08-11.21:27:47::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:47::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-08-11.21:27:47::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-08-11.21:27:47::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2021-08-11.21:27:47::SCWMssOS::skipping the bsp build ... 
+TRACE::2021-08-11.21:27:47::SCWMssOS::Copying to export directory.
+TRACE::2021-08-11.21:27:47::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-08-11.21:27:47::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-08-11.21:27:47::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-08-11.21:27:47::SCWSystem::Completed Processing the sysconfig vck190
+LOG::2021-08-11.21:27:47::SCWPlatform::Completed generating the artifacts for system configuration vck190
+TRACE::2021-08-11.21:27:47::SCWPlatform::Started preparing the platform 
+TRACE::2021-08-11.21:27:47::SCWSystem:: Using the cdo from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/pmc_cdo.bin
+TRACE::2021-08-11.21:27:47::SCWSystem:: Using the psm fw from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/psm_fw.elf
+TRACE::2021-08-11.21:27:47::SCWSystem:: Using the fpd cdo from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/fpd_cdo.bin
+TRACE::2021-08-11.21:27:47::SCWSystem::Writing the bif file for system config vck190
+TRACE::2021-08-11.21:27:47::SCWSystem::dir created 
+TRACE::2021-08-11.21:27:47::SCWSystem::Writing the bif 
+TRACE::2021-08-11.21:27:47::SCWPlatform::Started writing the spfm file 
+TRACE::2021-08-11.21:27:47::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-08-11.21:27:47::SCWPlatform::Completed generating the platform
+TRACE::2021-08-11.21:27:47::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:47::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:47::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:47::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:47::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:47::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:47::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:47::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:47::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:47::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:47::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:27:47::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:47::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:47::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:47::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:47::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:47::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:47::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:47::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:47::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:47::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:47::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:47::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:27:47::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:47::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:47::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:47::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:47::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:27:47::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:27:47::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:27:47::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:27:47::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:27:47::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:27:47::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:47::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:27:47::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:27:47::SCWWriter::formatted JSON is {
+	"platformName":	"vck190",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"vck190",
+	"platHandOff":	"C:/Xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"vck190",
+	"systems":	[{
+			"systemName":	"vck190",
+			"systemDesc":	"vck190",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"vck190",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psv_cortexa72_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psv_cortexa72_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/",
+					"pmuQemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/pmc_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"90c874d019fabf25f10be15ecaeaec38",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-08-11.21:27:47::SCWPlatform::updated the xpfm file.
+LOG::2021-08-11.21:32:31::SCWPlatform::Started generating the artifacts platform vck190
+TRACE::2021-08-11.21:32:31::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-08-11.21:32:31::SCWPlatform::Started generating the artifacts for system configuration vck190
+LOG::2021-08-11.21:32:31::SCWSystem::Checking the domain standalone_domain
+LOG::2021-08-11.21:32:31::SCWSystem::Not a boot domain 
+LOG::2021-08-11.21:32:31::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-08-11.21:32:31::SCWDomain::Generating domain artifcats
+TRACE::2021-08-11.21:32:31::SCWMssOS::Generating standalone artifcats
+TRACE::2021-08-11.21:32:31::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt To C:/Users/aguss/Desktop/project_uscale/vck190/export/vck190/sw/vck190/qemu/
+TRACE::2021-08-11.21:32:31::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt To C:/Users/aguss/Desktop/project_uscale/vck190/export/vck190/sw/vck190/qemu/
+TRACE::2021-08-11.21:32:31::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt To C:/Users/aguss/Desktop/project_uscale/vck190/export/vck190/sw/vck190/standalone_domain/qemu/
+TRACE::2021-08-11.21:32:31::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt To C:/Users/aguss/Desktop/project_uscale/vck190/export/vck190/sw/vck190/standalone_domain/qemu/
+TRACE::2021-08-11.21:32:31::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-08-11.21:32:31::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:32:31::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:32:31::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:32:31::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:32:31::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:32:31::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:32:31::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:32:31::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:32:31::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:32:31::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:32:31::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:32:31::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:32:31::SCWMssOS::Completed writing the mss file at C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp
+TRACE::2021-08-11.21:32:31::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:32:31::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-08-11.21:32:31::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-08-11.21:32:31::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2021-08-11.21:32:31::SCWMssOS::doing bsp build ... 
+TRACE::2021-08-11.21:32:31::SCWMssOS::System Command Ran  C: & cd  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp & make 
+TRACE::2021-08-11.21:32:33::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/canfd_v2_2/src"
+
+TRACE::2021-08-11.21:32:33::SCWMssOS::make -C psv_cortexa72_0/libsrc/canfd_v2_2/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-el
+TRACE::2021-08-11.21:32:33::SCWMssOS::f-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:33::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/cframe_v1_0/src"
+
+TRACE::2021-08-11.21:32:33::SCWMssOS::make -C psv_cortexa72_0/libsrc/cframe_v1_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-e
+TRACE::2021-08-11.21:32:33::SCWMssOS::lf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:33::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/cfupmc_v1_0/src"
+
+TRACE::2021-08-11.21:32:33::SCWMssOS::make -C psv_cortexa72_0/libsrc/cfupmc_v1_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-e
+TRACE::2021-08-11.21:32:33::SCWMssOS::lf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:34::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2021-08-11.21:32:34::SCWMssOS::make -C psv_cortexa72_0/libsrc/coresightps_dcc_v1_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch
+TRACE::2021-08-11.21:32:34::SCWMssOS::64-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:34::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/cpu_cortexa72_v1_0/src"
+
+TRACE::2021-08-11.21:32:34::SCWMssOS::make -C psv_cortexa72_0/libsrc/cpu_cortexa72_v1_0/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64
+TRACE::2021-08-11.21:32:34::SCWMssOS::-none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:34::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/csudma_v1_5/src"
+
+TRACE::2021-08-11.21:32:34::SCWMssOS::make -C psv_cortexa72_0/libsrc/csudma_v1_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-e
+TRACE::2021-08-11.21:32:34::SCWMssOS::lf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:34::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/ddrpsv_v1_1/src"
+
+TRACE::2021-08-11.21:32:34::SCWMssOS::make -C psv_cortexa72_0/libsrc/ddrpsv_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-e
+TRACE::2021-08-11.21:32:34::SCWMssOS::lf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:34::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/emacps_v3_10/src"
+
+TRACE::2021-08-11.21:32:34::SCWMssOS::make -C psv_cortexa72_0/libsrc/emacps_v3_10/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-
+TRACE::2021-08-11.21:32:34::SCWMssOS::elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:35::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/iicps_v3_10/src"
+
+TRACE::2021-08-11.21:32:35::SCWMssOS::make -C psv_cortexa72_0/libsrc/iicps_v3_10/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-e
+TRACE::2021-08-11.21:32:35::SCWMssOS::lf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:35::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/ipipsu_v2_5/src"
+
+TRACE::2021-08-11.21:32:35::SCWMssOS::make -C psv_cortexa72_0/libsrc/ipipsu_v2_5/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-e
+TRACE::2021-08-11.21:32:35::SCWMssOS::lf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:35::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/qspipsu_v1_10/src"
+
+TRACE::2021-08-11.21:32:35::SCWMssOS::make -C psv_cortexa72_0/libsrc/qspipsu_v1_10/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none
+TRACE::2021-08-11.21:32:35::SCWMssOS::-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:35::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/rtcpsu_v1_8/src"
+
+TRACE::2021-08-11.21:32:35::SCWMssOS::make -C psv_cortexa72_0/libsrc/rtcpsu_v1_8/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-e
+TRACE::2021-08-11.21:32:35::SCWMssOS::lf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:36::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/scugic_v4_1/src"
+
+TRACE::2021-08-11.21:32:36::SCWMssOS::make -C psv_cortexa72_0/libsrc/scugic_v4_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-e
+TRACE::2021-08-11.21:32:36::SCWMssOS::lf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:36::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/sdps_v3_8/src"
+
+TRACE::2021-08-11.21:32:36::SCWMssOS::make -C psv_cortexa72_0/libsrc/sdps_v3_8/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf
+TRACE::2021-08-11.21:32:36::SCWMssOS::-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:36::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/standalone_v7_1/src"
+
+TRACE::2021-08-11.21:32:36::SCWMssOS::make -C psv_cortexa72_0/libsrc/standalone_v7_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-no
+TRACE::2021-08-11.21:32:36::SCWMssOS::ne-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:37::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/sysmonpsv_v1_1/src"
+
+TRACE::2021-08-11.21:32:37::SCWMssOS::make -C psv_cortexa72_0/libsrc/sysmonpsv_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-non
+TRACE::2021-08-11.21:32:37::SCWMssOS::e-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:37::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/ttcps_v3_10/src"
+
+TRACE::2021-08-11.21:32:37::SCWMssOS::make -C psv_cortexa72_0/libsrc/ttcps_v3_10/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-e
+TRACE::2021-08-11.21:32:37::SCWMssOS::lf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:37::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/uartlite_v3_3/src"
+
+TRACE::2021-08-11.21:32:37::SCWMssOS::make -C psv_cortexa72_0/libsrc/uartlite_v3_3/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none
+TRACE::2021-08-11.21:32:37::SCWMssOS::-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:38::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/uartpsv_v1_1/src"
+
+TRACE::2021-08-11.21:32:38::SCWMssOS::make -C psv_cortexa72_0/libsrc/uartpsv_v1_1/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-
+TRACE::2021-08-11.21:32:38::SCWMssOS::elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:38::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/usbpsu_v1_6/src"
+
+TRACE::2021-08-11.21:32:38::SCWMssOS::make -C psv_cortexa72_0/libsrc/usbpsu_v1_6/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-e
+TRACE::2021-08-11.21:32:38::SCWMssOS::lf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:38::SCWMssOS::"Running Make include in psv_cortexa72_0/libsrc/zdma_v1_8/src"
+
+TRACE::2021-08-11.21:32:38::SCWMssOS::make -C psv_cortexa72_0/libsrc/zdma_v1_8/src -s include  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf
+TRACE::2021-08-11.21:32:38::SCWMssOS::-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:39::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/canfd_v2_2/src"
+
+TRACE::2021-08-11.21:32:39::SCWMssOS::make -C psv_cortexa72_0/libsrc/canfd_v2_2/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-a
+TRACE::2021-08-11.21:32:39::SCWMssOS::r" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:39::SCWMssOS::"Compiling can"
+
+TRACE::2021-08-11.21:32:48::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/cframe_v1_0/src"
+
+TRACE::2021-08-11.21:32:48::SCWMssOS::make -C psv_cortexa72_0/libsrc/cframe_v1_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-
+TRACE::2021-08-11.21:32:48::SCWMssOS::ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:48::SCWMssOS::"Compiling cframe"
+
+TRACE::2021-08-11.21:32:49::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/cfupmc_v1_0/src"
+
+TRACE::2021-08-11.21:32:49::SCWMssOS::make -C psv_cortexa72_0/libsrc/cfupmc_v1_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-
+TRACE::2021-08-11.21:32:49::SCWMssOS::ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:49::SCWMssOS::"Compiling cfupmc"
+
+TRACE::2021-08-11.21:32:51::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/coresightps_dcc_v1_6/src"
+
+TRACE::2021-08-11.21:32:51::SCWMssOS::make -C psv_cortexa72_0/libsrc/coresightps_dcc_v1_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-
+TRACE::2021-08-11.21:32:51::SCWMssOS::none-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:52::SCWMssOS::"Compiling coresightps_dcc"
+
+TRACE::2021-08-11.21:32:52::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/cpu_cortexa72_v1_0/src"
+
+TRACE::2021-08-11.21:32:52::SCWMssOS::make -C psv_cortexa72_0/libsrc/cpu_cortexa72_v1_0/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-no
+TRACE::2021-08-11.21:32:52::SCWMssOS::ne-elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:52::SCWMssOS::"Compiling cpu_cortexa72"
+
+TRACE::2021-08-11.21:32:52::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/csudma_v1_5/src"
+
+TRACE::2021-08-11.21:32:52::SCWMssOS::make -C psv_cortexa72_0/libsrc/csudma_v1_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-
+TRACE::2021-08-11.21:32:52::SCWMssOS::ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:52::SCWMssOS::"Compiling csudma"
+
+TRACE::2021-08-11.21:32:55::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/ddrpsv_v1_1/src"
+
+TRACE::2021-08-11.21:32:55::SCWMssOS::make -C psv_cortexa72_0/libsrc/ddrpsv_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-
+TRACE::2021-08-11.21:32:55::SCWMssOS::ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:55::SCWMssOS::"Compiling ddrpsv"
+
+TRACE::2021-08-11.21:32:55::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/emacps_v3_10/src"
+
+TRACE::2021-08-11.21:32:55::SCWMssOS::make -C psv_cortexa72_0/libsrc/emacps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf
+TRACE::2021-08-11.21:32:55::SCWMssOS::-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:55::SCWMssOS::"Compiling emacps"
+
+TRACE::2021-08-11.21:32:59::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/iicps_v3_10/src"
+
+TRACE::2021-08-11.21:32:59::SCWMssOS::make -C psv_cortexa72_0/libsrc/iicps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-
+TRACE::2021-08-11.21:32:59::SCWMssOS::ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:32:59::SCWMssOS::"Compiling iicps"
+
+TRACE::2021-08-11.21:33:04::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/ipipsu_v2_5/src"
+
+TRACE::2021-08-11.21:33:04::SCWMssOS::make -C psv_cortexa72_0/libsrc/ipipsu_v2_5/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-
+TRACE::2021-08-11.21:33:04::SCWMssOS::ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:33:04::SCWMssOS::"Compiling ipipsu"
+
+TRACE::2021-08-11.21:33:06::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/qspipsu_v1_10/src"
+
+TRACE::2021-08-11.21:33:06::SCWMssOS::make -C psv_cortexa72_0/libsrc/qspipsu_v1_10/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-el
+TRACE::2021-08-11.21:33:06::SCWMssOS::f-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:33:06::SCWMssOS::"Compiling qspipsu"
+
+TRACE::2021-08-11.21:33:10::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/rtcpsu_v1_8/src"
+
+TRACE::2021-08-11.21:33:10::SCWMssOS::make -C psv_cortexa72_0/libsrc/rtcpsu_v1_8/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-
+TRACE::2021-08-11.21:33:10::SCWMssOS::ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:33:10::SCWMssOS::"Compiling rtcpsu"
+
+TRACE::2021-08-11.21:33:12::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/scugic_v4_1/src"
+
+TRACE::2021-08-11.21:33:12::SCWMssOS::make -C psv_cortexa72_0/libsrc/scugic_v4_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-
+TRACE::2021-08-11.21:33:12::SCWMssOS::ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:33:13::SCWMssOS::"Compiling scugic"
+
+TRACE::2021-08-11.21:33:16::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/sdps_v3_8/src"
+
+TRACE::2021-08-11.21:33:16::SCWMssOS::make -C psv_cortexa72_0/libsrc/sdps_v3_8/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar
+TRACE::2021-08-11.21:33:16::SCWMssOS::" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:33:16::SCWMssOS::"Compiling sdps"
+
+TRACE::2021-08-11.21:33:20::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/standalone_v7_1/src"
+
+TRACE::2021-08-11.21:33:20::SCWMssOS::make -C psv_cortexa72_0/libsrc/standalone_v7_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-
+TRACE::2021-08-11.21:33:20::SCWMssOS::elf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:33:20::SCWMssOS::"Compiling standalone ARMv8 64 bit"
+
+TRACE::2021-08-11.21:33:32::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/sysmonpsv_v1_1/src"
+
+TRACE::2021-08-11.21:33:32::SCWMssOS::make -C psv_cortexa72_0/libsrc/sysmonpsv_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-e
+TRACE::2021-08-11.21:33:32::SCWMssOS::lf-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:33:32::SCWMssOS::"Compiling sysmonpsv"
+
+TRACE::2021-08-11.21:33:35::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/ttcps_v3_10/src"
+
+TRACE::2021-08-11.21:33:35::SCWMssOS::make -C psv_cortexa72_0/libsrc/ttcps_v3_10/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-
+TRACE::2021-08-11.21:33:35::SCWMssOS::ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:33:35::SCWMssOS::"Compiling ttcps"
+
+TRACE::2021-08-11.21:33:38::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/uartlite_v3_3/src"
+
+TRACE::2021-08-11.21:33:38::SCWMssOS::make -C psv_cortexa72_0/libsrc/uartlite_v3_3/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-el
+TRACE::2021-08-11.21:33:38::SCWMssOS::f-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:33:38::SCWMssOS::"Compiling uartlite"
+
+TRACE::2021-08-11.21:33:41::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/uartpsv_v1_1/src"
+
+TRACE::2021-08-11.21:33:41::SCWMssOS::make -C psv_cortexa72_0/libsrc/uartpsv_v1_1/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf
+TRACE::2021-08-11.21:33:41::SCWMssOS::-ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:33:41::SCWMssOS::"Compiling uartpsv"
+
+TRACE::2021-08-11.21:33:45::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/usbpsu_v1_6/src"
+
+TRACE::2021-08-11.21:33:45::SCWMssOS::make -C psv_cortexa72_0/libsrc/usbpsu_v1_6/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-
+TRACE::2021-08-11.21:33:45::SCWMssOS::ar" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:33:45::SCWMssOS::"Compiling usbpsu"
+
+TRACE::2021-08-11.21:33:52::SCWMssOS::"Running Make libs in psv_cortexa72_0/libsrc/zdma_v1_8/src"
+
+TRACE::2021-08-11.21:33:52::SCWMssOS::make -C psv_cortexa72_0/libsrc/zdma_v1_8/src -s libs  "SHELL=CMD" "COMPILER=aarch64-none-elf-gcc" "ARCHIVER=aarch64-none-elf-ar
+TRACE::2021-08-11.21:33:52::SCWMssOS::" "COMPILER_FLAGS=  -O2 -c" "EXTRA_COMPILER_FLAGS=-g -Wall -Wextra -Dversal -DARMA72_EL3"
+
+TRACE::2021-08-11.21:33:52::SCWMssOS::"Compiling zdma"
+
+TRACE::2021-08-11.21:33:56::SCWMssOS::'Finished building libraries'
+
+TRACE::2021-08-11.21:33:56::SCWMssOS::Copying to export directory.
+TRACE::2021-08-11.21:33:56::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-08-11.21:33:56::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+LOG::2021-08-11.21:33:56::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-08-11.21:33:56::SCWSystem::Completed Processing the sysconfig vck190
+LOG::2021-08-11.21:33:56::SCWPlatform::Completed generating the artifacts for system configuration vck190
+TRACE::2021-08-11.21:33:56::SCWPlatform::Started preparing the platform 
+TRACE::2021-08-11.21:33:56::SCWSystem:: Using the cdo from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/pmc_cdo.bin
+TRACE::2021-08-11.21:33:56::SCWSystem:: Using the psm fw from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/psm_fw.elf
+TRACE::2021-08-11.21:33:56::SCWSystem:: Using the fpd cdo from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/fpd_cdo.bin
+TRACE::2021-08-11.21:33:56::SCWSystem::Writing the bif file for system config vck190
+TRACE::2021-08-11.21:33:56::SCWSystem::dir created 
+TRACE::2021-08-11.21:33:56::SCWSystem::Writing the bif 
+TRACE::2021-08-11.21:33:56::SCWPlatform::Started writing the spfm file 
+TRACE::2021-08-11.21:33:56::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-08-11.21:33:56::SCWPlatform::Completed generating the platform
+TRACE::2021-08-11.21:33:56::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:33:56::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:33:56::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:33:56::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:33:56::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:33:56::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:33:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:33:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:33:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:33:56::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:33:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:33:56::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:33:56::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:33:56::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:33:56::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:33:56::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:33:56::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:33:56::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:33:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:33:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:33:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:33:56::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:33:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:33:56::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:33:56::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:33:56::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:33:56::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:33:56::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:33:56::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:33:56::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:33:56::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:33:56::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:33:56::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:33:56::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:33:56::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:33:56::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:33:56::SCWWriter::formatted JSON is {
+	"platformName":	"vck190",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"vck190",
+	"platHandOff":	"C:/Xilinx/Vitis/2019.2/data/embeddedsw/lib/fixed_hwplatforms/vck190.xsa",
+	"platIntHandOff":	"<platformDir>/hw/vck190.xsa",
+	"deviceType":	"versal",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"vck190",
+	"systems":	[{
+			"systemName":	"vck190",
+			"systemDesc":	"vck190",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"vck190",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psv_cortexa72_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psv_cortexa72_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/",
+					"pmuQemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/versal/sw/a72_standalone/qemu/pmc_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"90c874d019fabf25f10be15ecaeaec38",
+					"compatibleApp":	"hello_world",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-08-11.21:33:56::SCWPlatform::updated the xpfm file.
+TRACE::2021-08-11.21:33:56::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:33:56::SCWPlatform::DSA given C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:33:56::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:33:56::SCWPlatform::DSA directory C:/Users/aguss/Desktop/project_uscale/vck190/hw
+TRACE::2021-08-11.21:33:57::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/project_uscale/vck190/hw/vck190.xsa
+TRACE::2021-08-11.21:33:57::SCWPlatform:: Unique name xilinx:vck190_es::0.0
+TRACE::2021-08-11.21:33:57::SCWPlatform::Trying to set the existing hwdb with name design_1_wrapper_0
+TRACE::2021-08-11.21:33:57::SCWPlatform::Opened existing hwdb design_1_wrapper_0
+TRACE::2021-08-11.21:33:57::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-11.21:33:57::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-11.21:33:57::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss|system||
+
+TRACE::2021-08-11.21:33:57::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/project_uscale/vck190/psv_cortexa72_0/standalone_domain/bsp/system.mss

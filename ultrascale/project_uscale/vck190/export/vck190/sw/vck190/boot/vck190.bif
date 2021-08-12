@@ -1,0 +1,9 @@
+/*vck190*/
+the_ROM_image:
+{
+  [bootloader]<vck190/boot/plm.elf>
+  [pmcdata,load=0xf2000000]<vck190/boot/pmc_cdo.bin>
+  [destination_cpu=psm]<vck190/boot/psm_fw.elf>
+  [partition_type=cdo]<vck190/boot/fpd_cdo.bin>
+  [destination_cpu=a72-0, exception_level=el-3] <elf>
+}
