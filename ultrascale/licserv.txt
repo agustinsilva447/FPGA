@@ -1,0 +1,1 @@
+setenv XILINXD_LICENSE_FILE 2100@licserv

@@ -14763,25 +14763,6 @@ set psu_lpd_xppu_data {
 		# : APERTURE PERMISIION LIST
 		# : APERTURE NAME: UART0, START ADDRESS: FF000000, END ADDRESS: FF00FFFF
 		# : APERTURE NAME: UART1, START ADDRESS: FF010000, END ADDRESS: FF01FFFF
-		# Register : APERPERM_001 @ 0XFF981004</p>
-
-		# This field defines the MASTER ID match criteria. Each entry in the IDL c
-    # orresponds to a bit in this field. 0=not match, 1=match.
-		# PSU_LPD_XPPU_CFG_APERPERM_001_PERMISSION                                        0x880
-
-		# 1=secure or non-secure transactions are allowed 0=only secure transactio
-    # na are allowed
-		# PSU_LPD_XPPU_CFG_APERPERM_001_TRUSTZONE                                         0x1
-
-		# SW must calculate and set up parity, if parity check is enabled by the C
-    # TRL register. 31: parity for bits 19:15 30: parity for bits 14:10 29: pa
-    # rity for bits 9:5 28: parity for bits 27, 4:0
-		# PSU_LPD_XPPU_CFG_APERPERM_001_PARITY                                            0x0
-
-		# Entry 001 of the Aperture Permission List, for the 64K-byte aperture at
-    # BASE_64KB + 0x00010000
-		#(OFFSET, MASK, VALUE)      (0XFF981004, 0xF80FFFFFU ,0x08000880U)  */
-    mask_write 0XFF981004 0xF80FFFFF 0x08000880
 		# : APERTURE NAME: I2C0, START ADDRESS: FF020000, END ADDRESS: FF02FFFF
 		# : APERTURE NAME: I2C1, START ADDRESS: FF030000, END ADDRESS: FF03FFFF
 		# : APERTURE NAME: SPI0, START ADDRESS: FF040000, END ADDRESS: FF04FFFF
@@ -14791,25 +14772,6 @@ set psu_lpd_xppu_data {
 		# : APERTURE NAME: RPU_UNUSED_12, START ADDRESS: FF080000, END ADDRESS: FF09FFFF
 		# : APERTURE NAME: RPU_UNUSED_12, START ADDRESS: FF080000, END ADDRESS: FF09FFFF
 		# : APERTURE NAME: GPIO, START ADDRESS: FF0A0000, END ADDRESS: FF0AFFFF
-		# Register : APERPERM_010 @ 0XFF981028</p>
-
-		# This field defines the MASTER ID match criteria. Each entry in the IDL c
-    # orresponds to a bit in this field. 0=not match, 1=match.
-		# PSU_LPD_XPPU_CFG_APERPERM_010_PERMISSION                                        0x8c0
-
-		# 1=secure or non-secure transactions are allowed 0=only secure transactio
-    # na are allowed
-		# PSU_LPD_XPPU_CFG_APERPERM_010_TRUSTZONE                                         0x1
-
-		# SW must calculate and set up parity, if parity check is enabled by the C
-    # TRL register. 31: parity for bits 19:15 30: parity for bits 14:10 29: pa
-    # rity for bits 9:5 28: parity for bits 27, 4:0
-		# PSU_LPD_XPPU_CFG_APERPERM_010_PARITY                                            0x0
-
-		# Entry 010 of the Aperture Permission List, for the 64K-byte aperture at
-    # BASE_64KB + 0x000A0000
-		#(OFFSET, MASK, VALUE)      (0XFF981028, 0xF80FFFFFU ,0x080008C0U)  */
-    mask_write 0XFF981028 0xF80FFFFF 0x080008C0
 		# : APERTURE NAME: GEM0, START ADDRESS: FF0B0000, END ADDRESS: FF0BFFFF
 		# : APERTURE NAME: GEM1, START ADDRESS: FF0C0000, END ADDRESS: FF0CFFFF
 		# : APERTURE NAME: GEM2, START ADDRESS: FF0D0000, END ADDRESS: FF0DFFFF
@@ -14821,25 +14783,6 @@ set psu_lpd_xppu_data {
 		# : APERTURE NAME: TTC2, START ADDRESS: FF130000, END ADDRESS: FF13FFFF
 		# : APERTURE NAME: TTC3, START ADDRESS: FF140000, END ADDRESS: FF14FFFF
 		# : APERTURE NAME: SWDT, START ADDRESS: FF150000, END ADDRESS: FF15FFFF
-		# Register : APERPERM_021 @ 0XFF981054</p>
-
-		# This field defines the MASTER ID match criteria. Each entry in the IDL c
-    # orresponds to a bit in this field. 0=not match, 1=match.
-		# PSU_LPD_XPPU_CFG_APERPERM_021_PERMISSION                                        0xc0
-
-		# 1=secure or non-secure transactions are allowed 0=only secure transactio
-    # na are allowed
-		# PSU_LPD_XPPU_CFG_APERPERM_021_TRUSTZONE                                         0x1
-
-		# SW must calculate and set up parity, if parity check is enabled by the C
-    # TRL register. 31: parity for bits 19:15 30: parity for bits 14:10 29: pa
-    # rity for bits 9:5 28: parity for bits 27, 4:0
-		# PSU_LPD_XPPU_CFG_APERPERM_021_PARITY                                            0x0
-
-		# Entry 021 of the Aperture Permission List, for the 64K-byte aperture at
-    # BASE_64KB + 0x00150000
-		#(OFFSET, MASK, VALUE)      (0XFF981054, 0xF80FFFFFU ,0x080000C0U)  */
-    mask_write 0XFF981054 0xF80FFFFF 0x080000C0
 		# : APERTURE NAME: SD0, START ADDRESS: FF160000, END ADDRESS: FF16FFFF
 		# : APERTURE NAME: SD1, START ADDRESS: FF170000, END ADDRESS: FF17FFFF
 		# : APERTURE NAME: IOU_SLCR, START ADDRESS: FF180000, END ADDRESS: FF23FFFF
@@ -16353,85 +16296,9 @@ set psu_lpd_xppu_data {
 		# : APERTURE NAME: PMU_RAM, START ADDRESS: FFDC0000, END ADDRESS: FFDFFFFF
 		# : APERTURE NAME: PMU_RAM, START ADDRESS: FFDC0000, END ADDRESS: FFDFFFFF
 		# : APERTURE NAME: R5_0_ATCM, START ADDRESS: FFE00000, END ADDRESS: FFE0FFFF
-		# Register : APERPERM_224 @ 0XFF981380</p>
-
-		# This field defines the MASTER ID match criteria. Each entry in the IDL c
-    # orresponds to a bit in this field. 0=not match, 1=match.
-		# PSU_LPD_XPPU_CFG_APERPERM_224_PERMISSION                                        0x880
-
-		# 1=secure or non-secure transactions are allowed 0=only secure transactio
-    # na are allowed
-		# PSU_LPD_XPPU_CFG_APERPERM_224_TRUSTZONE                                         0x1
-
-		# SW must calculate and set up parity, if parity check is enabled by the C
-    # TRL register. 31: parity for bits 19:15 30: parity for bits 14:10 29: pa
-    # rity for bits 9:5 28: parity for bits 27, 4:0
-		# PSU_LPD_XPPU_CFG_APERPERM_224_PARITY                                            0x0
-
-		# Entry 224 of the Aperture Permission List, for the 64K-byte aperture at
-    # BASE_64KB + 0x00E00000
-		#(OFFSET, MASK, VALUE)      (0XFF981380, 0xF80FFFFFU ,0x08000880U)  */
-    mask_write 0XFF981380 0xF80FFFFF 0x08000880
 		# : APERTURE NAME: R5_0_ATCM_LOCKSTEP, START ADDRESS: FFE10000, END ADDRESS: FFE1FFFF
-		# Register : APERPERM_225 @ 0XFF981384</p>
-
-		# This field defines the MASTER ID match criteria. Each entry in the IDL c
-    # orresponds to a bit in this field. 0=not match, 1=match.
-		# PSU_LPD_XPPU_CFG_APERPERM_225_PERMISSION                                        0x880
-
-		# 1=secure or non-secure transactions are allowed 0=only secure transactio
-    # na are allowed
-		# PSU_LPD_XPPU_CFG_APERPERM_225_TRUSTZONE                                         0x1
-
-		# SW must calculate and set up parity, if parity check is enabled by the C
-    # TRL register. 31: parity for bits 19:15 30: parity for bits 14:10 29: pa
-    # rity for bits 9:5 28: parity for bits 27, 4:0
-		# PSU_LPD_XPPU_CFG_APERPERM_225_PARITY                                            0x0
-
-		# Entry 225 of the Aperture Permission List, for the 64K-byte aperture at
-    # BASE_64KB + 0x00E10000
-		#(OFFSET, MASK, VALUE)      (0XFF981384, 0xF80FFFFFU ,0x08000880U)  */
-    mask_write 0XFF981384 0xF80FFFFF 0x08000880
 		# : APERTURE NAME: R5_0_BTCM, START ADDRESS: FFE20000, END ADDRESS: FFE2FFFF
-		# Register : APERPERM_226 @ 0XFF981388</p>
-
-		# This field defines the MASTER ID match criteria. Each entry in the IDL c
-    # orresponds to a bit in this field. 0=not match, 1=match.
-		# PSU_LPD_XPPU_CFG_APERPERM_226_PERMISSION                                        0x880
-
-		# 1=secure or non-secure transactions are allowed 0=only secure transactio
-    # na are allowed
-		# PSU_LPD_XPPU_CFG_APERPERM_226_TRUSTZONE                                         0x1
-
-		# SW must calculate and set up parity, if parity check is enabled by the C
-    # TRL register. 31: parity for bits 19:15 30: parity for bits 14:10 29: pa
-    # rity for bits 9:5 28: parity for bits 27, 4:0
-		# PSU_LPD_XPPU_CFG_APERPERM_226_PARITY                                            0x0
-
-		# Entry 226 of the Aperture Permission List, for the 64K-byte aperture at
-    # BASE_64KB + 0x00E20000
-		#(OFFSET, MASK, VALUE)      (0XFF981388, 0xF80FFFFFU ,0x08000880U)  */
-    mask_write 0XFF981388 0xF80FFFFF 0x08000880
 		# : APERTURE NAME: R5_0_BTCM_LOCKSTEP, START ADDRESS: FFE30000, END ADDRESS: FFE3FFFF
-		# Register : APERPERM_227 @ 0XFF98138C</p>
-
-		# This field defines the MASTER ID match criteria. Each entry in the IDL c
-    # orresponds to a bit in this field. 0=not match, 1=match.
-		# PSU_LPD_XPPU_CFG_APERPERM_227_PERMISSION                                        0x880
-
-		# 1=secure or non-secure transactions are allowed 0=only secure transactio
-    # na are allowed
-		# PSU_LPD_XPPU_CFG_APERPERM_227_TRUSTZONE                                         0x1
-
-		# SW must calculate and set up parity, if parity check is enabled by the C
-    # TRL register. 31: parity for bits 19:15 30: parity for bits 14:10 29: pa
-    # rity for bits 9:5 28: parity for bits 27, 4:0
-		# PSU_LPD_XPPU_CFG_APERPERM_227_PARITY                                            0x0
-
-		# Entry 227 of the Aperture Permission List, for the 64K-byte aperture at
-    # BASE_64KB + 0x00E30000
-		#(OFFSET, MASK, VALUE)      (0XFF98138C, 0xF80FFFFFU ,0x08000880U)  */
-    mask_write 0XFF98138C 0xF80FFFFF 0x08000880
 		# : APERTURE NAME: R5_0_INSTRUCTION_CACHE, START ADDRESS: FFE40000, END ADDRESS: FFE4FFFF
 		# : APERTURE NAME: R5_0_DATA_CACHE, START ADDRESS: FFE50000, END ADDRESS: FFE5FFFF
 		# : APERTURE NAME: LPD_UNUSED_8, START ADDRESS: FFE60000, END ADDRESS: FFE8FFFF
@@ -18478,1676 +18345,26 @@ set psu_lpd_xppu_data {
 
 set psu_ddr_xmpu0_data {
 		# : DDR XMPU0
-		# Register : R03_CONFIG @ 0XFD00013C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU0_CFG_R03_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU0_CFG_R03_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU0_CFG_R03_CONFIG_REGIONNS                                           1
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU0_CFG_R03_CONFIG_WRALLOWED                                          1
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU0_CFG_R03_CONFIG_RDALLOWED                                          1
-
-		# Region 3 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD00013C, 0x0000001FU ,0x0000000FU)  */
-    mask_write 0XFD00013C 0x0000001F 0x0000000F
-		# Register : R03_START @ 0XFD000130</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU0_CFG_R03_START_ADDR                                                458752
-
-		# Region 3 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD000130, 0x0FFFFFFFU ,0x00070000U)  */
-    mask_write 0XFD000130 0x0FFFFFFF 0x00070000
-		# Register : R03_END @ 0XFD000134</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU0_CFG_R03_END_ADDR                                                  524031
-
-		# Region 3 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD000134, 0x0FFFFFFFU ,0x0007FEFFU)  */
-    mask_write 0XFD000134 0x0FFFFFFF 0x0007FEFF
-		# Register : R03_MASTER @ 0XFD000138</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU0_CFG_R03_MASTER_MASK                                               1008
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU0_CFG_R03_MASTER_ID                                                 0
-
-		# Region 3 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD000138, 0x03FF03FFU ,0x03F00000U)  */
-    mask_write 0XFD000138 0x03FF03FF 0x03F00000
-		# Register : R02_CONFIG @ 0XFD00012C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU0_CFG_R02_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU0_CFG_R02_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU0_CFG_R02_CONFIG_REGIONNS                                           1
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU0_CFG_R02_CONFIG_WRALLOWED                                          1
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU0_CFG_R02_CONFIG_RDALLOWED                                          1
-
-		# Region 2 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD00012C, 0x0000001FU ,0x0000000FU)  */
-    mask_write 0XFD00012C 0x0000001F 0x0000000F
-		# Register : R02_START @ 0XFD000120</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU0_CFG_R02_START_ADDR                                                458496
-
-		# Region 2 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD000120, 0x0FFFFFFFU ,0x0006FF00U)  */
-    mask_write 0XFD000120 0x0FFFFFFF 0x0006FF00
-		# Register : R02_END @ 0XFD000124</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU0_CFG_R02_END_ADDR                                                  458751
-
-		# Region 2 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD000124, 0x0FFFFFFFU ,0x0006FFFFU)  */
-    mask_write 0XFD000124 0x0FFFFFFF 0x0006FFFF
-		# Register : R02_MASTER @ 0XFD000128</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU0_CFG_R02_MASTER_MASK                                               1008
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU0_CFG_R02_MASTER_ID                                                 0
-
-		# Region 2 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD000128, 0x03FF03FFU ,0x03F00000U)  */
-    mask_write 0XFD000128 0x03FF03FF 0x03F00000
-		# Register : R01_CONFIG @ 0XFD00011C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU0_CFG_R01_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU0_CFG_R01_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU0_CFG_R01_CONFIG_REGIONNS                                           0
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU0_CFG_R01_CONFIG_WRALLOWED                                          0
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU0_CFG_R01_CONFIG_RDALLOWED                                          0
-
-		# Region 1 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD00011C, 0x0000001FU ,0x00000001U)  */
-    mask_write 0XFD00011C 0x0000001F 0x00000001
-		# Register : R01_START @ 0XFD000110</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU0_CFG_R01_START_ADDR                                                458496
-
-		# Region 1 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD000110, 0x0FFFFFFFU ,0x0006FF00U)  */
-    mask_write 0XFD000110 0x0FFFFFFF 0x0006FF00
-		# Register : R01_END @ 0XFD000114</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU0_CFG_R01_END_ADDR                                                  524031
-
-		# Region 1 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD000114, 0x0FFFFFFFU ,0x0007FEFFU)  */
-    mask_write 0XFD000114 0x0FFFFFFF 0x0007FEFF
-		# Register : R01_MASTER @ 0XFD000118</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU0_CFG_R01_MASTER_MASK                                               0
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU0_CFG_R01_MASTER_ID                                                 0
-
-		# Region 1 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD000118, 0x03FF03FFU ,0x00000000U)  */
-    mask_write 0XFD000118 0x03FF03FF 0x00000000
-		# Register : R00_CONFIG @ 0XFD00010C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU0_CFG_R00_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU0_CFG_R00_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU0_CFG_R00_CONFIG_REGIONNS                                           0
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU0_CFG_R00_CONFIG_WRALLOWED                                          0
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU0_CFG_R00_CONFIG_RDALLOWED                                          0
-
-		# Region Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD00010C, 0x0000001FU ,0x00000001U)  */
-    mask_write 0XFD00010C 0x0000001F 0x00000001
-		# Register : R00_START @ 0XFD000100</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU0_CFG_R00_START_ADDR                                                0
-
-		# Region Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD000100, 0x0FFFFFFFU ,0x00000000U)  */
-    mask_write 0XFD000100 0x0FFFFFFF 0x00000000
-		# Register : R00_END @ 0XFD000104</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU0_CFG_R00_END_ADDR                                                  447999
-
-		# Region End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD000104, 0x0FFFFFFFU ,0x0006D5FFU)  */
-    mask_write 0XFD000104 0x0FFFFFFF 0x0006D5FF
-		# Register : R00_MASTER @ 0XFD000108</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU0_CFG_R00_MASTER_MASK                                               0
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU0_CFG_R00_MASTER_ID                                                 0
-
-		# Region Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD000108, 0x03FF03FFU ,0x00000000U)  */
-    mask_write 0XFD000108 0x03FF03FF 0x00000000
-		# Register : POISON @ 0XFD00000C</p>
-
-		# This field sets the poison attribute when CTRL.PoisonCfg is 0
-		# PSU_DDR_XMPU0_CFG_POISON_ATTRIB                                                 1
-
-		# XMPU Poison Address Attribute
-		#(OFFSET, MASK, VALUE)      (0XFD00000C, 0x00100000U ,0x00100000U)  */
-    mask_write 0XFD00000C 0x00100000 0x00100000
-		# Register : CTRL @ 0XFD000000</p>
-
-		# Default write permission 0: If AXI write Address/ID doesn't match with a
-    # ny of the enabled regions, then write is poisoned 1: If AXI write Addres
-    # s/ID doesn't match with any of the enabled regions, then write is allowe
-    # d to go through
-		# PSU_DDR_XMPU0_CFG_CTRL_DEFWRALLOWED                                             1
-
-		# Default read permission 0: If AXI read Address/ID doesn't match with any
-    #  of the enabled regions, then read is poisoned 1: If AXI read Address/ID
-    #  doesn't match with any of the enabled regions, then read is allowed to
-    # go through
-		# PSU_DDR_XMPU0_CFG_CTRL_DEFRDALLOWED                                             1
-
-		# XMPU Control Register
-		#(OFFSET, MASK, VALUE)      (0XFD000000, 0x00000003U ,0x00000003U)  */
-    mask_write 0XFD000000 0x00000003 0x00000003
-		# : DDR XMPU INTERRUPT ENABLE
-		# Register : IEN @ 0XFD000018</p>
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU0_CFG_IEN_SECURITYVIO                                               0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU0_CFG_IEN_WRPERMVIO                                                 0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU0_CFG_IEN_RDPERMVIO                                                 0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU0_CFG_IEN_INV_APB                                                   0X1
-
-		# Interrupt Enable Register
-		#(OFFSET, MASK, VALUE)      (0XFD000018, 0x0000000FU ,0x0000000FU)  */
-    mask_write 0XFD000018 0x0000000F 0x0000000F
 }
 
 set psu_ddr_xmpu1_data {
 		# : DDR XMPU1
-		# Register : R06_CONFIG @ 0XFD01016C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU1_CFG_R06_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU1_CFG_R06_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU1_CFG_R06_CONFIG_REGIONNS                                           1
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU1_CFG_R06_CONFIG_WRALLOWED                                          1
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU1_CFG_R06_CONFIG_RDALLOWED                                          1
-
-		# Region 6 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD01016C, 0x0000001FU ,0x0000000FU)  */
-    mask_write 0XFD01016C 0x0000001F 0x0000000F
-		# Register : R06_START @ 0XFD010160</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU1_CFG_R06_START_ADDR                                                458752
-
-		# Region 6 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD010160, 0x0FFFFFFFU ,0x00070000U)  */
-    mask_write 0XFD010160 0x0FFFFFFF 0x00070000
-		# Register : R06_END @ 0XFD010164</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU1_CFG_R06_END_ADDR                                                  524031
-
-		# Region 6 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD010164, 0x0FFFFFFFU ,0x0007FEFFU)  */
-    mask_write 0XFD010164 0x0FFFFFFF 0x0007FEFF
-		# Register : R06_MASTER @ 0XFD010168</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU1_CFG_R06_MASTER_MASK                                               1023
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU1_CFG_R06_MASTER_ID                                                 98
-
-		# Region 6 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD010168, 0x03FF03FFU ,0x03FF0062U)  */
-    mask_write 0XFD010168 0x03FF03FF 0x03FF0062
-		# Register : R05_CONFIG @ 0XFD01015C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU1_CFG_R05_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU1_CFG_R05_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU1_CFG_R05_CONFIG_REGIONNS                                           1
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU1_CFG_R05_CONFIG_WRALLOWED                                          1
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU1_CFG_R05_CONFIG_RDALLOWED                                          1
-
-		# Region 5 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD01015C, 0x0000001FU ,0x0000000FU)  */
-    mask_write 0XFD01015C 0x0000001F 0x0000000F
-		# Register : R05_START @ 0XFD010150</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU1_CFG_R05_START_ADDR                                                458496
-
-		# Region 5 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD010150, 0x0FFFFFFFU ,0x0006FF00U)  */
-    mask_write 0XFD010150 0x0FFFFFFF 0x0006FF00
-		# Register : R05_END @ 0XFD010154</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU1_CFG_R05_END_ADDR                                                  458751
-
-		# Region 5 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD010154, 0x0FFFFFFFU ,0x0006FFFFU)  */
-    mask_write 0XFD010154 0x0FFFFFFF 0x0006FFFF
-		# Register : R05_MASTER @ 0XFD010158</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU1_CFG_R05_MASTER_MASK                                               1023
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU1_CFG_R05_MASTER_ID                                                 98
-
-		# Region 5 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD010158, 0x03FF03FFU ,0x03FF0062U)  */
-    mask_write 0XFD010158 0x03FF03FF 0x03FF0062
-		# Register : R04_CONFIG @ 0XFD01014C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU1_CFG_R04_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU1_CFG_R04_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU1_CFG_R04_CONFIG_REGIONNS                                           1
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU1_CFG_R04_CONFIG_WRALLOWED                                          1
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU1_CFG_R04_CONFIG_RDALLOWED                                          1
-
-		# Region 4 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD01014C, 0x0000001FU ,0x0000000FU)  */
-    mask_write 0XFD01014C 0x0000001F 0x0000000F
-		# Register : R04_START @ 0XFD010140</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU1_CFG_R04_START_ADDR                                                458496
-
-		# Region 4 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD010140, 0x0FFFFFFFU ,0x0006FF00U)  */
-    mask_write 0XFD010140 0x0FFFFFFF 0x0006FF00
-		# Register : R04_END @ 0XFD010144</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU1_CFG_R04_END_ADDR                                                  458751
-
-		# Region 4 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD010144, 0x0FFFFFFFU ,0x0006FFFFU)  */
-    mask_write 0XFD010144 0x0FFFFFFF 0x0006FFFF
-		# Register : R04_MASTER @ 0XFD010148</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU1_CFG_R04_MASTER_MASK                                               960
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU1_CFG_R04_MASTER_ID                                                 128
-
-		# Region 4 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD010148, 0x03FF03FFU ,0x03C00080U)  */
-    mask_write 0XFD010148 0x03FF03FF 0x03C00080
-		# Register : R03_CONFIG @ 0XFD01013C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU1_CFG_R03_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU1_CFG_R03_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU1_CFG_R03_CONFIG_REGIONNS                                           1
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU1_CFG_R03_CONFIG_WRALLOWED                                          1
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU1_CFG_R03_CONFIG_RDALLOWED                                          1
-
-		# Region 3 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD01013C, 0x0000001FU ,0x0000000FU)  */
-    mask_write 0XFD01013C 0x0000001F 0x0000000F
-		# Register : R03_START @ 0XFD010130</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU1_CFG_R03_START_ADDR                                                0
-
-		# Region 3 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD010130, 0x0FFFFFFFU ,0x00000000U)  */
-    mask_write 0XFD010130 0x0FFFFFFF 0x00000000
-		# Register : R03_END @ 0XFD010134</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU1_CFG_R03_END_ADDR                                                  447999
-
-		# Region 3 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD010134, 0x0FFFFFFFU ,0x0006D5FFU)  */
-    mask_write 0XFD010134 0x0FFFFFFF 0x0006D5FF
-		# Register : R03_MASTER @ 0XFD010138</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU1_CFG_R03_MASTER_MASK                                               1023
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU1_CFG_R03_MASTER_ID                                                 98
-
-		# Region 3 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD010138, 0x03FF03FFU ,0x03FF0062U)  */
-    mask_write 0XFD010138 0x03FF03FF 0x03FF0062
-		# Register : R02_CONFIG @ 0XFD01012C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU1_CFG_R02_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU1_CFG_R02_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU1_CFG_R02_CONFIG_REGIONNS                                           1
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU1_CFG_R02_CONFIG_WRALLOWED                                          1
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU1_CFG_R02_CONFIG_RDALLOWED                                          1
-
-		# Region 2 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD01012C, 0x0000001FU ,0x0000000FU)  */
-    mask_write 0XFD01012C 0x0000001F 0x0000000F
-		# Register : R02_START @ 0XFD010120</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU1_CFG_R02_START_ADDR                                                0
-
-		# Region 2 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD010120, 0x0FFFFFFFU ,0x00000000U)  */
-    mask_write 0XFD010120 0x0FFFFFFF 0x00000000
-		# Register : R02_END @ 0XFD010124</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU1_CFG_R02_END_ADDR                                                  447999
-
-		# Region 2 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD010124, 0x0FFFFFFFU ,0x0006D5FFU)  */
-    mask_write 0XFD010124 0x0FFFFFFF 0x0006D5FF
-		# Register : R02_MASTER @ 0XFD010128</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU1_CFG_R02_MASTER_MASK                                               960
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU1_CFG_R02_MASTER_ID                                                 128
-
-		# Region 2 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD010128, 0x03FF03FFU ,0x03C00080U)  */
-    mask_write 0XFD010128 0x03FF03FF 0x03C00080
-		# Register : R01_CONFIG @ 0XFD01011C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU1_CFG_R01_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU1_CFG_R01_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU1_CFG_R01_CONFIG_REGIONNS                                           0
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU1_CFG_R01_CONFIG_WRALLOWED                                          0
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU1_CFG_R01_CONFIG_RDALLOWED                                          0
-
-		# Region 1 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD01011C, 0x0000001FU ,0x00000001U)  */
-    mask_write 0XFD01011C 0x0000001F 0x00000001
-		# Register : R01_START @ 0XFD010110</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU1_CFG_R01_START_ADDR                                                458496
-
-		# Region 1 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD010110, 0x0FFFFFFFU ,0x0006FF00U)  */
-    mask_write 0XFD010110 0x0FFFFFFF 0x0006FF00
-		# Register : R01_END @ 0XFD010114</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU1_CFG_R01_END_ADDR                                                  524031
-
-		# Region 1 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD010114, 0x0FFFFFFFU ,0x0007FEFFU)  */
-    mask_write 0XFD010114 0x0FFFFFFF 0x0007FEFF
-		# Register : R01_MASTER @ 0XFD010118</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU1_CFG_R01_MASTER_MASK                                               0
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU1_CFG_R01_MASTER_ID                                                 0
-
-		# Region 1 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD010118, 0x03FF03FFU ,0x00000000U)  */
-    mask_write 0XFD010118 0x03FF03FF 0x00000000
-		# Register : R00_CONFIG @ 0XFD01010C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU1_CFG_R00_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU1_CFG_R00_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU1_CFG_R00_CONFIG_REGIONNS                                           0
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU1_CFG_R00_CONFIG_WRALLOWED                                          0
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU1_CFG_R00_CONFIG_RDALLOWED                                          0
-
-		# Region Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD01010C, 0x0000001FU ,0x00000001U)  */
-    mask_write 0XFD01010C 0x0000001F 0x00000001
-		# Register : R00_START @ 0XFD010100</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU1_CFG_R00_START_ADDR                                                0
-
-		# Region Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD010100, 0x0FFFFFFFU ,0x00000000U)  */
-    mask_write 0XFD010100 0x0FFFFFFF 0x00000000
-		# Register : R00_END @ 0XFD010104</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU1_CFG_R00_END_ADDR                                                  447999
-
-		# Region End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD010104, 0x0FFFFFFFU ,0x0006D5FFU)  */
-    mask_write 0XFD010104 0x0FFFFFFF 0x0006D5FF
-		# Register : R00_MASTER @ 0XFD010108</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU1_CFG_R00_MASTER_MASK                                               0
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU1_CFG_R00_MASTER_ID                                                 0
-
-		# Region Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD010108, 0x03FF03FFU ,0x00000000U)  */
-    mask_write 0XFD010108 0x03FF03FF 0x00000000
-		# Register : POISON @ 0XFD01000C</p>
-
-		# This field sets the poison attribute when CTRL.PoisonCfg is 0
-		# PSU_DDR_XMPU1_CFG_POISON_ATTRIB                                                 1
-
-		# XMPU Poison Address Attribute
-		#(OFFSET, MASK, VALUE)      (0XFD01000C, 0x00100000U ,0x00100000U)  */
-    mask_write 0XFD01000C 0x00100000 0x00100000
-		# Register : CTRL @ 0XFD010000</p>
-
-		# Default write permission 0: If AXI write Address/ID doesn't match with a
-    # ny of the enabled regions, then write is poisoned 1: If AXI write Addres
-    # s/ID doesn't match with any of the enabled regions, then write is allowe
-    # d to go through
-		# PSU_DDR_XMPU1_CFG_CTRL_DEFWRALLOWED                                             1
-
-		# Default read permission 0: If AXI read Address/ID doesn't match with any
-    #  of the enabled regions, then read is poisoned 1: If AXI read Address/ID
-    #  doesn't match with any of the enabled regions, then read is allowed to
-    # go through
-		# PSU_DDR_XMPU1_CFG_CTRL_DEFRDALLOWED                                             1
-
-		# XMPU Control Register
-		#(OFFSET, MASK, VALUE)      (0XFD010000, 0x00000003U ,0x00000003U)  */
-    mask_write 0XFD010000 0x00000003 0x00000003
-		# : DDR XMPU INTERRUPT ENABLE
-		# Register : IEN @ 0XFD010018</p>
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU1_CFG_IEN_SECURITYVIO                                               0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU1_CFG_IEN_WRPERMVIO                                                 0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU1_CFG_IEN_RDPERMVIO                                                 0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU1_CFG_IEN_INV_APB                                                   0X1
-
-		# Interrupt Enable Register
-		#(OFFSET, MASK, VALUE)      (0XFD010018, 0x0000000FU ,0x0000000FU)  */
-    mask_write 0XFD010018 0x0000000F 0x0000000F
 }
 
 set psu_ddr_xmpu2_data {
 		# : DDR XMPU2
-		# Register : R06_CONFIG @ 0XFD02016C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU2_CFG_R06_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU2_CFG_R06_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU2_CFG_R06_CONFIG_REGIONNS                                           1
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU2_CFG_R06_CONFIG_WRALLOWED                                          1
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU2_CFG_R06_CONFIG_RDALLOWED                                          1
-
-		# Region 6 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD02016C, 0x0000001FU ,0x0000000FU)  */
-    mask_write 0XFD02016C 0x0000001F 0x0000000F
-		# Register : R06_START @ 0XFD020160</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU2_CFG_R06_START_ADDR                                                458752
-
-		# Region 6 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD020160, 0x0FFFFFFFU ,0x00070000U)  */
-    mask_write 0XFD020160 0x0FFFFFFF 0x00070000
-		# Register : R06_END @ 0XFD020164</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU2_CFG_R06_END_ADDR                                                  524031
-
-		# Region 6 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD020164, 0x0FFFFFFFU ,0x0007FEFFU)  */
-    mask_write 0XFD020164 0x0FFFFFFF 0x0007FEFF
-		# Register : R06_MASTER @ 0XFD020168</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU2_CFG_R06_MASTER_MASK                                               1023
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU2_CFG_R06_MASTER_ID                                                 98
-
-		# Region 6 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD020168, 0x03FF03FFU ,0x03FF0062U)  */
-    mask_write 0XFD020168 0x03FF03FF 0x03FF0062
-		# Register : R05_CONFIG @ 0XFD02015C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU2_CFG_R05_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU2_CFG_R05_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU2_CFG_R05_CONFIG_REGIONNS                                           1
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU2_CFG_R05_CONFIG_WRALLOWED                                          1
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU2_CFG_R05_CONFIG_RDALLOWED                                          1
-
-		# Region 5 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD02015C, 0x0000001FU ,0x0000000FU)  */
-    mask_write 0XFD02015C 0x0000001F 0x0000000F
-		# Register : R05_START @ 0XFD020150</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU2_CFG_R05_START_ADDR                                                458496
-
-		# Region 5 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD020150, 0x0FFFFFFFU ,0x0006FF00U)  */
-    mask_write 0XFD020150 0x0FFFFFFF 0x0006FF00
-		# Register : R05_END @ 0XFD020154</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU2_CFG_R05_END_ADDR                                                  458751
-
-		# Region 5 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD020154, 0x0FFFFFFFU ,0x0006FFFFU)  */
-    mask_write 0XFD020154 0x0FFFFFFF 0x0006FFFF
-		# Register : R05_MASTER @ 0XFD020158</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU2_CFG_R05_MASTER_MASK                                               1023
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU2_CFG_R05_MASTER_ID                                                 98
-
-		# Region 5 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD020158, 0x03FF03FFU ,0x03FF0062U)  */
-    mask_write 0XFD020158 0x03FF03FF 0x03FF0062
-		# Register : R04_CONFIG @ 0XFD02014C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU2_CFG_R04_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU2_CFG_R04_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU2_CFG_R04_CONFIG_REGIONNS                                           1
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU2_CFG_R04_CONFIG_WRALLOWED                                          1
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU2_CFG_R04_CONFIG_RDALLOWED                                          1
-
-		# Region 4 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD02014C, 0x0000001FU ,0x0000000FU)  */
-    mask_write 0XFD02014C 0x0000001F 0x0000000F
-		# Register : R04_START @ 0XFD020140</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU2_CFG_R04_START_ADDR                                                458496
-
-		# Region 4 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD020140, 0x0FFFFFFFU ,0x0006FF00U)  */
-    mask_write 0XFD020140 0x0FFFFFFF 0x0006FF00
-		# Register : R04_END @ 0XFD020144</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU2_CFG_R04_END_ADDR                                                  458751
-
-		# Region 4 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD020144, 0x0FFFFFFFU ,0x0006FFFFU)  */
-    mask_write 0XFD020144 0x0FFFFFFF 0x0006FFFF
-		# Register : R04_MASTER @ 0XFD020148</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU2_CFG_R04_MASTER_MASK                                               960
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU2_CFG_R04_MASTER_ID                                                 128
-
-		# Region 4 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD020148, 0x03FF03FFU ,0x03C00080U)  */
-    mask_write 0XFD020148 0x03FF03FF 0x03C00080
-		# Register : R03_CONFIG @ 0XFD02013C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU2_CFG_R03_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU2_CFG_R03_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU2_CFG_R03_CONFIG_REGIONNS                                           1
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU2_CFG_R03_CONFIG_WRALLOWED                                          1
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU2_CFG_R03_CONFIG_RDALLOWED                                          1
-
-		# Region 3 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD02013C, 0x0000001FU ,0x0000000FU)  */
-    mask_write 0XFD02013C 0x0000001F 0x0000000F
-		# Register : R03_START @ 0XFD020130</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU2_CFG_R03_START_ADDR                                                0
-
-		# Region 3 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD020130, 0x0FFFFFFFU ,0x00000000U)  */
-    mask_write 0XFD020130 0x0FFFFFFF 0x00000000
-		# Register : R03_END @ 0XFD020134</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU2_CFG_R03_END_ADDR                                                  447999
-
-		# Region 3 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD020134, 0x0FFFFFFFU ,0x0006D5FFU)  */
-    mask_write 0XFD020134 0x0FFFFFFF 0x0006D5FF
-		# Register : R03_MASTER @ 0XFD020138</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU2_CFG_R03_MASTER_MASK                                               1023
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU2_CFG_R03_MASTER_ID                                                 98
-
-		# Region 3 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD020138, 0x03FF03FFU ,0x03FF0062U)  */
-    mask_write 0XFD020138 0x03FF03FF 0x03FF0062
-		# Register : R02_CONFIG @ 0XFD02012C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU2_CFG_R02_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU2_CFG_R02_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU2_CFG_R02_CONFIG_REGIONNS                                           1
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU2_CFG_R02_CONFIG_WRALLOWED                                          1
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU2_CFG_R02_CONFIG_RDALLOWED                                          1
-
-		# Region 2 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD02012C, 0x0000001FU ,0x0000000FU)  */
-    mask_write 0XFD02012C 0x0000001F 0x0000000F
-		# Register : R02_START @ 0XFD020120</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU2_CFG_R02_START_ADDR                                                0
-
-		# Region 2 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD020120, 0x0FFFFFFFU ,0x00000000U)  */
-    mask_write 0XFD020120 0x0FFFFFFF 0x00000000
-		# Register : R02_END @ 0XFD020124</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU2_CFG_R02_END_ADDR                                                  447999
-
-		# Region 2 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD020124, 0x0FFFFFFFU ,0x0006D5FFU)  */
-    mask_write 0XFD020124 0x0FFFFFFF 0x0006D5FF
-		# Register : R02_MASTER @ 0XFD020128</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU2_CFG_R02_MASTER_MASK                                               960
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU2_CFG_R02_MASTER_ID                                                 128
-
-		# Region 2 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD020128, 0x03FF03FFU ,0x03C00080U)  */
-    mask_write 0XFD020128 0x03FF03FF 0x03C00080
-		# Register : R01_CONFIG @ 0XFD02011C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU2_CFG_R01_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU2_CFG_R01_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU2_CFG_R01_CONFIG_REGIONNS                                           0
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU2_CFG_R01_CONFIG_WRALLOWED                                          0
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU2_CFG_R01_CONFIG_RDALLOWED                                          0
-
-		# Region 1 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD02011C, 0x0000001FU ,0x00000001U)  */
-    mask_write 0XFD02011C 0x0000001F 0x00000001
-		# Register : R01_START @ 0XFD020110</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU2_CFG_R01_START_ADDR                                                458496
-
-		# Region 1 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD020110, 0x0FFFFFFFU ,0x0006FF00U)  */
-    mask_write 0XFD020110 0x0FFFFFFF 0x0006FF00
-		# Register : R01_END @ 0XFD020114</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU2_CFG_R01_END_ADDR                                                  524031
-
-		# Region 1 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD020114, 0x0FFFFFFFU ,0x0007FEFFU)  */
-    mask_write 0XFD020114 0x0FFFFFFF 0x0007FEFF
-		# Register : R01_MASTER @ 0XFD020118</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU2_CFG_R01_MASTER_MASK                                               0
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU2_CFG_R01_MASTER_ID                                                 0
-
-		# Region 1 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD020118, 0x03FF03FFU ,0x00000000U)  */
-    mask_write 0XFD020118 0x03FF03FF 0x00000000
-		# Register : R00_CONFIG @ 0XFD02010C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU2_CFG_R00_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU2_CFG_R00_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU2_CFG_R00_CONFIG_REGIONNS                                           0
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU2_CFG_R00_CONFIG_WRALLOWED                                          0
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU2_CFG_R00_CONFIG_RDALLOWED                                          0
-
-		# Region Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD02010C, 0x0000001FU ,0x00000001U)  */
-    mask_write 0XFD02010C 0x0000001F 0x00000001
-		# Register : R00_START @ 0XFD020100</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU2_CFG_R00_START_ADDR                                                0
-
-		# Region Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD020100, 0x0FFFFFFFU ,0x00000000U)  */
-    mask_write 0XFD020100 0x0FFFFFFF 0x00000000
-		# Register : R00_END @ 0XFD020104</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU2_CFG_R00_END_ADDR                                                  447999
-
-		# Region End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD020104, 0x0FFFFFFFU ,0x0006D5FFU)  */
-    mask_write 0XFD020104 0x0FFFFFFF 0x0006D5FF
-		# Register : R00_MASTER @ 0XFD020108</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU2_CFG_R00_MASTER_MASK                                               0
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU2_CFG_R00_MASTER_ID                                                 0
-
-		# Region Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD020108, 0x03FF03FFU ,0x00000000U)  */
-    mask_write 0XFD020108 0x03FF03FF 0x00000000
-		# Register : POISON @ 0XFD02000C</p>
-
-		# This field sets the poison attribute when CTRL.PoisonCfg is 0
-		# PSU_DDR_XMPU2_CFG_POISON_ATTRIB                                                 1
-
-		# XMPU Poison Address Attribute
-		#(OFFSET, MASK, VALUE)      (0XFD02000C, 0x00100000U ,0x00100000U)  */
-    mask_write 0XFD02000C 0x00100000 0x00100000
-		# Register : CTRL @ 0XFD020000</p>
-
-		# Default write permission 0: If AXI write Address/ID doesn't match with a
-    # ny of the enabled regions, then write is poisoned 1: If AXI write Addres
-    # s/ID doesn't match with any of the enabled regions, then write is allowe
-    # d to go through
-		# PSU_DDR_XMPU2_CFG_CTRL_DEFWRALLOWED                                             1
-
-		# Default read permission 0: If AXI read Address/ID doesn't match with any
-    #  of the enabled regions, then read is poisoned 1: If AXI read Address/ID
-    #  doesn't match with any of the enabled regions, then read is allowed to
-    # go through
-		# PSU_DDR_XMPU2_CFG_CTRL_DEFRDALLOWED                                             1
-
-		# XMPU Control Register
-		#(OFFSET, MASK, VALUE)      (0XFD020000, 0x00000003U ,0x00000003U)  */
-    mask_write 0XFD020000 0x00000003 0x00000003
-		# : DDR XMPU INTERRUPT ENABLE
-		# Register : IEN @ 0XFD020018</p>
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU2_CFG_IEN_SECURITYVIO                                               0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU2_CFG_IEN_WRPERMVIO                                                 0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU2_CFG_IEN_RDPERMVIO                                                 0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU2_CFG_IEN_INV_APB                                                   0X1
-
-		# Interrupt Enable Register
-		#(OFFSET, MASK, VALUE)      (0XFD020018, 0x0000000FU ,0x0000000FU)  */
-    mask_write 0XFD020018 0x0000000F 0x0000000F
 }
 
 set psu_ddr_xmpu3_data {
 		# : DDR XMPU3
-		# Register : R01_CONFIG @ 0XFD03011C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU3_CFG_R01_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU3_CFG_R01_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU3_CFG_R01_CONFIG_REGIONNS                                           0
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU3_CFG_R01_CONFIG_WRALLOWED                                          0
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU3_CFG_R01_CONFIG_RDALLOWED                                          0
-
-		# Region 1 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD03011C, 0x0000001FU ,0x00000001U)  */
-    mask_write 0XFD03011C 0x0000001F 0x00000001
-		# Register : R01_START @ 0XFD030110</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU3_CFG_R01_START_ADDR                                                458496
-
-		# Region 1 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD030110, 0x0FFFFFFFU ,0x0006FF00U)  */
-    mask_write 0XFD030110 0x0FFFFFFF 0x0006FF00
-		# Register : R01_END @ 0XFD030114</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU3_CFG_R01_END_ADDR                                                  524031
-
-		# Region 1 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD030114, 0x0FFFFFFFU ,0x0007FEFFU)  */
-    mask_write 0XFD030114 0x0FFFFFFF 0x0007FEFF
-		# Register : R01_MASTER @ 0XFD030118</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU3_CFG_R01_MASTER_MASK                                               0
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU3_CFG_R01_MASTER_ID                                                 0
-
-		# Region 1 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD030118, 0x03FF03FFU ,0x00000000U)  */
-    mask_write 0XFD030118 0x03FF03FF 0x00000000
-		# Register : R00_CONFIG @ 0XFD03010C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU3_CFG_R00_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU3_CFG_R00_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU3_CFG_R00_CONFIG_REGIONNS                                           0
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU3_CFG_R00_CONFIG_WRALLOWED                                          0
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU3_CFG_R00_CONFIG_RDALLOWED                                          0
-
-		# Region Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD03010C, 0x0000001FU ,0x00000001U)  */
-    mask_write 0XFD03010C 0x0000001F 0x00000001
-		# Register : R00_START @ 0XFD030100</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU3_CFG_R00_START_ADDR                                                0
-
-		# Region Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD030100, 0x0FFFFFFFU ,0x00000000U)  */
-    mask_write 0XFD030100 0x0FFFFFFF 0x00000000
-		# Register : R00_END @ 0XFD030104</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU3_CFG_R00_END_ADDR                                                  447999
-
-		# Region End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD030104, 0x0FFFFFFFU ,0x0006D5FFU)  */
-    mask_write 0XFD030104 0x0FFFFFFF 0x0006D5FF
-		# Register : R00_MASTER @ 0XFD030108</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU3_CFG_R00_MASTER_MASK                                               0
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU3_CFG_R00_MASTER_ID                                                 0
-
-		# Region Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD030108, 0x03FF03FFU ,0x00000000U)  */
-    mask_write 0XFD030108 0x03FF03FF 0x00000000
-		# Register : POISON @ 0XFD03000C</p>
-
-		# This field sets the poison attribute when CTRL.PoisonCfg is 0
-		# PSU_DDR_XMPU3_CFG_POISON_ATTRIB                                                 1
-
-		# XMPU Poison Address Attribute
-		#(OFFSET, MASK, VALUE)      (0XFD03000C, 0x00100000U ,0x00100000U)  */
-    mask_write 0XFD03000C 0x00100000 0x00100000
-		# Register : CTRL @ 0XFD030000</p>
-
-		# Default write permission 0: If AXI write Address/ID doesn't match with a
-    # ny of the enabled regions, then write is poisoned 1: If AXI write Addres
-    # s/ID doesn't match with any of the enabled regions, then write is allowe
-    # d to go through
-		# PSU_DDR_XMPU3_CFG_CTRL_DEFWRALLOWED                                             1
-
-		# Default read permission 0: If AXI read Address/ID doesn't match with any
-    #  of the enabled regions, then read is poisoned 1: If AXI read Address/ID
-    #  doesn't match with any of the enabled regions, then read is allowed to
-    # go through
-		# PSU_DDR_XMPU3_CFG_CTRL_DEFRDALLOWED                                             1
-
-		# XMPU Control Register
-		#(OFFSET, MASK, VALUE)      (0XFD030000, 0x00000003U ,0x00000003U)  */
-    mask_write 0XFD030000 0x00000003 0x00000003
-		# : DDR XMPU INTERRUPT ENABLE
-		# Register : IEN @ 0XFD030018</p>
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU3_CFG_IEN_SECURITYVIO                                               0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU3_CFG_IEN_WRPERMVIO                                                 0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU3_CFG_IEN_RDPERMVIO                                                 0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU3_CFG_IEN_INV_APB                                                   0X1
-
-		# Interrupt Enable Register
-		#(OFFSET, MASK, VALUE)      (0XFD030018, 0x0000000FU ,0x0000000FU)  */
-    mask_write 0XFD030018 0x0000000F 0x0000000F
 }
 
 set psu_ddr_xmpu4_data {
 		# : DDR XMPU4
-		# Register : R01_CONFIG @ 0XFD04011C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU4_CFG_R01_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU4_CFG_R01_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU4_CFG_R01_CONFIG_REGIONNS                                           0
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU4_CFG_R01_CONFIG_WRALLOWED                                          0
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU4_CFG_R01_CONFIG_RDALLOWED                                          0
-
-		# Region 1 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD04011C, 0x0000001FU ,0x00000001U)  */
-    mask_write 0XFD04011C 0x0000001F 0x00000001
-		# Register : R01_START @ 0XFD040110</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU4_CFG_R01_START_ADDR                                                458496
-
-		# Region 1 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD040110, 0x0FFFFFFFU ,0x0006FF00U)  */
-    mask_write 0XFD040110 0x0FFFFFFF 0x0006FF00
-		# Register : R01_END @ 0XFD040114</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU4_CFG_R01_END_ADDR                                                  524031
-
-		# Region 1 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD040114, 0x0FFFFFFFU ,0x0007FEFFU)  */
-    mask_write 0XFD040114 0x0FFFFFFF 0x0007FEFF
-		# Register : R01_MASTER @ 0XFD040118</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU4_CFG_R01_MASTER_MASK                                               0
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU4_CFG_R01_MASTER_ID                                                 0
-
-		# Region 1 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD040118, 0x03FF03FFU ,0x00000000U)  */
-    mask_write 0XFD040118 0x03FF03FF 0x00000000
-		# Register : R00_CONFIG @ 0XFD04010C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU4_CFG_R00_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU4_CFG_R00_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU4_CFG_R00_CONFIG_REGIONNS                                           0
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU4_CFG_R00_CONFIG_WRALLOWED                                          0
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU4_CFG_R00_CONFIG_RDALLOWED                                          0
-
-		# Region Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD04010C, 0x0000001FU ,0x00000001U)  */
-    mask_write 0XFD04010C 0x0000001F 0x00000001
-		# Register : R00_START @ 0XFD040100</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU4_CFG_R00_START_ADDR                                                0
-
-		# Region Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD040100, 0x0FFFFFFFU ,0x00000000U)  */
-    mask_write 0XFD040100 0x0FFFFFFF 0x00000000
-		# Register : R00_END @ 0XFD040104</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU4_CFG_R00_END_ADDR                                                  447999
-
-		# Region End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD040104, 0x0FFFFFFFU ,0x0006D5FFU)  */
-    mask_write 0XFD040104 0x0FFFFFFF 0x0006D5FF
-		# Register : R00_MASTER @ 0XFD040108</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU4_CFG_R00_MASTER_MASK                                               0
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU4_CFG_R00_MASTER_ID                                                 0
-
-		# Region Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD040108, 0x03FF03FFU ,0x00000000U)  */
-    mask_write 0XFD040108 0x03FF03FF 0x00000000
-		# Register : POISON @ 0XFD04000C</p>
-
-		# This field sets the poison attribute when CTRL.PoisonCfg is 0
-		# PSU_DDR_XMPU4_CFG_POISON_ATTRIB                                                 1
-
-		# XMPU Poison Address Attribute
-		#(OFFSET, MASK, VALUE)      (0XFD04000C, 0x00100000U ,0x00100000U)  */
-    mask_write 0XFD04000C 0x00100000 0x00100000
-		# Register : CTRL @ 0XFD040000</p>
-
-		# Default write permission 0: If AXI write Address/ID doesn't match with a
-    # ny of the enabled regions, then write is poisoned 1: If AXI write Addres
-    # s/ID doesn't match with any of the enabled regions, then write is allowe
-    # d to go through
-		# PSU_DDR_XMPU4_CFG_CTRL_DEFWRALLOWED                                             1
-
-		# Default read permission 0: If AXI read Address/ID doesn't match with any
-    #  of the enabled regions, then read is poisoned 1: If AXI read Address/ID
-    #  doesn't match with any of the enabled regions, then read is allowed to
-    # go through
-		# PSU_DDR_XMPU4_CFG_CTRL_DEFRDALLOWED                                             1
-
-		# XMPU Control Register
-		#(OFFSET, MASK, VALUE)      (0XFD040000, 0x00000003U ,0x00000003U)  */
-    mask_write 0XFD040000 0x00000003 0x00000003
-		# : DDR XMPU INTERRUPT ENABLE
-		# Register : IEN @ 0XFD040018</p>
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU4_CFG_IEN_SECURITYVIO                                               0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU4_CFG_IEN_WRPERMVIO                                                 0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU4_CFG_IEN_RDPERMVIO                                                 0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU4_CFG_IEN_INV_APB                                                   0X1
-
-		# Interrupt Enable Register
-		#(OFFSET, MASK, VALUE)      (0XFD040018, 0x0000000FU ,0x0000000FU)  */
-    mask_write 0XFD040018 0x0000000F 0x0000000F
 }
 
 set psu_ddr_xmpu5_data {
 		# : DDR XMPU5
-		# Register : R01_CONFIG @ 0XFD05011C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU5_CFG_R01_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU5_CFG_R01_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU5_CFG_R01_CONFIG_REGIONNS                                           0
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU5_CFG_R01_CONFIG_WRALLOWED                                          0
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU5_CFG_R01_CONFIG_RDALLOWED                                          0
-
-		# Region 1 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD05011C, 0x0000001FU ,0x00000001U)  */
-    mask_write 0XFD05011C 0x0000001F 0x00000001
-		# Register : R01_START @ 0XFD050110</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU5_CFG_R01_START_ADDR                                                458496
-
-		# Region 1 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD050110, 0x0FFFFFFFU ,0x0006FF00U)  */
-    mask_write 0XFD050110 0x0FFFFFFF 0x0006FF00
-		# Register : R01_END @ 0XFD050114</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU5_CFG_R01_END_ADDR                                                  524031
-
-		# Region 1 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD050114, 0x0FFFFFFFU ,0x0007FEFFU)  */
-    mask_write 0XFD050114 0x0FFFFFFF 0x0007FEFF
-		# Register : R01_MASTER @ 0XFD050118</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU5_CFG_R01_MASTER_MASK                                               0
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU5_CFG_R01_MASTER_ID                                                 0
-
-		# Region 1 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD050118, 0x03FF03FFU ,0x00000000U)  */
-    mask_write 0XFD050118 0x03FF03FF 0x00000000
-		# Register : R00_CONFIG @ 0XFD05010C</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_DDR_XMPU5_CFG_R00_CONFIG_ENABLE                                             1
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_DDR_XMPU5_CFG_R00_CONFIG_NSCHECKTYPE                                        0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_DDR_XMPU5_CFG_R00_CONFIG_REGIONNS                                           0
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_DDR_XMPU5_CFG_R00_CONFIG_WRALLOWED                                          0
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_DDR_XMPU5_CFG_R00_CONFIG_RDALLOWED                                          0
-
-		# Region Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD05010C, 0x0000001FU ,0x00000001U)  */
-    mask_write 0XFD05010C 0x0000001F 0x00000001
-		# Register : R00_START @ 0XFD050100</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU5_CFG_R00_START_ADDR                                                0
-
-		# Region Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD050100, 0x0FFFFFFFU ,0x00000000U)  */
-    mask_write 0XFD050100 0x0FFFFFFF 0x00000000
-		# Register : R00_END @ 0XFD050104</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_DDR_XMPU5_CFG_R00_END_ADDR                                                  447999
-
-		# Region End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD050104, 0x0FFFFFFFU ,0x0006D5FFU)  */
-    mask_write 0XFD050104 0x0FFFFFFF 0x0006D5FF
-		# Register : R00_MASTER @ 0XFD050108</p>
-
-		# Master ID mask.
-		# PSU_DDR_XMPU5_CFG_R00_MASTER_MASK                                               0
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_DDR_XMPU5_CFG_R00_MASTER_ID                                                 0
-
-		# Region Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD050108, 0x03FF03FFU ,0x00000000U)  */
-    mask_write 0XFD050108 0x03FF03FF 0x00000000
-		# Register : POISON @ 0XFD05000C</p>
-
-		# This field sets the poison attribute when CTRL.PoisonCfg is 0
-		# PSU_DDR_XMPU5_CFG_POISON_ATTRIB                                                 1
-
-		# XMPU Poison Address Attribute
-		#(OFFSET, MASK, VALUE)      (0XFD05000C, 0x00100000U ,0x00100000U)  */
-    mask_write 0XFD05000C 0x00100000 0x00100000
-		# Register : CTRL @ 0XFD050000</p>
-
-		# Default write permission 0: If AXI write Address/ID doesn't match with a
-    # ny of the enabled regions, then write is poisoned 1: If AXI write Addres
-    # s/ID doesn't match with any of the enabled regions, then write is allowe
-    # d to go through
-		# PSU_DDR_XMPU5_CFG_CTRL_DEFWRALLOWED                                             1
-
-		# Default read permission 0: If AXI read Address/ID doesn't match with any
-    #  of the enabled regions, then read is poisoned 1: If AXI read Address/ID
-    #  doesn't match with any of the enabled regions, then read is allowed to
-    # go through
-		# PSU_DDR_XMPU5_CFG_CTRL_DEFRDALLOWED                                             1
-
-		# XMPU Control Register
-		#(OFFSET, MASK, VALUE)      (0XFD050000, 0x00000003U ,0x00000003U)  */
-    mask_write 0XFD050000 0x00000003 0x00000003
-		# : DDR XMPU INTERRUPT ENABLE
-		# Register : IEN @ 0XFD050018</p>
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU5_CFG_IEN_SECURITYVIO                                               0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU5_CFG_IEN_WRPERMVIO                                                 0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU5_CFG_IEN_RDPERMVIO                                                 0X1
-
-		# see INT_STATUS register for details
-		# PSU_DDR_XMPU5_CFG_IEN_INV_APB                                                   0X1
-
-		# Interrupt Enable Register
-		#(OFFSET, MASK, VALUE)      (0XFD050018, 0x0000000FU ,0x0000000FU)  */
-    mask_write 0XFD050018 0x0000000F 0x0000000F
 }
 
 set psu_ocm_xmpu_data {
@@ -20156,171 +18373,6 @@ set psu_ocm_xmpu_data {
 
 set psu_fpd_xmpu_data {
 		# : FPD XMPU
-		# Register : R12_CONFIG @ 0XFD5D01CC</p>
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_FPD_XMPU_CFG_R12_CONFIG_NSCHECKTYPE                                         0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_FPD_XMPU_CFG_R12_CONFIG_REGIONNS                                            1
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_FPD_XMPU_CFG_R12_CONFIG_WRALLOWED                                           1
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_FPD_XMPU_CFG_R12_CONFIG_RDALLOWED                                           1
-
-		# Region 12 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D01CC, 0x0000001EU ,0x0000000EU)  */
-    mask_write 0XFD5D01CC 0x0000001E 0x0000000E
-		# Register : R12_START @ 0XFD5D01C0</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R12_START_ADDR                                                 1037520
-
-		# Region 12 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D01C0, 0x0FFFFFFFU ,0x000FD4D0U)  */
-    mask_write 0XFD5D01C0 0x0FFFFFFF 0x000FD4D0
-		# Register : R12_END @ 0XFD5D01C4</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R12_END_ADDR                                                   1037535
-
-		# Region 12 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D01C4, 0x0FFFFFFFU ,0x000FD4DFU)  */
-    mask_write 0XFD5D01C4 0x0FFFFFFF 0x000FD4DF
-		# Register : R12_MASTER @ 0XFD5D01C8</p>
-
-		# Master ID mask.
-		# PSU_FPD_XMPU_CFG_R12_MASTER_MASK                                                720
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_FPD_XMPU_CFG_R12_MASTER_ID                                                  0
-
-		# Region 12 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D01C8, 0x03FF03FFU ,0x02D00000U)  */
-    mask_write 0XFD5D01C8 0x03FF03FF 0x02D00000
-		# Register : R11_CONFIG @ 0XFD5D01BC</p>
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_FPD_XMPU_CFG_R11_CONFIG_NSCHECKTYPE                                         0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_FPD_XMPU_CFG_R11_CONFIG_REGIONNS                                            1
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_FPD_XMPU_CFG_R11_CONFIG_WRALLOWED                                           1
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_FPD_XMPU_CFG_R11_CONFIG_RDALLOWED                                           1
-
-		# Region 11 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D01BC, 0x0000001EU ,0x0000000EU)  */
-    mask_write 0XFD5D01BC 0x0000001E 0x0000000E
-		# Register : R11_START @ 0XFD5D01B0</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R11_START_ADDR                                                 1037520
-
-		# Region 11 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D01B0, 0x0FFFFFFFU ,0x000FD4D0U)  */
-    mask_write 0XFD5D01B0 0x0FFFFFFF 0x000FD4D0
-		# Register : R11_END @ 0XFD5D01B4</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R11_END_ADDR                                                   1037535
-
-		# Region 11 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D01B4, 0x0FFFFFFFU ,0x000FD4DFU)  */
-    mask_write 0XFD5D01B4 0x0FFFFFFF 0x000FD4DF
-		# Register : R11_MASTER @ 0XFD5D01B8</p>
-
-		# Master ID mask.
-		# PSU_FPD_XMPU_CFG_R11_MASTER_MASK                                                666
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_FPD_XMPU_CFG_R11_MASTER_ID                                                  2
-
-		# Region 11 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D01B8, 0x03FF03FFU ,0x029A0002U)  */
-    mask_write 0XFD5D01B8 0x03FF03FF 0x029A0002
-		# Register : R10_CONFIG @ 0XFD5D01AC</p>
-
-		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
-    # on-secure region based on Rd/WrAllowed configuration. A non-secure acces
-    # s can only access non-secure region based on Rd/WrAllowed configuration
-    # 1: Strict NS checking. A secure access can only access secure region bas
-    # ed on Rd/WrAllowed configuration. A non-secure access can only access no
-    # n-secure region based on Rd/WrAllowed configuration
-		# PSU_FPD_XMPU_CFG_R10_CONFIG_NSCHECKTYPE                                         0
-
-		# 0: Region is configured to be secure 1: Region is configured to be non-s
-    # ecure (NS)
-		# PSU_FPD_XMPU_CFG_R10_CONFIG_REGIONNS                                            0
-
-		# 0: Write address matching this region are poisoned 1: Write address matc
-    # hing this region are allowed
-		# PSU_FPD_XMPU_CFG_R10_CONFIG_WRALLOWED                                           1
-
-		# 0: Read address matching this region are poisoned 1: Read address matchi
-    # ng this region are allowed
-		# PSU_FPD_XMPU_CFG_R10_CONFIG_RDALLOWED                                           1
-
-		# Region 10 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D01AC, 0x0000001EU ,0x00000006U)  */
-    mask_write 0XFD5D01AC 0x0000001E 0x00000006
-		# Register : R10_START @ 0XFD5D01A0</p>
-
-		# This field sets the start address bits [39:12] of this region (aligned t
-    # o 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R10_START_ADDR                                                 1037840
-
-		# Region 10 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D01A0, 0x0FFFFFFFU ,0x000FD610U)  */
-    mask_write 0XFD5D01A0 0x0FFFFFFF 0x000FD610
-		# Register : R10_END @ 0XFD5D01A4</p>
-
-		# This field sets the end address bits [39:12] of this region (aligned to
-    # 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R10_END_ADDR                                                   1037967
-
-		# Region 10 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D01A4, 0x0FFFFFFFU ,0x000FD68FU)  */
-    mask_write 0XFD5D01A4 0x0FFFFFFF 0x000FD68F
-		# Register : R10_MASTER @ 0XFD5D01A8</p>
-
-		# Master ID mask.
-		# PSU_FPD_XMPU_CFG_R10_MASTER_MASK                                                752
-
-		# Master ID value. An AXI MasterID will match this Master ID value of this
-    #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_FPD_XMPU_CFG_R10_MASTER_ID                                                  64
-
-		# Region 10 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D01A8, 0x03FF03FFU ,0x02F00040U)  */
-    mask_write 0XFD5D01A8 0x03FF03FF 0x02F00040
 		# Register : R09_CONFIG @ 0XFD5D019C</p>
 
 		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
@@ -20367,15 +18419,15 @@ set psu_fpd_xmpu_data {
 		# Register : R09_MASTER @ 0XFD5D0198</p>
 
 		# Master ID mask.
-		# PSU_FPD_XMPU_CFG_R09_MASTER_MASK                                                698
+		# PSU_FPD_XMPU_CFG_R09_MASTER_MASK                                                752
 
 		# Master ID value. An AXI MasterID will match this Master ID value of this
     #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_FPD_XMPU_CFG_R09_MASTER_ID                                                  34
+		# PSU_FPD_XMPU_CFG_R09_MASTER_ID                                                  64
 
 		# Region 9 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0198, 0x03FF03FFU ,0x02BA0022U)  */
-    mask_write 0XFD5D0198 0x03FF03FF 0x02BA0022
+		#(OFFSET, MASK, VALUE)      (0XFD5D0198, 0x03FF03FFU ,0x02F00040U)  */
+    mask_write 0XFD5D0198 0x03FF03FF 0x02F00040
 		# Register : R08_CONFIG @ 0XFD5D018C</p>
 
 		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
@@ -20405,32 +18457,32 @@ set psu_fpd_xmpu_data {
 
 		# This field sets the start address bits [39:12] of this region (aligned t
     # o 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R08_START_ADDR                                                 1037776
+		# PSU_FPD_XMPU_CFG_R08_START_ADDR                                                 1037840
 
 		# Region 8 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0180, 0x0FFFFFFFU ,0x000FD5D0U)  */
-    mask_write 0XFD5D0180 0x0FFFFFFF 0x000FD5D0
+		#(OFFSET, MASK, VALUE)      (0XFD5D0180, 0x0FFFFFFFU ,0x000FD610U)  */
+    mask_write 0XFD5D0180 0x0FFFFFFF 0x000FD610
 		# Register : R08_END @ 0XFD5D0184</p>
 
 		# This field sets the end address bits [39:12] of this region (aligned to
     # 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R08_END_ADDR                                                   1037791
+		# PSU_FPD_XMPU_CFG_R08_END_ADDR                                                   1037967
 
 		# Region 8 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0184, 0x0FFFFFFFU ,0x000FD5DFU)  */
-    mask_write 0XFD5D0184 0x0FFFFFFF 0x000FD5DF
+		#(OFFSET, MASK, VALUE)      (0XFD5D0184, 0x0FFFFFFFU ,0x000FD68FU)  */
+    mask_write 0XFD5D0184 0x0FFFFFFF 0x000FD68F
 		# Register : R08_MASTER @ 0XFD5D0188</p>
 
 		# Master ID mask.
-		# PSU_FPD_XMPU_CFG_R08_MASTER_MASK                                                752
+		# PSU_FPD_XMPU_CFG_R08_MASTER_MASK                                                698
 
 		# Master ID value. An AXI MasterID will match this Master ID value of this
     #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_FPD_XMPU_CFG_R08_MASTER_ID                                                  64
+		# PSU_FPD_XMPU_CFG_R08_MASTER_ID                                                  34
 
 		# Region 8 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0188, 0x03FF03FFU ,0x02F00040U)  */
-    mask_write 0XFD5D0188 0x03FF03FF 0x02F00040
+		#(OFFSET, MASK, VALUE)      (0XFD5D0188, 0x03FF03FFU ,0x02BA0022U)  */
+    mask_write 0XFD5D0188 0x03FF03FF 0x02BA0022
 		# Register : R07_CONFIG @ 0XFD5D017C</p>
 
 		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
@@ -20477,15 +18529,15 @@ set psu_fpd_xmpu_data {
 		# Register : R07_MASTER @ 0XFD5D0178</p>
 
 		# Master ID mask.
-		# PSU_FPD_XMPU_CFG_R07_MASTER_MASK                                                698
+		# PSU_FPD_XMPU_CFG_R07_MASTER_MASK                                                752
 
 		# Master ID value. An AXI MasterID will match this Master ID value of this
     #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_FPD_XMPU_CFG_R07_MASTER_ID                                                  34
+		# PSU_FPD_XMPU_CFG_R07_MASTER_ID                                                  64
 
 		# Region 7 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0178, 0x03FF03FFU ,0x02BA0022U)  */
-    mask_write 0XFD5D0178 0x03FF03FF 0x02BA0022
+		#(OFFSET, MASK, VALUE)      (0XFD5D0178, 0x03FF03FFU ,0x02F00040U)  */
+    mask_write 0XFD5D0178 0x03FF03FF 0x02F00040
 		# Register : R06_CONFIG @ 0XFD5D016C</p>
 
 		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
@@ -20515,32 +18567,32 @@ set psu_fpd_xmpu_data {
 
 		# This field sets the start address bits [39:12] of this region (aligned t
     # o 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R06_START_ADDR                                                 1036288
+		# PSU_FPD_XMPU_CFG_R06_START_ADDR                                                 1037776
 
 		# Region 6 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0160, 0x0FFFFFFFU ,0x000FD000U)  */
-    mask_write 0XFD5D0160 0x0FFFFFFF 0x000FD000
+		#(OFFSET, MASK, VALUE)      (0XFD5D0160, 0x0FFFFFFFU ,0x000FD5D0U)  */
+    mask_write 0XFD5D0160 0x0FFFFFFF 0x000FD5D0
 		# Register : R06_END @ 0XFD5D0164</p>
 
 		# This field sets the end address bits [39:12] of this region (aligned to
     # 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R06_END_ADDR                                                   1036383
+		# PSU_FPD_XMPU_CFG_R06_END_ADDR                                                   1037791
 
 		# Region 6 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0164, 0x0FFFFFFFU ,0x000FD05FU)  */
-    mask_write 0XFD5D0164 0x0FFFFFFF 0x000FD05F
+		#(OFFSET, MASK, VALUE)      (0XFD5D0164, 0x0FFFFFFFU ,0x000FD5DFU)  */
+    mask_write 0XFD5D0164 0x0FFFFFFF 0x000FD5DF
 		# Register : R06_MASTER @ 0XFD5D0168</p>
 
 		# Master ID mask.
-		# PSU_FPD_XMPU_CFG_R06_MASTER_MASK                                                752
+		# PSU_FPD_XMPU_CFG_R06_MASTER_MASK                                                698
 
 		# Master ID value. An AXI MasterID will match this Master ID value of this
     #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_FPD_XMPU_CFG_R06_MASTER_ID                                                  64
+		# PSU_FPD_XMPU_CFG_R06_MASTER_ID                                                  34
 
 		# Region 6 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0168, 0x03FF03FFU ,0x02F00040U)  */
-    mask_write 0XFD5D0168 0x03FF03FF 0x02F00040
+		#(OFFSET, MASK, VALUE)      (0XFD5D0168, 0x03FF03FFU ,0x02BA0022U)  */
+    mask_write 0XFD5D0168 0x03FF03FF 0x02BA0022
 		# Register : R05_CONFIG @ 0XFD5D015C</p>
 
 		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
@@ -20587,15 +18639,15 @@ set psu_fpd_xmpu_data {
 		# Register : R05_MASTER @ 0XFD5D0158</p>
 
 		# Master ID mask.
-		# PSU_FPD_XMPU_CFG_R05_MASTER_MASK                                                698
+		# PSU_FPD_XMPU_CFG_R05_MASTER_MASK                                                752
 
 		# Master ID value. An AXI MasterID will match this Master ID value of this
     #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_FPD_XMPU_CFG_R05_MASTER_ID                                                  34
+		# PSU_FPD_XMPU_CFG_R05_MASTER_ID                                                  64
 
 		# Region 5 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0158, 0x03FF03FFU ,0x02BA0022U)  */
-    mask_write 0XFD5D0158 0x03FF03FF 0x02BA0022
+		#(OFFSET, MASK, VALUE)      (0XFD5D0158, 0x03FF03FFU ,0x02F00040U)  */
+    mask_write 0XFD5D0158 0x03FF03FF 0x02F00040
 		# Register : R04_CONFIG @ 0XFD5D014C</p>
 
 		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
@@ -20625,32 +18677,32 @@ set psu_fpd_xmpu_data {
 
 		# This field sets the start address bits [39:12] of this region (aligned t
     # o 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R04_START_ADDR                                                 1036704
+		# PSU_FPD_XMPU_CFG_R04_START_ADDR                                                 1036288
 
 		# Region 4 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0140, 0x0FFFFFFFU ,0x000FD1A0U)  */
-    mask_write 0XFD5D0140 0x0FFFFFFF 0x000FD1A0
+		#(OFFSET, MASK, VALUE)      (0XFD5D0140, 0x0FFFFFFFU ,0x000FD000U)  */
+    mask_write 0XFD5D0140 0x0FFFFFFF 0x000FD000
 		# Register : R04_END @ 0XFD5D0144</p>
 
 		# This field sets the end address bits [39:12] of this region (aligned to
     # 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R04_END_ADDR                                                   1037023
+		# PSU_FPD_XMPU_CFG_R04_END_ADDR                                                   1036383
 
 		# Region 4 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0144, 0x0FFFFFFFU ,0x000FD2DFU)  */
-    mask_write 0XFD5D0144 0x0FFFFFFF 0x000FD2DF
+		#(OFFSET, MASK, VALUE)      (0XFD5D0144, 0x0FFFFFFFU ,0x000FD05FU)  */
+    mask_write 0XFD5D0144 0x0FFFFFFF 0x000FD05F
 		# Register : R04_MASTER @ 0XFD5D0148</p>
 
 		# Master ID mask.
-		# PSU_FPD_XMPU_CFG_R04_MASTER_MASK                                                0
+		# PSU_FPD_XMPU_CFG_R04_MASTER_MASK                                                698
 
 		# Master ID value. An AXI MasterID will match this Master ID value of this
     #  region if: AXI_MasterID AND MASK == ID AND MASK
-		# PSU_FPD_XMPU_CFG_R04_MASTER_ID                                                  0
+		# PSU_FPD_XMPU_CFG_R04_MASTER_ID                                                  34
 
 		# Region 4 Master ID Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0148, 0x03FF03FFU ,0x00000000U)  */
-    mask_write 0XFD5D0148 0x03FF03FF 0x00000000
+		#(OFFSET, MASK, VALUE)      (0XFD5D0148, 0x03FF03FFU ,0x02BA0022U)  */
+    mask_write 0XFD5D0148 0x03FF03FF 0x02BA0022
 		# Register : R03_CONFIG @ 0XFD5D013C</p>
 
 		# 0: Relaxed NS checking. A secure access is allowed to access secure or n
@@ -20667,33 +18719,33 @@ set psu_fpd_xmpu_data {
 
 		# 0: Write address matching this region are poisoned 1: Write address matc
     # hing this region are allowed
-		# PSU_FPD_XMPU_CFG_R03_CONFIG_WRALLOWED                                           0
+		# PSU_FPD_XMPU_CFG_R03_CONFIG_WRALLOWED                                           1
 
 		# 0: Read address matching this region are poisoned 1: Read address matchi
     # ng this region are allowed
-		# PSU_FPD_XMPU_CFG_R03_CONFIG_RDALLOWED                                           0
+		# PSU_FPD_XMPU_CFG_R03_CONFIG_RDALLOWED                                           1
 
 		# Region 3 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D013C, 0x0000001EU ,0x00000000U)  */
-    mask_write 0XFD5D013C 0x0000001E 0x00000000
+		#(OFFSET, MASK, VALUE)      (0XFD5D013C, 0x0000001EU ,0x00000006U)  */
+    mask_write 0XFD5D013C 0x0000001E 0x00000006
 		# Register : R03_START @ 0XFD5D0130</p>
 
 		# This field sets the start address bits [39:12] of this region (aligned t
     # o 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R03_START_ADDR                                                 1037840
+		# PSU_FPD_XMPU_CFG_R03_START_ADDR                                                 1036704
 
 		# Region 3 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0130, 0x0FFFFFFFU ,0x000FD610U)  */
-    mask_write 0XFD5D0130 0x0FFFFFFF 0x000FD610
+		#(OFFSET, MASK, VALUE)      (0XFD5D0130, 0x0FFFFFFFU ,0x000FD1A0U)  */
+    mask_write 0XFD5D0130 0x0FFFFFFF 0x000FD1A0
 		# Register : R03_END @ 0XFD5D0134</p>
 
 		# This field sets the end address bits [39:12] of this region (aligned to
     # 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R03_END_ADDR                                                   1037967
+		# PSU_FPD_XMPU_CFG_R03_END_ADDR                                                   1037023
 
 		# Region 3 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0134, 0x0FFFFFFFU ,0x000FD68FU)  */
-    mask_write 0XFD5D0134 0x0FFFFFFF 0x000FD68F
+		#(OFFSET, MASK, VALUE)      (0XFD5D0134, 0x0FFFFFFFU ,0x000FD2DFU)  */
+    mask_write 0XFD5D0134 0x0FFFFFFF 0x000FD2DF
 		# Register : R03_MASTER @ 0XFD5D0138</p>
 
 		# Master ID mask.
@@ -20735,20 +18787,20 @@ set psu_fpd_xmpu_data {
 
 		# This field sets the start address bits [39:12] of this region (aligned t
     # o 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R02_START_ADDR                                                 1037776
+		# PSU_FPD_XMPU_CFG_R02_START_ADDR                                                 1037840
 
 		# Region 2 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0120, 0x0FFFFFFFU ,0x000FD5D0U)  */
-    mask_write 0XFD5D0120 0x0FFFFFFF 0x000FD5D0
+		#(OFFSET, MASK, VALUE)      (0XFD5D0120, 0x0FFFFFFFU ,0x000FD610U)  */
+    mask_write 0XFD5D0120 0x0FFFFFFF 0x000FD610
 		# Register : R02_END @ 0XFD5D0124</p>
 
 		# This field sets the end address bits [39:12] of this region (aligned to
     # 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R02_END_ADDR                                                   1037791
+		# PSU_FPD_XMPU_CFG_R02_END_ADDR                                                   1037967
 
 		# Region 2 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0124, 0x0FFFFFFFU ,0x000FD5DFU)  */
-    mask_write 0XFD5D0124 0x0FFFFFFF 0x000FD5DF
+		#(OFFSET, MASK, VALUE)      (0XFD5D0124, 0x0FFFFFFFU ,0x000FD68FU)  */
+    mask_write 0XFD5D0124 0x0FFFFFFF 0x000FD68F
 		# Register : R02_MASTER @ 0XFD5D0128</p>
 
 		# Master ID mask.
@@ -20790,20 +18842,20 @@ set psu_fpd_xmpu_data {
 
 		# This field sets the start address bits [39:12] of this region (aligned t
     # o 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R01_START_ADDR                                                 1037520
+		# PSU_FPD_XMPU_CFG_R01_START_ADDR                                                 1037776
 
 		# Region 1 Start Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0110, 0x0FFFFFFFU ,0x000FD4D0U)  */
-    mask_write 0XFD5D0110 0x0FFFFFFF 0x000FD4D0
+		#(OFFSET, MASK, VALUE)      (0XFD5D0110, 0x0FFFFFFFU ,0x000FD5D0U)  */
+    mask_write 0XFD5D0110 0x0FFFFFFF 0x000FD5D0
 		# Register : R01_END @ 0XFD5D0114</p>
 
 		# This field sets the end address bits [39:12] of this region (aligned to
     # 4kB). All bits of this field are used during comparison.
-		# PSU_FPD_XMPU_CFG_R01_END_ADDR                                                   1037535
+		# PSU_FPD_XMPU_CFG_R01_END_ADDR                                                   1037791
 
 		# Region 1 End Address Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D0114, 0x0FFFFFFFU ,0x000FD4DFU)  */
-    mask_write 0XFD5D0114 0x0FFFFFFF 0x000FD4DF
+		#(OFFSET, MASK, VALUE)      (0XFD5D0114, 0x0FFFFFFFU ,0x000FD5DFU)  */
+    mask_write 0XFD5D0114 0x0FFFFFFF 0x000FD5DF
 		# Register : R01_MASTER @ 0XFD5D0118</p>
 
 		# Master ID mask.
@@ -20926,32 +18978,8 @@ set psu_fpd_xmpu_data {
 		# : 
 		# : 
 		# : 
-		# Register : R12_CONFIG @ 0XFD5D01CC</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_FPD_XMPU_CFG_R12_CONFIG_ENABLE                                              1
-
-		# Region 12 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D01CC, 0x00000001U ,0x00000001U)  */
-    mask_write 0XFD5D01CC 0x00000001 0x00000001
 		# : 
-		# Register : R11_CONFIG @ 0XFD5D01BC</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_FPD_XMPU_CFG_R11_CONFIG_ENABLE                                              1
-
-		# Region 11 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D01BC, 0x00000001U ,0x00000001U)  */
-    mask_write 0XFD5D01BC 0x00000001 0x00000001
 		# : 
-		# Register : R10_CONFIG @ 0XFD5D01AC</p>
-
-		# 0: Region is disabled 1: Region is enabled
-		# PSU_FPD_XMPU_CFG_R10_CONFIG_ENABLE                                              1
-
-		# Region 10 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D01AC, 0x00000001U ,0x00000001U)  */
-    mask_write 0XFD5D01AC 0x00000001 0x00000001
 		# : 
 		# Register : R09_CONFIG @ 0XFD5D019C</p>
 
@@ -21016,14 +19044,14 @@ set psu_fpd_xmpu_data {
 		#(OFFSET, MASK, VALUE)      (0XFD5D013C, 0x00000001U ,0x00000001U)  */
     mask_write 0XFD5D013C 0x00000001 0x00000001
 		# : 
-		# Register : R01_CONFIG @ 0XFD5D011C</p>
+		# Register : R02_CONFIG @ 0XFD5D012C</p>
 
 		# 0: Region is disabled 1: Region is enabled
-		# PSU_FPD_XMPU_CFG_R01_CONFIG_ENABLE                                              1
+		# PSU_FPD_XMPU_CFG_R02_CONFIG_ENABLE                                              1
 
-		# Region 1 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D011C, 0x00000001U ,0x00000001U)  */
-    mask_write 0XFD5D011C 0x00000001 0x00000001
+		# Region 2 Configuration Register
+		#(OFFSET, MASK, VALUE)      (0XFD5D012C, 0x00000001U ,0x00000001U)  */
+    mask_write 0XFD5D012C 0x00000001 0x00000001
 		# : 
 		# Register : R00_CONFIG @ 0XFD5D010C</p>
 
@@ -21035,14 +19063,14 @@ set psu_fpd_xmpu_data {
     mask_write 0XFD5D010C 0x00000001 0x00000001
 		# : ENABLE REGIONS WHICH ARE USED FOR BLOCKING FPD XMPU FOR ALL MASTERS AT THE END
 		# : 
-		# Register : R02_CONFIG @ 0XFD5D012C</p>
+		# Register : R01_CONFIG @ 0XFD5D011C</p>
 
 		# 0: Region is disabled 1: Region is enabled
-		# PSU_FPD_XMPU_CFG_R02_CONFIG_ENABLE                                              1
+		# PSU_FPD_XMPU_CFG_R01_CONFIG_ENABLE                                              1
 
-		# Region 2 Configuration Register
-		#(OFFSET, MASK, VALUE)      (0XFD5D012C, 0x00000001U ,0x00000001U)  */
-    mask_write 0XFD5D012C 0x00000001 0x00000001
+		# Region 1 Configuration Register
+		#(OFFSET, MASK, VALUE)      (0XFD5D011C, 0x00000001U ,0x00000001U)  */
+    mask_write 0XFD5D011C 0x00000001 0x00000001
 }
 
 set psu_protection_lock_data {
@@ -21073,17 +19101,6 @@ set psu_protection_lock_data {
 
 set psu_apply_master_tz {
 		# : RPU
-		# Register : slcr_rpu @ 0XFF4B0020</p>
-
-		# TrustZone Classification for R5_0
-		# PSU_LPD_SLCR_SECURE_SLCR_RPU_TZ_R5_0                                            0
-
-		# TrustZone Classification for R5_1
-		# PSU_LPD_SLCR_SECURE_SLCR_RPU_TZ_R5_1                                            0
-
-		# RPU TrustZone settings
-		#(OFFSET, MASK, VALUE)      (0XFF4B0020, 0x00000003U ,0x00000000U)  */
-    mask_write 0XFF4B0020 0x00000003 0x00000000
 		# : DP TZ
 		# Register : slcr_dpdma @ 0XFD690040</p>
 
@@ -21094,21 +19111,6 @@ set psu_apply_master_tz {
 		#(OFFSET, MASK, VALUE)      (0XFD690040, 0x00000001U ,0x00000001U)  */
     mask_write 0XFD690040 0x00000001 0x00000001
 		# : SATA TZ
-		# Register : slcr_sata @ 0XFD690020</p>
-
-		# Enable TrustZone Function
-		# PSU_FPD_SLCR_SECURE_SLCR_SATA_TZ_EN                                             1
-
-		# TrustZone Classification for DMA Port 0
-		# PSU_FPD_SLCR_SECURE_SLCR_SATA_TZ_AXIMDMA0                                       1
-
-		# TrustZone Classification for DMA Port 1
-		# PSU_FPD_SLCR_SECURE_SLCR_SATA_TZ_AXIMDMA1                                       1
-
-		# SATA TrustZone settings. This register may only be modified during bootu
-    # p (while SATA block is disabled)
-		#(OFFSET, MASK, VALUE)      (0XFD690020, 0x0000000DU ,0x0000000DU)  */
-    mask_write 0XFD690020 0x0000000D 0x0000000D
 		# : PCIE TZ
 		# Register : slcr_pcie @ 0XFD690030</p>
 
