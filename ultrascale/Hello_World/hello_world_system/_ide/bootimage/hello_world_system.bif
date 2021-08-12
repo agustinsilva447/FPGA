@@ -1,0 +1,7 @@
+//arch = zynqmp; split = false; format = BIN
+the_ROM_image:
+{
+	[bootloader, destination_cpu = a53-0]C:/Users/aguss/Desktop/Github/FPGA/ultrascale/Hello_World/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/boot/fsbl.elf
+	[destination_device = pl]C:/Users/aguss/Desktop/Github/FPGA/ultrascale/Hello_World/hello_world/_ide/bitstream/design_1_wrapper.bit
+	C:\Users\aguss\Desktop\Github\FPGA\ultrascale\Hello_World\hello_world\Debug\hello_world.elf
+}
