@@ -1,0 +1,7 @@
+Running: xsim.dir/hnn_fpga/xsimk.exe -simmode gui -wdb hnn_fpga.wdb -simrunnum 0 -socket 63263
+Design successfully loaded
+Design Loading Memory Usage: 20484 KB (Peak: 20484 KB)
+Design Loading CPU Usage: 108 ms
+Simulation completed
+Simulation Memory Usage: 25852 KB (Peak: 25852 KB)
+Simulation CPU Usage: 44859 ms

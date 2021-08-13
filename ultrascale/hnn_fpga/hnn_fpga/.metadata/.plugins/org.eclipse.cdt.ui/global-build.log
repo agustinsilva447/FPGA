@@ -1,0 +1,90 @@
+Nothing to build in platform 'hnn_fpga_wrapper'
+
+20:30:32 **** Clean-only build of configuration Debug for project hnn_fpga ****
+make clean 
+rm -rf  ./src/src/main.o ./src/src/xhnn_fpga.o ./src/src/xhnn_fpga_linux.o ./src/src/xhnn_fpga_sinit.o  ./src/src/main.d ./src/src/xhnn_fpga.d ./src/src/xhnn_fpga_linux.d ./src/src/xhnn_fpga_sinit.d  hnn_fpga.elf.size  hnn_fpga.elf
+' '
+20:30:33 **** Incremental Build of configuration Debug for project hnn_fpga ****
+make all 
+'Building file: ../src/src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/src/main.o" -IC:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/sw/hnn_fpga_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/src/main.d" -MT"src/src/main.o" -o "src/src/main.o" "../src/src/main.c"
+In file included from ../src/src/main.c:5:
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/sw/hnn_fpga_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/src/main.c: In function 'main':
+../src/src/main.c:296:43: warning: pointer targets in passing argument 3 of 'XHnn_fpga_Write_U_Words' differ in signedness [-Wpointer-sign]
+   XHnn_fpga_Write_U_Words(&goHnn_fpga, 0, U_hw, N1 * N1);
+                                           ^~~~
+In file included from ../src/src/main.c:10:
+../src/src/xhnn_fpga.h:94:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ u32 XHnn_fpga_Write_U_Words(XHnn_fpga *InstancePtr, int offset, int *data, int length);
+     ^~~~~~~~~~~~~~~~~~~~~~~
+../src/src/main.c:303:42: warning: pointer targets in passing argument 3 of 'XHnn_fpga_Read_V_Words' differ in signedness [-Wpointer-sign]
+   XHnn_fpga_Read_V_Words(&goHnn_fpga, 0, V_hw, N1 * N1);
+                                          ^~~~
+In file included from ../src/src/main.c:10:
+../src/src/xhnn_fpga.h:104:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ u32 XHnn_fpga_Read_V_Words(XHnn_fpga *InstancePtr, int offset, int *data, int length);
+     ^~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/src/main.c'
+' '
+'Building file: ../src/src/xhnn_fpga.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/src/xhnn_fpga.o" -IC:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/sw/hnn_fpga_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/src/xhnn_fpga.d" -MT"src/src/xhnn_fpga.o" -o "src/src/xhnn_fpga.o" "../src/src/xhnn_fpga.c"
+../src/src/xhnn_fpga.c: In function 'XHnn_fpga_Write_U_Words':
+../src/src/xhnn_fpga.c:138:10: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         *(int *)(InstancePtr->Axilites_BaseAddress + XHNN_FPGA_AXILITES_ADDR_U_BASE + (offset + i)*4) = *(data + i);
+          ^
+../src/src/xhnn_fpga.c: In function 'XHnn_fpga_Read_U_Words':
+../src/src/xhnn_fpga.c:153:24: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         *(data + i) = *(int *)(InstancePtr->Axilites_BaseAddress + XHNN_FPGA_AXILITES_ADDR_U_BASE + (offset + i)*4);
+                        ^
+../src/src/xhnn_fpga.c: In function 'XHnn_fpga_Write_U_Bytes':
+../src/src/xhnn_fpga.c:168:10: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         *(char *)(InstancePtr->Axilites_BaseAddress + XHNN_FPGA_AXILITES_ADDR_U_BASE + offset + i) = *(data + i);
+          ^
+../src/src/xhnn_fpga.c: In function 'XHnn_fpga_Read_U_Bytes':
+../src/src/xhnn_fpga.c:183:24: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         *(data + i) = *(char *)(InstancePtr->Axilites_BaseAddress + XHNN_FPGA_AXILITES_ADDR_U_BASE + offset + i);
+                        ^
+../src/src/xhnn_fpga.c: In function 'XHnn_fpga_Write_V_Words':
+../src/src/xhnn_fpga.c:233:10: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         *(int *)(InstancePtr->Axilites_BaseAddress + XHNN_FPGA_AXILITES_ADDR_V_BASE + (offset + i)*4) = *(data + i);
+          ^
+../src/src/xhnn_fpga.c: In function 'XHnn_fpga_Read_V_Words':
+../src/src/xhnn_fpga.c:248:24: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         *(data + i) = *(int *)(InstancePtr->Axilites_BaseAddress + XHNN_FPGA_AXILITES_ADDR_V_BASE + (offset + i)*4);
+                        ^
+../src/src/xhnn_fpga.c: In function 'XHnn_fpga_Write_V_Bytes':
+../src/src/xhnn_fpga.c:263:10: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         *(char *)(InstancePtr->Axilites_BaseAddress + XHNN_FPGA_AXILITES_ADDR_V_BASE + offset + i) = *(data + i);
+          ^
+../src/src/xhnn_fpga.c: In function 'XHnn_fpga_Read_V_Bytes':
+../src/src/xhnn_fpga.c:278:24: warning: cast to pointer from integer of different size [-Wint-to-pointer-cast]
+         *(data + i) = *(char *)(InstancePtr->Axilites_BaseAddress + XHNN_FPGA_AXILITES_ADDR_V_BASE + offset + i);
+                        ^
+'Finished building: ../src/src/xhnn_fpga.c'
+' '
+'Building file: ../src/src/xhnn_fpga_linux.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/src/xhnn_fpga_linux.o" -IC:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/sw/hnn_fpga_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/src/xhnn_fpga_linux.d" -MT"src/src/xhnn_fpga_linux.o" -o "src/src/xhnn_fpga_linux.o" "../src/src/xhnn_fpga_linux.c"
+'Finished building: ../src/src/xhnn_fpga_linux.c'
+' '
+'Building file: ../src/src/xhnn_fpga_sinit.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/src/xhnn_fpga_sinit.o" -IC:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/sw/hnn_fpga_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/src/xhnn_fpga_sinit.d" -MT"src/src/xhnn_fpga_sinit.o" -o "src/src/xhnn_fpga_sinit.o" "../src/src/xhnn_fpga_sinit.c"
+'Finished building: ../src/src/xhnn_fpga_sinit.c'
+' '
+'Building target: hnn_fpga.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/sw/hnn_fpga_wrapper/standalone_domain/bsplib/lib -o "hnn_fpga.elf"  ./src/src/main.o ./src/src/xhnn_fpga.o ./src/src/xhnn_fpga_linux.o ./src/src/xhnn_fpga_sinit.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: hnn_fpga.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size hnn_fpga.elf  |tee "hnn_fpga.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  90256	   4568	  20784	 115608	  1c398	hnn_fpga.elf
+'Finished building: hnn_fpga.elf.size'
+' '

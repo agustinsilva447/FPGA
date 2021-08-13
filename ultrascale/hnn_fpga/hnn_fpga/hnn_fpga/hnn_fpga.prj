@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="hnn_fpga" location="C:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga" platform="C:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga_wrapper/export/hnn_fpga_wrapper/hnn_fpga_wrapper.xpfm" platformUID="xilinx:zcu102::0.0(custom)" systemProject="hnn_fpga_system" sysConfig="hnn_fpga_wrapper" runtime="cpp" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="6e54bda40b1b4634507cf7661b823c5a">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.304356983">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.996417146" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

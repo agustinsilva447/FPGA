@@ -1,0 +1,1362 @@
+
+*** Running vivado
+    with args -log hnn_fpga_hnn_fpga_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source hnn_fpga_hnn_fpga_0_0.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source hnn_fpga_hnn_fpga_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 387.785 ; gain = 71.727
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/solution1'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+update_ip_catalog: Time (s): cpu = 00:00:06 ; elapsed = 00:00:20 . Memory (MB): peak = 427.727 ; gain = 39.941
+WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
+Current IP cache path is c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.cache/ip 
+Command: synth_design -top hnn_fpga_hnn_fpga_0_0 -part xczu9eg-ffvb1156-2-e -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg'
+INFO: [Common 17-1540] The version limit for your license is '2020.04' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
+INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 8692 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:16 ; elapsed = 00:00:19 . Memory (MB): peak = 1468.633 ; gain = 63.660
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'hnn_fpga_hnn_fpga_0_0' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ip/hnn_fpga_hnn_fpga_0_0/synth/hnn_fpga_hnn_fpga_0_0.vhd:81]
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'hnn_fpga' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:12' bound to instance 'U0' of component 'hnn_fpga' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ip/hnn_fpga_hnn_fpga_0_0/synth/hnn_fpga_hnn_fpga_0_0.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'hnn_fpga' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:40]
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:311]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:314]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:327]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:329]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:331]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:333]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:335]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:337]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:339]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:341]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:343]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:345]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:347]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:349]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:351]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:353]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:355]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:357]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:359]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:361]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:363]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:365]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:367]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:369]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:371]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:373]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:375]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:377]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:379]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:381]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:384]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:386]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:388]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:390]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:392]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:394]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:396]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:398]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:400]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:402]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:404]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:406]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:408]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:410]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:412]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:414]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:416]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:418]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:420]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:422]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:424]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:426]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:428]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:430]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:432]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:434]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:436]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:438]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:442]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:454]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:458]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:460]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:462]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:465]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:467]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:470]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:472]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:475]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:477]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:480]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:482]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:486]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:489]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:492]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:495]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:498]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:514]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:516]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:518]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:520]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:522]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:524]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:526]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:528]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:531]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:533]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:535]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:537]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:539]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:541]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:543]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:545]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:547]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:550]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:555]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:722]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:724]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'hnn_fpga_AXILiteS_s_axi' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_AXILiteS_s_axi.vhd:9' bound to instance 'hnn_fpga_AXILiteS_s_axi_U' of component 'hnn_fpga_AXILiteS_s_axi' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:932]
+INFO: [Synth 8-638] synthesizing module 'hnn_fpga_AXILiteS_s_axi' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_AXILiteS_s_axi.vhd:80]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 10 - type: integer 
+	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 64 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'hnn_fpga_AXILiteS_s_axi_ram' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_AXILiteS_s_axi.vhd:591' bound to instance 'int_U' of component 'hnn_fpga_AXILiteS_s_axi_ram' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_AXILiteS_s_axi.vhd:185]
+INFO: [Synth 8-638] synthesizing module 'hnn_fpga_AXILiteS_s_axi_ram' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_AXILiteS_s_axi.vhd:614]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 64 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'hnn_fpga_AXILiteS_s_axi_ram' (1#1) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_AXILiteS_s_axi.vhd:614]
+	Parameter BYTES bound to: 4 - type: integer 
+	Parameter DEPTH bound to: 64 - type: integer 
+	Parameter AWIDTH bound to: 6 - type: integer 
+INFO: [Synth 8-3491] module 'hnn_fpga_AXILiteS_s_axi_ram' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_AXILiteS_s_axi.vhd:591' bound to instance 'int_V' of component 'hnn_fpga_AXILiteS_s_axi_ram' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_AXILiteS_s_axi.vhd:206]
+INFO: [Synth 8-256] done synthesizing module 'hnn_fpga_AXILiteS_s_axi' (2#1) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_AXILiteS_s_axi.vhd:80]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'hnn_fpga_fmul_32nbkb' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_fmul_32nbkb.vhd:8' bound to instance 'hnn_fpga_fmul_32nbkb_U1' of component 'hnn_fpga_fmul_32nbkb' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:971]
+INFO: [Synth 8-638] synthesizing module 'hnn_fpga_fmul_32nbkb' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_fmul_32nbkb.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'hnn_fpga_ap_fmul_0_max_dsp_32' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_fmul_0_max_dsp_32.vhd:59' bound to instance 'hnn_fpga_ap_fmul_0_max_dsp_32_u' of component 'hnn_fpga_ap_fmul_0_max_dsp_32' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_fmul_32nbkb.vhd:52]
+INFO: [Synth 8-638] synthesizing module 'hnn_fpga_ap_fmul_0_max_dsp_32' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_fmul_0_max_dsp_32.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 1 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 3 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_9' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd:94207' bound to instance 'U0' of component 'floating_point_v7_1_9' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_fmul_0_max_dsp_32.vhd:204]
+INFO: [Synth 8-256] done synthesizing module 'hnn_fpga_ap_fmul_0_max_dsp_32' (18#1) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_fmul_0_max_dsp_32.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'hnn_fpga_fmul_32nbkb' (19#1) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_fmul_32nbkb.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'hnn_fpga_fptrunc_cud' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_fptrunc_cud.vhd:8' bound to instance 'hnn_fpga_fptrunc_cud_U2' of component 'hnn_fpga_fptrunc_cud' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:986]
+INFO: [Synth 8-638] synthesizing module 'hnn_fpga_fptrunc_cud' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_fptrunc_cud.vhd:24]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'hnn_fpga_ap_fptrunc_0_no_dsp_64' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_fptrunc_0_no_dsp_64.vhd:59' bound to instance 'hnn_fpga_ap_fptrunc_0_no_dsp_64_u' of component 'hnn_fpga_ap_fptrunc_0_no_dsp_64' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_fptrunc_cud.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'hnn_fpga_ap_fptrunc_0_no_dsp_64' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_fptrunc_0_no_dsp_64.vhd:68]
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_9' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd:94207' bound to instance 'U0' of component 'floating_point_v7_1_9' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_fptrunc_0_no_dsp_64.vhd:199]
+INFO: [Synth 8-256] done synthesizing module 'hnn_fpga_ap_fptrunc_0_no_dsp_64' (26#1) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_fptrunc_0_no_dsp_64.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'hnn_fpga_fptrunc_cud' (27#1) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_fptrunc_cud.vhd:24]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'hnn_fpga_fpext_32dEe' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_fpext_32dEe.vhd:8' bound to instance 'hnn_fpga_fpext_32dEe_U3' of component 'hnn_fpga_fpext_32dEe' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:999]
+INFO: [Synth 8-638] synthesizing module 'hnn_fpga_fpext_32dEe' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_fpext_32dEe.vhd:24]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 2 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'hnn_fpga_ap_fpext_0_no_dsp_32' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_fpext_0_no_dsp_32.vhd:59' bound to instance 'hnn_fpga_ap_fpext_0_no_dsp_32_u' of component 'hnn_fpga_ap_fpext_0_no_dsp_32' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_fpext_32dEe.vhd:45]
+INFO: [Synth 8-638] synthesizing module 'hnn_fpga_ap_fpext_0_no_dsp_32' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_fpext_0_no_dsp_32.vhd:68]
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 1 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_B_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_C_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 24 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 0 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 0 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 32 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_9' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd:94207' bound to instance 'U0' of component 'floating_point_v7_1_9' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_fpext_0_no_dsp_32.vhd:199]
+INFO: [Synth 8-256] done synthesizing module 'hnn_fpga_ap_fpext_0_no_dsp_32' (28#1) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_fpext_0_no_dsp_32.vhd:68]
+INFO: [Synth 8-256] done synthesizing module 'hnn_fpga_fpext_32dEe' (29#1) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_fpext_32dEe.vhd:24]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'hnn_fpga_dadd_64neOg' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_dadd_64neOg.vhd:8' bound to instance 'hnn_fpga_dadd_64neOg_U4' of component 'hnn_fpga_dadd_64neOg' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:1012]
+INFO: [Synth 8-638] synthesizing module 'hnn_fpga_dadd_64neOg' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_dadd_64neOg.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 5 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'hnn_fpga_ap_dadd_3_full_dsp_64' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_dadd_3_full_dsp_64.vhd:59' bound to instance 'hnn_fpga_ap_dadd_3_full_dsp_64_u' of component 'hnn_fpga_ap_dadd_3_full_dsp_64' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_dadd_64neOg.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'hnn_fpga_ap_dadd_3_full_dsp_64' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_dadd_3_full_dsp_64.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_HAS_ADD bound to: 1 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 3 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_9' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd:94207' bound to instance 'U0' of component 'floating_point_v7_1_9' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_dadd_3_full_dsp_64.vhd:210]
+INFO: [Synth 8-256] done synthesizing module 'hnn_fpga_ap_dadd_3_full_dsp_64' (45#1) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_dadd_3_full_dsp_64.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'hnn_fpga_dadd_64neOg' (46#1) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_dadd_64neOg.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 17 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'hnn_fpga_ddiv_64nfYi' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_ddiv_64nfYi.vhd:8' bound to instance 'hnn_fpga_ddiv_64nfYi_U5' of component 'hnn_fpga_ddiv_64nfYi' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:1027]
+INFO: [Synth 8-638] synthesizing module 'hnn_fpga_ddiv_64nfYi' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_ddiv_64nfYi.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 17 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'hnn_fpga_ap_ddiv_15_no_dsp_64' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_ddiv_15_no_dsp_64.vhd:59' bound to instance 'hnn_fpga_ap_ddiv_15_no_dsp_64_u' of component 'hnn_fpga_ap_ddiv_15_no_dsp_64' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_ddiv_64nfYi.vhd:56]
+INFO: [Synth 8-638] synthesizing module 'hnn_fpga_ap_ddiv_15_no_dsp_64' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_ddiv_15_no_dsp_64.vhd:72]
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 1 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 0 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 15 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 0 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 1 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_9' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd:94207' bound to instance 'U0' of component 'floating_point_v7_1_9' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_ddiv_15_no_dsp_64.vhd:210]
+INFO: [Synth 8-256] done synthesizing module 'hnn_fpga_ap_ddiv_15_no_dsp_64' (51#1) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_ddiv_15_no_dsp_64.vhd:72]
+INFO: [Synth 8-256] done synthesizing module 'hnn_fpga_ddiv_64nfYi' (52#1) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_ddiv_64nfYi.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 11 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'hnn_fpga_dexp_64ng8j' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_dexp_64ng8j.vhd:8' bound to instance 'hnn_fpga_dexp_64ng8j_U6' of component 'hnn_fpga_dexp_64ng8j' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:1042]
+INFO: [Synth 8-638] synthesizing module 'hnn_fpga_dexp_64ng8j' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_dexp_64ng8j.vhd:26]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 11 - type: integer 
+	Parameter din0_WIDTH bound to: 64 - type: integer 
+	Parameter din1_WIDTH bound to: 64 - type: integer 
+	Parameter dout_WIDTH bound to: 64 - type: integer 
+INFO: [Synth 8-3491] module 'hnn_fpga_ap_dexp_9_full_dsp_64' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_dexp_9_full_dsp_64.vhd:59' bound to instance 'hnn_fpga_ap_dexp_9_full_dsp_64_u' of component 'hnn_fpga_ap_dexp_9_full_dsp_64' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_dexp_64ng8j.vhd:51]
+INFO: [Synth 8-638] synthesizing module 'hnn_fpga_ap_dexp_9_full_dsp_64' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_dexp_9_full_dsp_64.vhd:70]
+	Parameter C_XDEVICEFAMILY bound to: zynquplus - type: string 
+	Parameter C_HAS_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_SUBTRACT bound to: 0 - type: integer 
+	Parameter C_HAS_MULTIPLY bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE bound to: 0 - type: integer 
+	Parameter C_HAS_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_COMPARE bound to: 0 - type: integer 
+	Parameter C_HAS_FIX_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FIX bound to: 0 - type: integer 
+	Parameter C_HAS_FLT_TO_FLT bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP bound to: 0 - type: integer 
+	Parameter C_HAS_RECIP_SQRT bound to: 0 - type: integer 
+	Parameter C_HAS_ABSOLUTE bound to: 0 - type: integer 
+	Parameter C_HAS_LOGARITHM bound to: 0 - type: integer 
+	Parameter C_HAS_EXPONENTIAL bound to: 1 - type: integer 
+	Parameter C_HAS_FMA bound to: 0 - type: integer 
+	Parameter C_HAS_FMS bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ADD bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_SUB bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_UNFUSED_MULTIPLY_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_S bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_A bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUMULATOR_PRIMITIVE_S bound to: 0 - type: integer 
+	Parameter C_A_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_B_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_C_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_RESULT_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_FRACTION_WIDTH bound to: 53 - type: integer 
+	Parameter C_COMPARE_OPERATION bound to: 8 - type: integer 
+	Parameter C_LATENCY bound to: 9 - type: integer 
+	Parameter C_OPTIMIZATION bound to: 1 - type: integer 
+	Parameter C_MULT_USAGE bound to: 2 - type: integer 
+	Parameter C_BRAM_USAGE bound to: 0 - type: integer 
+	Parameter C_RATE bound to: 1 - type: integer 
+	Parameter C_ACCUM_INPUT_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_MSB bound to: 32 - type: integer 
+	Parameter C_ACCUM_LSB bound to: -31 - type: integer 
+	Parameter C_HAS_UNDERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_INVALID_OP bound to: 0 - type: integer 
+	Parameter C_HAS_DIVIDE_BY_ZERO bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACCUM_INPUT_OVERFLOW bound to: 0 - type: integer 
+	Parameter C_HAS_ACLKEN bound to: 1 - type: integer 
+	Parameter C_HAS_ARESETN bound to: 0 - type: integer 
+	Parameter C_THROTTLE_SCHEME bound to: 3 - type: integer 
+	Parameter C_HAS_A_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_A_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_B bound to: 0 - type: integer 
+	Parameter C_HAS_B_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_B_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_C bound to: 0 - type: integer 
+	Parameter C_HAS_C_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_C_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_OPERATION_TLAST bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TUSER bound to: 0 - type: integer 
+	Parameter C_HAS_RESULT_TLAST bound to: 0 - type: integer 
+	Parameter C_TLAST_RESOLUTION bound to: 0 - type: integer 
+	Parameter C_A_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_A_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_B_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_B_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_C_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_C_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_OPERATION_TDATA_WIDTH bound to: 8 - type: integer 
+	Parameter C_OPERATION_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_RESULT_TDATA_WIDTH bound to: 64 - type: integer 
+	Parameter C_RESULT_TUSER_WIDTH bound to: 1 - type: integer 
+	Parameter C_FIXED_DATA_UNSIGNED bound to: 0 - type: integer 
+INFO: [Synth 8-3491] module 'floating_point_v7_1_9' declared at 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/f7b4/hdl/floating_point_v7_1_rfs.vhd:94207' bound to instance 'U0' of component 'floating_point_v7_1_9' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_dexp_9_full_dsp_64.vhd:205]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-256] done synthesizing module 'hnn_fpga_ap_dexp_9_full_dsp_64' (67#1) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/ip/hnn_fpga_ap_dexp_9_full_dsp_64.vhd:70]
+INFO: [Synth 8-256] done synthesizing module 'hnn_fpga_dexp_64ng8j' (68#1) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_dexp_64ng8j.vhd:26]
+INFO: [Synth 8-256] done synthesizing module 'hnn_fpga' (69#1) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'hnn_fpga_hnn_fpga_0_0' (70#1) [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ip/hnn_fpga_hnn_fpga_0_0/synth/hnn_fpga_hnn_fpga_0_0.vhd:81]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized5 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized51 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized51 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized51 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized51 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized51 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized74 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized74 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized74 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized182 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized182 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized182 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized101 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized101 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized101 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized101 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized101 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized130 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized130 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized130 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized130 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized130 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized39 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized39 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized39 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized39 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized39 has unconnected port SINIT
+WARNING: [Synth 8-3331] design compare_ne_im__parameterized0 has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design compare_eq_im__parameterized4 has unconnected port CARRYS_OUT[0]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized47 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized47 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized47 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized47 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized47 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized7 has unconnected port SINIT
+WARNING: [Synth 8-3331] design carry_chain__parameterized25 has unconnected port B[15]
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized27 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized13 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized35 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized15 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized3 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized1 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized1 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized1 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized1 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized1 has unconnected port SINIT
+WARNING: [Synth 8-3331] design dsp48e1_wrapper__parameterized4 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized45 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized45 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized45 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized45 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized45 has unconnected port SINIT
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port NORMALIZE[1]
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port FIXED_POINT
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port FIX_MANT_SIGN
+WARNING: [Synth 8-3331] design flt_round_bit__parameterized0 has unconnected port SIGN
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized23 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized23 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized23 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized23 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized23 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized103 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized103 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized103 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized103 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized103 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized80 has unconnected port CLK
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized80 has unconnected port CE
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized80 has unconnected port SCLR
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized80 has unconnected port SSET
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized80 has unconnected port SINIT
+WARNING: [Synth 8-3331] design xbip_pipe_v3_0_6_viv__parameterized78 has unconnected port CLK
+INFO: [Common 17-14] Message 'Synth 8-3331' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:51 ; elapsed = 00:00:55 . Memory (MB): peak = 1748.125 ; gain = 343.152
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1754.840 ; gain = 349.867
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:54 ; elapsed = 00:00:59 . Memory (MB): peak = 1754.840 ; gain = 349.867
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:03 . Memory (MB): peak = 1754.840 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6659 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 2 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ip/hnn_fpga_hnn_fpga_0_0/constraints/hnn_fpga_ooc.xdc] for cell 'U0'
+create_clock: Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1887.035 ; gain = 9.648
+Finished Parsing XDC File [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ip/hnn_fpga_hnn_fpga_0_0/constraints/hnn_fpga_ooc.xdc] for cell 'U0'
+Parsing XDC File [C:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.runs/hnn_fpga_hnn_fpga_0_0_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.runs/hnn_fpga_hnn_fpga_0_0_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.045 . Memory (MB): peak = 1887.035 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 39 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 17 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 15 instances
+  FDE => FDRE: 7 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:02 ; elapsed = 00:00:01 . Memory (MB): peak = 1892.395 ; gain = 5.359
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:01:45 ; elapsed = 00:01:50 . Memory (MB): peak = 1892.395 ; gain = 487.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu9eg-ffvb1156-2-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:01:45 ; elapsed = 00:01:50 . Memory (MB): peak = 1892.395 ; gain = 487.422
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.runs/hnn_fpga_hnn_fpga_0_0_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:01:45 ; elapsed = 00:01:50 . Memory (MB): peak = 1892.395 ; gain = 487.422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'hnn_fpga_AXILiteS_s_axi'
+INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'hnn_fpga_AXILiteS_s_axi'
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "rom". This will be implemented in logic
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-3971] The signal "hnn_fpga_AXILiteS_s_axi_ram:/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                             0001 |                              011
+*
+                  wridle |                             0010 |                              000
+                  wrdata |                             0100 |                              001
+                  wrresp |                             1000 |                              010
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding 'one-hot' in module 'hnn_fpga_AXILiteS_s_axi'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+                  iSTATE |                              001 |                              110
+*
+                  rdidle |                              010 |                              100
+                  rddata |                              100 |                              101
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'hnn_fpga_AXILiteS_s_axi'
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:02:00 ; elapsed = 00:02:06 . Memory (MB): peak = 1892.395 ; gain = 487.422
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_0_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_0_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_0_max_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'U0/hnn_fpga_fmul_32nbkb_U1/hnn_fpga_ap_fmul_0_max_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_fptrunc_cud_U2/hnn_fpga_ap_fptrunc_0_no_dsp_64_u/U0/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'U0/hnn_fpga_fptrunc_cud_U2/hnn_fpga_ap_fptrunc_0_no_dsp_64_u/U0/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_fptrunc_cud_U2/hnn_fpga_ap_fptrunc_0_no_dsp_64_u/U0/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXP_INC_DELAY' (delay__parameterized1) to 'U0/hnn_fpga_fptrunc_cud_U2/hnn_fpga_ap_fptrunc_0_no_dsp_64_u/U0/i_synth/FLT_TO_FLT_OP.SPD.OP/RND_REQ.ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_fptrunc_cud_U2/hnn_fpga_ap_fptrunc_0_no_dsp_64_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'U0/hnn_fpga_fptrunc_cud_U2/hnn_fpga_ap_fptrunc_0_no_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_fptrunc_cud_U2/hnn_fpga_ap_fptrunc_0_no_dsp_64_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'U0/hnn_fpga_fptrunc_cud_U2/hnn_fpga_ap_fptrunc_0_no_dsp_64_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_fptrunc_cud_U2/hnn_fpga_ap_fptrunc_0_no_dsp_64_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'U0/hnn_fpga_fptrunc_cud_U2/hnn_fpga_ap_fptrunc_0_no_dsp_64_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_fpext_32dEe_U3/hnn_fpga_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'U0/hnn_fpga_fpext_32dEe_U3/hnn_fpga_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_fpext_32dEe_U3/hnn_fpga_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'U0/hnn_fpga_fpext_32dEe_U3/hnn_fpga_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_fpext_32dEe_U3/hnn_fpga_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'U0/hnn_fpga_fpext_32dEe_U3/hnn_fpga_ap_fpext_0_no_dsp_32_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/SUB_DELAY' (delay__parameterized1) to 'U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/ALIGN_BLK/SUBTRACT_PREADD_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXP_INC_DELAY' (delay__parameterized1) to 'U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/NORM/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized1) to 'U0/hnn_fpga_dadd_64neOg_U4/hnn_fpga_ap_dadd_3_full_dsp_64_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_ddiv_64nfYi_U5/hnn_fpga_ap_ddiv_15_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'U0/hnn_fpga_ddiv_64nfYi_U5/hnn_fpga_ap_ddiv_15_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_ddiv_64nfYi_U5/hnn_fpga_ap_ddiv_15_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized1) to 'U0/hnn_fpga_ddiv_64nfYi_U5/hnn_fpga_ap_ddiv_15_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_ddiv_64nfYi_U5/hnn_fpga_ap_ddiv_15_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized59) to 'U0/hnn_fpga_ddiv_64nfYi_U5/hnn_fpga_ap_ddiv_15_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_ddiv_64nfYi_U5/hnn_fpga_ap_ddiv_15_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized59) to 'U0/hnn_fpga_ddiv_64nfYi_U5/hnn_fpga_ap_ddiv_15_no_dsp_64_u/U0/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_ddiv_64nfYi_U5/hnn_fpga_ap_ddiv_15_no_dsp_64_u/U0/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized1) to 'U0/hnn_fpga_ddiv_64nfYi_U5/hnn_fpga_ap_ddiv_15_no_dsp_64_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_sign_delay' (delay__parameterized1) to 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_sign_delay'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_sign_delay' (delay__parameterized1) to 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[2].i_sign_delay'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_sign_delay' (delay__parameterized1) to 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_sign_delay'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXTRA_LSB_BIT_DEL' (delay__parameterized1) to 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_INC_DELAY' (delay__parameterized1) to 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized15) to 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized15) to 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/DELAY_INVALID_OP' (delay__parameterized1) to 'U0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |hnn_fpga__GB0 |           1|     38089|
+|2     |hnn_fpga__GB1 |           1|     19304|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 2520 (col length:168)
+BRAMs: 1824 (col length: RAMB18 168 RAMB36 84)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5544] ROM "LZE/enc_chunk" won't be mapped to Block RAM because address size (4) smaller than threshold (5)
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const1>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+Why this net has no driver: _order_recur <const0>
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-5542] Attribute ram_style/rom_style = distributed specified for ROM  "p_0_out". This will be implemented in logic
+INFO: [Synth 8-4471] merging register 'hnn_fpga_fptrunc_cud_U2/ce_r_reg' into 'hnn_fpga_ddiv_64nfYi_U5/ce_r_reg' [c:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.srcs/sources_1/bd/hnn_fpga/ipshared/01f1/hdl/vhdl/hnn_fpga_fptrunc_cud.vhd:69]
+INFO: [Synth 8-3971] The signal "U0/i_0/hnn_fpga_AXILiteS_s_axi_U/int_U/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3971] The signal "U0/i_0/hnn_fpga_AXILiteS_s_axi_U/int_V/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/i_0/hnn_fpga_fmul_32nbkb_U1/ce_r_reg)
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/i_0/hnn_fpga_fpext_32dEe_U3/ce_r_reg)
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_Sx/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_special_detect/input_sign_delay_balance/i_pipe/opt_has_pipe.first_q_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[1]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[2]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[3]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[4]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[5]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[6]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[7]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[8]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[9]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[10]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[11]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[12]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[13]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[14]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[15]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[16]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[17]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[18]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[19]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[20]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[21]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[22]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[23]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m1_delay/i_pipe/opt_has_pipe.first_q_reg[24]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.P_for_m2_delay/i_pipe/opt_has_pipe.first_q_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.ROMS.reg_outputs.K2_from_rom_reg[13]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.ROMS.reg_outputs.K1_from_rom_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.ROMS.reg_outputs.K2_from_rom_reg[14]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.ROMS.reg_outputs.K1_from_rom_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.ROMS.reg_outputs.K2_from_rom_reg[15]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.ROMS.reg_outputs.K1_from_rom_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.ROMS.reg_outputs.K2_from_rom_reg[16]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.ROMS.reg_outputs.K1_from_rom_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_Sx_at_Xi/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_special_detect/input_sign_delay_balance/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.ROMS.reg_outputs.K2_from_rom_reg[17]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.ROMS.reg_outputs.K1_from_rom_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.ROMS.reg_outputs.K2_from_rom_reg[18]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.ROMS.reg_outputs.K1_from_rom_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.ROMS.reg_outputs.K2_from_rom_reg[19]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.ROMS.reg_outputs.K1_from_rom_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.ROMS.reg_outputs.K2_from_rom_reg[20]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1/g_dp.i_polyomial/g_struct.ROMS.reg_outputs.K1_from_rom_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_Sx_at_Xf/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_special_detect/input_sign_delay_balance/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_Sx_at_op/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_special_detect/input_sign_delay_balance/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/hnn_fpga_dexp_64ng8j_U6/\hnn_fpga_ap_dexp_9_full_dsp_64_u/U0 /i_synth/\EXP_OP.i_sp_or_dp.OP/i_calculate_e2zmzm1 /\g_dp.i_polyomial/g_struct.ROMS.reg_outputs.K1_from_rom_reg[23] )
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_Sx_at_op/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_special_detect/input_sign_delay_balance/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_Sx_at_op/i_pipe/opt_has_pipe.i_pipe[3].pipe_reg[3][0]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_special_detect/input_sign_delay_balance/i_pipe/opt_has_pipe.i_pipe[6].pipe_reg[6][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_Sx_at_op/i_pipe/opt_has_pipe.i_pipe[4].pipe_reg[4][0]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_special_detect/input_sign_delay_balance/i_pipe/opt_has_pipe.i_pipe[7].pipe_reg[7][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.c_high_delay_balance/i_pipe/opt_has_pipe.first_q_reg[0]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_recombination/result_delay/i_pipe/opt_has_pipe.first_q_reg[63]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.c_high_delay_balance/i_pipe/opt_has_pipe.first_q_reg[58]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_recombination/result_delay/i_pipe/opt_has_pipe.first_q_reg[63]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_Sx_at_op/i_pipe/opt_has_pipe.i_pipe[5].pipe_reg[5][0]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/i_special_detect/input_sign_delay_balance/i_pipe/opt_has_pipe.i_pipe[8].pipe_reg[8][0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.c_high_delay_balance/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][58]' (FDE) to 'U0/i_0/hnn_fpga_dexp_64ng8j_U6/hnn_fpga_ap_dexp_9_full_dsp_64_u/U0/i_synth/EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.c_high_delay_balance/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0]'
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/hnn_fpga_dexp_64ng8j_U6/\hnn_fpga_ap_dexp_9_full_dsp_64_u/U0 /i_synth/\EXP_OP.i_sp_or_dp.OP/i_recombination/result_delay/i_pipe/opt_has_pipe.first_q_reg[63] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/i_0/hnn_fpga_dexp_64ng8j_U6/ce_r_reg)
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[63]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[0]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[0]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[1]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[1]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[2]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[2]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[3]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[3]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[4]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[4]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[5]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[5]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[6]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[6]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[7]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[7]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[8]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[8]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[9]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[9]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[10]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[10]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[11]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[11]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[12]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[12]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[13]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[13]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[14]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[14]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[15]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[15]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[16]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[16]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[17]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[17]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[18]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[18]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[19]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[19]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[20]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[20]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[21]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[21]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[22]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[22]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[23]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[23]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[24]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[24]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[25]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[25]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[26]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[26]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[27]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[27]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[28]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[28]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[29]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[29]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[30]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[30]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[31]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[31]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[32]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[32]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[33]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[33]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[34]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[34]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[35]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[35]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[36]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[36]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[37]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[37]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[38]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[38]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[39]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[39]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[40]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[40]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[41]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[41]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[42]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[42]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[43]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[43]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[44]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[44]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[45]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[45]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[46]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[46]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[47]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[47]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[48]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[48]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[49]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[49]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[50]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[50]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[51]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[51]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[62]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[52]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[53]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[53]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[54]'
+INFO: [Synth 8-3886] merging instance 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[54]' (FDE) to 'U0/i_0/hnn_fpga_dadd_64neOg_U4/din1_buf1_reg[55]'
+INFO: [Common 17-14] Message 'Synth 8-3886' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/i_0/hnn_fpga_dadd_64neOg_U4/\din1_buf1_reg[61] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/hnn_fpga_dadd_64neOg_U4/\din1_buf1_reg[62] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/i_0/hnn_fpga_dadd_64neOg_U4/ce_r_reg)
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/hnn_fpga_fpext_32dEe_U3/\dout_r_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/\reg_1301_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/\reg_1306_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/\reg_1311_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/\reg_1316_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/\reg_1321_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/\reg_1326_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/\reg_1331_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/\reg_1336_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/\reg_1341_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/\reg_1346_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/\reg_1351_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/hnn_fpga_dexp_64ng8j_U6/\hnn_fpga_ap_dexp_9_full_dsp_64_u/U0 /i_synth/\EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.c_high_delay_balance/i_pipe/opt_has_pipe.i_pipe[2].pipe_reg[2][0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/hnn_fpga_dexp_64ng8j_U6/\dout_r_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/\reg_1356_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/\reg_1361_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/\reg_1366_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/\reg_1371_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/\reg_1376_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/hnn_fpga_dadd_64neOg_U4/\hnn_fpga_ap_dadd_3_full_dsp_64_u/U0 /i_synth/\ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/B_IP_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/hnn_fpga_dexp_64ng8j_U6/\din1_buf1_reg[1] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/hnn_fpga_dadd_64neOg_U4/\din0_buf1_reg[63] )
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_0/hnn_fpga_dadd_64neOg_U4/\hnn_fpga_ap_dadd_3_full_dsp_64_u/U0 /i_synth/\ADDSUB_OP.ADDSUB/LOGIC_SPEED.OP/EXP/SUB_DELAY/i_pipe/opt_has_pipe.first_q_reg[0] )
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_wstate_reg[0]) is unused and will be removed from module hnn_fpga_AXILiteS_s_axi.
+WARNING: [Synth 8-3332] Sequential element (FSM_onehot_rstate_reg[0]) is unused and will be removed from module hnn_fpga_AXILiteS_s_axi.
+INFO: [Synth 8-3332] Sequential element (EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[0].i_fdre0) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized9.
+INFO: [Synth 8-3332] Sequential element (EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[0].i_fdre1) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized9.
+INFO: [Synth 8-3332] Sequential element (EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[1].i_fdre0) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized9.
+INFO: [Synth 8-3332] Sequential element (EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[1].i_fdre1) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized9.
+INFO: [Synth 8-3332] Sequential element (EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[2].i_fdre0) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized9.
+INFO: [Synth 8-3332] Sequential element (EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[2].i_fdre1) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized9.
+INFO: [Synth 8-3332] Sequential element (EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[3].i_fdre0) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized9.
+INFO: [Synth 8-3332] Sequential element (EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[3].i_fdre1) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized9.
+INFO: [Synth 8-3332] Sequential element (EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[4].i_fdre0) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized9.
+INFO: [Synth 8-3332] Sequential element (EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[4].i_fdre1) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized9.
+INFO: [Synth 8-3332] Sequential element (EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[5].i_fdre0) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized9.
+INFO: [Synth 8-3332] Sequential element (EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[5].i_fdre1) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized9.
+INFO: [Synth 8-3332] Sequential element (EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[6].i_fdre0) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized9.
+INFO: [Synth 8-3332] Sequential element (EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[6].i_fdre1) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized9.
+INFO: [Synth 8-3332] Sequential element (EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[7].i_fdre0) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized9.
+INFO: [Synth 8-3332] Sequential element (EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.srl_loop[7].i_fdre1) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized9.
+INFO: [Synth 8-3332] Sequential element (EXP_OP.i_sp_or_dp.OP/g_Fr_other.i_calculate_Fr/dsp_extra_fabric_adder.mult_with_add_low/use_prim.appDSP48[0].bppDSP48[0].need_output_delay.output_delay/dN_hlutnm.runt_srl_loop.i_fdre) is unused and will be removed from module floating_point_v7_1_9_viv__parameterized9.
+INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/i_1/\hnn_fpga_ddiv_64nfYi_U5/din0_buf1_reg[51] )
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (U0/i_1/\hnn_fpga_ddiv_64nfYi_U5/ce_r_reg )
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:04:12 ; elapsed = 00:04:24 . Memory (MB): peak = 1892.395 ; gain = 487.422
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |hnn_fpga__GB0 |           1|     22873|
+|2     |hnn_fpga__GB1 |           1|     14980|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:04:39 ; elapsed = 00:04:53 . Memory (MB): peak = 2393.461 ; gain = 988.488
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:04:48 ; elapsed = 00:05:02 . Memory (MB): peak = 2423.082 ; gain = 1018.109
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++------+--------------+------------+----------+
+|      |RTL Partition |Replication |Instances |
++------+--------------+------------+----------+
+|1     |hnn_fpga__GB0 |           1|     22978|
+|2     |hnn_fpga__GB1 |           1|     14980|
++------+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7053] The timing for the instance U0/hnn_fpga_AXILiteS_s_axi_U/int_U/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance U0/hnn_fpga_AXILiteS_s_axi_U/int_U/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7053] The timing for the instance U0/hnn_fpga_AXILiteS_s_axi_U/int_V/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:05:05 ; elapsed = 00:05:19 . Memory (MB): peak = 2523.059 ; gain = 1118.086
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:05:17 ; elapsed = 00:05:31 . Memory (MB): peak = 2526.785 ; gain = 1121.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:05:17 ; elapsed = 00:05:31 . Memory (MB): peak = 2526.785 ; gain = 1121.813
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:05:22 ; elapsed = 00:05:36 . Memory (MB): peak = 2526.785 ; gain = 1121.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:05:22 ; elapsed = 00:05:36 . Memory (MB): peak = 2526.785 ; gain = 1121.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:05:23 ; elapsed = 00:05:37 . Memory (MB): peak = 2526.785 ; gain = 1121.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:05:23 ; elapsed = 00:05:37 . Memory (MB): peak = 2526.785 ; gain = 1121.813
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |    19|
+|2     |DSP48E1         |    17|
+|3     |DSP_ALU         |     4|
+|4     |DSP_ALU_1       |     9|
+|5     |DSP_ALU_2       |     2|
+|6     |DSP_A_B_DATA    |     3|
+|7     |DSP_A_B_DATA_1  |     2|
+|8     |DSP_A_B_DATA_2  |     5|
+|9     |DSP_A_B_DATA_3  |     3|
+|10    |DSP_A_B_DATA_4  |     1|
+|11    |DSP_A_B_DATA_5  |     1|
+|12    |DSP_C_DATA      |    15|
+|13    |DSP_MULTIPLIER  |    15|
+|14    |DSP_M_DATA      |    13|
+|15    |DSP_M_DATA_1    |     2|
+|16    |DSP_OUTPUT      |    13|
+|17    |DSP_OUTPUT_1    |     2|
+|18    |DSP_PREADD      |    15|
+|19    |DSP_PREADD_DATA |    15|
+|20    |LUT1            |   111|
+|21    |LUT2            |   538|
+|22    |LUT3            |  3114|
+|23    |LUT4            |   578|
+|24    |LUT5            |   850|
+|25    |LUT6            |  3031|
+|26    |MUXCY           |  3309|
+|27    |MUXF7           |   455|
+|28    |MUXF8           |     8|
+|29    |RAMB36E2        |     2|
+|30    |SRL16E          |   126|
+|31    |XORCY           |  3089|
+|32    |FDE             |     7|
+|33    |FDRE            |  6910|
+|34    |FDSE            |    13|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:05:23 ; elapsed = 00:05:37 . Memory (MB): peak = 2526.785 ; gain = 1121.813
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:03:49 ; elapsed = 00:04:58 . Memory (MB): peak = 2526.785 ; gain = 984.258
+Synthesis Optimization Complete : Time (s): cpu = 00:05:23 ; elapsed = 00:05:37 . Memory (MB): peak = 2526.785 ; gain = 1121.813
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:02 ; elapsed = 00:00:02 . Memory (MB): peak = 2526.785 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 6919 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 2564.008 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 488 instances were transformed.
+  (CARRY4) => CARRY8: 449 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 17 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 15 instances
+  FDE => FDRE: 7 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+405 Infos, 104 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:06:04 ; elapsed = 00:06:24 . Memory (MB): peak = 2564.008 ; gain = 2133.855
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.013 . Memory (MB): peak = 2564.008 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.runs/hnn_fpga_hnn_fpga_0_0_synth_1/hnn_fpga_hnn_fpga_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:11 ; elapsed = 00:00:07 . Memory (MB): peak = 2564.008 ; gain = 0.000
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP hnn_fpga_hnn_fpga_0_0, cache-ID = e2cdef52b6f29767
+INFO: [Coretcl 2-1174] Renamed 431 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 2564.008 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/hnn_fpga.runs/hnn_fpga_hnn_fpga_0_0_synth_1/hnn_fpga_hnn_fpga_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:12 ; elapsed = 00:00:07 . Memory (MB): peak = 2564.008 ; gain = 0.000
+INFO: [runtcl-4] Executing : report_utilization -file hnn_fpga_hnn_fpga_0_0_utilization_synth.rpt -pb hnn_fpga_hnn_fpga_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Fri Aug 13 19:40:03 2021...

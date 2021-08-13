@@ -1,0 +1,12 @@
+#-----------------------------------------------------------
+# Webtalk v2019.2 (64-bit)
+# SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+# 
+# Start of session at: Fri Aug 13 20:31:03 2021
+# Process ID: 4844
+# Current directory: C:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/webtalk
+# Command line: wbtcv.exe -mode batch -source vitis_webtalk.tcl
+# Log file: C:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/webtalk/webtalk.log
+# Journal file: C:/Users/aguss/Desktop/Github/FPGA/ultrascale/hnn_fpga/hnn_fpga/webtalk\webtalk.jou
+#-----------------------------------------------------------
+source vitis_webtalk.tcl

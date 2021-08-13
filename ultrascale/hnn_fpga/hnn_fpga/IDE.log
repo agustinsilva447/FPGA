@@ -1,0 +1,9 @@
+20:10:34 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\aguss\Desktop\Github\FPGA\ultrascale\hnn_fpga\hnn_fpga\temp_xsdb_launch_script.tcl
+20:10:43 INFO  : XSCT server has started successfully.
+20:10:43 INFO  : plnx-install-location is set to ''
+20:10:43 INFO  : Successfully done setting XSCT server connection channel  
+20:10:43 INFO  : Successfully done query RDI_DATADIR 
+20:10:43 INFO  : Successfully done setting workspace for the tool. 
+20:10:46 INFO  : Registering command handlers for Vitis TCF services
+20:28:19 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
+20:30:33 INFO  : Checking for BSP changes to sync application flags for project 'hnn_fpga'...
