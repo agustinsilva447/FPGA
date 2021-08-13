@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="VQFTAXIBUS" location="C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS" platform="C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/export/VQFTAXIBUS_wrapper/VQFTAXIBUS_wrapper.xpfm" platformUID="xilinx:zcu102::0.0(custom)" systemProject="VQFTAXIBUS_system" sysConfig="VQFTAXIBUS_wrapper" runtime="cpp" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="8aed90dc0f355c936cc8dda6fdb20be1">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.2068752358" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1104596654" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="empty_application"/>
+</sdkproject:SdkProject>

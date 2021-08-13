@@ -1,0 +1,2051 @@
+TRACE::2021-08-14.00:11:00::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:11:00::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:11:00::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:11:06::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:11:06::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:11:06::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:11:06::SCWPlatform::Do not have an existing db opened. 
+TRACE::2021-08-14.00:11:31::SCWPlatform::Opened new HwDB with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:11:31::SCWWriter::formatted JSON is {
+	"platformName":	"VQFTAXIBUS_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"VQFTAXIBUS_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/VQFTAXIBUS_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	""
+}
+TRACE::2021-08-14.00:11:31::SCWWriter::formatted JSON is {
+	"platformName":	"VQFTAXIBUS_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"VQFTAXIBUS_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/VQFTAXIBUS_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"VQFTAXIBUS_wrapper",
+	"systems":	[{
+			"systemName":	"VQFTAXIBUS_wrapper",
+			"systemDesc":	"VQFTAXIBUS_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"VQFTAXIBUS_wrapper"
+		}]
+}
+TRACE::2021-08-14.00:11:31::SCWPlatform::Boot application domains not present, creating them
+TRACE::2021-08-14.00:11:31::SCWDomain::checking for install qemu data   : 
+TRACE::2021-08-14.00:11:32::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/
+TRACE::2021-08-14.00:11:32::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/qemu_args.txt
+TRACE::2021-08-14.00:11:32::SCWDomain:: Using the PMUQEMU args from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/pmu_args.txt
+TRACE::2021-08-14.00:11:32::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:11:32::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:11:32::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:11:32::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:11:32::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:11:32::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:11:32::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:11:32::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:11:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:11:32::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:11:32::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:11:32::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:11:32::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:11:32::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:11:32::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:11:32::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:11:32::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:11:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:11:32::SCWPlatform::Boot application domain added for zynqmp_fsbl
+TRACE::2021-08-14.00:11:32::SCWPlatform::Generating the sources  .
+TRACE::2021-08-14.00:11:32::SCWBDomain::Generating boot domain sources.
+TRACE::2021-08-14.00:11:32::SCWBDomain:: Generating the zynqmp_fsbl Application.
+TRACE::2021-08-14.00:11:32::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:11:32::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:11:32::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:11:32::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:11:32::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:11:32::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:11:32::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:11:32::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:11:32::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:11:32::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:11:32::SCWMssOS::DEBUG:  swdes dump  
+TRACE::2021-08-14.00:11:32::SCWMssOS::No sw design opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:11:32::SCWMssOS::mss does not exists at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:11:32::SCWMssOS::Creating sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:11:32::SCWMssOS::Adding the swdes entry, created swdb C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss with des name C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:11:32::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:11:32::SCWMssOS::Writing mss at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:11:32::SCWMssOS::Completed writing the mss file at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp
+TRACE::2021-08-14.00:11:32::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2021-08-14.00:11:32::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2021-08-14.00:11:32::SCWBDomain::Completed writing the mss file at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp
+TRACE::2021-08-14.00:12:01::SCWPlatform::Generating sources Done.
+TRACE::2021-08-14.00:12:01::SCWDomain::checking for install qemu data   : 
+TRACE::2021-08-14.00:12:01::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/
+TRACE::2021-08-14.00:12:01::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/qemu_args.txt
+TRACE::2021-08-14.00:12:01::SCWDomain:: Using the PMUQEMU args from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/pmu_args.txt
+TRACE::2021-08-14.00:12:01::SCWPlatform::Boot application domain added for zynqmp_pmufw
+TRACE::2021-08-14.00:12:01::SCWPlatform::Generating the sources  .
+TRACE::2021-08-14.00:12:01::SCWBDomain::Generating boot domain sources.
+TRACE::2021-08-14.00:12:01::SCWBDomain:: Generating the zynqmp_pmufw Application.
+TRACE::2021-08-14.00:12:01::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:01::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:01::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:01::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:01::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:01::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:01::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:01::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:01::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:01::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:01::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss||
+
+TRACE::2021-08-14.00:12:01::SCWMssOS::No sw design opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:01::SCWMssOS::mss does not exists at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:01::SCWMssOS::Creating sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:02::SCWMssOS::Adding the swdes entry, created swdb C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss with des name C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:02::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:02::SCWMssOS::Writing mss at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:02::SCWMssOS::Completed writing the mss file at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp
+TRACE::2021-08-14.00:12:02::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2021-08-14.00:12:02::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2021-08-14.00:12:02::SCWBDomain::Completed writing the mss file at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp
+TRACE::2021-08-14.00:12:12::SCWPlatform::Generating sources Done.
+TRACE::2021-08-14.00:12:12::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:12::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:12::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:12::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:12::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss||
+
+KEYINFO::2021-08-14.00:12:12::SCWMssOS::Could not open the swdb for C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+KEYINFO::2021-08-14.00:12:12::SCWMssOS::Could not open the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss is not found
+
+TRACE::2021-08-14.00:12:12::SCWMssOS::Cleared the swdb table entry
+KEYINFO::2021-08-14.00:12:12::SCWMssOS::Could not open the swdb for C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+KEYINFO::2021-08-14.00:12:12::SCWMssOS::Could not open the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss is not found
+
+TRACE::2021-08-14.00:12:12::SCWMssOS::Cleared the swdb table entry
+TRACE::2021-08-14.00:12:12::SCWMssOS::No sw design opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:12::SCWMssOS::mss exists loading the mss file  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:12::SCWMssOS::Opened the sw design from mss  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:12::SCWMssOS::Adding the swdes entry C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss with des name system
+TRACE::2021-08-14.00:12:12::SCWMssOS::updating the scw layer about changes
+TRACE::2021-08-14.00:12:12::SCWMssOS::Opened the sw design.  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:12::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:12::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:12::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:12::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:12::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+
+TRACE::2021-08-14.00:12:12::SCWMssOS::No sw design opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:12::SCWMssOS::mss exists loading the mss file  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:12::SCWMssOS::Opened the sw design from mss  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:12::SCWMssOS::Adding the swdes entry C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss with des name system_0
+TRACE::2021-08-14.00:12:12::SCWMssOS::updating the scw layer about changes
+TRACE::2021-08-14.00:12:12::SCWMssOS::Opened the sw design.  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:12::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:12::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:12::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:12::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:12::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:12::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:12::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:12::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:12::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:12::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:12::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:12::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:12::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:12::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:12::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:12::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:12::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:12::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:12::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:12::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:12::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:12::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:13::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:13::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:13::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:13::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:13::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:13::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWWriter::formatted JSON is {
+	"platformName":	"VQFTAXIBUS_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"VQFTAXIBUS_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/VQFTAXIBUS_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"psu_cortexa53_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"VQFTAXIBUS_wrapper",
+	"systems":	[{
+			"systemName":	"VQFTAXIBUS_wrapper",
+			"systemDesc":	"VQFTAXIBUS_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"VQFTAXIBUS_wrapper",
+			"sysActiveDom":	"zynqmp_pmufw",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynqmp_fsbl",
+					"domainDispName":	"zynqmp_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"fd18918fc54ef346f7989e7165a99681",
+					"compatibleApp":	"zynqmp_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilsecure:4.1", "xilpm:3.0"],
+					"libOptions":	{
+						"standalone":	{
+							"zynqmp_fsbl_bsp":	"true",
+							"libOptionNames":	["zynqmp_fsbl_bsp"]
+						},
+						"xilffs":	{
+							"read_only":	"true",
+							"use_mkfs":	"false",
+							"libOptionNames":	["read_only", "use_mkfs"]
+						},
+						"libsContainingOptions":	["standalone", "xilffs"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"zynqmp_pmufw",
+					"domainDispName":	"zynqmp_pmufw",
+					"domainDesc":	"PMUFW Application BSP - Auto Generated.",
+					"processors":	"psu_pmu_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"e9a35138542b44f282c03c4634ed097b",
+					"compatibleApp":	"zynqmp_pmufw",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilfpga:5.1", "xilsecure:4.1", "xilskey:6.8"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-08-14.00:12:13::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:13::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:13::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:13::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:13::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:13::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:13::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:13::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:13::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:13::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:13::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:13::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:13::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:13::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:13::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:13::SCWWriter::formatted JSON is {
+	"platformName":	"VQFTAXIBUS_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"VQFTAXIBUS_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/VQFTAXIBUS_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"psu_cortexa53_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"VQFTAXIBUS_wrapper",
+	"systems":	[{
+			"systemName":	"VQFTAXIBUS_wrapper",
+			"systemDesc":	"VQFTAXIBUS_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"VQFTAXIBUS_wrapper",
+			"sysActiveDom":	"zynqmp_pmufw",
+			"sysDefaultDom":	"",
+			"domains":	[{
+					"domainName":	"zynqmp_fsbl",
+					"domainDispName":	"zynqmp_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"fd18918fc54ef346f7989e7165a99681",
+					"compatibleApp":	"zynqmp_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilsecure:4.1", "xilpm:3.0"],
+					"libOptions":	{
+						"standalone":	{
+							"zynqmp_fsbl_bsp":	"true",
+							"libOptionNames":	["zynqmp_fsbl_bsp"]
+						},
+						"xilffs":	{
+							"read_only":	"true",
+							"use_mkfs":	"false",
+							"libOptionNames":	["read_only", "use_mkfs"]
+						},
+						"libsContainingOptions":	["standalone", "xilffs"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"zynqmp_pmufw",
+					"domainDispName":	"zynqmp_pmufw",
+					"domainDesc":	"PMUFW Application BSP - Auto Generated.",
+					"processors":	"psu_pmu_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"e9a35138542b44f282c03c4634ed097b",
+					"compatibleApp":	"zynqmp_pmufw",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilfpga:5.1", "xilsecure:4.1", "xilskey:6.8"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-08-14.00:12:14::SCWDomain::checking for install qemu data   : 
+TRACE::2021-08-14.00:12:14::SCWDomain:: Using the QEMU Data from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/
+TRACE::2021-08-14.00:12:14::SCWDomain:: Using the QEMU args  from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/qemu_args.txt
+TRACE::2021-08-14.00:12:14::SCWDomain:: Using the PMUQEMU args from install at  : C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/pmu_args.txt
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:14::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:14::SCWMssOS::No sw design opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::mss does not exists at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::Creating sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::Adding the swdes entry, created swdb C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss with des name C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::updating the scw layer changes to swdes at   C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::Writing mss at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::Completed writing the mss file at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp
+TRACE::2021-08-14.00:12:14::SCWMssOS::Picking up changes from newly written mss file into SCW Layer. 
+TRACE::2021-08-14.00:12:14::SCWMssOS::Updated the changes from newly written mss file into SCW Layer. 
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:14::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:14::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:14::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:14::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:14::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:14::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:14::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:14::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:14::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:14::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:14::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:14::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:14::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:14::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:14::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:14::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:14::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:14::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWWriter::formatted JSON is {
+	"platformName":	"VQFTAXIBUS_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"VQFTAXIBUS_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/VQFTAXIBUS_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"psu_cortexa53_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"VQFTAXIBUS_wrapper",
+	"systems":	[{
+			"systemName":	"VQFTAXIBUS_wrapper",
+			"systemDesc":	"VQFTAXIBUS_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"VQFTAXIBUS_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynqmp_fsbl",
+					"domainDispName":	"zynqmp_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"fd18918fc54ef346f7989e7165a99681",
+					"compatibleApp":	"zynqmp_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilsecure:4.1", "xilpm:3.0"],
+					"libOptions":	{
+						"standalone":	{
+							"zynqmp_fsbl_bsp":	"true",
+							"libOptionNames":	["zynqmp_fsbl_bsp"]
+						},
+						"xilffs":	{
+							"read_only":	"true",
+							"use_mkfs":	"false",
+							"libOptionNames":	["read_only", "use_mkfs"]
+						},
+						"libsContainingOptions":	["standalone", "xilffs"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"zynqmp_pmufw",
+					"domainDispName":	"zynqmp_pmufw",
+					"domainDesc":	"PMUFW Application BSP - Auto Generated.",
+					"processors":	"psu_pmu_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"e9a35138542b44f282c03c4634ed097b",
+					"compatibleApp":	"zynqmp_pmufw",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilfpga:5.1", "xilsecure:4.1", "xilskey:6.8"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psu_cortexa53_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/",
+					"pmuQemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:14::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:14::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:14::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:14::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:14::SCWMssOS::Completed writing the mss file at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp
+TRACE::2021-08-14.00:12:14::SCWMssOS::Forcing BSP Sources regeneration.
+LOG::2021-08-14.00:12:20::SCWPlatform::Started generating the artifacts platform VQFTAXIBUS_wrapper
+TRACE::2021-08-14.00:12:20::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-08-14.00:12:20::SCWPlatform::Started generating the artifacts for system configuration VQFTAXIBUS_wrapper
+LOG::2021-08-14.00:12:20::SCWSystem::Checking the domain zynqmp_fsbl
+LOG::2021-08-14.00:12:20::SCWSystem::Doing application build for :  zynqmp_fsbl
+TRACE::2021-08-14.00:12:20::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2021-08-14.00:12:20::SCWDomain::Skipping the build for domain :  zynqmp_fsbl
+LOG::2021-08-14.00:12:20::SCWSystem::Checking the domain zynqmp_pmufw
+LOG::2021-08-14.00:12:20::SCWSystem::Doing application build for :  zynqmp_pmufw
+TRACE::2021-08-14.00:12:20::SCWBDomain::Not a forced makefile updation, No changes are present. 
+TRACE::2021-08-14.00:12:20::SCWDomain::Skipping the build for domain :  zynqmp_pmufw
+LOG::2021-08-14.00:12:20::SCWSystem::Checking the domain standalone_domain
+LOG::2021-08-14.00:12:20::SCWSystem::Not a boot domain 
+LOG::2021-08-14.00:12:20::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-08-14.00:12:20::SCWDomain::Generating domain artifcats
+TRACE::2021-08-14.00:12:20::SCWMssOS::Generating standalone artifcats
+TRACE::2021-08-14.00:12:20::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/qemu_args.txt To C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/export/VQFTAXIBUS_wrapper/sw/VQFTAXIBUS_wrapper/qemu/
+TRACE::2021-08-14.00:12:20::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/qemu_args.txt To C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/export/VQFTAXIBUS_wrapper/sw/VQFTAXIBUS_wrapper/qemu/
+TRACE::2021-08-14.00:12:20::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/qemu_args.txt To C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/export/VQFTAXIBUS_wrapper/sw/VQFTAXIBUS_wrapper/standalone_domain/qemu/
+TRACE::2021-08-14.00:12:20::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/qemu_args.txt To C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/export/VQFTAXIBUS_wrapper/sw/VQFTAXIBUS_wrapper/standalone_domain/qemu/
+TRACE::2021-08-14.00:12:20::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+KEYINFO::2021-08-14.00:12:20::SCWMssOS::Could not open the swdb for C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+KEYINFO::2021-08-14.00:12:20::SCWMssOS::Could not open the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+ERROR: [Hsi 55-1558] Software Design C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss is not found
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Cleared the swdb table entry
+TRACE::2021-08-14.00:12:20::SCWMssOS::No sw design opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::mss exists loading the mss file  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::Opened the sw design from mss  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::Adding the swdes entry C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss with des name system_1
+TRACE::2021-08-14.00:12:20::SCWMssOS::updating the scw layer about changes
+TRACE::2021-08-14.00:12:20::SCWMssOS::Opened the sw design.  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::Completed writing the mss file at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp
+TRACE::2021-08-14.00:12:20::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-08-14.00:12:20::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-08-14.00:12:20::SCWDomain::Skipping the build for domain :  standalone_domain
+TRACE::2021-08-14.00:12:20::SCWMssOS::skipping the bsp build ... 
+TRACE::2021-08-14.00:12:20::SCWMssOS::Copying to export directory.
+TRACE::2021-08-14.00:12:20::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-08-14.00:12:20::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2021-08-14.00:12:20::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2021-08-14.00:12:20::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-08-14.00:12:20::SCWSystem::Completed Processing the sysconfig VQFTAXIBUS_wrapper
+LOG::2021-08-14.00:12:20::SCWPlatform::Completed generating the artifacts for system configuration VQFTAXIBUS_wrapper
+TRACE::2021-08-14.00:12:20::SCWPlatform::Started preparing the platform 
+TRACE::2021-08-14.00:12:20::SCWSystem::Writing the bif file for system config VQFTAXIBUS_wrapper
+TRACE::2021-08-14.00:12:20::SCWSystem::dir created 
+TRACE::2021-08-14.00:12:20::SCWSystem::Writing the bif 
+TRACE::2021-08-14.00:12:20::SCWPlatform::Started writing the spfm file 
+TRACE::2021-08-14.00:12:20::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-08-14.00:12:20::SCWPlatform::Completed generating the platform
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWWriter::formatted JSON is {
+	"platformName":	"VQFTAXIBUS_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"VQFTAXIBUS_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/VQFTAXIBUS_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"psu_cortexa53_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"VQFTAXIBUS_wrapper",
+	"systems":	[{
+			"systemName":	"VQFTAXIBUS_wrapper",
+			"systemDesc":	"VQFTAXIBUS_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"VQFTAXIBUS_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynqmp_fsbl",
+					"domainDispName":	"zynqmp_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"fd18918fc54ef346f7989e7165a99681",
+					"compatibleApp":	"zynqmp_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilsecure:4.1", "xilpm:3.0"],
+					"libOptions":	{
+						"standalone":	{
+							"zynqmp_fsbl_bsp":	"true",
+							"libOptionNames":	["zynqmp_fsbl_bsp"]
+						},
+						"xilffs":	{
+							"read_only":	"true",
+							"use_mkfs":	"false",
+							"libOptionNames":	["read_only", "use_mkfs"]
+						},
+						"libsContainingOptions":	["standalone", "xilffs"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"zynqmp_pmufw",
+					"domainDispName":	"zynqmp_pmufw",
+					"domainDesc":	"PMUFW Application BSP - Auto Generated.",
+					"processors":	"psu_pmu_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"e9a35138542b44f282c03c4634ed097b",
+					"compatibleApp":	"zynqmp_pmufw",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilfpga:5.1", "xilsecure:4.1", "xilskey:6.8"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psu_cortexa53_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/",
+					"pmuQemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"eb04964777286bf2d583deeac3e54441",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-08-14.00:12:20::SCWPlatform::updated the xpfm file.
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWWriter::formatted JSON is {
+	"platformName":	"VQFTAXIBUS_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"VQFTAXIBUS_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/VQFTAXIBUS_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"psu_cortexa53_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"VQFTAXIBUS_wrapper",
+	"systems":	[{
+			"systemName":	"VQFTAXIBUS_wrapper",
+			"systemDesc":	"VQFTAXIBUS_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"VQFTAXIBUS_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynqmp_fsbl",
+					"domainDispName":	"zynqmp_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"fd18918fc54ef346f7989e7165a99681",
+					"compatibleApp":	"zynqmp_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilsecure:4.1", "xilpm:3.0"],
+					"libOptions":	{
+						"standalone":	{
+							"zynqmp_fsbl_bsp":	"true",
+							"libOptionNames":	["zynqmp_fsbl_bsp"]
+						},
+						"xilffs":	{
+							"read_only":	"true",
+							"use_mkfs":	"false",
+							"libOptionNames":	["read_only", "use_mkfs"]
+						},
+						"libsContainingOptions":	["standalone", "xilffs"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"zynqmp_pmufw",
+					"domainDispName":	"zynqmp_pmufw",
+					"domainDesc":	"PMUFW Application BSP - Auto Generated.",
+					"processors":	"psu_pmu_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"e9a35138542b44f282c03c4634ed097b",
+					"compatibleApp":	"zynqmp_pmufw",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilfpga:5.1", "xilsecure:4.1", "xilskey:6.8"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psu_cortexa53_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/",
+					"pmuQemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"eb04964777286bf2d583deeac3e54441",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:20::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:20::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:20::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:20::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:20::SCWWriter::formatted JSON is {
+	"platformName":	"VQFTAXIBUS_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"VQFTAXIBUS_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/VQFTAXIBUS_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"psu_cortexa53_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"VQFTAXIBUS_wrapper",
+	"systems":	[{
+			"systemName":	"VQFTAXIBUS_wrapper",
+			"systemDesc":	"VQFTAXIBUS_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"VQFTAXIBUS_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynqmp_fsbl",
+					"domainDispName":	"zynqmp_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"fd18918fc54ef346f7989e7165a99681",
+					"compatibleApp":	"zynqmp_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilsecure:4.1", "xilpm:3.0"],
+					"libOptions":	{
+						"standalone":	{
+							"zynqmp_fsbl_bsp":	"true",
+							"libOptionNames":	["zynqmp_fsbl_bsp"]
+						},
+						"xilffs":	{
+							"read_only":	"true",
+							"use_mkfs":	"false",
+							"libOptionNames":	["read_only", "use_mkfs"]
+						},
+						"libsContainingOptions":	["standalone", "xilffs"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"zynqmp_pmufw",
+					"domainDispName":	"zynqmp_pmufw",
+					"domainDesc":	"PMUFW Application BSP - Auto Generated.",
+					"processors":	"psu_pmu_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"e9a35138542b44f282c03c4634ed097b",
+					"compatibleApp":	"zynqmp_pmufw",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilfpga:5.1", "xilsecure:4.1", "xilskey:6.8"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psu_cortexa53_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/",
+					"pmuQemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"eb04964777286bf2d583deeac3e54441",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+LOG::2021-08-14.00:12:21::SCWPlatform::Started generating the artifacts platform VQFTAXIBUS_wrapper
+TRACE::2021-08-14.00:12:21::SCWPlatform::Sanity checking of platform is completed
+LOG::2021-08-14.00:12:21::SCWPlatform::Started generating the artifacts for system configuration VQFTAXIBUS_wrapper
+LOG::2021-08-14.00:12:21::SCWSystem::Started Processing the domain standalone_domain
+TRACE::2021-08-14.00:12:21::SCWDomain::Generating domain artifcats
+TRACE::2021-08-14.00:12:21::SCWMssOS::Generating standalone artifcats
+TRACE::2021-08-14.00:12:21::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/qemu_args.txt To C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/export/VQFTAXIBUS_wrapper/sw/VQFTAXIBUS_wrapper/qemu/
+TRACE::2021-08-14.00:12:21::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/qemu_args.txt To C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/export/VQFTAXIBUS_wrapper/sw/VQFTAXIBUS_wrapper/qemu/
+TRACE::2021-08-14.00:12:21::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/qemu_args.txt To C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/export/VQFTAXIBUS_wrapper/sw/VQFTAXIBUS_wrapper/standalone_domain/qemu/
+TRACE::2021-08-14.00:12:21::SCWMssOS::Copying the qemu file from  C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/qemu_args.txt To C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/export/VQFTAXIBUS_wrapper/sw/VQFTAXIBUS_wrapper/standalone_domain/qemu/
+TRACE::2021-08-14.00:12:21::SCWMssOS:: Copying the user libraries. 
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:21::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:21::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWMssOS::Completed writing the mss file at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp
+TRACE::2021-08-14.00:12:21::SCWMssOS::Mss edits present, copying mssfile into export location C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWMssOS::bsp generated is upto date with the mss file. Skipping bsp generation.
+TRACE::2021-08-14.00:12:21::SCWMssOS::BSP is already built. skipping the bsp build ... 
+TRACE::2021-08-14.00:12:21::SCWDomain::Building the domain as part of full build :  standalone_domain
+TRACE::2021-08-14.00:12:21::SCWMssOS::skipping the bsp build ... 
+TRACE::2021-08-14.00:12:21::SCWMssOS::Copying to export directory.
+TRACE::2021-08-14.00:12:21::SCWMssOS:: Checking if to create the Supporting Applications
+TRACE::2021-08-14.00:12:21::SCWMssOS:: No Linux domain exists, trying to generate FSBL 
+TRACE::2021-08-14.00:12:21::SCWMssOS:: Completed Standalone Artifacts creation 
+LOG::2021-08-14.00:12:21::SCWSystem::Completed Processing the domain standalone_domain
+LOG::2021-08-14.00:12:21::SCWSystem::Completed Processing the sysconfig VQFTAXIBUS_wrapper
+LOG::2021-08-14.00:12:21::SCWPlatform::Completed generating the artifacts for system configuration VQFTAXIBUS_wrapper
+TRACE::2021-08-14.00:12:21::SCWPlatform::Started preparing the platform 
+TRACE::2021-08-14.00:12:21::SCWSystem::Writing the bif file for system config VQFTAXIBUS_wrapper
+TRACE::2021-08-14.00:12:21::SCWSystem::dir created 
+TRACE::2021-08-14.00:12:21::SCWSystem::Writing the bif 
+TRACE::2021-08-14.00:12:21::SCWPlatform::Started writing the spfm file 
+TRACE::2021-08-14.00:12:21::SCWPlatform::Started writing the xpfm file 
+TRACE::2021-08-14.00:12:21::SCWPlatform::Completed generating the platform
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:21::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:21::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:21::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:21::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:21::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:21::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:21::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:21::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:21::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:21::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:21::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:21::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:21::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:21::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:21::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:21::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to open the hw design at C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA given C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA absoulate path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform::DSA directory C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Platform Path C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/hw/VQFTAXIBUS_wrapper.xsa
+TRACE::2021-08-14.00:12:21::SCWPlatform:: Unique name xilinx:zcu102::0.0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Trying to set the existing hwdb with name VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Opened existing hwdb VQFTAXIBUS_wrapper_0
+TRACE::2021-08-14.00:12:21::SCWPlatform::Found the Hw Db part of the input DSA
+TRACE::2021-08-14.00:12:21::SCWMssOS::Checking the sw design at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWMssOS::DEBUG:  swdes dump  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss|system_1||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_fsbl/zynqmp_fsbl_bsp/system.mss|system||
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/zynqmp_pmufw/zynqmp_pmufw_bsp/system.mss|system_0||
+
+TRACE::2021-08-14.00:12:21::SCWMssOS::Sw design exists and opened at  C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/psu_cortexa53_0/standalone_domain/bsp/system.mss
+TRACE::2021-08-14.00:12:21::SCWWriter::formatted JSON is {
+	"platformName":	"VQFTAXIBUS_wrapper",
+	"sprVersion":	"2.0",
+	"mode":	"gui",
+	"dsaType":	"Fixed",
+	"platformDesc":	"VQFTAXIBUS_wrapper",
+	"platHandOff":	"<platformDir>.xsa",
+	"platIntHandOff":	"<platformDir>/hw/VQFTAXIBUS_wrapper.xsa",
+	"deviceType":	"zynqMP",
+	"platIsPrebuiltAutogen":	"false",
+	"platIsNoBootBsp":	"false",
+	"platFsblTarget":	"psu_cortexa53_0",
+	"hasFsblMakeHasChanges":	"false",
+	"hasPmufwMakeHasChanges":	"false",
+	"platPreBuiltFlag":	false,
+	"platformSamplesDir":	"",
+	"platActiveSys":	"VQFTAXIBUS_wrapper",
+	"systems":	[{
+			"systemName":	"VQFTAXIBUS_wrapper",
+			"systemDesc":	"VQFTAXIBUS_wrapper",
+			"sysIsBootAutoGen":	"true",
+			"systemDispName":	"VQFTAXIBUS_wrapper",
+			"sysActiveDom":	"standalone_domain",
+			"sysDefaultDom":	"standalone_domain",
+			"domains":	[{
+					"domainName":	"zynqmp_fsbl",
+					"domainDispName":	"zynqmp_fsbl",
+					"domainDesc":	"FSBL Application BSP - Auto Generated.",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"fd18918fc54ef346f7989e7165a99681",
+					"compatibleApp":	"zynqmp_fsbl",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilffs:4.2", "xilsecure:4.1", "xilpm:3.0"],
+					"libOptions":	{
+						"standalone":	{
+							"zynqmp_fsbl_bsp":	"true",
+							"libOptionNames":	["zynqmp_fsbl_bsp"]
+						},
+						"xilffs":	{
+							"read_only":	"true",
+							"use_mkfs":	"false",
+							"libOptionNames":	["read_only", "use_mkfs"]
+						},
+						"libsContainingOptions":	["standalone", "xilffs"]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"zynqmp_pmufw",
+					"domainDispName":	"zynqmp_pmufw",
+					"domainDesc":	"PMUFW Application BSP - Auto Generated.",
+					"processors":	"psu_pmu_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"debugEnable":	"",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"e9a35138542b44f282c03c4634ed097b",
+					"compatibleApp":	"zynqmp_pmufw",
+					"domType":	"bootDomain",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	["xilfpga:5.1", "xilsecure:4.1", "xilskey:6.8"],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}, {
+					"domainName":	"standalone_domain",
+					"domainDispName":	"standalone on psu_cortexa53_0",
+					"domainDesc":	"standalone_domain",
+					"processors":	"psu_cortexa53_0",
+					"os":	"standalone",
+					"sdxOs":	"standalone",
+					"qemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/qemu_args.txt",
+					"qemuData":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/",
+					"pmuQemuArgs":	"C:/Xilinx/Vitis/2019.2/data/emulation/platforms/zynqmp/qemu/pmu_args.txt",
+					"debugEnable":	"False",
+					"domRuntimes":	["cpp"],
+					"swRepo":	"",
+					"mssOsVer":	"7.1",
+					"mssFile":	"",
+					"md5Digest":	"eb04964777286bf2d583deeac3e54441",
+					"compatibleApp":	"empty_application",
+					"domType":	"mssDomain",
+					"arch":	"64-bit",
+					"appSettings":	{
+						"appCompilerFlags":	"",
+						"appLinkerFlags":	""
+					},
+					"addedLibs":	[],
+					"libOptions":	{
+						"libsContainingOptions":	[]
+					},
+					"prebuiltLibs":	{
+						"prebuiltIncPath":	[],
+						"prebuiltLibPath":	[]
+					},
+					"isolation":	{
+					}
+				}]
+		}]
+}
+KEYINFO::2021-08-14.00:12:21::SCWPlatform::updated the xpfm file.

@@ -1,0 +1,7 @@
+00:04:40 INFO  : Launching XSCT server: xsct.bat -n  -interactive C:\Users\aguss\Desktop\Github\FPGA\ultrascale\VQFTAXIBUS\VQFTAXIBUS\temp_xsdb_launch_script.tcl
+00:04:51 INFO  : Registering command handlers for Vitis TCF services
+00:05:01 INFO  : XSCT server has started successfully.
+00:05:07 INFO  : plnx-install-location is set to ''
+00:05:07 INFO  : Successfully done setting XSCT server connection channel  
+00:05:07 INFO  : Successfully done query RDI_DATADIR 
+00:05:08 INFO  : Successfully done setting workspace for the tool. 
