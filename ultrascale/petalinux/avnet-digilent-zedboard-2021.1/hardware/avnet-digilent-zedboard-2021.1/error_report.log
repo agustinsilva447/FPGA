@@ -1,0 +1,14 @@
+
+No ERRORs were found in Vivado logs
+
+Find full timing report here : /tmp/tmp.XsiBylrkcG/temp/hwflow/hwflow_project_1/project_1.runs/impl_1/project_1_wrapper_timing_summary_routed.rpt
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      1.128        0.000                      0                 1029        0.122        0.000                      0                 1029        4.020        0.000                       0                   488  
+
+
+All user specified timing constraints are met.

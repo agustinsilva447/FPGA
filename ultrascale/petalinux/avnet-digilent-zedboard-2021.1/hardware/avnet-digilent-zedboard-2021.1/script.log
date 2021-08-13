@@ -1,0 +1,26 @@
+INFO    : Silicon revision is not present for part xczu9eg-ffvb1156-1-i
+INFO    : Board changed to zc702
+INFO    : Part changed to xc7z020clg484-1
+INFO    : Silicon revision is not present for part xc7z020clg484-1
+INFO    : Board changed to zedboard
+INFO    : Part changed to xc7z020clg484-1
+INFO    : Silicon revision is not present for part xc7z020clg484-1
+INFO    : Applying default profile for ZYNQPS
+INFO    : Applying default profile for AXI_GPIO
+INFO    : Applying default profile for INTF_PORT
+INFO    : output directory /tmp/tmp.XsiBylrkcG/temp/hwflow/hwflow_project_1/outputs created
+INFO    : Creating new output file /tmp/tmp.XsiBylrkcG/temp/hwflow/hwflow_project_1/main.tcl
+INFO    : /tmp/tmp.XsiBylrkcG/temp/hwflow/hwflow_project_1/main.tcl successfully written
+INFO    : Applying default profile for PROC_SYS_RESET
+INFO    : Hwflow AIE DRC0 passed.
+INFO    : Hwflow AIE DRC1 passed.
+INFO    : Hwflow AIE DRC2 passed.
+INFO    : Design does not configure AIE IP
+INFO    : Applying default profile for SMART_CON
+INFO    : 0 nmu's will be used by streaming NoCs, out of total available inf.
+INFO    : 0 nsu's will be used by streaming NoCs, out of total available inf.
+INFO    : Hwflow NoC DRC0 passed.
+INFO    : Hwflow NoC DRC1 passed.
+INFO    : Hwflow NoC DRC2 passed.
+INFO    : /tmp/tmp.XsiBylrkcG/temp/hwflow/hwflow_project_1/config_bd.tcl successfully written
+INFO    : Launching Vivado in batch mode
