@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="fsbl_a53" location="C:/Users/aguss/Desktop/Github/FPGA/ultrascale/project_uscale/fsbl_a53" platform="C:/Users/aguss/Desktop/Github/FPGA/ultrascale/project_uscale/design_1_wrapper_1/export/design_1_wrapper_1/design_1_wrapper_1.xpfm" platformUID="xilinx:zcu102::0.0(custom)" systemProject="fsbl_a53_system" sysConfig="design_1_wrapper_1" runtime="cpp" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="4ef3df492cbf57c1a394eff160977ada">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.1289721368" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.1192273621" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="zynqmp_fsbl" hasBspSettings="true"/>
+</sdkproject:SdkProject>
