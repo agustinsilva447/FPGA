@@ -1,7 +1,0 @@
-Running: xsim.dir/VQFTAXIBUS/xsimk.exe -simmode gui -wdb VQFTAXIBUS.wdb -simrunnum 0 -socket 49589
-Design successfully loaded
-Design Loading Memory Usage: 16684 KB (Peak: 16684 KB)
-Design Loading CPU Usage: 109 ms
-Simulation completed
-Simulation Memory Usage: 20044 KB (Peak: 20044 KB)
-Simulation CPU Usage: 1499 ms
