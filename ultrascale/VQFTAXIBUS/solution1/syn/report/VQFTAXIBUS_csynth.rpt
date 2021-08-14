@@ -1,0 +1,271 @@
+
+
+================================================================
+== Vivado HLS Report for 'VQFTAXIBUS'
+================================================================
+* Date:           Sat Aug 14 11:11:16 2021
+
+* Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
+* Project:        VQFTAXIBUS
+* Solution:       solution1
+* Product family: zynquplus
+* Target device:  xczu9eg-ffvb1156-2-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  | 10.00 ns | 9.531 ns |   1.25 ns  |
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      162|      162| 1.620 us | 1.620 us |  162|  162|   none  |
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        N/A
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+-------+--------+--------+-----+
+|       Name      | BRAM_18K| DSP48E|   FF   |   LUT  | URAM|
++-----------------+---------+-------+--------+--------+-----+
+|DSP              |        -|      -|       -|       -|    -|
+|Expression       |        -|      -|       -|       -|    -|
+|FIFO             |        -|      -|       -|       -|    -|
+|Instance         |        4|     40|    3036|    2972|    -|
+|Memory           |        -|      -|       -|       -|    -|
+|Multiplexer      |        -|      -|       -|    4137|    -|
+|Register         |        -|      -|    2595|       -|    -|
++-----------------+---------+-------+--------+--------+-----+
+|Total            |        4|     40|    5631|    7109|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Available        |     1824|   2520|  548160|  274080|    0|
++-----------------+---------+-------+--------+--------+-----+
+|Utilization (%)  |    ~0   |      1|       1|       2|    0|
++-----------------+---------+-------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    +-----------------------------+---------------------------+---------+-------+-----+-----+-----+
+    |           Instance          |           Module          | BRAM_18K| DSP48E|  FF | LUT | URAM|
+    +-----------------------------+---------------------------+---------+-------+-----+-----+-----+
+    |VQFTAXIBUS_AXILiteS_s_axi_U  |VQFTAXIBUS_AXILiteS_s_axi  |        4|      0|  196|  180|    0|
+    |VQFTAXIBUS_faddfsbkb_U1      |VQFTAXIBUS_faddfsbkb       |        0|      2|  227|  214|    0|
+    |VQFTAXIBUS_faddfsbkb_U2      |VQFTAXIBUS_faddfsbkb       |        0|      2|  227|  214|    0|
+    |VQFTAXIBUS_faddfsbkb_U3      |VQFTAXIBUS_faddfsbkb       |        0|      2|  227|  214|    0|
+    |VQFTAXIBUS_faddfsbkb_U4      |VQFTAXIBUS_faddfsbkb       |        0|      2|  227|  214|    0|
+    |VQFTAXIBUS_faddfsbkb_U5      |VQFTAXIBUS_faddfsbkb       |        0|      2|  227|  214|    0|
+    |VQFTAXIBUS_faddfsbkb_U6      |VQFTAXIBUS_faddfsbkb       |        0|      2|  227|  214|    0|
+    |VQFTAXIBUS_faddfsbkb_U7      |VQFTAXIBUS_faddfsbkb       |        0|      2|  227|  214|    0|
+    |VQFTAXIBUS_faddfsbkb_U8      |VQFTAXIBUS_faddfsbkb       |        0|      2|  227|  214|    0|
+    |VQFTAXIBUS_fmul_3cud_U9      |VQFTAXIBUS_fmul_3cud       |        0|      3|  128|  135|    0|
+    |VQFTAXIBUS_fmul_3cud_U10     |VQFTAXIBUS_fmul_3cud       |        0|      3|  128|  135|    0|
+    |VQFTAXIBUS_fmul_3cud_U11     |VQFTAXIBUS_fmul_3cud       |        0|      3|  128|  135|    0|
+    |VQFTAXIBUS_fmul_3cud_U12     |VQFTAXIBUS_fmul_3cud       |        0|      3|  128|  135|    0|
+    |VQFTAXIBUS_fmul_3cud_U13     |VQFTAXIBUS_fmul_3cud       |        0|      3|  128|  135|    0|
+    |VQFTAXIBUS_fmul_3cud_U14     |VQFTAXIBUS_fmul_3cud       |        0|      3|  128|  135|    0|
+    |VQFTAXIBUS_fmul_3cud_U15     |VQFTAXIBUS_fmul_3cud       |        0|      3|  128|  135|    0|
+    |VQFTAXIBUS_fmul_3cud_U16     |VQFTAXIBUS_fmul_3cud       |        0|      3|  128|  135|    0|
+    +-----------------------------+---------------------------+---------+-------+-----+-----+-----+
+    |Total                        |                           |        4|     40| 3036| 2972|    0|
+    +-----------------------------+---------------------------+---------+-------+-----+-----+-----+
+
+    * DSP48E: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    N/A
+
+    * Multiplexer: 
+    +--------------------+-----+-----------+-----+-----------+
+    |        Name        | LUT | Input Size| Bits| Total Bits|
+    +--------------------+-----+-----------+-----+-----------+
+    |E_address0          |  293|         65|    5|        325|
+    |S_address0          |  149|         33|    5|        165|
+    |S_d0                |  121|         26|   32|        832|
+    |ap_NS_fsm           |  721|        164|    1|        164|
+    |grp_fu_1026_opcode  |   15|          3|    2|          6|
+    |grp_fu_1026_p0      |   44|          9|   32|        288|
+    |grp_fu_1026_p1      |   47|         10|   32|        320|
+    |grp_fu_1031_opcode  |   15|          3|    2|          6|
+    |grp_fu_1031_p0      |   44|          9|   32|        288|
+    |grp_fu_1031_p1      |   44|          9|   32|        288|
+    |grp_fu_1035_opcode  |   15|          3|    2|          6|
+    |grp_fu_1035_p0      |   44|          9|   32|        288|
+    |grp_fu_1035_p1      |   50|         11|   32|        352|
+    |grp_fu_1039_opcode  |   15|          3|    2|          6|
+    |grp_fu_1039_p0      |   44|          9|   32|        288|
+    |grp_fu_1039_p1      |   44|          9|   32|        288|
+    |grp_fu_1043_opcode  |   15|          3|    2|          6|
+    |grp_fu_1043_p0      |   44|          9|   32|        288|
+    |grp_fu_1043_p1      |   62|         15|   32|        480|
+    |grp_fu_1047_opcode  |   15|          3|    2|          6|
+    |grp_fu_1047_p0      |   44|          9|   32|        288|
+    |grp_fu_1047_p1      |   62|         15|   32|        480|
+    |grp_fu_1051_opcode  |   15|          3|    2|          6|
+    |grp_fu_1051_p0      |   44|          9|   32|        288|
+    |grp_fu_1051_p1      |   56|         13|   32|        416|
+    |grp_fu_1055_opcode  |   15|          3|    2|          6|
+    |grp_fu_1055_p0      |   44|          9|   32|        288|
+    |grp_fu_1055_p1      |   56|         13|   32|        416|
+    |grp_fu_1060_p0      |   27|          5|   32|        160|
+    |grp_fu_1060_p1      |  145|         32|   32|       1024|
+    |grp_fu_1066_p0      |   27|          5|   32|        160|
+    |grp_fu_1066_p1      |  249|         58|   32|       1856|
+    |grp_fu_1072_p0      |   27|          5|   32|        160|
+    |grp_fu_1072_p1      |  217|         50|   32|       1600|
+    |grp_fu_1077_p0      |   27|          5|   32|        160|
+    |grp_fu_1077_p1      |  249|         58|   32|       1856|
+    |grp_fu_1082_p0      |   27|          5|   32|        160|
+    |grp_fu_1082_p1      |  201|         46|   32|       1472|
+    |grp_fu_1087_p0      |   27|          5|   32|        160|
+    |grp_fu_1087_p1      |  241|         56|   32|       1792|
+    |grp_fu_1092_p0      |   27|          5|   32|        160|
+    |grp_fu_1092_p1      |  221|         51|   32|       1632|
+    |grp_fu_1097_p0      |   27|          5|   32|        160|
+    |grp_fu_1097_p1      |  221|         51|   32|       1632|
+    +--------------------+-----+-----------+-----+-----------+
+    |Total               | 4137|        921| 1083|      21022|
+    +--------------------+-----+-----------+-----+-----------+
+
+    * Register: 
+    +---------------------+-----+----+-----+-----------+
+    |         Name        |  FF | LUT| Bits| Const Bits|
+    +---------------------+-----+----+-----+-----------+
+    |ap_CS_fsm            |  163|   0|  163|          0|
+    |reg_1486             |   32|   0|   32|          0|
+    |reg_1498             |   32|   0|   32|          0|
+    |reg_1510             |   32|   0|   32|          0|
+    |reg_1519             |   32|   0|   32|          0|
+    |reg_1527             |   32|   0|   32|          0|
+    |reg_1534             |   32|   0|   32|          0|
+    |reg_1547             |   32|   0|   32|          0|
+    |reg_1560             |   32|   0|   32|          0|
+    |reg_1572             |   32|   0|   32|          0|
+    |reg_1580             |   32|   0|   32|          0|
+    |reg_1592             |   32|   0|   32|          0|
+    |reg_1600             |   32|   0|   32|          0|
+    |reg_1606             |   32|   0|   32|          0|
+    |reg_1613             |   32|   0|   32|          0|
+    |reg_1620             |   32|   0|   32|          0|
+    |reg_1627             |   32|   0|   32|          0|
+    |reg_1633             |   32|   0|   32|          0|
+    |reg_1638             |   32|   0|   32|          0|
+    |reg_1644             |   32|   0|   32|          0|
+    |reg_1650             |   32|   0|   32|          0|
+    |reg_1657             |   32|   0|   32|          0|
+    |reg_1664             |   32|   0|   32|          0|
+    |reg_1671             |   32|   0|   32|          0|
+    |reg_1677             |   32|   0|   32|          0|
+    |reg_1682             |   32|   0|   32|          0|
+    |reg_1694             |   32|   0|   32|          0|
+    |reg_1706             |   32|   0|   32|          0|
+    |reg_1711             |   32|   0|   32|          0|
+    |reg_1717             |   32|   0|   32|          0|
+    |reg_1723             |   32|   0|   32|          0|
+    |reg_1729             |   32|   0|   32|          0|
+    |reg_1735             |   32|   0|   32|          0|
+    |reg_1741             |   32|   0|   32|          0|
+    |reg_1747             |   32|   0|   32|          0|
+    |reg_1753             |   32|   0|   32|          0|
+    |reg_1758             |   32|   0|   32|          0|
+    |reg_1764             |   32|   0|   32|          0|
+    |reg_1770             |   32|   0|   32|          0|
+    |reg_1776             |   32|   0|   32|          0|
+    |reg_1782             |   32|   0|   32|          0|
+    |reg_1788             |   32|   0|   32|          0|
+    |reg_1794             |   32|   0|   32|          0|
+    |reg_1800             |   32|   0|   32|          0|
+    |reg_1806             |   32|   0|   32|          0|
+    |reg_1812             |   32|   0|   32|          0|
+    |reg_1818             |   32|   0|   32|          0|
+    |reg_1825             |   32|   0|   32|          0|
+    |reg_1832             |   32|   0|   32|          0|
+    |reg_1838             |   32|   0|   32|          0|
+    |reg_1844             |   32|   0|   32|          0|
+    |reg_1850             |   32|   0|   32|          0|
+    |reg_1856             |   32|   0|   32|          0|
+    |reg_1863             |   32|   0|   32|          0|
+    |reg_1870             |   32|   0|   32|          0|
+    |reg_1876             |   32|   0|   32|          0|
+    |reg_1881             |   32|   0|   32|          0|
+    |reg_1886             |   32|   0|   32|          0|
+    |reg_1891             |   32|   0|   32|          0|
+    |reg_1896             |   32|   0|   32|          0|
+    |reg_1901             |   32|   0|   32|          0|
+    |reg_1907             |   32|   0|   32|          0|
+    |reg_1913             |   32|   0|   32|          0|
+    |reg_1919             |   32|   0|   32|          0|
+    |reg_1925             |   32|   0|   32|          0|
+    |reg_1930             |   32|   0|   32|          0|
+    |reg_1935             |   32|   0|   32|          0|
+    |reg_1940             |   32|   0|   32|          0|
+    |reg_1946             |   32|   0|   32|          0|
+    |reg_1952             |   32|   0|   32|          0|
+    |reg_1958             |   32|   0|   32|          0|
+    |reg_1964             |   32|   0|   32|          0|
+    |reg_1970             |   32|   0|   32|          0|
+    |reg_1976             |   32|   0|   32|          0|
+    |reg_1981             |   32|   0|   32|          0|
+    |tmp_10_0_2_reg_2016  |   32|   0|   32|          0|
+    |tmp_14_0_2_reg_2021  |   32|   0|   32|          0|
+    +---------------------+-----+----+-----+-----------+
+    |Total                | 2595|   0| 2595|          0|
+    +---------------------+-----+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++------------------------+-----+-----+------------+--------------+--------------+
+|        RTL Ports       | Dir | Bits|  Protocol  | Source Object|    C Type    |
++------------------------+-----+-----+------------+--------------+--------------+
+|s_axi_AXILiteS_AWVALID  |  in |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_AWREADY  | out |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_AWADDR   |  in |    9|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_WVALID   |  in |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_WREADY   | out |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_WDATA    |  in |   32|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_WSTRB    |  in |    4|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_ARVALID  |  in |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_ARREADY  | out |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_ARADDR   |  in |    9|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_RVALID   | out |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_RREADY   |  in |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_RDATA    | out |   32|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_RRESP    | out |    2|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_BVALID   | out |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_BREADY   |  in |    1|    s_axi   |   AXILiteS   |     array    |
+|s_axi_AXILiteS_BRESP    | out |    2|    s_axi   |   AXILiteS   |     array    |
+|ap_clk                  |  in |    1| ap_ctrl_hs |  VQFTAXIBUS  | return value |
+|ap_rst_n                |  in |    1| ap_ctrl_hs |  VQFTAXIBUS  | return value |
+|interrupt               | out |    1| ap_ctrl_hs |  VQFTAXIBUS  | return value |
++------------------------+-----+-----+------------+--------------+--------------+
+

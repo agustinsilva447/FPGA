@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="VQFTAXIBUS.c" path="C:\Users\aguss\Desktop\Github\FPGA\ultrascale\VQFTAXIBUS\VQFTAXIBUS.c"/>
+  </source>
+  <testbench>
+    <originFiles name="VQFTAXIBUS_tb.c" path="C:\Users\aguss\Desktop\Github\FPGA\ultrascale\VQFTAXIBUS\VQFTAXIBUS_tb.c"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

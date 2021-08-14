@@ -1,0 +1,258 @@
+<profile>
+
+<section name = "Vivado HLS Report for 'VQFTAXIBUS'" level="0">
+<item name = "Date">Sat Aug 14 11:11:16 2021
+</item>
+<item name = "Version">2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)</item>
+<item name = "Project">VQFTAXIBUS</item>
+<item name = "Solution">solution1</item>
+<item name = "Product family">zynquplus</item>
+<item name = "Target device">xczu9eg-ffvb1156-2-e</item>
+</section>
+
+<section name = "Performance Estimates" level="0">
+<item name = "Timing">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="4">Clock, Target, Estimated, Uncertainty</keys>
+<column name="ap_clk">10.00 ns, 9.531 ns, 1.25 ns</column>
+</table>
+</item>
+</section>
+</item>
+<item name = "Latency">
+<section name = "" level="1">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="8">, min, max, min, max, min, max, Type</keys>
+<column name="">162, 162, 1.620 us, 1.620 us, 162, 162, none</column>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="0">
+<keys size="9">Instance, Module, min, max, min, max, min, max, Type</keys>
+</table>
+</item>
+<item name = "Loop"><table name="" hasTotal="0">
+<keys size="8">Loop Name, min, max, Latency, achieved, target, Count, Pipelined</keys>
+</table>
+</item>
+</section>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Utilization Estimates" level="0">
+<item name = "Summary"><table name="" hasTotal="1">
+<keys size="6">Name, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="DSP">-, -, -, -, -</column>
+<column name="Expression">-, -, -, -, -</column>
+<column name="FIFO">-, -, -, -, -</column>
+<column name="Instance">4, 40, 3036, 2972, -</column>
+<column name="Memory">-, -, -, -, -</column>
+<column name="Multiplexer">-, -, -, 4137, -</column>
+<column name="Register">-, -, 2595, -, -</column>
+<specialColumn name="Available">1824, 2520, 548160, 274080, 0</specialColumn>
+<specialColumn name="Utilization (%)">~0, 1, 1, 2, 0</specialColumn>
+</table>
+</item>
+<item name = "Detail">
+<section name = "" level="1">
+<item name = "Instance"><table name="" hasTotal="1">
+<keys size="7">Instance, Module, BRAM_18K, DSP48E, FF, LUT, URAM</keys>
+<column name="VQFTAXIBUS_AXILiteS_s_axi_U">VQFTAXIBUS_AXILiteS_s_axi, 4, 0, 196, 180, 0</column>
+<column name="VQFTAXIBUS_faddfsbkb_U1">VQFTAXIBUS_faddfsbkb, 0, 2, 227, 214, 0</column>
+<column name="VQFTAXIBUS_faddfsbkb_U2">VQFTAXIBUS_faddfsbkb, 0, 2, 227, 214, 0</column>
+<column name="VQFTAXIBUS_faddfsbkb_U3">VQFTAXIBUS_faddfsbkb, 0, 2, 227, 214, 0</column>
+<column name="VQFTAXIBUS_faddfsbkb_U4">VQFTAXIBUS_faddfsbkb, 0, 2, 227, 214, 0</column>
+<column name="VQFTAXIBUS_faddfsbkb_U5">VQFTAXIBUS_faddfsbkb, 0, 2, 227, 214, 0</column>
+<column name="VQFTAXIBUS_faddfsbkb_U6">VQFTAXIBUS_faddfsbkb, 0, 2, 227, 214, 0</column>
+<column name="VQFTAXIBUS_faddfsbkb_U7">VQFTAXIBUS_faddfsbkb, 0, 2, 227, 214, 0</column>
+<column name="VQFTAXIBUS_faddfsbkb_U8">VQFTAXIBUS_faddfsbkb, 0, 2, 227, 214, 0</column>
+<column name="VQFTAXIBUS_fmul_3cud_U9">VQFTAXIBUS_fmul_3cud, 0, 3, 128, 135, 0</column>
+<column name="VQFTAXIBUS_fmul_3cud_U10">VQFTAXIBUS_fmul_3cud, 0, 3, 128, 135, 0</column>
+<column name="VQFTAXIBUS_fmul_3cud_U11">VQFTAXIBUS_fmul_3cud, 0, 3, 128, 135, 0</column>
+<column name="VQFTAXIBUS_fmul_3cud_U12">VQFTAXIBUS_fmul_3cud, 0, 3, 128, 135, 0</column>
+<column name="VQFTAXIBUS_fmul_3cud_U13">VQFTAXIBUS_fmul_3cud, 0, 3, 128, 135, 0</column>
+<column name="VQFTAXIBUS_fmul_3cud_U14">VQFTAXIBUS_fmul_3cud, 0, 3, 128, 135, 0</column>
+<column name="VQFTAXIBUS_fmul_3cud_U15">VQFTAXIBUS_fmul_3cud, 0, 3, 128, 135, 0</column>
+<column name="VQFTAXIBUS_fmul_3cud_U16">VQFTAXIBUS_fmul_3cud, 0, 3, 128, 135, 0</column>
+</table>
+</item>
+<item name = "DSP48E"><table name="" hasTotal="0">
+<keys size="3">Instance, Module, Expression</keys>
+</table>
+</item>
+<item name = "Memory"><table name="" hasTotal="1">
+<keys size="10">Memory, Module, BRAM_18K, FF, LUT, URAM, Words, Bits, Banks, W*Bits*Banks</keys>
+</table>
+</item>
+<item name = "FIFO"><table name="" hasTotal="1">
+<keys size="8">Name, BRAM_18K, FF, LUT, URAM, Depth, Bits, Size:D*B</keys>
+</table>
+</item>
+<item name = "Expression"><table name="" hasTotal="1">
+<keys size="7">Variable Name, Operation, DSP48E, FF, LUT, Bitwidth P0, Bitwidth P1</keys>
+</table>
+</item>
+<item name = "Multiplexer"><table name="" hasTotal="1">
+<keys size="5">Name, LUT, Input Size, Bits, Total Bits</keys>
+<column name="E_address0">293, 65, 5, 325</column>
+<column name="S_address0">149, 33, 5, 165</column>
+<column name="S_d0">121, 26, 32, 832</column>
+<column name="ap_NS_fsm">721, 164, 1, 164</column>
+<column name="grp_fu_1026_opcode">15, 3, 2, 6</column>
+<column name="grp_fu_1026_p0">44, 9, 32, 288</column>
+<column name="grp_fu_1026_p1">47, 10, 32, 320</column>
+<column name="grp_fu_1031_opcode">15, 3, 2, 6</column>
+<column name="grp_fu_1031_p0">44, 9, 32, 288</column>
+<column name="grp_fu_1031_p1">44, 9, 32, 288</column>
+<column name="grp_fu_1035_opcode">15, 3, 2, 6</column>
+<column name="grp_fu_1035_p0">44, 9, 32, 288</column>
+<column name="grp_fu_1035_p1">50, 11, 32, 352</column>
+<column name="grp_fu_1039_opcode">15, 3, 2, 6</column>
+<column name="grp_fu_1039_p0">44, 9, 32, 288</column>
+<column name="grp_fu_1039_p1">44, 9, 32, 288</column>
+<column name="grp_fu_1043_opcode">15, 3, 2, 6</column>
+<column name="grp_fu_1043_p0">44, 9, 32, 288</column>
+<column name="grp_fu_1043_p1">62, 15, 32, 480</column>
+<column name="grp_fu_1047_opcode">15, 3, 2, 6</column>
+<column name="grp_fu_1047_p0">44, 9, 32, 288</column>
+<column name="grp_fu_1047_p1">62, 15, 32, 480</column>
+<column name="grp_fu_1051_opcode">15, 3, 2, 6</column>
+<column name="grp_fu_1051_p0">44, 9, 32, 288</column>
+<column name="grp_fu_1051_p1">56, 13, 32, 416</column>
+<column name="grp_fu_1055_opcode">15, 3, 2, 6</column>
+<column name="grp_fu_1055_p0">44, 9, 32, 288</column>
+<column name="grp_fu_1055_p1">56, 13, 32, 416</column>
+<column name="grp_fu_1060_p0">27, 5, 32, 160</column>
+<column name="grp_fu_1060_p1">145, 32, 32, 1024</column>
+<column name="grp_fu_1066_p0">27, 5, 32, 160</column>
+<column name="grp_fu_1066_p1">249, 58, 32, 1856</column>
+<column name="grp_fu_1072_p0">27, 5, 32, 160</column>
+<column name="grp_fu_1072_p1">217, 50, 32, 1600</column>
+<column name="grp_fu_1077_p0">27, 5, 32, 160</column>
+<column name="grp_fu_1077_p1">249, 58, 32, 1856</column>
+<column name="grp_fu_1082_p0">27, 5, 32, 160</column>
+<column name="grp_fu_1082_p1">201, 46, 32, 1472</column>
+<column name="grp_fu_1087_p0">27, 5, 32, 160</column>
+<column name="grp_fu_1087_p1">241, 56, 32, 1792</column>
+<column name="grp_fu_1092_p0">27, 5, 32, 160</column>
+<column name="grp_fu_1092_p1">221, 51, 32, 1632</column>
+<column name="grp_fu_1097_p0">27, 5, 32, 160</column>
+<column name="grp_fu_1097_p1">221, 51, 32, 1632</column>
+</table>
+</item>
+<item name = "Register"><table name="" hasTotal="1">
+<keys size="5">Name, FF, LUT, Bits, Const Bits</keys>
+<column name="ap_CS_fsm">163, 0, 163, 0</column>
+<column name="reg_1486">32, 0, 32, 0</column>
+<column name="reg_1498">32, 0, 32, 0</column>
+<column name="reg_1510">32, 0, 32, 0</column>
+<column name="reg_1519">32, 0, 32, 0</column>
+<column name="reg_1527">32, 0, 32, 0</column>
+<column name="reg_1534">32, 0, 32, 0</column>
+<column name="reg_1547">32, 0, 32, 0</column>
+<column name="reg_1560">32, 0, 32, 0</column>
+<column name="reg_1572">32, 0, 32, 0</column>
+<column name="reg_1580">32, 0, 32, 0</column>
+<column name="reg_1592">32, 0, 32, 0</column>
+<column name="reg_1600">32, 0, 32, 0</column>
+<column name="reg_1606">32, 0, 32, 0</column>
+<column name="reg_1613">32, 0, 32, 0</column>
+<column name="reg_1620">32, 0, 32, 0</column>
+<column name="reg_1627">32, 0, 32, 0</column>
+<column name="reg_1633">32, 0, 32, 0</column>
+<column name="reg_1638">32, 0, 32, 0</column>
+<column name="reg_1644">32, 0, 32, 0</column>
+<column name="reg_1650">32, 0, 32, 0</column>
+<column name="reg_1657">32, 0, 32, 0</column>
+<column name="reg_1664">32, 0, 32, 0</column>
+<column name="reg_1671">32, 0, 32, 0</column>
+<column name="reg_1677">32, 0, 32, 0</column>
+<column name="reg_1682">32, 0, 32, 0</column>
+<column name="reg_1694">32, 0, 32, 0</column>
+<column name="reg_1706">32, 0, 32, 0</column>
+<column name="reg_1711">32, 0, 32, 0</column>
+<column name="reg_1717">32, 0, 32, 0</column>
+<column name="reg_1723">32, 0, 32, 0</column>
+<column name="reg_1729">32, 0, 32, 0</column>
+<column name="reg_1735">32, 0, 32, 0</column>
+<column name="reg_1741">32, 0, 32, 0</column>
+<column name="reg_1747">32, 0, 32, 0</column>
+<column name="reg_1753">32, 0, 32, 0</column>
+<column name="reg_1758">32, 0, 32, 0</column>
+<column name="reg_1764">32, 0, 32, 0</column>
+<column name="reg_1770">32, 0, 32, 0</column>
+<column name="reg_1776">32, 0, 32, 0</column>
+<column name="reg_1782">32, 0, 32, 0</column>
+<column name="reg_1788">32, 0, 32, 0</column>
+<column name="reg_1794">32, 0, 32, 0</column>
+<column name="reg_1800">32, 0, 32, 0</column>
+<column name="reg_1806">32, 0, 32, 0</column>
+<column name="reg_1812">32, 0, 32, 0</column>
+<column name="reg_1818">32, 0, 32, 0</column>
+<column name="reg_1825">32, 0, 32, 0</column>
+<column name="reg_1832">32, 0, 32, 0</column>
+<column name="reg_1838">32, 0, 32, 0</column>
+<column name="reg_1844">32, 0, 32, 0</column>
+<column name="reg_1850">32, 0, 32, 0</column>
+<column name="reg_1856">32, 0, 32, 0</column>
+<column name="reg_1863">32, 0, 32, 0</column>
+<column name="reg_1870">32, 0, 32, 0</column>
+<column name="reg_1876">32, 0, 32, 0</column>
+<column name="reg_1881">32, 0, 32, 0</column>
+<column name="reg_1886">32, 0, 32, 0</column>
+<column name="reg_1891">32, 0, 32, 0</column>
+<column name="reg_1896">32, 0, 32, 0</column>
+<column name="reg_1901">32, 0, 32, 0</column>
+<column name="reg_1907">32, 0, 32, 0</column>
+<column name="reg_1913">32, 0, 32, 0</column>
+<column name="reg_1919">32, 0, 32, 0</column>
+<column name="reg_1925">32, 0, 32, 0</column>
+<column name="reg_1930">32, 0, 32, 0</column>
+<column name="reg_1935">32, 0, 32, 0</column>
+<column name="reg_1940">32, 0, 32, 0</column>
+<column name="reg_1946">32, 0, 32, 0</column>
+<column name="reg_1952">32, 0, 32, 0</column>
+<column name="reg_1958">32, 0, 32, 0</column>
+<column name="reg_1964">32, 0, 32, 0</column>
+<column name="reg_1970">32, 0, 32, 0</column>
+<column name="reg_1976">32, 0, 32, 0</column>
+<column name="reg_1981">32, 0, 32, 0</column>
+<column name="tmp_10_0_2_reg_2016">32, 0, 32, 0</column>
+<column name="tmp_14_0_2_reg_2021">32, 0, 32, 0</column>
+</table>
+</item>
+</section>
+</item>
+</section>
+
+<section name = "Interface" level="0">
+<item name = "Summary"><table name="" hasTotal="0">
+<keys size="6">RTL Ports, Dir, Bits, Protocol, Source Object, C Type</keys>
+<column name="s_axi_AXILiteS_AWVALID">in, 1, s_axi, AXILiteS, array</column>
+<column name="s_axi_AXILiteS_AWREADY">out, 1, s_axi, AXILiteS, array</column>
+<column name="s_axi_AXILiteS_AWADDR">in, 9, s_axi, AXILiteS, array</column>
+<column name="s_axi_AXILiteS_WVALID">in, 1, s_axi, AXILiteS, array</column>
+<column name="s_axi_AXILiteS_WREADY">out, 1, s_axi, AXILiteS, array</column>
+<column name="s_axi_AXILiteS_WDATA">in, 32, s_axi, AXILiteS, array</column>
+<column name="s_axi_AXILiteS_WSTRB">in, 4, s_axi, AXILiteS, array</column>
+<column name="s_axi_AXILiteS_ARVALID">in, 1, s_axi, AXILiteS, array</column>
+<column name="s_axi_AXILiteS_ARREADY">out, 1, s_axi, AXILiteS, array</column>
+<column name="s_axi_AXILiteS_ARADDR">in, 9, s_axi, AXILiteS, array</column>
+<column name="s_axi_AXILiteS_RVALID">out, 1, s_axi, AXILiteS, array</column>
+<column name="s_axi_AXILiteS_RREADY">in, 1, s_axi, AXILiteS, array</column>
+<column name="s_axi_AXILiteS_RDATA">out, 32, s_axi, AXILiteS, array</column>
+<column name="s_axi_AXILiteS_RRESP">out, 2, s_axi, AXILiteS, array</column>
+<column name="s_axi_AXILiteS_BVALID">out, 1, s_axi, AXILiteS, array</column>
+<column name="s_axi_AXILiteS_BREADY">in, 1, s_axi, AXILiteS, array</column>
+<column name="s_axi_AXILiteS_BRESP">out, 2, s_axi, AXILiteS, array</column>
+<column name="ap_clk">in, 1, ap_ctrl_hs, VQFTAXIBUS, return value</column>
+<column name="ap_rst_n">in, 1, ap_ctrl_hs, VQFTAXIBUS, return value</column>
+<column name="interrupt">out, 1, ap_ctrl_hs, VQFTAXIBUS, return value</column>
+</table>
+</item>
+</section>
+</profile>

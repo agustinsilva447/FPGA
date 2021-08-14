@@ -1,0 +1,8 @@
+-M
+microblaze-fdt
+-device
+loader,file=<VQFTAXIBUS_wrapper/qemu/pmufw.elf>
+-machine-path
+.
+-display
+none
