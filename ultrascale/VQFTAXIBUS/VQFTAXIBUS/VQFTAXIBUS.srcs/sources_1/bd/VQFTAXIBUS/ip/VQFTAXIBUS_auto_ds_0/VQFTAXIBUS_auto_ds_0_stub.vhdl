@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Fri Aug 13 21:31:30 2021
+-- Date        : Sat Aug 14 11:32:38 2021
 -- Host        : DESKTOP-UCL1PSP running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub -rename_top VQFTAXIBUS_auto_ds_0 -prefix
---               VQFTAXIBUS_auto_ds_0_ VQFTAXIBUS_auto_ds_1_stub.vhdl
--- Design      : VQFTAXIBUS_auto_ds_1
+-- Command     : write_vhdl -force -mode synth_stub
+--               c:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS.srcs/sources_1/bd/VQFTAXIBUS/ip/VQFTAXIBUS_auto_ds_0/VQFTAXIBUS_auto_ds_0_stub.vhdl
+-- Design      : VQFTAXIBUS_auto_ds_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xczu9eg-ffvb1156-2-e
 -- --------------------------------------------------------------------------------

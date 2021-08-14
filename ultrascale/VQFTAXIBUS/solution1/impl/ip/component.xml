@@ -1246,8 +1246,8 @@
       </xilinx:taxonomies>
       <xilinx:displayName>Vqftaxibus</xilinx:displayName>
       <xilinx:definitionSource>HLS</xilinx:definitionSource>
-      <xilinx:coreRevision>2108132117</xilinx:coreRevision>
-      <xilinx:coreCreationDateTime>2021-08-13T19:17:30Z</xilinx:coreCreationDateTime>
+      <xilinx:coreRevision>2108141117</xilinx:coreRevision>
+      <xilinx:coreCreationDateTime>2021-08-14T09:17:36Z</xilinx:coreCreationDateTime>
     </xilinx:coreExtensions>
     <xilinx:packagingInfo>
       <xilinx:xilinxVersion>2019.2</xilinx:xilinxVersion>

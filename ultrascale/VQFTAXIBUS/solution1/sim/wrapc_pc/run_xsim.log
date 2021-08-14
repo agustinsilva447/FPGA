@@ -236,8 +236,8 @@ Built simulation snapshot VQFTAXIBUS
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/solution1/sim/vhdl/xsim.dir/VQFTAXIBUS/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/solution1/sim/vhdl/xsim.dir/VQFTAXIBUS/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Aug 13 21:16:06 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Fri Aug 13 21:16:06 2021...
+INFO: [Common 17-186] 'C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/solution1/sim/vhdl/xsim.dir/VQFTAXIBUS/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Sat Aug 14 11:14:58 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Sat Aug 14 11:14:58 2021...
 
 ****** xsim v2019.2 (64-bit)
   **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
@@ -320,7 +320,7 @@ Failure: NORMAL EXIT (note: failure is to force the simulator to stop)
 Time: 11865 ns  Iteration: 1  Process: /apatb_VQFTAXIBUS_top/generate_sim_done_proc  File: C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/solution1/sim/vhdl/VQFTAXIBUS.autotb.vhd
 $finish called at time : 11865 ns
 ## quit
-INFO: [Common 17-206] Exiting xsim at Fri Aug 13 21:16:22 2021...
+INFO: [Common 17-206] Exiting xsim at Sat Aug 14 11:15:14 2021...
 
 E = 
 1.000000 + i* 0.000000

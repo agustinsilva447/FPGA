@@ -6,7 +6,7 @@
 <Project Version="7" Minor="44" Path="C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS.xpr">
   <DefaultLaunch Dir="$PRUNDIR"/>
   <Configuration>
-    <Option Name="Id" Val="ce38c910e44844e08551b0a2e4f13550"/>
+    <Option Name="Id" Val="30a947beb8af492fa3331ea18a153454"/>
     <Option Name="Part" Val="xczu9eg-ffvb1156-2-e"/>
     <Option Name="CompiledLibDir" Val="$PCACHEDIR/compile_simlib"/>
     <Option Name="CompiledLibDirXSim" Val=""/>
@@ -67,29 +67,29 @@
           <Attr Name="UsedIn" Val="implementation"/>
           <Attr Name="UsedIn" Val="simulation"/>
         </FileInfo>
-        <CompFileExtendedInfo CompFileName="VQFTAXIBUS.bd" FileRelPathName="ip/VQFTAXIBUS_rst_ps8_0_99M_0/VQFTAXIBUS_rst_ps8_0_99M_0.xci">
-          <Proxy FileSetName="VQFTAXIBUS_rst_ps8_0_99M_0"/>
-        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="VQFTAXIBUS.bd" FileRelPathName="ip/VQFTAXIBUS_xbar_0/VQFTAXIBUS_xbar_0.xci">
           <Proxy FileSetName="VQFTAXIBUS_xbar_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VQFTAXIBUS.bd" FileRelPathName="ip/VQFTAXIBUS_auto_ds_1/VQFTAXIBUS_auto_ds_1.xci">
-          <Proxy FileSetName="VQFTAXIBUS_auto_ds_1"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VQFTAXIBUS.bd" FileRelPathName="ip/VQFTAXIBUS_VQFTAXIBUS_0_0/VQFTAXIBUS_VQFTAXIBUS_0_0.xci">
-          <Proxy FileSetName="VQFTAXIBUS_VQFTAXIBUS_0_0"/>
-        </CompFileExtendedInfo>
-        <CompFileExtendedInfo CompFileName="VQFTAXIBUS.bd" FileRelPathName="ip/VQFTAXIBUS_zynq_ultra_ps_e_0_0/VQFTAXIBUS_zynq_ultra_ps_e_0_0.xci">
-          <Proxy FileSetName="VQFTAXIBUS_zynq_ultra_ps_e_0_0"/>
         </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="VQFTAXIBUS.bd" FileRelPathName="ip/VQFTAXIBUS_auto_ds_0/VQFTAXIBUS_auto_ds_0.xci">
           <Proxy FileSetName="VQFTAXIBUS_auto_ds_0"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="VQFTAXIBUS.bd" FileRelPathName="ip/VQFTAXIBUS_auto_ds_1/VQFTAXIBUS_auto_ds_1.xci">
+          <Proxy FileSetName="VQFTAXIBUS_auto_ds_1"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="VQFTAXIBUS.bd" FileRelPathName="ip/VQFTAXIBUS_auto_pc_1/VQFTAXIBUS_auto_pc_1.xci">
           <Proxy FileSetName="VQFTAXIBUS_auto_pc_1"/>
         </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="VQFTAXIBUS.bd" FileRelPathName="ip/VQFTAXIBUS_zynq_ultra_ps_e_0_0/VQFTAXIBUS_zynq_ultra_ps_e_0_0.xci">
+          <Proxy FileSetName="VQFTAXIBUS_zynq_ultra_ps_e_0_0"/>
+        </CompFileExtendedInfo>
         <CompFileExtendedInfo CompFileName="VQFTAXIBUS.bd" FileRelPathName="ip/VQFTAXIBUS_auto_pc_0/VQFTAXIBUS_auto_pc_0.xci">
           <Proxy FileSetName="VQFTAXIBUS_auto_pc_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="VQFTAXIBUS.bd" FileRelPathName="ip/VQFTAXIBUS_rst_ps8_0_99M_0/VQFTAXIBUS_rst_ps8_0_99M_0.xci">
+          <Proxy FileSetName="VQFTAXIBUS_rst_ps8_0_99M_0"/>
+        </CompFileExtendedInfo>
+        <CompFileExtendedInfo CompFileName="VQFTAXIBUS.bd" FileRelPathName="ip/VQFTAXIBUS_VQFTAXIBUS_0_0/VQFTAXIBUS_VQFTAXIBUS_0_0.xci">
+          <Proxy FileSetName="VQFTAXIBUS_VQFTAXIBUS_0_0"/>
         </CompFileExtendedInfo>
       </File>
       <File Path="$PSRCDIR/sources_1/bd/VQFTAXIBUS/hdl/VQFTAXIBUS_wrapper.vhd">
@@ -128,33 +128,9 @@
         <Option Name="TopAutoSet" Val="TRUE"/>
       </Config>
     </FileSet>
-    <FileSet Name="VQFTAXIBUS_rst_ps8_0_99M_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/VQFTAXIBUS_rst_ps8_0_99M_0">
-      <Config>
-        <Option Name="TopModule" Val="VQFTAXIBUS_rst_ps8_0_99M_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
     <FileSet Name="VQFTAXIBUS_xbar_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/VQFTAXIBUS_xbar_0">
       <Config>
         <Option Name="TopModule" Val="VQFTAXIBUS_xbar_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="VQFTAXIBUS_auto_ds_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/VQFTAXIBUS_auto_ds_1">
-      <Config>
-        <Option Name="TopModule" Val="VQFTAXIBUS_auto_ds_1"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="VQFTAXIBUS_VQFTAXIBUS_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/VQFTAXIBUS_VQFTAXIBUS_0_0">
-      <Config>
-        <Option Name="TopModule" Val="VQFTAXIBUS_VQFTAXIBUS_0_0"/>
-        <Option Name="UseBlackboxStub" Val="1"/>
-      </Config>
-    </FileSet>
-    <FileSet Name="VQFTAXIBUS_zynq_ultra_ps_e_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/VQFTAXIBUS_zynq_ultra_ps_e_0_0">
-      <Config>
-        <Option Name="TopModule" Val="VQFTAXIBUS_zynq_ultra_ps_e_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -164,15 +140,39 @@
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="VQFTAXIBUS_auto_ds_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/VQFTAXIBUS_auto_ds_1">
+      <Config>
+        <Option Name="TopModule" Val="VQFTAXIBUS_auto_ds_1"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
     <FileSet Name="VQFTAXIBUS_auto_pc_1" Type="BlockSrcs" RelSrcDir="$PSRCDIR/VQFTAXIBUS_auto_pc_1">
       <Config>
         <Option Name="TopModule" Val="VQFTAXIBUS_auto_pc_1"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
+    <FileSet Name="VQFTAXIBUS_zynq_ultra_ps_e_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/VQFTAXIBUS_zynq_ultra_ps_e_0_0">
+      <Config>
+        <Option Name="TopModule" Val="VQFTAXIBUS_zynq_ultra_ps_e_0_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
     <FileSet Name="VQFTAXIBUS_auto_pc_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/VQFTAXIBUS_auto_pc_0">
       <Config>
         <Option Name="TopModule" Val="VQFTAXIBUS_auto_pc_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="VQFTAXIBUS_rst_ps8_0_99M_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/VQFTAXIBUS_rst_ps8_0_99M_0">
+      <Config>
+        <Option Name="TopModule" Val="VQFTAXIBUS_rst_ps8_0_99M_0"/>
+        <Option Name="UseBlackboxStub" Val="1"/>
+      </Config>
+    </FileSet>
+    <FileSet Name="VQFTAXIBUS_VQFTAXIBUS_0_0" Type="BlockSrcs" RelSrcDir="$PSRCDIR/VQFTAXIBUS_VQFTAXIBUS_0_0">
+      <Config>
+        <Option Name="TopModule" Val="VQFTAXIBUS_VQFTAXIBUS_0_0"/>
         <Option Name="UseBlackboxStub" Val="1"/>
       </Config>
     </FileSet>
@@ -208,55 +208,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="VQFTAXIBUS_rst_ps8_0_99M_0_synth_1" Type="Ft3:Synth" SrcSet="VQFTAXIBUS_rst_ps8_0_99M_0" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_rst_ps8_0_99M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VQFTAXIBUS_rst_ps8_0_99M_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="VQFTAXIBUS_xbar_0_synth_1" Type="Ft3:Synth" SrcSet="VQFTAXIBUS_xbar_0" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_xbar_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VQFTAXIBUS_xbar_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="VQFTAXIBUS_auto_ds_1_synth_1" Type="Ft3:Synth" SrcSet="VQFTAXIBUS_auto_ds_1" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_auto_ds_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VQFTAXIBUS_auto_ds_1_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="VQFTAXIBUS_VQFTAXIBUS_0_0_synth_1" Type="Ft3:Synth" SrcSet="VQFTAXIBUS_VQFTAXIBUS_0_0" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_VQFTAXIBUS_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VQFTAXIBUS_VQFTAXIBUS_0_0_synth_1" IncludeInArchive="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
-          <Desc>Vivado Synthesis Defaults</Desc>
-        </StratHandle>
-        <Step Id="synth_design"/>
-      </Strategy>
-      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
-      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="VQFTAXIBUS_zynq_ultra_ps_e_0_0_synth_1" Type="Ft3:Synth" SrcSet="VQFTAXIBUS_zynq_ultra_ps_e_0_0" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_zynq_ultra_ps_e_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VQFTAXIBUS_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -280,6 +232,18 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="VQFTAXIBUS_auto_ds_1_synth_1" Type="Ft3:Synth" SrcSet="VQFTAXIBUS_auto_ds_1" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_auto_ds_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VQFTAXIBUS_auto_ds_1_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
     <Run Id="VQFTAXIBUS_auto_pc_1_synth_1" Type="Ft3:Synth" SrcSet="VQFTAXIBUS_auto_pc_1" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_auto_pc_1" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VQFTAXIBUS_auto_pc_1_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
@@ -292,7 +256,43 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="VQFTAXIBUS_zynq_ultra_ps_e_0_0_synth_1" Type="Ft3:Synth" SrcSet="VQFTAXIBUS_zynq_ultra_ps_e_0_0" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_zynq_ultra_ps_e_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VQFTAXIBUS_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
     <Run Id="VQFTAXIBUS_auto_pc_0_synth_1" Type="Ft3:Synth" SrcSet="VQFTAXIBUS_auto_pc_0" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_auto_pc_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VQFTAXIBUS_auto_pc_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="VQFTAXIBUS_rst_ps8_0_99M_0_synth_1" Type="Ft3:Synth" SrcSet="VQFTAXIBUS_rst_ps8_0_99M_0" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_rst_ps8_0_99M_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VQFTAXIBUS_rst_ps8_0_99M_0_synth_1" IncludeInArchive="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
+          <Desc>Vivado Synthesis Defaults</Desc>
+        </StratHandle>
+        <Step Id="synth_design"/>
+      </Strategy>
+      <GeneratedRun Dir="$PRUNDIR" File="gen_run.xml"/>
+      <ReportStrategy Name="Vivado Synthesis Default Reports" Flow="Vivado Synthesis 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="VQFTAXIBUS_VQFTAXIBUS_0_0_synth_1" Type="Ft3:Synth" SrcSet="VQFTAXIBUS_VQFTAXIBUS_0_0" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_VQFTAXIBUS_0_0" Description="Vivado Synthesis Defaults" AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" Dir="$PRUNDIR/VQFTAXIBUS_VQFTAXIBUS_0_0_synth_1" IncludeInArchive="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Synthesis Defaults" Flow="Vivado Synthesis 2019">
           <Desc>Vivado Synthesis Defaults</Desc>
@@ -324,83 +324,7 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
-    <Run Id="VQFTAXIBUS_rst_ps8_0_99M_0_impl_1" Type="Ft2:EntireDesign" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_rst_ps8_0_99M_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VQFTAXIBUS_rst_ps8_0_99M_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design" EnableStepBool="1"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
     <Run Id="VQFTAXIBUS_xbar_0_impl_1" Type="Ft2:EntireDesign" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_xbar_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VQFTAXIBUS_xbar_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design" EnableStepBool="1"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="VQFTAXIBUS_auto_ds_1_impl_1" Type="Ft2:EntireDesign" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_auto_ds_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VQFTAXIBUS_auto_ds_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design" EnableStepBool="1"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="VQFTAXIBUS_VQFTAXIBUS_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_VQFTAXIBUS_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VQFTAXIBUS_VQFTAXIBUS_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
-      <Strategy Version="1" Minor="2">
-        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
-          <Desc>Default settings for Implementation.</Desc>
-        </StratHandle>
-        <Step Id="init_design"/>
-        <Step Id="opt_design"/>
-        <Step Id="power_opt_design"/>
-        <Step Id="place_design"/>
-        <Step Id="post_place_power_opt_design"/>
-        <Step Id="phys_opt_design" EnableStepBool="1"/>
-        <Step Id="route_design"/>
-        <Step Id="post_route_phys_opt_design"/>
-        <Step Id="write_bitstream"/>
-      </Strategy>
-      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
-      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
-      <RQSFiles/>
-    </Run>
-    <Run Id="VQFTAXIBUS_zynq_ultra_ps_e_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_zynq_ultra_ps_e_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VQFTAXIBUS_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
           <Desc>Default settings for Implementation.</Desc>
@@ -438,6 +362,25 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="VQFTAXIBUS_auto_ds_1_impl_1" Type="Ft2:EntireDesign" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_auto_ds_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VQFTAXIBUS_auto_ds_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
     <Run Id="VQFTAXIBUS_auto_pc_1_impl_1" Type="Ft2:EntireDesign" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_auto_pc_1" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VQFTAXIBUS_auto_pc_1_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
@@ -457,7 +400,64 @@
       <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
       <RQSFiles/>
     </Run>
+    <Run Id="VQFTAXIBUS_zynq_ultra_ps_e_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_zynq_ultra_ps_e_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VQFTAXIBUS_zynq_ultra_ps_e_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
     <Run Id="VQFTAXIBUS_auto_pc_0_impl_1" Type="Ft2:EntireDesign" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_auto_pc_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VQFTAXIBUS_auto_pc_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="VQFTAXIBUS_rst_ps8_0_99M_0_impl_1" Type="Ft2:EntireDesign" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_rst_ps8_0_99M_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VQFTAXIBUS_rst_ps8_0_99M_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
+      <Strategy Version="1" Minor="2">
+        <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
+          <Desc>Default settings for Implementation.</Desc>
+        </StratHandle>
+        <Step Id="init_design"/>
+        <Step Id="opt_design"/>
+        <Step Id="power_opt_design"/>
+        <Step Id="place_design"/>
+        <Step Id="post_place_power_opt_design"/>
+        <Step Id="phys_opt_design" EnableStepBool="1"/>
+        <Step Id="route_design"/>
+        <Step Id="post_route_phys_opt_design"/>
+        <Step Id="write_bitstream"/>
+      </Strategy>
+      <ReportStrategy Name="Vivado Implementation Default Reports" Flow="Vivado Implementation 2019"/>
+      <Report Name="ROUTE_DESIGN.REPORT_METHODOLOGY" Enabled="1"/>
+      <RQSFiles/>
+    </Run>
+    <Run Id="VQFTAXIBUS_VQFTAXIBUS_0_0_impl_1" Type="Ft2:EntireDesign" Part="xczu9eg-ffvb1156-2-e" ConstrsSet="VQFTAXIBUS_VQFTAXIBUS_0_0" Description="Default settings for Implementation." AutoIncrementalCheckpoint="false" WriteIncrSynthDcp="false" SynthRun="VQFTAXIBUS_VQFTAXIBUS_0_0_synth_1" IncludeInArchive="false" GenFullBitstream="true">
       <Strategy Version="1" Minor="2">
         <StratHandle Name="Vivado Implementation Defaults" Flow="Vivado Implementation 2019">
           <Desc>Default settings for Implementation.</Desc>

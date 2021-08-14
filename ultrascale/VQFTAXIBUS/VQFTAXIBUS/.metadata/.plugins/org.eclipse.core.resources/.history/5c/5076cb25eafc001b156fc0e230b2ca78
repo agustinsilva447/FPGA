@@ -1,0 +1,124 @@
+#include "xil_printf.h"
+#include "sleep.h"
+#include <stdio.h>
+#include <math.h>
+#include <xtime_l.h>
+#include <time.h>
+#include <xparameters.h>
+#include "xvqftaxibus_hw.h"
+#include "xvqftaxibus.h"
+
+#define PI 3.1416
+#define L 4			//Cantidad de quits
+#define K 2*4		//Dos por la cantidad de qubits
+#define M 2*2*2*2	//Dos elevado a la cantidad de qubits
+
+void VQFTAXIBUS(const float E[2*M], float S[2*M])
+{
+	int j,k;
+	float m,n;
+	for (j=0;j<M;j++)
+	{
+		S[j]=0;
+		S[j+M]=0;
+		for (k=0;k<M;k++)
+		{
+			m = cos(DOSPI*j*k/M)/sqrt(M);
+			n = sin(DOSPI*j*k/M)/sqrt(M);
+			S[j]   = S[j]   + (m)   *   E[k]   - (n)   *   E[k+M];
+			S[j+M] = S[j+M] + (m)   *   E[k+M] + (n)   *   E[k];
+		}
+	}
+}
+
+int main()
+{
+	int j;
+	float ESW[2*M], SSW[2*M], EHW[2*M], SHW[2*M];
+	float MESW[M], MEHW[M];
+	float MSSW[M], MSHW[M];
+
+	ESW[0]=1;			ESW[0+Q]=0;
+	ESW[1]=0;			ESW[1+Q]=0;
+	ESW[2]=0;			ESW[2+Q]=0;
+	ESW[3]=0;			ESW[3+Q]=0;
+	ESW[4]=0;			ESW[4+Q]=0;
+	ESW[5]=0;			ESW[5+Q]=0;
+	ESW[6]=0;			ESW[6+Q]=0;
+	ESW[7]=0;			ESW[7+Q]=0;
+	ESW[8]=0;			ESW[8+Q]=0;
+	ESW[9]=0;			ESW[9+Q]=0;
+	ESW[10]=0;			ESW[10+Q]=0;
+	ESW[11]=0;			ESW[11+Q]=0;
+	ESW[12]=0;			ESW[12+Q]=0;
+	ESW[13]=0;			ESW[13+Q]=0;
+	ESW[14]=0;			ESW[14+Q]=0;
+	ESW[15]=0;			ESW[15+Q]=0;
+
+
+	EHW[0]=1;			EHW[0+Q]=0;
+	EHW[1]=0;			EHW[1+Q]=0;
+	EHW[2]=0;			EHW[2+Q]=0;
+	EHW[3]=0;			EHW[3+Q]=0;
+	EHW[4]=0;			EHW[4+Q]=0;
+	EHW[5]=0;			EHW[5+Q]=0;
+	EHW[6]=0;			EHW[6+Q]=0;
+	EHW[7]=0;			EHW[7+Q]=0;
+	EHW[8]=0;			EHW[8+Q]=0;
+	EHW[9]=0;			EHW[9+Q]=0;
+	EHW[10]=0;			EHW[10+Q]=0;
+	EHW[11]=0;			EHW[11+Q]=0;
+	EHW[12]=0;			EHW[12+Q]=0;
+	EHW[13]=0;			EHW[13+Q]=0;
+	EHW[14]=0;			EHW[14+Q]=0;
+	EHW[15]=0;			EHW[15+Q]=0;
+
+
+	myTimerSW.startTimer();
+	VQFTAXIBUS(ESW,SSW);
+	myTimerSW.stopTimer();
+
+	myTimerHW.startTimer();
+	XVqftaxibus_Start(&doVqftaxibus);
+	while (!XVqftaxibus_IsDone(&doVqftaxibus));
+	myTimerHW.stopTimer();
+
+	for (j=0;j<M;j++)
+	{
+		MESW[j] = sqrt( pow(ESW[j],2.0) + pow(ESW[j+M],2.0) );
+		MEHW[j] = sqrt( pow(EHW[j],2.0) + pow(EHW[j+M],2.0) );
+		MSSW[j] = sqrt( pow(SSW[j],2.0) + pow(SSW[j+M],2.0) );
+		MSHW[j] = sqrt( pow(SHW[j],2.0) + pow(SHW[j+M],2.0) );
+	}
+
+	//printf("\nEntrada \n");
+	for (j=0;j<M;j++)
+	{
+	//	printf("ESW = %f + i* %f // EHW = %f + i* %f\n",ESW[j],ESW[j+M],EHW[j],EHW[j+M]);
+	}
+	//printf("\nSalida \n");
+	for (j=0;j<M;j++)
+	{
+	//	printf("SHW = %f + i* %f\n",SHW[j],SHW[j+M]);
+	}
+	//printf("QFT Software tardó: %f segundos\n", myTimerSW.getElapsedTimerInSeconds());
+	//printf("QFT Hardware tardó: %f segundos\n", myTimerHW.getElapsedTimerInSeconds());
+
+	for (j=0;j<M;j++)
+	{
+		printf("%f\n", MEHW[j]);
+	}
+	for (j=0;j<M;j++)
+	{
+		printf("%f\n", MSHW[j]);
+	}
+	for (j=0;j<M;j++)
+	{
+		printf("%f\n", MSSW[j]);
+	}
+
+	printf("%f\n", myTimerSW.getElapsedTimerInSeconds());
+	printf("%f\n", myTimerHW.getElapsedTimerInSeconds());
+
+	return 0;
+}

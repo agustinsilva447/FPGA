@@ -14,104 +14,13 @@ Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ==============================================================
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-==============================================================
-Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-==============================================================
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
 INFO: [HLS 200-10] Analyzing design file 'VQFTAXIBUS/VQFTAXIBUS.c' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:38 . Memory (MB): peak = 194.156 ; gain = 101.969
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:38 . Memory (MB): peak = 194.156 ; gain = 101.969
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:32 . Memory (MB): peak = 194.348 ; gain = 105.121
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:32 . Memory (MB): peak = 194.348 ; gain = 105.121
 INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:08 ; elapsed = 00:00:47 . Memory (MB): peak = 266.207 ; gain = 174.020
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:470) automatically.
-INFO: [XFORM 203-602] Inlining function 'table_lookup_4oPi_hotbm<52, 61>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:496) automatically.
-INFO: [XFORM 203-602] Inlining function 'clz<61, 124, 0>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:524) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:512) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:526) automatically.
-INFO: [XFORM 203-602] Inlining function 'clz' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:435) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::set_mantissa' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:463) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:466) automatically.
-INFO: [XFORM 203-602] Inlining function 'hotbm_::value_list<double>::sin_or_cos_approximation<63, 63>' into 'hotbm_::sin_or_cos<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'hotbm_::sin_or_cos<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:316) automatically.
-INFO: [XFORM 203-602] Inlining function 'hotbm_::cos' into 'cos' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c/sincosdouble.cpp:13) automatically.
-INFO: [XFORM 203-602] Inlining function 'hotbm_::sin' into 'sin' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c/sincosdouble.cpp:8) automatically.
-INFO: [XFORM 203-602] Inlining function 'cos' into 'VQFTAXIBUS' (VQFTAXIBUS/VQFTAXIBUS.c:22) automatically.
-INFO: [XFORM 203-602] Inlining function 'sin' into 'VQFTAXIBUS' (VQFTAXIBUS/VQFTAXIBUS.c:23) automatically.
-WARNING: [SYNCHK 200-23] r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:425: variable-indexed range selection may cause suboptimal QoR.
-INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:09 ; elapsed = 00:00:49 . Memory (MB): peak = 301.816 ; gain = 209.629
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (VQFTAXIBUS/VQFTAXIBUS.c:14) in function 'VQFTAXIBUS' completely with a factor of 16.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (VQFTAXIBUS/VQFTAXIBUS.c:19) in function 'VQFTAXIBUS' completely with a factor of 16.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:00:51 . Memory (MB): peak = 380.090 ; gain = 287.902
-INFO: [HLS 200-472] Inferring partial write operation for 'S' (VQFTAXIBUS/VQFTAXIBUS.c:24:4)
-INFO: [HLS 200-472] Inferring partial write operation for 'S' (VQFTAXIBUS/VQFTAXIBUS.c:25:4)
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:12 ; elapsed = 00:00:53 . Memory (MB): peak = 408.672 ; gain = 316.484
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-10] Synthesizing 'VQFTAXIBUS' ...
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'VQFTAXIBUS' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 70.706 seconds; current allocated memory: 350.714 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 9.944 seconds; current allocated memory: 360.080 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'VQFTAXIBUS' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-500] Setting interface mode on port 'VQFTAXIBUS/E' to 'bram'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'VQFTAXIBUS/S' to 'bram'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'VQFTAXIBUS' to 's_axilite & ap_ctrl_hs'.
-INFO: [RTGEN 206-100] Bundling port 'return' to AXI-Lite port CRTL_BUS.
-INFO: [SYN 201-210] Renamed object name 'VQFTAXIBUS_faddfsub_32ns_32ns_32_4_full_dsp_1' to 'VQFTAXIBUS_faddfsbkb' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'VQFTAXIBUS_fmul_32ns_32ns_32_2_max_dsp_1' to 'VQFTAXIBUS_fmul_3cud' due to the length limit 20
-WARNING: [RTGEN 206-101] Setting dangling out port 'VQFTAXIBUS/E_WEN_A' to 0.
-WARNING: [RTGEN 206-101] Setting dangling out port 'VQFTAXIBUS/E_Din_A' to 0.
-INFO: [RTGEN 206-100] Generating core module 'VQFTAXIBUS_faddfsbkb': 8 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'VQFTAXIBUS_fmul_3cud': 8 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'VQFTAXIBUS'.
-INFO: [HLS 200-111]  Elapsed time: 10.539 seconds; current allocated memory: 369.855 MB.
-INFO: [HLS 200-789] **** Estimated Fmax: 104.92 MHz
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:57 ; elapsed = 00:01:51 . Memory (MB): peak = 478.457 ; gain = 386.270
-INFO: [VHDL 208-304] Generating VHDL RTL for VQFTAXIBUS.
-INFO: [VLOG 209-307] Generating Verilog RTL for VQFTAXIBUS.
-INFO: [HLS 200-112] Total elapsed time: 111.494 seconds; peak allocated memory: 369.855 MB.
-==============================================================
-Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-==============================================================
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-==============================================================
-Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-==============================================================
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
-INFO: [HLS 200-10] Analyzing design file 'VQFTAXIBUS/VQFTAXIBUS.c' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 194.949 ; gain = 104.813
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 194.949 ; gain = 104.813
-INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 265.500 ; gain = 175.363
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:00:38 . Memory (MB): peak = 267.309 ; gain = 178.082
 INFO: [HLS 200-10] Checking synthesizability ...
 INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:470) automatically.
 INFO: [XFORM 203-602] Inlining function 'table_lookup_4oPi_hotbm<52, 61>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:496) automatically.
@@ -129,11 +38,11 @@ INFO: [XFORM 203-602] Inlining function 'cos' into 'VQFTAXIBUS' (VQFTAXIBUS/VQFT
 INFO: [XFORM 203-602] Inlining function 'sin' into 'VQFTAXIBUS' (VQFTAXIBUS/VQFTAXIBUS.c:21) automatically.
 WARNING: [SYNCHK 200-23] r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:425: variable-indexed range selection may cause suboptimal QoR.
 INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:00:26 . Memory (MB): peak = 301.719 ; gain = 211.582
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:00:39 . Memory (MB): peak = 300.719 ; gain = 211.492
 INFO: [HLS 200-489] Unrolling loop 'Loop-1' (VQFTAXIBUS/VQFTAXIBUS.c:12) in function 'VQFTAXIBUS' completely with a factor of 16.
 INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (VQFTAXIBUS/VQFTAXIBUS.c:17) in function 'VQFTAXIBUS' completely with a factor of 16.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:28 . Memory (MB): peak = 380.063 ; gain = 289.926
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:00:29 . Memory (MB): peak = 408.453 ; gain = 318.316
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:42 . Memory (MB): peak = 379.199 ; gain = 289.973
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:00:42 . Memory (MB): peak = 408.598 ; gain = 319.371
 INFO: [HLS 200-10] Starting hardware synthesis ...
 INFO: [HLS 200-10] Synthesizing 'VQFTAXIBUS' ...
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -141,13 +50,13 @@ INFO: [HLS 200-42] -- Implementing module 'VQFTAXIBUS'
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [SCHED 204-11] Starting scheduling ...
 INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 45.334 seconds; current allocated memory: 350.453 MB.
+INFO: [HLS 200-111]  Elapsed time: 58.676 seconds; current allocated memory: 350.532 MB.
 INFO: [BIND 205-100] Starting micro-architecture generation ...
 INFO: [BIND 205-101] Performing variable lifetime analysis.
 INFO: [BIND 205-101] Exploring resource sharing.
 INFO: [BIND 205-101] Binding ...
 INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 8.289 seconds; current allocated memory: 359.850 MB.
+INFO: [HLS 200-111]  Elapsed time: 10.957 seconds; current allocated memory: 359.895 MB.
 INFO: [HLS 200-10] ----------------------------------------------------------------
 INFO: [HLS 200-10] -- Generating RTL for module 'VQFTAXIBUS' 
 INFO: [HLS 200-10] ----------------------------------------------------------------
@@ -160,168 +69,12 @@ INFO: [SYN 201-210] Renamed object name 'VQFTAXIBUS_fmul_32ns_32ns_32_2_max_dsp_
 INFO: [RTGEN 206-100] Generating core module 'VQFTAXIBUS_faddfsbkb': 8 instance(s).
 INFO: [RTGEN 206-100] Generating core module 'VQFTAXIBUS_fmul_3cud': 8 instance(s).
 INFO: [RTGEN 206-100] Finished creating RTL model for 'VQFTAXIBUS'.
-INFO: [HLS 200-111]  Elapsed time: 9.18 seconds; current allocated memory: 369.659 MB.
+INFO: [HLS 200-111]  Elapsed time: 9.69 seconds; current allocated memory: 369.675 MB.
 INFO: [HLS 200-789] **** Estimated Fmax: 104.92 MHz
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:51 ; elapsed = 00:01:20 . Memory (MB): peak = 477.902 ; gain = 387.766
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:54 ; elapsed = 00:01:37 . Memory (MB): peak = 478.348 ; gain = 389.121
 INFO: [VHDL 208-304] Generating VHDL RTL for VQFTAXIBUS.
 INFO: [VLOG 209-307] Generating Verilog RTL for VQFTAXIBUS.
-INFO: [HLS 200-112] Total elapsed time: 80.125 seconds; peak allocated memory: 369.659 MB.
-==============================================================
-Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-==============================================================
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-==============================================================
-Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-==============================================================
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
-INFO: [HLS 200-10] Analyzing design file 'VQFTAXIBUS/VQFTAXIBUS.c' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 194.836 ; gain = 102.660
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:19 . Memory (MB): peak = 194.836 ; gain = 102.660
-INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 265.996 ; gain = 173.820
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:470) automatically.
-INFO: [XFORM 203-602] Inlining function 'table_lookup_4oPi_hotbm<52, 61>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:496) automatically.
-INFO: [XFORM 203-602] Inlining function 'clz<61, 124, 0>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:524) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:512) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:526) automatically.
-INFO: [XFORM 203-602] Inlining function 'clz' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:435) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::set_mantissa' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:463) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:466) automatically.
-INFO: [XFORM 203-602] Inlining function 'hotbm_::value_list<double>::sin_or_cos_approximation<63, 63>' into 'hotbm_::sin_or_cos<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'hotbm_::sin_or_cos<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:316) automatically.
-INFO: [XFORM 203-602] Inlining function 'hotbm_::cos' into 'cos' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c/sincosdouble.cpp:13) automatically.
-INFO: [XFORM 203-602] Inlining function 'hotbm_::sin' into 'sin' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c/sincosdouble.cpp:8) automatically.
-INFO: [XFORM 203-602] Inlining function 'cos' into 'VQFTAXIBUS' (VQFTAXIBUS/VQFTAXIBUS.c:21) automatically.
-INFO: [XFORM 203-602] Inlining function 'sin' into 'VQFTAXIBUS' (VQFTAXIBUS/VQFTAXIBUS.c:22) automatically.
-WARNING: [SYNCHK 200-23] r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:425: variable-indexed range selection may cause suboptimal QoR.
-INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:00:26 . Memory (MB): peak = 302.871 ; gain = 210.695
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (VQFTAXIBUS/VQFTAXIBUS.c:12) in function 'VQFTAXIBUS' completely with a factor of 16.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (VQFTAXIBUS/VQFTAXIBUS.c:18) in function 'VQFTAXIBUS' completely with a factor of 16.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:28 . Memory (MB): peak = 379.699 ; gain = 287.523
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:00:29 . Memory (MB): peak = 408.605 ; gain = 316.430
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-10] Synthesizing 'VQFTAXIBUS' ...
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'VQFTAXIBUS' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 45.103 seconds; current allocated memory: 350.777 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 8.498 seconds; current allocated memory: 360.581 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'VQFTAXIBUS' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-500] Setting interface mode on port 'VQFTAXIBUS/E' to 's_axilite & ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'VQFTAXIBUS/S' to 's_axilite & ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'VQFTAXIBUS' to 's_axilite & ap_ctrl_hs'.
-INFO: [RTGEN 206-100] Bundling port 'return' and 'S' to AXI-Lite port AXILiteS.
-INFO: [SYN 201-210] Renamed object name 'VQFTAXIBUS_faddfsub_32ns_32ns_32_4_full_dsp_1' to 'VQFTAXIBUS_faddfsbkb' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'VQFTAXIBUS_fadd_32ns_32ns_32_4_full_dsp_1' to 'VQFTAXIBUS_fadd_3cud' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'VQFTAXIBUS_fmul_32ns_32ns_32_2_max_dsp_1' to 'VQFTAXIBUS_fmul_3dEe' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'VQFTAXIBUS_fadd_3cud': 3 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'VQFTAXIBUS_faddfsbkb': 13 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'VQFTAXIBUS_fmul_3dEe': 16 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'VQFTAXIBUS'.
-INFO: [HLS 200-111]  Elapsed time: 9.421 seconds; current allocated memory: 370.996 MB.
-INFO: [HLS 200-789] **** Estimated Fmax: 105.94 MHz
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:52 ; elapsed = 00:01:22 . Memory (MB): peak = 480.898 ; gain = 388.723
-INFO: [VHDL 208-304] Generating VHDL RTL for VQFTAXIBUS.
-INFO: [VLOG 209-307] Generating Verilog RTL for VQFTAXIBUS.
-INFO: [HLS 200-112] Total elapsed time: 81.862 seconds; peak allocated memory: 370.996 MB.
-==============================================================
-Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-==============================================================
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-INFO: [SIM 211-1] CSim done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
-==============================================================
-Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
-Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
-==============================================================
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
-INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
-INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
-INFO: [HLS 200-10] Analyzing design file 'VQFTAXIBUS/VQFTAXIBUS.c' ... 
-INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 195.121 ; gain = 105.363
-INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:04 ; elapsed = 00:00:18 . Memory (MB): peak = 195.121 ; gain = 105.363
-INFO: [HLS 200-10] Starting code transformations ...
-INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:07 ; elapsed = 00:00:24 . Memory (MB): peak = 265.328 ; gain = 175.570
-INFO: [HLS 200-10] Checking synthesizability ...
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::expv' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:470) automatically.
-INFO: [XFORM 203-602] Inlining function 'table_lookup_4oPi_hotbm<52, 61>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:496) automatically.
-INFO: [XFORM 203-602] Inlining function 'clz<61, 124, 0>' into 'range_redux_payne_hanek_hotbm<61, double, 63, 63>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint/hls_range_redux.h:524) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::data' into 'fp_struct<double>::to_double' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:512) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_double' into 'fp_struct<double>::to_ieee' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_utils.h:526) automatically.
-INFO: [XFORM 203-602] Inlining function 'clz' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:435) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::set_mantissa' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:463) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'scaled_fixed2ieee<63, 1>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:466) automatically.
-INFO: [XFORM 203-602] Inlining function 'hotbm_::value_list<double>::sin_or_cos_approximation<63, 63>' into 'hotbm_::sin_or_cos<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:279) automatically.
-INFO: [XFORM 203-602] Inlining function 'fp_struct<double>::to_ieee' into 'hotbm_::sin_or_cos<double>' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/include/FloatingPoint\hls_hotbm.h:316) automatically.
-INFO: [XFORM 203-602] Inlining function 'hotbm_::cos' into 'cos' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c/sincosdouble.cpp:13) automatically.
-INFO: [XFORM 203-602] Inlining function 'hotbm_::sin' into 'sin' (r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/hlsmath/src/c/sincosdouble.cpp:8) automatically.
-INFO: [XFORM 203-602] Inlining function 'cos' into 'VQFTAXIBUS' (VQFTAXIBUS/VQFTAXIBUS.c:20) automatically.
-INFO: [XFORM 203-602] Inlining function 'sin' into 'VQFTAXIBUS' (VQFTAXIBUS/VQFTAXIBUS.c:21) automatically.
-WARNING: [SYNCHK 200-23] r:/builds/2019.2/continuous/2019_11_06_2708876/src/products/hls/hls_lib/src/hls\utils/x_hls_float_utils.h:425: variable-indexed range selection may cause suboptimal QoR.
-INFO: [SYNCHK 200-10] 0 error(s), 1 warning(s).
-INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:08 ; elapsed = 00:00:25 . Memory (MB): peak = 301.430 ; gain = 211.672
-INFO: [HLS 200-489] Unrolling loop 'Loop-1' (VQFTAXIBUS/VQFTAXIBUS.c:12) in function 'VQFTAXIBUS' completely with a factor of 16.
-INFO: [HLS 200-489] Unrolling loop 'Loop-1.1' (VQFTAXIBUS/VQFTAXIBUS.c:17) in function 'VQFTAXIBUS' completely with a factor of 16.
-INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:10 ; elapsed = 00:00:28 . Memory (MB): peak = 379.230 ; gain = 289.473
-INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:11 ; elapsed = 00:00:29 . Memory (MB): peak = 407.340 ; gain = 317.582
-INFO: [HLS 200-10] Starting hardware synthesis ...
-INFO: [HLS 200-10] Synthesizing 'VQFTAXIBUS' ...
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-42] -- Implementing module 'VQFTAXIBUS' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [SCHED 204-11] Starting scheduling ...
-INFO: [SCHED 204-11] Finished scheduling.
-INFO: [HLS 200-111]  Elapsed time: 44.884 seconds; current allocated memory: 350.453 MB.
-INFO: [BIND 205-100] Starting micro-architecture generation ...
-INFO: [BIND 205-101] Performing variable lifetime analysis.
-INFO: [BIND 205-101] Exploring resource sharing.
-INFO: [BIND 205-101] Binding ...
-INFO: [BIND 205-100] Finished micro-architecture generation.
-INFO: [HLS 200-111]  Elapsed time: 8.206 seconds; current allocated memory: 359.851 MB.
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [HLS 200-10] -- Generating RTL for module 'VQFTAXIBUS' 
-INFO: [HLS 200-10] ----------------------------------------------------------------
-INFO: [RTGEN 206-500] Setting interface mode on port 'VQFTAXIBUS/E' to 's_axilite & ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on port 'VQFTAXIBUS/S' to 's_axilite & ap_memory'.
-INFO: [RTGEN 206-500] Setting interface mode on function 'VQFTAXIBUS' to 's_axilite & ap_ctrl_hs'.
-INFO: [RTGEN 206-100] Bundling port 'return' and 'S' to AXI-Lite port AXILiteS.
-INFO: [SYN 201-210] Renamed object name 'VQFTAXIBUS_faddfsub_32ns_32ns_32_4_full_dsp_1' to 'VQFTAXIBUS_faddfsbkb' due to the length limit 20
-INFO: [SYN 201-210] Renamed object name 'VQFTAXIBUS_fmul_32ns_32ns_32_2_max_dsp_1' to 'VQFTAXIBUS_fmul_3cud' due to the length limit 20
-INFO: [RTGEN 206-100] Generating core module 'VQFTAXIBUS_faddfsbkb': 8 instance(s).
-INFO: [RTGEN 206-100] Generating core module 'VQFTAXIBUS_fmul_3cud': 8 instance(s).
-INFO: [RTGEN 206-100] Finished creating RTL model for 'VQFTAXIBUS'.
-INFO: [HLS 200-111]  Elapsed time: 9.214 seconds; current allocated memory: 369.660 MB.
-INFO: [HLS 200-789] **** Estimated Fmax: 104.92 MHz
-INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:52 ; elapsed = 00:01:20 . Memory (MB): peak = 477.980 ; gain = 388.223
-INFO: [VHDL 208-304] Generating VHDL RTL for VQFTAXIBUS.
-INFO: [VLOG 209-307] Generating Verilog RTL for VQFTAXIBUS.
-INFO: [HLS 200-112] Total elapsed time: 80.371 seconds; peak allocated memory: 369.660 MB.
+INFO: [HLS 200-112] Total elapsed time: 97.368 seconds; peak allocated memory: 369.675 MB.
 ==============================================================
 Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.

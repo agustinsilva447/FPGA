@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="synth_1" LaunchPart="xczu9eg-ffvb1156-2-e" LaunchTime="1628882746">
+<GenRun Id="synth_1" LaunchPart="xczu9eg-ffvb1156-2-e" LaunchTime="1628933220">
   <File Type="PA-TCL" Name="VQFTAXIBUS_wrapper.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="VQFTAXIBUS_wrapper_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="VQFTAXIBUS_wrapper_reports.tcl"/>
@@ -48,12 +48,12 @@
     </StratHandle>
     <Step Id="synth_design"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="VQFTAXIBUS_VQFTAXIBUS_0_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="VQFTAXIBUS_auto_ds_1"/>
-  <BlockFileSet Type="BlockSrcs" Name="VQFTAXIBUS_rst_ps8_0_99M_0"/>
   <BlockFileSet Type="BlockSrcs" Name="VQFTAXIBUS_auto_pc_0"/>
   <BlockFileSet Type="BlockSrcs" Name="VQFTAXIBUS_xbar_0"/>
-  <BlockFileSet Type="BlockSrcs" Name="VQFTAXIBUS_zynq_ultra_ps_e_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="VQFTAXIBUS_auto_ds_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="VQFTAXIBUS_VQFTAXIBUS_0_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="VQFTAXIBUS_rst_ps8_0_99M_0"/>
+  <BlockFileSet Type="BlockSrcs" Name="VQFTAXIBUS_auto_ds_1"/>
   <BlockFileSet Type="BlockSrcs" Name="VQFTAXIBUS_auto_pc_1"/>
+  <BlockFileSet Type="BlockSrcs" Name="VQFTAXIBUS_zynq_ultra_ps_e_0_0"/>
 </GenRun>

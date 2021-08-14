@@ -6,7 +6,7 @@
 open_project VQFTAXIBUS
 set_top VQFTAXIBUS
 add_files VQFTAXIBUS/VQFTAXIBUS.c
-add_files -tb VQFTAXIBUS/VQFTAXIBUS_test.c
+add_files -tb VQFTAXIBUS/VQFTAXIBUS_tb.c
 open_solution "solution1"
 set_part {xczu9eg-ffvb1156-2-e}
 create_clock -period 10 -name default

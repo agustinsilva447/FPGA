@@ -43,7 +43,7 @@ set TargetInfo xczu9eg:-ffvb1156:-2-e
 set SourceFiles {sc {} c ../VQFTAXIBUS.c}
 set SourceFlags {sc {} c {{}}}
 set DirectiveFile C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/solution1/solution1.directive
-set TBFiles {verilog ../VQFTAXIBUS_test.c bc ../VQFTAXIBUS_test.c vhdl ../VQFTAXIBUS_test.c sc ../VQFTAXIBUS_test.c cas ../VQFTAXIBUS_test.c c {}}
+set TBFiles {verilog ../VQFTAXIBUS_tb.c bc ../VQFTAXIBUS_tb.c vhdl ../VQFTAXIBUS_tb.c sc ../VQFTAXIBUS_tb.c cas ../VQFTAXIBUS_tb.c c {}}
 set SpecLanguage C
 set TVInFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}
 set TVOutFiles {bc {} c {} sc {} cas {} vhdl {} verilog {}}

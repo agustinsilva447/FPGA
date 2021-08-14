@@ -1550,16 +1550,16 @@
           "ps8_0_axi_periph/S00_AXI"
         ]
       },
-      "ps8_0_axi_periph_M00_AXI": {
-        "interface_ports": [
-          "ps8_0_axi_periph/M00_AXI",
-          "VQFTAXIBUS_0/s_axi_AXILiteS"
-        ]
-      },
       "zynq_ultra_ps_e_0_M_AXI_HPM1_FPD": {
         "interface_ports": [
           "zynq_ultra_ps_e_0/M_AXI_HPM1_FPD",
           "ps8_0_axi_periph/S01_AXI"
+        ]
+      },
+      "ps8_0_axi_periph_M00_AXI": {
+        "interface_ports": [
+          "ps8_0_axi_periph/M00_AXI",
+          "VQFTAXIBUS_0/s_axi_AXILiteS"
         ]
       }
     },

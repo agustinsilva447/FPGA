@@ -9,11 +9,12 @@
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source VQFTAXIBUS_auto_pc_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:05 ; elapsed = 00:00:11 . Memory (MB): peak = 388.516 ; gain = 88.180
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/solution1'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
-update_ip_catalog: Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 429.207 ; gain = 40.223
+update_ip_catalog: Time (s): cpu = 00:00:07 ; elapsed = 00:00:11 . Memory (MB): peak = 428.969 ; gain = 40.453
 WARNING: [IP_Flow 19-4995] The host OS only allows 260 characters in a normal path. The IP cache path is more than 80 characters. If you experience issues with IP caching, please consider changing the IP cache to a location with a shorter path. Alternately consider using the OS subst command to map part of the path to a drive letter. 
 Current IP cache path is c:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS.cache/ip 
 INFO: [IP_Flow 19-4838] Using cached IP synthesis design for IP VQFTAXIBUS_auto_pc_0, cache-ID = a5e5034dfe4c2331.
-INFO: [Common 17-206] Exiting Vivado at Fri Aug 13 21:35:01 2021...
+INFO: [Common 17-206] Exiting Vivado at Sat Aug 14 11:33:10 2021...

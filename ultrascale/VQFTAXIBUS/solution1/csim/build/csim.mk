@@ -18,7 +18,7 @@ __SIM_DDS__ = 1
 
 ObjDir = obj
 
-HLS_SOURCES = ../../../VQFTAXIBUS_test.c ../../../VQFTAXIBUS.c
+HLS_SOURCES = ../../../VQFTAXIBUS_tb.c ../../../VQFTAXIBUS.c
 
 TARGET := csim.exe
 
@@ -73,11 +73,11 @@ all: $(TARGET)
 
 AUTOCC := cmd //c apcc.bat  
 
-$(ObjDir)/VQFTAXIBUS_test.o: ../../../VQFTAXIBUS_test.c $(ObjDir)/.dir
-	$(Echo) "   Compiling(apcc) ../../../VQFTAXIBUS_test.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
+$(ObjDir)/VQFTAXIBUS_tb.o: ../../../VQFTAXIBUS_tb.c $(ObjDir)/.dir
+	$(Echo) "   Compiling(apcc) ../../../VQFTAXIBUS_tb.c in $(BuildMode) mode" $(AVE_DIR_DLOG)
 	$(Verb)  $(AUTOCC) -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
--include $(ObjDir)/VQFTAXIBUS_test.d
+-include $(ObjDir)/VQFTAXIBUS_tb.d
 
 $(ObjDir)/VQFTAXIBUS.o: ../../../VQFTAXIBUS.c $(ObjDir)/.dir
 	$(Echo) "   Compiling(apcc) ../../../VQFTAXIBUS.c in $(BuildMode) mode" $(AVE_DIR_DLOG)

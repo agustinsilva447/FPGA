@@ -47,7 +47,7 @@
 -- DO NOT MODIFY THIS FILE.
 
 -- IP VLNV: xilinx.com:hls:VQFTAXIBUS:1.0
--- IP Revision: 2108132117
+-- IP Revision: 2108141117
 
 LIBRARY ieee;
 USE ieee.std_logic_1164.ALL;

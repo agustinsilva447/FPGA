@@ -1,0 +1,40 @@
+13:23:15 **** Incremental Build of configuration Debug for project VQFTAXIBUS ****
+make all 
+'Building file: ../src/src/main.c'
+'Invoking: ARM v8 gcc compiler'
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/src/main.o" -IC:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/export/VQFTAXIBUS_wrapper/sw/VQFTAXIBUS_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/src/main.d" -MT"src/src/main.o" -o "src/src/main.o" "../src/src/main.c"
+In file included from ../src/src/main.c:5:
+C:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/export/VQFTAXIBUS_wrapper/sw/VQFTAXIBUS_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
+ #pragma message ("For the sleep routines, Global timer is being used")
+         ^~~~~~~
+../src/src/main.c: In function 'main':
+../src/src/main.c:113:49: warning: pointer targets in passing argument 3 of 'XVqftaxibus_Write_E_Words' differ in signedness [-Wpointer-sign]
+     XVqftaxibus_Write_E_Words(&goVqftaxibus, 0, E_uint, 2*M);
+                                                 ^~~~~~
+In file included from ../src/src/main.c:9:
+../src/src/xvqftaxibus.h:92:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ u32 XVqftaxibus_Write_E_Words(XVqftaxibus *InstancePtr, int offset, int *data, int length);
+     ^~~~~~~~~~~~~~~~~~~~~~~~~
+../src/src/main.c:121:45: warning: pointer targets in passing argument 3 of 'XVqftaxibus_Read_S_Words' differ in signedness [-Wpointer-sign]
+  XVqftaxibus_Read_S_Words(&goVqftaxibus, 0, S_uint, 2*M);
+                                             ^~~~~~
+In file included from ../src/src/main.c:9:
+../src/src/xvqftaxibus.h:102:5: note: expected 'int *' but argument is of type 'unsigned int *'
+ u32 XVqftaxibus_Read_S_Words(XVqftaxibus *InstancePtr, int offset, int *data, int length);
+     ^~~~~~~~~~~~~~~~~~~~~~~~
+'Finished building: ../src/src/main.c'
+' '
+'Building target: VQFTAXIBUS.elf'
+'Invoking: ARM v8 gcc linker'
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/aguss/Desktop/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/VQFTAXIBUS_wrapper/export/VQFTAXIBUS_wrapper/sw/VQFTAXIBUS_wrapper/standalone_domain/bsplib/lib -o "VQFTAXIBUS.elf"  ./src/src/main.o ./src/src/xvqftaxibus.o ./src/src/xvqftaxibus_linux.o ./src/src/xvqftaxibus_sinit.o   -lm -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: VQFTAXIBUS.elf'
+' '
+'Invoking: ARM v8 Print Size'
+aarch64-none-elf-size VQFTAXIBUS.elf  |tee "VQFTAXIBUS.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  87064	   4568	  20816	 112448	  1b740	VQFTAXIBUS.elf
+'Finished building: VQFTAXIBUS.elf.size'
+' '
+
+13:23:17 Build Finished (took 2s.387ms)
+

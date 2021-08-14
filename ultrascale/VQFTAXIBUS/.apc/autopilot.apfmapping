@@ -4,6 +4,6 @@
     <originFiles name="VQFTAXIBUS.c" path="C:\Users\aguss\Desktop\Github\FPGA\ultrascale\VQFTAXIBUS\VQFTAXIBUS.c"/>
   </source>
   <testbench>
-    <originFiles name="VQFTAXIBUS_test.c" path="C:\Users\aguss\Desktop\Github\FPGA\ultrascale\VQFTAXIBUS\VQFTAXIBUS_test.c"/>
+    <originFiles name="VQFTAXIBUS_tb.c" path="C:\Users\aguss\Desktop\Github\FPGA\ultrascale\VQFTAXIBUS\VQFTAXIBUS_tb.c"/>
   </testbench>
 </autopilotfilemapping:AutoPilotFileMapping>

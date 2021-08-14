@@ -60,8 +60,8 @@ all : $(TARGET)
 
 AUTOCC := cmd //c apcc.bat
 
-$(ObjDir)/VQFTAXIBUS_test.c_pre.c.tb.o : VQFTAXIBUS_test.c_pre.c.tb.c $(ObjDir)/.dir
-	$(Echo) "   Compiling (apcc) VQFTAXIBUS_test.c_pre.c.tb.c" $(AVE_DIR_DLOG)
+$(ObjDir)/VQFTAXIBUS_tb.c_pre.c.tb.o : VQFTAXIBUS_tb.c_pre.c.tb.c $(ObjDir)/.dir
+	$(Echo) "   Compiling (apcc) VQFTAXIBUS_tb.c_pre.c.tb.c" $(AVE_DIR_DLOG)
 	$(Verb) $(AUTOCC) -fno-builtin-isinf -fno-builtin-isnan -c $(IFLAG) $(DFLAG) $< -o $@; \
 
 $(ObjDir)/VQFTAXIBUS.c_pre.c.tb.o : VQFTAXIBUS.c_pre.c.tb.c $(ObjDir)/.dir
