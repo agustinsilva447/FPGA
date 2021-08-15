@@ -189,3 +189,18 @@ con
 ----------------End of Script----------------
 
 13:23:57 INFO  : Disconnected from the channel tcfchan#4.
+18:12:30 INFO  : Launching XSCT server: xsct -n  -interactive /home/agustinsilva447/Escritorio/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/temp_xsdb_launch_script.tcl
+18:12:39 INFO  : XSCT server has started successfully.
+18:12:39 INFO  : Successfully done setting XSCT server connection channel  
+18:12:39 INFO  : plnx-install-location is set to ''
+18:12:39 INFO  : Successfully done setting workspace for the tool. 
+18:12:47 INFO  : Successfully done query RDI_DATADIR 
+18:12:49 INFO  : Registering command handlers for Vitis TCF services
+18:14:37 INFO  : Launching XSCT server: xsct -n  -interactive /home/agustinsilva447/Escritorio/Github/FPGA/ultrascale/VQFTAXIBUS/VQFTAXIBUS/temp_xsdb_launch_script.tcl
+18:14:42 INFO  : Registering command handlers for Vitis TCF services
+18:14:44 INFO  : XSCT server has started successfully.
+18:14:44 INFO  : Successfully done setting XSCT server connection channel  
+18:14:44 INFO  : Successfully done setting workspace for the tool. 
+18:14:44 INFO  : plnx-install-location is set to ''
+18:14:44 INFO  : Successfully done query RDI_DATADIR 
+18:15:29 ERROR : An unexpected exception occurred in the module 'reading platform'

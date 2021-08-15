@@ -1,16 +1,15 @@
 #include <stdio.h>
 #include <math.h>
 
-#define L 4			//Cantidad de quits
-#define K 2*4		//Dos por la cantidad de qubits
-#define Q 2*2*2*2		//Dos elevado a la cantidad de qubits
+#define L 4			
+#define K 2*4		
+#define Q 2*2*2*2	
 
 void VQFTAXIBUS(float E[2*Q], float S[2*Q]);
 
     int main ()
     {
     	int j;
-    	float P[2*K];
     	float E[2*Q];
     	float S[2*Q];
 
