@@ -18,14 +18,14 @@ def block(a, k, n, u_0, sol_list, flag):
         a.append(counter(a, k, n, u_0))
         u_0 = 1
         if a[-1] == 0:
-            a.pop()
             k -= 1
+            a.pop()
             if not a:
                 flag = 1
                 return a, u_0, k, sol_list, flag
             u_0 = a[-1] + 1
-            a.pop()
             k -= 1
+            a.pop()
         k += 1
         #print(a)
         if len(a) == n:
@@ -34,7 +34,7 @@ def block(a, k, n, u_0, sol_list, flag):
             return a, u_0, k, sol_list, flag
 
 tiempos = []
-n_max = int(input("Ingrese el maximo del tablero: "))
+n_max = int(input("Ingrese el maximo del tablero: ")) + 1
 for n in range(n_max):
     sol_list = []
     flag = 0
@@ -47,8 +47,8 @@ for n in range(n_max):
         a_0, u_0, k, sol_list, flag = block(a, k, n, u_0, sol_list, flag)
     t_tot = time() - t_1
     tiempos.append(t_tot)
-    print("Solutions: {}".format(sol_list))
-    print("Total number of solutions for {} queens: {}".format(len(sol_list), n))
+    print("----------> Total number of solutions for {} queens: {}".format(n, len(sol_list)))
+    #print("Solutions: {}".format(sol_list))
 
 print(tiempos)
 plt.plot(tiempos)
