@@ -10,7 +10,8 @@ def counter(a, k, n, u_0):
                 count += 1
         if count == k:
             return u
-    return 0
+    else:
+        return 0
 
 def block(a, k, n, u_0, sol_list, flag):
     while (1):
@@ -34,9 +35,7 @@ def block(a, k, n, u_0, sol_list, flag):
             return a, u_0, k, sol_list, flag
 
 tiempos = []
-#n_max = int(input("Ingrese el maximo del tablero: ")) + 1
-n_max = 10
-
+n_max = int(input("Ingrese el maximo del tablero: ")) + 1
 for n in range(n_max):
     sol_list = []
     flag = 0

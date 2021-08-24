@@ -1,0 +1,32 @@
+Ingrese el maximo del tablero: 14
+----------> Total number of solutions for 0 queens: 1
+----------> Total number of solutions for 1 queens: 0
+----------> Total number of solutions for 2 queens: 0
+----------> Total number of solutions for 3 queens: 0
+----------> Total number of solutions for 4 queens: 2
+----------> Total number of solutions for 5 queens: 10
+----------> Total number of solutions for 6 queens: 4
+----------> Total number of solutions for 7 queens: 40
+----------> Total number of solutions for 8 queens: 92
+----------> Total number of solutions for 9 queens: 352
+----------> Total number of solutions for 10 queens: 724
+----------> Total number of solutions for 11 queens: 2680
+----------> Total number of solutions for 12 queens: 14200
+----------> Total number of solutions for 13 queens: 73712
+----------> Total number of solutions for 14 queens: 365596
+
+[0.0, 
+ 0.0, 
+ 0.0, 
+ 0.0, 
+ 0.0, 
+ 0.0, 
+ 0.01087045669555664, 
+ 0.019077777862548828, 
+ 0.09999847412109375, 
+ 0.5199925899505615, 
+ 2.7499496936798096, 
+ 15.868974685668945, 
+ 100.09121632575989, 
+ 662.93603515625, 
+ 4499.319698810577]
