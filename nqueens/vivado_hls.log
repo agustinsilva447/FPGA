@@ -1,0 +1,13 @@
+INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/vivado_hls.exe'
+INFO: [HLS 200-10] For user 'mlabadm' on host 'hp6g4-mlab-2' (Windows NT_amd64 version 6.2) on Tue Aug 24 16:59:06 +0200 2021
+INFO: [HLS 200-10] In directory 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens'
+Sourcing Tcl script 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/csim.tcl'
+INFO: [HLS 200-10] Opening project 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens'.
+INFO: [HLS 200-10] Opening solution 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+make: 'csim.exe' is up to date.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************

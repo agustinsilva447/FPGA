@@ -26,31 +26,23 @@ def block(a, k, n, u_0, sol_list, flag):
             a.pop()
             k -= 1
         k += 1
-        #print(a)
+        print(a)
         if len(a) == n:
-            #sol_list.append(np.copy(a))
-            sol_list.append(0)
-            #print('---> SOLUTION NUMBER {}'.format(len(sol_list)))
+            sol_list.append(np.copy(a))
+            print('---> SOLUTION NUMBER {}'.format(len(sol_list)))
             return a, u_0, k, sol_list, flag
 
 tiempos = []
-n_max = int(input("Ingrese el maximo del tablero: ")) + 1
-
-
-for n in range(n_max):
-    sol_list = []
-    flag = 0
-    a = [1]
-    u_0 = 1
-    k = 1
-    t_1 = time()
-    while not flag:
-        a, u_0, k, sol_list, flag = block(a, k, n, u_0, sol_list, flag)
-    t_tot = time() - t_1
-    tiempos.append(t_tot)
-    print("----------> Total number of solutions for {} queens: {}".format(n, len(sol_list)))
-    #print("Solutions: {}".format(sol_list))
-
-print(tiempos)
-plt.plot(tiempos)
-plt.show()
+n = 6
+sol_list = []
+flag = 0
+a = [1]
+u_0 = 1
+k = 1
+t_1 = time()
+while not flag:
+    a, u_0, k, sol_list, flag = block(a, k, n, u_0, sol_list, flag)
+t_tot = time() - t_1
+tiempos.append(t_tot)
+print("----------> Total number of solutions for {} queens: {}".format(n, len(sol_list)))
+print("Solutions: {}".format(sol_list))
