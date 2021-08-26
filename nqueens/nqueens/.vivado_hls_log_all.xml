@@ -6,18 +6,15 @@
       <simLog/>
       <mgLog/>
       <packageLog/>
-      <csimLog>
-        <logs message="ERROR: [SIM 211-100] CSim failed with errors." projectName="nqueens" solutionName="solution1" date="2021-08-24T16:53:59.962+0200"/>
-        <logs message="@E Simulation failed: SIGSEGV." projectName="nqueens" solutionName="solution1" date="2021-08-24T16:53:59.952+0200"/>
-      </csimLog>
+      <csimLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
       <synLog>
-        <logs message="WARNING: [RTGEN 206-101] Port 'nqueens/flag' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="nqueens" solutionName="solution1" date="2021-08-24T16:53:33.893+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Port 'nqueens/sol_list' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="nqueens" solutionName="solution1" date="2021-08-24T16:53:33.883+0200" type="Warning"/>
-        <logs message="WARNING: [RTGEN 206-101] Port 'nqueens/u_0' has no fanin or fanout and is left dangling.&#xD;&#xA;               Please use C simulation to confirm this function argument can be read from or written to." projectName="nqueens" solutionName="solution1" date="2021-08-24T16:53:33.883+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln8', nqueens/nqueens.cpp:8)) in the first pipeline iteration (II = 1 cycles)." projectName="nqueens" solutionName="solution1" date="2021-08-26T12:12:47.145+0200" type="Warning"/>
+        <logs message="WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln8', nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:18)) in the first pipeline iteration (II = 1 cycles)." projectName="nqueens" solutionName="solution1" date="2021-08-26T12:12:46.992+0200" type="Warning"/>
+        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-2' (nqueens/nqueens.cpp:19:18) in function 'counter' : &#xD;&#xA;&#xD;&#xA;the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop." projectName="nqueens" solutionName="solution1" date="2021-08-26T12:12:46.946+0200" type="Warning"/>
       </synLog>
       <simLog/>
       <mgLog/>

@@ -151,8 +151,6 @@ extern "C" {
 # 9 "<command line>" 2
 # 1 "<built-in>" 2
 # 1 "nqueens/nqueens.cpp" 2
-# 1 "C:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/../lib/clang/3.1/include\\stdbool.h" 1 3 4
-# 2 "nqueens/nqueens.cpp" 2
 # 1 "C:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdlib.h" 1 3
 
 
@@ -867,16 +865,29 @@ void * __mingw_aligned_realloc (void *_Memory, size_t _Size, size_t _Offset);
 
 #pragma pack(pop)
 # 630 "C:/Xilinx/Vivado/2019.2/win64/tools/clang/bin/../lib/clang/3.1/../../../x86_64-w64-mingw32/include\\stdlib.h" 2 3
-# 3 "nqueens/nqueens.cpp" 2
+# 2 "nqueens/nqueens.cpp" 2
 
 
-int counter(int a[6], int k, int n_0, int u_0)
-{_ssdm_SpecArrayDimSize(a, 6);
- int count;
- for (int u = 1; u<6; u++){
+int find_0(int a[8])
+{_ssdm_SpecArrayDimSize(a, 8);
+ for(int i = 0; i<8; i++){
+#pragma HLS PIPELINE
+ if (a[i] == 0){
+   return i;
+  }
+ }
+ return 8;
+}
+
+int counter(int a[8], int k, int n_0, int u_0)
+{_ssdm_SpecArrayDimSize(a, 8);
+ int count, f;
+ f = find_0(a);
+ for (int u = u_0; u<8 +1; u++){
   count = 0;
-  for (int j = 0; j<n_0; j++){
-   if ((u != a[j]) and (abs(u - a[j]) != (k - j))){
+  for (int j = 0; j<f; j++){
+#pragma HLS PIPELINE
+ if ((u != a[j]) && (abs(u - a[j]) != (k - j))){
     count = count + 1;
    }
   }
@@ -887,26 +898,30 @@ int counter(int a[6], int k, int n_0, int u_0)
  return 0;
 }
 
-void nqueens(int a[6], int k, int n_0, int u_0, int sol_list, bool flag)
-{_ssdm_SpecArrayDimSize(a, 6);
+void nqueens(int a[8], int *k, int *u_0, int *sol_list, int *flag)
+{_ssdm_SpecArrayDimSize(a, 8);
+#pragma HLS INTERFACE s_axilite port=&flag
+#pragma HLS INTERFACE s_axilite port=&sol_list
+#pragma HLS INTERFACE s_axilite port=&u_0
+#pragma HLS INTERFACE s_axilite port=&k
+#pragma HLS INTERFACE s_axilite port=&a
+#pragma HLS INTERFACE s_axilite port=return
  while (1){
-  a[k] = counter(a, k, n_0, u_0);
-  u_0 = 1;
-  if (a[n_0] == 0){
-   n_0 = n_0 - 1;
-   k = k - 1;
-   if (n_0 == 0){
-    flag = 1;
+  a[*k] = counter(a, *k, 8, *u_0);
+  *u_0 = 1;
+  if (a[*k] == 0){
+   *k = *k - 1;
+   if (find_0(a) == 0){
+    *flag = 1;
     break;
    }
-   u_0 = a[n_0] + 1;
-   a[n_0] = 0;
-   n_0 = n_0 - 1;
-   k = k - 1;
+   *u_0 = a[*k] + 1;
+   a[*k] = 0;
+   *k = *k - 1;
   }
-  k = k + 1;
-  if (n_0 == 6){
-   sol_list = sol_list + 1;
+  *k = *k + 1;
+  if (find_0(a) == 8){
+   *sol_list = *sol_list + 1;
    break;
   }
  }

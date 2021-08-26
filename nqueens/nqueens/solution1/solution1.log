@@ -269,3 +269,1389 @@ INFO: [SIM 211-2] *************** CSIM start ***************
 INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
 INFO: [SIM 211-1] CSim file generation done with 0 errors.
 INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim file generation done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'nqueens/nqueens.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 194.969 ; gain = 105.000
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 194.969 ; gain = 105.000
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 194.969 ; gain = 105.000
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 194.969 ; gain = 105.000
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:19) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (nqueens/nqueens.cpp:23:4) to (nqueens/nqueens.cpp:22:24) in function 'counter'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:14 . Memory (MB): peak = 194.969 ; gain = 105.000
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:15 . Memory (MB): peak = 194.969 ; gain = 105.000
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nqueens' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 14.677 seconds; current allocated memory: 127.975 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.068 seconds; current allocated memory: 128.193 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'find_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.072 seconds; current allocated memory: 128.260 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.046 seconds; current allocated memory: 128.331 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.062 seconds; current allocated memory: 128.434 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.067 seconds; current allocated memory: 128.579 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'counter'.
+INFO: [HLS 200-111]  Elapsed time: 0.117 seconds; current allocated memory: 128.929 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'find_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'find_0'.
+INFO: [HLS 200-111]  Elapsed time: 0.16 seconds; current allocated memory: 129.186 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/a' to 'ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/k' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/u_0' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/sol_list' to 'ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/flag' to 'ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nqueens' to 'ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nqueens'.
+INFO: [HLS 200-111]  Elapsed time: 0.109 seconds; current allocated memory: 129.546 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 241.02 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:17 . Memory (MB): peak = 208.516 ; gain = 118.547
+INFO: [VHDL 208-304] Generating VHDL RTL for nqueens.
+INFO: [VLOG 209-307] Generating Verilog RTL for nqueens.
+INFO: [HLS 200-112] Total elapsed time: 16.549 seconds; peak allocated memory: 129.546 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'nqueens/nqueens.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.660 ; gain = 105.148
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.660 ; gain = 105.148
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.660 ; gain = 105.148
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:20) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.660 ; gain = 105.148
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'counter' (nqueens/nqueens.cpp:17).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'find_0' (nqueens/nqueens.cpp:6).
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-1' (nqueens/nqueens.cpp:8) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1' (nqueens/nqueens.cpp:21) in function 'counter' completely: variable loop bound.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1.1' (nqueens/nqueens.cpp:24) in function 'counter': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (nqueens/nqueens.cpp:8) in function 'find_0' completely with a factor of 8.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (nqueens/nqueens.cpp:6:16) to (nqueens/nqueens.cpp:15:1) in function 'find_0'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (nqueens/nqueens.cpp:24:29) to (nqueens/nqueens.cpp:24:24) in function 'counter'... converting 3 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'nqueens' (nqueens/nqueens.cpp:51) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'nqueens' (nqueens/nqueens.cpp:37)...12 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.660 ; gain = 105.148
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (nqueens/nqueens.cpp:21:18) in function 'counter' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.660 ; gain = 105.148
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nqueens' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Function contains subloop(s) not being unrolled.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 8.033 seconds; current allocated memory: 119.685 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.086 seconds; current allocated memory: 120.005 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-67] Unable to satisfy pipeline directive: subfunction 'counter' is not pipelined.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.145 seconds; current allocated memory: 120.423 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.128 seconds; current allocated memory: 120.845 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'counter'.
+INFO: [HLS 200-111]  Elapsed time: 0.164 seconds; current allocated memory: 121.541 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/a' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/k' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/u_0' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/sol_list' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/flag' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nqueens' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'a', 'u_0', 'sol_list' and 'flag' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nqueens'.
+INFO: [HLS 200-111]  Elapsed time: 0.318 seconds; current allocated memory: 122.516 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 241.02 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 194.660 ; gain = 105.148
+INFO: [VHDL 208-304] Generating VHDL RTL for nqueens.
+INFO: [VLOG 209-307] Generating Verilog RTL for nqueens.
+INFO: [HLS 200-112] Total elapsed time: 10.09 seconds; peak allocated memory: 122.516 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-322] Starting VHDL simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'nqueens/nqueens.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 195.047 ; gain = 104.770
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 195.047 ; gain = 104.770
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 195.047 ; gain = 104.770
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:20) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 195.047 ; gain = 104.770
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'counter' (nqueens/nqueens.cpp:17).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'find_0' (nqueens/nqueens.cpp:6).
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-1' (nqueens/nqueens.cpp:8) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1' (nqueens/nqueens.cpp:21) in function 'counter' completely: variable loop bound.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1.1' (nqueens/nqueens.cpp:23) in function 'counter': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (nqueens/nqueens.cpp:8) in function 'find_0' completely with a factor of 8.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (nqueens/nqueens.cpp:6:16) to (nqueens/nqueens.cpp:15:1) in function 'find_0'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (nqueens/nqueens.cpp:23:29) to (nqueens/nqueens.cpp:23:24) in function 'counter'... converting 3 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'nqueens' (nqueens/nqueens.cpp:50) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'nqueens' (nqueens/nqueens.cpp:36)...12 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 195.047 ; gain = 104.770
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (nqueens/nqueens.cpp:21:18) in function 'counter' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 195.047 ; gain = 104.770
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nqueens' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Function contains subloop(s) not being unrolled.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 8.135 seconds; current allocated memory: 119.642 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.083 seconds; current allocated memory: 119.957 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-67] Unable to satisfy pipeline directive: subfunction 'counter' is not pipelined.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.156 seconds; current allocated memory: 120.375 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.129 seconds; current allocated memory: 120.797 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'counter'.
+INFO: [HLS 200-111]  Elapsed time: 0.159 seconds; current allocated memory: 121.494 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/a' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/k' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/u_0' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/sol_list' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/flag' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nqueens' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'a', 'u_0', 'sol_list' and 'flag' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nqueens'.
+INFO: [HLS 200-111]  Elapsed time: 0.32 seconds; current allocated memory: 122.469 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 241.02 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 195.047 ; gain = 104.770
+INFO: [VHDL 208-304] Generating VHDL RTL for nqueens.
+INFO: [VLOG 209-307] Generating Verilog RTL for nqueens.
+INFO: [HLS 200-112] Total elapsed time: 10.156 seconds; peak allocated memory: 122.469 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'nqueens/nqueens.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.816 ; gain = 105.070
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.816 ; gain = 105.070
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.816 ; gain = 105.070
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:20) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.816 ; gain = 105.070
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'counter' (nqueens/nqueens.cpp:17).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'find_0' (nqueens/nqueens.cpp:6).
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-1' (nqueens/nqueens.cpp:8) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1' (nqueens/nqueens.cpp:21) in function 'counter' completely: variable loop bound.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1.1' (nqueens/nqueens.cpp:23) in function 'counter': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (nqueens/nqueens.cpp:8) in function 'find_0' completely with a factor of 8.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (nqueens/nqueens.cpp:6:16) to (nqueens/nqueens.cpp:15:1) in function 'find_0'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (nqueens/nqueens.cpp:23:29) to (nqueens/nqueens.cpp:23:24) in function 'counter'... converting 3 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'nqueens' (nqueens/nqueens.cpp:50) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'nqueens' (nqueens/nqueens.cpp:36)...12 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.816 ; gain = 105.070
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (nqueens/nqueens.cpp:21:18) in function 'counter' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.816 ; gain = 105.070
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nqueens' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Function contains subloop(s) not being unrolled.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.878 seconds; current allocated memory: 119.658 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.082 seconds; current allocated memory: 119.973 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-67] Unable to satisfy pipeline directive: subfunction 'counter' is not pipelined.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.15 seconds; current allocated memory: 120.391 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.129 seconds; current allocated memory: 120.829 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'counter'.
+INFO: [HLS 200-111]  Elapsed time: 0.161 seconds; current allocated memory: 121.509 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/a' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/k' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/u_0' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/sol_list' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/flag' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nqueens' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'a', 'u_0', 'sol_list' and 'flag' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nqueens'.
+INFO: [HLS 200-111]  Elapsed time: 0.324 seconds; current allocated memory: 122.484 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 241.02 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 194.816 ; gain = 105.070
+INFO: [VHDL 208-304] Generating VHDL RTL for nqueens.
+INFO: [VLOG 209-307] Generating Verilog RTL for nqueens.
+INFO: [HLS 200-112] Total elapsed time: 9.919 seconds; peak allocated memory: 122.484 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'nqueens/nqueens.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.402 ; gain = 104.898
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.402 ; gain = 104.898
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.402 ; gain = 104.898
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:20) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.402 ; gain = 104.898
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'counter' (nqueens/nqueens.cpp:17).
+INFO: [XFORM 203-502] Unrolling all loops for pipelining in function 'find_0' (nqueens/nqueens.cpp:6).
+WARNING: [XFORM 203-505] Ignored pipeline directive for loop 'Loop-1' (nqueens/nqueens.cpp:8) because its parent loop or function is pipelined.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1' (nqueens/nqueens.cpp:21) in function 'counter' completely: variable loop bound.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1.1' (nqueens/nqueens.cpp:23) in function 'counter': cannot completely unroll a loop with a variable trip count.
+INFO: [HLS 200-489] Unrolling loop 'Loop-1' (nqueens/nqueens.cpp:8) in function 'find_0' completely with a factor of 8.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (nqueens/nqueens.cpp:6:16) to (nqueens/nqueens.cpp:15:1) in function 'find_0'... converting 9 basic blocks.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (nqueens/nqueens.cpp:24:4) to (nqueens/nqueens.cpp:23:24) in function 'counter'... converting 3 basic blocks.
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:20) automatically.
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'nqueens' (nqueens/nqueens.cpp:49) automatically.
+INFO: [XFORM 203-11] Balancing expressions in function 'nqueens' (nqueens/nqueens.cpp:35)...12 expression(s) balanced.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.402 ; gain = 104.898
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.402 ; gain = 104.898
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nqueens' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Function contains subloop(s) not being unrolled.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.819 seconds; current allocated memory: 119.620 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.083 seconds; current allocated memory: 119.929 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+WARNING: [SCHED 204-67] Unable to satisfy pipeline directive: subfunction 'counter' is not pipelined.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.146 seconds; current allocated memory: 120.347 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.169 seconds; current allocated memory: 120.769 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'counter'.
+INFO: [HLS 200-111]  Elapsed time: 0.162 seconds; current allocated memory: 121.465 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/a' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/k' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/u_0' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/sol_list' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/flag' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nqueens' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'a', 'u_0', 'sol_list' and 'flag' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nqueens'.
+INFO: [HLS 200-111]  Elapsed time: 0.322 seconds; current allocated memory: 122.440 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 241.02 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 194.402 ; gain = 104.898
+INFO: [VHDL 208-304] Generating VHDL RTL for nqueens.
+INFO: [VLOG 209-307] Generating Verilog RTL for nqueens.
+INFO: [HLS 200-112] Total elapsed time: 9.907 seconds; peak allocated memory: 122.440 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'nqueens/nqueens.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 195.102 ; gain = 105.191
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 195.102 ; gain = 105.191
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 195.102 ; gain = 105.191
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:20) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 195.102 ; gain = 105.191
+INFO: [XFORM 203-502] Unrolling all sub-loops inside loop 'Loop-1' (nqueens/nqueens.cpp:21) in function 'counter' for pipelining.
+WARNING: [XFORM 203-503] Cannot unroll loop 'Loop-1.1' (nqueens/nqueens.cpp:24) in function 'counter': cannot completely unroll a loop with a variable trip count.
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:20) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (nqueens/nqueens.cpp:24:29) to (nqueens/nqueens.cpp:24:24) in function 'counter'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 195.102 ; gain = 105.191
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-2' (nqueens/nqueens.cpp:21:18) in function 'counter' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 195.102 ; gain = 105.191
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nqueens' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln10', nqueens/nqueens.cpp:10->nqueens/nqueens.cpp:20)) in the first pipeline iteration (II = 1 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
+WARNING: [SCHED 204-65] Unable to satisfy pipeline directive: Loop contains subloop(s) not being unrolled or flattened.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.893 seconds; current allocated memory: 128.476 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.087 seconds; current allocated memory: 128.696 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'find_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln10', nqueens/nqueens.cpp:10)) in the first pipeline iteration (II = 1 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.092 seconds; current allocated memory: 128.775 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 128.860 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 129.006 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.082 seconds; current allocated memory: 129.191 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'counter'.
+INFO: [HLS 200-111]  Elapsed time: 0.083 seconds; current allocated memory: 129.590 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'find_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'find_0'.
+INFO: [HLS 200-111]  Elapsed time: 0.175 seconds; current allocated memory: 129.851 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/a' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/k' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/u_0' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/sol_list' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/flag' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nqueens' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'a', 'k', 'sol_list' and 'flag' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nqueens'.
+INFO: [HLS 200-111]  Elapsed time: 0.123 seconds; current allocated memory: 130.296 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 241.02 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 209.426 ; gain = 119.516
+INFO: [VHDL 208-304] Generating VHDL RTL for nqueens.
+INFO: [VLOG 209-307] Generating Verilog RTL for nqueens.
+INFO: [HLS 200-112] Total elapsed time: 9.752 seconds; peak allocated memory: 130.296 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'nqueens/nqueens.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.836 ; gain = 105.105
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.836 ; gain = 105.105
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.836 ; gain = 105.105
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:20) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.836 ; gain = 105.105
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:20) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (nqueens/nqueens.cpp:23:29) to (nqueens/nqueens.cpp:23:24) in function 'counter'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.836 ; gain = 105.105
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-2' (nqueens/nqueens.cpp:21:18) in function 'counter' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.836 ; gain = 105.105
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nqueens' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln10', nqueens/nqueens.cpp:10->nqueens/nqueens.cpp:20)) in the first pipeline iteration (II = 1 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.946 seconds; current allocated memory: 128.449 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.059 seconds; current allocated memory: 128.664 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'find_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln10', nqueens/nqueens.cpp:10)) in the first pipeline iteration (II = 1 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.088 seconds; current allocated memory: 128.744 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.049 seconds; current allocated memory: 128.829 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.089 seconds; current allocated memory: 128.974 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.084 seconds; current allocated memory: 129.160 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'counter'.
+INFO: [HLS 200-111]  Elapsed time: 0.082 seconds; current allocated memory: 129.558 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'find_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'find_0'.
+INFO: [HLS 200-111]  Elapsed time: 0.197 seconds; current allocated memory: 129.820 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/a' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/k' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/u_0' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/sol_list' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/flag' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nqueens' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'a', 'k', 'sol_list' and 'flag' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nqueens'.
+INFO: [HLS 200-111]  Elapsed time: 0.127 seconds; current allocated memory: 130.264 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 241.02 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 209.531 ; gain = 119.801
+INFO: [VHDL 208-304] Generating VHDL RTL for nqueens.
+INFO: [VLOG 209-307] Generating Verilog RTL for nqueens.
+INFO: [HLS 200-112] Total elapsed time: 9.953 seconds; peak allocated memory: 130.264 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'nqueens/nqueens.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 194.508 ; gain = 104.656
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 194.508 ; gain = 104.656
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 194.508 ; gain = 104.656
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:20) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:02 ; elapsed = 00:00:07 . Memory (MB): peak = 194.508 ; gain = 104.656
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:20) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (nqueens/nqueens.cpp:24:4) to (nqueens/nqueens.cpp:23:24) in function 'counter'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 194.508 ; gain = 104.656
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:02 ; elapsed = 00:00:08 . Memory (MB): peak = 194.508 ; gain = 104.656
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nqueens' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln10', nqueens/nqueens.cpp:10->nqueens/nqueens.cpp:20)) in the first pipeline iteration (II = 1 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.845 seconds; current allocated memory: 128.416 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.057 seconds; current allocated memory: 128.611 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'find_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln10', nqueens/nqueens.cpp:10)) in the first pipeline iteration (II = 1 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.084 seconds; current allocated memory: 128.690 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.048 seconds; current allocated memory: 128.775 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.063 seconds; current allocated memory: 128.920 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.068 seconds; current allocated memory: 129.106 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'counter'.
+INFO: [HLS 200-111]  Elapsed time: 0.085 seconds; current allocated memory: 129.464 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'find_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'find_0'.
+INFO: [HLS 200-111]  Elapsed time: 0.177 seconds; current allocated memory: 129.727 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/a' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/k' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/u_0' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/sol_list' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/flag' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nqueens' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'a', 'k', 'sol_list' and 'flag' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nqueens'.
+INFO: [HLS 200-111]  Elapsed time: 0.121 seconds; current allocated memory: 130.171 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 241.02 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:03 ; elapsed = 00:00:10 . Memory (MB): peak = 209.512 ; gain = 119.660
+INFO: [VHDL 208-304] Generating VHDL RTL for nqueens.
+INFO: [VLOG 209-307] Generating Verilog RTL for nqueens.
+INFO: [HLS 200-112] Total elapsed time: 9.583 seconds; peak allocated memory: 130.171 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-322] Starting VHDL simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'nqueens/nqueens.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.887 ; gain = 105.270
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.887 ; gain = 105.270
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.887 ; gain = 105.270
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:19) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.887 ; gain = 105.270
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:19) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (nqueens/nqueens.cpp:23:4) to (nqueens/nqueens.cpp:22:24) in function 'counter'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.887 ; gain = 105.270
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.887 ; gain = 105.270
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nqueens' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.846 seconds; current allocated memory: 128.304 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.098 seconds; current allocated memory: 128.492 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'find_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 128.575 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.046 seconds; current allocated memory: 128.652 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.06 seconds; current allocated memory: 128.776 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.068 seconds; current allocated memory: 128.998 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'counter'.
+INFO: [HLS 200-111]  Elapsed time: 0.082 seconds; current allocated memory: 129.312 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'find_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'find_0'.
+INFO: [HLS 200-111]  Elapsed time: 0.155 seconds; current allocated memory: 129.605 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/a' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/k' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/u_0' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/sol_list' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/flag' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nqueens' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'a', 'k', 'sol_list' and 'flag' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nqueens'.
+INFO: [HLS 200-111]  Elapsed time: 0.12 seconds; current allocated memory: 130.049 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 241.02 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 209.383 ; gain = 119.766
+INFO: [VHDL 208-304] Generating VHDL RTL for nqueens.
+INFO: [VLOG 209-307] Generating Verilog RTL for nqueens.
+INFO: [HLS 200-112] Total elapsed time: 9.682 seconds; peak allocated memory: 130.049 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [COSIM 212-47] Using XSIM for RTL simulation.
+INFO: [COSIM 212-14] Instrumenting C test bench ...
+INFO: [COSIM 212-302] Starting C TB testing ... 
+INFO: [COSIM 212-333] Generating C post check test bench ...
+INFO: [COSIM 212-12] Generating RTL test bench ...
+INFO: [COSIM 212-1] *** C/RTL co-simulation file generation completed. ***
+INFO: [COSIM 212-322] Starting VHDL simulation. 
+INFO: [COSIM 212-15] Starting XSIM ...
+ERROR: [COSIM 212-4] *** C/RTL co-simulation finished: FAIL ***
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SIM 211-2] *************** CSIM start ***************
+INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
+INFO: [SIM 211-1] CSim done with 0 errors.
+INFO: [SIM 211-3] *************** CSIM finish ***************
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'nqueens/nqueens.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.961 ; gain = 104.715
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.961 ; gain = 104.715
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.961 ; gain = 104.715
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:17) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.961 ; gain = 104.715
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:17) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (nqueens/nqueens.cpp:21:4) to (nqueens/nqueens.cpp:20:24) in function 'counter'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.961 ; gain = 104.715
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.961 ; gain = 104.715
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nqueens' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.702 seconds; current allocated memory: 128.300 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.054 seconds; current allocated memory: 128.488 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'find_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.07 seconds; current allocated memory: 128.571 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.046 seconds; current allocated memory: 128.648 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.061 seconds; current allocated memory: 128.772 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.068 seconds; current allocated memory: 128.992 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'counter'.
+INFO: [HLS 200-111]  Elapsed time: 0.079 seconds; current allocated memory: 129.306 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'find_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'find_0'.
+INFO: [HLS 200-111]  Elapsed time: 0.164 seconds; current allocated memory: 129.599 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/a' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/k' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/u_0' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/sol_list' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/flag' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nqueens' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'a', 'k', 'sol_list' and 'flag' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nqueens'.
+INFO: [HLS 200-111]  Elapsed time: 0.115 seconds; current allocated memory: 130.044 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 241.02 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 209.223 ; gain = 118.977
+INFO: [VHDL 208-304] Generating VHDL RTL for nqueens.
+INFO: [VLOG 209-307] Generating Verilog RTL for nqueens.
+INFO: [HLS 200-112] Total elapsed time: 9.451 seconds; peak allocated memory: 130.044 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'nqueens/nqueens.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.660 ; gain = 104.219
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.660 ; gain = 104.219
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.660 ; gain = 104.219
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:18) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.660 ; gain = 104.219
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:18) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (nqueens/nqueens.cpp:22:4) to (nqueens/nqueens.cpp:21:24) in function 'counter'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.660 ; gain = 104.219
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.660 ; gain = 104.219
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nqueens' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln8', nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:18)) in the first pipeline iteration (II = 1 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.73 seconds; current allocated memory: 128.397 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.056 seconds; current allocated memory: 128.591 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'find_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln8', nqueens/nqueens.cpp:8)) in the first pipeline iteration (II = 1 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.081 seconds; current allocated memory: 128.670 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.046 seconds; current allocated memory: 128.755 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.065 seconds; current allocated memory: 128.900 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.072 seconds; current allocated memory: 129.084 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'counter'.
+INFO: [HLS 200-111]  Elapsed time: 0.081 seconds; current allocated memory: 129.442 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'find_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'find_0'.
+INFO: [HLS 200-111]  Elapsed time: 0.159 seconds; current allocated memory: 129.705 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/a' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/k' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/u_0' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/sol_list' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/flag' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nqueens' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'a', 'k', 'sol_list' and 'flag' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nqueens'.
+INFO: [HLS 200-111]  Elapsed time: 0.121 seconds; current allocated memory: 130.150 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 241.02 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:09 . Memory (MB): peak = 209.191 ; gain = 118.750
+INFO: [VHDL 208-304] Generating VHDL RTL for nqueens.
+INFO: [VLOG 209-307] Generating Verilog RTL for nqueens.
+INFO: [HLS 200-112] Total elapsed time: 9.451 seconds; peak allocated memory: 130.150 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [SCHED 204-61] Option 'relax_ii_for_timing' is enabled, will increase II to preserve clock frequency constraints.
+INFO: [HLS 200-10] Analyzing design file 'nqueens/nqueens.cpp' ... 
+INFO: [HLS 200-111] Finished Linking Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.809 ; gain = 105.336
+INFO: [HLS 200-111] Finished Checking Pragmas Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.809 ; gain = 105.336
+INFO: [HLS 200-10] Starting code transformations ...
+INFO: [HLS 200-111] Finished Standard Transforms Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.809 ; gain = 105.336
+INFO: [HLS 200-10] Checking synthesizability ...
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:18) automatically.
+INFO: [HLS 200-111] Finished Checking Synthesizability Time (s): cpu = 00:00:01 ; elapsed = 00:00:07 . Memory (MB): peak = 194.809 ; gain = 105.336
+INFO: [XFORM 203-602] Inlining function 'find_0' into 'counter' (nqueens/nqueens.cpp:18) automatically.
+INFO: [XFORM 203-401] Performing if-conversion on hyperblock from (nqueens/nqueens.cpp:21:29) to (nqueens/nqueens.cpp:21:24) in function 'counter'... converting 3 basic blocks.
+INFO: [HLS 200-111] Finished Pre-synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.809 ; gain = 105.336
+WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-2' (nqueens/nqueens.cpp:19:18) in function 'counter' : 
+
+the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop.
+INFO: [HLS 200-111] Finished Architecture Synthesis Time (s): cpu = 00:00:01 ; elapsed = 00:00:08 . Memory (MB): peak = 194.809 ; gain = 105.336
+INFO: [HLS 200-10] Starting hardware synthesis ...
+INFO: [HLS 200-10] Synthesizing 'nqueens' ...
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln8', nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:18)) in the first pipeline iteration (II = 1 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
+INFO: [SCHED 204-61] Pipelining loop 'Loop 2.1'.
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 1, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 7.786 seconds; current allocated memory: 128.429 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.056 seconds; current allocated memory: 128.644 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'find_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-61] Pipelining loop 'Loop 1'.
+WARNING: [SCHED 204-64] Unable to schedule the loop exit test ('icmp' operation ('icmp_ln8', nqueens/nqueens.cpp:8)) in the first pipeline iteration (II = 1 cycles).
+INFO: [SCHED 204-61] Pipelining result : Target II = 1, Final II = 2, Depth = 2.
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.084 seconds; current allocated memory: 128.724 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.05 seconds; current allocated memory: 128.809 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-42] -- Implementing module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [SCHED 204-11] Starting scheduling ...
+INFO: [SCHED 204-11] Finished scheduling.
+INFO: [HLS 200-111]  Elapsed time: 0.068 seconds; current allocated memory: 128.954 MB.
+INFO: [BIND 205-100] Starting micro-architecture generation ...
+INFO: [BIND 205-101] Performing variable lifetime analysis.
+INFO: [BIND 205-101] Exploring resource sharing.
+INFO: [BIND 205-101] Binding ...
+INFO: [BIND 205-100] Finished micro-architecture generation.
+INFO: [HLS 200-111]  Elapsed time: 0.068 seconds; current allocated memory: 129.138 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'counter' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'counter'.
+INFO: [HLS 200-111]  Elapsed time: 0.09 seconds; current allocated memory: 129.537 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'find_0' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-100] Finished creating RTL model for 'find_0'.
+INFO: [HLS 200-111]  Elapsed time: 0.163 seconds; current allocated memory: 129.798 MB.
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [HLS 200-10] -- Generating RTL for module 'nqueens' 
+INFO: [HLS 200-10] ----------------------------------------------------------------
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/a' to 's_axilite & ap_memory'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/k' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/u_0' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/sol_list' to 's_axilite & ap_ovld'.
+INFO: [RTGEN 206-500] Setting interface mode on port 'nqueens/flag' to 's_axilite & ap_vld'.
+INFO: [RTGEN 206-500] Setting interface mode on function 'nqueens' to 's_axilite & ap_ctrl_hs'.
+INFO: [RTGEN 206-100] Bundling port 'return', 'a', 'k', 'sol_list' and 'flag' to AXI-Lite port AXILiteS.
+INFO: [RTGEN 206-100] Finished creating RTL model for 'nqueens'.
+INFO: [HLS 200-111]  Elapsed time: 0.124 seconds; current allocated memory: 130.243 MB.
+INFO: [HLS 200-790] **** Loop Constraint Status: All loop constraints were NOT satisfied.
+INFO: [HLS 200-789] **** Estimated Fmax: 241.02 MHz
+INFO: [HLS 200-111] Finished generating all RTL models Time (s): cpu = 00:00:02 ; elapsed = 00:00:10 . Memory (MB): peak = 209.391 ; gain = 119.918
+INFO: [VHDL 208-304] Generating VHDL RTL for nqueens.
+INFO: [VLOG 209-307] Generating Verilog RTL for nqueens.
+INFO: [HLS 200-112] Total elapsed time: 9.545 seconds; peak allocated memory: 130.243 MB.
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+==============================================================
+Vivado(TM) HLS - High-Level Synthesis from C, C++ and SystemC v2019.2 (64-bit)
+Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+==============================================================
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.

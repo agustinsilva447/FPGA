@@ -1,0 +1,5 @@
+   Build using "C:/Xilinx/Vivado/2019.2/tps/win64/msys64/mingw64/bin/g++"
+   Compiling apatb_nqueens.cpp
+   Compiling nqueens_tb.cpp_pre.cpp.tb.cpp
+   Compiling nqueens.cpp_pre.cpp.tb.cpp
+   Generating cosim.tv.exe

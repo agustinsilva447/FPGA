@@ -1,13 +1,20 @@
 INFO: [HLS 200-10] Running 'C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/vivado_hls.exe'
-INFO: [HLS 200-10] For user 'mlabadm' on host 'hp6g4-mlab-2' (Windows NT_amd64 version 6.2) on Tue Aug 24 16:59:06 +0200 2021
+INFO: [HLS 200-10] For user 'mlabadm' on host 'hp6g4-mlab-2' (Windows NT_amd64 version 6.2) on Thu Aug 26 12:16:49 +0200 2021
 INFO: [HLS 200-10] In directory 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens'
-Sourcing Tcl script 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/csim.tcl'
+Sourcing Tcl script 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/export.tcl'
 INFO: [HLS 200-10] Opening project 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens'.
 INFO: [HLS 200-10] Opening solution 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1'.
 INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
 INFO: [HLS 200-10] Setting target device to 'xczu9eg-ffvb1156-2-e'
-INFO: [SIM 211-2] *************** CSIM start ***************
-INFO: [SIM 211-4] CSIM will launch GCC as the compiler.
-make: 'csim.exe' is up to date.
-INFO: [SIM 211-1] CSim file generation done with 0 errors.
-INFO: [SIM 211-3] *************** CSIM finish ***************
+INFO: [IMPL 213-8] Exporting RTL as a Vivado IP.
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source run_ippack.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1704] No user IP repositories specified
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+INFO: [Common 17-206] Exiting Vivado at Thu Aug 26 12:16:58 2021...

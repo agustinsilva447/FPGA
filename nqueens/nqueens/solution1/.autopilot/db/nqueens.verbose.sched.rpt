@@ -3,7 +3,7 @@
 ================================================================
 == Vivado HLS Report for 'nqueens'
 ================================================================
-* Date:           Tue Aug 24 16:53:33 2021
+* Date:           Thu Aug 26 12:12:47 2021
 
 * Version:        2019.2 (Build 2704478 on Wed Nov 06 22:10:23 MST 2019)
 * Project:        nqueens
@@ -37,14 +37,12 @@
         N/A
 
         * Loop: 
-        +-----------------+---------+---------+----------+-----------+-----------+-------+----------+
-        |                 |  Latency (cycles) | Iteration|  Initiation Interval  |  Trip |          |
-        |    Loop Name    |   min   |   max   |  Latency |  achieved |   target  | Count | Pipelined|
-        +-----------------+---------+---------+----------+-----------+-----------+-------+----------+
-        |- Loop 1         |        ?|        ?|         ?|          -|          -|      ?|    no    |
-        | + Loop 1.1      |        ?|        ?|         ?|          -|          -| 1 ~ 5 |    no    |
-        |  ++ Loop 1.1.1  |        ?|        ?|         2|          -|          -|      ?|    no    |
-        +-----------------+---------+---------+----------+-----------+-----------+-------+----------+
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |          |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        | Loop Name|   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
+        |- Loop 1  |        ?|        ?|  11 ~ 47 |          -|          -|     ?|    no    |
+        +----------+---------+---------+----------+-----------+-----------+------+----------+
 
 ============================================================
 + Verbose Summary: Synthesis Manager
@@ -72,7 +70,7 @@ IsGatedGlobalClock: 0
 ============================================================
 + Verbose Summary: Schedule
 ============================================================
-* Number of FSM states : 8
+* Number of FSM states : 10
 * Pipeline : 0
 * Dataflow Pipeline: 0
 
@@ -80,103 +78,88 @@ IsGatedGlobalClock: 0
 1 --> 2 
 2 --> 3 
 3 --> 4 
-4 --> 5 6 3 
-5 --> 4 
-6 --> 7 
+4 --> 5 8 
+5 --> 6 
+6 --> 7 10 
 7 --> 8 
-8 --> 2 
+8 --> 9 
+9 --> 10 
+10 --> 2 
 
 * FSM state operations: 
 
-State 1 <SV = 0> <Delay = 0.65>
-ST_1 : Operation 9 [1/1] (0.00ns)   --->   "%n_0_assign_2 = alloca i32"   --->   Operation 9 'alloca' 'n_0_assign_2' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 10 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([6 x i32]* %a) nounwind, !map !13"   --->   Operation 10 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %k) nounwind, !map !19"   --->   Operation 11 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %n_0) nounwind, !map !25"   --->   Operation 12 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %u_0) nounwind, !map !29"   --->   Operation 13 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32 %sol_list) nounwind, !map !33"   --->   Operation 14 'specbitsmap' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i1 %flag) nounwind, !map !37"   --->   Operation 15 'specbitsmap' <Predicate = true> <Delay = 0.00>
+State 1 <SV = 0> <Delay = 0.00>
+ST_1 : Operation 11 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap([8 x i32]* %a) nounwind, !map !19"   --->   Operation 11 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 12 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %k) nounwind, !map !25"   --->   Operation 12 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 13 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %u_0) nounwind, !map !31"   --->   Operation 13 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 14 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %sol_list) nounwind, !map !35"   --->   Operation 14 'specbitsmap' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 15 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecBitsMap(i32* %flag) nounwind, !map !39"   --->   Operation 15 'specbitsmap' <Predicate = true> <Delay = 0.00>
 ST_1 : Operation 16 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecTopModule([8 x i8]* @nqueens_str) nounwind"   --->   Operation 16 'spectopmodule' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 17 [1/1] (0.00ns)   --->   "%n_0_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %n_0) nounwind" [nqueens/nqueens.cpp:22]   --->   Operation 17 'read' 'n_0_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 18 [1/1] (0.00ns)   --->   "%k_read = call i32 @_ssdm_op_Read.ap_auto.i32(i32 %k) nounwind" [nqueens/nqueens.cpp:22]   --->   Operation 18 'read' 'k_read' <Predicate = true> <Delay = 0.00>
-ST_1 : Operation 19 [1/1] (0.65ns)   --->   "store i32 %n_0_read, i32* %n_0_assign_2" [nqueens/nqueens.cpp:24]   --->   Operation 19 'store' <Predicate = true> <Delay = 0.65>
-ST_1 : Operation 20 [1/1] (0.65ns)   --->   "br label %._crit_edge7" [nqueens/nqueens.cpp:24]   --->   Operation 20 'br' <Predicate = true> <Delay = 0.65>
+ST_1 : Operation 17 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %flag, [10 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [nqueens/nqueens.cpp:36]   --->   Operation 17 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 18 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %sol_list, [10 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [nqueens/nqueens.cpp:37]   --->   Operation 18 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 19 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %u_0, [10 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [nqueens/nqueens.cpp:38]   --->   Operation 19 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 20 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32* %k, [10 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [nqueens/nqueens.cpp:39]   --->   Operation 20 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 21 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecMemCore([8 x i32]* %a, [1 x i8]* @p_str4, [7 x i8]* @RAM_1P_str, [1 x i8]* @p_str4, i32 -1, [1 x i8]* @p_str4, [1 x i8]* @p_str4, [1 x i8]* @p_str4, [1 x i8]* @p_str4, [1 x i8]* @p_str4) nounwind" [nqueens/nqueens.cpp:40]   --->   Operation 21 'specmemcore' 'empty' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 22 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface([8 x i32]* %a, [10 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [nqueens/nqueens.cpp:40]   --->   Operation 22 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 23 [1/1] (0.00ns)   --->   "call void (...)* @_ssdm_op_SpecInterface(i32 0, [10 x i8]* @p_str3, i32 0, i32 0, [1 x i8]* @p_str1, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1, [1 x i8]* @p_str1, i32 0, i32 0, i32 0, i32 0, [1 x i8]* @p_str1, [1 x i8]* @p_str1) nounwind" [nqueens/nqueens.cpp:41]   --->   Operation 23 'specinterface' <Predicate = true> <Delay = 0.00>
+ST_1 : Operation 24 [1/1] (0.00ns)   --->   "br label %._crit_edge1" [nqueens/nqueens.cpp:42]   --->   Operation 24 'br' <Predicate = true> <Delay = 0.00>
 
-State 2 <SV = 1> <Delay = 0.65>
-ST_2 : Operation 21 [1/1] (0.00ns)   --->   "%k_assign_2 = phi i32 [ %k_read, %0 ], [ %add_ln39, %._crit_edge ]" [nqueens/nqueens.cpp:22]   --->   Operation 21 'phi' 'k_assign_2' <Predicate = true> <Delay = 0.00>
-ST_2 : Operation 22 [1/1] (0.65ns)   --->   "br label %1" [nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:25]   --->   Operation 22 'br' <Predicate = true> <Delay = 0.65>
+State 2 <SV = 1> <Delay = 1.00>
+ST_2 : Operation 25 [1/1] (1.00ns)   --->   "%k_read = call i32 @_ssdm_op_Read.s_axilite.i32P(i32* %k) nounwind" [nqueens/nqueens.cpp:43]   --->   Operation 25 'read' 'k_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 26 [1/1] (1.00ns)   --->   "%u_0_read = call i32 @_ssdm_op_Read.s_axilite.i32P(i32* %u_0) nounwind" [nqueens/nqueens.cpp:43]   --->   Operation 26 'read' 'u_0_read' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_2 : Operation 27 [2/2] (0.00ns)   --->   "%tmp = call fastcc i32 @counter([8 x i32]* %a, i32 %k_read, i32 %u_0_read) nounwind" [nqueens/nqueens.cpp:43]   --->   Operation 27 'call' 'tmp' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 3 <SV = 2> <Delay = 1.23>
-ST_3 : Operation 23 [1/1] (0.00ns)   --->   "%u_0_i = phi i3 [ 1, %._crit_edge7 ], [ %u, %3 ]"   --->   Operation 23 'phi' 'u_0_i' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 24 [1/1] (0.00ns)   --->   "%zext_ln8 = zext i3 %u_0_i to i32" [nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:25]   --->   Operation 24 'zext' 'zext_ln8' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 25 [1/1] (0.58ns)   --->   "%icmp_ln8 = icmp ult i3 %u_0_i, -2" [nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:25]   --->   Operation 25 'icmp' 'icmp_ln8' <Predicate = true> <Delay = 0.58> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_3 : Operation 26 [1/1] (0.00ns)   --->   "%empty = call i32 (...)* @_ssdm_op_SpecLoopTripCount(i64 1, i64 5, i64 3) nounwind"   --->   Operation 26 'speclooptripcount' 'empty' <Predicate = true> <Delay = 0.00>
-ST_3 : Operation 27 [1/1] (0.65ns)   --->   "br i1 %icmp_ln8, label %.preheader.i.preheader, label %counter.exit" [nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:25]   --->   Operation 27 'br' <Predicate = true> <Delay = 0.65>
-ST_3 : Operation 28 [1/1] (0.65ns)   --->   "br label %.preheader.i" [nqueens/nqueens.cpp:10->nqueens/nqueens.cpp:25]   --->   Operation 28 'br' <Predicate = (icmp_ln8)> <Delay = 0.65>
+State 3 <SV = 2> <Delay = 1.64>
+ST_3 : Operation 28 [1/2] (1.64ns)   --->   "%tmp = call fastcc i32 @counter([8 x i32]* %a, i32 %k_read, i32 %u_0_read) nounwind" [nqueens/nqueens.cpp:43]   --->   Operation 28 'call' 'tmp' <Predicate = true> <Delay = 1.64> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 4 <SV = 3> <Delay = 2.32>
-ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%count_0_i = phi i32 [ %select_ln11_1, %_ifconv.i ], [ 0, %.preheader.i.preheader ]" [nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25]   --->   Operation 29 'phi' 'count_0_i' <Predicate = (icmp_ln8)> <Delay = 0.00>
-ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%j_0_i = phi i31 [ %j, %_ifconv.i ], [ 0, %.preheader.i.preheader ]"   --->   Operation 30 'phi' 'j_0_i' <Predicate = (icmp_ln8)> <Delay = 0.00>
-ST_4 : Operation 31 [1/1] (0.00ns)   --->   "%n_0_assign_2_load = load i32* %n_0_assign_2" [nqueens/nqueens.cpp:10->nqueens/nqueens.cpp:25]   --->   Operation 31 'load' 'n_0_assign_2_load' <Predicate = (icmp_ln8)> <Delay = 0.00>
-ST_4 : Operation 32 [1/1] (0.00ns)   --->   "%zext_ln10 = zext i31 %j_0_i to i32" [nqueens/nqueens.cpp:10->nqueens/nqueens.cpp:25]   --->   Operation 32 'zext' 'zext_ln10' <Predicate = (icmp_ln8)> <Delay = 0.00>
-ST_4 : Operation 33 [1/1] (0.99ns)   --->   "%icmp_ln10 = icmp slt i32 %zext_ln10, %n_0_assign_2_load" [nqueens/nqueens.cpp:10->nqueens/nqueens.cpp:25]   --->   Operation 33 'icmp' 'icmp_ln10' <Predicate = (icmp_ln8)> <Delay = 0.99> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 34 [1/1] (1.00ns)   --->   "%j = add i31 %j_0_i, 1" [nqueens/nqueens.cpp:10->nqueens/nqueens.cpp:25]   --->   Operation 34 'add' 'j' <Predicate = (icmp_ln8)> <Delay = 1.00> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 35 [1/1] (0.00ns)   --->   "br i1 %icmp_ln10, label %_ifconv.i, label %2" [nqueens/nqueens.cpp:10->nqueens/nqueens.cpp:25]   --->   Operation 35 'br' <Predicate = (icmp_ln8)> <Delay = 0.00>
-ST_4 : Operation 36 [1/1] (0.00ns)   --->   "%zext_ln11 = zext i31 %j_0_i to i64" [nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25]   --->   Operation 36 'zext' 'zext_ln11' <Predicate = (icmp_ln8 & icmp_ln10)> <Delay = 0.00>
-ST_4 : Operation 37 [1/1] (0.00ns)   --->   "%a_addr_3 = getelementptr [6 x i32]* %a, i64 0, i64 %zext_ln11" [nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25]   --->   Operation 37 'getelementptr' 'a_addr_3' <Predicate = (icmp_ln8 & icmp_ln10)> <Delay = 0.00>
-ST_4 : Operation 38 [2/2] (0.67ns)   --->   "%a_load_1 = load i32* %a_addr_3, align 4" [nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25]   --->   Operation 38 'load' 'a_load_1' <Predicate = (icmp_ln8 & icmp_ln10)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 6> <RAM>
-ST_4 : Operation 39 [1/1] (0.99ns)   --->   "%icmp_ln15 = icmp eq i32 %count_0_i, %k_assign_2" [nqueens/nqueens.cpp:15->nqueens/nqueens.cpp:25]   --->   Operation 39 'icmp' 'icmp_ln15' <Predicate = (icmp_ln8 & !icmp_ln10)> <Delay = 0.99> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 40 [1/1] (0.65ns)   --->   "br i1 %icmp_ln15, label %counter.exit, label %3" [nqueens/nqueens.cpp:15->nqueens/nqueens.cpp:25]   --->   Operation 40 'br' <Predicate = (icmp_ln8 & !icmp_ln10)> <Delay = 0.65>
-ST_4 : Operation 41 [1/1] (0.67ns)   --->   "%u = add i3 %u_0_i, 1" [nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:25]   --->   Operation 41 'add' 'u' <Predicate = (icmp_ln8 & !icmp_ln10 & !icmp_ln15)> <Delay = 0.67> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_4 : Operation 42 [1/1] (0.00ns)   --->   "br label %1" [nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:25]   --->   Operation 42 'br' <Predicate = (icmp_ln8 & !icmp_ln10 & !icmp_ln15)> <Delay = 0.00>
-ST_4 : Operation 43 [1/1] (0.00ns)   --->   "%p_0_i = phi i3 [ 0, %1 ], [ %u_0_i, %2 ]" [nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:25]   --->   Operation 43 'phi' 'p_0_i' <Predicate = (!icmp_ln10 & icmp_ln15) | (!icmp_ln8)> <Delay = 0.00>
-ST_4 : Operation 44 [1/1] (0.00ns)   --->   "%zext_ln25 = zext i3 %p_0_i to i32" [nqueens/nqueens.cpp:25]   --->   Operation 44 'zext' 'zext_ln25' <Predicate = (!icmp_ln10 & icmp_ln15) | (!icmp_ln8)> <Delay = 0.00>
-ST_4 : Operation 45 [1/1] (0.00ns)   --->   "%sext_ln25 = sext i32 %k_assign_2 to i64" [nqueens/nqueens.cpp:25]   --->   Operation 45 'sext' 'sext_ln25' <Predicate = (!icmp_ln10 & icmp_ln15) | (!icmp_ln8)> <Delay = 0.00>
-ST_4 : Operation 46 [1/1] (0.00ns)   --->   "%a_addr = getelementptr [6 x i32]* %a, i64 0, i64 %sext_ln25" [nqueens/nqueens.cpp:25]   --->   Operation 46 'getelementptr' 'a_addr' <Predicate = (!icmp_ln10 & icmp_ln15) | (!icmp_ln8)> <Delay = 0.00>
-ST_4 : Operation 47 [1/1] (0.67ns)   --->   "store i32 %zext_ln25, i32* %a_addr, align 4" [nqueens/nqueens.cpp:25]   --->   Operation 47 'store' <Predicate = (!icmp_ln10 & icmp_ln15) | (!icmp_ln8)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 6> <RAM>
+State 4 <SV = 3> <Delay = 1.64>
+ST_4 : Operation 29 [1/1] (0.00ns)   --->   "%sext_ln43 = sext i32 %k_read to i64" [nqueens/nqueens.cpp:43]   --->   Operation 29 'sext' 'sext_ln43' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 30 [1/1] (0.00ns)   --->   "%a_addr = getelementptr [8 x i32]* %a, i64 0, i64 %sext_ln43" [nqueens/nqueens.cpp:43]   --->   Operation 30 'getelementptr' 'a_addr' <Predicate = true> <Delay = 0.00>
+ST_4 : Operation 31 [1/1] (0.67ns)   --->   "store i32 %tmp, i32* %a_addr, align 4" [nqueens/nqueens.cpp:43]   --->   Operation 31 'store' <Predicate = true> <Delay = 0.67> <Core = "RAM_1P">   --->   Core 44 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 8> <RAM>
+ST_4 : Operation 32 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.i32P(i32* %u_0, i32 1) nounwind" [nqueens/nqueens.cpp:44]   --->   Operation 32 'write' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_4 : Operation 33 [1/1] (0.99ns)   --->   "%icmp_ln45 = icmp eq i32 %tmp, 0" [nqueens/nqueens.cpp:45]   --->   Operation 33 'icmp' 'icmp_ln45' <Predicate = true> <Delay = 0.99> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.72> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_4 : Operation 34 [1/1] (0.65ns)   --->   "br i1 %icmp_ln45, label %1, label %._crit_edge" [nqueens/nqueens.cpp:45]   --->   Operation 34 'br' <Predicate = true> <Delay = 0.65>
 
-State 5 <SV = 4> <Delay = 4.14>
-ST_5 : Operation 48 [1/2] (0.67ns)   --->   "%a_load_1 = load i32* %a_addr_3, align 4" [nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25]   --->   Operation 48 'load' 'a_load_1' <Predicate = true> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 6> <RAM>
-ST_5 : Operation 49 [1/1] (0.99ns)   --->   "%icmp_ln11 = icmp eq i32 %zext_ln8, %a_load_1" [nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25]   --->   Operation 49 'icmp' 'icmp_ln11' <Predicate = true> <Delay = 0.99> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 50 [1/1] (1.01ns)   --->   "%sub_ln11 = sub nsw i32 %zext_ln8, %a_load_1" [nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25]   --->   Operation 50 'sub' 'sub_ln11' <Predicate = true> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 51 [1/1] (1.01ns)   --->   "%neg_i = sub i32 0, %sub_ln11" [nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25]   --->   Operation 51 'sub' 'neg_i' <Predicate = true> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 52 [1/1] (0.99ns)   --->   "%abscond_i = icmp sgt i32 %sub_ln11, 0" [nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25]   --->   Operation 52 'icmp' 'abscond_i' <Predicate = true> <Delay = 0.99> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 53 [1/1] (0.00ns) (grouped into LUT with out node icmp_ln11_1)   --->   "%abs_i = select i1 %abscond_i, i32 %sub_ln11, i32 %neg_i" [nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25]   --->   Operation 53 'select' 'abs_i' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_5 : Operation 54 [1/1] (1.01ns)   --->   "%sub_ln11_1 = sub nsw i32 %k_assign_2, %zext_ln10" [nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25]   --->   Operation 54 'sub' 'sub_ln11_1' <Predicate = true> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 55 [1/1] (0.99ns) (out node of the LUT)   --->   "%icmp_ln11_1 = icmp eq i32 %abs_i, %sub_ln11_1" [nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25]   --->   Operation 55 'icmp' 'icmp_ln11_1' <Predicate = true> <Delay = 0.99> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 56 [1/1] (1.01ns)   --->   "%count = add nsw i32 %count_0_i, 1" [nqueens/nqueens.cpp:12->nqueens/nqueens.cpp:25]   --->   Operation 56 'add' 'count' <Predicate = true> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_5 : Operation 57 [1/1] (0.00ns) (grouped into LUT with out node select_ln11_1)   --->   "%select_ln11 = select i1 %icmp_ln11_1, i32 %count_0_i, i32 %count" [nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25]   --->   Operation 57 'select' 'select_ln11' <Predicate = true> <Delay = 0.00> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_5 : Operation 58 [1/1] (0.44ns) (out node of the LUT)   --->   "%select_ln11_1 = select i1 %icmp_ln11, i32 %count_0_i, i32 %select_ln11" [nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25]   --->   Operation 58 'select' 'select_ln11_1' <Predicate = true> <Delay = 0.44> <Core = "Sel">   --->   Core 26 'Sel' <Latency = 0> <II = 1> <Delay = 0.44> <FuncUnit> <Opcode : 'select'> <InPorts = 3> <OutPorts = 1>
-ST_5 : Operation 59 [1/1] (0.00ns)   --->   "br label %.preheader.i" [nqueens/nqueens.cpp:10->nqueens/nqueens.cpp:25]   --->   Operation 59 'br' <Predicate = true> <Delay = 0.00>
+State 5 <SV = 4> <Delay = 0.65>
+ST_5 : Operation 35 [2/2] (0.65ns)   --->   "%tmp_1 = call fastcc i4 @find_0([8 x i32]* %a) nounwind" [nqueens/nqueens.cpp:47]   --->   Operation 35 'call' 'tmp_1' <Predicate = true> <Delay = 0.65> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
 
-State 6 <SV = 4> <Delay = 0.67>
-ST_6 : Operation 60 [1/1] (0.00ns)   --->   "%n_0_assign_2_load_1 = load i32* %n_0_assign_2" [nqueens/nqueens.cpp:27]   --->   Operation 60 'load' 'n_0_assign_2_load_1' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 61 [1/1] (0.00ns)   --->   "%sext_ln27 = sext i32 %n_0_assign_2_load_1 to i64" [nqueens/nqueens.cpp:27]   --->   Operation 61 'sext' 'sext_ln27' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 62 [1/1] (0.00ns)   --->   "%a_addr_1 = getelementptr [6 x i32]* %a, i64 0, i64 %sext_ln27" [nqueens/nqueens.cpp:27]   --->   Operation 62 'getelementptr' 'a_addr_1' <Predicate = true> <Delay = 0.00>
-ST_6 : Operation 63 [2/2] (0.67ns)   --->   "%a_load = load i32* %a_addr_1, align 4" [nqueens/nqueens.cpp:27]   --->   Operation 63 'load' 'a_load' <Predicate = true> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 6> <RAM>
+State 6 <SV = 5> <Delay = 2.01>
+ST_6 : Operation 36 [1/1] (1.01ns)   --->   "%add_ln46 = add nsw i32 %k_read, -1" [nqueens/nqueens.cpp:46]   --->   Operation 36 'add' 'add_ln46' <Predicate = true> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 37 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.i32P(i32* %k, i32 %add_ln46) nounwind" [nqueens/nqueens.cpp:46]   --->   Operation 37 'write' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_6 : Operation 38 [1/2] (0.00ns)   --->   "%tmp_1 = call fastcc i4 @find_0([8 x i32]* %a) nounwind" [nqueens/nqueens.cpp:47]   --->   Operation 38 'call' 'tmp_1' <Predicate = true> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_6 : Operation 39 [1/1] (0.72ns)   --->   "%icmp_ln47 = icmp eq i4 %tmp_1, 0" [nqueens/nqueens.cpp:47]   --->   Operation 39 'icmp' 'icmp_ln47' <Predicate = true> <Delay = 0.72> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.72> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_6 : Operation 40 [1/1] (0.00ns)   --->   "br i1 %icmp_ln47, label %2, label %3" [nqueens/nqueens.cpp:47]   --->   Operation 40 'br' <Predicate = true> <Delay = 0.00>
+ST_6 : Operation 41 [1/1] (0.00ns)   --->   "%sext_ln51 = sext i32 %add_ln46 to i64" [nqueens/nqueens.cpp:51]   --->   Operation 41 'sext' 'sext_ln51' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_6 : Operation 42 [1/1] (0.00ns)   --->   "%a_addr_1 = getelementptr [8 x i32]* %a, i64 0, i64 %sext_ln51" [nqueens/nqueens.cpp:51]   --->   Operation 42 'getelementptr' 'a_addr_1' <Predicate = (!icmp_ln47)> <Delay = 0.00>
+ST_6 : Operation 43 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.i32P(i32* %flag, i32 1) nounwind" [nqueens/nqueens.cpp:48]   --->   Operation 43 'write' <Predicate = (icmp_ln47)> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_6 : Operation 44 [1/1] (0.00ns)   --->   "br label %5" [nqueens/nqueens.cpp:49]   --->   Operation 44 'br' <Predicate = (icmp_ln47)> <Delay = 0.00>
 
-State 7 <SV = 5> <Delay = 2.32>
-ST_7 : Operation 64 [1/2] (0.67ns)   --->   "%a_load = load i32* %a_addr_1, align 4" [nqueens/nqueens.cpp:27]   --->   Operation 64 'load' 'a_load' <Predicate = true> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 6> <RAM>
-ST_7 : Operation 65 [1/1] (0.99ns)   --->   "%icmp_ln27 = icmp eq i32 %a_load, 0" [nqueens/nqueens.cpp:27]   --->   Operation 65 'icmp' 'icmp_ln27' <Predicate = true> <Delay = 0.99> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 66 [1/1] (0.65ns)   --->   "br i1 %icmp_ln27, label %4, label %._crit_edge" [nqueens/nqueens.cpp:27]   --->   Operation 66 'br' <Predicate = true> <Delay = 0.65>
-ST_7 : Operation 67 [1/1] (1.01ns)   --->   "%add_ln28 = add nsw i32 %n_0_assign_2_load_1, -1" [nqueens/nqueens.cpp:28]   --->   Operation 67 'add' 'add_ln28' <Predicate = (icmp_ln27)> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 68 [1/1] (0.99ns)   --->   "%icmp_ln30 = icmp eq i32 %add_ln28, 0" [nqueens/nqueens.cpp:30]   --->   Operation 68 'icmp' 'icmp_ln30' <Predicate = (icmp_ln27)> <Delay = 0.99> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 69 [1/1] (0.00ns)   --->   "br i1 %icmp_ln30, label %._crit_edge5, label %5" [nqueens/nqueens.cpp:30]   --->   Operation 69 'br' <Predicate = (icmp_ln27)> <Delay = 0.00>
-ST_7 : Operation 70 [1/1] (0.00ns)   --->   "%sext_ln34 = sext i32 %add_ln28 to i64" [nqueens/nqueens.cpp:34]   --->   Operation 70 'sext' 'sext_ln34' <Predicate = (icmp_ln27 & !icmp_ln30)> <Delay = 0.00>
-ST_7 : Operation 71 [1/1] (0.00ns)   --->   "%a_addr_2 = getelementptr [6 x i32]* %a, i64 0, i64 %sext_ln34" [nqueens/nqueens.cpp:34]   --->   Operation 71 'getelementptr' 'a_addr_2' <Predicate = (icmp_ln27 & !icmp_ln30)> <Delay = 0.00>
-ST_7 : Operation 72 [1/1] (0.67ns)   --->   "store i32 0, i32* %a_addr_2, align 4" [nqueens/nqueens.cpp:35]   --->   Operation 72 'store' <Predicate = (icmp_ln27 & !icmp_ln30)> <Delay = 0.67> <Core = "RAM">   --->   Core 37 'RAM' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 2> <Width = 32> <Depth = 6> <RAM>
-ST_7 : Operation 73 [1/1] (1.01ns)   --->   "%add_ln36 = add nsw i32 %n_0_assign_2_load_1, -2" [nqueens/nqueens.cpp:36]   --->   Operation 73 'add' 'add_ln36' <Predicate = (icmp_ln27 & !icmp_ln30)> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 74 [1/1] (1.01ns)   --->   "%add_ln37 = add nsw i32 %k_assign_2, -2" [nqueens/nqueens.cpp:37]   --->   Operation 74 'add' 'add_ln37' <Predicate = (icmp_ln27 & !icmp_ln30)> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_7 : Operation 75 [1/1] (0.65ns)   --->   "store i32 %add_ln36, i32* %n_0_assign_2" [nqueens/nqueens.cpp:38]   --->   Operation 75 'store' <Predicate = (icmp_ln27 & !icmp_ln30)> <Delay = 0.65>
-ST_7 : Operation 76 [1/1] (0.65ns)   --->   "br label %._crit_edge" [nqueens/nqueens.cpp:38]   --->   Operation 76 'br' <Predicate = (icmp_ln27 & !icmp_ln30)> <Delay = 0.65>
+State 7 <SV = 6> <Delay = 0.67>
+ST_7 : Operation 45 [2/2] (0.67ns)   --->   "%a_load = load i32* %a_addr_1, align 4" [nqueens/nqueens.cpp:51]   --->   Operation 45 'load' 'a_load' <Predicate = true> <Delay = 0.67> <Core = "RAM_1P">   --->   Core 44 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 8> <RAM>
+ST_7 : Operation 46 [1/1] (0.67ns)   --->   "store i32 0, i32* %a_addr_1, align 4" [nqueens/nqueens.cpp:52]   --->   Operation 46 'store' <Predicate = true> <Delay = 0.67> <Core = "RAM_1P">   --->   Core 44 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 8> <RAM>
 
-State 8 <SV = 6> <Delay = 1.01>
-ST_8 : Operation 77 [1/1] (0.00ns) (grouped into LUT with out node add_ln39)   --->   "%p_1 = phi i32 [ %add_ln37, %5 ], [ %k_assign_2, %counter.exit ]" [nqueens/nqueens.cpp:37]   --->   Operation 77 'phi' 'p_1' <Predicate = (!icmp_ln30) | (!icmp_ln27)> <Delay = 0.00>
-ST_8 : Operation 78 [1/1] (0.00ns)   --->   "%n_0_assign_2_load_2 = load i32* %n_0_assign_2" [nqueens/nqueens.cpp:40]   --->   Operation 78 'load' 'n_0_assign_2_load_2' <Predicate = (!icmp_ln30) | (!icmp_ln27)> <Delay = 0.00>
-ST_8 : Operation 79 [1/1] (1.01ns) (out node of the LUT)   --->   "%add_ln39 = add nsw i32 %p_1, 1" [nqueens/nqueens.cpp:39]   --->   Operation 79 'add' 'add_ln39' <Predicate = (!icmp_ln30) | (!icmp_ln27)> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
-ST_8 : Operation 80 [1/1] (0.99ns)   --->   "%icmp_ln40 = icmp eq i32 %n_0_assign_2_load_2, 6" [nqueens/nqueens.cpp:40]   --->   Operation 80 'icmp' 'icmp_ln40' <Predicate = (!icmp_ln30) | (!icmp_ln27)> <Delay = 0.99> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.99> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
-ST_8 : Operation 81 [1/1] (0.00ns)   --->   "br i1 %icmp_ln40, label %._crit_edge5, label %._crit_edge7" [nqueens/nqueens.cpp:40]   --->   Operation 81 'br' <Predicate = (!icmp_ln30) | (!icmp_ln27)> <Delay = 0.00>
-ST_8 : Operation 82 [1/1] (0.00ns)   --->   "ret void" [nqueens/nqueens.cpp:45]   --->   Operation 82 'ret' <Predicate = (icmp_ln40) | (icmp_ln27 & icmp_ln30)> <Delay = 0.00>
+State 8 <SV = 7> <Delay = 2.69>
+ST_8 : Operation 47 [1/2] (0.67ns)   --->   "%a_load = load i32* %a_addr_1, align 4" [nqueens/nqueens.cpp:51]   --->   Operation 47 'load' 'a_load' <Predicate = (icmp_ln45)> <Delay = 0.67> <Core = "RAM_1P">   --->   Core 44 'RAM_1P' <Latency = 1> <II = 1> <Delay = 0.67> <Storage> <Opcode : 'load' 'store'> <Ports = 1> <Width = 32> <Depth = 8> <RAM>
+ST_8 : Operation 48 [1/1] (1.01ns)   --->   "%add_ln51 = add nsw i32 %a_load, 1" [nqueens/nqueens.cpp:51]   --->   Operation 48 'add' 'add_ln51' <Predicate = (icmp_ln45)> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 49 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.i32P(i32* %u_0, i32 %add_ln51) nounwind" [nqueens/nqueens.cpp:51]   --->   Operation 49 'write' <Predicate = (icmp_ln45)> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_8 : Operation 50 [1/1] (1.01ns)   --->   "%add_ln53 = add nsw i32 %k_read, -2" [nqueens/nqueens.cpp:53]   --->   Operation 50 'add' 'add_ln53' <Predicate = (icmp_ln45)> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_8 : Operation 51 [1/1] (0.65ns)   --->   "br label %._crit_edge" [nqueens/nqueens.cpp:54]   --->   Operation 51 'br' <Predicate = (icmp_ln45)> <Delay = 0.65>
+
+State 9 <SV = 8> <Delay = 2.01>
+ST_9 : Operation 52 [1/1] (0.00ns) (grouped into LUT with out node add_ln55)   --->   "%empty_2 = phi i32 [ %add_ln53, %3 ], [ %k_read, %._crit_edge1 ]" [nqueens/nqueens.cpp:53]   --->   Operation 52 'phi' 'empty_2' <Predicate = true> <Delay = 0.00>
+ST_9 : Operation 53 [1/1] (1.01ns) (out node of the LUT)   --->   "%add_ln55 = add nsw i32 %empty_2, 1" [nqueens/nqueens.cpp:55]   --->   Operation 53 'add' 'add_ln55' <Predicate = true> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_9 : Operation 54 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.i32P(i32* %k, i32 %add_ln55) nounwind" [nqueens/nqueens.cpp:55]   --->   Operation 54 'write' <Predicate = true> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_9 : Operation 55 [2/2] (0.65ns)   --->   "%tmp_2 = call fastcc i4 @find_0([8 x i32]* %a) nounwind" [nqueens/nqueens.cpp:56]   --->   Operation 55 'call' 'tmp_2' <Predicate = true> <Delay = 0.65> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+
+State 10 <SV = 9> <Delay = 3.01>
+ST_10 : Operation 56 [1/2] (0.00ns)   --->   "%tmp_2 = call fastcc i4 @find_0([8 x i32]* %a) nounwind" [nqueens/nqueens.cpp:56]   --->   Operation 56 'call' 'tmp_2' <Predicate = (!icmp_ln47) | (!icmp_ln45)> <Delay = 0.00> <CoreType = "Generic">   --->   Core 0 '' <Latency = 0> <II = 1> <Delay = 1.00> <Generic> <Opcode : >
+ST_10 : Operation 57 [1/1] (0.72ns)   --->   "%icmp_ln56 = icmp eq i4 %tmp_2, -8" [nqueens/nqueens.cpp:56]   --->   Operation 57 'icmp' 'icmp_ln56' <Predicate = (!icmp_ln47) | (!icmp_ln45)> <Delay = 0.72> <Core = "Cmp">   --->   Core 25 'Cmp' <Latency = 0> <II = 1> <Delay = 0.72> <FuncUnit> <Opcode : 'icmp'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 58 [1/1] (0.00ns)   --->   "br i1 %icmp_ln56, label %4, label %._crit_edge1" [nqueens/nqueens.cpp:56]   --->   Operation 58 'br' <Predicate = (!icmp_ln47) | (!icmp_ln45)> <Delay = 0.00>
+ST_10 : Operation 59 [1/1] (1.00ns)   --->   "%sol_list_read = call i32 @_ssdm_op_Read.s_axilite.i32P(i32* %sol_list) nounwind" [nqueens/nqueens.cpp:57]   --->   Operation 59 'read' 'sol_list_read' <Predicate = (!icmp_ln47 & icmp_ln56) | (!icmp_ln45 & icmp_ln56)> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_10 : Operation 60 [1/1] (1.01ns)   --->   "%add_ln57 = add nsw i32 %sol_list_read, 1" [nqueens/nqueens.cpp:57]   --->   Operation 60 'add' 'add_ln57' <Predicate = (!icmp_ln47 & icmp_ln56) | (!icmp_ln45 & icmp_ln56)> <Delay = 1.01> <Core = "AddSub">   --->   Core 14 'AddSub' <Latency = 0> <II = 1> <Delay = 1.01> <FuncUnit> <Opcode : 'add' 'sub'> <InPorts = 2> <OutPorts = 1>
+ST_10 : Operation 61 [1/1] (1.00ns)   --->   "call void @_ssdm_op_Write.s_axilite.i32P(i32* %sol_list, i32 %add_ln57) nounwind" [nqueens/nqueens.cpp:57]   --->   Operation 61 'write' <Predicate = (!icmp_ln47 & icmp_ln56) | (!icmp_ln45 & icmp_ln56)> <Delay = 1.00> <Core = "s_axilite">   --->   Core 10 's_axilite' <Latency = 0> <II = 1> <Delay = 1.00> <Adapter> <Opcode : 'read' 'write'>
+ST_10 : Operation 62 [1/1] (0.00ns)   --->   "br label %5" [nqueens/nqueens.cpp:58]   --->   Operation 62 'br' <Predicate = (!icmp_ln47 & icmp_ln56) | (!icmp_ln45 & icmp_ln56)> <Delay = 0.00>
+ST_10 : Operation 63 [1/1] (0.00ns)   --->   "ret void" [nqueens/nqueens.cpp:61]   --->   Operation 63 'ret' <Predicate = (icmp_ln56) | (icmp_ln45 & icmp_ln47)> <Delay = 0.00>
 
 
 ============================================================
@@ -184,55 +167,52 @@ ST_8 : Operation 82 [1/1] (0.00ns)   --->   "ret void" [nqueens/nqueens.cpp:45] 
 ============================================================
 Target clock period: 10ns, clock uncertainty: 1.25ns.
 
- <State 1>: 0.656ns
+ <State 1>: 0ns
 The critical path consists of the following:
-	'alloca' operation ('n_0') [7]  (0 ns)
-	'store' operation ('store_ln24', nqueens/nqueens.cpp:24) of variable 'n_0', nqueens/nqueens.cpp:22 on local variable 'n_0' [17]  (0.656 ns)
 
- <State 2>: 0.656ns
+ <State 2>: 1ns
 The critical path consists of the following:
-	multiplexor before 'phi' operation ('u') with incoming values : ('u', nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:25) [23]  (0.656 ns)
+	s_axi read on port 'k' (nqueens/nqueens.cpp:43) [21]  (1 ns)
 
- <State 3>: 1.24ns
+ <State 3>: 1.65ns
 The critical path consists of the following:
-	'phi' operation ('u') with incoming values : ('u', nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:25) [23]  (0 ns)
-	'icmp' operation ('icmp_ln8', nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:25) [25]  (0.584 ns)
-	multiplexor before 'phi' operation ('p_0_i', nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:25) with incoming values : ('u', nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:25) [60]  (0.656 ns)
+	'call' operation ('tmp', nqueens/nqueens.cpp:43) to 'counter' [23]  (1.65 ns)
 
- <State 4>: 2.32ns
+ <State 4>: 1.65ns
 The critical path consists of the following:
-	'phi' operation ('count_0_i', nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25) with incoming values : ('select_ln11_1', nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25) [31]  (0 ns)
-	'icmp' operation ('icmp_ln15', nqueens/nqueens.cpp:15->nqueens/nqueens.cpp:25) [54]  (0.991 ns)
-	multiplexor before 'phi' operation ('p_0_i', nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:25) with incoming values : ('u', nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:25) [60]  (0.656 ns)
-	'phi' operation ('p_0_i', nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:25) with incoming values : ('u', nqueens/nqueens.cpp:8->nqueens/nqueens.cpp:25) [60]  (0 ns)
-	'store' operation ('store_ln25', nqueens/nqueens.cpp:25) of variable 'zext_ln25', nqueens/nqueens.cpp:25 on array 'a' [65]  (0.677 ns)
+	'icmp' operation ('icmp_ln45', nqueens/nqueens.cpp:45) [28]  (0.991 ns)
+	multiplexor before 'phi' operation ('empty_2', nqueens/nqueens.cpp:53) with incoming values : ('k_read', nqueens/nqueens.cpp:43) ('add_ln53', nqueens/nqueens.cpp:53) [46]  (0.656 ns)
 
- <State 5>: 4.15ns
+ <State 5>: 0.656ns
 The critical path consists of the following:
-	'load' operation ('a_load_1', nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25) on array 'a' [41]  (0.677 ns)
-	'sub' operation ('sub_ln11', nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25) [43]  (1.02 ns)
-	'sub' operation ('neg_i', nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25) [44]  (1.02 ns)
-	'select' operation ('abs_i', nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25) [46]  (0 ns)
-	'icmp' operation ('icmp_ln11_1', nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25) [48]  (0.991 ns)
-	'select' operation ('select_ln11', nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25) [50]  (0 ns)
-	'select' operation ('select_ln11_1', nqueens/nqueens.cpp:11->nqueens/nqueens.cpp:25) [51]  (0.449 ns)
+	'call' operation ('tmp_1', nqueens/nqueens.cpp:47) to 'find_0' [33]  (0.656 ns)
 
- <State 6>: 0.677ns
+ <State 6>: 2.02ns
 The critical path consists of the following:
-	'load' operation ('n_0_assign_2_load_1', nqueens/nqueens.cpp:27) on local variable 'n_0' [61]  (0 ns)
-	'getelementptr' operation ('a_addr_1', nqueens/nqueens.cpp:27) [67]  (0 ns)
-	'load' operation ('a_load', nqueens/nqueens.cpp:27) on array 'a' [68]  (0.677 ns)
+	'add' operation ('add_ln46', nqueens/nqueens.cpp:46) [31]  (1.02 ns)
+	s_axi write on port 'k' (nqueens/nqueens.cpp:46) [32]  (1 ns)
 
- <State 7>: 2.32ns
+ <State 7>: 0.677ns
 The critical path consists of the following:
-	'load' operation ('a_load', nqueens/nqueens.cpp:27) on array 'a' [68]  (0.677 ns)
-	'icmp' operation ('icmp_ln27', nqueens/nqueens.cpp:27) [69]  (0.991 ns)
-	multiplexor before 'phi' operation ('p_1', nqueens/nqueens.cpp:37) with incoming values : ('k', nqueens/nqueens.cpp:22) ('k', nqueens/nqueens.cpp:37) ('k', nqueens/nqueens.cpp:39) [84]  (0.656 ns)
+	'load' operation ('a_load', nqueens/nqueens.cpp:51) on array 'a' [39]  (0.677 ns)
 
- <State 8>: 1.02ns
+ <State 8>: 2.69ns
 The critical path consists of the following:
-	'phi' operation ('p_1', nqueens/nqueens.cpp:37) with incoming values : ('k', nqueens/nqueens.cpp:22) ('k', nqueens/nqueens.cpp:37) ('k', nqueens/nqueens.cpp:39) [84]  (0 ns)
-	'add' operation ('k', nqueens/nqueens.cpp:39) [86]  (1.02 ns)
+	'load' operation ('a_load', nqueens/nqueens.cpp:51) on array 'a' [39]  (0.677 ns)
+	'add' operation ('add_ln51', nqueens/nqueens.cpp:51) [40]  (1.02 ns)
+	s_axi write on port 'u_0' (nqueens/nqueens.cpp:51) [41]  (1 ns)
+
+ <State 9>: 2.02ns
+The critical path consists of the following:
+	'phi' operation ('empty_2', nqueens/nqueens.cpp:53) with incoming values : ('k_read', nqueens/nqueens.cpp:43) ('add_ln53', nqueens/nqueens.cpp:53) [46]  (0 ns)
+	'add' operation ('add_ln55', nqueens/nqueens.cpp:55) [47]  (1.02 ns)
+	s_axi write on port 'k' (nqueens/nqueens.cpp:55) [48]  (1 ns)
+
+ <State 10>: 3.02ns
+The critical path consists of the following:
+	s_axi read on port 'sol_list' (nqueens/nqueens.cpp:57) [53]  (1 ns)
+	'add' operation ('add_ln57', nqueens/nqueens.cpp:57) [54]  (1.02 ns)
+	s_axi write on port 'sol_list' (nqueens/nqueens.cpp:57) [55]  (1 ns)
 
 
 ============================================================
@@ -251,6 +231,8 @@ N/A
 	State 6
 	State 7
 	State 8
+	State 9
+	State 10
 
 
 ============================================================
