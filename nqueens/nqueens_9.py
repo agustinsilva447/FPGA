@@ -1,16 +1,9 @@
 import numpy as np    
 
-def find_0(a, n):
-    for i in range(n):
-        if a[i] == 0:
-            return i
-    return n
-
 def counter(a, k, n, u_0):
-    f = find_0(a, n)
     for u in np.arange(u_0, n + 1, 1):
         count = 0
-        for j in range(f):
+        for j in range(k):
             if ((u != a[j]) and (np.abs(u - a[j]) != (k - j))):
                 count += 1
         if count == k:
@@ -23,7 +16,7 @@ def block(a, k, u_0, sol_list, flag):
         u_0 = 1
         if a[k] == 0:
             k -= 1
-            if find_0(a, n) == 0:
+            if k == -1:
                 flag = 1
                 return a, k, u_0, sol_list, flag
             u_0 = a[k] + 1
@@ -31,7 +24,7 @@ def block(a, k, u_0, sol_list, flag):
             k -= 1
         k += 1
         #print(a)
-        if find_0(a, n) == n:
+        if k == n:
             sol_list += 1
             #print('---> SOLUTION NUMBER {}'.format(sol_list))
             return a, k, u_0, sol_list, flag
