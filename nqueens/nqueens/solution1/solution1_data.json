@@ -12,9 +12,10 @@
     "Package": "-ffvb1156",
     "Speed": "-2-e"
   },
-  "HlsSolution": {
-    
-  },
+  "HlsSolution": {"Config": [
+      "config_export -format=ip_catalog",
+      "config_export -rtl=vhdl"
+    ]},
   "Args": {
     "a": {
       "index": "0",
@@ -103,14 +104,10 @@
   "Files": {
     "CSource": ["..\/nqueens.cpp"],
     "Vhdl": [
-      "impl\/vhdl\/counter.vhd",
-      "impl\/vhdl\/find_0.vhd",
       "impl\/vhdl\/nqueens_AXILiteS_s_axi.vhd",
       "impl\/vhdl\/nqueens.vhd"
     ],
     "Verilog": [
-      "impl\/verilog\/counter.v",
-      "impl\/verilog\/find_0.v",
       "impl\/verilog\/nqueens_AXILiteS_s_axi.v",
       "impl\/verilog\/nqueens.v"
     ],
@@ -664,44 +661,15 @@
     }
   },
   "ModuleInfo": {
-    "Hierarchy": {
-      "ModuleName": "nqueens",
-      "Instances": [
-        {
-          "ModuleName": "counter",
-          "InstanceName": "grp_counter_fu_128"
-        },
-        {
-          "ModuleName": "find_0",
-          "InstanceName": "grp_find_0_fu_138"
-        }
-      ]
-    },
-    "Info": {
-      "counter": {
+    "Hierarchy": {"ModuleName": "nqueens"},
+    "Info": {"nqueens": {
         "FunctionProtocol": "ap_ctrl_hs",
         "isTaskLevelControl": "1",
         "isPipelined": "0",
         "isCombinational": "0",
         "isOneStateSeq": "0"
-      },
-      "find_0": {
-        "FunctionProtocol": "ap_ctrl_hs",
-        "isTaskLevelControl": "1",
-        "isPipelined": "0",
-        "isCombinational": "0",
-        "isOneStateSeq": "0"
-      },
-      "nqueens": {
-        "FunctionProtocol": "ap_ctrl_hs",
-        "isTaskLevelControl": "1",
-        "isPipelined": "0",
-        "isCombinational": "0",
-        "isOneStateSeq": "0"
-      }
-    },
-    "Metrics": {
-      "counter": {
+      }},
+    "Metrics": {"nqueens": {
         "Latency": {
           "LatencyBest": "",
           "LatencyAvg": "",
@@ -715,108 +683,35 @@
           "Uncertainty": "1.25",
           "Estimate": "4.149"
         },
-        "Loops": [
-          {
+        "Loops": [{
             "Name": "Loop 1",
-            "TripCount": "",
-            "LatencyMin": "3",
-            "LatencyMax": "17",
-            "Latency": "3 ~ 17",
-            "PipelineII": "2",
-            "PipelineDepth": "2"
-          },
-          {
-            "Name": "Loop 2",
             "TripCount": "",
             "Latency": "",
             "PipelineII": "",
-            "PipelineDepthMin": "3",
-            "PipelineDepthMax": "11",
-            "PipelineDepth": "3 ~ 11",
+            "PipelineDepth": "",
             "Loops": [{
-                "Name": "Loop 2.1",
+                "Name": "Loop 1.1",
                 "TripCount": "",
-                "LatencyMin": "0",
-                "LatencyMax": "8",
-                "Latency": "0 ~ 8",
-                "PipelineII": "1",
-                "PipelineDepth": "2"
+                "Latency": "",
+                "PipelineII": "",
+                "PipelineDepth": "",
+                "Loops": [{
+                    "Name": "Loop 1.1.1",
+                    "TripCount": "",
+                    "Latency": "",
+                    "PipelineII": "1",
+                    "PipelineDepth": "2"
+                  }]
               }]
-          }
-        ],
-        "Area": {
-          "FF": "160",
-          "LUT": "611",
-          "BRAM_18K": "0",
-          "DSP48E": "0",
-          "URAM": "0"
-        }
-      },
-      "find_0": {
-        "Latency": {
-          "LatencyBest": "5",
-          "LatencyAvg": "11",
-          "LatencyWorst": "19",
-          "PipelineIIMin": "5",
-          "PipelineIIMax": "19",
-          "PipelineII": "5 ~ 19",
-          "PipelineDepth": "",
-          "PipelineType": "none"
-        },
-        "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "1.25",
-          "Estimate": "2.324"
-        },
-        "Loops": [{
-            "Name": "Loop 1",
-            "TripCount": "",
-            "LatencyMin": "3",
-            "LatencyMax": "17",
-            "Latency": "3 ~ 17",
-            "PipelineII": "2",
-            "PipelineDepth": "2"
-          }],
-        "Area": {
-          "FF": "21",
-          "LUT": "97",
-          "BRAM_18K": "0",
-          "DSP48E": "0",
-          "URAM": "0"
-        }
-      },
-      "nqueens": {
-        "Latency": {
-          "LatencyBest": "",
-          "LatencyAvg": "",
-          "LatencyWorst": "",
-          "PipelineII": "",
-          "PipelineDepth": "",
-          "PipelineType": "none"
-        },
-        "Timing": {
-          "Target": "10.00",
-          "Uncertainty": "1.25",
-          "Estimate": "4.149"
-        },
-        "Loops": [{
-            "Name": "Loop 1",
-            "TripCount": "",
-            "Latency": "",
-            "PipelineII": "",
-            "PipelineDepthMin": "11",
-            "PipelineDepthMax": "47",
-            "PipelineDepth": "11 ~ 47"
           }],
         "Area": {
           "BRAM_18K": "2",
-          "FF": "708",
-          "LUT": "1666",
+          "FF": "621",
+          "LUT": "1467",
           "DSP48E": "0",
           "URAM": "0"
         }
-      }
-    }
+      }}
   },
   "Sdx": {
     "Target": "none",
@@ -828,7 +723,7 @@
   },
   "GenData": {
     "DataVersion": "0.2",
-    "Time": "2021-08-26 12:12:48 +0200",
+    "Time": "2021-08-27 19:58:56 +0200",
     "ToolName": "vivado_hls",
     "ToolVersion": "2019.2"
   }

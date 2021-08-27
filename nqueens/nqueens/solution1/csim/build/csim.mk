@@ -55,6 +55,7 @@ IFLAG += -D__SIM_FIR__
 IFLAG += -D__SIM_DDS__
 
 IFLAG += -D__DSP48E2__
+IFLAG += -Wno-unknown-pragmas 
 IFLAG += -g
 IFLAG += -DNT
 LFLAG += -Wl,--enable-auto-import 
@@ -72,7 +73,7 @@ all: $(TARGET)
 
 $(ObjDir)/nqueens_tb.o: ../../../nqueens_tb.cpp $(ObjDir)/.dir
 	$(Echo) "   Compiling ../../../nqueens_tb.cpp in $(BuildMode) mode" $(AVE_DIR_DLOG)
-	$(Verb)  $(CC) ${CCFLAG} -c -MMD  $(IFLAG) $(DFLAG) $< -o $@ ; \
+	$(Verb)  $(CC) ${CCFLAG} -c -MMD -Wno-unknown-pragmas -Wno-unknown-pragmas  $(IFLAG) $(DFLAG) $< -o $@ ; \
 
 -include $(ObjDir)/nqueens_tb.d
 

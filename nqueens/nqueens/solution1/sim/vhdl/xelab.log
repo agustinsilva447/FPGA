@@ -9,10 +9,6 @@ INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/AESL_sim_pkg.vhd" into library xil_defaultlib
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/AESL_axi_slave_AXILiteS.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'AESL_axi_slave_AXILiteS'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/counter.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'counter'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/find_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'find_0'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/nqueens.autotb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'apatb_nqueens_top'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/nqueens.vhd" into library xil_defaultlib
@@ -36,8 +32,6 @@ Compiling package ieee.std_logic_textio
 Compiling module work.glbl
 Compiling architecture behave of entity xil_defaultlib.nqueens_AXILiteS_s_axi_ram [\nqueens_AXILiteS_s_axi_ram(dept...]
 Compiling architecture behave of entity xil_defaultlib.nqueens_AXILiteS_s_axi [nqueens_axilites_s_axi_default]
-Compiling architecture behav of entity xil_defaultlib.counter [counter_default]
-Compiling architecture behav of entity xil_defaultlib.find_0 [find_0_default]
 Compiling architecture behav of entity xil_defaultlib.nqueens [nqueens_default]
 Compiling architecture behav of entity xil_defaultlib.AESL_axi_slave_AXILiteS [aesl_axi_slave_axilites_default]
 Compiling architecture behav of entity xil_defaultlib.apatb_nqueens_top

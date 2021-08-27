@@ -868,24 +868,12 @@ void * __mingw_aligned_realloc (void *_Memory, size_t _Size, size_t _Offset);
 # 2 "nqueens/nqueens.cpp" 2
 
 
-int find_0(int a[8])
-{_ssdm_SpecArrayDimSize(a, 8);
- for(int i = 0; i<8; i++){
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- if (a[i] == 0){
-   return i;
-  }
- }
- return 8;
-}
-
-int counter(int a[8], int k, int n_0, int u_0)
+int counter(int a[8], int k, int u_0)
 {_ssdm_SpecArrayDimSize(a, 8);
  int count, f;
- f = find_0(a);
  for (int u = u_0; u<8 +1; u++){
   count = 0;
-  for (int j = 0; j<f; j++){
+  for (int j = 0; j<k; j++){
 _ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
  if ((u != a[j]) && (abs(u - a[j]) != (k - j))){
     count = count + 1;
@@ -906,23 +894,24 @@ _ssdm_op_SpecInterface(u_0, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0,
 _ssdm_op_SpecInterface(k, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(a, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
 _ssdm_op_SpecInterface(0, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
- while (1){
-  a[*k] = counter(a, *k, 8, *u_0);
+ int exit = 0;
+ while (!exit){
+  a[*k] = counter(a, *k, *u_0);
   *u_0 = 1;
   if (a[*k] == 0){
    *k = *k - 1;
-   if (find_0(a) == 0){
+   if (*k == -1){
     *flag = 1;
-    break;
+    exit = 1;
    }
    *u_0 = a[*k] + 1;
    a[*k] = 0;
    *k = *k - 1;
   }
   *k = *k + 1;
-  if (find_0(a) == 8){
+  if (*k == 8){
    *sol_list = *sol_list + 1;
-   break;
+   exit = 1;
   }
  }
 }

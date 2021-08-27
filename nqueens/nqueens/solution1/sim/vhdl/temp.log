@@ -13,10 +13,6 @@ INFO: [VRFC 10-311] analyzing module glbl
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/AESL_sim_pkg.vhd" into library xil_defaultlib
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/AESL_axi_slave_AXILiteS.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'AESL_axi_slave_AXILiteS'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/counter.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'counter'
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/find_0.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'find_0'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/nqueens.autotb.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'apatb_nqueens_top'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/nqueens.vhd" into library xil_defaultlib
@@ -40,8 +36,6 @@ Compiling package ieee.std_logic_textio
 Compiling module work.glbl
 Compiling architecture behave of entity xil_defaultlib.nqueens_AXILiteS_s_axi_ram [\nqueens_AXILiteS_s_axi_ram(dept...]
 Compiling architecture behave of entity xil_defaultlib.nqueens_AXILiteS_s_axi [nqueens_axilites_s_axi_default]
-Compiling architecture behav of entity xil_defaultlib.counter [counter_default]
-Compiling architecture behav of entity xil_defaultlib.find_0 [find_0_default]
 Compiling architecture behav of entity xil_defaultlib.nqueens [nqueens_default]
 Compiling architecture behav of entity xil_defaultlib.AESL_axi_slave_AXILiteS [aesl_axi_slave_axilites_default]
 Compiling architecture behav of entity xil_defaultlib.apatb_nqueens_top
@@ -53,8 +47,8 @@ Built simulation snapshot nqueens
     ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 
 source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/xsim.dir/nqueens/webtalk/xsim_webtalk.tcl -notrace
-INFO: [Common 17-186] 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/xsim.dir/nqueens/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Thu Aug 26 12:13:53 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
-INFO: [Common 17-206] Exiting Webtalk at Thu Aug 26 12:13:53 2021...
+INFO: [Common 17-186] 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/xsim.dir/nqueens/webtalk/usage_statistics_ext_xsim.xml' has been successfully sent to Xilinx on Fri Aug 27 20:13:19 2021. For additional details about this file, please refer to the WebTalk help file at C:/Xilinx/Vivado/2019.2/doc/webtalk_introduction.html.
+INFO: [Common 17-206] Exiting Webtalk at Fri Aug 27 20:13:19 2021...
 
 ****** xsim v2019.2 (64-bit)
   **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019

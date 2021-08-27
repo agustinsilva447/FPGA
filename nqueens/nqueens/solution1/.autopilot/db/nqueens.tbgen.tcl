@@ -73,7 +73,7 @@ set NewPortList {[
  	{ "name": "ap_rst_n", "direction": "in", "datatype": "sc_logic", "bitwidth":1, "type": "reset", "bundle":{"name": "ap_rst_n", "role": "default" }}  ]}
 
 set RtlHierarchyInfo {[
-	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1", "2", "3"],
+	{"ID" : "0", "Level" : "0", "Path" : "`AUTOTB_DUT_INST", "Parent" : "", "Child" : ["1"],
 		"CDFG" : "nqueens",
 		"Protocol" : "ap_ctrl_hs",
 		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
@@ -86,67 +86,22 @@ set RtlHierarchyInfo {[
 		"HasSubDataflow" : "0",
 		"InDataflowNetwork" : "0",
 		"HasNonBlockingOperation" : "0",
-		"WaitState" : [
-			{"State" : "ap_ST_fsm_state3", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_counter_fu_128"},
-			{"State" : "ap_ST_fsm_state6", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_find_0_fu_138"},
-			{"State" : "ap_ST_fsm_state10", "FSM" : "ap_CS_fsm", "SubInstance" : "grp_find_0_fu_138"}],
 		"Port" : [
-			{"Name" : "a", "Type" : "Memory", "Direction" : "IO",
-				"SubConnect" : [
-					{"ID" : "2", "SubInstance" : "grp_counter_fu_128", "Port" : "a"},
-					{"ID" : "3", "SubInstance" : "grp_find_0_fu_138", "Port" : "a"}]},
+			{"Name" : "a", "Type" : "Memory", "Direction" : "IO"},
 			{"Name" : "k", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "u_0", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "sol_list", "Type" : "OVld", "Direction" : "IO"},
 			{"Name" : "flag", "Type" : "Vld", "Direction" : "O"}]},
-	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.nqueens_AXILiteS_s_axi_U", "Parent" : "0"},
-	{"ID" : "2", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_counter_fu_128", "Parent" : "0",
-		"CDFG" : "counter",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "-1", "EstimateLatencyMax" : "-1",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"Port" : [
-			{"Name" : "a", "Type" : "Memory", "Direction" : "I"},
-			{"Name" : "k", "Type" : "None", "Direction" : "I"},
-			{"Name" : "u_0", "Type" : "None", "Direction" : "I"}]},
-	{"ID" : "3", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.grp_find_0_fu_138", "Parent" : "0",
-		"CDFG" : "find_0",
-		"Protocol" : "ap_ctrl_hs",
-		"ControlExist" : "1", "ap_start" : "1", "ap_ready" : "1", "ap_done" : "1", "ap_continue" : "0", "ap_idle" : "1",
-		"Pipeline" : "None", "UnalignedPipeline" : "0", "RewindPipeline" : "0", "ProcessNetwork" : "0",
-		"II" : "0",
-		"VariableLatency" : "1", "ExactLatency" : "-1", "EstimateLatencyMin" : "5", "EstimateLatencyMax" : "19",
-		"Combinational" : "0",
-		"Datapath" : "0",
-		"ClockEnable" : "0",
-		"HasSubDataflow" : "0",
-		"InDataflowNetwork" : "0",
-		"HasNonBlockingOperation" : "0",
-		"Port" : [
-			{"Name" : "a", "Type" : "Memory", "Direction" : "I"}]}]}
+	{"ID" : "1", "Level" : "1", "Path" : "`AUTOTB_DUT_INST.nqueens_AXILiteS_s_axi_U", "Parent" : "0"}]}
 
 
 set ArgLastReadFirstWriteLatency {
 	nqueens {
-		a {Type IO LastRead 6 FirstWrite -1}
-		k {Type IO LastRead 1 FirstWrite 5}
-		u_0 {Type IO LastRead 1 FirstWrite 3}
-		sol_list {Type IO LastRead 9 FirstWrite 9}
-		flag {Type O LastRead -1 FirstWrite 5}}
-	counter {
-		a {Type I LastRead 5 FirstWrite -1}
-		k {Type I LastRead 0 FirstWrite -1}
-		u_0 {Type I LastRead 0 FirstWrite -1}}
-	find_0 {
-		a {Type I LastRead 1 FirstWrite -1}}}
+		a {Type IO LastRead 5 FirstWrite 4}
+		k {Type IO LastRead 1 FirstWrite 6}
+		u_0 {Type IO LastRead 1 FirstWrite 4}
+		sol_list {Type IO LastRead 6 FirstWrite 6}
+		flag {Type O LastRead -1 FirstWrite 4}}}
 
 set hasDtUnsupportedChannel 0
 
@@ -156,6 +111,7 @@ set PerformanceInfo {[
 ]}
 
 set PipelineEnableSignalInfo {[
+	{"Pipeline" : "0", "EnableSignal" : "ap_enable_pp0"}
 ]}
 
 set Spec2ImplPortList { 

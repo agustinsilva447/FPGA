@@ -1,4 +1,4 @@
-Running: xsim.dir/nqueens/xsimk.exe -simmode gui -wdb nqueens.wdb -simrunnum 0 -socket 54109
+Running: xsim.dir/nqueens/xsimk.exe -simmode gui -wdb nqueens.wdb -simrunnum 0 -socket 59919
 Design successfully loaded
-Design Loading Memory Usage: 5240 KB (Peak: 5240 KB)
-Design Loading CPU Usage: 0 ms
+Design Loading Memory Usage: 5212 KB (Peak: 5212 KB)
+Design Loading CPU Usage: 15 ms
