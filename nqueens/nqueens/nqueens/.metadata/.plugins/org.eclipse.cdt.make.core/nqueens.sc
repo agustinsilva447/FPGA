@@ -17,6 +17,7 @@
             <includePath path="#undef __FLT_EVAL_METHOD_C99__" removed="true"/>
             <includePath path="#undef _ILP32" removed="true"/>
             <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/../../../../aarch64-none-elf/include"/>
+            <includePath path="#undef __ARM_FEATURE_AES" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_QRDMX" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_SM4" removed="true"/>
             <includePath path="#undef __ILP32__" removed="true"/>
@@ -743,6 +744,7 @@
     </instance>
     <instance id="xilinx.gnu.arm.a53.exe.debug.2138406932;xilinx.gnu.arm.a53.exe.debug.2138406932.;xilinx.gnu.arm.a53.c.toolchain.compiler.debug.1456511497;xilinx.gnu.arm.a53.c.compiler.input.1578484220">
         <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
+            <includePath path="#undef __AARCH64_CMODEL_LARGE__" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_SVE_BITS" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_AES" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_SHA2" removed="true"/>

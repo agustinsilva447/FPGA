@@ -12,7 +12,7 @@ int find_0(int a[n])
 	return n;
 }
 
-int counter(int a[n], int k, int n_0, int u_0)
+int counter(int a[n], int k, int u_0)
 {
 	int count, f;
 	f = find_0(a);
@@ -40,7 +40,7 @@ void nqueens(int a[n], int *k, int *u_0, int *sol_list, int *flag)
 #pragma HLS INTERFACE s_axilite port=a
 #pragma HLS INTERFACE s_axilite port=return
 	while (1){
-		a[*k] = counter(a, *k, n, *u_0);
+		a[*k] = counter(a, *k, *u_0);
 		*u_0 = 1;
 		if (a[*k] == 0){
 			*k = *k - 1;

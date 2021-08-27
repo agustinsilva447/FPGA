@@ -12,6 +12,7 @@
 
 #define n 8
 
+/*
 int find_0(int a[n])
 {
 	for(int i = 0; i<n; i++){
@@ -62,44 +63,20 @@ void nqueens(int a[n], int *k, int *u_0, int *sol_list, int *flag)
 		}
 	}
 }
-
-unsigned int float_to_u32(float val)
-{
-	unsigned int result;
-	union float_bytes{
-		float v;
-		unsigned char bytes[4];
-	} data;
-	data.v = val;
-	result = (data.bytes[3]<<24) + (data.bytes[2]<<16) + (data.bytes[1]<<8) + (data.bytes[0]);
-	return result;
-}
-
-float u32_to_float(unsigned int val)
-{
-	union{
-		float val_float;
-		unsigned char bytes[4];
-	} data;
-	data.bytes[3] = (val >> (8*3)) & 0xff;
-	data.bytes[2] = (val >> (8*2)) & 0xff;
-	data.bytes[1] = (val >> (8*1)) & 0xff;
-	data.bytes[0] = (val >> (8*0)) & 0xff;
-	return data.val_float;
-}
+*/
 
 int main()
 {
 	XTime tStart;
 	XTime tEnd;
-	int a[n];
-	int u_0 = 1, k = 0, sol_list = 0, iteration = 1, flag = 0;
-	double time_sw, time_hw;
-
+	//int a[n],    u_0    = 1, k    = 0, sol_list    = 0, iteration    = 1, flag    = 0;
+	int a_hw[n], u_0_hw = 1, k_hw = 0, sol_list_hw = 0, iteration_hw = 1, flag_hw = 0;
+	float time_sw, time_hw;
+	/*
+	///////////////////////////////////////////////////////////////////////
 	for (int x=0; x<n; x++){
 		a[x] = 0;
 	}
-
 	XTime_GetTime(&tStart);
 	while ((!flag) && (iteration < 100)){
 		nqueens(a, &k, &u_0, &sol_list, &flag);
@@ -107,8 +84,8 @@ int main()
 	}
 	XTime_GetTime(&tEnd);
 	time_sw = (double)((tEnd - tStart));
-
 	///////////////////////////////////////////////////////////////////////
+	*/
 	int status;
 	XNqueens goNqueens;
 	XNqueens_Config *goNqueens_cfg;
@@ -125,9 +102,31 @@ int main()
 		printf("\nNqueens inicializado correctamente.");
 	}
 	XNqueens_Initialize(&goNqueens, XPAR_NQUEENS_0_DEVICE_ID);
+
+	for (int x=0; x<n; x++){
+		a_hw[x] = 0;
+	}
+	XNqueens_Write_a_Words(&goNqueens, 0, a_hw, n);
+	XNqueens_Set_k_i(&goNqueens, k_hw);
+	XNqueens_Set_u_0_i(&goNqueens, u_0_hw);
+	XNqueens_Set_sol_list_i(&goNqueens, sol_list_hw);
+	XNqueens_Start(&goNqueens);
+
+	//XTime_GetTime(&tStart);
+	while ((!flag_hw) && (iteration_hw < 100)){
+		XNqueens_Start(&goNqueens);
+		//while(!XNqueens_IsDone(&goNqueens));
+		//XNqueens_Read_a_Words(&goNqueens, 0, a_hw, n);
+		//k_hw = XNqueens_Get_k_i(&goNqueens);
+		//u_0_hw = XNqueens_Get_u_0_i(&goNqueens);
+		//sol_list_hw = XNqueens_Get_sol_list_i(&goNqueens);
+		//flag_hw = XNqueens_Get_flag(&goNqueens);
+		iteration_hw = iteration_hw + 1;
+	}
+	//XTime_GetTime(&tEnd);
+	//time_hw = (float)((tEnd - tStart));
 	///////////////////////////////////////////////////////////////////////
-
-
-	printf("SOFTWARE---> Number of solutions for %d queens: %d. Execution time: %f mseg.\n", n, sol_list, time_sw/(COUNTS_PER_SECOND/1000));
+	//printf("\nSOFTWARE ---> Number of solutions for %d queens: %d. Execution time: %f mseg.\n", n, sol_list,    time_sw/(COUNTS_PER_SECOND/1000));
+	printf("\nHARDWARE ---> Number of solutions for %d queens: %d. Execution time: %f mseg.\n", n, sol_list_hw, time_hw/(COUNTS_PER_SECOND/1000));
 	return 0;
 }
