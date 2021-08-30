@@ -19,67 +19,320 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu9eg
 INFO: [Common 17-1540] The version limit for your license is '2020.04' and has expired for new software. A version limit expiration means that, although you may be able to continue to use the current version of tools or IP with this license, you will not be eligible for any updates or new releases.
 INFO: [Device 21-403] Loading part xczu9eg-ffvb1156-2-e
 INFO: Launching helper process for spawning children vivado processes
-INFO: Helper process launched with PID 8616 
+INFO: Helper process launched with PID 13068 
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:03 ; elapsed = 00:00:13 . Memory (MB): peak = 1467.203 ; gain = 64.969
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:06 . Memory (MB): peak = 1466.586 ; gain = 64.742
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'nqueens_nqueens_0_0' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ip/nqueens_nqueens_0_0/synth/nqueens_nqueens_0_0.vhd:81]
-	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 7 - type: integer 
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 5 - type: integer 
 	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'nqueens' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens.vhd:12' bound to instance 'U0' of component 'nqueens' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ip/nqueens_nqueens_0_0/synth/nqueens_nqueens_0_0.vhd:148]
-INFO: [Synth 8-638] synthesizing module 'nqueens' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens.vhd:40]
-	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens.vhd:12' bound to instance 'U0' of component 'nqueens' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ip/nqueens_nqueens_0_0/synth/nqueens_nqueens_0_0.vhd:148]
+INFO: [Synth 8-638] synthesizing module 'nqueens' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens.vhd:40]
+	Parameter C_S_AXI_AXILITES_ADDR_WIDTH bound to: 5 - type: integer 
 	Parameter C_S_AXI_AXILITES_DATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens.vhd:80]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens.vhd:83]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens.vhd:102]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens.vhd:107]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens.vhd:113]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens.vhd:117]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens.vhd:123]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens.vhd:137]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens.vhd:139]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens.vhd:141]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens.vhd:152]
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens.vhd:62]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens.vhd:65]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens.vhd:70]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens.vhd:73]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-INFO: [Synth 8-3491] module 'nqueens_AXILiteS_s_axi' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens_AXILiteS_s_axi.vhd:9' bound to instance 'nqueens_AXILiteS_s_axi_U' of component 'nqueens_AXILiteS_s_axi' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens.vhd:239]
-INFO: [Synth 8-638] synthesizing module 'nqueens_AXILiteS_s_axi' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens_AXILiteS_s_axi.vhd:111]
-	Parameter C_S_AXI_ADDR_WIDTH bound to: 7 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_AXILiteS_s_axi' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_AXILiteS_s_axi.vhd:9' bound to instance 'nqueens_AXILiteS_s_axi_U' of component 'nqueens_AXILiteS_s_axi' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens.vhd:180]
+INFO: [Synth 8-638] synthesizing module 'nqueens_AXILiteS_s_axi' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_AXILiteS_s_axi.vhd:66]
+	Parameter C_S_AXI_ADDR_WIDTH bound to: 5 - type: integer 
 	Parameter C_S_AXI_DATA_WIDTH bound to: 32 - type: integer 
-	Parameter BYTES bound to: 4 - type: integer 
-	Parameter DEPTH bound to: 8 - type: integer 
-	Parameter AWIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-3491] module 'nqueens_AXILiteS_s_axi_ram' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens_AXILiteS_s_axi.vhd:720' bound to instance 'int_a' of component 'nqueens_AXILiteS_s_axi_ram' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens_AXILiteS_s_axi.vhd:222]
-INFO: [Synth 8-638] synthesizing module 'nqueens_AXILiteS_s_axi_ram' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens_AXILiteS_s_axi.vhd:743]
-	Parameter BYTES bound to: 4 - type: integer 
-	Parameter DEPTH bound to: 8 - type: integer 
-	Parameter AWIDTH bound to: 3 - type: integer 
-INFO: [Synth 8-256] done synthesizing module 'nqueens_AXILiteS_s_axi_ram' (1#1) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens_AXILiteS_s_axi.vhd:743]
-INFO: [Synth 8-256] done synthesizing module 'nqueens_AXILiteS_s_axi' (2#1) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens_AXILiteS_s_axi.vhd:111]
-INFO: [Synth 8-3491] module 'counter' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/counter.vhd:12' bound to instance 'grp_counter_fu_128' of component 'counter' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens.vhd:286]
-INFO: [Synth 8-638] synthesizing module 'counter' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/counter.vhd:29]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/counter.vhd:55]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/counter.vhd:58]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/counter.vhd:64]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/counter.vhd:70]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/counter.vhd:74]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/counter.vhd:85]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/counter.vhd:91]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/counter.vhd:96]
-INFO: [Synth 8-256] done synthesizing module 'counter' (3#1) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/counter.vhd:29]
-INFO: [Synth 8-3491] module 'find_0' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/find_0.vhd:12' bound to instance 'grp_find_0_fu_138' of component 'find_0' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens.vhd:301]
-INFO: [Synth 8-638] synthesizing module 'find_0' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/find_0.vhd:27]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/find_0.vhd:45]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/find_0.vhd:48]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/find_0.vhd:52]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/find_0.vhd:57]
-INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/find_0.vhd:63]
-INFO: [Synth 8-256] done synthesizing module 'find_0' (4#1) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/find_0.vhd:27]
-INFO: [Synth 8-256] done synthesizing module 'nqueens' (5#1) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/b23f/hdl/vhdl/nqueens.vhd:40]
-INFO: [Synth 8-256] done synthesizing module 'nqueens_nqueens_0_0' (6#1) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ip/nqueens_nqueens_0_0/synth/nqueens_nqueens_0_0.vhd:81]
+INFO: [Synth 8-256] done synthesizing module 'nqueens_AXILiteS_s_axi' (1#1) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_AXILiteS_s_axi.vhd:66]
+INFO: [Synth 8-3491] module 'nqueens_loop' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:12' bound to instance 'grp_nqueens_loop_fu_176' of component 'nqueens_loop' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens.vhd:212]
+INFO: [Synth 8-638] synthesizing module 'nqueens_loop' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:46]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:67]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:70]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:74]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:77]
+INFO: [Synth 8-5534] Detected attribute (* fsm_encoding = "none" *) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:93]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U1' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:197]
+INFO: [Synth 8-638] synthesizing module 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:37]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'nqueens_mux_83_32bkb' (2#1) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:37]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U2' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:223]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U3' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:249]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U4' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:275]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U5' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:301]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U6' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:327]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U7' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:353]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U8' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:379]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U9' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:405]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U10' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:431]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U11' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:457]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U12' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:483]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U13' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:509]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U14' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:535]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U15' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:561]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U16' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:587]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U17' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:613]
+	Parameter ID bound to: 1 - type: integer 
+	Parameter NUM_STAGE bound to: 1 - type: integer 
+	Parameter din0_WIDTH bound to: 32 - type: integer 
+	Parameter din1_WIDTH bound to: 32 - type: integer 
+	Parameter din2_WIDTH bound to: 32 - type: integer 
+	Parameter din3_WIDTH bound to: 32 - type: integer 
+	Parameter din4_WIDTH bound to: 32 - type: integer 
+	Parameter din5_WIDTH bound to: 32 - type: integer 
+	Parameter din6_WIDTH bound to: 32 - type: integer 
+	Parameter din7_WIDTH bound to: 32 - type: integer 
+	Parameter din8_WIDTH bound to: 3 - type: integer 
+	Parameter dout_WIDTH bound to: 32 - type: integer 
+INFO: [Synth 8-3491] module 'nqueens_mux_83_32bkb' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_mux_83_32bkb.vhd:10' bound to instance 'nqueens_mux_83_32bkb_U18' of component 'nqueens_mux_83_32bkb' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:639]
+INFO: [Synth 8-256] done synthesizing module 'nqueens_loop' (3#1) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:46]
+INFO: [Synth 8-256] done synthesizing module 'nqueens' (4#1) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens.vhd:40]
+INFO: [Synth 8-256] done synthesizing module 'nqueens_nqueens_0_0' (5#1) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ip/nqueens_nqueens_0_0/synth/nqueens_nqueens_0_0.vhd:81]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[31]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[30]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[29]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[28]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[27]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[26]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[25]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[24]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[23]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[22]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[21]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[20]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[19]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[18]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[17]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[16]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[15]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[14]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[13]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[12]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[11]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[10]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[9]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[8]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[6]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[5]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[4]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[3]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WDATA[2]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WSTRB[3]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WSTRB[2]
+WARNING: [Synth 8-3331] design nqueens_AXILiteS_s_axi has unconnected port WSTRB[1]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:17 . Memory (MB): peak = 1543.066 ; gain = 140.832
+Finished RTL Elaboration : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1542.941 ; gain = 141.098
 ---------------------------------------------------------------------------------
 
 Report Check Netlist: 
@@ -92,30 +345,30 @@ Report Check Netlist:
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1548.504 ; gain = 146.270
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1548.117 ; gain = 146.273
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:18 . Memory (MB): peak = 1548.504 ; gain = 146.270
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:08 . Memory (MB): peak = 1548.117 ; gain = 146.273
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 1548.504 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.086 . Memory (MB): peak = 1548.117 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Parsing XDC File [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ip/nqueens_nqueens_0_0/constraints/nqueens_ooc.xdc] for cell 'U0'
-create_clock: Time (s): cpu = 00:00:04 ; elapsed = 00:00:07 . Memory (MB): peak = 1664.629 ; gain = 0.004
+create_clock: Time (s): cpu = 00:00:04 ; elapsed = 00:00:05 . Memory (MB): peak = 1678.227 ; gain = 5.055
 Finished Parsing XDC File [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ip/nqueens_nqueens_0_0/constraints/nqueens_ooc.xdc] for cell 'U0'
 Parsing XDC File [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.runs/nqueens_nqueens_0_0_synth_1/dont_touch.xdc]
 Finished Parsing XDC File [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.runs/nqueens_nqueens_0_0_synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1664.629 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1678.227 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.257 . Memory (MB): peak = 1664.629 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.180 . Memory (MB): peak = 1678.227 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 1664.629 ; gain = 262.395
+Finished Constraint Validation : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1678.227 ; gain = 276.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
@@ -123,23 +376,21 @@ Start Loading Part and Timing Information
 Loading part: xczu9eg-ffvb1156-2-e
 INFO: [Synth 8-6742] Reading net delay rules and data
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 1664.629 ; gain = 262.395
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1678.227 ; gain = 276.383
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 Applied set_property DONT_TOUCH = true for U0. (constraint file  C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.runs/nqueens_nqueens_0_0_synth_1/dont_touch.xdc, line 9).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:16 ; elapsed = 00:00:36 . Memory (MB): peak = 1664.629 ; gain = 262.395
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:18 ; elapsed = 00:00:22 . Memory (MB): peak = 1678.227 ; gain = 276.383
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'wstate_reg' in module 'nqueens_AXILiteS_s_axi'
 INFO: [Synth 8-802] inferred FSM for state register 'rstate_reg' in module 'nqueens_AXILiteS_s_axi'
+INFO: [Synth 8-5818] HDL ADVISOR - The operator resource <adder> is shared. To prevent sharing consider applying a KEEP on the output of the operator [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ipshared/383a/hdl/vhdl/nqueens_loop.vhd:1096]
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
 INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
-INFO: [Synth 8-3971] The signal "nqueens_AXILiteS_s_axi_ram:/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
 ---------------------------------------------------------------------------------------------------
@@ -160,7 +411,7 @@ INFO: [Synth 8-3354] encoded FSM with state register 'wstate_reg' using encoding
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'rstate_reg' using encoding 'one-hot' in module 'nqueens_AXILiteS_s_axi'
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:17 ; elapsed = 00:00:37 . Memory (MB): peak = 1664.629 ; gain = 262.395
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:18 ; elapsed = 00:00:23 . Memory (MB): peak = 1678.227 ; gain = 276.383
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -173,36 +424,28 @@ Start RTL Component Statistics
 ---------------------------------------------------------------------------------
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     32 Bit       Adders := 2     
-	   2 Input     32 Bit       Adders := 6     
-	   2 Input      4 Bit       Adders := 3     
+	   2 Input     32 Bit       Adders := 4     
+	   3 Input     32 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
 +---XORs : 
-	   2 Input      1 Bit         XORs := 2     
+	   2 Input      1 Bit         XORs := 4     
 +---Registers : 
-	               32 Bit    Registers := 16    
-	               10 Bit    Registers := 1     
-	                7 Bit    Registers := 2     
-	                4 Bit    Registers := 10    
+	               32 Bit    Registers := 39    
+	                5 Bit    Registers := 1     
+	                4 Bit    Registers := 1     
 	                3 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 24    
-+---RAMs : 
-	              256 Bit         RAMs := 1     
+	                1 Bit    Registers := 13    
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 25    
-	  16 Input     32 Bit        Muxes := 1     
-	   2 Input     10 Bit        Muxes := 1     
-	   3 Input     10 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 3     
-	   2 Input      7 Bit        Muxes := 3     
-	   2 Input      5 Bit        Muxes := 1     
+	   2 Input     32 Bit        Muxes := 182   
 	   4 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 11    
-	   6 Input      4 Bit        Muxes := 1     
+	   2 Input      4 Bit        Muxes := 3     
+	   3 Input      4 Bit        Muxes := 1     
 	   3 Input      3 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 7     
-	   2 Input      2 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 19    
+	   2 Input      3 Bit        Muxes := 3     
+	   6 Input      3 Bit        Muxes := 1     
+	   2 Input      2 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 10    
 ---------------------------------------------------------------------------------
 Finished RTL Component Statistics 
 ---------------------------------------------------------------------------------
@@ -210,82 +453,56 @@ Finished RTL Component Statistics
 Start RTL Hierarchical Component Statistics 
 ---------------------------------------------------------------------------------
 Hierarchical RTL Component report 
-Module nqueens_AXILiteS_s_axi_ram 
-Detailed RTL Component Info : 
-+---Registers : 
-	               32 Bit    Registers := 2     
-+---RAMs : 
-	              256 Bit         RAMs := 1     
-+---Muxes : 
-	   2 Input     32 Bit        Muxes := 12    
-	   2 Input      8 Bit        Muxes := 2     
 Module nqueens_AXILiteS_s_axi 
 Detailed RTL Component Info : 
 +---XORs : 
 	   2 Input      1 Bit         XORs := 2     
 +---Registers : 
-	               32 Bit    Registers := 8     
-	                7 Bit    Registers := 1     
+	               32 Bit    Registers := 2     
+	                5 Bit    Registers := 1     
 	                2 Bit    Registers := 1     
-	                1 Bit    Registers := 14    
+	                1 Bit    Registers := 8     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 4     
-	  16 Input     32 Bit        Muxes := 1     
 	   4 Input      4 Bit        Muxes := 1     
 	   2 Input      4 Bit        Muxes := 3     
 	   3 Input      3 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 3     
-	   2 Input      1 Bit        Muxes := 7     
-Module counter 
+	   2 Input      3 Bit        Muxes := 2     
+	   2 Input      1 Bit        Muxes := 1     
+Module nqueens_mux_83_32bkb 
+Detailed RTL Component Info : 
++---Muxes : 
+	   2 Input     32 Bit        Muxes := 7     
+Module nqueens_loop 
 Detailed RTL Component Info : 
 +---Adders : 
-	   3 Input     32 Bit       Adders := 2     
-	   2 Input     32 Bit       Adders := 1     
-	   2 Input      4 Bit       Adders := 2     
+	   2 Input     32 Bit       Adders := 3     
+	   3 Input     32 Bit       Adders := 3     
+	   2 Input      3 Bit       Adders := 1     
++---XORs : 
+	   2 Input      1 Bit         XORs := 2     
 +---Registers : 
-	               32 Bit    Registers := 2     
-	                7 Bit    Registers := 1     
-	                4 Bit    Registers := 5     
-	                1 Bit    Registers := 5     
+	               32 Bit    Registers := 24    
+	                4 Bit    Registers := 1     
+	                1 Bit    Registers := 3     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 5     
-	   2 Input      7 Bit        Muxes := 2     
-	   2 Input      5 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 5     
+	   2 Input     32 Bit        Muxes := 45    
+	   3 Input      4 Bit        Muxes := 1     
 	   2 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 4     
-Module find_0 
-Detailed RTL Component Info : 
-+---Adders : 
-	   2 Input      4 Bit       Adders := 1     
-+---Registers : 
-	                4 Bit    Registers := 5     
-	                1 Bit    Registers := 1     
-+---Muxes : 
-	   6 Input      4 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 2     
-	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 6     
 Module nqueens 
 Detailed RTL Component Info : 
 +---Adders : 
-	   2 Input     32 Bit       Adders := 5     
+	   2 Input     32 Bit       Adders := 1     
 +---Registers : 
-	               32 Bit    Registers := 4     
-	               10 Bit    Registers := 1     
+	               32 Bit    Registers := 13    
 	                3 Bit    Registers := 1     
-	                1 Bit    Registers := 4     
+	                1 Bit    Registers := 2     
 +---Muxes : 
-	   2 Input     32 Bit        Muxes := 4     
-	   2 Input     10 Bit        Muxes := 1     
-	   3 Input     10 Bit        Muxes := 1     
-	   2 Input      8 Bit        Muxes := 1     
-	   2 Input      7 Bit        Muxes := 1     
-	   2 Input      4 Bit        Muxes := 1     
-	   2 Input      3 Bit        Muxes := 3     
+	   2 Input     32 Bit        Muxes := 11    
+	   6 Input      3 Bit        Muxes := 1     
 	   2 Input      2 Bit        Muxes := 1     
-	   2 Input      1 Bit        Muxes := 7     
+	   2 Input      1 Bit        Muxes := 3     
 ---------------------------------------------------------------------------------
 Finished RTL Hierarchical Component Statistics
 ---------------------------------------------------------------------------------
@@ -302,57 +519,42 @@ Finished Part Resource Summary
 Start Cross Boundary and Area Optimization
 ---------------------------------------------------------------------------------
 Warning: Parallel synthesis criteria is not met 
-INFO: [Synth 8-3971] The signal "U0/nqueens_AXILiteS_s_axi_U/int_a/gen_write[1].mem_reg" was recognized as a true dual port RAM template.
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[1]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[2]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[2]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[3]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[3]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[4]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[4]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[5]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[5]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[6]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[6]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[7]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[7]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[8]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[8]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[9]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[9]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[10]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[10]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[11]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[11]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[12]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[12]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[13]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[13]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[14]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[14]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[15]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[15]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[16]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[16]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[17]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[17]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[18]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[18]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[19]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[19]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[20]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[20]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[21]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[21]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[22]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[22]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[23]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[23]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[24]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[24]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[25]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[25]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[26]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[26]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[27]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[27]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[28]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[28]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[29]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[29]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[30]'
-INFO: [Synth 8-3886] merging instance 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[30]' (FDRE) to 'U0/nqueens_AXILiteS_s_axi_U/int_flag_reg[31]'
-INFO: [Synth 8-3333] propagating constant 0 across sequential element (U0/\nqueens_AXILiteS_s_axi_U/int_flag_reg[31] )
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[31]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[30]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[29]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[28]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[27]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[26]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[25]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[24]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[23]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[22]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[21]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[20]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[19]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[18]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[17]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[16]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[15]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[14]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[13]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[12]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[11]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[10]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[9]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[8]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[6]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[5]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[4]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[3]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WDATA[2]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WSTRB[3]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WSTRB[2]
+WARNING: [Synth 8-3331] design nqueens has unconnected port s_axi_AXILiteS_WSTRB[1]
 WARNING: [Synth 8-3332] Sequential element (nqueens_AXILiteS_s_axi_U/FSM_onehot_wstate_reg[0]) is unused and will be removed from module nqueens.
 WARNING: [Synth 8-3332] Sequential element (nqueens_AXILiteS_s_axi_U/FSM_onehot_rstate_reg[0]) is unused and will be removed from module nqueens.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:21 ; elapsed = 00:00:42 . Memory (MB): peak = 1664.629 ; gain = 262.395
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-Block RAM: Preliminary Mapping	Report (see note below)
-+------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
-|Module Name | RTL Object                                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
-+------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
-|U0          | nqueens_AXILiteS_s_axi_U/int_a/gen_write[1].mem_reg | 8 x 32(READ_FIRST)     | W | R | 8 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      |                 | 
-+------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
-
-Note: The table above is a preliminary report that shows the Block RAMs at the current stage of the synthesis flow. Some Block RAMs may be reimplemented as non Block RAM primitives later in the synthesis flow. Multiple instantiated Block RAMs are reported only once. 
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:27 ; elapsed = 00:00:33 . Memory (MB): peak = 1678.227 ; gain = 276.383
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -364,27 +566,13 @@ Report RTL Partitions:
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:35 ; elapsed = 00:01:31 . Memory (MB): peak = 2270.934 ; gain = 868.699
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:39 ; elapsed = 00:01:02 . Memory (MB): peak = 2277.871 ; gain = 876.027
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:37 ; elapsed = 00:01:34 . Memory (MB): peak = 2336.113 ; gain = 933.879
----------------------------------------------------------------------------------
----------------------------------------------------------------------------------
-Start ROM, RAM, DSP and Shift Register Reporting
----------------------------------------------------------------------------------
-
-Block RAM: Final Mapping	Report
-+------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
-|Module Name | RTL Object                                          | PORT A (Depth x Width) | W | R | PORT B (Depth x Width) | W | R | Ports driving FF | RAMB18 | RAMB36 | Cascade Heights | 
-+------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
-|U0          | nqueens_AXILiteS_s_axi_U/int_a/gen_write[1].mem_reg | 8 x 32(READ_FIRST)     | W | R | 8 x 32(READ_FIRST)     | W | R | Port A and B     | 0      | 1      |                 | 
-+------------+-----------------------------------------------------+------------------------+---+---+------------------------+---+---+------------------+--------+--------+-----------------+
-
----------------------------------------------------------------------------------
-Finished ROM, RAM, DSP and Shift Register Reporting
+Finished Timing Optimization : Time (s): cpu = 00:00:42 ; elapsed = 00:01:13 . Memory (MB): peak = 2383.457 ; gain = 981.613
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -395,10 +583,8 @@ Report RTL Partitions:
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
-INFO: [Synth 8-7053] The timing for the instance U0/nqueens_AXILiteS_s_axi_U/int_a/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
-INFO: [Synth 8-7053] The timing for the instance U0/nqueens_AXILiteS_s_axi_U/int_a/gen_write[1].mem_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:37 ; elapsed = 00:01:38 . Memory (MB): peak = 2337.129 ; gain = 934.895
+Finished Technology Mapping : Time (s): cpu = 00:00:44 ; elapsed = 00:01:18 . Memory (MB): peak = 2384.465 ; gain = 982.621
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -422,13 +608,13 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:41 ; elapsed = 00:01:42 . Memory (MB): peak = 2337.129 ; gain = 934.895
+Finished IO Insertion : Time (s): cpu = 00:00:48 ; elapsed = 00:01:25 . Memory (MB): peak = 2384.465 ; gain = 982.621
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:41 ; elapsed = 00:01:42 . Memory (MB): peak = 2337.129 ; gain = 934.895
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:48 ; elapsed = 00:01:26 . Memory (MB): peak = 2384.465 ; gain = 982.621
 ---------------------------------------------------------------------------------
 
 Report RTL Partitions: 
@@ -447,25 +633,25 @@ Report Check Netlist:
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:41 ; elapsed = 00:01:42 . Memory (MB): peak = 2337.129 ; gain = 934.895
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:48 ; elapsed = 00:01:26 . Memory (MB): peak = 2384.465 ; gain = 982.621
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:41 ; elapsed = 00:01:42 . Memory (MB): peak = 2337.129 ; gain = 934.895
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:48 ; elapsed = 00:01:26 . Memory (MB): peak = 2384.465 ; gain = 982.621
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:41 ; elapsed = 00:01:42 . Memory (MB): peak = 2337.129 ; gain = 934.895
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:48 ; elapsed = 00:01:26 . Memory (MB): peak = 2384.465 ; gain = 982.621
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:41 ; elapsed = 00:01:42 . Memory (MB): peak = 2337.129 ; gain = 934.895
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:48 ; elapsed = 00:01:26 . Memory (MB): peak = 2384.465 ; gain = 982.621
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -478,64 +664,77 @@ Report BlackBoxes:
 +-+--------------+----------+
 
 Report Cell Usage: 
-+------+---------+------+
-|      |Cell     |Count |
-+------+---------+------+
-|1     |CARRY8   |    50|
-|2     |LUT1     |    97|
-|3     |LUT2     |   136|
-|4     |LUT3     |   251|
-|5     |LUT4     |   116|
-|6     |LUT5     |   167|
-|7     |LUT6     |   155|
-|8     |MUXF7    |     1|
-|9     |RAMB36E2 |     1|
-|10    |FDRE     |   640|
-|11    |FDSE     |     5|
-+------+---------+------+
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY8 |    54|
+|2     |LUT1   |    52|
+|3     |LUT2   |   134|
+|4     |LUT3   |    15|
+|5     |LUT4   |   175|
+|6     |LUT5   |   826|
+|7     |LUT6   |   678|
+|8     |FDRE   |  1351|
+|9     |FDSE   |     7|
++------+-------+------+
 
 Report Instance Areas: 
-+------+-----------------------------+---------------------------+------+
-|      |Instance                     |Module                     |Cells |
-+------+-----------------------------+---------------------------+------+
-|1     |top                          |                           |  1619|
-|2     |  U0                         |nqueens                    |  1619|
-|3     |    grp_counter_fu_128       |counter                    |   499|
-|4     |    grp_find_0_fu_138        |find_0                     |    51|
-|5     |    nqueens_AXILiteS_s_axi_U |nqueens_AXILiteS_s_axi     |   773|
-|6     |      int_a                  |nqueens_AXILiteS_s_axi_ram |   199|
-+------+-----------------------------+---------------------------+------+
++------+-------------------------------+------------------------+------+
+|      |Instance                       |Module                  |Cells |
++------+-------------------------------+------------------------+------+
+|1     |top                            |                        |  3292|
+|2     |  U0                           |nqueens                 |  3292|
+|3     |    grp_nqueens_loop_fu_176    |nqueens_loop            |  2663|
+|4     |      nqueens_mux_83_32bkb_U1  |nqueens_mux_83_32bkb    |    64|
+|5     |      nqueens_mux_83_32bkb_U10 |nqueens_mux_83_32bkb_0  |   174|
+|6     |      nqueens_mux_83_32bkb_U11 |nqueens_mux_83_32bkb_1  |    32|
+|7     |      nqueens_mux_83_32bkb_U12 |nqueens_mux_83_32bkb_2  |    32|
+|8     |      nqueens_mux_83_32bkb_U13 |nqueens_mux_83_32bkb_3  |    32|
+|9     |      nqueens_mux_83_32bkb_U14 |nqueens_mux_83_32bkb_4  |    32|
+|10    |      nqueens_mux_83_32bkb_U15 |nqueens_mux_83_32bkb_5  |    32|
+|11    |      nqueens_mux_83_32bkb_U16 |nqueens_mux_83_32bkb_6  |    32|
+|12    |      nqueens_mux_83_32bkb_U17 |nqueens_mux_83_32bkb_7  |    32|
+|13    |      nqueens_mux_83_32bkb_U18 |nqueens_mux_83_32bkb_8  |    32|
+|14    |      nqueens_mux_83_32bkb_U2  |nqueens_mux_83_32bkb_9  |    32|
+|15    |      nqueens_mux_83_32bkb_U3  |nqueens_mux_83_32bkb_10 |    32|
+|16    |      nqueens_mux_83_32bkb_U4  |nqueens_mux_83_32bkb_11 |    32|
+|17    |      nqueens_mux_83_32bkb_U5  |nqueens_mux_83_32bkb_12 |    32|
+|18    |      nqueens_mux_83_32bkb_U6  |nqueens_mux_83_32bkb_13 |    32|
+|19    |      nqueens_mux_83_32bkb_U7  |nqueens_mux_83_32bkb_14 |    32|
+|20    |      nqueens_mux_83_32bkb_U8  |nqueens_mux_83_32bkb_15 |    32|
+|21    |      nqueens_mux_83_32bkb_U9  |nqueens_mux_83_32bkb_16 |    32|
+|22    |    nqueens_AXILiteS_s_axi_U   |nqueens_AXILiteS_s_axi  |   164|
++------+-------------------------------+------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:41 ; elapsed = 00:01:42 . Memory (MB): peak = 2337.129 ; gain = 934.895
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:48 ; elapsed = 00:01:26 . Memory (MB): peak = 2384.465 ; gain = 982.621
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 2 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:28 ; elapsed = 00:01:34 . Memory (MB): peak = 2337.129 ; gain = 818.770
-Synthesis Optimization Complete : Time (s): cpu = 00:00:41 ; elapsed = 00:01:46 . Memory (MB): peak = 2337.129 ; gain = 934.895
+Synthesis finished with 0 errors, 0 critical warnings and 34 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:01:18 . Memory (MB): peak = 2384.465 ; gain = 852.512
+Synthesis Optimization Complete : Time (s): cpu = 00:00:48 ; elapsed = 00:01:28 . Memory (MB): peak = 2384.465 ; gain = 982.621
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.022 . Memory (MB): peak = 2348.992 ; gain = 0.000
-INFO: [Netlist 29-17] Analyzing 51 Unisim elements for replacement
-INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.049 . Memory (MB): peak = 2396.340 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 54 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2357.629 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2412.246 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
 INFO: [Common 17-83] Releasing license: Synthesis
-101 Infos, 2 Warnings, 0 Critical Warnings and 0 Errors encountered.
+64 Infos, 66 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:50 ; elapsed = 00:02:27 . Memory (MB): peak = 2357.629 ; gain = 1928.633
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2357.629 ; gain = 0.000
+synth_design: Time (s): cpu = 00:00:58 ; elapsed = 00:01:54 . Memory (MB): peak = 2412.246 ; gain = 1983.840
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2412.246 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.runs/nqueens_nqueens_0_0_synth_1/nqueens_nqueens_0_0.dcp' has been generated.
 WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP nqueens_nqueens_0_0, cache-ID = 461407d2143ea45d
-config_ip_cache: Time (s): cpu = 00:00:00 ; elapsed = 00:00:06 . Memory (MB): peak = 2357.629 ; gain = 0.000
-INFO: [Coretcl 2-1174] Renamed 5 cell refs.
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2357.629 ; gain = 0.000
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP nqueens_nqueens_0_0, cache-ID = 7c32e39b73faf600
+INFO: [Coretcl 2-1174] Renamed 21 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 2412.246 ; gain = 0.000
 WARNING: [Constraints 18-5210] No constraints selected for write.
 Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
 INFO: [Common 17-1381] The checkpoint 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.runs/nqueens_nqueens_0_0_synth_1/nqueens_nqueens_0_0.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file nqueens_nqueens_0_0_utilization_synth.rpt -pb nqueens_nqueens_0_0_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Thu Aug 26 12:32:37 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Aug 30 13:16:22 2021...

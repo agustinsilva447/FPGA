@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Thu Aug 26 12:32:47 2021
+// Date        : Mon Aug 30 13:16:19 2021
 // Host        : hp6g4-mlab-2 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ip/nqueens_zynq_ultra_ps_e_0_0/nqueens_zynq_ultra_ps_e_0_0_stub.v

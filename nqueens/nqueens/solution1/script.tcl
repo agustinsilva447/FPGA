@@ -14,5 +14,5 @@ config_export -format ip_catalog -rtl vhdl
 #source "./nqueens/solution1/directives.tcl"
 csim_design
 csynth_design
-cosim_design -rtl vhdl
+cosim_design -rtl vhdl -tool xsim
 export_design -rtl vhdl -format ip_catalog

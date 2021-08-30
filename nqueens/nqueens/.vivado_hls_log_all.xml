@@ -11,10 +11,7 @@
   </errorLogs>
   <warningLogs>
     <logs>
-      <synLog>
-        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1' (nqueens/nqueens.cpp:31:2) in function 'nqueens' : &#xD;&#xA;&#xD;&#xA;the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop." projectName="nqueens" solutionName="solution1" date="2021-08-27T19:58:55.208+0200" type="Warning"/>
-        <logs message="WARNING: [XFORM 203-542] Cannot flatten a loop nest 'Loop-1.1' (nqueens/nqueens.cpp:7:18) in function 'nqueens' : &#xD;&#xA;&#xD;&#xA;the outer loop is not a perfect loop because there is nontrivial logic before entering the inner loop." projectName="nqueens" solutionName="solution1" date="2021-08-27T19:58:55.134+0200" type="Warning"/>
-      </synLog>
+      <synLog/>
       <simLog/>
       <mgLog/>
       <packageLog/>

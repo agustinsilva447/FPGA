@@ -13,9 +13,11 @@ INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nq
 INFO: [VRFC 10-3107] analyzing entity 'apatb_nqueens_top'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/nqueens.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'nqueens'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/nqueens_a.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'nqueens_a_ram'
+INFO: [VRFC 10-3107] analyzing entity 'nqueens_a'
 INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/solution1/sim/vhdl/nqueens_AXILiteS_s_axi.vhd" into library xil_defaultlib
 INFO: [VRFC 10-3107] analyzing entity 'nqueens_AXILiteS_s_axi'
-INFO: [VRFC 10-3107] analyzing entity 'nqueens_AXILiteS_s_axi_ram'
 Starting static elaboration
 Pass Through NonSizing Optimizer
 Completed static elaboration
@@ -30,8 +32,9 @@ Compiling package ieee.std_logic_unsigned
 Compiling package ieee.numeric_std
 Compiling package ieee.std_logic_textio
 Compiling module work.glbl
-Compiling architecture behave of entity xil_defaultlib.nqueens_AXILiteS_s_axi_ram [\nqueens_AXILiteS_s_axi_ram(dept...]
 Compiling architecture behave of entity xil_defaultlib.nqueens_AXILiteS_s_axi [nqueens_axilites_s_axi_default]
+Compiling architecture rtl of entity xil_defaultlib.nqueens_a_ram [\nqueens_a_ram(1,11)\]
+Compiling architecture arch of entity xil_defaultlib.nqueens_a [nqueens_a_default]
 Compiling architecture behav of entity xil_defaultlib.nqueens [nqueens_default]
 Compiling architecture behav of entity xil_defaultlib.AESL_axi_slave_AXILiteS [aesl_axi_slave_axilites_default]
 Compiling architecture behav of entity xil_defaultlib.apatb_nqueens_top

@@ -3,9 +3,5 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // ==============================================================
 
-extern void AESL_WRAP_nqueens (
-int a[8],
-int* k,
-int* u_0,
-int* sol_list,
-int* flag);
+extern int AESL_WRAP_nqueens (
+);

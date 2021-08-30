@@ -1,11 +1,11 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Thu Aug 26 12:32:28 2021
+// Date        : Mon Aug 30 13:16:13 2021
 // Host        : hp6g4-mlab-2 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode funcsim -rename_top nqueens_auto_pc_1 -prefix
-//               nqueens_auto_pc_1_ nqueens_auto_pc_0_sim_netlist.v
-// Design      : nqueens_auto_pc_0
+//               nqueens_auto_pc_1_ nqueens_auto_pc_1_sim_netlist.v
+// Design      : nqueens_auto_pc_1
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
 // Device      : xczu9eg-ffvb1156-2-e
@@ -12255,7 +12255,7 @@ module nqueens_auto_pc_1_axi_register_slice_v2_1_20_axic_register_slice__paramet
         .R(1'b0));
 endmodule
 
-(* CHECK_LICENSE_TYPE = "nqueens_auto_pc_0,axi_protocol_converter_v2_1_20_axi_protocol_converter,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_protocol_converter_v2_1_20_axi_protocol_converter,Vivado 2019.2" *) 
+(* CHECK_LICENSE_TYPE = "nqueens_auto_pc_1,axi_protocol_converter_v2_1_20_axi_protocol_converter,{}" *) (* DowngradeIPIdentifiedWarnings = "yes" *) (* X_CORE_INFO = "axi_protocol_converter_v2_1_20_axi_protocol_converter,Vivado 2019.2" *) 
 (* NotValidForBitStream *)
 module nqueens_auto_pc_1
    (aclk,

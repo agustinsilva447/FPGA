@@ -1042,50 +1042,55 @@ using std::wctomb;
 
 
 # 4 "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens.cpp"
-int counter(int a[8], int k, int u_0)
+int nqueens()
 {
- int count, f;
- for (int u = u_0; u<8 +1; u++){
-  count = 0;
-  for (int j = 0; j<k; j++){
-#pragma HLS PIPELINE
-   if ((u != a[j]) && (abs(u - a[j]) != (k - j))){
-    count = count + 1;
-   }
-  }
-  if (count == k){
-   return u;
-  }
- }
- return 0;
-}
-
-void nqueens(int a[8], int *k, int *u_0, int *sol_list, int *flag)
-{
-#pragma HLS INTERFACE s_axilite port=flag
-#pragma HLS INTERFACE s_axilite port=sol_list
-#pragma HLS INTERFACE s_axilite port=u_0
-#pragma HLS INTERFACE s_axilite port=k
-#pragma HLS INTERFACE s_axilite port=a
 #pragma HLS INTERFACE s_axilite port=return
- int exit = 0;
- while (!exit){
-  a[*k] = counter(a, *k, *u_0);
-  *u_0 = 1;
-  if (a[*k] == 0){
-   *k = *k - 1;
-   if (*k == -1){
-    *flag = 1;
-    exit = 1;
+ int u_0 = 1, k = 0, k_aux = 1, sol_list = 0, flag = 0, max_it = 100, count = 0;
+ int a[8];
+
+ for (int x=0; x<8; x++){
+  a[x] = 0;
+ }
+
+ for(int iteration = 0; iteration<max_it; iteration++){
+  while (1){
+   a[k] = 0;
+   for (int u = u_0; u<8 +1; u++){
+    count = 0;
+    for (int j = 0; j<k; j++){
+     if ((u != a[j]) && (abs(u - a[j]) != (k - j))){
+      count = count + 1;
+     }
+    }
+    if (count == k){
+     a[k] = u;
+     break;
+    }
    }
-   *u_0 = a[*k] + 1;
-   a[*k] = 0;
-   *k = *k - 1;
+
+   u_0 = 1;
+   if (a[k] == 0){
+    k = k - 1;
+    k_aux = k_aux - 1;
+    if (k_aux == 0){
+     flag = 1;
+     break;
+    }
+    u_0 = a[k] + 1;
+    a[k] = 0;
+    k = k - 1;
+    k_aux = k_aux - 1;
+   }
+   k = k + 1;
+   k_aux = k_aux + 1;
+   if (k == 8){
+    sol_list = sol_list + 1;
+    break;
+   }
   }
-  *k = *k + 1;
-  if (*k == 8){
-   *sol_list = *sol_list + 1;
-   exit = 1;
+  if (flag){
+   break;
   }
  }
+ return sol_list;
 }

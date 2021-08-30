@@ -1,30 +1,24 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <?scdStore version="2"?><scannerInfo id="org.eclipse.cdt.make.core.discoveredScannerInfo">
-    <instance id="xilinx.gnu.arm.a53.exe.debug.2138406932;xilinx.gnu.arm.a53.exe.debug.2138406932.">
+    <instance id="xilinx.gnu.arm.a53.exe.debug.585165617;xilinx.gnu.arm.a53.exe.debug.585165617.">
         <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-            <includePath path="#undef __ARM_FEATURE_SHA2" removed="true"/>
-            <includePath path="#undef __ARM_FEATURE_SHA3" removed="true"/>
-            <includePath path="#undef __ARM_FEATURE_FP16_FML" removed="true"/>
-            <includePath path="#undef __FLT_EVAL_METHOD__" removed="true"/>
-            <includePath path="#undef __ARM_FEATURE_DOTPROD" removed="true"/>
-            <includePath path="#undef __AARCH64_CMODEL_TINY__" removed="true"/>
-            <includePath path="#undef __AARCH64_CMODEL_SMALL__" removed="true"/>
-            <includePath path="#undef __AARCH64_CMODEL_LARGE__" removed="true"/>
-            <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include"/>
-            <includePath path="#undef __ARM_FEATURE_SHA512" removed="true"/>
-            <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include-fixed"/>
-            <includePath path="#undef __ARM_FEATURE_SM3" removed="true"/>
-            <includePath path="#undef __FLT_EVAL_METHOD_C99__" removed="true"/>
-            <includePath path="#undef _ILP32" removed="true"/>
-            <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/../../../../aarch64-none-elf/include"/>
-            <includePath path="#undef __ARM_FEATURE_AES" removed="true"/>
-            <includePath path="#undef __ARM_FEATURE_QRDMX" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_SM4" removed="true"/>
+            <includePath path="#undef __ARM_FEATURE_FP16_FML" removed="true"/>
+            <includePath path="#undef _ILP32" removed="true"/>
             <includePath path="#undef __ILP32__" removed="true"/>
-            <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../aarch64-none-elf/libc/usr/include"/>
-            <includePath path="#undef __ARM_FEATURE_SVE_BITS" removed="true"/>
-            <includePath path="#undef __ARM_FEATURE_SVE" removed="true"/>
             <includePath path="#undef __ARM_FEATURE_CRYPTO" removed="true"/>
+            <includePath path="#undef __ARM_FEATURE_FP16_SCALAR_ARITHMETIC" removed="true"/>
+            <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include"/>
+            <includePath path="#undef __FLT_EVAL_METHOD__" removed="true"/>
+            <includePath path="#undef __ARM_FEATURE_QRDMX" removed="true"/>
+            <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include-fixed"/>
+            <includePath path="#undef __ARM_FEATURE_SVE" removed="true"/>
+            <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/../../../../aarch64-none-elf/include"/>
+            <includePath path="#undef __FLT_EVAL_METHOD_C99__" removed="true"/>
+            <includePath path="#undef __ARM_FEATURE_SVE_BITS" removed="true"/>
+            <includePath path="#undef __ARM_FEATURE_FP16_VECTOR_ARITHMETIC" removed="true"/>
+            <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../aarch64-none-elf/libc/usr/include"/>
+            <includePath path="#undef __ARM_FEATURE_AES" removed="true"/>
             <definedSymbol symbol="__STDC__=1"/>
             <definedSymbol symbol="__STDC_VERSION__=201710L"/>
             <definedSymbol symbol="__STDC_UTF_16__=1"/>
@@ -378,17 +372,18 @@
             <definedSymbol symbol="__ELF__=1"/>
         </collector>
     </instance>
-    <instance id="xilinx.gnu.arm.a53.exe.release.302652050;xilinx.gnu.arm.a53.exe.release.302652050.">
+    <instance id="xilinx.gnu.arm.a53.exe.release.2003890885;xilinx.gnu.arm.a53.exe.release.2003890885.">
         <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-            <includePath path="#undef __AARCH64_CMODEL_TINY__" removed="true"/>
-            <includePath path="#undef __AARCH64_CMODEL_SMALL__" removed="true"/>
+            <includePath path="#undef __ARM_FEATURE_SHA3" removed="true"/>
+            <includePath path="#undef __ARM_FEATURE_SHA512" removed="true"/>
             <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include"/>
-            <includePath path="#undef __AARCH64_CMODEL_LARGE__" removed="true"/>
+            <includePath path="#undef __ARM_FEATURE_SM3" removed="true"/>
             <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include-fixed"/>
+            <includePath path="#undef __ARM_FEATURE_SM4" removed="true"/>
             <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/../../../../aarch64-none-elf/include"/>
-            <includePath path="#undef _ILP32" removed="true"/>
+            <includePath path="#undef __ARM_FEATURE_FP16_FML" removed="true"/>
             <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../aarch64-none-elf/libc/usr/include"/>
-            <includePath path="#undef __ILP32__" removed="true"/>
+            <includePath path="#undef __FLT_EVAL_METHOD__" removed="true"/>
             <definedSymbol symbol="__STDC__=1"/>
             <definedSymbol symbol="__STDC_VERSION__=201710L"/>
             <definedSymbol symbol="__STDC_UTF_16__=1"/>
@@ -742,28 +737,18 @@
             <definedSymbol symbol="__ELF__=1"/>
         </collector>
     </instance>
-    <instance id="xilinx.gnu.arm.a53.exe.debug.2138406932;xilinx.gnu.arm.a53.exe.debug.2138406932.;xilinx.gnu.arm.a53.c.toolchain.compiler.debug.1456511497;xilinx.gnu.arm.a53.c.compiler.input.1578484220">
+    <instance id="xilinx.gnu.arm.a53.exe.debug.585165617;xilinx.gnu.arm.a53.exe.debug.585165617.;xilinx.gnu.arm.a53.c.toolchain.compiler.debug.1006322257;xilinx.gnu.arm.a53.c.compiler.input.2033836145">
         <collector id="org.eclipse.cdt.make.core.PerProjectSICollector">
-            <includePath path="#undef __AARCH64_CMODEL_LARGE__" removed="true"/>
-            <includePath path="#undef __ARM_FEATURE_SVE_BITS" removed="true"/>
-            <includePath path="#undef __ARM_FEATURE_AES" removed="true"/>
-            <includePath path="#undef __ARM_FEATURE_SHA2" removed="true"/>
-            <includePath path="#undef __ARM_FEATURE_SHA3" removed="true"/>
-            <includePath path="#undef __ARM_FEATURE_SHA512" removed="true"/>
-            <includePath path="#undef _ILP32" removed="true"/>
-            <includePath path="#undef __FLT_EVAL_METHOD__" removed="true"/>
-            <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include"/>
-            <includePath path="#undef __ARM_FEATURE_SM3" removed="true"/>
-            <includePath path="#undef __ILP32__" removed="true"/>
             <includePath path="#undef __FLT_EVAL_METHOD_C99__" removed="true"/>
-            <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include-fixed"/>
+            <includePath path="#undef __ARM_FEATURE_SHA512" removed="true"/>
+            <includePath path="#undef __ARM_FEATURE_SM3" removed="true"/>
+            <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include"/>
             <includePath path="#undef __ARM_FEATURE_SM4" removed="true"/>
-            <includePath path="#undef __ARM_FEATURE_CRYPTO" removed="true"/>
-            <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/../../../../aarch64-none-elf/include"/>
+            <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/include-fixed"/>
             <includePath path="#undef __ARM_FEATURE_FP16_FML" removed="true"/>
-            <includePath path="#undef __ARM_FEATURE_QRDMX" removed="true"/>
+            <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../lib/gcc/aarch64-none-elf/8.2.0/../../../../aarch64-none-elf/include"/>
+            <includePath path="#undef __FLT_EVAL_METHOD__" removed="true"/>
             <includePath path="c:\xilinx\vitis\2019.2\gnu\aarch64\nt\aarch64-none\bin\../aarch64-none-elf/libc/usr/include"/>
-            <includePath path="#undef __ARM_FEATURE_SVE" removed="true"/>
             <definedSymbol symbol="__STDC__=1"/>
             <definedSymbol symbol="__STDC_VERSION__=201710L"/>
             <definedSymbol symbol="__STDC_UTF_16__=1"/>

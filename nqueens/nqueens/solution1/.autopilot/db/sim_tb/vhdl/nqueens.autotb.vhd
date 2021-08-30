@@ -14,24 +14,12 @@ use std.textio.all;
 entity apatb_nqueens_top is
   generic (
        AUTOTB_CLOCK_PERIOD_DIV2 :   TIME := 5.00 ns;
-       AUTOTB_TVOUT_a : STRING := "./c.nqueens.autotvout_a.dat";
-       AUTOTB_TVOUT_k : STRING := "./c.nqueens.autotvout_k.dat";
-       AUTOTB_TVOUT_u_0 : STRING := "./c.nqueens.autotvout_u_0.dat";
-       AUTOTB_TVOUT_sol_list : STRING := "./c.nqueens.autotvout_sol_list.dat";
-       AUTOTB_TVOUT_flag : STRING := "./c.nqueens.autotvout_flag.dat";
-       AUTOTB_TVOUT_a_out_wrapc : STRING := "./impl_rtl.nqueens.autotvout_a.dat";
-       AUTOTB_TVOUT_k_out_wrapc : STRING := "./impl_rtl.nqueens.autotvout_k.dat";
-       AUTOTB_TVOUT_u_0_out_wrapc : STRING := "./impl_rtl.nqueens.autotvout_u_0.dat";
-       AUTOTB_TVOUT_sol_list_out_wrapc : STRING := "./impl_rtl.nqueens.autotvout_sol_list.dat";
-       AUTOTB_TVOUT_flag_out_wrapc : STRING := "./impl_rtl.nqueens.autotvout_flag.dat";
+       AUTOTB_TVOUT_ap_return : STRING := "./c.nqueens.autotvout_ap_return.dat";
+       AUTOTB_TVOUT_ap_return_out_wrapc : STRING := "./impl_rtl.nqueens.autotvout_ap_return.dat";
       AUTOTB_LAT_RESULT_FILE    : STRING  := "nqueens.result.lat.rb";
       AUTOTB_PER_RESULT_TRANS_FILE    : STRING  := "nqueens.performance.result.transaction.xml";
-      LENGTH_a     : INTEGER := 8;
-      LENGTH_k     : INTEGER := 1;
-      LENGTH_u_0     : INTEGER := 1;
-      LENGTH_sol_list     : INTEGER := 1;
-      LENGTH_flag     : INTEGER := 1;
-	    AUTOTB_TRANSACTION_NUM    : INTEGER := 93
+      LENGTH_ap_return     : INTEGER := 1;
+	    AUTOTB_TRANSACTION_NUM    : INTEGER := 1
 );
 
 end apatb_nqueens_top;
@@ -55,14 +43,14 @@ architecture behav of apatb_nqueens_top is
   signal ready :   STD_LOGIC := '0';
   signal ready_wire :   STD_LOGIC := '0';
 
-  signal AXILiteS_AWADDR:  STD_LOGIC_VECTOR (6 DOWNTO 0);
+  signal AXILiteS_AWADDR:  STD_LOGIC_VECTOR (4 DOWNTO 0);
   signal AXILiteS_AWVALID:  STD_LOGIC;
   signal AXILiteS_AWREADY:  STD_LOGIC;
   signal AXILiteS_WVALID:  STD_LOGIC;
   signal AXILiteS_WREADY:  STD_LOGIC;
   signal AXILiteS_WDATA:  STD_LOGIC_VECTOR (31 DOWNTO 0);
   signal AXILiteS_WSTRB:  STD_LOGIC_VECTOR (3 DOWNTO 0);
-  signal AXILiteS_ARADDR:  STD_LOGIC_VECTOR (6 DOWNTO 0);
+  signal AXILiteS_ARADDR:  STD_LOGIC_VECTOR (4 DOWNTO 0);
   signal AXILiteS_ARVALID:  STD_LOGIC;
   signal AXILiteS_ARREADY:  STD_LOGIC;
   signal AXILiteS_RVALID:  STD_LOGIC;
@@ -102,14 +90,14 @@ port (
     ap_rst_n :  IN STD_LOGIC;
     s_axi_AXILiteS_AWVALID :  IN STD_LOGIC;
     s_axi_AXILiteS_AWREADY :  OUT STD_LOGIC;
-    s_axi_AXILiteS_AWADDR :  IN STD_LOGIC_VECTOR (6 DOWNTO 0);
+    s_axi_AXILiteS_AWADDR :  IN STD_LOGIC_VECTOR (4 DOWNTO 0);
     s_axi_AXILiteS_WVALID :  IN STD_LOGIC;
     s_axi_AXILiteS_WREADY :  OUT STD_LOGIC;
     s_axi_AXILiteS_WDATA :  IN STD_LOGIC_VECTOR (31 DOWNTO 0);
     s_axi_AXILiteS_WSTRB :  IN STD_LOGIC_VECTOR (3 DOWNTO 0);
     s_axi_AXILiteS_ARVALID :  IN STD_LOGIC;
     s_axi_AXILiteS_ARREADY :  OUT STD_LOGIC;
-    s_axi_AXILiteS_ARADDR :  IN STD_LOGIC_VECTOR (6 DOWNTO 0);
+    s_axi_AXILiteS_ARADDR :  IN STD_LOGIC_VECTOR (4 DOWNTO 0);
     s_axi_AXILiteS_RVALID :  OUT STD_LOGIC;
     s_axi_AXILiteS_RREADY :  IN STD_LOGIC;
     s_axi_AXILiteS_RDATA :  OUT STD_LOGIC_VECTOR (31 DOWNTO 0);
@@ -120,16 +108,6 @@ port (
     interrupt :  OUT STD_LOGIC);
 end component;
 
--- The signal of port a
-shared variable AESL_REG_a : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
--- The signal of port k
-shared variable AESL_REG_k : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
--- The signal of port u_0
-shared variable AESL_REG_u_0 : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
--- The signal of port sol_list
-shared variable AESL_REG_sol_list : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
--- The signal of port flag
-shared variable AESL_REG_flag : STD_LOGIC_VECTOR(31 downto 0) := (others => '0');
     signal AESL_slave_output_done : STD_LOGIC;
     signal AESL_slave_start : STD_LOGIC;
     signal AESL_slave_start_lock : STD_LOGIC := '0';
@@ -143,7 +121,6 @@ shared variable AESL_REG_flag : STD_LOGIC_VECTOR(31 downto 0) := (others => '0')
     signal slave_done_status : STD_LOGIC := '0';
     signal ap_done_lock : STD_LOGIC := '0';
     signal AXILiteS_read_data_finish : STD_LOGIC;
-    signal AXILiteS_write_data_finish : STD_LOGIC;
 component AESL_AXI_SLAVE_AXILiteS is
   port(
     clk   :   IN STD_LOGIC;
@@ -167,7 +144,6 @@ component AESL_AXI_SLAVE_AXILiteS is
     TRAN_s_axi_AXILiteS_BRESP : IN STD_LOGIC_VECTOR;
     TRAN_AXILiteS_interrupt   : IN STD_LOGIC;
     TRAN_AXILiteS_read_data_finish : OUT STD_LOGIC;
-    TRAN_AXILiteS_write_data_finish : OUT STD_LOGIC;
     TRAN_AXILiteS_ready_out : OUT STD_LOGIC;
     TRAN_AXILiteS_ready_in  : IN STD_LOGIC;
     TRAN_AXILiteS_done_out  : OUT STD_LOGIC;
@@ -589,7 +565,7 @@ AESL_inst_nqueens    :   nqueens port map (
   AESL_start <= start;
   AESL_ce <= ce;
   AESL_continue <= continue;
-  AESL_slave_write_start_in <= slave_start_status  and AXILiteS_write_data_finish;
+  AESL_slave_write_start_in <= slave_start_status ;
   AESL_slave_start <= AESL_slave_write_start_finish;
   AESL_done <= slave_done_status  and AXILiteS_read_data_finish;
 
@@ -666,7 +642,6 @@ AESL_axi_slave_inst_AXILiteS : AESL_AXI_SLAVE_AXILiteS port map (
     TRAN_s_axi_AXILiteS_BRESP => AXILiteS_BRESP,
     TRAN_AXILiteS_interrupt => AXILiteS_INTERRUPT,
     TRAN_AXILiteS_read_data_finish => AXILiteS_read_data_finish,
-    TRAN_AXILiteS_write_data_finish => AXILiteS_write_data_finish,
     TRAN_AXILiteS_ready_out => AESL_ready,
     TRAN_AXILiteS_ready_in => AESL_slave_ready,
     TRAN_AXILiteS_done_out => AESL_slave_output_done,
@@ -676,6 +651,37 @@ AESL_axi_slave_inst_AXILiteS : AESL_AXI_SLAVE_AXILiteS port map (
     TRAN_AXILiteS_transaction_done_in => AESL_done_delay,
     TRAN_AXILiteS_start_in  => AESL_slave_start
 );
+
+-- Write "[[[runtime]]]" and "[[[/runtime]]]" for output transactor 
+write_output_transactor_ap_return_runtime_proc : process
+  file        fp              :   TEXT;
+  variable    fstatus         :   FILE_OPEN_STATUS;
+  variable    token_line      :   LINE;
+  variable    token           :   STRING(1 to 1024);
+begin
+    file_open(fstatus, fp, AUTOTB_TVOUT_ap_return_out_wrapc, WRITE_MODE);
+    if(fstatus /= OPEN_OK) then
+        assert false report "Open file " & AUTOTB_TVOUT_ap_return_out_wrapc & " failed!!!" severity note;
+        assert false report "ERROR: Simulation using HLS TB failed." severity failure;
+    end if;
+    write(token_line, string'("[[[runtime]]]"));
+    writeline(fp, token_line);
+    file_close(fp);
+    while done_cnt /= AUTOTB_TRANSACTION_NUM loop
+        wait until AESL_clock'event and AESL_clock = '1';
+    end loop;
+    wait until AESL_clock'event and AESL_clock = '1';
+    wait until AESL_clock'event and AESL_clock = '1';
+    file_open(fstatus, fp, AUTOTB_TVOUT_ap_return_out_wrapc, APPEND_MODE);
+    if(fstatus /= OPEN_OK) then
+        assert false report "Open file " & AUTOTB_TVOUT_ap_return_out_wrapc & " failed!!!" severity note;
+        assert false report "ERROR: Simulation using HLS TB failed." severity failure;
+    end if;
+    write(token_line, string'("[[[/runtime]]]"));
+    writeline(fp, token_line);
+    file_close(fp);
+    wait;
+end process;
 
 generate_ready_cnt_proc : process(ready_initial, AESL_clock)
 begin
@@ -717,6 +723,18 @@ begin
         wait until AESL_clock'event and AESL_clock = '1';
         wait until AESL_clock'event and AESL_clock = '1';
         wait until AESL_clock'event and AESL_clock = '1';
+    file_open(fstatus1, fp1, "./rtl.nqueens.autotvout_ap_return.dat", READ_MODE);
+    file_open(fstatus2, fp2, "./impl_rtl.nqueens.autotvout_ap_return.dat", READ_MODE);
+    if(fstatus1 /= OPEN_OK) then
+        assert false report string'("Open file rtl.nqueens.autotvout_ap_return.dat failed!!!") severity note;
+    elsif(fstatus2 /= OPEN_OK) then
+        assert false report string'("Open file impl_rtl.nqueens.autotvout_ap_return.dat failed!!!") severity note;
+    else
+        report string'("Comparing rtl.nqueens.autotvout_ap_return.dat with impl_rtl.nqueens.autotvout_ap_return.dat");
+        post_check(fp1, fp2);
+    end if;
+    file_close(fp1);
+    file_close(fp2);
     report "Simulation Passed.";
     assert false report "simulation done!" severity note;
     assert false report "NORMAL EXIT (note: failure is to force the simulator to stop)" severity failure;
@@ -840,161 +858,6 @@ begin
     else
         interface_done <= '0';
     end if;
-end process;
-
--- Write "[[[runtime]]]" and "[[[/runtime]]]" for output transactor 
-write_output_transactor_a_runtime_proc : process
-  file        fp              :   TEXT;
-  variable    fstatus         :   FILE_OPEN_STATUS;
-  variable    token_line      :   LINE;
-  variable    token           :   STRING(1 to 1024);
-begin
-    file_open(fstatus, fp, AUTOTB_TVOUT_a_out_wrapc, WRITE_MODE);
-    if(fstatus /= OPEN_OK) then
-        assert false report "Open file " & AUTOTB_TVOUT_a_out_wrapc & " failed!!!" severity note;
-        assert false report "ERROR: Simulation using HLS TB failed." severity failure;
-    end if;
-    write(token_line, string'("[[[runtime]]]"));
-    writeline(fp, token_line);
-    file_close(fp);
-    while done_cnt /= AUTOTB_TRANSACTION_NUM loop
-        wait until AESL_clock'event and AESL_clock = '1';
-    end loop;
-    wait until AESL_clock'event and AESL_clock = '1';
-    wait until AESL_clock'event and AESL_clock = '1';
-    file_open(fstatus, fp, AUTOTB_TVOUT_a_out_wrapc, APPEND_MODE);
-    if(fstatus /= OPEN_OK) then
-        assert false report "Open file " & AUTOTB_TVOUT_a_out_wrapc & " failed!!!" severity note;
-        assert false report "ERROR: Simulation using HLS TB failed." severity failure;
-    end if;
-    write(token_line, string'("[[[/runtime]]]"));
-    writeline(fp, token_line);
-    file_close(fp);
-    wait;
-end process;
-
--- Write "[[[runtime]]]" and "[[[/runtime]]]" for output transactor 
-write_output_transactor_k_runtime_proc : process
-  file        fp              :   TEXT;
-  variable    fstatus         :   FILE_OPEN_STATUS;
-  variable    token_line      :   LINE;
-  variable    token           :   STRING(1 to 1024);
-begin
-    file_open(fstatus, fp, AUTOTB_TVOUT_k_out_wrapc, WRITE_MODE);
-    if(fstatus /= OPEN_OK) then
-        assert false report "Open file " & AUTOTB_TVOUT_k_out_wrapc & " failed!!!" severity note;
-        assert false report "ERROR: Simulation using HLS TB failed." severity failure;
-    end if;
-    write(token_line, string'("[[[runtime]]]"));
-    writeline(fp, token_line);
-    file_close(fp);
-    while done_cnt /= AUTOTB_TRANSACTION_NUM loop
-        wait until AESL_clock'event and AESL_clock = '1';
-    end loop;
-    wait until AESL_clock'event and AESL_clock = '1';
-    wait until AESL_clock'event and AESL_clock = '1';
-    file_open(fstatus, fp, AUTOTB_TVOUT_k_out_wrapc, APPEND_MODE);
-    if(fstatus /= OPEN_OK) then
-        assert false report "Open file " & AUTOTB_TVOUT_k_out_wrapc & " failed!!!" severity note;
-        assert false report "ERROR: Simulation using HLS TB failed." severity failure;
-    end if;
-    write(token_line, string'("[[[/runtime]]]"));
-    writeline(fp, token_line);
-    file_close(fp);
-    wait;
-end process;
-
--- Write "[[[runtime]]]" and "[[[/runtime]]]" for output transactor 
-write_output_transactor_u_0_runtime_proc : process
-  file        fp              :   TEXT;
-  variable    fstatus         :   FILE_OPEN_STATUS;
-  variable    token_line      :   LINE;
-  variable    token           :   STRING(1 to 1024);
-begin
-    file_open(fstatus, fp, AUTOTB_TVOUT_u_0_out_wrapc, WRITE_MODE);
-    if(fstatus /= OPEN_OK) then
-        assert false report "Open file " & AUTOTB_TVOUT_u_0_out_wrapc & " failed!!!" severity note;
-        assert false report "ERROR: Simulation using HLS TB failed." severity failure;
-    end if;
-    write(token_line, string'("[[[runtime]]]"));
-    writeline(fp, token_line);
-    file_close(fp);
-    while done_cnt /= AUTOTB_TRANSACTION_NUM loop
-        wait until AESL_clock'event and AESL_clock = '1';
-    end loop;
-    wait until AESL_clock'event and AESL_clock = '1';
-    wait until AESL_clock'event and AESL_clock = '1';
-    file_open(fstatus, fp, AUTOTB_TVOUT_u_0_out_wrapc, APPEND_MODE);
-    if(fstatus /= OPEN_OK) then
-        assert false report "Open file " & AUTOTB_TVOUT_u_0_out_wrapc & " failed!!!" severity note;
-        assert false report "ERROR: Simulation using HLS TB failed." severity failure;
-    end if;
-    write(token_line, string'("[[[/runtime]]]"));
-    writeline(fp, token_line);
-    file_close(fp);
-    wait;
-end process;
-
--- Write "[[[runtime]]]" and "[[[/runtime]]]" for output transactor 
-write_output_transactor_sol_list_runtime_proc : process
-  file        fp              :   TEXT;
-  variable    fstatus         :   FILE_OPEN_STATUS;
-  variable    token_line      :   LINE;
-  variable    token           :   STRING(1 to 1024);
-begin
-    file_open(fstatus, fp, AUTOTB_TVOUT_sol_list_out_wrapc, WRITE_MODE);
-    if(fstatus /= OPEN_OK) then
-        assert false report "Open file " & AUTOTB_TVOUT_sol_list_out_wrapc & " failed!!!" severity note;
-        assert false report "ERROR: Simulation using HLS TB failed." severity failure;
-    end if;
-    write(token_line, string'("[[[runtime]]]"));
-    writeline(fp, token_line);
-    file_close(fp);
-    while done_cnt /= AUTOTB_TRANSACTION_NUM loop
-        wait until AESL_clock'event and AESL_clock = '1';
-    end loop;
-    wait until AESL_clock'event and AESL_clock = '1';
-    wait until AESL_clock'event and AESL_clock = '1';
-    file_open(fstatus, fp, AUTOTB_TVOUT_sol_list_out_wrapc, APPEND_MODE);
-    if(fstatus /= OPEN_OK) then
-        assert false report "Open file " & AUTOTB_TVOUT_sol_list_out_wrapc & " failed!!!" severity note;
-        assert false report "ERROR: Simulation using HLS TB failed." severity failure;
-    end if;
-    write(token_line, string'("[[[/runtime]]]"));
-    writeline(fp, token_line);
-    file_close(fp);
-    wait;
-end process;
-
--- Write "[[[runtime]]]" and "[[[/runtime]]]" for output transactor 
-write_output_transactor_flag_runtime_proc : process
-  file        fp              :   TEXT;
-  variable    fstatus         :   FILE_OPEN_STATUS;
-  variable    token_line      :   LINE;
-  variable    token           :   STRING(1 to 1024);
-begin
-    file_open(fstatus, fp, AUTOTB_TVOUT_flag_out_wrapc, WRITE_MODE);
-    if(fstatus /= OPEN_OK) then
-        assert false report "Open file " & AUTOTB_TVOUT_flag_out_wrapc & " failed!!!" severity note;
-        assert false report "ERROR: Simulation using HLS TB failed." severity failure;
-    end if;
-    write(token_line, string'("[[[runtime]]]"));
-    writeline(fp, token_line);
-    file_close(fp);
-    while done_cnt /= AUTOTB_TRANSACTION_NUM loop
-        wait until AESL_clock'event and AESL_clock = '1';
-    end loop;
-    wait until AESL_clock'event and AESL_clock = '1';
-    wait until AESL_clock'event and AESL_clock = '1';
-    file_open(fstatus, fp, AUTOTB_TVOUT_flag_out_wrapc, APPEND_MODE);
-    if(fstatus /= OPEN_OK) then
-        assert false report "Open file " & AUTOTB_TVOUT_flag_out_wrapc & " failed!!!" severity note;
-        assert false report "ERROR: Simulation using HLS TB failed." severity failure;
-    end if;
-    write(token_line, string'("[[[/runtime]]]"));
-    writeline(fp, token_line);
-    file_close(fp);
-    wait;
 end process;
 
 gen_clock_counter_proc : process(AESL_clock)

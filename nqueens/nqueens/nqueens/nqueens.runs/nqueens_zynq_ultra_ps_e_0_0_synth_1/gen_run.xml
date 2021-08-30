@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="nqueens_zynq_ultra_ps_e_0_0_synth_1" LaunchPart="xczu9eg-ffvb1156-2-e" LaunchTime="1629973777">
+<GenRun Id="nqueens_zynq_ultra_ps_e_0_0_synth_1" LaunchPart="xczu9eg-ffvb1156-2-e" LaunchTime="1630322044">
   <File Type="PA-TCL" Name="nqueens_zynq_ultra_ps_e_0_0.tcl"/>
   <File Type="RDS-PROPCONSTRS" Name="nqueens_zynq_ultra_ps_e_0_0_drc_synth.rpt"/>
   <File Type="REPORTS-TCL" Name="nqueens_zynq_ultra_ps_e_0_0_reports.tcl"/>

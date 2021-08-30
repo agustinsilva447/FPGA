@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="ASCII"?>
 <sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="nqueens" location="C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens" platform="C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens_wrapper/export/nqueens_wrapper/nqueens_wrapper.xpfm" platformUID="xilinx:zcu102::0.0(custom)" systemProject="nqueens_system" sysConfig="nqueens_wrapper" runtime="cpp" cpu="standalone_domain" cpuInstance="psu_cortexa53_0" os="standalone" mssSignature="5ea4816606581dcb7f138b73563b93a1">
-  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.2138406932">
+  <configuration name="Debug" id="xilinx.gnu.arm.a53.exe.debug.585165617">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
     <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
-  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.302652050" dirty="true">
+  <configuration name="Release" id="xilinx.gnu.arm.a53.exe.release.2003890885" dirty="true">
     <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
   </configuration>
   <template appTemplateName="empty_application"/>

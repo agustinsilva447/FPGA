@@ -3,5 +3,6 @@ sv work "glbl.v"
 vhdl xil_defaultlib "AESL_axi_slave_AXILiteS.vhd"
 vhdl xil_defaultlib "nqueens.autotb.vhd"
 vhdl xil_defaultlib "nqueens.vhd"
+vhdl xil_defaultlib "nqueens_a.vhd"
 vhdl xil_defaultlib "nqueens_AXILiteS_s_axi.vhd"
 

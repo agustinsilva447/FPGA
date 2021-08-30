@@ -934,25 +934,13 @@ extern "C" {
 # 1037 "C:/Xilinx/Vivado/2019.2/tps/win64/msys64/mingw64/x86_64-w64-mingw32/include/stdio.h" 2 3
 # 2 "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens_tb.cpp" 2
 
-
-
-# 4 "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens_tb.cpp"
-void nqueens(int a[8], int *k, int *u_0, int *sol_list, int *flag);
+# 2 "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens_tb.cpp"
+int nqueens();
 
 int main()
 {
- int a[8];
- int u_0 = 1, k = 0, sol_list = 0, iteration = 1, flag = 0;
-
- for (int x=0; x<8; x++){
-  a[x] = 0;
- }
-
- while ((!flag) && (iteration < 100)){
-  nqueens(a, &k, &u_0, &sol_list, &flag);
-     iteration = iteration + 1;
- }
-
- printf("Number of solutions for %d queens: %d.\n", 8, sol_list);
+ int total_sol;
+ total_sol = nqueens();
+ printf("Number of solutions: %d.\n", total_sol);
  return 0;
 }

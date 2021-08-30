@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Thu Aug 26 12:28:44 2021
+--Date        : Mon Aug 30 13:13:18 2021
 --Host        : hp6g4-mlab-2 running 64-bit major release  (build 9200)
 --Command     : generate_target nqueens.bd
 --Design      : nqueens
@@ -1838,7 +1838,7 @@ architecture STRUCTURE of nqueens is
   end component nqueens_zynq_ultra_ps_e_0_0;
   component nqueens_nqueens_0_0 is
   port (
-    s_axi_AXILiteS_AWADDR : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    s_axi_AXILiteS_AWADDR : in STD_LOGIC_VECTOR ( 4 downto 0 );
     s_axi_AXILiteS_AWVALID : in STD_LOGIC;
     s_axi_AXILiteS_AWREADY : out STD_LOGIC;
     s_axi_AXILiteS_WDATA : in STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -1848,7 +1848,7 @@ architecture STRUCTURE of nqueens is
     s_axi_AXILiteS_BRESP : out STD_LOGIC_VECTOR ( 1 downto 0 );
     s_axi_AXILiteS_BVALID : out STD_LOGIC;
     s_axi_AXILiteS_BREADY : in STD_LOGIC;
-    s_axi_AXILiteS_ARADDR : in STD_LOGIC_VECTOR ( 6 downto 0 );
+    s_axi_AXILiteS_ARADDR : in STD_LOGIC_VECTOR ( 4 downto 0 );
     s_axi_AXILiteS_ARVALID : in STD_LOGIC;
     s_axi_AXILiteS_ARREADY : out STD_LOGIC;
     s_axi_AXILiteS_RDATA : out STD_LOGIC_VECTOR ( 31 downto 0 );
@@ -1983,10 +1983,10 @@ nqueens_0: component nqueens_nqueens_0_0
       ap_clk => zynq_ultra_ps_e_0_pl_clk0,
       ap_rst_n => rst_ps8_0_99M_peripheral_aresetn(0),
       interrupt => NLW_nqueens_0_interrupt_UNCONNECTED,
-      s_axi_AXILiteS_ARADDR(6 downto 0) => ps8_0_axi_periph_M00_AXI_ARADDR(6 downto 0),
+      s_axi_AXILiteS_ARADDR(4 downto 0) => ps8_0_axi_periph_M00_AXI_ARADDR(4 downto 0),
       s_axi_AXILiteS_ARREADY => ps8_0_axi_periph_M00_AXI_ARREADY,
       s_axi_AXILiteS_ARVALID => ps8_0_axi_periph_M00_AXI_ARVALID(0),
-      s_axi_AXILiteS_AWADDR(6 downto 0) => ps8_0_axi_periph_M00_AXI_AWADDR(6 downto 0),
+      s_axi_AXILiteS_AWADDR(4 downto 0) => ps8_0_axi_periph_M00_AXI_AWADDR(4 downto 0),
       s_axi_AXILiteS_AWREADY => ps8_0_axi_periph_M00_AXI_AWREADY,
       s_axi_AXILiteS_AWVALID => ps8_0_axi_periph_M00_AXI_AWVALID(0),
       s_axi_AXILiteS_BREADY => ps8_0_axi_periph_M00_AXI_BREADY(0),

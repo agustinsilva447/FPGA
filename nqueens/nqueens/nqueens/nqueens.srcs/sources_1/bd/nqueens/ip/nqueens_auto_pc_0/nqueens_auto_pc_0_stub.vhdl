@@ -1,11 +1,11 @@
 -- Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
--- Date        : Thu Aug 26 12:32:34 2021
+-- Date        : Mon Aug 30 13:16:13 2021
 -- Host        : hp6g4-mlab-2 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode synth_stub
---               c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ip/nqueens_auto_pc_0/nqueens_auto_pc_0_stub.vhdl
--- Design      : nqueens_auto_pc_0
+-- Command     : write_vhdl -force -mode synth_stub -rename_top nqueens_auto_pc_0 -prefix
+--               nqueens_auto_pc_0_ nqueens_auto_pc_1_stub.vhdl
+-- Design      : nqueens_auto_pc_1
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xczu9eg-ffvb1156-2-e
 -- --------------------------------------------------------------------------------

@@ -10,25 +10,6 @@ def counter(a, k, n, u_0):
             return u
     return 0
 
-def block(a, k, u_0, sol_list, flag):
-    while (1):
-        a[k] = counter(a, k, n, u_0)
-        u_0 = 1
-        if a[k] == 0:
-            k -= 1
-            if k == -1:
-                flag = 1
-                return a, k, u_0, sol_list, flag
-            u_0 = a[k] + 1
-            a[k] = 0
-            k -= 1
-        k += 1
-        #print(a)
-        if k == n:
-            sol_list += 1
-            #print('---> SOLUTION NUMBER {}'.format(sol_list))
-            return a, k, u_0, sol_list, flag
-
 n = int(input("Ingrese el tamano del tablero: "))
 a = np.zeros([1, n+1])[0]
 iteration = 1
@@ -38,7 +19,26 @@ u_0 = 1
 k = 0
 
 while not flag:
-    a, k, u_0, sol_list, flag = block(a, k, u_0, sol_list, flag)
+    exit = 0
+    while not exit:
+        a[k] = counter(a, k, n, u_0)
+        u_0 = 1
+        if a[k] == 0:
+            k -= 1
+            if k == -1:
+                flag = 1
+                exit = 1
+            u_0 = a[k] + 1
+            a[k] = 0
+            k -= 1
+        k += 1
+        #print(a)
+        if k == n:
+            sol_list += 1
+            #print('---> SOLUTION NUMBER {}'.format(sol_list))
+            exit = 1
+
+
     print("Number of iterations: {}".format(iteration))
     iteration += 1
 

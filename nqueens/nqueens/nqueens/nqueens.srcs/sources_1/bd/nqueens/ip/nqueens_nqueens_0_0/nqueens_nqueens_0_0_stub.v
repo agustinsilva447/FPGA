@@ -1,7 +1,7 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Thu Aug 26 12:32:32 2021
+// Date        : Mon Aug 30 13:16:19 2021
 // Host        : hp6g4-mlab-2 running 64-bit major release  (build 9200)
 // Command     : write_verilog -force -mode synth_stub
 //               c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens.srcs/sources_1/bd/nqueens/ip/nqueens_nqueens_0_0/nqueens_nqueens_0_0_stub.v
@@ -21,8 +21,8 @@ module nqueens_nqueens_0_0(s_axi_AXILiteS_AWADDR,
   s_axi_AXILiteS_ARADDR, s_axi_AXILiteS_ARVALID, s_axi_AXILiteS_ARREADY, 
   s_axi_AXILiteS_RDATA, s_axi_AXILiteS_RRESP, s_axi_AXILiteS_RVALID, 
   s_axi_AXILiteS_RREADY, ap_clk, ap_rst_n, interrupt)
-/* synthesis syn_black_box black_box_pad_pin="s_axi_AXILiteS_AWADDR[6:0],s_axi_AXILiteS_AWVALID,s_axi_AXILiteS_AWREADY,s_axi_AXILiteS_WDATA[31:0],s_axi_AXILiteS_WSTRB[3:0],s_axi_AXILiteS_WVALID,s_axi_AXILiteS_WREADY,s_axi_AXILiteS_BRESP[1:0],s_axi_AXILiteS_BVALID,s_axi_AXILiteS_BREADY,s_axi_AXILiteS_ARADDR[6:0],s_axi_AXILiteS_ARVALID,s_axi_AXILiteS_ARREADY,s_axi_AXILiteS_RDATA[31:0],s_axi_AXILiteS_RRESP[1:0],s_axi_AXILiteS_RVALID,s_axi_AXILiteS_RREADY,ap_clk,ap_rst_n,interrupt" */;
-  input [6:0]s_axi_AXILiteS_AWADDR;
+/* synthesis syn_black_box black_box_pad_pin="s_axi_AXILiteS_AWADDR[4:0],s_axi_AXILiteS_AWVALID,s_axi_AXILiteS_AWREADY,s_axi_AXILiteS_WDATA[31:0],s_axi_AXILiteS_WSTRB[3:0],s_axi_AXILiteS_WVALID,s_axi_AXILiteS_WREADY,s_axi_AXILiteS_BRESP[1:0],s_axi_AXILiteS_BVALID,s_axi_AXILiteS_BREADY,s_axi_AXILiteS_ARADDR[4:0],s_axi_AXILiteS_ARVALID,s_axi_AXILiteS_ARREADY,s_axi_AXILiteS_RDATA[31:0],s_axi_AXILiteS_RRESP[1:0],s_axi_AXILiteS_RVALID,s_axi_AXILiteS_RREADY,ap_clk,ap_rst_n,interrupt" */;
+  input [4:0]s_axi_AXILiteS_AWADDR;
   input s_axi_AXILiteS_AWVALID;
   output s_axi_AXILiteS_AWREADY;
   input [31:0]s_axi_AXILiteS_WDATA;
@@ -32,7 +32,7 @@ module nqueens_nqueens_0_0(s_axi_AXILiteS_AWADDR,
   output [1:0]s_axi_AXILiteS_BRESP;
   output s_axi_AXILiteS_BVALID;
   input s_axi_AXILiteS_BREADY;
-  input [6:0]s_axi_AXILiteS_ARADDR;
+  input [4:0]s_axi_AXILiteS_ARADDR;
   input s_axi_AXILiteS_ARVALID;
   output s_axi_AXILiteS_ARREADY;
   output [31:0]s_axi_AXILiteS_RDATA;

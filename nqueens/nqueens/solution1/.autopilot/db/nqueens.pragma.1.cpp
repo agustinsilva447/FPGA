@@ -868,50 +868,55 @@ void * __mingw_aligned_realloc (void *_Memory, size_t _Size, size_t _Offset);
 # 2 "nqueens/nqueens.cpp" 2
 
 
-int counter(int a[8], int k, int u_0)
-{_ssdm_SpecArrayDimSize(a, 8);
- int count, f;
- for (int u = u_0; u<8 +1; u++){
-  count = 0;
-  for (int j = 0; j<k; j++){
-_ssdm_op_SpecPipeline(-1, 1, 1, 0, "");
- if ((u != a[j]) && (abs(u - a[j]) != (k - j))){
-    count = count + 1;
-   }
-  }
-  if (count == k){
-   return u;
-  }
- }
- return 0;
-}
-
-void nqueens(int a[8], int *k, int *u_0, int *sol_list, int *flag)
-{_ssdm_SpecArrayDimSize(a, 8);
-_ssdm_op_SpecInterface(flag, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(sol_list, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(u_0, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(k, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
-_ssdm_op_SpecInterface(a, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
+int nqueens()
+{
 _ssdm_op_SpecInterface(0, "s_axilite", 0, 0, "", 0, 0, "", "", "", 0, 0, 0, 0, "", "");
- int exit = 0;
- while (!exit){
-  a[*k] = counter(a, *k, *u_0);
-  *u_0 = 1;
-  if (a[*k] == 0){
-   *k = *k - 1;
-   if (*k == -1){
-    *flag = 1;
-    exit = 1;
+ int u_0 = 1, k = 0, k_aux = 1, sol_list = 0, flag = 0, max_it = 100, count = 0;
+ int a[8];
+
+ for (int x=0; x<8; x++){
+  a[x] = 0;
+ }
+
+ for(int iteration = 0; iteration<max_it; iteration++){
+  while (1){
+   a[k] = 0;
+   for (int u = u_0; u<8 +1; u++){
+    count = 0;
+    for (int j = 0; j<k; j++){
+     if ((u != a[j]) && (abs(u - a[j]) != (k - j))){
+      count = count + 1;
+     }
+    }
+    if (count == k){
+     a[k] = u;
+     break;
+    }
    }
-   *u_0 = a[*k] + 1;
-   a[*k] = 0;
-   *k = *k - 1;
+
+   u_0 = 1;
+   if (a[k] == 0){
+    k = k - 1;
+    k_aux = k_aux - 1;
+    if (k_aux == 0){
+     flag = 1;
+     break;
+    }
+    u_0 = a[k] + 1;
+    a[k] = 0;
+    k = k - 1;
+    k_aux = k_aux - 1;
+   }
+   k = k + 1;
+   k_aux = k_aux + 1;
+   if (k == 8){
+    sol_list = sol_list + 1;
+    break;
+   }
   }
-  *k = *k + 1;
-  if (*k == 8){
-   *sol_list = *sol_list + 1;
-   exit = 1;
+  if (flag){
+   break;
   }
  }
+ return sol_list;
 }

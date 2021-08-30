@@ -5,7 +5,7 @@
 `timescale 1ns/1ps
 module nqueens_AXILiteS_s_axi
 #(parameter
-    C_S_AXI_ADDR_WIDTH = 7,
+    C_S_AXI_ADDR_WIDTH = 5,
     C_S_AXI_DATA_WIDTH = 32
 )(
     input  wire                          ACLK,
@@ -33,22 +33,7 @@ module nqueens_AXILiteS_s_axi
     input  wire                          ap_done,
     input  wire                          ap_ready,
     input  wire                          ap_idle,
-    input  wire [2:0]                    a_address0,
-    input  wire                          a_ce0,
-    input  wire                          a_we0,
-    input  wire [31:0]                   a_d0,
-    output wire [31:0]                   a_q0,
-    output wire [31:0]                   k_i,
-    input  wire [31:0]                   k_o,
-    input  wire                          k_o_ap_vld,
-    output wire [31:0]                   u_0_i,
-    input  wire [31:0]                   u_0_o,
-    input  wire                          u_0_o_ap_vld,
-    output wire [31:0]                   sol_list_i,
-    input  wire [31:0]                   sol_list_o,
-    input  wire                          sol_list_o_ap_vld,
-    input  wire [31:0]                   flag,
-    input  wire                          flag_ap_vld
+    input  wire [31:0]                   ap_return
 );
 //------------------------Address Info-------------------
 // 0x00 : Control signals
@@ -69,70 +54,25 @@ module nqueens_AXILiteS_s_axi
 //        bit 0  - Channel 0 (ap_done)
 //        bit 1  - Channel 1 (ap_ready)
 //        others - reserved
-// 0x40 : Data signal of k_i
-//        bit 31~0 - k_i[31:0] (Read/Write)
-// 0x44 : reserved
-// 0x48 : Data signal of k_o
-//        bit 31~0 - k_o[31:0] (Read)
-// 0x4c : Control signal of k_o
-//        bit 0  - k_o_ap_vld (Read/COR)
-//        others - reserved
-// 0x50 : Data signal of u_0_i
-//        bit 31~0 - u_0_i[31:0] (Read/Write)
-// 0x54 : reserved
-// 0x58 : Data signal of u_0_o
-//        bit 31~0 - u_0_o[31:0] (Read)
-// 0x5c : Control signal of u_0_o
-//        bit 0  - u_0_o_ap_vld (Read/COR)
-//        others - reserved
-// 0x60 : Data signal of sol_list_i
-//        bit 31~0 - sol_list_i[31:0] (Read/Write)
-// 0x64 : reserved
-// 0x68 : Data signal of sol_list_o
-//        bit 31~0 - sol_list_o[31:0] (Read)
-// 0x6c : Control signal of sol_list_o
-//        bit 0  - sol_list_o_ap_vld (Read/COR)
-//        others - reserved
-// 0x70 : Data signal of flag
-//        bit 31~0 - flag[31:0] (Read)
-// 0x74 : Control signal of flag
-//        bit 0  - flag_ap_vld (Read/COR)
-//        others - reserved
-// 0x20 ~
-// 0x3f : Memory 'a' (8 * 32b)
-//        Word n : bit [31:0] - a[n]
+// 0x10 : Data signal of ap_return
+//        bit 31~0 - ap_return[31:0] (Read)
 // (SC = Self Clear, COR = Clear on Read, TOW = Toggle on Write, COH = Clear on Handshake)
 
 //------------------------Parameter----------------------
 localparam
-    ADDR_AP_CTRL           = 7'h00,
-    ADDR_GIE               = 7'h04,
-    ADDR_IER               = 7'h08,
-    ADDR_ISR               = 7'h0c,
-    ADDR_K_I_DATA_0        = 7'h40,
-    ADDR_K_I_CTRL          = 7'h44,
-    ADDR_K_O_DATA_0        = 7'h48,
-    ADDR_K_O_CTRL          = 7'h4c,
-    ADDR_U_0_I_DATA_0      = 7'h50,
-    ADDR_U_0_I_CTRL        = 7'h54,
-    ADDR_U_0_O_DATA_0      = 7'h58,
-    ADDR_U_0_O_CTRL        = 7'h5c,
-    ADDR_SOL_LIST_I_DATA_0 = 7'h60,
-    ADDR_SOL_LIST_I_CTRL   = 7'h64,
-    ADDR_SOL_LIST_O_DATA_0 = 7'h68,
-    ADDR_SOL_LIST_O_CTRL   = 7'h6c,
-    ADDR_FLAG_DATA_0       = 7'h70,
-    ADDR_FLAG_CTRL         = 7'h74,
-    ADDR_A_BASE            = 7'h20,
-    ADDR_A_HIGH            = 7'h3f,
-    WRIDLE                 = 2'd0,
-    WRDATA                 = 2'd1,
-    WRRESP                 = 2'd2,
-    WRRESET                = 2'd3,
-    RDIDLE                 = 2'd0,
-    RDDATA                 = 2'd1,
-    RDRESET                = 2'd2,
-    ADDR_BITS         = 7;
+    ADDR_AP_CTRL     = 5'h00,
+    ADDR_GIE         = 5'h04,
+    ADDR_IER         = 5'h08,
+    ADDR_ISR         = 5'h0c,
+    ADDR_AP_RETURN_0 = 5'h10,
+    WRIDLE           = 2'd0,
+    WRDATA           = 2'd1,
+    WRRESP           = 2'd2,
+    WRRESET          = 2'd3,
+    RDIDLE           = 2'd0,
+    RDDATA           = 2'd1,
+    RDRESET          = 2'd2,
+    ADDR_BITS         = 5;
 
 //------------------------Local signal-------------------
     reg  [1:0]                    wstate = WRRESET;
@@ -155,54 +95,9 @@ localparam
     reg                           int_gie = 1'b0;
     reg  [1:0]                    int_ier = 2'b0;
     reg  [1:0]                    int_isr = 2'b0;
-    reg  [31:0]                   int_k_i = 'b0;
-    reg  [31:0]                   int_k_o = 'b0;
-    reg                           int_k_o_ap_vld;
-    reg  [31:0]                   int_u_0_i = 'b0;
-    reg  [31:0]                   int_u_0_o = 'b0;
-    reg                           int_u_0_o_ap_vld;
-    reg  [31:0]                   int_sol_list_i = 'b0;
-    reg  [31:0]                   int_sol_list_o = 'b0;
-    reg                           int_sol_list_o_ap_vld;
-    reg  [31:0]                   int_flag = 'b0;
-    reg                           int_flag_ap_vld;
-    // memory signals
-    wire [2:0]                    int_a_address0;
-    wire                          int_a_ce0;
-    wire                          int_a_we0;
-    wire [3:0]                    int_a_be0;
-    wire [31:0]                   int_a_d0;
-    wire [31:0]                   int_a_q0;
-    wire [2:0]                    int_a_address1;
-    wire                          int_a_ce1;
-    wire                          int_a_we1;
-    wire [3:0]                    int_a_be1;
-    wire [31:0]                   int_a_d1;
-    wire [31:0]                   int_a_q1;
-    reg                           int_a_read;
-    reg                           int_a_write;
+    reg  [31:0]                   int_ap_return;
 
 //------------------------Instantiation------------------
-// int_a
-nqueens_AXILiteS_s_axi_ram #(
-    .BYTES    ( 4 ),
-    .DEPTH    ( 8 )
-) int_a (
-    .clk0     ( ACLK ),
-    .address0 ( int_a_address0 ),
-    .ce0      ( int_a_ce0 ),
-    .we0      ( int_a_we0 ),
-    .be0      ( int_a_be0 ),
-    .d0       ( int_a_d0 ),
-    .q0       ( int_a_q0 ),
-    .clk1     ( ACLK ),
-    .address1 ( int_a_address1 ),
-    .ce1      ( int_a_ce1 ),
-    .we1      ( int_a_we1 ),
-    .be1      ( int_a_be1 ),
-    .d1       ( int_a_d1 ),
-    .q1       ( int_a_q1 )
-);
 
 //------------------------AXI write fsm------------------
 assign AWREADY = (wstate == WRIDLE);
@@ -256,7 +151,7 @@ end
 assign ARREADY = (rstate == RDIDLE);
 assign RDATA   = rdata;
 assign RRESP   = 2'b00;  // OKAY
-assign RVALID  = (rstate == RDDATA) & !int_a_read;
+assign RVALID  = (rstate == RDDATA);
 assign ar_hs   = ARVALID & ARREADY;
 assign raddr   = ARADDR[ADDR_BITS-1:0];
 
@@ -308,54 +203,18 @@ always @(posedge ACLK) begin
                 ADDR_ISR: begin
                     rdata <= int_isr;
                 end
-                ADDR_K_I_DATA_0: begin
-                    rdata <= int_k_i[31:0];
-                end
-                ADDR_K_O_DATA_0: begin
-                    rdata <= int_k_o[31:0];
-                end
-                ADDR_K_O_CTRL: begin
-                    rdata[0] <= int_k_o_ap_vld;
-                end
-                ADDR_U_0_I_DATA_0: begin
-                    rdata <= int_u_0_i[31:0];
-                end
-                ADDR_U_0_O_DATA_0: begin
-                    rdata <= int_u_0_o[31:0];
-                end
-                ADDR_U_0_O_CTRL: begin
-                    rdata[0] <= int_u_0_o_ap_vld;
-                end
-                ADDR_SOL_LIST_I_DATA_0: begin
-                    rdata <= int_sol_list_i[31:0];
-                end
-                ADDR_SOL_LIST_O_DATA_0: begin
-                    rdata <= int_sol_list_o[31:0];
-                end
-                ADDR_SOL_LIST_O_CTRL: begin
-                    rdata[0] <= int_sol_list_o_ap_vld;
-                end
-                ADDR_FLAG_DATA_0: begin
-                    rdata <= int_flag[31:0];
-                end
-                ADDR_FLAG_CTRL: begin
-                    rdata[0] <= int_flag_ap_vld;
+                ADDR_AP_RETURN_0: begin
+                    rdata <= int_ap_return[31:0];
                 end
             endcase
-        end
-        else if (int_a_read) begin
-            rdata <= int_a_q1;
         end
     end
 end
 
 
 //------------------------Register logic-----------------
-assign interrupt  = int_gie & (|int_isr);
-assign ap_start   = int_ap_start;
-assign k_i        = int_k_i;
-assign u_0_i      = int_u_0_i;
-assign sol_list_i = int_sol_list_i;
+assign interrupt = int_gie & (|int_isr);
+assign ap_start  = int_ap_start;
 // int_ap_start
 always @(posedge ACLK) begin
     if (ARESET)
@@ -452,233 +311,17 @@ always @(posedge ACLK) begin
     end
 end
 
-// int_k_i[31:0]
+// int_ap_return
 always @(posedge ACLK) begin
     if (ARESET)
-        int_k_i[31:0] <= 0;
+        int_ap_return <= 0;
     else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_K_I_DATA_0)
-            int_k_i[31:0] <= (WDATA[31:0] & wmask) | (int_k_i[31:0] & ~wmask);
-    end
-end
-
-// int_k_o
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_k_o <= 0;
-    else if (ACLK_EN) begin
-        if (k_o_ap_vld)
-            int_k_o <= k_o;
-    end
-end
-
-// int_k_o_ap_vld
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_k_o_ap_vld <= 1'b0;
-    else if (ACLK_EN) begin
-        if (k_o_ap_vld)
-            int_k_o_ap_vld <= 1'b1;
-        else if (ar_hs && raddr == ADDR_K_O_CTRL)
-            int_k_o_ap_vld <= 1'b0; // clear on read
-    end
-end
-
-// int_u_0_i[31:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_u_0_i[31:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_U_0_I_DATA_0)
-            int_u_0_i[31:0] <= (WDATA[31:0] & wmask) | (int_u_0_i[31:0] & ~wmask);
-    end
-end
-
-// int_u_0_o
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_u_0_o <= 0;
-    else if (ACLK_EN) begin
-        if (u_0_o_ap_vld)
-            int_u_0_o <= u_0_o;
-    end
-end
-
-// int_u_0_o_ap_vld
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_u_0_o_ap_vld <= 1'b0;
-    else if (ACLK_EN) begin
-        if (u_0_o_ap_vld)
-            int_u_0_o_ap_vld <= 1'b1;
-        else if (ar_hs && raddr == ADDR_U_0_O_CTRL)
-            int_u_0_o_ap_vld <= 1'b0; // clear on read
-    end
-end
-
-// int_sol_list_i[31:0]
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_sol_list_i[31:0] <= 0;
-    else if (ACLK_EN) begin
-        if (w_hs && waddr == ADDR_SOL_LIST_I_DATA_0)
-            int_sol_list_i[31:0] <= (WDATA[31:0] & wmask) | (int_sol_list_i[31:0] & ~wmask);
-    end
-end
-
-// int_sol_list_o
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_sol_list_o <= 0;
-    else if (ACLK_EN) begin
-        if (sol_list_o_ap_vld)
-            int_sol_list_o <= sol_list_o;
-    end
-end
-
-// int_sol_list_o_ap_vld
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_sol_list_o_ap_vld <= 1'b0;
-    else if (ACLK_EN) begin
-        if (sol_list_o_ap_vld)
-            int_sol_list_o_ap_vld <= 1'b1;
-        else if (ar_hs && raddr == ADDR_SOL_LIST_O_CTRL)
-            int_sol_list_o_ap_vld <= 1'b0; // clear on read
-    end
-end
-
-// int_flag
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_flag <= 0;
-    else if (ACLK_EN) begin
-        if (flag_ap_vld)
-            int_flag <= flag;
-    end
-end
-
-// int_flag_ap_vld
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_flag_ap_vld <= 1'b0;
-    else if (ACLK_EN) begin
-        if (flag_ap_vld)
-            int_flag_ap_vld <= 1'b1;
-        else if (ar_hs && raddr == ADDR_FLAG_CTRL)
-            int_flag_ap_vld <= 1'b0; // clear on read
+        if (ap_done)
+            int_ap_return <= ap_return;
     end
 end
 
 
 //------------------------Memory logic-------------------
-// a
-assign int_a_address0 = a_address0;
-assign int_a_ce0      = a_ce0;
-assign int_a_we0      = a_we0;
-assign int_a_be0      = {4{a_we0}};
-assign int_a_d0       = a_d0;
-assign a_q0           = int_a_q0;
-assign int_a_address1 = ar_hs? raddr[4:2] : waddr[4:2];
-assign int_a_ce1      = ar_hs | (int_a_write & WVALID);
-assign int_a_we1      = int_a_write & WVALID;
-assign int_a_be1      = WSTRB;
-assign int_a_d1       = WDATA;
-// int_a_read
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_a_read <= 1'b0;
-    else if (ACLK_EN) begin
-        if (ar_hs && raddr >= ADDR_A_BASE && raddr <= ADDR_A_HIGH)
-            int_a_read <= 1'b1;
-        else
-            int_a_read <= 1'b0;
-    end
-end
-
-// int_a_write
-always @(posedge ACLK) begin
-    if (ARESET)
-        int_a_write <= 1'b0;
-    else if (ACLK_EN) begin
-        if (aw_hs && AWADDR[ADDR_BITS-1:0] >= ADDR_A_BASE && AWADDR[ADDR_BITS-1:0] <= ADDR_A_HIGH)
-            int_a_write <= 1'b1;
-        else if (WVALID)
-            int_a_write <= 1'b0;
-    end
-end
-
 
 endmodule
-
-
-`timescale 1ns/1ps
-
-module nqueens_AXILiteS_s_axi_ram
-#(parameter
-    BYTES  = 4,
-    DEPTH  = 256,
-    AWIDTH = log2(DEPTH)
-) (
-    input  wire               clk0,
-    input  wire [AWIDTH-1:0]  address0,
-    input  wire               ce0,
-    input  wire               we0,
-    input  wire [BYTES-1:0]   be0,
-    input  wire [BYTES*8-1:0] d0,
-    output reg  [BYTES*8-1:0] q0,
-    input  wire               clk1,
-    input  wire [AWIDTH-1:0]  address1,
-    input  wire               ce1,
-    input  wire               we1,
-    input  wire [BYTES-1:0]   be1,
-    input  wire [BYTES*8-1:0] d1,
-    output reg  [BYTES*8-1:0] q1
-);
-//------------------------Local signal-------------------
-reg  [BYTES*8-1:0] mem[0:DEPTH-1];
-//------------------------Task and function--------------
-function integer log2;
-    input integer x;
-    integer n, m;
-begin
-    n = 1;
-    m = 2;
-    while (m < x) begin
-        n = n + 1;
-        m = m * 2;
-    end
-    log2 = n;
-end
-endfunction
-//------------------------Body---------------------------
-// read port 0
-always @(posedge clk0) begin
-    if (ce0) q0 <= mem[address0];
-end
-
-// read port 1
-always @(posedge clk1) begin
-    if (ce1) q1 <= mem[address1];
-end
-
-genvar i;
-generate
-    for (i = 0; i < BYTES; i = i + 1) begin : gen_write
-        // write port 0
-        always @(posedge clk0) begin
-            if (ce0 & we0 & be0[i]) begin
-                mem[address0][8*i+7:8*i] <= d0[8*i+7:8*i];
-            end
-        end
-        // write port 1
-        always @(posedge clk1) begin
-            if (ce1 & we1 & be1[i]) begin
-                mem[address1][8*i+7:8*i] <= d1[8*i+7:8*i];
-            end
-        end
-    end
-endgenerate
-
-endmodule
-

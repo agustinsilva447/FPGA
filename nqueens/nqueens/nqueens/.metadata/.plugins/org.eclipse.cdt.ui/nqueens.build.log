@@ -1,38 +1,25 @@
-19:37:42 **** Incremental Build of configuration Debug for project nqueens ****
+15:44:44 **** Incremental Build of configuration Debug for project nqueens ****
 make all 
-'Building file: ../src/src/main.c'
+'Building file: ../src/main.c'
 'Invoking: ARM v8 gcc compiler'
-aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/src/main.o" -IC:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens_wrapper/export/nqueens_wrapper/sw/nqueens_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/src/main.d" -MT"src/src/main.o" -o "src/src/main.o" "../src/src/main.c"
-In file included from ../src/src/main.c:2:
+aarch64-none-elf-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/main.o" -IC:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens_wrapper/export/nqueens_wrapper/sw/nqueens_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/main.d" -MT"src/main.o" -o "src/main.o" "../src/main.c"
+In file included from ../src/main.c:2:
 C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens_wrapper/export/nqueens_wrapper/sw/nqueens_wrapper/standalone_domain/bspinclude/include/xtime_l.h:85:9: note: #pragma message: For the sleep routines, Global timer is being used
  #pragma message ("For the sleep routines, Global timer is being used")
          ^~~~~~~
-../src/src/main.c: In function 'main':
-../src/src/main.c:74:8: warning: unused variable 'time_sw' [-Wunused-variable]
-  float time_sw, time_hw;
-        ^~~~~~~
-../src/src/main.c:71:8: warning: unused variable 'tEnd' [-Wunused-variable]
-  XTime tEnd;
-        ^~~~
-../src/src/main.c:70:8: warning: unused variable 'tStart' [-Wunused-variable]
-  XTime tStart;
-        ^~~~~~
-../src/src/main.c:130:117: warning: 'time_hw' is used uninitialized in this function [-Wuninitialized]
-  printf("\nHARDWARE ---> Number of solutions for %d queens: %d. Execution time: %f mseg.\n", n, sol_list_hw, time_hw/(COUNTS_PER_SECOND/1000));
-                                                                                                              ~~~~~~~^~~~~~~~~~~~~~~~~~~~~~~~~
-'Finished building: ../src/src/main.c'
+'Finished building: ../src/main.c'
 ' '
 'Building target: nqueens.elf'
 'Invoking: ARM v8 gcc linker'
-aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens_wrapper/export/nqueens_wrapper/sw/nqueens_wrapper/standalone_domain/bsplib/lib -o "nqueens.elf"  ./src/src/main.o ./src/src/xnqueens.o ./src/src/xnqueens_linux.o ./src/src/xnqueens_sinit.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+aarch64-none-elf-gcc -Wl,-T -Wl,../src/lscript.ld -LC:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens/nqueens/nqueens_wrapper/export/nqueens_wrapper/sw/nqueens_wrapper/standalone_domain/bsplib/lib -o "nqueens.elf"  ./src/main.o ./src/xnqueens.o ./src/xnqueens_linux.o ./src/xnqueens_sinit.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
 'Finished building target: nqueens.elf'
 ' '
 'Invoking: ARM v8 Print Size'
 aarch64-none-elf-size nqueens.elf  |tee "nqueens.elf.size"
    text	   data	    bss	    dec	    hex	filename
-  80976	   4568	  20816	 106360	  19f78	nqueens.elf
+  76488	   4568	  20824	 101880	  18df8	nqueens.elf
 'Finished building: nqueens.elf.size'
 ' '
 
-19:37:43 Build Finished (took 592ms)
+15:44:44 Build Finished (took 597ms)
 
