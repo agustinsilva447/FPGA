@@ -1,10 +1,7 @@
-[sol_list] = nqueens(1)
-[sol_list] = nqueens(2)
-[sol_list] = nqueens(3)
-[sol_list] = nqueens(4)
-[sol_list] = nqueens(5)
-[sol_list] = nqueens(6)
-[sol_list] = nqueens(7)
-[sol_list] = nqueens(8)
-[sol_list] = nqueens(9)
-[sol_list] = nqueens(10)
+function [T] = nqueens_test(n)
+T = zeros(1,n);
+for i=1:n    
+    [solutions, T(i)] = nqueens(i);
+    fprintf("La cantidad de soluciones para %d reinas = %d. Time execution = %f seg.\n", i, solutions, T(i))
+end
+plot(T)

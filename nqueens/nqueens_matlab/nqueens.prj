@@ -76,7 +76,7 @@
     <param.hdl.TargetInterface>
       <param.hdl.TargetInterface />
     </param.hdl.TargetInterface>
-    <param.hdl.TargetLanguage />
+    <param.hdl.TargetLanguage>option.hdl.VHDL</param.hdl.TargetLanguage>
     <param.hdl.CheckConformance>false</param.hdl.CheckConformance>
     <param.hdl.LaunchConformanceReport>false</param.hdl.LaunchConformanceReport>
     <param.hdl.GenerateHDLCode>true</param.hdl.GenerateHDLCode>
@@ -487,7 +487,19 @@
       <param.hdl.BitstreamBuildMode />
     </unset>
     <fileset.entrypoints>
-      <file custom-data-expanded="true" value="${PROJECT_ROOT}\nqueens.m" />
+      <file custom-data-expanded="true" value="${PROJECT_ROOT}\nqueens.m">
+        <Inputs fileName="nqueens.m" functionName="nqueens">
+          <Input Name="n">
+            <Class>&lt;Undefined&gt;</Class>
+            <Size>1 x 1</Size>
+            <Value />
+            <InitialValue />
+            <UserDefined>false</UserDefined>
+            <Complex>false</Complex>
+            <Sparse>false</Sparse>
+          </Input>
+        </Inputs>
+      </file>
     </fileset.entrypoints>
     <fileset.scriptfile>
       <file>${PROJECT_ROOT}\nqueens_test.m</file>
