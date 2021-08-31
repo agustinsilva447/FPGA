@@ -8,11 +8,9 @@ function [sol_list, t_tot] = nqueens(n)
     tic
     while (~flag)
        while 1
-           if k < n+1
-               a(k) = counter(a,k,n,u_0);
-           else
-               a(k) = 0;
-           end           
+           if k ~= n+1
+               
+           a(k) = counter(a,k,n,u_0);
            u_0 = 1;
            if a(k) == 0
                k = k-1;

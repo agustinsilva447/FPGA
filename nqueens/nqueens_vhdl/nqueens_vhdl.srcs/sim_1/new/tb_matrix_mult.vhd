@@ -24,7 +24,7 @@ signal matC : matType := (others => (others => X"00"));
 
 begin
 
-matrix_multiplier : matrix_mult port map (Clock, reset, start, A,B, C,done);
+matrix_multiplier : matrix_mult port map (Clock, reset, start, A, B, C,done);
 
 --generate a 50Mhz clock for testing the design.
 Clk_generator : process

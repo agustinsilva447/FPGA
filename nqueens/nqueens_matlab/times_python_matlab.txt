@@ -1,0 +1,32 @@
+python:
+Total number of solutions for 0 queens: 0. Time execution = 0.0 seg.
+Total number of solutions for 1 queens: 1. Time execution = 0.0 seg.
+Total number of solutions for 2 queens: 0. Time execution = 0.0 seg.
+Total number of solutions for 3 queens: 0. Time execution = 0.0009961128234863281 seg.
+Total number of solutions for 4 queens: 2. Time execution = 0.0 seg.
+Total number of solutions for 5 queens: 10. Time execution = 0.0030202865600585938 seg.
+Total number of solutions for 6 queens: 4. Time execution = 0.0070819854736328125 seg.
+Total number of solutions for 7 queens: 40. Time execution = 0.03500795364379883 seg.
+Total number of solutions for 8 queens: 92. Time execution = 0.16629266738891602 seg.
+Total number of solutions for 9 queens: 352. Time execution = 0.8496792316436768 seg.
+Total number of solutions for 10 queens: 724. Time execution = 4.384340763092041 seg.
+Total number of solutions for 11 queens: 2680. Time execution = 24.621883869171143 seg.
+Total number of solutions for 12 queens: 14200. Time execution = 150.45265102386475 seg.
+Total number of solutions for 13 queens: 73712. Time execution = 970.7990899085999 seg.
+Total number of solutions for 14 queens: 365596. Time execution = 6645.527973890305 seg.
+
+matlab:
+La cantidad de soluciones para 1 reinas = 1. Time execution = 0.000009 seg.
+La cantidad de soluciones para 2 reinas = 0. Time execution = 0.000002 seg.
+La cantidad de soluciones para 3 reinas = 0. Time execution = 0.000002 seg.
+La cantidad de soluciones para 4 reinas = 2. Time execution = 0.000003 seg.
+La cantidad de soluciones para 5 reinas = 10. Time execution = 0.000009 seg.
+La cantidad de soluciones para 6 reinas = 4. Time execution = 0.000030 seg.
+La cantidad de soluciones para 7 reinas = 40. Time execution = 0.000117 seg.
+La cantidad de soluciones para 8 reinas = 92. Time execution = 0.000571 seg.
+La cantidad de soluciones para 9 reinas = 352. Time execution = 0.002388 seg.
+La cantidad de soluciones para 10 reinas = 724. Time execution = 0.008340 seg.
+La cantidad de soluciones para 11 reinas = 2680. Time execution = 0.041428 seg.
+La cantidad de soluciones para 12 reinas = 14200. Time execution = 0.230727 seg.
+La cantidad de soluciones para 13 reinas = 73712. Time execution = 1.366418 seg.
+La cantidad de soluciones para 14 reinas = 365596. Time execution = 8.741617 seg.
