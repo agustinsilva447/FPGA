@@ -6,7 +6,9 @@
       <simLog/>
       <mgLog/>
       <packageLog/>
-      <csimLog/>
+      <csimLog>
+        <logs message="ERROR: [SIM 211-100] 'csim_design' failed: compilation error(s)." projectName="nqueens" solutionName="solution1" date="2021-08-31T12:14:16.566+0200"/>
+      </csimLog>
     </logs>
   </errorLogs>
   <warningLogs>

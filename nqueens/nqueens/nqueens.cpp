@@ -5,9 +5,9 @@ int nqueens()
 {
 #pragma HLS INTERFACE s_axilite port=return
 	int u_0 = 1, k_0 = 0, k_aux = 1, sol_list = 0, flag = 0, max_it = 100, count = 0;
-	int a[n];
+	int a[n+1];
 
-	for (int x=0; x<n; x++){
+	for (int x=0; x<n+1; x++){
 		a[x] = 0;
 	}
 
@@ -19,6 +19,9 @@ int nqueens()
 				for (int j = 0; j<k; j++){
 					if ((u != a[j]) && (abs(u - a[j]) != (k - j))){
 						count = count + 1;
+					}
+					else{
+						break;
 					}
 				}
 				if (count == k){
@@ -47,9 +50,9 @@ int nqueens()
 				sol_list = sol_list + 1;
 				break;
 			}
-		}
 		if (flag){
 			break;
+		}
 		}
 	}
 	return sol_list;

@@ -1,6 +1,4 @@
 import numpy as np    
-import matplotlib.pyplot as plt  
-from time import time 
 
 def counter(a, k, n, u_0):
     for u in np.arange(u_0, n + 1, 1):

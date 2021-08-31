@@ -1,4 +1,5 @@
 import numpy as np    
+from time import time 
 
 def counter(a, k, n, u_0):
     for u in np.arange(u_0, n + 1, 1):
@@ -6,6 +7,8 @@ def counter(a, k, n, u_0):
         for j in range(k):
             if ((u != a[j]) and (np.abs(u - a[j]) != (k - j))):
                 count += 1
+            else:
+                break
         if count == k:
             return u
     return 0
@@ -18,6 +21,7 @@ flag = 0
 u_0 = 1
 k = 0
 
+t_1 = time()
 while not flag:
     exit = 0
     while not exit:
@@ -32,14 +36,10 @@ while not flag:
             a[k] = 0
             k -= 1
         k += 1
-        #print(a)
         if k == n:
             sol_list += 1
-            #print('---> SOLUTION NUMBER {}'.format(sol_list))
+            #print('---> SOLUTION NUMBER {} = {}'.format(sol_list, a))
             exit = 1
-
-
-    print("Number of iterations: {}".format(iteration))
     iteration += 1
-
-print("----------> Total number of solutions for {} queens: {}".format(n, sol_list))
+t_tot = time() - t_1
+print("----------> Total number of solutions for {} queens: {}. Time execution = {} seg.".format(n, sol_list, t_tot))

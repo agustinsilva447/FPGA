@@ -37,7 +37,7 @@ for iteration in range(max_it):
         if k == n:
             sol_list += 1
             break
-    print("Number of iterations: {}".format(iteration))
+    print("Number of iterations: {}".format(iteration+1))
     if flag:
         break
 print("----------> Total number of solutions for {} queens: {}".format(n, sol_list))
