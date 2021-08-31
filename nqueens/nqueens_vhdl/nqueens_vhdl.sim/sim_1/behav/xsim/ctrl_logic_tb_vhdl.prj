@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../../../../../files/ctrl_logic.vhd" \
+"../../../../nqueens_vhdl.srcs/sim_1/new/ctrl_logic_tb.vhd" \
+
+# Do not sort compile order
+nosort
