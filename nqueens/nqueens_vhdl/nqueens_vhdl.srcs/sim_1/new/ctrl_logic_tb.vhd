@@ -44,11 +44,12 @@ begin
         reset <= '1';
         wait for 50 ns;
         a <= "010100110001011000"; -- [2. 4. 6. 1. 3. 0]
-        u <= "011"; -- (u = 4) no valid
-        -- u <= "101" -- (u = 5) valid
+        -- u <= "100"; -- (u = 4) no valid
+        u <= "101"; -- (u = 5) valid
         wait for 50 ns;
         reset <= '0';
         wait until done = '1';
         aux <= valid;
+        wait;
     end process;    
 end arch;
