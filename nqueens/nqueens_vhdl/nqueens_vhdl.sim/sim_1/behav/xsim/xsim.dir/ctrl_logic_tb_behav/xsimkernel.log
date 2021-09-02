@@ -2,3 +2,6 @@ Running: xsim.dir/ctrl_logic_tb_behav/xsimk.exe -simmode gui -wdb ctrl_logic_tb_
 Design successfully loaded
 Design Loading Memory Usage: 5208 KB (Peak: 5208 KB)
 Design Loading CPU Usage: 61 ms
+Simulation completed
+Simulation Memory Usage: 5776 KB (Peak: 5776 KB)
+Simulation CPU Usage: 61 ms

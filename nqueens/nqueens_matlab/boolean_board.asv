@@ -1,0 +1,10 @@
+function [board] = boolean_board(n,x,y)
+board = zeros(n)
+for i=1:n
+    for j=1:n
+        if ((i == x) || (j == y) || () || ())
+            board(i,j) = 1;
+        end
+    end
+end
+board
