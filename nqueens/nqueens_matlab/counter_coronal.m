@@ -7,85 +7,23 @@ function [b_coronal] = counter_coronal(n)
     x = 1;
     b_0 = 1;
     iteration = 1;
-    while(~all(b, 'all')) && (iteration < 100)
+    while(~all(b, 'all')) && (iteration < 1000)
         switch x
             case 1
-                for y=1:n
+                for y=b_0:n
                     if ~board(y,1)
                         a(1) = y;
                         b(x) = y;
                         board = board_reset(a, n);
-                        x = x + 1;
                     break
                     end
                 end
             case 2
-                for y=1:n
+                for y=b_0:n
                     if ~board(y,2)
                         a(2) = y;
                         b(x) = y;
                         board = board_reset(a, n);
-                        x = x + 1;
-                        break
-                    end
-                end
-            case 3
-                for y=1:n
-                    if ~board(8,y)
-                        a(y) = 8;
-                        b(x) = y;
-                        board = board_reset(a, n);
-                        x = x + 1;
-                        break
-                    end
-                end
-            case 4
-                for y=1:n
-                    if ~board(7,y)
-                        a(y) = 7;
-                        b(x) = y;
-                        board = board_reset(a, n);
-                        x = x + 1;
-                        break
-                    end
-                end
-            case 5
-                for y=n:-1:1
-                    if ~board(y,8)
-                        a(8) = y;
-                        b(x) = n + 1 - y;
-                        board = board_reset(a, n);
-                        x = x + 1;
-                        break
-                    end
-                end
-            case 6
-                for y=8:-1:1
-                    if ~board(y,7)
-                        a(7) = y;
-                        b(x) = n + 1 - y;
-                        board = board_reset(a, n);
-                        x = x + 1;
-                        break
-                    end
-                end
-            case 7
-                for y=8:-1:1
-                    if ~board(1,y)
-                        a(y) = 1;
-                        b(x) = n + 1 - y;
-                        board = board_reset(a, n);
-                        x = x + 1;
-                        break
-                    end
-                end
-            case 8
-                for y=8:-1:1
-                    if ~board(2,y)
-                        a(y) = 2;
-                        b(x) = n + 1 - y;
-                        board = board_reset(a, n);
-                        x = x + 1;
                         break
                     end
                 end
@@ -93,14 +31,128 @@ function [b_coronal] = counter_coronal(n)
                 if b(x)==0
                     x = x - 1;
                     b_0 = b(x) + 1;
+                    a(1) = 0;
                     b(x) = 0;
-                end                
+                    board = board_reset(a, n);
+                    x = x - 1;
+                end  
+            case 3
+                for y=b_0:n
+                    if ~board(8,y)
+                        a(y) = 8;
+                        b(x) = y;
+                        board = board_reset(a, n);
+                        break
+                    end
+                end
+                b_0 = 1;
+                if b(x)==0
+                    x = x - 1;
+                    b_0 = b(x) + 1;
+                    a(2) = 0;
+                    b(x) = 0;
+                    board = board_reset(a, n);
+                    x = x - 1;
+                end  
+            case 4
+                for y=b_0:n
+                    if ~board(7,y)
+                        a(y) = 7;
+                        b(x) = y;
+                        board = board_reset(a, n);
+                        break
+                    end
+                end
+                b_0 = 1;
+                if b(x)==0
+                    x = x - 1;
+                    b_0 = b(x) + 1;
+                    a(find(a==8)) = 0;
+                    b(x) = 0;
+                    board = board_reset(a, n);
+                    x = x - 1;
+                end     
+            case 5
+                for y=(n+1-b_0):-1:1
+                    if ~board(y,8)
+                        a(8) = y;
+                        b(x) = n + 1 - y;
+                        board = board_reset(a, n);
+                        break
+                    end
+                end
+                b_0 = 1;
+                if b(x)==0
+                    x = x - 1;
+                    b_0 = b(x) + 1;
+                    a(find(a==7)) = 0;
+                    b(x) = 0;
+                    board = board_reset(a, n);
+                    x = x - 1;
+                end     
+            case 6
+                for y=(n+1-b_0):-1:1
+                    if ~board(y,7)
+                        a(7) = y;
+                        b(x) = n + 1 - y;
+                        board = board_reset(a, n);
+                        break
+                    end
+                end
+                b_0 = 1;
+                if b(x)==0
+                    x = x - 1;
+                    b_0 = b(x) + 1;
+                    a(8) = 0;
+                    b(x) = 0;
+                    board = board_reset(a, n);
+                    x = x - 1;
+                end  
+            case 7
+                for y=(n+1-b_0):-1:1
+                    if ~board(1,y)
+                        a(y) = 1;
+                        b(x) = n + 1 - y;
+                        board = board_reset(a, n);
+                        break
+                    end
+                end
+                b_0 = 1;
+                if b(x)==0
+                    x = x - 1;
+                    b_0 = b(x) + 1;
+                    a(7) = 0;
+                    b(x) = 0;
+                    board = board_reset(a, n);
+                    x = x - 1;
+                end   
+            case 8
+                for y=(n+1-b_0):-1:1
+                    if ~board(2,y)
+                        a(y) = 2;
+                        b(x) = n + 1 - y;
+                        board = board_reset(a, n);
+                        break
+                    end
+                end     
+                b_0 = 1;
+                if b(x)==0
+                    x = x - 1;
+                    b_0 = b(x) + 1;
+                    a(find(a==1)) = 0;
+                    b(x) = 0;
+                    board = board_reset(a, n);
+                    x = x - 1;
+                end           
         end
         iteration = iteration + 1;
+        x = x + 1;
     end
     z = z + 1;
     b_coronal(z,:) = b;
-    b_coronal(z,:)
+    a
+    b
+    fprintf("Iteraciones = %d.\n", iteration)
 end
 
 function [board] = board_reset(a, n)
