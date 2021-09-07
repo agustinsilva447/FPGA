@@ -9,12 +9,12 @@ architecture arch of ctrl_logic_tb is
 component ctrl_logic
     generic (
         K : integer := 5; -- position of the block
-        N : integer := 2  -- N bits required to count upto M
+        N : integer := 2  -- N+1 bits required to count upto M
     );    
     port(
         clk, reset : in std_logic;
-        a: in unsigned(((N + 1) * (K + 1) - 1) downto 0);
-        u: in unsigned(N downto 0);
+        a: in std_logic_vector(((K + 1) * (N + 1) - 1) downto 0);
+        u: in std_logic_vector(N downto 0);
         valid: out std_logic;
         done : out std_logic 
     );
@@ -24,13 +24,11 @@ constant K : integer := 5;
 constant N : integer := 2;
 
 signal clk, reset, valid, done: std_logic;
-signal a: unsigned(((N + 1) * (K + 1) - 1) downto 0);
-signal u: unsigned(N downto 0);
-signal aux: std_logic;
+signal a: std_logic_vector(((K + 1) * (N + 1) - 1) downto 0);
+signal u: std_logic_vector(N downto 0);
 
 begin    
     logic: ctrl_logic port map (clk => clk, reset => reset, a => a, u => u, valid => valid, done => done);
-    
     clock_process: process
     begin
          clk <= '0';
@@ -39,7 +37,7 @@ begin
          wait for 10 ns;
     end process;
     
-    imputs: process
+    inputs: process
     begin
         reset <= '1';
         wait for 50 ns;
@@ -49,7 +47,6 @@ begin
         wait for 50 ns;
         reset <= '0';
         wait until done = '1';
-        aux <= valid;
         wait;
     end process;    
 end arch;

@@ -9,55 +9,42 @@ entity ctrl_logic is
     );    
     port(
         clk, reset : in std_logic;
-        a: in unsigned(((N + 1) * (K + 1) - 1) downto 0);
-        u: in unsigned(N downto 0);
-        valid: out std_logic;
+        a: in std_logic_vector(((K + 1) * (N + 1) - 1) downto 0);
+        u: in std_logic_vector(N downto 0);
+        valid: out std_logic ;
         done : out std_logic 
     );
 end entity;
 
 architecture arch of ctrl_logic is
+
 signal count : unsigned(N downto 0) := "000";
 signal a_j : unsigned(N downto 0) := "000";
-signal aux : unsigned(N downto 0) := "000";
-signal j : integer := 0;
-
 signal u_k : unsigned(N downto 0) := "000";
+signal valid_aux: std_logic;
 signal done_aux: std_logic;
 
 begin
-    u_k <= u;
+    u_k <= unsigned(u);
+    valid <= valid_aux;
     done <= done_aux;
     
     process(clk, reset)
     begin
-        if(reset = '1') then
-            a_j <= "000";
+        if (reset = '1') then
             count <= "000";
-            done_aux <= '0';
-        elsif rising_edge(clk) then
-            if ((j<K) and (done_aux = '0')) then
-                a_j <= a((3*j+2) downto (3*j));  
-                          
-                if (u_k > a_j) then
-                    aux <= u_k - a_j;
-                else
-                    aux <= a_j - u_k;
-                end if;       
-                     
-                if (u_k /= a_j and (aux /= (K - j))) then
+        elsif rising_edge(clk) then      
+            valid_aux <= '0';  
+            for j in 0 to K loop
+                a_j <= unsigned(a((3*j+2) downto (3*j)));         
+                if ((u_k /= a_j) and (abs(signed(u_k) - signed(a_j)) /= (K - j))) then
                     count <= count + 1;
-                else 
-                    valid <= '0';
-                    done_aux <= '1';
-                end if;
-                j <= j + 1;      
-            end if;      
-            
+                end if;       
+            end loop;            
             if (count = k) then
-                valid <= '1';    
-                done_aux <= '1';
+                valid_aux <= '1';    
             end if;
+            done <= '1';     
         end if;
     end process;   
 end arch;

@@ -1,2 +1,2 @@
-INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_vhdl/nqueens_vhdl.srcs/sim_1/new/ctrl_logic_tb.vhd" into library xil_defaultlib
-INFO: [VRFC 10-3107] analyzing entity 'ctrl_logic_tb'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_vhdl/nqueens_vhdl.srcs/sources_1/new/ctrl_logic.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ctrl_logic'
