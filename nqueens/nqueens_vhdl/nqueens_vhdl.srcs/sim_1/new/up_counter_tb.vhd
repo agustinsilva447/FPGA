@@ -8,11 +8,11 @@ architecture Behavioral of up_counter_tb is
 
 constant M : integer := 8;
 constant N : integer := 3;
-signal reset,clk, complete_tick: std_logic;
+signal reset, clk, ce, complete_tick: std_logic;
 signal u_0, count: std_logic_vector(N downto 0);
 
 begin
-    dut: entity work.up_counter port map (clk => clk, reset=>reset, u_0=>u_0, complete_tick => complete_tick, count => count);
+    dut: entity work.up_counter port map (clk => clk, ce => ce, reset=>reset, u_0=>u_0, complete_tick => complete_tick, count => count);
     
     clock_process :process
     begin

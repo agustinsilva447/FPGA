@@ -8,13 +8,12 @@ entity up_counter is
         N : integer := 3  -- N+1 bits required to count upto M-1
     );    
     port(
-            clk, CE, reset : in std_logic;
+            clk, ce, reset : in std_logic;
             u_0 : in std_logic_vector(N downto 0);
             complete_tick : out std_logic;
             count : out std_logic_vector(N downto 0)
     );
 end up_counter;
-
 
 architecture arch of up_counter is
 signal count_reg, count_next : unsigned(N downto 0);
