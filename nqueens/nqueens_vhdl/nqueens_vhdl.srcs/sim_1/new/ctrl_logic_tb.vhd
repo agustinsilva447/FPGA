@@ -6,19 +6,6 @@ entity ctrl_logic_tb is
 end ctrl_logic_tb;
 
 architecture arch of ctrl_logic_tb is 
-component ctrl_logic
-    generic (
-        K : integer := 7; -- position of the block (starting from zero)
-        N : integer := 3  -- N+1 bits required to count upto size of the board
-    );    
-    port(
-        clk, reset : in std_logic;
-        a: in std_logic_vector(((K + 1) * (N + 1) - 1) downto 0);
-        u: in std_logic_vector(N downto 0);
-        valid: out std_logic;
-        done : out std_logic 
-    );
-end component;
 
 constant K : integer := 7;
 constant N : integer := 3;
@@ -28,7 +15,7 @@ signal a: std_logic_vector(((K + 1) * (N + 1) - 1) downto 0);
 signal u: std_logic_vector(N downto 0);
 
 begin    
-    logic: ctrl_logic port map (clk => clk, reset => reset, a => a, u => u, valid => valid, done => done);
+    logic: entity work.ctrl_logic port map (clk => clk, reset => reset, a => a, u => u, valid => valid, done => done);
     clock_process: process
     begin
          clk <= '0';

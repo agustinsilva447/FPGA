@@ -22,19 +22,19 @@ signal valid_aux: std_logic;
 signal done_aux: std_logic;
 signal a_j : unsigned(N downto 0) := (others => '0');
 signal u_k : unsigned(N downto 0) := (others => '0');
-signal j : unsigned(N downto 0);
+signal j : unsigned(N downto 0) := (others => '0');
 signal count : unsigned(N downto 0);
 
 begin
     u_k <= unsigned(u);
     valid <= valid_aux;
     done <= done_aux;
-    a_j <= unsigned(a(((N+1)*to_integer(j)+N) downto ((N+1)*to_integer(j))));        
+    a_j <= unsigned(a(((N+1)*to_integer(j)+N) downto ((N+1)*to_integer(j))));            
     process(clk, reset)
     begin
         if (reset = '1') then
-            j <= (others => '0');
             count <= (others => '0') ;
+            j <= (others => '0');
             valid_aux <= '0';  
             done_aux <= '0';
         elsif (rising_edge(clk) and (j<K)) then                 
