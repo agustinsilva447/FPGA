@@ -1,0 +1,4 @@
+Running: xsim.dir/T20_FiniteStateMachineTb_behav/xsimk.exe -simmode gui -wdb T20_FiniteStateMachineTb_behav.wdb -simrunnum 0 -socket 63138
+Design successfully loaded
+Design Loading Memory Usage: 5160 KB (Peak: 5160 KB)
+Design Loading CPU Usage: 62 ms
