@@ -4,8 +4,8 @@ use ieee.numeric_std.all;
 
 entity ctrl_logic is
     generic (
-        K : integer := 5; -- position of the block
-        N : integer := 2  -- N+1 bits required to count upto M
+        K : integer := 7; -- position of the block (starting from zero)
+        N : integer := 3  -- N+1 bits required to count upto size of the board
     );    
     port(
         clk, reset : in std_logic;
@@ -20,47 +20,29 @@ architecture arch of ctrl_logic is
 
 signal valid_aux: std_logic;
 signal done_aux: std_logic;
-signal a_j : unsigned(N downto 0) := "000";
-signal u_k : unsigned(N downto 0) := "000";
+signal a_j : unsigned(N downto 0) := (others => '0');
+signal u_k : unsigned(N downto 0) := (others => '0');
 signal j : unsigned(N downto 0);
 signal count : unsigned(N downto 0);
-signal count_0, count_1 : std_logic;
 
 begin
     u_k <= unsigned(u);
     valid <= valid_aux;
     done <= done_aux;
-    
+    a_j <= unsigned(a(((N+1)*to_integer(j)+N) downto ((N+1)*to_integer(j))));        
     process(clk, reset)
     begin
         if (reset = '1') then
-            j <= "000"; 
-            count_0 <= '0'; 
-            count_1 <= '0'; 
-            count <= "000"; 
+            j <= (others => '0');
+            count <= (others => '0') ;
             valid_aux <= '0';  
             done_aux <= '0';
-        elsif (rising_edge(clk) and (j<K)) then     
-            a_j <= unsigned(a((3*to_integer(j)+2) downto (3*to_integer(j))));
-            j <= to_unsigned(to_integer(j) + 1, 3);      
+        elsif (rising_edge(clk) and (j<K)) then                 
+            j <= to_unsigned(to_integer(j) + 1, N+1);      
             if ((u_k /= a_j) and (abs(signed(u_k) - signed(a_j)) /= (K - to_integer(j)))) then
                 count <= count + 1;
-            end if;      
-            
-            if (u_k /= a_j) then
-                count_0 <= '1';
-            else
-                count_0 <= '0';
-            end if;  
-            
-            if (abs(signed(u_k) - signed(a_j)) /= (K - to_integer(j))) then
-                count_1 <= '1';
-            else
-                count_1 <= '0';
-            end if;
-            
-        elsif (rising_edge(clk) and (j=K)) then   
-            a_j <= "000";
+            end if;                  
+        elsif (rising_edge(clk) and (j=K)) then
             done_aux <= '1';
             if (count = K) then
                 valid_aux <= '1';    

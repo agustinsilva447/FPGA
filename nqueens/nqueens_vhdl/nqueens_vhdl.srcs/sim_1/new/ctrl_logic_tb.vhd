@@ -8,8 +8,8 @@ end ctrl_logic_tb;
 architecture arch of ctrl_logic_tb is 
 component ctrl_logic
     generic (
-        K : integer := 5; -- position of the block
-        N : integer := 2  -- N+1 bits required to count upto M
+        K : integer := 7; -- position of the block (starting from zero)
+        N : integer := 3  -- N+1 bits required to count upto size of the board
     );    
     port(
         clk, reset : in std_logic;
@@ -20,8 +20,8 @@ component ctrl_logic
     );
 end component;
 
-constant K : integer := 5;
-constant N : integer := 2;
+constant K : integer := 7;
+constant N : integer := 3;
 
 signal clk, reset, valid, done: std_logic;
 signal a: std_logic_vector(((K + 1) * (N + 1) - 1) downto 0);
@@ -41,17 +41,13 @@ begin
     begin
         reset <= '1';
         wait for 50 ns;
-        a <= "000011001110100010"; -- [2. 4. 6. 1. 3. 5.]
-        -- a <= "000001101010110011"; -- [3. 6. 2. 5. 1. 0.] 
-        -- a <= "000110010101001100"; -- [4. 1. 5. 2. 6. 3.]
         -- a <= "000100110001011101"; -- [5. 3. 1. 6. 4. 2.]
+        -- u <= "001"; -- (u = 1) no valid
+        -- u <= "010"; -- (u = 2) valid
         
-        -- u <= "001"; -- (u = 1)
-        -- u <= "010"; -- (u = 2)
-        u <= "011"; -- (u = 3)
-        -- u <= "100"; -- (u = 4)
-        -- u <= "101"; -- (u = 5)
-        -- u <= "110"; -- (u = 6)
+        a <= "00000111001001100011000101001000"; -- [8. 4. 1. 3. 6. 2. 7. 5.]
+        -- u <= "0100"; -- no valid
+        u <= "0101"; -- valid
         wait for 50 ns;
         reset <= '0';
         wait until done = '1';
