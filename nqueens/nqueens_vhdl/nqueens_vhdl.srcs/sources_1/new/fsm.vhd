@@ -1,4 +1,4 @@
-library ieee; 
+library ieee;
 use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
@@ -16,10 +16,10 @@ end entity;
 
 architecture rtl of fsm is
 type t_State is (new_candidate, validation, output);
-signal State: t_State; 
+signal State: t_State;
 signal u, u_0: std_logic_vector(N downto 0);
 signal ce, complete_tick, valid, done: std_logic := '0';
-begin    
+begin
     dut: entity work.up_counter port map (clk => clk, ce => ce, reset=>nRst, u_0=>u_0, complete_tick => complete_tick, count => u);
     logic: entity work.ctrl_logic port map (clk => clk, reset => nRst, a => a_in, u => u, valid => valid, done => done);
     process(clk) is
