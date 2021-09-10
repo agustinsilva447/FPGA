@@ -33,8 +33,8 @@ begin
         -- u <= "010"; -- (u = 2) valid
         
         a <= "00000111001001100011000101001000"; -- [8. 4. 1. 3. 6. 2. 7. 5.]
-        u <= "0100"; -- no valid
-        -- u <= "0101"; -- valid
+        -- u <= "0100"; -- no valid
+        u <= "0101"; -- valid
         wait for 50 ns;
         reset <= '0';
         wait until done = '1';

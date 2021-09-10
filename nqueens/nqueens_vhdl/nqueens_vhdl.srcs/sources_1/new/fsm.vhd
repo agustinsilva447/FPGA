@@ -15,10 +15,11 @@ port(
 end entity;
 
 architecture rtl of fsm is
-type t_State is (new_candidate, validation, output);
-signal State: t_State;
+type state_type is (st1_new_candidate, st2_validation, st3_output);
+signal state, next_state : state_type;
 signal u, u_0: std_logic_vector(N downto 0);
 signal ce, complete_tick, valid, done: std_logic := '0';
+
 begin
     dut: entity work.up_counter port map (clk => clk, ce => ce, reset=>nRst, u_0=>u_0, complete_tick => complete_tick, count => u);
     logic: entity work.ctrl_logic port map (clk => clk, reset => nRst, a => a_in, u => u, valid => valid, done => done);
@@ -26,17 +27,19 @@ begin
     begin
         if rising_edge(clk) then
             if nRst = '0' then
-                State   <= new_candidate;
+                state   <= st1_new_candidate;
                 a_out <= (others => '0');
                 u_0 <= (others => '0');
                 u <= (others => '0');
             else
-                case State is
-                    when new_candidate =>
+                case state is
+                    when st1_new_candidate =>
                         
-                    when validation =>
+                    when st2_validation =>
                     
-                    when output =>
+                    when st3_output =>
+                    
+                    when others =>
                     
                 end case;
             end if;

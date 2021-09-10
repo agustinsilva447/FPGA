@@ -33,3 +33,4 @@ begin
     complete_tick <= '1' when count_reg = (M) else '0';
     count <= std_logic_vector(count_reg); 
 end arch;
+
