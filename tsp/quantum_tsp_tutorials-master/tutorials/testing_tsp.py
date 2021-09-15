@@ -69,7 +69,8 @@ calculation_solus_bf = []
 calculation_times_sa = []
 calculation_solus_sa = []
 
-city_sizes = range(4, 12)
+maximo = int(input("Ingrese la cantidad maxima de ciudades: ")) + 1
+city_sizes = range(4, maximo)
 for i in city_sizes:
     cities = create_cities(i)
     print(i, "cities")
@@ -93,6 +94,7 @@ fig = plt.figure(figsize=(12, 5))
 plt.subplot(121)
 plt.plot(list(city_sizes), calculation_times_bf, 'o-.', label="Brute force")
 plt.plot(list(city_sizes), calculation_times_sa, 'o-.', label="Simulated annealing")
+plt.legend(loc='upper right')
 plt.subplot(122)
 plt.plot(list(city_sizes), calculation_solus_bf, 'o-.', label="Brute force")
 plt.plot(list(city_sizes), calculation_solus_sa, 'o-.', label="Simulated annealing")
