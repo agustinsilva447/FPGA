@@ -28,7 +28,6 @@ signal ce, complete_tick, valid, done: std_logic := '0';
 begin
     dut: entity work.up_counter port map (clk => clk, ce => ce, reset=>nRst, u_0=>u_0, complete_tick => complete_tick, count => u_o);
     logic: entity work.ctrl_logic port map (clk => clk, reset => nRst, a => a_in, u => u_i, valid => valid, done => done);
-    
     u_i <= u_o;
     
     SYNC_PROC: process(clk)
@@ -80,8 +79,8 @@ begin
                 end if;
             end if;
          when st3_writefifo =>
-            asout((K*N-1) downto N) <=  asin;
-            asout(N downto 0) <= u_i;
+            asout((N*(K+1)-1) downto N) <=  asin;
+            asout(N-1 downto 0) <= u_i;
             if (complete_tick = '0') then
                 next_state <= st1_new_candidate;
             elsif (complete_tick = '1') then
