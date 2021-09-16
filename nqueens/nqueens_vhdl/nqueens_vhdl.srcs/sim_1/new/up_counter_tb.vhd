@@ -22,10 +22,18 @@ begin
          wait for 10 ns;
     end process;
     
+    ce_process :process
+    begin
+         ce <= '0';
+         wait for 100 ns;
+         ce <= '1';
+         wait for 100 ns;
+    end process;
+    
     stim_proc: process
     begin        
         reset <= '1';
-        u_0 <= "0011";
+        u_0 <= "0010";
         wait for 20 ns;    
         reset <= '0';
         wait;

@@ -11,11 +11,11 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="841001fs"></ZoomEndTime>
+      <ZoomEndTime time="426501fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="132"></NameColumnWidth>
+      <NameColumnWidth column_width="120"></NameColumnWidth>
       <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="9" />
@@ -39,20 +39,20 @@
       <obj_property name="ElementShortName">a[31:0]</obj_property>
       <obj_property name="ObjectShortName">a[31:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/ctrl_logic_tb/u" type="array">
-      <obj_property name="ElementShortName">u[3:0]</obj_property>
-      <obj_property name="ObjectShortName">u[3:0]</obj_property>
-   </wvobject>
    <wvobject fp_name="/ctrl_logic_tb/logic/a_j" type="array">
       <obj_property name="ElementShortName">a_j[3:0]</obj_property>
       <obj_property name="ObjectShortName">a_j[3:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/ctrl_logic_tb/logic/count" type="array">
-      <obj_property name="ElementShortName">count[3:0]</obj_property>
-      <obj_property name="ObjectShortName">count[3:0]</obj_property>
+   <wvobject fp_name="/ctrl_logic_tb/u" type="array">
+      <obj_property name="ElementShortName">u[3:0]</obj_property>
+      <obj_property name="ObjectShortName">u[3:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/ctrl_logic_tb/logic/j" type="array">
       <obj_property name="ElementShortName">j[3:0]</obj_property>
       <obj_property name="ObjectShortName">j[3:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/ctrl_logic_tb/logic/count" type="array">
+      <obj_property name="ElementShortName">count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count[3:0]</obj_property>
    </wvobject>
 </wave_config>
