@@ -8,7 +8,17 @@
       "tool_version": "2019.2"
     },
     "design_tree": {
-      "zynq_ultra_ps_e_0": ""
+      "zynq_ultra_ps_e_0": "",
+      "comblock_0": "",
+      "axi_smc": "",
+      "rst_ps8_0_99M": "",
+      "fsm_1": "",
+      "fsm_2": "",
+      "fsm_3": "",
+      "fsm_4": "",
+      "fsm_5": "",
+      "fsm_6": "",
+      "fsm_7": ""
     },
     "components": {
       "zynq_ultra_ps_e_0": {
@@ -1078,6 +1088,472 @@
             "value": "Custom"
           }
         }
+      },
+      "comblock_0": {
+        "vlnv": "www.ictp.it:user:comblock:2.0",
+        "xci_name": "design_1_comblock_0_0",
+        "parameters": {
+          "REGS_IN_DWIDTH": {
+            "value": "32"
+          },
+          "REGS_OUT_DEPTH": {
+            "value": "1"
+          },
+          "REGS_OUT_DWIDTH": {
+            "value": "4"
+          }
+        }
+      },
+      "axi_smc": {
+        "vlnv": "xilinx.com:ip:smartconnect:1.0",
+        "xci_name": "design_1_axi_smc_0",
+        "parameters": {
+          "NUM_MI": {
+            "value": "2"
+          },
+          "NUM_SI": {
+            "value": "2"
+          }
+        },
+        "interface_ports": {
+          "S00_AXI": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "bridges": [
+              "M00_AXI",
+              "M01_AXI"
+            ]
+          },
+          "S01_AXI": {
+            "mode": "Slave",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0",
+            "bridges": [
+              "M00_AXI",
+              "M01_AXI"
+            ]
+          },
+          "M00_AXI": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          },
+          "M01_AXI": {
+            "mode": "Master",
+            "vlnv": "xilinx.com:interface:aximm_rtl:1.0"
+          }
+        }
+      },
+      "rst_ps8_0_99M": {
+        "vlnv": "xilinx.com:ip:proc_sys_reset:5.0",
+        "xci_name": "design_1_rst_ps8_0_99M_0"
+      },
+      "fsm_1": {
+        "vlnv": "xilinx.com:module_ref:fsm:1.0",
+        "xci_name": "design_1_fsm_0_3",
+        "parameters": {
+          "K": {
+            "value": "1"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fsm",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "nRst": {
+            "direction": "I"
+          },
+          "u_0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "a_in": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "a_out": {
+            "direction": "O",
+            "left": "7",
+            "right": "0"
+          },
+          "output_state": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      },
+      "fsm_2": {
+        "vlnv": "xilinx.com:module_ref:fsm:1.0",
+        "xci_name": "design_1_fsm_0_4",
+        "parameters": {
+          "K": {
+            "value": "2"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fsm",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "nRst": {
+            "direction": "I"
+          },
+          "u_0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "a_in": {
+            "direction": "I",
+            "left": "7",
+            "right": "0"
+          },
+          "a_out": {
+            "direction": "O",
+            "left": "11",
+            "right": "0"
+          },
+          "output_state": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      },
+      "fsm_3": {
+        "vlnv": "xilinx.com:module_ref:fsm:1.0",
+        "xci_name": "design_1_fsm_0_5",
+        "parameters": {
+          "K": {
+            "value": "3"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fsm",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "nRst": {
+            "direction": "I"
+          },
+          "u_0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "a_in": {
+            "direction": "I",
+            "left": "11",
+            "right": "0"
+          },
+          "a_out": {
+            "direction": "O",
+            "left": "15",
+            "right": "0"
+          },
+          "output_state": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      },
+      "fsm_4": {
+        "vlnv": "xilinx.com:module_ref:fsm:1.0",
+        "xci_name": "design_1_fsm_0_6",
+        "parameters": {
+          "K": {
+            "value": "4"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fsm",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "nRst": {
+            "direction": "I"
+          },
+          "u_0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "a_in": {
+            "direction": "I",
+            "left": "15",
+            "right": "0"
+          },
+          "a_out": {
+            "direction": "O",
+            "left": "19",
+            "right": "0"
+          },
+          "output_state": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      },
+      "fsm_5": {
+        "vlnv": "xilinx.com:module_ref:fsm:1.0",
+        "xci_name": "design_1_fsm_0_7",
+        "parameters": {
+          "K": {
+            "value": "5"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fsm",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "nRst": {
+            "direction": "I"
+          },
+          "u_0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "a_in": {
+            "direction": "I",
+            "left": "19",
+            "right": "0"
+          },
+          "a_out": {
+            "direction": "O",
+            "left": "23",
+            "right": "0"
+          },
+          "output_state": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      },
+      "fsm_6": {
+        "vlnv": "xilinx.com:module_ref:fsm:1.0",
+        "xci_name": "design_1_fsm_0_8",
+        "parameters": {
+          "K": {
+            "value": "6"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fsm",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "nRst": {
+            "direction": "I"
+          },
+          "u_0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "a_in": {
+            "direction": "I",
+            "left": "23",
+            "right": "0"
+          },
+          "a_out": {
+            "direction": "O",
+            "left": "27",
+            "right": "0"
+          },
+          "output_state": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      },
+      "fsm_7": {
+        "vlnv": "xilinx.com:module_ref:fsm:1.0",
+        "xci_name": "design_1_fsm_0_9",
+        "parameters": {
+          "K": {
+            "value": "7"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "fsm",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I"
+          },
+          "nRst": {
+            "direction": "I"
+          },
+          "u_0": {
+            "direction": "I",
+            "left": "3",
+            "right": "0"
+          },
+          "a_in": {
+            "direction": "I",
+            "left": "27",
+            "right": "0"
+          },
+          "a_out": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          },
+          "output_state": {
+            "direction": "O",
+            "left": "2",
+            "right": "0"
+          }
+        }
+      }
+    },
+    "interface_nets": {
+      "zynq_ultra_ps_e_0_M_AXI_HPM0_FPD": {
+        "interface_ports": [
+          "zynq_ultra_ps_e_0/M_AXI_HPM0_FPD",
+          "axi_smc/S00_AXI"
+        ]
+      },
+      "axi_smc_M00_AXI": {
+        "interface_ports": [
+          "axi_smc/M00_AXI",
+          "comblock_0/AXIF"
+        ]
+      },
+      "axi_smc_M01_AXI": {
+        "interface_ports": [
+          "axi_smc/M01_AXI",
+          "comblock_0/AXIL"
+        ]
+      },
+      "zynq_ultra_ps_e_0_M_AXI_HPM1_FPD": {
+        "interface_ports": [
+          "zynq_ultra_ps_e_0/M_AXI_HPM1_FPD",
+          "axi_smc/S01_AXI"
+        ]
+      }
+    },
+    "nets": {
+      "zynq_ultra_ps_e_0_pl_clk0": {
+        "ports": [
+          "zynq_ultra_ps_e_0/pl_clk0",
+          "zynq_ultra_ps_e_0/maxihpm0_fpd_aclk",
+          "axi_smc/aclk",
+          "comblock_0/axif_aclk",
+          "rst_ps8_0_99M/slowest_sync_clk",
+          "comblock_0/axil_aclk",
+          "zynq_ultra_ps_e_0/maxihpm1_fpd_aclk",
+          "fsm_1/clk",
+          "fsm_2/clk",
+          "fsm_3/clk",
+          "fsm_4/clk",
+          "fsm_5/clk",
+          "fsm_6/clk",
+          "fsm_7/clk"
+        ]
+      },
+      "zynq_ultra_ps_e_0_pl_resetn0": {
+        "ports": [
+          "zynq_ultra_ps_e_0/pl_resetn0",
+          "rst_ps8_0_99M/ext_reset_in"
+        ]
+      },
+      "rst_ps8_0_99M_peripheral_aresetn": {
+        "ports": [
+          "rst_ps8_0_99M/peripheral_aresetn",
+          "comblock_0/axif_aresetn",
+          "axi_smc/aresetn",
+          "comblock_0/axil_aresetn"
+        ]
+      },
+      "fsm_1_a_out": {
+        "ports": [
+          "fsm_1/a_out",
+          "fsm_2/a_in"
+        ]
+      },
+      "fsm_2_a_out": {
+        "ports": [
+          "fsm_2/a_out",
+          "fsm_3/a_in"
+        ]
+      },
+      "fsm_3_a_out": {
+        "ports": [
+          "fsm_3/a_out",
+          "fsm_4/a_in"
+        ]
+      },
+      "fsm_4_a_out": {
+        "ports": [
+          "fsm_4/a_out",
+          "fsm_5/a_in"
+        ]
+      },
+      "fsm_5_a_out": {
+        "ports": [
+          "fsm_5/a_out",
+          "fsm_6/a_in"
+        ]
+      },
+      "fsm_6_a_out": {
+        "ports": [
+          "fsm_6/a_out",
+          "fsm_7/a_in"
+        ]
+      },
+      "comblock_0_reg0_o": {
+        "ports": [
+          "comblock_0/reg0_o",
+          "fsm_1/a_in"
+        ]
+      },
+      "fsm_7_a_out": {
+        "ports": [
+          "fsm_7/a_out",
+          "comblock_0/reg0_i"
+        ]
       }
     },
     "addressing": {
@@ -1085,7 +1561,19 @@
         "address_spaces": {
           "Data": {
             "range": "1T",
-            "width": "32"
+            "width": "32",
+            "segments": {
+              "SEG_comblock_0_AXIF": {
+                "address_block": "/comblock_0/AXIF/AXIF",
+                "offset": "0x00A0000000",
+                "range": "256K"
+              },
+              "SEG_comblock_0_AXIL": {
+                "address_block": "/comblock_0/AXIL/AXIL",
+                "offset": "0x00A0040000",
+                "range": "64K"
+              }
+            }
           }
         }
       }

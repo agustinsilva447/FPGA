@@ -40,10 +40,12 @@ begin
             j <= (others => '0');
             valid_aux <= '0';  
             done_aux <= '0';
-        elsif (rising_edge(clk) and (j<K)) then                 
+        elsif (rising_edge(clk) and (j<K) and (done_aux = '0')) then                 
             j <= to_unsigned(to_integer(j) + 1, N);      
             if ((u_k /= a_j) and (abs(signed(u_k) - signed(a_j)) /= (K - to_integer(j)))) then
                 count <= count + 1;
+            else
+                done_aux <= '1';
             end if;                  
         elsif (rising_edge(clk) and (j=K)) then
             done_aux <= '1';
