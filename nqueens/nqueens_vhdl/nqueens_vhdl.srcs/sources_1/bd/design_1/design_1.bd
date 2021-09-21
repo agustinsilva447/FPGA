@@ -1097,7 +1097,7 @@
             "value": "32"
           },
           "REGS_OUT_DEPTH": {
-            "value": "1"
+            "value": "2"
           },
           "REGS_OUT_DWIDTH": {
             "value": "4"
@@ -1177,10 +1177,22 @@
             "left": "3",
             "right": "0"
           },
+          "ack_in": {
+            "direction": "I"
+          },
+          "next_in": {
+            "direction": "I"
+          },
           "a_out": {
             "direction": "O",
             "left": "7",
             "right": "0"
+          },
+          "ack_out": {
+            "direction": "O"
+          },
+          "next_out": {
+            "direction": "O"
           },
           "output_state": {
             "direction": "O",
@@ -1220,10 +1232,22 @@
             "left": "7",
             "right": "0"
           },
+          "ack_in": {
+            "direction": "I"
+          },
+          "next_in": {
+            "direction": "I"
+          },
           "a_out": {
             "direction": "O",
             "left": "11",
             "right": "0"
+          },
+          "ack_out": {
+            "direction": "O"
+          },
+          "next_out": {
+            "direction": "O"
           },
           "output_state": {
             "direction": "O",
@@ -1263,10 +1287,22 @@
             "left": "11",
             "right": "0"
           },
+          "ack_in": {
+            "direction": "I"
+          },
+          "next_in": {
+            "direction": "I"
+          },
           "a_out": {
             "direction": "O",
             "left": "15",
             "right": "0"
+          },
+          "ack_out": {
+            "direction": "O"
+          },
+          "next_out": {
+            "direction": "O"
           },
           "output_state": {
             "direction": "O",
@@ -1306,10 +1342,22 @@
             "left": "15",
             "right": "0"
           },
+          "ack_in": {
+            "direction": "I"
+          },
+          "next_in": {
+            "direction": "I"
+          },
           "a_out": {
             "direction": "O",
             "left": "19",
             "right": "0"
+          },
+          "ack_out": {
+            "direction": "O"
+          },
+          "next_out": {
+            "direction": "O"
           },
           "output_state": {
             "direction": "O",
@@ -1349,10 +1397,22 @@
             "left": "19",
             "right": "0"
           },
+          "ack_in": {
+            "direction": "I"
+          },
+          "next_in": {
+            "direction": "I"
+          },
           "a_out": {
             "direction": "O",
             "left": "23",
             "right": "0"
+          },
+          "ack_out": {
+            "direction": "O"
+          },
+          "next_out": {
+            "direction": "O"
           },
           "output_state": {
             "direction": "O",
@@ -1392,10 +1452,22 @@
             "left": "23",
             "right": "0"
           },
+          "ack_in": {
+            "direction": "I"
+          },
+          "next_in": {
+            "direction": "I"
+          },
           "a_out": {
             "direction": "O",
             "left": "27",
             "right": "0"
+          },
+          "ack_out": {
+            "direction": "O"
+          },
+          "next_out": {
+            "direction": "O"
           },
           "output_state": {
             "direction": "O",
@@ -1435,10 +1507,22 @@
             "left": "27",
             "right": "0"
           },
+          "ack_in": {
+            "direction": "I"
+          },
+          "next_in": {
+            "direction": "I"
+          },
           "a_out": {
             "direction": "O",
             "left": "31",
             "right": "0"
+          },
+          "ack_out": {
+            "direction": "O"
+          },
+          "next_out": {
+            "direction": "O"
           },
           "output_state": {
             "direction": "O",
@@ -1553,6 +1637,97 @@
         "ports": [
           "fsm_7/a_out",
           "comblock_0/reg0_i"
+        ]
+      },
+      "fsm_2_next_out": {
+        "ports": [
+          "fsm_2/next_out",
+          "fsm_1/next_in"
+        ]
+      },
+      "fsm_3_next_out": {
+        "ports": [
+          "fsm_3/next_out",
+          "fsm_2/next_in"
+        ]
+      },
+      "fsm_4_next_out": {
+        "ports": [
+          "fsm_4/next_out",
+          "fsm_3/next_in"
+        ]
+      },
+      "fsm_5_next_out": {
+        "ports": [
+          "fsm_5/next_out",
+          "fsm_4/next_in"
+        ]
+      },
+      "fsm_5_ack_out": {
+        "ports": [
+          "fsm_5/ack_out",
+          "fsm_6/nRst",
+          "fsm_6/ack_in"
+        ]
+      },
+      "fsm_6_next_out": {
+        "ports": [
+          "fsm_6/next_out",
+          "fsm_5/next_in"
+        ]
+      },
+      "fsm_6_ack_out": {
+        "ports": [
+          "fsm_6/ack_out",
+          "fsm_7/nRst",
+          "fsm_7/ack_in"
+        ]
+      },
+      "fsm_7_next_out": {
+        "ports": [
+          "fsm_7/next_out",
+          "fsm_6/next_in"
+        ]
+      },
+      "fsm_7_ack_out": {
+        "ports": [
+          "fsm_7/ack_out",
+          "comblock_0/reg1_i"
+        ]
+      },
+      "fsm_4_ack_out": {
+        "ports": [
+          "fsm_4/ack_out",
+          "fsm_5/nRst",
+          "fsm_5/ack_in"
+        ]
+      },
+      "fsm_3_ack_out": {
+        "ports": [
+          "fsm_3/ack_out",
+          "fsm_4/nRst",
+          "fsm_4/ack_in"
+        ]
+      },
+      "fsm_2_ack_out": {
+        "ports": [
+          "fsm_2/ack_out",
+          "fsm_3/nRst",
+          "fsm_3/ack_in"
+        ]
+      },
+      "fsm_1_ack_out": {
+        "ports": [
+          "fsm_1/ack_out",
+          "fsm_2/nRst",
+          "fsm_2/ack_in"
+        ]
+      },
+      "comblock_0_reg1_o": {
+        "ports": [
+          "comblock_0/reg1_o",
+          "fsm_1/nRst",
+          "fsm_1/ack_in"
         ]
       }
     },

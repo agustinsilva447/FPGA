@@ -11,80 +11,44 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="797001fs"></ZoomEndTime>
+      <ZoomEndTime time="376501fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="142"></NameColumnWidth>
-      <ValueColumnWidth column_width="140"></ValueColumnWidth>
+      <ValueColumnWidth column_width="136"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="17" />
+   <WVObjectSize size="8" />
    <wvobject fp_name="/fsm_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
    </wvobject>
-   <wvobject fp_name="/fsm_tb/nRst" type="logic">
-      <obj_property name="ElementShortName">nRst</obj_property>
-      <obj_property name="ObjectShortName">nRst</obj_property>
+   <wvobject fp_name="/fsm_tb/a_out_1" type="array">
+      <obj_property name="ElementShortName">a_out_1[7:0]</obj_property>
+      <obj_property name="ObjectShortName">a_out_1[7:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/fsm_tb/fsm/reset_control" type="logic">
-      <obj_property name="ElementShortName">reset_control</obj_property>
-      <obj_property name="ObjectShortName">reset_control</obj_property>
+   <wvobject fp_name="/fsm_tb/a_out_2" type="array">
+      <obj_property name="ElementShortName">a_out_2[11:0]</obj_property>
+      <obj_property name="ObjectShortName">a_out_2[11:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/fsm_tb/output_state" type="array">
-      <obj_property name="ElementShortName">output_state[2:0]</obj_property>
-      <obj_property name="ObjectShortName">output_state[2:0]</obj_property>
+   <wvobject fp_name="/fsm_tb/a_out_3" type="array">
+      <obj_property name="ElementShortName">a_out_3[15:0]</obj_property>
+      <obj_property name="ObjectShortName">a_out_3[15:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/fsm_tb/fsm/asin" type="array">
-      <obj_property name="ElementShortName">asin[27:0]</obj_property>
-      <obj_property name="ObjectShortName">asin[27:0]</obj_property>
+   <wvobject fp_name="/fsm_tb/a_out_4" type="array">
+      <obj_property name="ElementShortName">a_out_4[19:0]</obj_property>
+      <obj_property name="ObjectShortName">a_out_4[19:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/fsm_tb/a_in" type="array">
-      <obj_property name="ElementShortName">a_in[27:0]</obj_property>
-      <obj_property name="ObjectShortName">a_in[27:0]</obj_property>
+   <wvobject fp_name="/fsm_tb/a_out_5" type="array">
+      <obj_property name="ElementShortName">a_out_5[23:0]</obj_property>
+      <obj_property name="ObjectShortName">a_out_5[23:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/fsm_tb/fsm/asout" type="array">
-      <obj_property name="ElementShortName">asout[31:0]</obj_property>
-      <obj_property name="ObjectShortName">asout[31:0]</obj_property>
+   <wvobject fp_name="/fsm_tb/a_out_6" type="array">
+      <obj_property name="ElementShortName">a_out_6[27:0]</obj_property>
+      <obj_property name="ObjectShortName">a_out_6[27:0]</obj_property>
    </wvobject>
-   <wvobject fp_name="/fsm_tb/a_out" type="array">
-      <obj_property name="ElementShortName">a_out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">a_out[31:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fsm_tb/fsm/state" type="other">
-      <obj_property name="ElementShortName">state</obj_property>
-      <obj_property name="ObjectShortName">state</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fsm_tb/fsm/next_state" type="other">
-      <obj_property name="ElementShortName">next_state</obj_property>
-      <obj_property name="ObjectShortName">next_state</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fsm_tb/fsm/u_i" type="array">
-      <obj_property name="ElementShortName">u_i[3:0]</obj_property>
-      <obj_property name="ObjectShortName">u_i[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fsm_tb/fsm/u_o" type="array">
-      <obj_property name="ElementShortName">u_o[3:0]</obj_property>
-      <obj_property name="ObjectShortName">u_o[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fsm_tb/fsm/u_0" type="array">
-      <obj_property name="ElementShortName">u_0[3:0]</obj_property>
-      <obj_property name="ObjectShortName">u_0[3:0]</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fsm_tb/fsm/ce" type="logic">
-      <obj_property name="ElementShortName">ce</obj_property>
-      <obj_property name="ObjectShortName">ce</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fsm_tb/fsm/complete_tick" type="logic">
-      <obj_property name="ElementShortName">complete_tick</obj_property>
-      <obj_property name="ObjectShortName">complete_tick</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fsm_tb/fsm/valid" type="logic">
-      <obj_property name="ElementShortName">valid</obj_property>
-      <obj_property name="ObjectShortName">valid</obj_property>
-   </wvobject>
-   <wvobject fp_name="/fsm_tb/fsm/done" type="logic">
-      <obj_property name="ElementShortName">done</obj_property>
-      <obj_property name="ObjectShortName">done</obj_property>
+   <wvobject fp_name="/fsm_tb/a_out_7" type="array">
+      <obj_property name="ElementShortName">a_out_7[31:0]</obj_property>
+      <obj_property name="ObjectShortName">a_out_7[31:0]</obj_property>
    </wvobject>
 </wave_config>

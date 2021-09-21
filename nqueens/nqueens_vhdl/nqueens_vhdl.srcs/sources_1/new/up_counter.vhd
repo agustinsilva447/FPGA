@@ -4,8 +4,8 @@ use ieee.numeric_std.all;
 
 entity up_counter is
     generic (
-        M : integer := 8; -- size of the board MxM
-        N : integer := 4  -- N bits required to count upto M-1
+        M : integer; -- size of the board MxM
+        N : integer  -- N bits required to count upto M-1
     );    
     port(
             clk, ce, reset : in std_logic;

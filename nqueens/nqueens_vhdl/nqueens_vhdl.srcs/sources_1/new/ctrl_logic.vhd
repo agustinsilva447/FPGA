@@ -4,8 +4,8 @@ use ieee.numeric_std.all;
 
 entity ctrl_logic is
     generic (
-        K : integer := 7; -- position of the block (starting from zero)
-        N : integer := 4  -- N+1 bits required to count upto size of the board
+        K : integer; -- position of the block (starting from zero)
+        N : integer  -- N+1 bits required to count upto size of the board
     );    
     port(
         clk, reset : in std_logic;

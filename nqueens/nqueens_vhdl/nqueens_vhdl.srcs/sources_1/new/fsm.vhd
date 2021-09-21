@@ -3,15 +3,17 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity fsm is
-generic(K: integer  := 7;  -- position of the block (starting from zero)
-        M : integer := 8;  -- size of the board MxM
-        N: integer  := 4   -- N bits required to count upto size of the board);
+generic(K : integer;  -- position of the block (starting from zero)
+        M : integer;  -- size of the board MxM
+        N : integer   -- N bits required to count upto size of the board);
     );    
 port(
     clk, nRst: in std_logic;   
     u_0: in std_logic_vector(N-1 downto 0);             -- valor inicial del contador
     a_in: in std_logic_vector((N*K-1) downto 0);        -- vector a del bloque anterior
-    a_out: out std_logic_vector((N*(K+1)-1) downto 0);  -- vector a del bloque siguiente    
+    ack_in, next_in: in std_logic;
+    a_out: out std_logic_vector((N*(K+1)-1) downto 0);  -- vector a del bloque siguiente
+    ack_out, next_out: out std_logic;    
     output_state: out std_logic_vector(2 downto 0)      -- salida indicando cada estado
     );                         
 end entity;
@@ -24,12 +26,20 @@ signal u_i, u_o: std_logic_vector(N-1 downto 0);
 signal asin: std_logic_vector((N*K-1) downto 0);
 signal asout: std_logic_vector((N*(K+1)-1) downto 0);
 signal ce, complete_tick, valid, done: std_logic := '0';
-signal reset_control: std_logic;
+signal reset_control, acks_in, nexts_in, acks_out, nexts_out: std_logic;
 
 begin
-    dut: entity work.up_counter port map (clk => clk, ce => ce, reset=>nRst, u_0=>u_0, complete_tick => complete_tick, count => u_o);
-    logic: entity work.ctrl_logic port map (clk => clk, reset => reset_control, a => a_in, u => u_i, valid => valid, done => done);
+    dut: entity work.up_counter 
+    generic map (M => M, N => N)
+    port map (clk => clk, ce => ce, reset=>nRst, u_0=>u_0, complete_tick => complete_tick, count => u_o);
+    logic: entity work.ctrl_logic 
+    generic map (K => K, N => N)
+    port map (clk => clk, reset => reset_control, a => a_in, u => u_i, valid => valid, done => done);
     
+    acks_in <= ack_in;
+    nexts_in <= next_in;
+    ack_out <= acks_out;
+    next_out <= nexts_out;
     u_i <= u_o;
     asin <= a_in;
     a_out <= asout;
@@ -73,8 +83,10 @@ begin
             next_state <= st1_new_candidate;
             
          when st1_new_candidate =>
-            reset_control <= '1';
             ce <= '1';            
+            acks_out <= '1';
+            nexts_out <= '0';
+            reset_control <= '1';
             if (complete_tick = '0') then
                 next_state <= st2_validation;
             elsif (complete_tick = '1') then
@@ -95,15 +107,19 @@ begin
          when st3_writefifo =>
             asout((N*(K+1)-1) downto N) <=  asin;
             asout(N-1 downto 0) <= u_i;
-            next_state <= st1_new_candidate;
-            if (complete_tick = '0') then
+            acks_out <= '0';
+            if (nexts_in = '1') then
                 next_state <= st1_new_candidate;
-            elsif (complete_tick = '1') then
-                next_state <= st4_done;
-            end if;
-            
+                if (complete_tick = '0') then
+                    next_state <= st1_new_candidate;
+                elsif (complete_tick = '1') then
+                    next_state <= st4_done;
+                end if;
+            end if;            
          when st4_done =>
             ce <= '0';
+            acks_out <= '1';
+            nexts_out <= '1';
             
          when others =>
             next_state <= st0_reset;

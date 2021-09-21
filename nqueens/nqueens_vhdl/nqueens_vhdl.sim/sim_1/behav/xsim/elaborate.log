@@ -11,8 +11,20 @@ Compiling package std.standard
 Compiling package std.textio
 Compiling package ieee.std_logic_1164
 Compiling package ieee.numeric_std
-Compiling architecture arch of entity xil_defaultlib.up_counter [up_counter_default]
-Compiling architecture arch of entity xil_defaultlib.ctrl_logic [ctrl_logic_default]
-Compiling architecture rtl of entity xil_defaultlib.fsm [fsm_default]
+Compiling architecture arch of entity xil_defaultlib.up_counter [\up_counter(m=8,n=4)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=7,n=4)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=7,m=8,n=4)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=6,n=4)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=6,m=8,n=4)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=5,n=4)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=5,m=8,n=4)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=4,n=4)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=4,m=8,n=4)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=3,n=4)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=3,m=8,n=4)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=2,n=4)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=2,m=8,n=4)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=1,n=4)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=1,m=8,n=4)\]
 Compiling architecture sim of entity xil_defaultlib.fsm_tb
 Built simulation snapshot fsm_tb_behav

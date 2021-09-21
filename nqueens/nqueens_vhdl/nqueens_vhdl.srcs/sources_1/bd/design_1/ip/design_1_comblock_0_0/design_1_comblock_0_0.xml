@@ -2457,7 +2457,7 @@
         <spirit:vendorExtensions>
           <xilinx:portInfo>
             <xilinx:enablement>
-              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.reg1_o" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.REGS_OUT_ENA&apos;)) and spirit:decode(id(&apos;MODELPARAM_VALUE.REGS_OUT_DEPTH&apos;)) > 1">false</xilinx:isEnabled>
+              <xilinx:isEnabled xilinx:resolve="dependent" xilinx:id="PORT_ENABLEMENT.reg1_o" xilinx:dependency="spirit:decode(id(&apos;MODELPARAM_VALUE.REGS_OUT_ENA&apos;)) and spirit:decode(id(&apos;MODELPARAM_VALUE.REGS_OUT_DEPTH&apos;)) > 1">true</xilinx:isEnabled>
             </xilinx:enablement>
           </xilinx:portInfo>
         </spirit:vendorExtensions>
@@ -4314,7 +4314,7 @@
       <spirit:modelParameter spirit:dataType="integer">
         <spirit:name>REGS_OUT_DEPTH</spirit:name>
         <spirit:displayName>Regs Out Depth</spirit:displayName>
-        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.REGS_OUT_DEPTH" spirit:minimum="0" spirit:rangeType="long">1</spirit:value>
+        <spirit:value spirit:format="long" spirit:resolve="generated" spirit:id="MODELPARAM_VALUE.REGS_OUT_DEPTH" spirit:minimum="0" spirit:rangeType="long">2</spirit:value>
       </spirit:modelParameter>
       <spirit:modelParameter spirit:dataType="boolean">
         <spirit:name>DRAM_IO_ENA</spirit:name>
@@ -4515,7 +4515,7 @@
     <spirit:parameter>
       <spirit:name>REGS_OUT_DEPTH</spirit:name>
       <spirit:displayName>Quantity</spirit:displayName>
-      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.REGS_OUT_DEPTH" spirit:minimum="1" spirit:maximum="16" spirit:rangeType="long">1</spirit:value>
+      <spirit:value spirit:format="long" spirit:resolve="user" spirit:id="PARAM_VALUE.REGS_OUT_DEPTH" spirit:minimum="1" spirit:maximum="16" spirit:rangeType="long">2</spirit:value>
       <spirit:vendorExtensions>
         <xilinx:parameterInfo>
           <xilinx:enablement>
