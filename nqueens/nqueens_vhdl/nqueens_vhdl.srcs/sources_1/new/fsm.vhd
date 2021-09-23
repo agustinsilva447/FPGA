@@ -98,6 +98,7 @@ begin
             ce <= '0';
             if (done = '1') then
                 if (valid = '1') then
+                    acks_out <= '0';
                     next_state <= st3_writefifo;
                 elsif (valid = '0') then
                     next_state <= st1_new_candidate;
@@ -106,20 +107,20 @@ begin
             
          when st3_writefifo =>
             asout((N*(K+1)-1) downto N) <=  asin;
-            asout(N-1 downto 0) <= u_i;
-            acks_out <= '0';
+            asout(N-1 downto 0) <= u_i;            
             if (nexts_in = '1') then
-                next_state <= st1_new_candidate;
                 if (complete_tick = '0') then
                     next_state <= st1_new_candidate;
                 elsif (complete_tick = '1') then
                     next_state <= st4_done;
                 end if;
-            end if;            
+            end if;        
+                
          when st4_done =>
             ce <= '0';
             acks_out <= '1';
             nexts_out <= '1';
+            asout(N-1 downto 0) <= (others => '0');
             
          when others =>
             next_state <= st0_reset;

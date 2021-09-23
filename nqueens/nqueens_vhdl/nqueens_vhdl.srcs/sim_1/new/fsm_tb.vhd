@@ -130,15 +130,6 @@ begin
     
     process is
     begin
-        nRst_7 <= '1';
-        nRst_6 <= '1';
-        nRst_5 <= '1';
-        nRst_4 <= '1';
-        nRst_3 <= '1';
-        nRst_2 <= '1';
-        nRst_1 <= '1';
-        wait for 50 ns;
-        a_in_1 <= "0001"; -- [8. 4. 1. 3. 6. 2. 7. (5.)]
         u_0_7  <= "0001";
         u_0_6  <= "0001";
         u_0_5  <= "0001";
@@ -147,8 +138,46 @@ begin
         u_0_2  <= "0001";
         u_0_1  <= "0001";
         wait for 50 ns;
+        nRst_1 <= '1';
+        a_in_1 <= "0001";
+        wait for 50 ns;
         nRst_1 <= '0';
-        wait until output_state_7 = "111";
+        wait until next_out_1 = '1';
+        nRst_1 <= '1';
+        a_in_1 <= "0010";
+        wait for 50 ns;
+        nRst_1 <= '0';
+        wait until next_out_1 = '1';
+        nRst_1 <= '1';
+        a_in_1 <= "0011";
+        wait for 50 ns;
+        nRst_1 <= '0';
+        wait until next_out_1 = '1';
+        nRst_1 <= '1';
+        a_in_1 <= "0100";
+        wait for 50 ns;
+        nRst_1 <= '0';
+        wait until next_out_1 = '1';
+        nRst_1 <= '1';
+        a_in_1 <= "0101";
+        wait for 50 ns;
+        nRst_1 <= '0';
+        wait until next_out_1 = '1';
+        nRst_1 <= '1';
+        a_in_1 <= "0110";
+        wait for 50 ns;
+        nRst_1 <= '0';
+        wait until next_out_1 = '1';
+        nRst_1 <= '1';
+        a_in_1 <= "0111";
+        wait for 50 ns;
+        nRst_1 <= '0';
+        wait until next_out_1 = '1';
+        nRst_1 <= '1';
+        a_in_1 <= "1000";
+        wait for 50 ns;
+        nRst_1 <= '0';
+        wait until next_out_1 = '1';
         wait;
     end process; 
     

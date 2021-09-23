@@ -9,7 +9,7 @@ entity ctrl_logic is
     );    
     port(
         clk, reset : in std_logic;
-        a: in std_logic_vector((K*N-1) downto 0);
+        a: in std_logic_vector(0 to (K*N-1));
         u: in std_logic_vector(N-1 downto 0);
         valid: out std_logic ;
         done : out std_logic 
@@ -28,10 +28,9 @@ signal count : unsigned(N-1 downto 0);
 begin
     u_k <= unsigned(u);
     valid <= valid_aux;
-    done <= done_aux;
-    
-    a_j <= unsigned(a((N*to_integer(j)+(N-1)) downto (N*to_integer(j)))) when j<K else
-           (others => '0');
+    done <= done_aux;    
+    a_j <= unsigned(a((N*to_integer(j)) to (N*to_integer(j)+(N-1)))) when j<K else
+           unsigned(a(0 to (N-1)));
     
     process(clk, reset)
     begin

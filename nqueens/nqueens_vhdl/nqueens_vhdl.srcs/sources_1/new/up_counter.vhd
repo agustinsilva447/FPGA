@@ -19,7 +19,7 @@ architecture arch of up_counter is
 signal count_reg, count_next : unsigned(N-1 downto 0);
 begin
     process(clk, reset)
-    begin
+    begin        
         if reset = '1' then 
             count_reg <= unsigned(u_0);
         elsif (clk'event and clk='1') and (ce='1') then
@@ -27,10 +27,10 @@ begin
         else  
             count_reg <= count_reg;
         end if;
+        
     end process;
     
-    count_next <= unsigned(u_0) when count_reg=(M) else (count_reg + 1);
-    complete_tick <= '1' when count_reg = (M) else '0';
+    count_next <= unsigned(u_0) when count_reg=(M) else (count_reg + 1);   
+    complete_tick <= '1' when count_reg = (M) else '0'; 
     count <= std_logic_vector(count_reg); 
 end arch;
-
