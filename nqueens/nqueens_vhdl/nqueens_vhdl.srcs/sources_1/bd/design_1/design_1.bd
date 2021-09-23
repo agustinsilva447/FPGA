@@ -1169,12 +1169,12 @@
           },
           "u_0": {
             "direction": "I",
-            "left": "3",
+            "left": "0",
             "right": "0"
           },
           "a_in": {
             "direction": "I",
-            "left": "3",
+            "left": "0",
             "right": "0"
           },
           "ack_in": {
@@ -1185,7 +1185,7 @@
           },
           "a_out": {
             "direction": "O",
-            "left": "7",
+            "left": "0",
             "right": "0"
           },
           "ack_out": {
@@ -1224,12 +1224,12 @@
           },
           "u_0": {
             "direction": "I",
-            "left": "3",
+            "left": "0",
             "right": "0"
           },
           "a_in": {
             "direction": "I",
-            "left": "7",
+            "left": "0",
             "right": "0"
           },
           "ack_in": {
@@ -1240,7 +1240,7 @@
           },
           "a_out": {
             "direction": "O",
-            "left": "11",
+            "left": "0",
             "right": "0"
           },
           "ack_out": {
@@ -1279,12 +1279,12 @@
           },
           "u_0": {
             "direction": "I",
-            "left": "3",
+            "left": "0",
             "right": "0"
           },
           "a_in": {
             "direction": "I",
-            "left": "11",
+            "left": "0",
             "right": "0"
           },
           "ack_in": {
@@ -1295,7 +1295,7 @@
           },
           "a_out": {
             "direction": "O",
-            "left": "15",
+            "left": "0",
             "right": "0"
           },
           "ack_out": {
@@ -1334,12 +1334,12 @@
           },
           "u_0": {
             "direction": "I",
-            "left": "3",
+            "left": "0",
             "right": "0"
           },
           "a_in": {
             "direction": "I",
-            "left": "15",
+            "left": "0",
             "right": "0"
           },
           "ack_in": {
@@ -1350,7 +1350,7 @@
           },
           "a_out": {
             "direction": "O",
-            "left": "19",
+            "left": "0",
             "right": "0"
           },
           "ack_out": {
@@ -1389,12 +1389,12 @@
           },
           "u_0": {
             "direction": "I",
-            "left": "3",
+            "left": "0",
             "right": "0"
           },
           "a_in": {
             "direction": "I",
-            "left": "19",
+            "left": "0",
             "right": "0"
           },
           "ack_in": {
@@ -1405,7 +1405,7 @@
           },
           "a_out": {
             "direction": "O",
-            "left": "23",
+            "left": "0",
             "right": "0"
           },
           "ack_out": {
@@ -1444,12 +1444,12 @@
           },
           "u_0": {
             "direction": "I",
-            "left": "3",
+            "left": "0",
             "right": "0"
           },
           "a_in": {
             "direction": "I",
-            "left": "23",
+            "left": "0",
             "right": "0"
           },
           "ack_in": {
@@ -1460,7 +1460,7 @@
           },
           "a_out": {
             "direction": "O",
-            "left": "27",
+            "left": "0",
             "right": "0"
           },
           "ack_out": {
@@ -1499,12 +1499,12 @@
           },
           "u_0": {
             "direction": "I",
-            "left": "3",
+            "left": "0",
             "right": "0"
           },
           "a_in": {
             "direction": "I",
-            "left": "27",
+            "left": "0",
             "right": "0"
           },
           "ack_in": {
@@ -1515,7 +1515,7 @@
           },
           "a_out": {
             "direction": "O",
-            "left": "31",
+            "left": "0",
             "right": "0"
           },
           "ack_out": {

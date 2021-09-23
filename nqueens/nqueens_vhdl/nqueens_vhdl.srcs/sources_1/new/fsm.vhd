@@ -80,6 +80,7 @@ begin
       
          when st0_reset =>
             ce <= '0';
+            acks_out <= '1';
             next_state <= st1_new_candidate;
             
          when st1_new_candidate =>
@@ -120,7 +121,6 @@ begin
             ce <= '0';
             acks_out <= '1';
             nexts_out <= '1';
-            asout(N-1 downto 0) <= (others => '0');
             
          when others =>
             next_state <= st0_reset;

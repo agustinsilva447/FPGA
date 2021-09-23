@@ -65,6 +65,7 @@ architecture sim of fsm_tb is
     signal ack_in_1, next_in_1, ack_out_1, next_out_1: std_logic;
     signal output_state_1: std_logic_vector(2 downto 0); 
     
+    signal counter: unsigned(10 downto 0):=(others => '0');
     signal clk: std_logic := '1';
 begin     
     fsm_7: entity work.fsm
@@ -128,56 +129,80 @@ begin
          wait for 10 ns;
     end process;
     
+    counter_process: process(ack_out_7)
+    begin
+        if (ack_out_7 = '0') then
+            counter <= counter + 1;
+            next_in_7 <= '1';
+        end if;
+    end process;
+    
     process is
     begin
-        u_0_7  <= "0001";
-        u_0_6  <= "0001";
-        u_0_5  <= "0001";
-        u_0_4  <= "0001";
-        u_0_3  <= "0001";
-        u_0_2  <= "0001";
-        u_0_1  <= "0001";
-        wait for 50 ns;
+        u_0_7  <= "0000";
+        u_0_6  <= "0000";
+        u_0_5  <= "0000";
+        u_0_4  <= "0000";
+        u_0_3  <= "0000";
+        u_0_2  <= "0000";
+        u_0_1  <= "0000";
+        
+        wait for 50 ns;        
         nRst_1 <= '1';
         a_in_1 <= "0001";
         wait for 50 ns;
         nRst_1 <= '0';
         wait until next_out_1 = '1';
+        
+        wait for 50 ns;        
         nRst_1 <= '1';
         a_in_1 <= "0010";
         wait for 50 ns;
         nRst_1 <= '0';
         wait until next_out_1 = '1';
+        
+        wait for 50 ns;        
         nRst_1 <= '1';
         a_in_1 <= "0011";
         wait for 50 ns;
         nRst_1 <= '0';
         wait until next_out_1 = '1';
+        
+        wait for 50 ns;
         nRst_1 <= '1';
         a_in_1 <= "0100";
         wait for 50 ns;
         nRst_1 <= '0';
         wait until next_out_1 = '1';
+        
+        wait for 50 ns;
         nRst_1 <= '1';
         a_in_1 <= "0101";
         wait for 50 ns;
         nRst_1 <= '0';
         wait until next_out_1 = '1';
+        
+        wait for 50 ns;
         nRst_1 <= '1';
         a_in_1 <= "0110";
         wait for 50 ns;
         nRst_1 <= '0';
         wait until next_out_1 = '1';
+        
+        wait for 50 ns;
         nRst_1 <= '1';
         a_in_1 <= "0111";
         wait for 50 ns;
         nRst_1 <= '0';
         wait until next_out_1 = '1';
+        
+        wait for 50 ns;
         nRst_1 <= '1';
         a_in_1 <= "1000";
         wait for 50 ns;
         nRst_1 <= '0';
         wait until next_out_1 = '1';
+        
         wait;
     end process; 
     
