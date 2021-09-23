@@ -147,59 +147,59 @@ begin
         u_0_2  <= "0000";
         u_0_1  <= "0000";
         
-        wait for 50 ns;        
+        wait for 20 ns;        
         nRst_1 <= '1';
         a_in_1 <= "0001";
-        wait for 50 ns;
+        wait for 20 ns;
         nRst_1 <= '0';
         wait until next_out_1 = '1';
         
-        wait for 50 ns;        
+        wait for 20 ns;        
         nRst_1 <= '1';
         a_in_1 <= "0010";
         wait for 50 ns;
         nRst_1 <= '0';
         wait until next_out_1 = '1';
         
-        wait for 50 ns;        
+        wait for 20 ns;        
         nRst_1 <= '1';
         a_in_1 <= "0011";
-        wait for 50 ns;
+        wait for 20 ns;
         nRst_1 <= '0';
         wait until next_out_1 = '1';
         
-        wait for 50 ns;
+        wait for 20 ns;
         nRst_1 <= '1';
         a_in_1 <= "0100";
-        wait for 50 ns;
+        wait for 20 ns;
         nRst_1 <= '0';
         wait until next_out_1 = '1';
         
-        wait for 50 ns;
+        wait for 20 ns;
         nRst_1 <= '1';
         a_in_1 <= "0101";
-        wait for 50 ns;
+        wait for 20 ns;
         nRst_1 <= '0';
         wait until next_out_1 = '1';
         
-        wait for 50 ns;
+        wait for 20 ns;
         nRst_1 <= '1';
         a_in_1 <= "0110";
-        wait for 50 ns;
+        wait for 20 ns;
         nRst_1 <= '0';
         wait until next_out_1 = '1';
         
-        wait for 50 ns;
+        wait for 20 ns;
         nRst_1 <= '1';
         a_in_1 <= "0111";
-        wait for 50 ns;
+        wait for 20 ns;
         nRst_1 <= '0';
         wait until next_out_1 = '1';
         
-        wait for 50 ns;
+        wait for 20 ns;
         nRst_1 <= '1';
         a_in_1 <= "1000";
-        wait for 50 ns;
+        wait for 20 ns;
         nRst_1 <= '0';
         wait until next_out_1 = '1';
         
