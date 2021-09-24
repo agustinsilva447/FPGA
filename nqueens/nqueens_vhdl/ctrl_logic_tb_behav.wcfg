@@ -11,12 +11,12 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="2001000000fs"></ZoomEndTime>
+      <ZoomEndTime time="2690492683fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="160"></NameColumnWidth>
-      <ValueColumnWidth column_width="71"></ValueColumnWidth>
+      <ValueColumnWidth column_width="63"></ValueColumnWidth>
    </column_width_setting>
    <WVObjectSize size="10" />
    <wvobject fp_name="/fsm_tb/clk" type="logic">
@@ -35,34 +35,42 @@
       <wvobject fp_name="/fsm_tb/a_in_1" type="array">
          <obj_property name="ElementShortName">a_in_1[3:0]</obj_property>
          <obj_property name="ObjectShortName">a_in_1[3:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
       <wvobject fp_name="/fsm_tb/a_out_1" type="array">
          <obj_property name="ElementShortName">a_out_1[7:0]</obj_property>
          <obj_property name="ObjectShortName">a_out_1[7:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
       <wvobject fp_name="/fsm_tb/a_out_2" type="array">
          <obj_property name="ElementShortName">a_out_2[11:0]</obj_property>
          <obj_property name="ObjectShortName">a_out_2[11:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
       <wvobject fp_name="/fsm_tb/a_out_3" type="array">
          <obj_property name="ElementShortName">a_out_3[15:0]</obj_property>
          <obj_property name="ObjectShortName">a_out_3[15:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
       <wvobject fp_name="/fsm_tb/a_out_4" type="array">
          <obj_property name="ElementShortName">a_out_4[19:0]</obj_property>
          <obj_property name="ObjectShortName">a_out_4[19:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
       <wvobject fp_name="/fsm_tb/a_out_5" type="array">
          <obj_property name="ElementShortName">a_out_5[23:0]</obj_property>
          <obj_property name="ObjectShortName">a_out_5[23:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
       <wvobject fp_name="/fsm_tb/a_out_6" type="array">
          <obj_property name="ElementShortName">a_out_6[27:0]</obj_property>
          <obj_property name="ObjectShortName">a_out_6[27:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
       <wvobject fp_name="/fsm_tb/a_out_7" type="array">
          <obj_property name="ElementShortName">a_out_7[31:0]</obj_property>
          <obj_property name="ObjectShortName">a_out_7[31:0]</obj_property>
+         <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
       </wvobject>
    </wvobject>
    <wvobject fp_name="group7982" type="group">

@@ -1,56 +1,59 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"1.92154",
-   "Default View_TopLeft":"-49,227",
+   "Default View_ScaleFactor":"0.408517",
+   "Default View_TopLeft":"0,-416",
    "ExpandedHierarchyInLayout":"",
    "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 6 -x 1910 -y 350 -defaultsOSRD
-preplace inst comblock_0 -pg 1 -lvl 8 -x 2740 -y 470 -defaultsOSRD
-preplace inst axi_smc -pg 1 -lvl 7 -x 2390 -y 350 -defaultsOSRD
-preplace inst rst_ps8_0_99M -pg 1 -lvl 6 -x 1910 -y 540 -defaultsOSRD
-preplace inst fsm_1 -pg 1 -lvl 1 -x 180 -y 350 -defaultsOSRD
-preplace inst fsm_2 -pg 1 -lvl 2 -x 490 -y 310 -defaultsOSRD
-preplace inst fsm_3 -pg 1 -lvl 3 -x 810 -y 270 -defaultsOSRD
-preplace inst fsm_4 -pg 1 -lvl 4 -x 1130 -y 230 -defaultsOSRD
-preplace inst fsm_5 -pg 1 -lvl 5 -x 1450 -y 190 -defaultsOSRD
-preplace inst fsm_6 -pg 1 -lvl 6 -x 1910 -y 150 -defaultsOSRD
-preplace inst fsm_7 -pg 1 -lvl 7 -x 2390 -y 110 -defaultsOSRD
-preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 8 20 240 310 200 630 160 950 120 1270 80 1590 40 2220 450 2540
-preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 5 2 1600 640 2210
-preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 6 2 2230 560 2550
-preplace netloc fsm_1_a_out 1 1 1 N 320
-preplace netloc fsm_2_a_out 1 2 1 N 280
-preplace netloc fsm_3_a_out 1 3 1 N 240
-preplace netloc fsm_4_a_out 1 4 1 N 200
-preplace netloc fsm_5_a_out 1 5 1 N 160
-preplace netloc fsm_6_a_out 1 6 1 N 120
-preplace netloc comblock_0_reg0_o 1 0 9 20 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 NJ 670 2910
-preplace netloc fsm_7_a_out 1 7 1 2560 80n
-preplace netloc fsm_2_next_out 1 0 3 0 190 NJ 190 620
-preplace netloc fsm_3_next_out 1 1 3 320 150 NJ 150 940
-preplace netloc fsm_4_next_out 1 2 3 640 110 NJ 110 1260
-preplace netloc fsm_5_next_out 1 3 3 960 70 NJ 70 1580
-preplace netloc fsm_5_ack_out 1 5 1 1600 120n
-preplace netloc fsm_6_next_out 1 4 3 1280 30 NJ 30 2210
-preplace netloc fsm_6_ack_out 1 6 1 2230 80n
-preplace netloc fsm_7_next_out 1 5 3 1600 260 NJ 260 2530
-preplace netloc fsm_7_ack_out 1 7 1 2550 100n
-preplace netloc fsm_4_ack_out 1 4 1 1270 160n
-preplace netloc fsm_3_ack_out 1 3 1 950 200n
-preplace netloc fsm_2_ack_out 1 2 1 630 240n
-preplace netloc fsm_1_ack_out 1 1 1 310 280n
-preplace netloc comblock_0_reg1_o 1 0 9 10 460 NJ 460 NJ 460 NJ 460 NJ 460 1600J 440 NJ 440 2530J 660 2900
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 6 1 N 320
-preplace netloc axi_smc_M00_AXI 1 7 1 2530 340n
-preplace netloc axi_smc_M01_AXI 1 7 1 2540 340n
-preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 6 1 N 340
-levelinfo -pg 1 -20 180 490 810 1130 1450 1910 2390 2740 2940
-pagesize -pg 1 -db -bbox -sgen -20 0 2940 680
+preplace inst zynq_ultra_ps_e_0 -pg 1 -lvl 7 -x 2160 -y 480 -defaultsOSRD
+preplace inst comblock_0 -pg 1 -lvl 9 -x 2970 -y 600 -defaultsOSRD
+preplace inst axi_smc -pg 1 -lvl 8 -x 2620 -y 480 -defaultsOSRD
+preplace inst rst_ps8_0_99M -pg 1 -lvl 1 -x 190 -y 470 -defaultsOSRD
+preplace inst fsm_1 -pg 1 -lvl 2 -x 530 -y 170 -defaultsOSRD
+preplace inst fsm_2 -pg 1 -lvl 3 -x 820 -y 140 -defaultsOSRD
+preplace inst fsm_3 -pg 1 -lvl 4 -x 1130 -y 220 -defaultsOSRD
+preplace inst fsm_4 -pg 1 -lvl 5 -x 1420 -y 190 -defaultsOSRD
+preplace inst fsm_5 -pg 1 -lvl 6 -x 1710 -y 160 -defaultsOSRD
+preplace inst fsm_6 -pg 1 -lvl 7 -x 2160 -y 130 -defaultsOSRD
+preplace inst fsm_7 -pg 1 -lvl 8 -x 2620 -y 100 -defaultsOSRD
+preplace netloc zynq_ultra_ps_e_0_pl_clk0 1 0 9 20 270 360 270 670 300 990 330 1270 300 1560 310 1850 330 2470 390 2770
+preplace netloc zynq_ultra_ps_e_0_pl_resetn0 1 0 8 20 570 NJ 570 NJ 570 NJ 570 NJ 570 NJ 570 NJ 570 2460
+preplace netloc rst_ps8_0_99M_peripheral_aresetn 1 1 8 380 580 NJ 580 NJ 580 NJ 580 NJ 580 NJ 580 2480 580 2760
+preplace netloc fsm_1_a_out 1 2 1 N 140
+preplace netloc fsm_2_a_out 1 3 1 980 110n
+preplace netloc fsm_3_a_out 1 4 1 N 190
+preplace netloc fsm_4_a_out 1 5 1 N 160
+preplace netloc fsm_5_a_out 1 6 1 N 130
+preplace netloc fsm_6_a_out 1 7 1 N 100
+preplace netloc fsm_1_ack_out 1 2 1 N 160
+preplace netloc fsm_2_ack_out 1 3 1 960 130n
+preplace netloc fsm_3_ack_out 1 4 1 N 210
+preplace netloc fsm_4_ack_out 1 5 1 N 180
+preplace netloc fsm_5_ack_out 1 6 1 N 150
+preplace netloc fsm_6_ack_out 1 7 1 N 120
+preplace netloc fsm_2_next_out 1 1 3 400 290 NJ 290 950
+preplace netloc fsm_3_next_out 1 2 3 690 320 NJ 320 1260
+preplace netloc fsm_4_next_out 1 3 3 1000 340 1280J 290 1550
+preplace netloc fsm_5_next_out 1 4 3 1290 310 1570J 300 1840
+preplace netloc fsm_6_next_out 1 5 3 1580 320 NJ 320 2460
+preplace netloc fsm_7_next_out 1 6 3 1860 340 NJ 340 2770
+preplace netloc comblock_0_reg0_o 1 1 9 380 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 NJ 350 3140
+preplace netloc comblock_0_reg1_o 1 1 9 390 370 NJ 370 NJ 370 NJ 370 NJ 370 NJ 370 NJ 370 NJ 370 3130
+preplace netloc fsm_7_a_out 1 8 1 2810 70n
+preplace netloc fsm_7_ack_out 1 8 1 2800 90n
+preplace netloc rst_ps8_0_99M_peripheral_reset 1 1 7 370 280 680 310 970 120 1290 90 1550 60 1840 30 2480
+preplace netloc fsm_1_next_out 1 2 7 660 380 NJ 380 NJ 380 NJ 380 NJ 380 NJ 380 2780J
+preplace netloc comblock_0_reg2_o 1 7 3 2480 360 NJ 360 3150
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM0_FPD 1 7 1 N 450
+preplace netloc axi_smc_M00_AXI 1 8 1 N 470
+preplace netloc axi_smc_M01_AXI 1 8 1 2790 450n
+preplace netloc zynq_ultra_ps_e_0_M_AXI_HPM1_FPD 1 7 1 N 470
+levelinfo -pg 1 0 190 530 820 1130 1420 1710 2160 2620 2970 3170
+pagesize -pg 1 -db -bbox -sgen 0 0 3170 810
 "
 }
 {
-   "da_axi4_cnt":"3",
-   "da_clkrst_cnt":"7",
-   "da_zynq_ultra_ps_e_cnt":"1"
+   "da_axi4_cnt":"6",
+   "da_clkrst_cnt":"14",
+   "da_zynq_ultra_ps_e_cnt":"2"
 }
