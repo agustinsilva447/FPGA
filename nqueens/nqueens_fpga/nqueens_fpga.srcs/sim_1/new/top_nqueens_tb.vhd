@@ -8,7 +8,7 @@ end entity;
 architecture sim of top_nqueens_tb is    
     constant M: integer := 10;  -- size of the board MxM
     constant N: integer := 5;  -- N bits required to count upto size of the board;
-    constant P: integer := 12; -- N bits required for the counter;
+    constant P: integer := 10; -- N bits required for the counter;
     signal counter: unsigned(P downto 0) := (others => '0');
     signal flag: std_logic := '0';   
     signal done: std_logic := '0';   

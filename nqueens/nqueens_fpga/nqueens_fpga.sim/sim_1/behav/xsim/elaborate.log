@@ -30,6 +30,6 @@ Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=2
 Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=2,m=10,n=5)\]
 Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=1,n=5)\]
 Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=1,m=10,n=5)\]
-Compiling architecture rtl of entity xil_defaultlib.top_nqueens [\top_nqueens(m=10,n=5,p=12)\]
+Compiling architecture rtl of entity xil_defaultlib.top_nqueens [\top_nqueens(m=10,n=5,p=10)\]
 Compiling architecture sim of entity xil_defaultlib.top_nqueens_tb
 Built simulation snapshot top_nqueens_tb_behav

@@ -174,14 +174,14 @@ begin
     counter_process: process(ack_out_9)     -- ack_out_i
     begin
         if (ack_out_9 = '0') then           -- ack_out_i
-            counter_s <= counter_s + 1;
+            counter_s <= counter_s + 2;
             next_in_9 <= '1';               -- next_in_i
         end if;
     end process;    
     
     flag_process: process(a_in_1)
     begin
-        if a_in_1 = std_logic_vector(to_unsigned(M, N)) then
+        if a_in_1 = std_logic_vector(to_unsigned(M/2, N)) then
             flag_s <= '1';
         end if;
     end process;
