@@ -53,29 +53,29 @@ architecture sim of fsm_tb is
     
     signal counter: unsigned(10 downto 0):=(others => '0');
     signal nRst: std_logic;
-    signal clk: std_logic := '1';
+    signal clk: std_logic;
     
 begin     
     fsm_7: entity work.fsm
-    generic map (K => 7, M => 8, N =>4)
+    generic map (K => 7, M => M, N =>N)
     port map (clk=>clk, nRst=>nRst, a_in=>a_in_7, ack_in=>ack_in_7, next_in=>next_in_7, a_out=>a_out_7, ack_out=>ack_out_7, next_out=>next_out_7, output_state=>output_state_7);   
     fsm_6: entity work.fsm
-    generic map (K => 6, M => 8, N =>4)
+    generic map (K => 6, M => M, N =>N)
     port map (clk=>clk, nRst=>nRst, a_in=>a_in_6, ack_in=>ack_in_6, next_in=>next_in_6, a_out=>a_out_6, ack_out=>ack_out_6, next_out=>next_out_6, output_state=>output_state_6);   
     fsm_5: entity work.fsm
-    generic map (K => 5, M => 8, N =>4)
+    generic map (K => 5, M => M, N =>N)
     port map (clk=>clk, nRst=>nRst, a_in=>a_in_5, ack_in=>ack_in_5, next_in=>next_in_5, a_out=>a_out_5, ack_out=>ack_out_5, next_out=>next_out_5, output_state=>output_state_5);   
     fsm_4: entity work.fsm
-    generic map (K => 4, M => 8, N =>4)
+    generic map (K => 4, M => M, N =>N)
     port map (clk=>clk, nRst=>nRst, a_in=>a_in_4, ack_in=>ack_in_4, next_in=>next_in_4, a_out=>a_out_4, ack_out=>ack_out_4, next_out=>next_out_4, output_state=>output_state_4);   
     fsm_3: entity work.fsm
-    generic map (K => 3, M => 8, N =>4)
+    generic map (K => 3, M => M, N =>N)
     port map (clk=>clk, nRst=>nRst, a_in=>a_in_3, ack_in=>ack_in_3, next_in=>next_in_3, a_out=>a_out_3, ack_out=>ack_out_3, next_out=>next_out_3, output_state=>output_state_3);   
     fsm_2: entity work.fsm
-    generic map (K => 2, M => 8, N =>4)
+    generic map (K => 2, M => M, N =>N)
     port map (clk=>clk, nRst=>nRst, a_in=>a_in_2, ack_in=>ack_in_2, next_in=>next_in_2, a_out=>a_out_2, ack_out=>ack_out_2, next_out=>next_out_2, output_state=>output_state_2);   
     fsm_1: entity work.fsm
-    generic map (K => 1, M => 8, N =>4)
+    generic map (K => 1, M => M, N =>N)
     port map (clk=>clk, nRst=>nRst, a_in=>a_in_1, ack_in=>ack_in_1, next_in=>next_in_1, a_out=>a_out_1, ack_out=>ack_out_1, next_out=>next_out_1, output_state=>output_state_1);     
     
     a_in_7 <= a_out_6;
@@ -121,7 +121,8 @@ begin
     
     process is
     begin
-            
+        nRst <= '0';
+        
         wait for 10 ns;        
         ack_in_1 <= '1';
         a_in_1 <= "0001";
