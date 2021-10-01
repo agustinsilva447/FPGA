@@ -1,0 +1,2 @@
+https://learn.qiskit.org/course/introduction/why-quantum-computing
+https://qiskit.org/documentation/tutorials/circuits/1_getting_started_with_qiskit.html
