@@ -1,0 +1,59 @@
+1 - Quantum vs classical mechanics
+    a - Superposition
+    b - Measurement
+    c - Entanglement
+    d - Decoherence
+2 - Quantum computing models
+    a - Gate-based computation 
+    b - Adiabatic quantum computing
+    c - Topological quantum computing
+    d - Quantum Turing machines
+3 - Quantum programming languages
+    a - qiskit (ibm)
+    b - cirq (google)
+    d - strawberry fields (optical circuits)
+    e - pennylane (differentiable programming)
+    f - ocean (QUBO)
+4 - Quantum vs classical computational complexity
+5 - Quantum bits
+    a - classical vs quantum bit
+    b - hilbert space and dirac notation
+    c - formal definition of one qubit
+    d - bloch sphere
+    e - multiple qubits
+6 - Quantum gates 
+    a - Schrodinger equation
+    b - unitary matrix
+    c - general 1-qubit gate
+    d - multiple-qubit gates
+    e - kronecker product
+7 - Quantum circuits
+    a - linear vs nonlinear evolution
+    b - measurement gate
+    c - universal gate set
+    d - no-cloning theorem
+8 - Quantum algorithms
+    b - quantum teleportation
+    c - superdense coding
+    d - Deutsch-Jozsa algorithm
+    e - Grover’s algorithm
+    f - Quantum Fourier Transform
+    g - Shor’s algorithm
+    h - HHL algorithm
+    i - Quantum Approximate Optimization Algorithm
+    j - Variational Quantum Eigensolver
+9 - Quantum everywhere    
+    a - Quantum Machine Learning
+        a.1 - Quantum Support Vector Machines
+        a.2 - Quantum Generative Adversarial Networks
+        a.3 - Quantum Neural Networks
+        a.4 - Quantum Reinforcement Learning
+    b - Quantum Game Theory
+    c - Quantum Cellular Automata
+    d - Quantum Cryptography
+    e - Quantum Annealing
+    f - Quantum Simulations
+10 - Quantum hardware
+    a - Quantum error correction
+    b - Fault-tolerant quantum computing
+    c - NISQ era
