@@ -1,0 +1,913 @@
+
+*** Running vivado
+    with args -log design_1_top_nqueens_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_top_nqueens_0_0.tcl
+
+
+****** Vivado v2019.2 (64-bit)
+  **** SW Build 2708876 on Wed Nov  6 21:40:23 MST 2019
+  **** IP Build 2700528 on Thu Nov  7 00:09:20 MST 2019
+    ** Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
+
+source design_1_top_nqueens_0_0.tcl -notrace
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mlabadm/Desktop/Github/core-comblock-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2019.2/data/ip'.
+Command: synth_design -top design_1_top_nqueens_0_0 -part xc7z020clg484-1 -mode out_of_context
+Starting synth_design
+WARNING: [IP_Flow 19-3571] IP 'design_1_top_nqueens_0_0' is restricted:
+* Module reference is stale and needs refreshing.
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Device 21-403] Loading part xc7z020clg484-1
+INFO: Launching helper process for spawning children vivado processes
+INFO: Helper process launched with PID 10156 
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 950.816 ; gain = 233.973
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_top_nqueens_0_0' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/bd/design_1/ip/design_1_top_nqueens_0_0/synth/design_1_top_nqueens_0_0.vhd:66]
+	Parameter M bound to: 10 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+	Parameter P bound to: 10 - type: integer 
+INFO: [Synth 8-3491] module 'top_nqueens' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/top_nqueens.vhd:5' bound to instance 'U0' of component 'top_nqueens' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/bd/design_1/ip/design_1_top_nqueens_0_0/synth/design_1_top_nqueens_0_0.vhd:96]
+INFO: [Synth 8-638] synthesizing module 'top_nqueens' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/top_nqueens.vhd:17]
+	Parameter M bound to: 10 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+	Parameter P bound to: 10 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'fsm' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+	Parameter K bound to: 9 - type: integer 
+	Parameter M bound to: 10 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'up_counter' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/up_counter.vhd:17]
+	Parameter M bound to: 10 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+WARNING: [Synth 8-614] signal 'ce' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/up_counter.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'up_counter' (1#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/up_counter.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'ctrl_logic' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+	Parameter K bound to: 9 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ctrl_logic' (2#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'fsm' (3#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'fsm__parameterized0' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+	Parameter K bound to: 8 - type: integer 
+	Parameter M bound to: 10 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ctrl_logic__parameterized0' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+	Parameter K bound to: 8 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ctrl_logic__parameterized0' (3#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'fsm__parameterized0' (3#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'fsm__parameterized1' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+	Parameter K bound to: 7 - type: integer 
+	Parameter M bound to: 10 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ctrl_logic__parameterized1' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+	Parameter K bound to: 7 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ctrl_logic__parameterized1' (3#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'fsm__parameterized1' (3#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'fsm__parameterized2' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+	Parameter K bound to: 6 - type: integer 
+	Parameter M bound to: 10 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ctrl_logic__parameterized2' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+	Parameter K bound to: 6 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ctrl_logic__parameterized2' (3#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'fsm__parameterized2' (3#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'fsm__parameterized3' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+	Parameter K bound to: 5 - type: integer 
+	Parameter M bound to: 10 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ctrl_logic__parameterized3' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+	Parameter K bound to: 5 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ctrl_logic__parameterized3' (3#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'fsm__parameterized3' (3#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'fsm__parameterized4' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+	Parameter K bound to: 4 - type: integer 
+	Parameter M bound to: 10 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ctrl_logic__parameterized4' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+	Parameter K bound to: 4 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ctrl_logic__parameterized4' (3#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'fsm__parameterized4' (3#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'fsm__parameterized5' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+	Parameter K bound to: 3 - type: integer 
+	Parameter M bound to: 10 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ctrl_logic__parameterized5' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+	Parameter K bound to: 3 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ctrl_logic__parameterized5' (3#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'fsm__parameterized5' (3#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'fsm__parameterized6' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+	Parameter K bound to: 2 - type: integer 
+	Parameter M bound to: 10 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ctrl_logic__parameterized6' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+	Parameter K bound to: 2 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ctrl_logic__parameterized6' (3#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'fsm__parameterized6' (3#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+INFO: [Synth 8-638] synthesizing module 'fsm__parameterized7' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+	Parameter K bound to: 1 - type: integer 
+	Parameter M bound to: 10 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-638] synthesizing module 'ctrl_logic__parameterized7' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+	Parameter K bound to: 1 - type: integer 
+	Parameter N bound to: 5 - type: integer 
+INFO: [Synth 8-256] done synthesizing module 'ctrl_logic__parameterized7' (3#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/ctrl_logic.vhd:19]
+WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:86]
+INFO: [Synth 8-256] done synthesizing module 'fsm__parameterized7' (3#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:20]
+WARNING: [Synth 8-614] signal 'counter_s' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/top_nqueens.vhd:174]
+WARNING: [Synth 8-614] signal 'flag_s' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/top_nqueens.vhd:189]
+WARNING: [Synth 8-614] signal 'ack_in_1' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/top_nqueens.vhd:189]
+WARNING: [Synth 8-614] signal 'a_in_1' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/top_nqueens.vhd:189]
+WARNING: [Synth 8-614] signal 'next_out_1' is read in the process but is not in the sensitivity list [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/top_nqueens.vhd:189]
+INFO: [Synth 8-256] done synthesizing module 'top_nqueens' (4#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/top_nqueens.vhd:17]
+INFO: [Synth 8-256] done synthesizing module 'design_1_top_nqueens_0_0' (5#1) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/bd/design_1/ip/design_1_top_nqueens_0_0/synth/design_1_top_nqueens_0_0.vhd:66]
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1028.559 ; gain = 311.715
+---------------------------------------------------------------------------------
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1028.559 ; gain = 311.715
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:06 ; elapsed = 00:00:06 . Memory (MB): peak = 1028.559 ; gain = 311.715
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1028.559 ; gain = 0.000
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1125.484 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+No Unisim elements were transformed.
+
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.060 . Memory (MB): peak = 1126.496 ; gain = 1.012
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1126.496 ; gain = 409.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg484-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1126.496 ; gain = 409.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1126.496 ; gain = 409.652
+---------------------------------------------------------------------------------
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm__parameterized4'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm__parameterized5'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm__parameterized6'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm__parameterized7'
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                            00001 |                              000
+       st1_new_candidate |                            00010 |                              001
+          st2_validation |                            00100 |                              010
+           st3_writefifo |                            01000 |                              011
+                st4_done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm'
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[2]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[3]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[4]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[5]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[6]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[7]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[8]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[9]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:44]
+WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_control_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:41]
+WARNING: [Synth 8-327] inferring latch for variable 'ce_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:38]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                            00001 |                              000
+       st1_new_candidate |                            00010 |                              001
+          st2_validation |                            00100 |                              010
+           st3_writefifo |                            01000 |                              011
+                st4_done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm__parameterized0'
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[2]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[3]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[4]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[5]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[6]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[7]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[8]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:44]
+WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_control_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:41]
+WARNING: [Synth 8-327] inferring latch for variable 'ce_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:38]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                            00001 |                              000
+       st1_new_candidate |                            00010 |                              001
+          st2_validation |                            00100 |                              010
+           st3_writefifo |                            01000 |                              011
+                st4_done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm__parameterized1'
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[2]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[3]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[4]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[5]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[6]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[7]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:44]
+WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_control_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:41]
+WARNING: [Synth 8-327] inferring latch for variable 'ce_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:38]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                            00001 |                              000
+       st1_new_candidate |                            00010 |                              001
+          st2_validation |                            00100 |                              010
+           st3_writefifo |                            01000 |                              011
+                st4_done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm__parameterized2'
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[2]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[3]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[4]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[5]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[6]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:44]
+WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_control_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:41]
+WARNING: [Synth 8-327] inferring latch for variable 'ce_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:38]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                            00001 |                              000
+       st1_new_candidate |                            00010 |                              001
+          st2_validation |                            00100 |                              010
+           st3_writefifo |                            01000 |                              011
+                st4_done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm__parameterized3'
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[2]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[3]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[4]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[5]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:44]
+WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_control_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:41]
+WARNING: [Synth 8-327] inferring latch for variable 'ce_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:38]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                            00001 |                              000
+       st1_new_candidate |                            00010 |                              001
+          st2_validation |                            00100 |                              010
+           st3_writefifo |                            01000 |                              011
+                st4_done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm__parameterized4'
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[2]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[3]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[4]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:44]
+WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_control_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:41]
+WARNING: [Synth 8-327] inferring latch for variable 'ce_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:38]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                            00001 |                              000
+       st1_new_candidate |                            00010 |                              001
+          st2_validation |                            00100 |                              010
+           st3_writefifo |                            01000 |                              011
+                st4_done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm__parameterized5'
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[2]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[3]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:44]
+WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_control_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:41]
+WARNING: [Synth 8-327] inferring latch for variable 'ce_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:38]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                            00001 |                              000
+       st1_new_candidate |                            00010 |                              001
+          st2_validation |                            00100 |                              010
+           st3_writefifo |                            01000 |                              011
+                st4_done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm__parameterized6'
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[2]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:44]
+WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_control_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:41]
+WARNING: [Synth 8-327] inferring latch for variable 'ce_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:38]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                            00001 |                              000
+       st1_new_candidate |                            00010 |                              001
+          st2_validation |                            00100 |                              010
+           st3_writefifo |                            01000 |                              011
+                st4_done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm__parameterized7'
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:52]
+WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:44]
+WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_control_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:41]
+WARNING: [Synth 8-327] inferring latch for variable 'ce_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/fsm.vhd:38]
+WARNING: [Synth 8-327] inferring latch for variable 'flag_s_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/top_nqueens.vhd:171]
+WARNING: [Synth 8-327] inferring latch for variable 'done_s_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/top_nqueens.vhd:172]
+WARNING: [Synth 8-327] inferring latch for variable 'counter_s_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/top_nqueens.vhd:170]
+WARNING: [Synth 8-327] inferring latch for variable 'a_in_1_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/top_nqueens.vhd:193]
+WARNING: [Synth 8-327] inferring latch for variable 'ack_in_1_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/top_nqueens.vhd:129]
+WARNING: [Synth 8-327] inferring latch for variable 'next_in_9_reg' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.srcs/sources_1/new/top_nqueens.vhd:97]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 1126.496 ; gain = 409.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 9     
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 37    
+	   3 Input      5 Bit       Adders := 9     
++---Registers : 
+	                5 Bit    Registers := 27    
+	                1 Bit    Registers := 18    
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 54    
+	   5 Input      5 Bit        Muxes := 9     
+	   5 Input      3 Bit        Muxes := 9     
+	   2 Input      1 Bit        Muxes := 11    
+	   3 Input      1 Bit        Muxes := 18    
+	   5 Input      1 Bit        Muxes := 54    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start RTL Hierarchical Component Statistics 
+---------------------------------------------------------------------------------
+Hierarchical RTL Component report 
+Module up_counter 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 1     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 1     
+	   2 Input      1 Bit        Muxes := 1     
+Module ctrl_logic 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module fsm 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+Module ctrl_logic__parameterized0 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module fsm__parameterized0 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+Module ctrl_logic__parameterized1 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module fsm__parameterized1 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+Module ctrl_logic__parameterized2 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module fsm__parameterized2 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+Module ctrl_logic__parameterized3 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module fsm__parameterized3 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+Module ctrl_logic__parameterized4 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module fsm__parameterized4 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+Module ctrl_logic__parameterized5 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module fsm__parameterized5 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+Module ctrl_logic__parameterized6 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module fsm__parameterized6 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+Module ctrl_logic__parameterized7 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     32 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 3     
+	   3 Input      5 Bit       Adders := 1     
++---Registers : 
+	                5 Bit    Registers := 2     
+	                1 Bit    Registers := 2     
++---Muxes : 
+	   2 Input      5 Bit        Muxes := 2     
+	   3 Input      1 Bit        Muxes := 2     
+Module fsm__parameterized7 
+Detailed RTL Component Info : 
++---Muxes : 
+	   5 Input      5 Bit        Muxes := 1     
+	   2 Input      5 Bit        Muxes := 3     
+	   5 Input      3 Bit        Muxes := 1     
+	   5 Input      1 Bit        Muxes := 6     
+Module top_nqueens 
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input     11 Bit       Adders := 1     
+	   2 Input      5 Bit       Adders := 1     
++---Muxes : 
+	   2 Input      1 Bit        Muxes := 2     
+---------------------------------------------------------------------------------
+Finished RTL Hierarchical Component Statistics
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+Warning: Parallel synthesis criteria is not met 
+INFO: [Synth 8-3333] propagating constant 1 across sequential element (\U0/next_in_9_reg )
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[0][4]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[0][3]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[0][2]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[0][1]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[0][0]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[1][4]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[1][3]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[1][2]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[1][1]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[1][0]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[2][4]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[2][3]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[2][2]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[2][1]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[2][0]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[3][4]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[3][3]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[3][2]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[3][1]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[3][0]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[4][4]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[4][3]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[4][2]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[4][1]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[4][0]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[5][4]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[5][3]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[5][2]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[5][1]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[5][0]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[6][4]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[6][3]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[6][2]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[6][1]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[6][0]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[7][4]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[7][3]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[7][2]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[7][1]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[7][0]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[8][4]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[8][3]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[8][2]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[8][1]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[8][0]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[9][4]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[9][3]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[9][2]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[9][1]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_9/asout_array_reg[9][0]) is unused and will be removed from module design_1_top_nqueens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/next_in_9_reg) is unused and will be removed from module design_1_top_nqueens_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1126.496 ; gain = 409.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 1126.496 ; gain = 409.652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1126.496 ; gain = 409.652
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-3332] Sequential element (U0/counter_s_reg[0]) is unused and will be removed from module design_1_top_nqueens_0_0.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 1149.238 ; gain = 432.395
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1155.020 ; gain = 438.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1155.020 ; gain = 438.176
+---------------------------------------------------------------------------------
+
+Report RTL Partitions: 
++-+--------------+------------+----------+
+| |RTL Partition |Replication |Instances |
++-+--------------+------------+----------+
++-+--------------+------------+----------+
+
+Report Check Netlist: 
++------+------------------+-------+---------+-------+------------------+
+|      |Item              |Errors |Warnings |Status |Description       |
++------+------------------+-------+---------+-------+------------------+
+|1     |multi_driven_nets |      0|        0|Passed |Multi driven nets |
++------+------------------+-------+---------+-------+------------------+
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1155.020 ; gain = 438.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1155.020 ; gain = 438.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1155.020 ; gain = 438.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1155.020 ; gain = 438.176
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+-------+------+
+|      |Cell   |Count |
++------+-------+------+
+|1     |CARRY4 |    27|
+|2     |LUT1   |    20|
+|3     |LUT2   |    91|
+|4     |LUT3   |   105|
+|5     |LUT4   |    78|
+|6     |LUT5   |   217|
+|7     |LUT6   |   237|
+|8     |MUXF7  |     1|
+|9     |FDCE   |   138|
+|10    |FDRE   |    36|
+|11    |FDSE   |     9|
+|12    |LD     |   274|
++------+-------+------+
+
+Report Instance Areas: 
++------+------------+---------------------------+------+
+|      |Instance    |Module                     |Cells |
++------+------------+---------------------------+------+
+|1     |top         |                           |  1233|
+|2     |  U0        |top_nqueens                |  1233|
+|3     |    fsm_1   |fsm__parameterized7        |   109|
+|4     |      dut   |up_counter_7               |    33|
+|5     |      logic |ctrl_logic__parameterized7 |    49|
+|6     |    fsm_2   |fsm__parameterized6        |    94|
+|7     |      dut   |up_counter_6               |    16|
+|8     |      logic |ctrl_logic__parameterized6 |    50|
+|9     |    fsm_3   |fsm__parameterized5        |   116|
+|10    |      dut   |up_counter_5               |    30|
+|11    |      logic |ctrl_logic__parameterized5 |    53|
+|12    |    fsm_4   |fsm__parameterized4        |   130|
+|13    |      dut   |up_counter_4               |    28|
+|14    |      logic |ctrl_logic__parameterized4 |    64|
+|15    |    fsm_5   |fsm__parameterized3        |   143|
+|16    |      dut   |up_counter_3               |    17|
+|17    |      logic |ctrl_logic__parameterized3 |    83|
+|18    |    fsm_6   |fsm__parameterized2        |   162|
+|19    |      dut   |up_counter_2               |    16|
+|20    |      logic |ctrl_logic__parameterized2 |    98|
+|21    |    fsm_7   |fsm__parameterized1        |   175|
+|22    |      dut   |up_counter_1               |    27|
+|23    |      logic |ctrl_logic__parameterized1 |    95|
+|24    |    fsm_8   |fsm__parameterized0        |   171|
+|25    |      dut   |up_counter_0               |    17|
+|26    |      logic |ctrl_logic__parameterized0 |    96|
+|27    |    fsm_9   |fsm                        |    97|
+|28    |      dut   |up_counter                 |    24|
+|29    |      logic |ctrl_logic                 |    60|
++------+------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:29 ; elapsed = 00:00:30 . Memory (MB): peak = 1155.020 ; gain = 438.176
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 96 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:22 ; elapsed = 00:00:29 . Memory (MB): peak = 1155.020 ; gain = 340.238
+Synthesis Optimization Complete : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 1155.020 ; gain = 438.176
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.016 . Memory (MB): peak = 1167.086 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 302 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 10 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1169.191 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 274 instances were transformed.
+  LD => LDCE: 264 instances
+  LD => LDCE (inverted pins: G): 10 instances
+
+INFO: [Common 17-83] Releasing license: Synthesis
+128 Infos, 158 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:35 ; elapsed = 00:00:36 . Memory (MB): peak = 1169.191 ; gain = 757.727
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1169.191 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.runs/design_1_top_nqueens_0_0_synth_1/design_1_top_nqueens_0_0.dcp' has been generated.
+WARNING: [Common 17-576] 'use_project_ipc' is deprecated. This option is deprecated and no longer used.
+INFO: [Coretcl 2-1174] Renamed 28 cell refs.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.001 . Memory (MB): peak = 1169.191 ; gain = 0.000
+WARNING: [Constraints 18-5210] No constraints selected for write.
+Resolution: This message can indicate that there are no constraints for the design, or it can indicate that the used_in flags are set such that the constraints are ignored. This later case is used when running synth_design to not write synthesis constraints to the resulting checkpoint. Instead, project constraints are read when the synthesized design is opened.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_fpga/nqueens_fpga.runs/design_1_top_nqueens_0_0_synth_1/design_1_top_nqueens_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_top_nqueens_0_0_utilization_synth.rpt -pb design_1_top_nqueens_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Oct  5 11:45:16 2021...

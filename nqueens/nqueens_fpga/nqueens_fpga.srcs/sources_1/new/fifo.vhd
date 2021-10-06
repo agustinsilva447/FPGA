@@ -9,15 +9,18 @@ entity ring_buffer is
   port (
     clk : in std_logic;
     rst : in std_logic;
+    
     wr_en : in std_logic;
     wr_data : in std_logic_vector(RAM_WIDTH - 1 downto 0);
+    
     rd_en : in std_logic;
-    rd_valid : out std_logic;
     rd_data : out std_logic_vector(RAM_WIDTH - 1 downto 0);
+    
     empty : out std_logic;
     empty_next : out std_logic;
     full : out std_logic;
     full_next : out std_logic;
+    
     fill_count : out integer range RAM_DEPTH - 1 downto 0
   );
 end ring_buffer;
@@ -76,12 +79,9 @@ begin
     if rising_edge(clk) then
       if rst = '1' then
         tail <= 0;
-        rd_valid <= '0';
       else
-        rd_valid <= '0';
         if rd_en = '1' and empty_i = '0' then
           incr(tail);
-          rd_valid <= '1';
         end if;
       end if;
     end if;

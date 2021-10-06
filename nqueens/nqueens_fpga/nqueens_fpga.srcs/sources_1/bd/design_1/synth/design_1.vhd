@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Mon Oct  4 19:14:54 2021
+--Date        : Tue Oct  5 11:44:01 2021
 --Host        : hp6g4-mlab-2 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -116,8 +116,9 @@ architecture STRUCTURE of design_1 is
   end component design_1_processing_system7_0_0;
   component design_1_comblock_0_0 is
   port (
-    reg0_i : in STD_LOGIC_VECTOR ( 9 downto 0 );
-    reg1_i : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    reg0_i : in STD_LOGIC_VECTOR ( 10 downto 0 );
+    reg1_i : in STD_LOGIC_VECTOR ( 10 downto 0 );
+    reg0_o : out STD_LOGIC_VECTOR ( 0 to 0 );
     axil_aclk : in STD_LOGIC;
     axil_aresetn : in STD_LOGIC;
     axil_awaddr : in STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -291,6 +292,7 @@ architecture STRUCTURE of design_1 is
   signal axi_smc_M01_AXI_WREADY : STD_LOGIC;
   signal axi_smc_M01_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_smc_M01_AXI_WVALID : STD_LOGIC;
+  signal comblock_0_reg0_o : STD_LOGIC_VECTOR ( 0 to 0 );
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -352,7 +354,6 @@ architecture STRUCTURE of design_1 is
   signal processing_system7_0_M_AXI_GP0_WREADY : STD_LOGIC;
   signal processing_system7_0_M_AXI_GP0_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal processing_system7_0_M_AXI_GP0_WVALID : STD_LOGIC;
-  signal rst_ps7_0_100M_interconnect_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal top_nqueens_0_counter : STD_LOGIC_VECTOR ( 10 downto 0 );
   signal top_nqueens_0_done : STD_LOGIC;
@@ -395,6 +396,7 @@ architecture STRUCTURE of design_1 is
   signal NLW_processing_system7_0_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_rst_ps7_0_100M_mb_reset_UNCONNECTED : STD_LOGIC;
   signal NLW_rst_ps7_0_100M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal NLW_rst_ps7_0_100M_interconnect_aresetn_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_top_nqueens_0_flag_UNCONNECTED : STD_LOGIC;
   attribute X_INTERFACE_INFO : string;
@@ -553,6 +555,7 @@ comblock_0: component design_1_comblock_0_0
       axil_wready => axi_smc_M01_AXI_WREADY,
       axil_wstrb(3 downto 0) => axi_smc_M01_AXI_WSTRB(3 downto 0),
       axil_wvalid => axi_smc_M01_AXI_WVALID,
+      reg0_i(10) => top_nqueens_0_done,
       reg0_i(9) => top_nqueens_0_done,
       reg0_i(8) => top_nqueens_0_done,
       reg0_i(7) => top_nqueens_0_done,
@@ -563,7 +566,8 @@ comblock_0: component design_1_comblock_0_0
       reg0_i(2) => top_nqueens_0_done,
       reg0_i(1) => top_nqueens_0_done,
       reg0_i(0) => top_nqueens_0_done,
-      reg1_i(9 downto 0) => top_nqueens_0_counter(9 downto 0)
+      reg0_o(0) => comblock_0_reg0_o(0),
+      reg1_i(10 downto 0) => top_nqueens_0_counter(10 downto 0)
     );
 processing_system7_0: component design_1_processing_system7_0_0
      port map (
@@ -642,7 +646,7 @@ rst_ps7_0_100M: component design_1_rst_ps7_0_100M_0
       bus_struct_reset(0) => NLW_rst_ps7_0_100M_bus_struct_reset_UNCONNECTED(0),
       dcm_locked => '1',
       ext_reset_in => processing_system7_0_FCLK_RESET0_N,
-      interconnect_aresetn(0) => rst_ps7_0_100M_interconnect_aresetn(0),
+      interconnect_aresetn(0) => NLW_rst_ps7_0_100M_interconnect_aresetn_UNCONNECTED(0),
       mb_debug_sys_rst => '0',
       mb_reset => NLW_rst_ps7_0_100M_mb_reset_UNCONNECTED,
       peripheral_aresetn(0) => rst_ps7_0_100M_peripheral_aresetn(0),
@@ -655,6 +659,6 @@ top_nqueens_0: component design_1_top_nqueens_0_0
       counter(10 downto 0) => top_nqueens_0_counter(10 downto 0),
       done => top_nqueens_0_done,
       flag => NLW_top_nqueens_0_flag_UNCONNECTED,
-      nRst => rst_ps7_0_100M_interconnect_aresetn(0)
+      nRst => comblock_0_reg0_o(0)
     );
 end STRUCTURE;

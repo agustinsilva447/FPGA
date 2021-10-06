@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Oct  4 19:15:03 2021" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Oct  5 11:44:25 2021" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.4" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -734,11 +734,11 @@
       </ADDRESSBLOCKS>
       <PARAMETERS>
         <PARAMETER NAME="REGS_IN_ENA" VALUE="true"/>
-        <PARAMETER NAME="REGS_IN_DWIDTH" VALUE="10"/>
+        <PARAMETER NAME="REGS_IN_DWIDTH" VALUE="11"/>
         <PARAMETER NAME="REGS_IN_DEPTH" VALUE="2"/>
-        <PARAMETER NAME="REGS_OUT_ENA" VALUE="false"/>
-        <PARAMETER NAME="REGS_OUT_DWIDTH" VALUE="32"/>
-        <PARAMETER NAME="REGS_OUT_DEPTH" VALUE="4"/>
+        <PARAMETER NAME="REGS_OUT_ENA" VALUE="true"/>
+        <PARAMETER NAME="REGS_OUT_DWIDTH" VALUE="1"/>
+        <PARAMETER NAME="REGS_OUT_DEPTH" VALUE="1"/>
         <PARAMETER NAME="DRAM_IO_ENA" VALUE="false"/>
         <PARAMETER NAME="DRAM_IO_DWIDTH" VALUE="16"/>
         <PARAMETER NAME="DRAM_IO_AWIDTH" VALUE="16"/>
@@ -767,14 +767,19 @@
         <PARAMETER NAME="C_AXIL_HIGHADDR" VALUE="0x43C4FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="9" NAME="reg0_i" RIGHT="0" SIGIS="undef" SIGNAME="top_nqueens_0_done">
+        <PORT DIR="I" LEFT="10" NAME="reg0_i" RIGHT="0" SIGIS="undef" SIGNAME="top_nqueens_0_done">
           <CONNECTIONS>
             <CONNECTION INSTANCE="top_nqueens_0" PORT="done"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="9" NAME="reg1_i" RIGHT="0" SIGIS="undef" SIGNAME="top_nqueens_0_counter">
+        <PORT DIR="I" LEFT="10" NAME="reg1_i" RIGHT="0" SIGIS="undef" SIGNAME="top_nqueens_0_counter">
           <CONNECTIONS>
             <CONNECTION INSTANCE="top_nqueens_0" PORT="counter"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="reg0_o" RIGHT="0" SIGIS="undef" SIGNAME="comblock_0_reg0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="top_nqueens_0" PORT="nRst"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="axil_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
@@ -942,6 +947,11 @@
           <PORTMAPS>
             <PORTMAP LOGICAL="reg0_i" PHYSICAL="reg0_i"/>
             <PORTMAP LOGICAL="reg1_i" PHYSICAL="reg1_i"/>
+          </PORTMAPS>
+        </BUSINTERFACE>
+        <BUSINTERFACE BUSNAME="__NOC__" NAME="OUT_REGS" TYPE="INITIATOR" VLNV="ictp:user:OREGS:1.0">
+          <PORTMAPS>
+            <PORTMAP LOGICAL="reg0_o" PHYSICAL="reg0_o"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -2378,11 +2388,7 @@
         <PORT DIR="O" NAME="mb_reset" SIGIS="rst"/>
         <PORT DIR="O" LEFT="0" NAME="bus_struct_reset" RIGHT="0" SIGIS="rst"/>
         <PORT DIR="O" LEFT="0" NAME="peripheral_reset" RIGHT="0" SIGIS="rst"/>
-        <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="rst_ps7_0_100M_interconnect_aresetn">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="top_nqueens_0" PORT="nRst"/>
-          </CONNECTIONS>
-        </PORT>
+        <PORT DIR="O" LEFT="0" NAME="interconnect_aresetn" RIGHT="0" SIGIS="rst"/>
         <PORT DIR="O" LEFT="0" NAME="peripheral_aresetn" RIGHT="0" SIGIS="rst" SIGNAME="rst_ps7_0_100M_peripheral_aresetn">
           <CONNECTIONS>
             <CONNECTION INSTANCE="axi_smc" PORT="aresetn"/>
@@ -2407,9 +2413,9 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="nRst" SIGIS="undef" SIGNAME="rst_ps7_0_100M_interconnect_aresetn">
+        <PORT DIR="I" NAME="nRst" SIGIS="undef" SIGNAME="comblock_0_reg0_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="interconnect_aresetn"/>
+            <CONNECTION INSTANCE="comblock_0" PORT="reg0_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="flag" SIGIS="undef"/>
