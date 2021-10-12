@@ -5,7 +5,8 @@ use ieee.numeric_std.all;
 entity fsm is
 generic(K : integer;  -- position of the block (starting from zero)
         M : integer;  -- size+1 of the board MxM
-        N : integer   -- N bits required to count upto size of the board);
+        N : integer;   -- N bits required to count upto size of the board);
+        FIFO_DEPTH: integer
     );    
 port(
     clk, nRst: in std_logic;   
@@ -31,6 +32,9 @@ signal u_i, u_o: std_logic_vector(N-1 downto 0);
 signal ce, complete_tick, valid, done: std_logic := '0';
 signal reset_control, acks_in, nexts_in, acks_out, nexts_out: std_logic;
 
+signal wr_en, rd_en, empty, full: std_logic;
+signal wr_data, rd_data: std_logic_vector((N*(K+1)-1) downto 0);
+signal fill_count_i : integer range FIFO_DEPTH - 1 downto 0;
 
 begin
     dut: entity work.up_counter 
@@ -39,21 +43,29 @@ begin
     logic: entity work.ctrl_logic 
     generic map (K => K, N => N)
     port map (clk => clk, reset => reset_control, a => a_in, u => u_i, valid => valid, done => done);
-    
-    acks_in <= ack_in;
-    ack_out <= acks_out;
-    nexts_in <= next_in;
-    next_out <= nexts_out;
+    fifos: entity work.fifo
+    generic map (RAM_WIDTH => (N*(K+1)), RAM_DEPTH => FIFO_DEPTH)
+    port map (clk => clk, rst => nRst, wr_en =>wr_en , wr_data => wr_data, rd_en => rd_en, rd_data => rd_data, empty => empty, full => full, fill_count => fill_count_i);
+        
+    u_i <= u_o;
+    output_state <= output_i;    
     
     GENERATE_FOR_in: for i in 0 to K-1 generate
         asin_array(i) <= a_in(((i+1)*N-1) downto i*N);
     end generate; 
-    GENERATE_FOR_out: for i in 0 to K generate
-        a_out(((i+1)*N-1) downto i*N) <= asout_array(i);
-    end generate; 
     
-    u_i <= u_o;
-    output_state <= output_i;    
+    acks_in <= ack_in;
+    nexts_in <= next_in;
+    ack_out <= empty;
+    next_out <= nexts_out;
+    rd_en <= nexts_in;
+    wr_en <= acks_out and not full;  
+
+    GENERATE_FOR_out: for i in 0 to K generate
+        wr_data(((i+1)*N-1) downto i*N) <= asout_array(i);
+    end generate; 
+    a_out <= rd_data;
+    
 
     SYNC_PROC: process(clk, nRst)
     begin

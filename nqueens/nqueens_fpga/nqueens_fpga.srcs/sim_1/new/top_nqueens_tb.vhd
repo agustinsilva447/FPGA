@@ -8,14 +8,15 @@ end entity;
 architecture sim of top_nqueens_tb is    
     constant M: integer := 10;  -- size of the board MxM
     constant N: integer := 5;  -- N bits required to count upto size of the board;
-    constant P: integer := 10; -- N bits required for the counter;
+    constant P: integer := 10; -- P bits required for the counter;
+    constant FIFO_DEPTH: integer := 20; -- Depth of the FIFO
     signal counter: unsigned(P downto 0) := (others => '0');
     signal flag: std_logic := '0';   
     signal done: std_logic := '0';   
     signal nRst, clk: std_logic;     
 begin
     top: entity work.top_nqueens
-    generic map (M => M, N => N, P =>P)
+    generic map (M => M, N => N, P =>P, FIFO_DEPTH=>FIFO_DEPTH)
     port map (clk=>clk, nRst=>nRst, flag=>flag, done=>done, counter=>counter);
             
     clock_process: process

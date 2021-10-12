@@ -1,31 +1,25 @@
 library ieee;
 use ieee.std_logic_1164.all;
 
-entity ring_buffer is
+entity fifo is
   generic (
-    RAM_WIDTH : natural;
-    RAM_DEPTH : natural
+    RAM_WIDTH : integer;
+    RAM_DEPTH : integer
   );
   port (
     clk : in std_logic;
-    rst : in std_logic;
-    
+    rst : in std_logic;    
     wr_en : in std_logic;
-    wr_data : in std_logic_vector(RAM_WIDTH - 1 downto 0);
-    
+    wr_data : in std_logic_vector(RAM_WIDTH - 1 downto 0);    
     rd_en : in std_logic;
-    rd_data : out std_logic_vector(RAM_WIDTH - 1 downto 0);
-    
+    rd_data : out std_logic_vector(RAM_WIDTH - 1 downto 0);    
     empty : out std_logic;
-    empty_next : out std_logic;
-    full : out std_logic;
-    full_next : out std_logic;
-    
+    full : out std_logic;    
     fill_count : out integer range RAM_DEPTH - 1 downto 0
   );
-end ring_buffer;
+end fifo;
 
-architecture rtl of ring_buffer is
+architecture rtl of fifo is
 
   type ram_type is array (0 to RAM_DEPTH - 1) of std_logic_vector(wr_data'range);
   signal ram : ram_type;
@@ -55,9 +49,7 @@ begin
 
   -- Set the flags
   empty_i <= '1' when fill_count_i = 0 else '0';
-  empty_next <= '1' when fill_count_i <= 1 else '0';
   full_i <= '1' when fill_count_i >= RAM_DEPTH - 1 else '0';
-  full_next <= '1' when fill_count_i >= RAM_DEPTH - 2 else '0';
 
   -- Update the head pointer in write
   PROC_HEAD : process(clk)

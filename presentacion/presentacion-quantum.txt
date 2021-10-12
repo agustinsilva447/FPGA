@@ -1,3 +1,19 @@
+0 - History
+    a - Newtonian mechanics
+    b - Boltzmann (energy levels could be discrete),
+        Kirchhoff (black-body radiation problem), 
+        Hertz (reports photoelectric effect), 
+    c - Planck (black-body radiation solution, e=h.v)
+        Einstein (explains photoelectric effect, light is quantum), 
+        Bohr (model of the atom)
+    d - de Broglie (extends wave–particle duality), 
+        Pauli (exclusion principle)
+        Born (matrix mechanics),
+    e - Dirac (Fermi–Dirac statistics)
+        Schrödinger (wave-function equation), 
+        Heisenberg (uncertainty principle), 
+    f - 1927 Solvay Conference
+        Copenhagen interpretation 
 1 - Quantum vs classical mechanics
     a - Superposition
     b - Measurement

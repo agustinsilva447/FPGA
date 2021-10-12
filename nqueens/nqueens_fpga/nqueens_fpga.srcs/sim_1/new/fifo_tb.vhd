@@ -4,10 +4,10 @@ use ieee.numeric_std.all;
 
 use std.env.finish;
 
-entity ring_buffer_tb is
-end ring_buffer_tb; 
+entity fifo_tb is
+end fifo_tb; 
 
-architecture sim of ring_buffer_tb is
+architecture sim of fifo_tb is
 
   constant clock_period : time := 10 ns;
 
@@ -23,14 +23,12 @@ architecture sim of ring_buffer_tb is
   signal rd_en : std_logic := '0';
   signal rd_data : std_logic_vector(RAM_WIDTH - 1 downto 0);
   signal empty : std_logic;
-  signal empty_next : std_logic;
   signal full : std_logic;
-  signal full_next : std_logic;
   signal fill_count : integer range RAM_DEPTH - 1 downto 0;
 
 begin
 
-  DUT : entity work.ring_buffer(rtl)
+  DUT : entity work.fifo
     generic map (
       RAM_WIDTH => RAM_WIDTH,
       RAM_DEPTH => RAM_DEPTH
@@ -43,9 +41,7 @@ begin
       rd_en => rd_en,
       rd_data => rd_data,
       empty => empty,
-      empty_next => empty_next,
       full => full,
-      full_next => full_next,
       fill_count => fill_count
     );
 
@@ -64,8 +60,6 @@ begin
       wr_en <= '0';
       rd_en <= '1';
       wait until empty = '1';
-      wait for 10 * clock_period;      
-      finish;
     end process;
     
 end architecture;

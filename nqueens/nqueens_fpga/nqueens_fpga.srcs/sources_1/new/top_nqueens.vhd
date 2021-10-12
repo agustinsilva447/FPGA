@@ -5,7 +5,8 @@ use ieee.numeric_std.all;
 entity top_nqueens is
 generic(M : integer := 10;  -- size of the board MxM
         N : integer := 5 ;  -- N bits required to count upto size of the board;
-        P : integer := 11  -- N bits required for the counter;
+        P : integer := 11;  -- N bits required for the counter;
+        FIFO_DEPTH: integer := 20
     );  
 port(
     clk, nRst: in std_logic; 
@@ -93,39 +94,39 @@ begin
     ---------------
     
     fsm_9: entity work.fsm
-    generic map (K => 9, M => M, N =>N)
+    generic map (K => 9, M => M, N =>N, FIFO_DEPTH=>FIFO_DEPTH)
     port map (clk=>clk, nRst=>nRst, a_in=>a_in_9, ack_in=>ack_in_9, next_in=>next_in_9, a_out=>a_out_9, ack_out=>ack_out_9, next_out=>next_out_9, output_state=>output_state_9);       
     
     fsm_8: entity work.fsm
-    generic map (K => 8, M => M, N =>N)
+    generic map (K => 8, M => M, N =>N, FIFO_DEPTH=>FIFO_DEPTH)
     port map (clk=>clk, nRst=>nRst, a_in=>a_in_8, ack_in=>ack_in_8, next_in=>next_in_8, a_out=>a_out_8, ack_out=>ack_out_8, next_out=>next_out_8, output_state=>output_state_8);       
     
     fsm_7: entity work.fsm
-    generic map (K => 7, M => M, N =>N)
+    generic map (K => 7, M => M, N =>N, FIFO_DEPTH=>FIFO_DEPTH)
     port map (clk=>clk, nRst=>nRst, a_in=>a_in_7, ack_in=>ack_in_7, next_in=>next_in_7, a_out=>a_out_7, ack_out=>ack_out_7, next_out=>next_out_7, output_state=>output_state_7);       
     
     fsm_6: entity work.fsm
-    generic map (K => 6, M => M, N =>N)
+    generic map (K => 6, M => M, N =>N, FIFO_DEPTH=>FIFO_DEPTH)
     port map (clk=>clk, nRst=>nRst, a_in=>a_in_6, ack_in=>ack_in_6, next_in=>next_in_6, a_out=>a_out_6, ack_out=>ack_out_6, next_out=>next_out_6, output_state=>output_state_6);   
     
     fsm_5: entity work.fsm
-    generic map (K => 5, M => M, N =>N)
+    generic map (K => 5, M => M, N =>N, FIFO_DEPTH=>FIFO_DEPTH)
     port map (clk=>clk, nRst=>nRst, a_in=>a_in_5, ack_in=>ack_in_5, next_in=>next_in_5, a_out=>a_out_5, ack_out=>ack_out_5, next_out=>next_out_5, output_state=>output_state_5);   
     
     fsm_4: entity work.fsm
-    generic map (K => 4, M => M, N =>N)
+    generic map (K => 4, M => M, N =>N, FIFO_DEPTH=>FIFO_DEPTH)
     port map (clk=>clk, nRst=>nRst, a_in=>a_in_4, ack_in=>ack_in_4, next_in=>next_in_4, a_out=>a_out_4, ack_out=>ack_out_4, next_out=>next_out_4, output_state=>output_state_4);   
     
     fsm_3: entity work.fsm
-    generic map (K => 3, M => M, N =>N)
+    generic map (K => 3, M => M, N =>N, FIFO_DEPTH=>FIFO_DEPTH)
     port map (clk=>clk, nRst=>nRst, a_in=>a_in_3, ack_in=>ack_in_3, next_in=>next_in_3, a_out=>a_out_3, ack_out=>ack_out_3, next_out=>next_out_3, output_state=>output_state_3);   
     
     fsm_2: entity work.fsm
-    generic map (K => 2, M => M, N =>N)
+    generic map (K => 2, M => M, N =>N, FIFO_DEPTH=>FIFO_DEPTH)
     port map (clk=>clk, nRst=>nRst, a_in=>a_in_2, ack_in=>ack_in_2, next_in=>next_in_2, a_out=>a_out_2, ack_out=>ack_out_2, next_out=>next_out_2, output_state=>output_state_2);   
     
     fsm_1: entity work.fsm
-    generic map (K => 1, M => M, N =>N)
+    generic map (K => 1, M => M, N =>N, FIFO_DEPTH=>FIFO_DEPTH)
     port map (clk=>clk, nRst=>nRst, a_in=>a_in_1, ack_in=>ack_in_1, next_in=>next_in_1, a_out=>a_out_1, ack_out=>ack_out_1, next_out=>next_out_1, output_state=>output_state_1);
     
     ---------------
