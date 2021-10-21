@@ -1,31 +1,4 @@
-6 - Quantum gates 
-    a - Schrodinger equation
-    b - unitary matrix
-    c - general 1-qubit gate
-    d - multiple-qubit gates
-7 - Quantum circuits
-    a - linear vs nonlinear evolution
-    b - measurement gate
-    c - universal gate set
-    d - no-cloning theorem
-
-8 - Quantum algorithms
-    b - quantum teleportation
-    c - superdense coding
-    d - Deutsch-Jozsa algorithm
-    e - Grover’s algorithm
-    f - Quantum Fourier Transform
-    g - Shor’s algorithm
-    h - HHL algorithm
-    i - Quantum Approximate Optimization Algorithm
-    j - Variational Quantum Eigensolver
-
-9 - Quantum everywhere    
-    a - Quantum Machine Learning
-        a.1 - Quantum Support Vector Machines
-        a.2 - Quantum Generative Adversarial Networks
-        a.3 - Quantum Neural Networks
-        a.4 - Quantum Reinforcement Learning
-    b - Quantum Game Theory
-    d - Quantum Cryptography
-    f - Quantum Simulations
+Why do we need Quantum Computers?
+Why do not we just emulate Quantum Computers with Classical Hardware (CPU/GPU/FPGA)?
+Why are Quantum Computers so hard to build?
+What do we do in the meanwhile?
