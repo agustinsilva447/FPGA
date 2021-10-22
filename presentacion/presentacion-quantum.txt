@@ -1,4 +1,0 @@
-Why do we need Quantum Computers?
-Why do not we just emulate Quantum Computers with Classical Hardware (CPU/GPU/FPGA)?
-Why are Quantum Computers so hard to build?
-What do we do in the meanwhile?
