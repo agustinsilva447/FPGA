@@ -58,7 +58,7 @@ begin
     nexts_in <= next_in;
     ack_out <= empty;
     next_out <= nexts_out;
-    rd_en <= nexts_in;
+    rd_en <= nexts_in and not empty;
     wr_en <= acks_out and not full;  
 
     GENERATE_FOR_out: for i in 0 to K generate

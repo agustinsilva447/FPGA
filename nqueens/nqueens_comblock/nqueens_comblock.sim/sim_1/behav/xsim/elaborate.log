@@ -1,0 +1,35 @@
+Vivado Simulator 2019.2
+Copyright 1986-1999, 2001-2019 Xilinx, Inc. All Rights Reserved.
+Running: C:/Xilinx/Vivado/2019.2/bin/unwrapped/win64.o/xelab.exe -wto ddcff3e3f2104f8f831a1700956ac449 --incr --debug typical --relax --mt 2 -L xil_defaultlib -L secureip --snapshot top_nqueens_tb_behav xil_defaultlib.top_nqueens_tb -log elaborate.log 
+Using 2 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture arch of entity xil_defaultlib.up_counter [\up_counter(m=10,n=5)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=9,n=5)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=9,m=10,n=5)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=8,n=5)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=8,m=10,n=5)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=7,n=5)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=7,m=10,n=5)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=6,n=5)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=6,m=10,n=5)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=5,n=5)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=5,m=10,n=5)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=4,n=5)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=4,m=10,n=5)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=3,n=5)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=3,m=10,n=5)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=2,n=5)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=2,m=10,n=5)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic [\ctrl_logic(k=1,n=5)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=1,m=10,n=5)\]
+Compiling architecture rtl of entity xil_defaultlib.top_nqueens [\top_nqueens(p=10)\]
+Compiling architecture sim of entity xil_defaultlib.top_nqueens_tb
+Built simulation snapshot top_nqueens_tb_behav

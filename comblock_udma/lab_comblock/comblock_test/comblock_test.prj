@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="comblock_test" location="C:/Users/mlabadm/Desktop/Github/FPGA/comblock_udma/lab_comblock/comblock_test" platform="C:/Users/mlabadm/Desktop/Github/FPGA/comblock_udma/lab_comblock/comblock_wrapper/export/comblock_wrapper/comblock_wrapper.xpfm" platformUID="xilinx:zed::0.0(custom)" systemProject="comblock_test_system" sysConfig="comblock_wrapper" runtime="cpp" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="b8171644ea798f1379261fc81b412aaf">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.1168508925" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.1025716694" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>
