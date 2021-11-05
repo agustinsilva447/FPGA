@@ -1,24 +1,10 @@
-Nothing to build in platform 'design_1_wrapper'
-
-19:55:43 **** Incremental Build of configuration Debug for project nqueens_comblock ****
+15:14:02 **** Incremental Build of project design_1_wrapper ****
+buildplatform.bat 59289 design_1_wrapper no_domain_build 
+XSDB Server Channel: tcfchan#46
+15:14:04 **** Incremental Build of configuration Debug for project nqueens_comblock ****
 make all 
 make --no-print-directory pre-build
 a9-linaro-pre-build-step
 ' '
 make --no-print-directory main-build
-'Building file: ../src/helloworld.c'
-'Invoking: ARM v7 gcc compiler'
-arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
-'Finished building: ../src/helloworld.c'
-' '
-'Building target: nqueens_comblock.elf'
-'Invoking: ARM v7 gcc linker'
-arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_domain/bsplib/lib -o "nqueens_comblock.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
-'Finished building target: nqueens_comblock.elf'
-' '
-'Invoking: ARM v7 Print Size'
-arm-none-eabi-size nqueens_comblock.elf  |tee "nqueens_comblock.elf.size"
-   text	   data	    bss	    dec	    hex	filename
-  29632	   1544	  23256	  54432	   d4a0	nqueens_comblock.elf
-'Finished building: nqueens_comblock.elf.size'
-' '
+make[1]: Nothing to be done for 'main-build'.

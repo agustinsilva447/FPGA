@@ -32,5 +32,6 @@ begin
         wait for 5 ns;
         nRst <= '0';  
         wait until done = '1';  
+        wait;
     end process;
 end architecture;

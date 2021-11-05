@@ -25,11 +25,11 @@ begin
             count_reg <= count_next;
         else  
             count_reg <= count_reg;
-        end if;
-        
+        end if;        
     end process;
     
     count_next <= (others => '0') when count_reg=(M) else (count_reg + 1);   
     complete_tick <= '1' when count_reg = (M) else '0'; 
     count <= std_logic_vector(count_reg); 
+    
 end arch;

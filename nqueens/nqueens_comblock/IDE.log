@@ -796,3 +796,1290 @@ con
 19:55:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
 19:55:56 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
 19:55:56 INFO  : Context for 'APU' is selected.
+19:55:59 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+19:55:59 INFO  : 'configparams force-mem-access 1' command is executed.
+19:55:59 INFO  : Context for 'APU' is selected.
+19:55:59 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+19:55:59 INFO  : 'ps7_init' command is executed.
+19:55:59 INFO  : 'ps7_post_config' command is executed.
+19:55:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:55:59 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:55:59 INFO  : 'configparams force-mem-access 0' command is executed.
+19:55:59 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:55:59 INFO  : Memory regions updated for context APU
+19:55:59 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:55:59 INFO  : 'con' command is executed.
+19:55:59 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:55:59 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+11:45:36 INFO  : Disconnected from the channel tcfchan#16.
+11:45:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:45:37 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+11:45:37 INFO  : 'jtag frequency' command is executed.
+11:45:37 INFO  : Context for 'APU' is selected.
+11:45:37 INFO  : System reset is completed.
+11:45:40 INFO  : 'after 3000' command is executed.
+11:45:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+11:45:43 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+11:45:43 INFO  : Context for 'APU' is selected.
+11:45:45 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:45:45 INFO  : 'configparams force-mem-access 1' command is executed.
+11:45:45 INFO  : Context for 'APU' is selected.
+11:45:45 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+11:45:45 INFO  : 'ps7_init' command is executed.
+11:45:45 INFO  : 'ps7_post_config' command is executed.
+11:45:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:45:45 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:45:45 INFO  : 'configparams force-mem-access 0' command is executed.
+11:45:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:45:45 INFO  : Memory regions updated for context APU
+11:45:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:45:45 INFO  : 'con' command is executed.
+11:45:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:45:45 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+11:45:53 INFO  : Disconnected from the channel tcfchan#17.
+11:45:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+11:45:54 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+11:45:54 INFO  : 'jtag frequency' command is executed.
+11:45:54 INFO  : Context for 'APU' is selected.
+11:45:54 INFO  : System reset is completed.
+11:45:57 INFO  : 'after 3000' command is executed.
+11:45:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+11:46:00 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+11:46:00 INFO  : Context for 'APU' is selected.
+11:46:02 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+11:46:02 INFO  : 'configparams force-mem-access 1' command is executed.
+11:46:02 INFO  : Context for 'APU' is selected.
+11:46:02 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+11:46:02 INFO  : 'ps7_init' command is executed.
+11:46:02 INFO  : 'ps7_post_config' command is executed.
+11:46:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:46:03 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+11:46:03 INFO  : 'configparams force-mem-access 0' command is executed.
+11:46:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+11:46:03 INFO  : Memory regions updated for context APU
+11:46:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+11:46:03 INFO  : 'con' command is executed.
+11:46:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+11:46:03 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+13:13:40 INFO  : Checking for BSP changes to sync application flags for project 'nqueens_comblock'...
+13:13:55 INFO  : Disconnected from the channel tcfchan#18.
+13:13:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:13:56 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+13:13:56 INFO  : 'jtag frequency' command is executed.
+13:13:56 INFO  : Context for 'APU' is selected.
+13:13:56 INFO  : System reset is completed.
+13:13:59 INFO  : 'after 3000' command is executed.
+13:13:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+13:14:02 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+13:14:02 INFO  : Context for 'APU' is selected.
+13:14:04 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+13:14:04 INFO  : 'configparams force-mem-access 1' command is executed.
+13:14:04 INFO  : Context for 'APU' is selected.
+13:14:04 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+13:14:04 INFO  : 'ps7_init' command is executed.
+13:14:04 INFO  : 'ps7_post_config' command is executed.
+13:14:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:14:04 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:14:04 INFO  : 'configparams force-mem-access 0' command is executed.
+13:14:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:14:04 INFO  : Memory regions updated for context APU
+13:14:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:14:04 INFO  : 'con' command is executed.
+13:14:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:14:04 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+13:14:20 INFO  : Disconnected from the channel tcfchan#19.
+13:14:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:14:21 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+13:14:21 INFO  : 'jtag frequency' command is executed.
+13:14:21 INFO  : Context for 'APU' is selected.
+13:14:21 INFO  : System reset is completed.
+13:14:24 INFO  : 'after 3000' command is executed.
+13:14:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+13:14:26 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+13:14:26 INFO  : Context for 'APU' is selected.
+13:14:28 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+13:14:28 INFO  : 'configparams force-mem-access 1' command is executed.
+13:14:28 INFO  : Context for 'APU' is selected.
+13:14:28 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+13:14:29 INFO  : 'ps7_init' command is executed.
+13:14:29 INFO  : 'ps7_post_config' command is executed.
+13:14:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:14:29 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:14:29 INFO  : 'configparams force-mem-access 0' command is executed.
+13:14:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:14:29 INFO  : Memory regions updated for context APU
+13:14:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:14:29 INFO  : 'con' command is executed.
+13:14:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:14:29 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+13:14:57 INFO  : Disconnected from the channel tcfchan#20.
+13:14:58 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:14:58 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+13:14:58 INFO  : 'jtag frequency' command is executed.
+13:14:58 INFO  : Context for 'APU' is selected.
+13:14:58 INFO  : System reset is completed.
+13:15:01 INFO  : 'after 3000' command is executed.
+13:15:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+13:15:03 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+13:15:03 INFO  : Context for 'APU' is selected.
+13:15:05 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+13:15:05 INFO  : 'configparams force-mem-access 1' command is executed.
+13:15:05 INFO  : Context for 'APU' is selected.
+13:15:05 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+13:15:06 INFO  : 'ps7_init' command is executed.
+13:15:06 INFO  : 'ps7_post_config' command is executed.
+13:15:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:15:06 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:15:06 INFO  : 'configparams force-mem-access 0' command is executed.
+13:15:06 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:15:06 INFO  : Memory regions updated for context APU
+13:15:06 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:15:06 INFO  : 'con' command is executed.
+13:15:06 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:15:06 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+13:15:12 INFO  : Disconnected from the channel tcfchan#21.
+13:15:13 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:15:13 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+13:15:13 INFO  : 'jtag frequency' command is executed.
+13:15:13 INFO  : Context for 'APU' is selected.
+13:15:14 INFO  : System reset is completed.
+13:15:17 INFO  : 'after 3000' command is executed.
+13:15:17 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+13:15:19 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+13:15:19 INFO  : Context for 'APU' is selected.
+13:15:21 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+13:15:21 INFO  : 'configparams force-mem-access 1' command is executed.
+13:15:21 INFO  : Context for 'APU' is selected.
+13:15:21 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+13:15:21 INFO  : 'ps7_init' command is executed.
+13:15:21 INFO  : 'ps7_post_config' command is executed.
+13:15:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:15:22 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:15:22 INFO  : 'configparams force-mem-access 0' command is executed.
+13:15:22 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:15:22 INFO  : Memory regions updated for context APU
+13:15:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:15:22 INFO  : 'con' command is executed.
+13:15:22 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:15:22 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+14:38:10 WARN  : channel "tcfchan#2" closed
+14:38:11 INFO  : Disconnected from the channel tcfchan#22.
+14:38:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:38:12 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+14:38:12 INFO  : 'jtag frequency' command is executed.
+14:38:12 INFO  : Context for 'APU' is selected.
+14:38:12 INFO  : System reset is completed.
+14:38:15 INFO  : 'after 3000' command is executed.
+14:38:15 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+14:38:18 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+14:38:18 INFO  : Context for 'APU' is selected.
+14:38:20 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+14:38:20 INFO  : 'configparams force-mem-access 1' command is executed.
+14:38:20 INFO  : Context for 'APU' is selected.
+14:38:20 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+14:38:20 INFO  : 'ps7_init' command is executed.
+14:38:20 INFO  : 'ps7_post_config' command is executed.
+14:38:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:38:20 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:38:20 INFO  : 'configparams force-mem-access 0' command is executed.
+14:38:20 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:38:20 INFO  : Memory regions updated for context APU
+14:38:20 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:38:20 INFO  : 'con' command is executed.
+14:38:20 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:38:20 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\systemdebugger_nqueens_comblock_system_standalone.tcl'
+14:38:28 INFO  : Checking for BSP changes to sync application flags for project 'nqueens_comblock'...
+14:38:31 ERROR : (XSDB Server)ERROR: [Hsi 55-1571] The design file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa is already opened
+
+14:38:38 INFO  : Disconnected from the channel tcfchan#23.
+14:38:39 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:38:40 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+14:38:40 INFO  : 'jtag frequency' command is executed.
+14:38:40 INFO  : Context for 'APU' is selected.
+14:38:40 INFO  : System reset is completed.
+14:38:43 INFO  : 'after 3000' command is executed.
+14:38:43 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+14:38:45 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+14:38:45 INFO  : Context for 'APU' is selected.
+14:38:47 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+14:38:47 INFO  : 'configparams force-mem-access 1' command is executed.
+14:38:47 INFO  : Context for 'APU' is selected.
+14:38:47 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+14:38:48 INFO  : 'ps7_init' command is executed.
+14:38:48 INFO  : 'ps7_post_config' command is executed.
+14:38:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:38:48 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:38:48 INFO  : 'configparams force-mem-access 0' command is executed.
+14:38:48 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:38:48 INFO  : Memory regions updated for context APU
+14:38:48 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:38:48 INFO  : 'con' command is executed.
+14:38:48 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:38:48 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+16:05:03 INFO  : Connected to target on host '140.105.28.47' and port '3121'.
+16:07:18 INFO  : Connected to target on host '140.105.28.47' and port '3121'.
+16:07:25 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:07:35 INFO  : Disconnected from the channel tcfchan#25.
+16:07:36 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:07:36 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+16:07:36 INFO  : 'jtag frequency' command is executed.
+16:07:36 INFO  : Context for 'APU' is selected.
+16:07:36 INFO  : System reset is completed.
+16:07:39 INFO  : 'after 3000' command is executed.
+16:07:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+16:07:42 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+16:07:42 INFO  : Context for 'APU' is selected.
+16:07:44 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:07:44 INFO  : 'configparams force-mem-access 1' command is executed.
+16:07:44 INFO  : Context for 'APU' is selected.
+16:07:44 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+16:07:44 INFO  : 'ps7_init' command is executed.
+16:07:44 INFO  : 'ps7_post_config' command is executed.
+16:07:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:07:45 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:07:45 INFO  : 'configparams force-mem-access 0' command is executed.
+16:07:45 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:07:45 INFO  : Memory regions updated for context APU
+16:07:45 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:07:45 INFO  : 'con' command is executed.
+16:07:45 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:07:45 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+16:08:49 INFO  : Disconnected from the channel tcfchan#27.
+16:08:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:08:50 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+16:08:50 INFO  : 'jtag frequency' command is executed.
+16:08:50 INFO  : Context for 'APU' is selected.
+16:08:50 INFO  : System reset is completed.
+16:08:53 INFO  : 'after 3000' command is executed.
+16:08:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+16:08:55 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+16:08:55 INFO  : Context for 'APU' is selected.
+16:08:58 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:08:58 INFO  : 'configparams force-mem-access 1' command is executed.
+16:08:58 INFO  : Context for 'APU' is selected.
+16:08:58 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+16:08:58 INFO  : 'ps7_init' command is executed.
+16:08:58 INFO  : 'ps7_post_config' command is executed.
+16:08:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:08:58 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:08:58 INFO  : 'configparams force-mem-access 0' command is executed.
+16:08:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:08:58 INFO  : Memory regions updated for context APU
+16:08:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:08:58 INFO  : 'con' command is executed.
+16:08:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:08:58 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+16:09:16 INFO  : Disconnected from the channel tcfchan#28.
+16:09:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:09:17 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+16:09:17 INFO  : 'jtag frequency' command is executed.
+16:09:17 INFO  : Context for 'APU' is selected.
+16:09:17 INFO  : System reset is completed.
+16:09:20 INFO  : 'after 3000' command is executed.
+16:09:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+16:09:22 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+16:09:22 INFO  : Context for 'APU' is selected.
+16:09:24 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:09:24 INFO  : 'configparams force-mem-access 1' command is executed.
+16:09:24 INFO  : Context for 'APU' is selected.
+16:09:24 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+16:09:25 INFO  : 'ps7_init' command is executed.
+16:09:25 INFO  : 'ps7_post_config' command is executed.
+16:09:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:09:25 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:09:25 INFO  : 'configparams force-mem-access 0' command is executed.
+16:09:25 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:09:25 INFO  : Memory regions updated for context APU
+16:09:25 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:09:25 INFO  : 'con' command is executed.
+16:09:25 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:09:25 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+16:09:37 INFO  : Disconnected from the channel tcfchan#29.
+16:09:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:09:38 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+16:09:38 INFO  : 'jtag frequency' command is executed.
+16:09:38 INFO  : Context for 'APU' is selected.
+16:09:38 INFO  : System reset is completed.
+16:09:41 INFO  : 'after 3000' command is executed.
+16:09:41 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+16:09:43 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+16:09:43 INFO  : Context for 'APU' is selected.
+16:09:46 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:09:46 INFO  : 'configparams force-mem-access 1' command is executed.
+16:09:46 INFO  : Context for 'APU' is selected.
+16:09:46 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+16:09:46 INFO  : 'ps7_init' command is executed.
+16:09:46 INFO  : 'ps7_post_config' command is executed.
+16:09:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:09:46 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:09:46 INFO  : 'configparams force-mem-access 0' command is executed.
+16:09:46 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:09:46 INFO  : Memory regions updated for context APU
+16:09:46 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:09:46 INFO  : 'con' command is executed.
+16:09:46 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:09:46 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+13:06:41 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+13:07:03 INFO  : Disconnected from the channel tcfchan#30.
+13:07:04 INFO  : The hardware specfication used by project 'nqueens_comblock' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+13:07:04 INFO  : The file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\nqueens_comblock\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+13:07:04 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\nqueens_comblock\_ide\bitstream' in project 'nqueens_comblock'.
+13:07:04 INFO  : The file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\nqueens_comblock\_ide\psinit\ps7_init.tcl' stored in project is removed.
+13:07:11 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\nqueens_comblock\_ide\psinit' in project 'nqueens_comblock'.
+13:07:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:07:11 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+13:07:11 INFO  : 'jtag frequency' command is executed.
+13:07:11 INFO  : Context for 'APU' is selected.
+13:07:11 INFO  : System reset is completed.
+13:07:14 INFO  : 'after 3000' command is executed.
+13:07:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+13:07:17 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+13:07:17 INFO  : Context for 'APU' is selected.
+13:07:17 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+13:07:17 INFO  : 'configparams force-mem-access 1' command is executed.
+13:07:17 INFO  : Context for 'APU' is selected.
+13:07:17 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+13:07:17 INFO  : 'ps7_init' command is executed.
+13:07:17 INFO  : 'ps7_post_config' command is executed.
+13:07:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:07:17 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:07:17 INFO  : 'configparams force-mem-access 0' command is executed.
+13:07:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:07:17 INFO  : Memory regions updated for context APU
+13:07:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:07:17 INFO  : 'con' command is executed.
+13:07:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:07:17 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+13:07:33 INFO  : Disconnected from the channel tcfchan#32.
+13:07:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:07:35 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+13:07:35 INFO  : 'jtag frequency' command is executed.
+13:07:35 INFO  : Context for 'APU' is selected.
+13:07:35 INFO  : System reset is completed.
+13:07:38 INFO  : 'after 3000' command is executed.
+13:07:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+13:07:40 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+13:07:40 INFO  : Context for 'APU' is selected.
+13:07:40 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+13:07:40 INFO  : 'configparams force-mem-access 1' command is executed.
+13:07:40 INFO  : Context for 'APU' is selected.
+13:07:40 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+13:07:40 INFO  : 'ps7_init' command is executed.
+13:07:40 INFO  : 'ps7_post_config' command is executed.
+13:07:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:07:41 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:07:41 INFO  : 'configparams force-mem-access 0' command is executed.
+13:07:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:07:41 INFO  : Memory regions updated for context APU
+13:07:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:07:41 INFO  : 'con' command is executed.
+13:07:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:07:41 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+13:07:50 INFO  : Checking for BSP changes to sync application flags for project 'nqueens_comblock'...
+13:07:58 INFO  : Disconnected from the channel tcfchan#33.
+13:07:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:07:59 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+13:07:59 INFO  : 'jtag frequency' command is executed.
+13:07:59 INFO  : Context for 'APU' is selected.
+13:07:59 INFO  : System reset is completed.
+13:08:02 INFO  : 'after 3000' command is executed.
+13:08:02 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+13:08:04 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+13:08:05 INFO  : Context for 'APU' is selected.
+13:08:05 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+13:08:05 INFO  : 'configparams force-mem-access 1' command is executed.
+13:08:05 INFO  : Context for 'APU' is selected.
+13:08:05 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+13:08:05 INFO  : 'ps7_init' command is executed.
+13:08:05 INFO  : 'ps7_post_config' command is executed.
+13:08:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:08:05 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:08:05 INFO  : 'configparams force-mem-access 0' command is executed.
+13:08:05 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:08:05 INFO  : Memory regions updated for context APU
+13:08:05 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:08:05 INFO  : 'con' command is executed.
+13:08:05 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:08:05 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+13:08:16 INFO  : Checking for BSP changes to sync application flags for project 'nqueens_comblock'...
+13:08:22 INFO  : Disconnected from the channel tcfchan#34.
+13:08:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:08:23 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+13:08:23 INFO  : 'jtag frequency' command is executed.
+13:08:23 INFO  : Context for 'APU' is selected.
+13:08:23 INFO  : System reset is completed.
+13:08:26 INFO  : 'after 3000' command is executed.
+13:08:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+13:08:28 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+13:08:28 INFO  : Context for 'APU' is selected.
+13:08:28 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+13:08:28 INFO  : 'configparams force-mem-access 1' command is executed.
+13:08:28 INFO  : Context for 'APU' is selected.
+13:08:28 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+13:08:29 INFO  : 'ps7_init' command is executed.
+13:08:29 INFO  : 'ps7_post_config' command is executed.
+13:08:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:08:29 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:08:29 INFO  : 'configparams force-mem-access 0' command is executed.
+13:08:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:08:29 INFO  : Memory regions updated for context APU
+13:08:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:08:29 INFO  : 'con' command is executed.
+13:08:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:08:29 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+13:09:15 INFO  : Checking for BSP changes to sync application flags for project 'nqueens_comblock'...
+13:09:22 INFO  : Disconnected from the channel tcfchan#35.
+13:09:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:09:24 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+13:09:24 INFO  : 'jtag frequency' command is executed.
+13:09:24 INFO  : Context for 'APU' is selected.
+13:09:24 INFO  : System reset is completed.
+13:09:27 INFO  : 'after 3000' command is executed.
+13:09:27 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+13:09:29 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+13:09:29 INFO  : Context for 'APU' is selected.
+13:09:29 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+13:09:29 INFO  : 'configparams force-mem-access 1' command is executed.
+13:09:29 INFO  : Context for 'APU' is selected.
+13:09:29 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+13:09:29 INFO  : 'ps7_init' command is executed.
+13:09:29 INFO  : 'ps7_post_config' command is executed.
+13:09:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:09:29 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:09:30 INFO  : 'configparams force-mem-access 0' command is executed.
+13:09:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:09:30 INFO  : Memory regions updated for context APU
+13:09:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:09:30 INFO  : 'con' command is executed.
+13:09:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:09:30 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+13:11:15 INFO  : Checking for BSP changes to sync application flags for project 'nqueens_comblock'...
+13:11:21 INFO  : Disconnected from the channel tcfchan#36.
+13:11:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:11:22 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+13:11:22 INFO  : 'jtag frequency' command is executed.
+13:11:22 INFO  : Context for 'APU' is selected.
+13:11:22 INFO  : System reset is completed.
+13:11:25 INFO  : 'after 3000' command is executed.
+13:11:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+13:11:28 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+13:11:28 INFO  : Context for 'APU' is selected.
+13:11:28 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+13:11:28 INFO  : 'configparams force-mem-access 1' command is executed.
+13:11:28 INFO  : Context for 'APU' is selected.
+13:11:28 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+13:11:28 INFO  : 'ps7_init' command is executed.
+13:11:28 INFO  : 'ps7_post_config' command is executed.
+13:11:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:11:28 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:11:28 INFO  : 'configparams force-mem-access 0' command is executed.
+13:11:28 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:11:28 INFO  : Memory regions updated for context APU
+13:11:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:11:28 INFO  : 'con' command is executed.
+13:11:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:11:28 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+13:24:51 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+13:25:14 INFO  : Checking for BSP changes to sync application flags for project 'nqueens_comblock'...
+13:25:50 INFO  : Disconnected from the channel tcfchan#37.
+13:25:51 INFO  : The hardware specfication used by project 'nqueens_comblock' is out of sync with the platform. Resource files extracted from the hardware specfiication will be updated.
+13:25:51 INFO  : The file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\nqueens_comblock\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+13:25:51 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\nqueens_comblock\_ide\bitstream' in project 'nqueens_comblock'.
+13:25:51 INFO  : The file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\nqueens_comblock\_ide\psinit\ps7_init.tcl' stored in project is removed.
+13:25:57 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\nqueens_comblock\_ide\psinit' in project 'nqueens_comblock'.
+13:25:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:25:57 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+13:25:57 INFO  : 'jtag frequency' command is executed.
+13:25:57 INFO  : Context for 'APU' is selected.
+13:25:57 INFO  : System reset is completed.
+13:26:00 INFO  : 'after 3000' command is executed.
+13:26:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+13:26:03 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+13:26:03 INFO  : Context for 'APU' is selected.
+13:26:03 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+13:26:03 INFO  : 'configparams force-mem-access 1' command is executed.
+13:26:03 INFO  : Context for 'APU' is selected.
+13:26:03 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+13:26:03 INFO  : 'ps7_init' command is executed.
+13:26:03 INFO  : 'ps7_post_config' command is executed.
+13:26:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:26:03 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:26:03 INFO  : 'configparams force-mem-access 0' command is executed.
+13:26:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:26:03 INFO  : Memory regions updated for context APU
+13:26:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:26:03 INFO  : 'con' command is executed.
+13:26:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:26:03 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+13:26:20 INFO  : Disconnected from the channel tcfchan#39.
+13:26:21 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:26:22 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+13:26:22 INFO  : 'jtag frequency' command is executed.
+13:26:22 INFO  : Context for 'APU' is selected.
+13:26:22 INFO  : System reset is completed.
+13:26:25 INFO  : 'after 3000' command is executed.
+13:26:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+13:26:27 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+13:26:27 INFO  : Context for 'APU' is selected.
+13:26:27 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+13:26:27 INFO  : 'configparams force-mem-access 1' command is executed.
+13:26:27 INFO  : Context for 'APU' is selected.
+13:26:27 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+13:26:27 INFO  : 'ps7_init' command is executed.
+13:26:27 INFO  : 'ps7_post_config' command is executed.
+13:26:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:26:27 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:26:27 INFO  : 'configparams force-mem-access 0' command is executed.
+13:26:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:26:28 INFO  : Memory regions updated for context APU
+13:26:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:26:28 INFO  : 'con' command is executed.
+13:26:28 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:26:28 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+13:26:46 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+13:26:53 INFO  : Disconnected from the channel tcfchan#40.
+13:26:54 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+13:26:54 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+13:26:54 INFO  : 'jtag frequency' command is executed.
+13:26:54 INFO  : Context for 'APU' is selected.
+13:26:55 INFO  : System reset is completed.
+13:26:58 INFO  : 'after 3000' command is executed.
+13:26:58 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+13:27:00 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+13:27:00 INFO  : Context for 'APU' is selected.
+13:27:00 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+13:27:00 INFO  : 'configparams force-mem-access 1' command is executed.
+13:27:00 INFO  : Context for 'APU' is selected.
+13:27:00 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+13:27:00 INFO  : 'ps7_init' command is executed.
+13:27:00 INFO  : 'ps7_post_config' command is executed.
+13:27:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:27:00 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+13:27:00 INFO  : 'configparams force-mem-access 0' command is executed.
+13:27:00 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+13:27:00 INFO  : Memory regions updated for context APU
+13:27:00 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+13:27:00 INFO  : 'con' command is executed.
+13:27:00 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+13:27:00 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+14:24:15 INFO  : Disconnected from the channel tcfchan#41.
+14:24:16 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+14:24:17 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+14:24:17 INFO  : 'jtag frequency' command is executed.
+14:24:17 INFO  : Context for 'APU' is selected.
+14:24:17 INFO  : System reset is completed.
+14:24:20 INFO  : 'after 3000' command is executed.
+14:24:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+14:24:22 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+14:24:22 INFO  : Context for 'APU' is selected.
+14:24:22 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+14:24:22 INFO  : 'configparams force-mem-access 1' command is executed.
+14:24:22 INFO  : Context for 'APU' is selected.
+14:24:22 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+14:24:22 INFO  : 'ps7_init' command is executed.
+14:24:22 INFO  : 'ps7_post_config' command is executed.
+14:24:22 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:24:23 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+14:24:23 INFO  : 'configparams force-mem-access 0' command is executed.
+14:24:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+14:24:23 INFO  : Memory regions updated for context APU
+14:24:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+14:24:23 INFO  : 'con' command is executed.
+14:24:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+14:24:23 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+15:08:09 INFO  : Disconnected from the channel tcfchan#42.
+15:08:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:08:10 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+15:08:10 INFO  : 'jtag frequency' command is executed.
+15:08:10 INFO  : Context for 'APU' is selected.
+15:08:10 INFO  : System reset is completed.
+15:08:13 INFO  : 'after 3000' command is executed.
+15:08:13 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+15:08:16 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+15:08:16 INFO  : Context for 'APU' is selected.
+15:08:16 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:08:16 INFO  : 'configparams force-mem-access 1' command is executed.
+15:08:16 INFO  : Context for 'APU' is selected.
+15:08:16 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+15:08:16 INFO  : 'ps7_init' command is executed.
+15:08:16 INFO  : 'ps7_post_config' command is executed.
+15:08:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:08:16 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:08:16 INFO  : 'configparams force-mem-access 0' command is executed.
+15:08:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:08:16 INFO  : Memory regions updated for context APU
+15:08:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:08:16 INFO  : 'con' command is executed.
+15:08:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:08:16 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+15:11:22 INFO  : Disconnected from the channel tcfchan#43.
+15:11:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:11:23 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+15:11:23 INFO  : 'jtag frequency' command is executed.
+15:11:23 INFO  : Context for 'APU' is selected.
+15:11:23 INFO  : System reset is completed.
+15:11:26 INFO  : 'after 3000' command is executed.
+15:11:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+15:11:29 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+15:11:29 INFO  : Context for 'APU' is selected.
+15:11:29 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:11:29 INFO  : 'configparams force-mem-access 1' command is executed.
+15:11:29 INFO  : Context for 'APU' is selected.
+15:11:29 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+15:11:29 INFO  : 'ps7_init' command is executed.
+15:11:29 INFO  : 'ps7_post_config' command is executed.
+15:11:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:11:29 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:11:29 INFO  : 'configparams force-mem-access 0' command is executed.
+15:11:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:11:29 INFO  : Memory regions updated for context APU
+15:11:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:11:29 INFO  : 'con' command is executed.
+15:11:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:11:29 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+15:12:55 INFO  : Disconnected from the channel tcfchan#44.
+15:12:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:12:57 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+15:12:57 INFO  : 'jtag frequency' command is executed.
+15:12:57 INFO  : Context for 'APU' is selected.
+15:12:57 INFO  : System reset is completed.
+15:13:00 INFO  : 'after 3000' command is executed.
+15:13:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+15:13:02 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+15:13:02 INFO  : Context for 'APU' is selected.
+15:13:02 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:13:02 INFO  : 'configparams force-mem-access 1' command is executed.
+15:13:02 INFO  : Context for 'APU' is selected.
+15:13:02 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+15:13:02 INFO  : 'ps7_init' command is executed.
+15:13:02 INFO  : 'ps7_post_config' command is executed.
+15:13:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:13:02 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:13:03 INFO  : 'configparams force-mem-access 0' command is executed.
+15:13:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:13:03 INFO  : Memory regions updated for context APU
+15:13:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:13:03 INFO  : 'con' command is executed.
+15:13:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:13:03 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+15:14:03 INFO  : Checking for BSP changes to sync application flags for project 'nqueens_comblock'...
+15:14:14 INFO  : Disconnected from the channel tcfchan#45.
+15:14:15 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:14:15 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+15:14:15 INFO  : 'jtag frequency' command is executed.
+15:14:15 INFO  : Context for 'APU' is selected.
+15:14:15 INFO  : System reset is completed.
+15:14:18 INFO  : 'after 3000' command is executed.
+15:14:18 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1' command is executed.
+15:14:20 INFO  : FPGA configured successfully with bitstream "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit"
+15:14:20 INFO  : Context for 'APU' is selected.
+15:14:20 INFO  : Hardware design information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:14:20 INFO  : 'configparams force-mem-access 1' command is executed.
+15:14:20 INFO  : Context for 'APU' is selected.
+15:14:20 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl' is done.
+15:14:21 INFO  : 'ps7_init' command is executed.
+15:14:21 INFO  : 'ps7_post_config' command is executed.
+15:14:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:14:21 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:14:21 INFO  : 'configparams force-mem-access 0' command is executed.
+15:14:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock/Debug/nqueens_comblock.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:14:21 INFO  : Memory regions updated for context APU
+15:14:21 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:14:21 INFO  : 'con' command is executed.
+15:14:21 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:14:21 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\.sdk\launch_scripts\single_application_debug\debugger_nqueens_comblock-default.tcl'
+15:20:22 INFO  : Disconnected from the channel tcfchan#47.

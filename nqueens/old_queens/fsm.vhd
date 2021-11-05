@@ -28,7 +28,7 @@ signal asout_array: array_out;
 
 signal output_i : std_logic_vector(2 downto 0);
 signal u_i, u_o: std_logic_vector(N-1 downto 0);
-signal ce, complete_tick, valid, done: std_logic := '0';
+signal ce, complete_tick, valid, done: std_logic;
 signal reset_control, acks_in, nexts_in, acks_out, nexts_out: std_logic;
 
 
@@ -88,7 +88,7 @@ begin
       next_state <= state;
       case (state) is
       
-         when st0_reset =>
+         when st0_reset =>            
             ce <= '0';
             acks_out <= '1';
             nexts_out <= '0';

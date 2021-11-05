@@ -74,14 +74,15 @@ architecture rtl of top_nqueens is
     signal output_state_2: std_logic_vector(2 downto 0);
     
     constant K_1: integer := 1;    
-    signal a_in_1: std_logic_vector((N*K_1-1) downto 0) := (others => '0');
+    signal a_in_1: std_logic_vector((N*K_1-1) downto 0);
     signal a_out_1: std_logic_vector((N*(K_1+1)-1) downto 0);
     signal next_in_1, ack_out_1, next_out_1: std_logic;
-    signal ack_in_1: std_logic := '1';
+    signal ack_in_1: std_logic;
     signal output_state_1: std_logic_vector(2 downto 0); 
     
-    signal counter_s: unsigned(P downto 0) := (others => '0');
-    signal flag_s, done_s: std_logic := '0';
+    constant max_count: unsigned(P downto 0) := (others => '1');
+    signal counter_s: unsigned(P downto 0);
+    signal flag_s, done_s: std_logic;
     
 begin
     
@@ -171,24 +172,34 @@ begin
     flag <= flag_s;
     done <= done_s;
     
-    counter_process: process(ack_out_9)     -- ack_out_i
+    counter_process: process(nRst, ack_out_9)     -- ack_out_i
     begin
-        if (ack_out_9 = '0') then           -- ack_out_i
+        if nRst = '1' then
+            counter_s <= (others=>'0');
+        elsif (ack_out_9 = '0') then           -- ack_out_i
             counter_s <= counter_s + 2;
             next_in_9 <= '1';               -- next_in_i
+        elsif counter_s = max_count then
+            counter_s <= (others=>'0'); 
         end if;
     end process;    
     
     flag_process: process(a_in_1)
     begin
-        if a_in_1 = std_logic_vector(to_unsigned(M/2, N)) then
+        if nRst = '1' then
+            flag_s <= '0';
+        elsif a_in_1 = std_logic_vector(to_unsigned(M/2, N)) then
             flag_s <= '1';
         end if;
     end process;
 
     process(clk)
     begin        
-        if flag_s = '0' then
+        if nRst = '1' then
+            done_s <= '0';
+            ack_in_1 <= '1';
+            a_in_1 <= (others=>'0');
+        elsif flag_s = '0' then
             if ack_in_1 = '1' then 
                 a_in_1 <= std_logic_vector(unsigned(a_in_1) + 1);
                 ack_in_1 <= '0';

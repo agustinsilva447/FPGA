@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Wed Nov  3 16:17:56 2021
+| Date         : Fri Nov  5 13:20:31 2021
 | Host         : hp6g4-mlab-2 running 64-bit major release  (build 9200)
 | Command      : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
 | Design       : design_1_wrapper
@@ -176,6 +176,7 @@ Table of Contents
 |             Ref Name            | Used |
 +---------------------------------+------+
 | design_1_top_nqueens_0_1        |    1 |
+| design_1_system_ila_0_0         |    1 |
 | design_1_rst_ps7_0_100M_0       |    1 |
 | design_1_processing_system7_0_0 |    1 |
 | design_1_comblock_0_2           |    1 |

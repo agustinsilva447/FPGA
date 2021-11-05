@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Wed Nov  3 16:15:06 2021
+--Date        : Fri Nov  5 13:17:12 2021
 --Host        : hp6g4-mlab-2 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -613,7 +613,7 @@ entity design_1 is
     FIXED_IO_ps_srstb : inout STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=7,numReposBlks=5,numNonXlnxBlks=1,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=8,numReposBlks=6,numNonXlnxBlks=1,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_board_cnt=2,da_clkrst_cnt=2,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -719,15 +719,6 @@ architecture STRUCTURE of design_1 is
     axil_rready : in STD_LOGIC
   );
   end component design_1_comblock_0_2;
-  component design_1_top_nqueens_0_1 is
-  port (
-    clk : in STD_LOGIC;
-    nRst : in STD_LOGIC;
-    flag : out STD_LOGIC;
-    done : out STD_LOGIC;
-    counter : out STD_LOGIC_VECTOR ( 11 downto 0 )
-  );
-  end component design_1_top_nqueens_0_1;
   component design_1_rst_ps7_0_100M_0 is
   port (
     slowest_sync_clk : in STD_LOGIC;
@@ -742,7 +733,28 @@ architecture STRUCTURE of design_1 is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_1_rst_ps7_0_100M_0;
+  component design_1_system_ila_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    probe0 : in STD_LOGIC_VECTOR ( 0 to 0 );
+    probe1 : in STD_LOGIC_VECTOR ( 11 downto 0 );
+    probe2 : in STD_LOGIC_VECTOR ( 0 to 0 )
+  );
+  end component design_1_system_ila_0_0;
+  component design_1_top_nqueens_0_1 is
+  port (
+    clk : in STD_LOGIC;
+    nRst : in STD_LOGIC;
+    flag : out STD_LOGIC;
+    done : out STD_LOGIC;
+    counter : out STD_LOGIC_VECTOR ( 11 downto 0 )
+  );
+  end component design_1_top_nqueens_0_1;
   signal comblock_0_reg0_o : STD_LOGIC_VECTOR ( 0 to 0 );
+  attribute DEBUG : string;
+  attribute DEBUG of comblock_0_reg0_o : signal is "true";
+  attribute MARK_DEBUG : boolean;
+  attribute MARK_DEBUG of comblock_0_reg0_o : signal is std.standard.true;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -825,7 +837,11 @@ architecture STRUCTURE of design_1 is
   signal ps7_0_axi_periph_M00_AXI_WVALID : STD_LOGIC;
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
   signal top_nqueens_0_counter : STD_LOGIC_VECTOR ( 11 downto 0 );
+  attribute DEBUG of top_nqueens_0_counter : signal is "true";
+  attribute MARK_DEBUG of top_nqueens_0_counter : signal is std.standard.true;
   signal top_nqueens_0_done : STD_LOGIC;
+  attribute DEBUG of top_nqueens_0_done : signal is "true";
+  attribute MARK_DEBUG of top_nqueens_0_done : signal is std.standard.true;
   signal NLW_processing_system7_0_TTC0_WAVE0_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_TTC0_WAVE1_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_TTC0_WAVE2_OUT_UNCONNECTED : STD_LOGIC;
@@ -1049,6 +1065,13 @@ rst_ps7_0_100M: component design_1_rst_ps7_0_100M_0
       peripheral_aresetn(0) => rst_ps7_0_100M_peripheral_aresetn(0),
       peripheral_reset(0) => NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED(0),
       slowest_sync_clk => processing_system7_0_FCLK_CLK0
+    );
+system_ila_0: component design_1_system_ila_0_0
+     port map (
+      clk => processing_system7_0_FCLK_CLK0,
+      probe0(0) => comblock_0_reg0_o(0),
+      probe1(11 downto 0) => top_nqueens_0_counter(11 downto 0),
+      probe2(0) => top_nqueens_0_done
     );
 top_nqueens_0: component design_1_top_nqueens_0_1
      port map (
