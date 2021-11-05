@@ -1,0 +1,10 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../nqueens_final.srcs/sources_1/new/ctrl_logic_fsm.vhd" \
+"../../../../up_counter.vhd" \
+"../../../../fsm.vhd" \
+"../../../../top_nqueens.vhd" \
+"../../../../top_nqueens_tb.vhd" \
+
+# Do not sort compile order
+nosort

@@ -1,0 +1,8 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/nqueens_final.srcs/sources_1/new/ctrl_logic_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ctrl_logic_fsm'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fsm'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/top_nqueens.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_nqueens'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/top_nqueens_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_nqueens_tb'

@@ -1,0 +1,10 @@
+0.6
+2019.2
+Nov  6 2019
+21:57:16
+C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/ctrl_logic.vhd,1636120559,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/fsm.vhd,,,ctrl_logic,,,,,,,,
+C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/fsm.vhd,1636129869,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/top_nqueens.vhd,,,fsm,,,,,,,,
+C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/nqueens_final.srcs/sources_1/new/ctrl_logic_fsm.vhd,1636137903,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/fsm.vhd,,,ctrl_logic_fsm,,,,,,,,
+C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/top_nqueens.vhd,1636036986,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/top_nqueens_tb.vhd,,,top_nqueens,,,,,,,,
+C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/top_nqueens_tb.vhd,1636128198,vhdl,,,,top_nqueens_tb,,,,,,,,
+C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/up_counter.vhd,1636120314,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/fsm.vhd,,,up_counter,,,,,,,,
