@@ -19,7 +19,7 @@ end entity;
 
 architecture arch of ctrl_logic_fsm is
 
-type state_type is (st0_reset, st1_aument_j, st2_done);
+type state_type is (st0_reset, st1_aument_j, st2_done, st3_compare, st4_count);
 signal state, next_state : state_type;
 signal valid_aux: std_logic;
 signal done_aux: std_logic;
@@ -52,6 +52,10 @@ begin
          output_i <= "000";
       elsif state = st1_aument_j then
          output_i <= "001";
+      elsif state = st3_compare then
+         output_i <= "010";
+      elsif state = st4_count then
+         output_i <= "011";
       elsif state = st2_done then
          output_i <= "100";
       else
@@ -59,7 +63,7 @@ begin
       end if;
     end process;   
     
-    NEXT_STATE_DECODE: process (clk)
+    NEXT_STATE_DECODE: process (state)
     begin        
         next_state <= state;
         case (state) is
@@ -71,27 +75,30 @@ begin
             count <= (others => '0');
             next_state <= st1_aument_j;
                     
-        when st1_aument_j =>            
-            if (j<K) then
-                a_j <= unsigned(a((N*to_integer(j)) to (N*to_integer(j)+(N-1))));
-                j <= to_unsigned(to_integer(j) + 1, N);
-                    if ((u_k /= a_j) and (abs(signed(u_k) - signed(a_j)) /= (K - to_integer(j)))) then
-                        count <= count + 1;  
-                        next_state <= st1_aument_j;      
-                    else
-                        next_state <= st2_done;
-                    end if;        
-            else   
-                next_state <= st2_done;
-            end if;           
+        when st1_aument_j =>      
+            a_j <= unsigned(a((N*to_integer(j)) to (N*to_integer(j)+(N-1))));
+            next_state <= st3_compare;     
             
-        when st2_done =>
-            done_aux <= '1';
+        when st3_compare =>
+            if ((u_k /= a_j) and (abs(signed(u_k) - signed(a_j)) /= (K - to_integer(j)))) then
+                count <= count + 1;    
+                next_state <= st4_count; 
+            else
+                next_state <= st2_done;
+            end if;      
+            
+        when st4_count => 
+            j <= to_unsigned(to_integer(j) + 1, N);
             if (count = K) then
                 valid_aux <= '1';
-            else       
-                valid_aux <= '0';
-            end if;     
+                next_state <= st2_done;
+            else
+                next_state <= st1_aument_j;
+            end if;                    
+            
+        when st2_done =>
+            done_aux <= '1';        
+            next_state <= st0_reset;    
                 
         when others =>
             next_state <= st0_reset;

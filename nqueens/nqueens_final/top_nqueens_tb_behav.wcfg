@@ -11,14 +11,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="3384001fs"></ZoomEndTime>
+      <ZoomEndTime time="25001000001fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="120"></NameColumnWidth>
-      <ValueColumnWidth column_width="64"></ValueColumnWidth>
+      <NameColumnWidth column_width="68"></NameColumnWidth>
+      <ValueColumnWidth column_width="58"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="45" />
    <wvobject fp_name="/top_nqueens_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -40,29 +40,719 @@
       <obj_property name="ObjectShortName">counter[10:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
    </wvobject>
-   <wvobject fp_name="/top_nqueens_tb/top/a_in_1" type="array">
-      <obj_property name="ElementShortName">a_in_1[4:0]</obj_property>
-      <obj_property name="ObjectShortName">a_in_1[4:0]</obj_property>
+   <wvobject fp_name="group1157" type="group">
+      <obj_property name="label">a1</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="vbus801" type="vbus">
+         <obj_property name="label">a1_0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_1[4]" type="logic">
+            <obj_property name="ElementShortName">[4]</obj_property>
+            <obj_property name="ObjectShortName">[4]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_1[3]" type="logic">
+            <obj_property name="ElementShortName">[3]</obj_property>
+            <obj_property name="ObjectShortName">[3]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_1[2]" type="logic">
+            <obj_property name="ElementShortName">[2]</obj_property>
+            <obj_property name="ObjectShortName">[2]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_1[1]" type="logic">
+            <obj_property name="ElementShortName">[1]</obj_property>
+            <obj_property name="ObjectShortName">[1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_1[0]" type="logic">
+            <obj_property name="ElementShortName">[0]</obj_property>
+            <obj_property name="ObjectShortName">[0]</obj_property>
+         </wvobject>
+      </wvobject>
    </wvobject>
-   <wvobject fp_name="/top_nqueens_tb/top/a_in_2" type="array">
-      <obj_property name="ElementShortName">a_in_2[9:0]</obj_property>
-      <obj_property name="ObjectShortName">a_in_2[9:0]</obj_property>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_1/ack_in" type="logic">
+      <obj_property name="ElementShortName">ack_in</obj_property>
+      <obj_property name="ObjectShortName">ack_in</obj_property>
    </wvobject>
-   <wvobject fp_name="/top_nqueens_tb/top/a_in_3" type="array">
-      <obj_property name="ElementShortName">a_in_3[14:0]</obj_property>
-      <obj_property name="ObjectShortName">a_in_3[14:0]</obj_property>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_1/ack_out" type="logic">
+      <obj_property name="ElementShortName">ack_out</obj_property>
+      <obj_property name="ObjectShortName">ack_out</obj_property>
    </wvobject>
-   <wvobject fp_name="/top_nqueens_tb/top/a_in_4" type="array">
-      <obj_property name="ElementShortName">a_in_4[19:0]</obj_property>
-      <obj_property name="ObjectShortName">a_in_4[19:0]</obj_property>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_1/next_in" type="logic">
+      <obj_property name="ElementShortName">next_in</obj_property>
+      <obj_property name="ObjectShortName">next_in</obj_property>
    </wvobject>
-   <wvobject fp_name="/top_nqueens_tb/top/a_in_5" type="array">
-      <obj_property name="ElementShortName">a_in_5[24:0]</obj_property>
-      <obj_property name="ObjectShortName">a_in_5[24:0]</obj_property>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_1/next_out" type="logic">
+      <obj_property name="ElementShortName">next_out</obj_property>
+      <obj_property name="ObjectShortName">next_out</obj_property>
    </wvobject>
-   <wvobject fp_name="/top_nqueens_tb/top/a_in_6" type="array">
-      <obj_property name="ElementShortName">a_in_6[29:0]</obj_property>
-      <obj_property name="ObjectShortName">a_in_6[29:0]</obj_property>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_1/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_1/logic/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_1/logic/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_1/logic/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_1/logic/K" type="other">
+      <obj_property name="ElementShortName">K</obj_property>
+      <obj_property name="ObjectShortName">K</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_1/logic/u_k" type="array">
+      <obj_property name="ElementShortName">u_k[4:0]</obj_property>
+      <obj_property name="ObjectShortName">u_k[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_1/logic/j" type="array">
+      <obj_property name="ElementShortName">j[4:0]</obj_property>
+      <obj_property name="ObjectShortName">j[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_1/logic/a_j" type="array">
+      <obj_property name="ElementShortName">a_j[4:0]</obj_property>
+      <obj_property name="ObjectShortName">a_j[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_1/logic/count" type="array">
+      <obj_property name="ElementShortName">count[4:0]</obj_property>
+      <obj_property name="ObjectShortName">count[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_1/logic/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_1/logic/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="group1158" type="group">
+      <obj_property name="label">a2</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="vbus807" type="vbus">
+         <obj_property name="label">a2_0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#008000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_2[9]" type="logic">
+            <obj_property name="ElementShortName">[9]</obj_property>
+            <obj_property name="ObjectShortName">[9]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_2[8]" type="logic">
+            <obj_property name="ElementShortName">[8]</obj_property>
+            <obj_property name="ObjectShortName">[8]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_2[7]" type="logic">
+            <obj_property name="ElementShortName">[7]</obj_property>
+            <obj_property name="ObjectShortName">[7]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_2[6]" type="logic">
+            <obj_property name="ElementShortName">[6]</obj_property>
+            <obj_property name="ObjectShortName">[6]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_2[5]" type="logic">
+            <obj_property name="ElementShortName">[5]</obj_property>
+            <obj_property name="ObjectShortName">[5]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="vbus795" type="vbus">
+         <obj_property name="label">a2_1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#008000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_2[4]" type="logic">
+            <obj_property name="ElementShortName">[4]</obj_property>
+            <obj_property name="ObjectShortName">[4]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_2[3]" type="logic">
+            <obj_property name="ElementShortName">[3]</obj_property>
+            <obj_property name="ObjectShortName">[3]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_2[2]" type="logic">
+            <obj_property name="ElementShortName">[2]</obj_property>
+            <obj_property name="ObjectShortName">[2]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_2[1]" type="logic">
+            <obj_property name="ElementShortName">[1]</obj_property>
+            <obj_property name="ObjectShortName">[1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_2[0]" type="logic">
+            <obj_property name="ElementShortName">[0]</obj_property>
+            <obj_property name="ObjectShortName">[0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_2/ack_in" type="logic">
+      <obj_property name="ElementShortName">ack_in</obj_property>
+      <obj_property name="ObjectShortName">ack_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_2/ack_out" type="logic">
+      <obj_property name="ElementShortName">ack_out</obj_property>
+      <obj_property name="ObjectShortName">ack_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_2/next_in" type="logic">
+      <obj_property name="ElementShortName">next_in</obj_property>
+      <obj_property name="ObjectShortName">next_in</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_2/next_out" type="logic">
+      <obj_property name="ElementShortName">next_out</obj_property>
+      <obj_property name="ObjectShortName">next_out</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_2/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_2/logic/reset" type="logic">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_2/logic/state" type="other">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_2/logic/next_state" type="other">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_2/logic/K" type="other">
+      <obj_property name="ElementShortName">K</obj_property>
+      <obj_property name="ObjectShortName">K</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_2/logic/j" type="array">
+      <obj_property name="ElementShortName">j[4:0]</obj_property>
+      <obj_property name="ObjectShortName">j[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_2/logic/u_k" type="array">
+      <obj_property name="ElementShortName">u_k[4:0]</obj_property>
+      <obj_property name="ObjectShortName">u_k[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_2/logic/a_j" type="array">
+      <obj_property name="ElementShortName">a_j[4:0]</obj_property>
+      <obj_property name="ObjectShortName">a_j[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_2/logic/count" type="array">
+      <obj_property name="ElementShortName">count[4:0]</obj_property>
+      <obj_property name="ObjectShortName">count[4:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_2/logic/done" type="logic">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/fsm_2/logic/valid" type="logic">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject fp_name="group1159" type="group">
+      <obj_property name="label">a3</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="isExpanded"></obj_property>
+      <wvobject fp_name="vbus813" type="vbus">
+         <obj_property name="label">a3_0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#0000FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_3[14]" type="logic">
+            <obj_property name="ElementShortName">[14]</obj_property>
+            <obj_property name="ObjectShortName">[14]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_3[13]" type="logic">
+            <obj_property name="ElementShortName">[13]</obj_property>
+            <obj_property name="ObjectShortName">[13]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_3[12]" type="logic">
+            <obj_property name="ElementShortName">[12]</obj_property>
+            <obj_property name="ObjectShortName">[12]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_3[11]" type="logic">
+            <obj_property name="ElementShortName">[11]</obj_property>
+            <obj_property name="ObjectShortName">[11]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_3[10]" type="logic">
+            <obj_property name="ElementShortName">[10]</obj_property>
+            <obj_property name="ObjectShortName">[10]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="vbus819" type="vbus">
+         <obj_property name="label">a3_1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#0000FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_3[9]" type="logic">
+            <obj_property name="ElementShortName">[9]</obj_property>
+            <obj_property name="ObjectShortName">[9]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_3[8]" type="logic">
+            <obj_property name="ElementShortName">[8]</obj_property>
+            <obj_property name="ObjectShortName">[8]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_3[7]" type="logic">
+            <obj_property name="ElementShortName">[7]</obj_property>
+            <obj_property name="ObjectShortName">[7]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_3[6]" type="logic">
+            <obj_property name="ElementShortName">[6]</obj_property>
+            <obj_property name="ObjectShortName">[6]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_3[5]" type="logic">
+            <obj_property name="ElementShortName">[5]</obj_property>
+            <obj_property name="ObjectShortName">[5]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="vbus825" type="vbus">
+         <obj_property name="label">a3_2</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <obj_property name="CustomSignalColor">#0000FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_3[4]" type="logic">
+            <obj_property name="ElementShortName">[4]</obj_property>
+            <obj_property name="ObjectShortName">[4]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_3[3]" type="logic">
+            <obj_property name="ElementShortName">[3]</obj_property>
+            <obj_property name="ObjectShortName">[3]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_3[2]" type="logic">
+            <obj_property name="ElementShortName">[2]</obj_property>
+            <obj_property name="ObjectShortName">[2]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_3[1]" type="logic">
+            <obj_property name="ElementShortName">[1]</obj_property>
+            <obj_property name="ObjectShortName">[1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_3[0]" type="logic">
+            <obj_property name="ElementShortName">[0]</obj_property>
+            <obj_property name="ObjectShortName">[0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group1160" type="group">
+      <obj_property name="label">a4</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="vbus1078" type="vbus">
+         <obj_property name="label">a4_0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[19]" type="logic">
+            <obj_property name="ElementShortName">[19]</obj_property>
+            <obj_property name="ObjectShortName">[19]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[18]" type="logic">
+            <obj_property name="ElementShortName">[18]</obj_property>
+            <obj_property name="ObjectShortName">[18]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[17]" type="logic">
+            <obj_property name="ElementShortName">[17]</obj_property>
+            <obj_property name="ObjectShortName">[17]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[16]" type="logic">
+            <obj_property name="ElementShortName">[16]</obj_property>
+            <obj_property name="ObjectShortName">[16]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[15]" type="logic">
+            <obj_property name="ElementShortName">[15]</obj_property>
+            <obj_property name="ObjectShortName">[15]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="vbus1084" type="vbus">
+         <obj_property name="label">a4_1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[14]" type="logic">
+            <obj_property name="ElementShortName">[14]</obj_property>
+            <obj_property name="ObjectShortName">[14]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[13]" type="logic">
+            <obj_property name="ElementShortName">[13]</obj_property>
+            <obj_property name="ObjectShortName">[13]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[12]" type="logic">
+            <obj_property name="ElementShortName">[12]</obj_property>
+            <obj_property name="ObjectShortName">[12]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[11]" type="logic">
+            <obj_property name="ElementShortName">[11]</obj_property>
+            <obj_property name="ObjectShortName">[11]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[10]" type="logic">
+            <obj_property name="ElementShortName">[10]</obj_property>
+            <obj_property name="ObjectShortName">[10]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="vbus1090" type="vbus">
+         <obj_property name="label">a4_2</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[9]" type="logic">
+            <obj_property name="ElementShortName">[9]</obj_property>
+            <obj_property name="ObjectShortName">[9]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[8]" type="logic">
+            <obj_property name="ElementShortName">[8]</obj_property>
+            <obj_property name="ObjectShortName">[8]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[7]" type="logic">
+            <obj_property name="ElementShortName">[7]</obj_property>
+            <obj_property name="ObjectShortName">[7]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[6]" type="logic">
+            <obj_property name="ElementShortName">[6]</obj_property>
+            <obj_property name="ObjectShortName">[6]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[5]" type="logic">
+            <obj_property name="ElementShortName">[5]</obj_property>
+            <obj_property name="ObjectShortName">[5]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="vbus1096" type="vbus">
+         <obj_property name="label">a4_3</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="CustomSignalColor">#FF0000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[4]" type="logic">
+            <obj_property name="ElementShortName">[4]</obj_property>
+            <obj_property name="ObjectShortName">[4]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[3]" type="logic">
+            <obj_property name="ElementShortName">[3]</obj_property>
+            <obj_property name="ObjectShortName">[3]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[2]" type="logic">
+            <obj_property name="ElementShortName">[2]</obj_property>
+            <obj_property name="ObjectShortName">[2]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[1]" type="logic">
+            <obj_property name="ElementShortName">[1]</obj_property>
+            <obj_property name="ObjectShortName">[1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_4[0]" type="logic">
+            <obj_property name="ElementShortName">[0]</obj_property>
+            <obj_property name="ObjectShortName">[0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group1161" type="group">
+      <obj_property name="label">a5</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="vbus1127" type="vbus">
+         <obj_property name="label">a5_0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="CustomSignalColor">#008000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[24]" type="logic">
+            <obj_property name="ElementShortName">[24]</obj_property>
+            <obj_property name="ObjectShortName">[24]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[23]" type="logic">
+            <obj_property name="ElementShortName">[23]</obj_property>
+            <obj_property name="ObjectShortName">[23]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[22]" type="logic">
+            <obj_property name="ElementShortName">[22]</obj_property>
+            <obj_property name="ObjectShortName">[22]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[21]" type="logic">
+            <obj_property name="ElementShortName">[21]</obj_property>
+            <obj_property name="ObjectShortName">[21]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[20]" type="logic">
+            <obj_property name="ElementShortName">[20]</obj_property>
+            <obj_property name="ObjectShortName">[20]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="vbus1133" type="vbus">
+         <obj_property name="label">a5_1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="CustomSignalColor">#008000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[19]" type="logic">
+            <obj_property name="ElementShortName">[19]</obj_property>
+            <obj_property name="ObjectShortName">[19]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[18]" type="logic">
+            <obj_property name="ElementShortName">[18]</obj_property>
+            <obj_property name="ObjectShortName">[18]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[17]" type="logic">
+            <obj_property name="ElementShortName">[17]</obj_property>
+            <obj_property name="ObjectShortName">[17]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[16]" type="logic">
+            <obj_property name="ElementShortName">[16]</obj_property>
+            <obj_property name="ObjectShortName">[16]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[15]" type="logic">
+            <obj_property name="ElementShortName">[15]</obj_property>
+            <obj_property name="ObjectShortName">[15]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="vbus1139" type="vbus">
+         <obj_property name="label">a5_2</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="CustomSignalColor">#008000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[14]" type="logic">
+            <obj_property name="ElementShortName">[14]</obj_property>
+            <obj_property name="ObjectShortName">[14]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[13]" type="logic">
+            <obj_property name="ElementShortName">[13]</obj_property>
+            <obj_property name="ObjectShortName">[13]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[12]" type="logic">
+            <obj_property name="ElementShortName">[12]</obj_property>
+            <obj_property name="ObjectShortName">[12]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[11]" type="logic">
+            <obj_property name="ElementShortName">[11]</obj_property>
+            <obj_property name="ObjectShortName">[11]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[10]" type="logic">
+            <obj_property name="ElementShortName">[10]</obj_property>
+            <obj_property name="ObjectShortName">[10]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="vbus1145" type="vbus">
+         <obj_property name="label">a5_3</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="CustomSignalColor">#008000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[9]" type="logic">
+            <obj_property name="ElementShortName">[9]</obj_property>
+            <obj_property name="ObjectShortName">[9]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[8]" type="logic">
+            <obj_property name="ElementShortName">[8]</obj_property>
+            <obj_property name="ObjectShortName">[8]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[7]" type="logic">
+            <obj_property name="ElementShortName">[7]</obj_property>
+            <obj_property name="ObjectShortName">[7]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[6]" type="logic">
+            <obj_property name="ElementShortName">[6]</obj_property>
+            <obj_property name="ObjectShortName">[6]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[5]" type="logic">
+            <obj_property name="ElementShortName">[5]</obj_property>
+            <obj_property name="ObjectShortName">[5]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="vbus1151" type="vbus">
+         <obj_property name="label">a5_4</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="CustomSignalColor">#008000</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[4]" type="logic">
+            <obj_property name="ElementShortName">[4]</obj_property>
+            <obj_property name="ObjectShortName">[4]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[3]" type="logic">
+            <obj_property name="ElementShortName">[3]</obj_property>
+            <obj_property name="ObjectShortName">[3]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[2]" type="logic">
+            <obj_property name="ElementShortName">[2]</obj_property>
+            <obj_property name="ObjectShortName">[2]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[1]" type="logic">
+            <obj_property name="ElementShortName">[1]</obj_property>
+            <obj_property name="ObjectShortName">[1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_5[0]" type="logic">
+            <obj_property name="ElementShortName">[0]</obj_property>
+            <obj_property name="ObjectShortName">[0]</obj_property>
+         </wvobject>
+      </wvobject>
+   </wvobject>
+   <wvobject fp_name="group1228" type="group">
+      <obj_property name="label">a6</obj_property>
+      <obj_property name="DisplayName">label</obj_property>
+      <wvobject fp_name="vbus1192" type="vbus">
+         <obj_property name="label">a6_0</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="CustomSignalColor">#0000FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[29]" type="logic">
+            <obj_property name="ElementShortName">[29]</obj_property>
+            <obj_property name="ObjectShortName">[29]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[28]" type="logic">
+            <obj_property name="ElementShortName">[28]</obj_property>
+            <obj_property name="ObjectShortName">[28]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[27]" type="logic">
+            <obj_property name="ElementShortName">[27]</obj_property>
+            <obj_property name="ObjectShortName">[27]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[26]" type="logic">
+            <obj_property name="ElementShortName">[26]</obj_property>
+            <obj_property name="ObjectShortName">[26]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[25]" type="logic">
+            <obj_property name="ElementShortName">[25]</obj_property>
+            <obj_property name="ObjectShortName">[25]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="vbus1198" type="vbus">
+         <obj_property name="label">a6_1</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="CustomSignalColor">#0000FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[24]" type="logic">
+            <obj_property name="ElementShortName">[24]</obj_property>
+            <obj_property name="ObjectShortName">[24]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[23]" type="logic">
+            <obj_property name="ElementShortName">[23]</obj_property>
+            <obj_property name="ObjectShortName">[23]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[22]" type="logic">
+            <obj_property name="ElementShortName">[22]</obj_property>
+            <obj_property name="ObjectShortName">[22]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[21]" type="logic">
+            <obj_property name="ElementShortName">[21]</obj_property>
+            <obj_property name="ObjectShortName">[21]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[20]" type="logic">
+            <obj_property name="ElementShortName">[20]</obj_property>
+            <obj_property name="ObjectShortName">[20]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="vbus1204" type="vbus">
+         <obj_property name="label">a6_2</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="CustomSignalColor">#0000FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[19]" type="logic">
+            <obj_property name="ElementShortName">[19]</obj_property>
+            <obj_property name="ObjectShortName">[19]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[18]" type="logic">
+            <obj_property name="ElementShortName">[18]</obj_property>
+            <obj_property name="ObjectShortName">[18]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[17]" type="logic">
+            <obj_property name="ElementShortName">[17]</obj_property>
+            <obj_property name="ObjectShortName">[17]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[16]" type="logic">
+            <obj_property name="ElementShortName">[16]</obj_property>
+            <obj_property name="ObjectShortName">[16]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[15]" type="logic">
+            <obj_property name="ElementShortName">[15]</obj_property>
+            <obj_property name="ObjectShortName">[15]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="vbus1210" type="vbus">
+         <obj_property name="label">a6_3</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="CustomSignalColor">#0000FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[14]" type="logic">
+            <obj_property name="ElementShortName">[14]</obj_property>
+            <obj_property name="ObjectShortName">[14]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[13]" type="logic">
+            <obj_property name="ElementShortName">[13]</obj_property>
+            <obj_property name="ObjectShortName">[13]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[12]" type="logic">
+            <obj_property name="ElementShortName">[12]</obj_property>
+            <obj_property name="ObjectShortName">[12]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[11]" type="logic">
+            <obj_property name="ElementShortName">[11]</obj_property>
+            <obj_property name="ObjectShortName">[11]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[10]" type="logic">
+            <obj_property name="ElementShortName">[10]</obj_property>
+            <obj_property name="ObjectShortName">[10]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="vbus1216" type="vbus">
+         <obj_property name="label">a6_4</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="CustomSignalColor">#0000FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[9]" type="logic">
+            <obj_property name="ElementShortName">[9]</obj_property>
+            <obj_property name="ObjectShortName">[9]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[8]" type="logic">
+            <obj_property name="ElementShortName">[8]</obj_property>
+            <obj_property name="ObjectShortName">[8]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[7]" type="logic">
+            <obj_property name="ElementShortName">[7]</obj_property>
+            <obj_property name="ObjectShortName">[7]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[6]" type="logic">
+            <obj_property name="ElementShortName">[6]</obj_property>
+            <obj_property name="ObjectShortName">[6]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[5]" type="logic">
+            <obj_property name="ElementShortName">[5]</obj_property>
+            <obj_property name="ObjectShortName">[5]</obj_property>
+         </wvobject>
+      </wvobject>
+      <wvobject fp_name="vbus1222" type="vbus">
+         <obj_property name="label">a6_5</obj_property>
+         <obj_property name="DisplayName">label</obj_property>
+         <obj_property name="CustomSignalColor">#0000FF</obj_property>
+         <obj_property name="UseCustomSignalColor">true</obj_property>
+         <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[4]" type="logic">
+            <obj_property name="ElementShortName">[4]</obj_property>
+            <obj_property name="ObjectShortName">[4]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[3]" type="logic">
+            <obj_property name="ElementShortName">[3]</obj_property>
+            <obj_property name="ObjectShortName">[3]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[2]" type="logic">
+            <obj_property name="ElementShortName">[2]</obj_property>
+            <obj_property name="ObjectShortName">[2]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[1]" type="logic">
+            <obj_property name="ElementShortName">[1]</obj_property>
+            <obj_property name="ObjectShortName">[1]</obj_property>
+         </wvobject>
+         <wvobject fp_name="/top_nqueens_tb/top/a_in_6[0]" type="logic">
+            <obj_property name="ElementShortName">[0]</obj_property>
+            <obj_property name="ObjectShortName">[0]</obj_property>
+         </wvobject>
+      </wvobject>
    </wvobject>
    <wvobject fp_name="/top_nqueens_tb/top/a_in_7" type="array">
       <obj_property name="ElementShortName">a_in_7[34:0]</obj_property>

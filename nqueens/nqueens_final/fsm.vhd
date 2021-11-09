@@ -120,11 +120,11 @@ begin
             end if;
             
          when st3_writefifo =>
+            reset_control <= '1';
             for ii in 0 to K-1 loop
                 asout_array(ii+1) <= asin_array(ii);
             end loop;            
-            asout_array(0) <= u_i;
-                    
+            asout_array(0) <= u_i;                    
             if (nexts_in = '1') then
                 if (complete_tick = '0') then
                     next_state <= st1_new_candidate;
