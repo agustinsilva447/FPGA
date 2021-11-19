@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov  9 14:35:50 2021" VIVADOVERSION="2019.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Tue Nov  9 17:48:26 2021" VIVADOVERSION="2019.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="em.avnet.com:zed:part0:1.4" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -107,6 +107,11 @@
     <PORT DIR="IO" NAME="FIXED_IO_ps_porb" SIGIS="undef" SIGNAME="processing_system7_0_PS_PORB">
       <CONNECTIONS>
         <CONNECTION INSTANCE="processing_system7_0" PORT="PS_PORB"/>
+      </CONNECTIONS>
+    </PORT>
+    <PORT DIR="O" LEFT="31" NAME="reg0_o_0" RIGHT="0" SIGIS="undef" SIGNAME="comblock_0_reg0_o">
+      <CONNECTIONS>
+        <CONNECTION INSTANCE="comblock_0" PORT="reg0_o"/>
       </CONNECTIONS>
     </PORT>
   </EXTERNALPORTS>
@@ -734,10 +739,10 @@
       </ADDRESSBLOCKS>
       <PARAMETERS>
         <PARAMETER NAME="REGS_IN_ENA" VALUE="true"/>
-        <PARAMETER NAME="REGS_IN_DWIDTH" VALUE="12"/>
-        <PARAMETER NAME="REGS_IN_DEPTH" VALUE="2"/>
+        <PARAMETER NAME="REGS_IN_DWIDTH" VALUE="32"/>
+        <PARAMETER NAME="REGS_IN_DEPTH" VALUE="3"/>
         <PARAMETER NAME="REGS_OUT_ENA" VALUE="true"/>
-        <PARAMETER NAME="REGS_OUT_DWIDTH" VALUE="1"/>
+        <PARAMETER NAME="REGS_OUT_DWIDTH" VALUE="32"/>
         <PARAMETER NAME="REGS_OUT_DEPTH" VALUE="1"/>
         <PARAMETER NAME="DRAM_IO_ENA" VALUE="false"/>
         <PARAMETER NAME="DRAM_IO_DWIDTH" VALUE="16"/>
@@ -767,18 +772,24 @@
         <PARAMETER NAME="C_AXIL_HIGHADDR" VALUE="0x43C4FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="11" NAME="reg0_i" RIGHT="0" SIGIS="undef" SIGNAME="top_nqueens_0_done">
+        <PORT DIR="I" LEFT="31" NAME="reg0_i" RIGHT="0" SIGIS="undef" SIGNAME="top_nqueens_0_done">
           <CONNECTIONS>
             <CONNECTION INSTANCE="top_nqueens_0" PORT="done"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" LEFT="11" NAME="reg1_i" RIGHT="0" SIGIS="undef" SIGNAME="top_nqueens_0_counter">
+        <PORT DIR="I" LEFT="31" NAME="reg1_i" RIGHT="0" SIGIS="undef" SIGNAME="top_nqueens_0_counter">
           <CONNECTIONS>
             <CONNECTION INSTANCE="top_nqueens_0" PORT="counter"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="0" NAME="reg0_o" RIGHT="0" SIGIS="undef" SIGNAME="comblock_0_reg0_o">
+        <PORT DIR="I" LEFT="31" NAME="reg2_i" RIGHT="0" SIGIS="undef" SIGNAME="top_nqueens_0_a">
           <CONNECTIONS>
+            <CONNECTION INSTANCE="top_nqueens_0" PORT="a"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="reg0_o" RIGHT="0" SIGIS="undef" SIGNAME="comblock_0_reg0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="External_Ports" PORT="reg0_o_0"/>
             <CONNECTION INSTANCE="top_nqueens_0" PORT="nRst"/>
           </CONNECTIONS>
         </PORT>
@@ -947,6 +958,7 @@
           <PORTMAPS>
             <PORTMAP LOGICAL="reg0_i" PHYSICAL="reg0_i"/>
             <PORTMAP LOGICAL="reg1_i" PHYSICAL="reg1_i"/>
+            <PORTMAP LOGICAL="reg2_i" PHYSICAL="reg2_i"/>
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="OUT_REGS" TYPE="INITIATOR" VLNV="ictp:user:OREGS:1.0">
@@ -2427,6 +2439,11 @@
         <PORT DIR="O" LEFT="11" NAME="counter" RIGHT="0" SIGIS="undef" SIGNAME="top_nqueens_0_counter">
           <CONNECTIONS>
             <CONNECTION INSTANCE="comblock_0" PORT="reg1_i"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="4" NAME="a" RIGHT="0" SIGIS="undef" SIGNAME="top_nqueens_0_a">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comblock_0" PORT="reg2_i"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

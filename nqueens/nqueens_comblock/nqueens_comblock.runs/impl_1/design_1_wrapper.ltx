@@ -11,7 +11,7 @@
                         "type": "XSDB_V3",
                         "name": "dbg_hub",
                         "spec": "labtools_xsdbm_v3",
-                        "clk_input_freq_hz": "9999999"
+                        "clk_input_freq_hz": "100000000"
                     },
                     {
                         "type": "ILA_V3",
@@ -48,16 +48,13 @@
                                 "direction": "IN",
                                 "isVector": true,
                                 "leftIndex": 0,
-                                "rightIndex": 11,
+                                "rightIndex": 10,
                                 "portIndex": 1,
                                 "nets": [
                                     {
                                         "name": "design_1_i/system_ila_0/U0/probe1_1",
                                         "isBus": true,
                                         "subnets": [
-                                            {
-                                                "name": "design_1_i/system_ila_0/U0/probe1_1[11]"
-                                            },
                                             {
                                                 "name": "design_1_i/system_ila_0/U0/probe1_1[10]"
                                             },
@@ -110,6 +107,39 @@
                                         "isBus": false
                                     }
                                 ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 3,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": true,
+                                "leftIndex": 0,
+                                "rightIndex": 4,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "design_1_i/system_ila_0/U0/probe3_1",
+                                        "isBus": true,
+                                        "subnets": [
+                                            {
+                                                "name": "design_1_i/system_ila_0/U0/probe3_1[4]"
+                                            },
+                                            {
+                                                "name": "design_1_i/system_ila_0/U0/probe3_1[3]"
+                                            },
+                                            {
+                                                "name": "design_1_i/system_ila_0/U0/probe3_1[2]"
+                                            },
+                                            {
+                                                "name": "design_1_i/system_ila_0/U0/probe3_1[1]"
+                                            },
+                                            {
+                                                "name": "design_1_i/system_ila_0/U0/probe3_1[0]"
+                                            }
+                                        ]
+                                    }
+                                ]
                             }
                         ],
                         "native_ports": [
@@ -140,7 +170,7 @@
                                             "id": 1,
                                             "name": "probe1",
                                             "leftBit": 0,
-                                            "width": 12
+                                            "width": 11
                                         }
                                     }
                                 ]
@@ -158,6 +188,341 @@
                                             "leftBit": 0,
                                             "width": 1
                                         }
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "connectedBus": "top_nqueens_0_a_in",
+                                "protocol": "PROBE",
+                                "port_maps": [
+                                    {
+                                        "logical_port": "probe3",
+                                        "physical_pin": {
+                                            "id": 3,
+                                            "name": "probe3",
+                                            "leftBit": 0,
+                                            "width": 5
+                                        }
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "type": "ILA_V3",
+                        "name": "u_ila_0",
+                        "spec": "labtools_ila_v6",
+                        "core_location": {
+                            "user_chain": 1,
+                            "slave_index": 1,
+                            "bscan_switch_index": 0
+                        },
+                        "uuid": "23e7d65a79bc59f7bc47406c1714dfae",
+                        "pins": [
+                            {
+                                "name": "probe0",
+                                "id": 4,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 0,
+                                "nets": [
+                                    {
+                                        "name": "design_1_i/top_nqueens_0/U0/fsm_1/ack_in_1",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe1",
+                                "id": 5,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 1,
+                                "nets": [
+                                    {
+                                        "name": "design_1_i/top_nqueens_0/U0/fsm_1/asout_array[1]_8",
+                                        "isBus": false,
+                                        "parentNetId": 19
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe2",
+                                "id": 6,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 2,
+                                "nets": [
+                                    {
+                                        "name": "design_1_i/top_nqueens_0/U0/fsm_1/ce__0",
+                                        "isBus": false,
+                                        "parentNetId": 20
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe3",
+                                "id": 7,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 3,
+                                "nets": [
+                                    {
+                                        "name": "design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state[4]_i_1__7_n_0",
+                                        "isBus": false,
+                                        "parentNetId": 21
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe4",
+                                "id": 8,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 4,
+                                "nets": [
+                                    {
+                                        "name": "design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state_reg[4]_0",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe5",
+                                "id": 9,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 5,
+                                "nets": [
+                                    {
+                                        "name": "design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state_reg_n_0_[0]",
+                                        "isBus": false,
+                                        "parentNetId": 23
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe6",
+                                "id": 10,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 6,
+                                "nets": [
+                                    {
+                                        "name": "design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state_reg_n_0_[2]",
+                                        "isBus": false,
+                                        "parentNetId": 24
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe7",
+                                "id": 11,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 7,
+                                "nets": [
+                                    {
+                                        "name": "design_1_i/top_nqueens_0/U0/fsm_1/next_out_1",
+                                        "isBus": false
+                                    }
+                                ]
+                            },
+                            {
+                                "name": "probe8",
+                                "id": 12,
+                                "type": "DATA_TRIGGER",
+                                "direction": "IN",
+                                "isVector": false,
+                                "leftIndex": 0,
+                                "rightIndex": 0,
+                                "portIndex": 8,
+                                "nets": [
+                                    {
+                                        "name": "design_1_i/top_nqueens_0/U0/fsm_1/next_out_2",
+                                        "isBus": false
+                                    }
+                                ]
+                            }
+                        ]
+                    }
+                ],
+                "parent_nets": [
+                    {
+                        "id": 19,
+                        "name": "design_1_i/top_nqueens_0/U0/fsm_1/asout_array[1]_8",
+                        "state_reg": [
+                            {
+                                "name": "design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state_reg[3]",
+                                "states": [
+                                    {
+                                        "name": "st0_reset",
+                                        "val": "00001"
+                                    },
+                                    {
+                                        "name": "st2_validation",
+                                        "val": "00100"
+                                    },
+                                    {
+                                        "name": "st3_writefifo",
+                                        "val": "01000"
+                                    },
+                                    {
+                                        "name": "st4_done",
+                                        "val": "10000"
+                                    },
+                                    {
+                                        "name": "st1_new_candidate",
+                                        "val": "00010"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 20,
+                        "name": "design_1_i/top_nqueens_0/U0/fsm_1/ce__0",
+                        "state_reg": [
+                            {
+                                "name": "design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "st0_reset",
+                                        "val": "00001"
+                                    },
+                                    {
+                                        "name": "st2_validation",
+                                        "val": "00100"
+                                    },
+                                    {
+                                        "name": "st3_writefifo",
+                                        "val": "01000"
+                                    },
+                                    {
+                                        "name": "st4_done",
+                                        "val": "10000"
+                                    },
+                                    {
+                                        "name": "st1_new_candidate",
+                                        "val": "00010"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 21,
+                        "name": "design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state[4]_i_1__7_n_0",
+                        "state_reg": [
+                            {
+                                "name": "design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state_reg[1]",
+                                "states": [
+                                    {
+                                        "name": "st0_reset",
+                                        "val": "00001"
+                                    },
+                                    {
+                                        "name": "st2_validation",
+                                        "val": "00100"
+                                    },
+                                    {
+                                        "name": "st3_writefifo",
+                                        "val": "01000"
+                                    },
+                                    {
+                                        "name": "st4_done",
+                                        "val": "10000"
+                                    },
+                                    {
+                                        "name": "st1_new_candidate",
+                                        "val": "00010"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 23,
+                        "name": "design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state_reg_n_0_[0]",
+                        "state_reg": [
+                            {
+                                "name": "design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state_reg[0]",
+                                "states": [
+                                    {
+                                        "name": "st0_reset",
+                                        "val": "00001"
+                                    },
+                                    {
+                                        "name": "st2_validation",
+                                        "val": "00100"
+                                    },
+                                    {
+                                        "name": "st3_writefifo",
+                                        "val": "01000"
+                                    },
+                                    {
+                                        "name": "st4_done",
+                                        "val": "10000"
+                                    },
+                                    {
+                                        "name": "st1_new_candidate",
+                                        "val": "00010"
+                                    }
+                                ]
+                            }
+                        ]
+                    },
+                    {
+                        "id": 24,
+                        "name": "design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state_reg_n_0_[2]",
+                        "state_reg": [
+                            {
+                                "name": "design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state_reg[2]",
+                                "states": [
+                                    {
+                                        "name": "st0_reset",
+                                        "val": "00001"
+                                    },
+                                    {
+                                        "name": "st2_validation",
+                                        "val": "00100"
+                                    },
+                                    {
+                                        "name": "st3_writefifo",
+                                        "val": "01000"
+                                    },
+                                    {
+                                        "name": "st4_done",
+                                        "val": "10000"
+                                    },
+                                    {
+                                        "name": "st1_new_candidate",
+                                        "val": "00010"
                                     }
                                 ]
                             }

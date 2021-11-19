@@ -10,7 +10,8 @@ generic(M : integer := 10;  -- size of the board MxM
 port(
     clk, nRst: in std_logic; 
     flag, done: out std_logic; 
-    counter: out unsigned(P downto 0)
+    counter: out unsigned(P downto 0);
+    a: out std_logic_vector((N-1) downto 0)
     );                         
 end entity;
 
@@ -171,6 +172,7 @@ begin
     counter <= counter_s;
     flag <= flag_s;
     done <= done_s;
+    a <= a_in_1;
     
     counter_process: process(nRst, ack_out_9)     -- ack_out_i
     begin

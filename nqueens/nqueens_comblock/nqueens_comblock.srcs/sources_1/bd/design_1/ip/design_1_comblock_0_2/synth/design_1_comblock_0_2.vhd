@@ -55,8 +55,9 @@ USE ieee.numeric_std.ALL;
 
 ENTITY design_1_comblock_0_2 IS
   PORT (
-    reg0_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-    reg1_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
+    reg0_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+    reg1_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+    reg2_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
     reg0_o : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
     axil_aclk : IN STD_LOGIC;
     axil_aresetn : IN STD_LOGIC;
@@ -115,22 +116,22 @@ ARCHITECTURE design_1_comblock_0_2_arch OF design_1_comblock_0_2 IS
       C_AXIF_BUSER_WIDTH : INTEGER
     );
     PORT (
-      reg0_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      reg1_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      reg2_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      reg3_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      reg4_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      reg5_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      reg6_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      reg7_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      reg8_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      reg9_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      reg10_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      reg11_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      reg12_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      reg13_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      reg14_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-      reg15_i : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
+      reg0_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      reg1_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      reg2_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      reg3_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      reg4_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      reg5_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      reg6_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      reg7_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      reg8_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      reg9_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      reg10_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      reg11_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      reg12_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      reg13_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      reg14_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+      reg15_i : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
       reg0_o : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
       reg1_o : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
       reg2_o : OUT STD_LOGIC_VECTOR(0 DOWNTO 0);
@@ -268,14 +269,15 @@ ARCHITECTURE design_1_comblock_0_2_arch OF design_1_comblock_0_2 IS
   ATTRIBUTE X_INTERFACE_PARAMETER OF axil_aclk: SIGNAL IS "XIL_INTERFACENAME axil_aclk, ASSOCIATED_RESET axil_aresetn, ASSOCIATED_BUSIF AXIL, FREQ_HZ 100000000, PHASE 0.000, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0";
   ATTRIBUTE X_INTERFACE_INFO OF axil_aclk: SIGNAL IS "xilinx.com:signal:clock:1.0 axil_aclk CLK";
   ATTRIBUTE X_INTERFACE_INFO OF reg0_o: SIGNAL IS "ictp:user:OREGS:1.0 OUT_REGS reg0_o";
+  ATTRIBUTE X_INTERFACE_INFO OF reg2_i: SIGNAL IS "ictp:user:IREGS:1.0 IN_REGS reg2_i";
   ATTRIBUTE X_INTERFACE_INFO OF reg1_i: SIGNAL IS "ictp:user:IREGS:1.0 IN_REGS reg1_i";
   ATTRIBUTE X_INTERFACE_INFO OF reg0_i: SIGNAL IS "ictp:user:IREGS:1.0 IN_REGS reg0_i";
 BEGIN
   U0 : axi_comblock
     GENERIC MAP (
       REGS_IN_ENA => true,
-      REGS_IN_DWIDTH => 12,
-      REGS_IN_DEPTH => 2,
+      REGS_IN_DWIDTH => 11,
+      REGS_IN_DEPTH => 3,
       REGS_OUT_ENA => true,
       REGS_OUT_DWIDTH => 1,
       REGS_OUT_DEPTH => 1,
@@ -303,20 +305,20 @@ BEGIN
     PORT MAP (
       reg0_i => reg0_i,
       reg1_i => reg1_i,
-      reg2_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 12)),
-      reg3_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 12)),
-      reg4_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 12)),
-      reg5_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 12)),
-      reg6_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 12)),
-      reg7_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 12)),
-      reg8_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 12)),
-      reg9_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 12)),
-      reg10_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 12)),
-      reg11_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 12)),
-      reg12_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 12)),
-      reg13_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 12)),
-      reg14_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 12)),
-      reg15_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 12)),
+      reg2_i => reg2_i,
+      reg3_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 11)),
+      reg4_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 11)),
+      reg5_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 11)),
+      reg6_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 11)),
+      reg7_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 11)),
+      reg8_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 11)),
+      reg9_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 11)),
+      reg10_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 11)),
+      reg11_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 11)),
+      reg12_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 11)),
+      reg13_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 11)),
+      reg14_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 11)),
+      reg15_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 11)),
       reg0_o => reg0_o,
       ram_clk_i => '0',
       ram_we_i => '0',

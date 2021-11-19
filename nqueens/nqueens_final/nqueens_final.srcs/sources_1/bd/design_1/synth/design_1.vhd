@@ -1,7 +1,7 @@
 --Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
---Date        : Tue Nov  9 14:35:26 2021
+--Date        : Tue Nov  9 17:48:22 2021
 --Host        : hp6g4-mlab-2 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -33,10 +33,11 @@ entity design_1 is
     FIXED_IO_mio : inout STD_LOGIC_VECTOR ( 53 downto 0 );
     FIXED_IO_ps_clk : inout STD_LOGIC;
     FIXED_IO_ps_porb : inout STD_LOGIC;
-    FIXED_IO_ps_srstb : inout STD_LOGIC
+    FIXED_IO_ps_srstb : inout STD_LOGIC;
+    reg0_o_0 : out STD_LOGIC_VECTOR ( 31 downto 0 )
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=5,numReposBlks=5,numNonXlnxBlks=1,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_clkrst_cnt=2,da_ps7_cnt=2,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=5,numReposBlks=5,numNonXlnxBlks=1,numHierBlks=0,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=3,da_clkrst_cnt=2,da_ps7_cnt=2,synth_mode=Global}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -116,9 +117,10 @@ architecture STRUCTURE of design_1 is
   end component design_1_processing_system7_0_1;
   component design_1_comblock_0_1 is
   port (
-    reg0_i : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    reg1_i : in STD_LOGIC_VECTOR ( 11 downto 0 );
-    reg0_o : out STD_LOGIC_VECTOR ( 0 to 0 );
+    reg0_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    reg1_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    reg2_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    reg0_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
     axil_aclk : in STD_LOGIC;
     axil_aresetn : in STD_LOGIC;
     axil_awaddr : in STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -270,7 +272,8 @@ architecture STRUCTURE of design_1 is
     nRst : in STD_LOGIC;
     flag : out STD_LOGIC;
     done : out STD_LOGIC;
-    counter : out STD_LOGIC_VECTOR ( 11 downto 0 )
+    counter : out STD_LOGIC_VECTOR ( 11 downto 0 );
+    a : out STD_LOGIC_VECTOR ( 4 downto 0 )
   );
   end component design_1_top_nqueens_0_1;
   signal axi_smc_M01_AXI_ARADDR : STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -292,7 +295,7 @@ architecture STRUCTURE of design_1 is
   signal axi_smc_M01_AXI_WREADY : STD_LOGIC;
   signal axi_smc_M01_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal axi_smc_M01_AXI_WVALID : STD_LOGIC;
-  signal comblock_0_reg0_o : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal comblock_0_reg0_o : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -355,6 +358,7 @@ architecture STRUCTURE of design_1 is
   signal processing_system7_0_M_AXI_GP0_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal processing_system7_0_M_AXI_GP0_WVALID : STD_LOGIC;
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal top_nqueens_0_a : STD_LOGIC_VECTOR ( 4 downto 0 );
   signal top_nqueens_0_counter : STD_LOGIC_VECTOR ( 11 downto 0 );
   signal top_nqueens_0_done : STD_LOGIC;
   signal NLW_axi_smc_M00_AXI_araddr_UNCONNECTED : STD_LOGIC;
@@ -425,6 +429,7 @@ architecture STRUCTURE of design_1 is
   attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
   attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
 begin
+  reg0_o_0(31 downto 0) <= comblock_0_reg0_o(31 downto 0);
 axi_smc: component design_1_axi_smc_0
      port map (
       M00_AXI_araddr => NLW_axi_smc_M00_AXI_araddr_UNCONNECTED,
@@ -555,6 +560,26 @@ comblock_0: component design_1_comblock_0_1
       axil_wready => axi_smc_M01_AXI_WREADY,
       axil_wstrb(3 downto 0) => axi_smc_M01_AXI_WSTRB(3 downto 0),
       axil_wvalid => axi_smc_M01_AXI_WVALID,
+      reg0_i(31) => top_nqueens_0_done,
+      reg0_i(30) => top_nqueens_0_done,
+      reg0_i(29) => top_nqueens_0_done,
+      reg0_i(28) => top_nqueens_0_done,
+      reg0_i(27) => top_nqueens_0_done,
+      reg0_i(26) => top_nqueens_0_done,
+      reg0_i(25) => top_nqueens_0_done,
+      reg0_i(24) => top_nqueens_0_done,
+      reg0_i(23) => top_nqueens_0_done,
+      reg0_i(22) => top_nqueens_0_done,
+      reg0_i(21) => top_nqueens_0_done,
+      reg0_i(20) => top_nqueens_0_done,
+      reg0_i(19) => top_nqueens_0_done,
+      reg0_i(18) => top_nqueens_0_done,
+      reg0_i(17) => top_nqueens_0_done,
+      reg0_i(16) => top_nqueens_0_done,
+      reg0_i(15) => top_nqueens_0_done,
+      reg0_i(14) => top_nqueens_0_done,
+      reg0_i(13) => top_nqueens_0_done,
+      reg0_i(12) => top_nqueens_0_done,
       reg0_i(11) => top_nqueens_0_done,
       reg0_i(10) => top_nqueens_0_done,
       reg0_i(9) => top_nqueens_0_done,
@@ -567,8 +592,11 @@ comblock_0: component design_1_comblock_0_1
       reg0_i(2) => top_nqueens_0_done,
       reg0_i(1) => top_nqueens_0_done,
       reg0_i(0) => top_nqueens_0_done,
-      reg0_o(0) => comblock_0_reg0_o(0),
-      reg1_i(11 downto 0) => top_nqueens_0_counter(11 downto 0)
+      reg0_o(31 downto 0) => comblock_0_reg0_o(31 downto 0),
+      reg1_i(31 downto 12) => B"00000000000000000000",
+      reg1_i(11 downto 0) => top_nqueens_0_counter(11 downto 0),
+      reg2_i(31 downto 5) => B"000000000000000000000000000",
+      reg2_i(4 downto 0) => top_nqueens_0_a(4 downto 0)
     );
 processing_system7_0: component design_1_processing_system7_0_1
      port map (
@@ -656,6 +684,7 @@ rst_ps7_0_100M: component design_1_rst_ps7_0_100M_0
     );
 top_nqueens_0: component design_1_top_nqueens_0_1
      port map (
+      a(4 downto 0) => top_nqueens_0_a(4 downto 0),
       clk => processing_system7_0_FCLK_CLK0,
       counter(11 downto 0) => top_nqueens_0_counter(11 downto 0),
       done => top_nqueens_0_done,

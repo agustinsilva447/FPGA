@@ -1,7 +1,7 @@
 Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 ------------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-| Date         : Fri Nov  5 13:22:07 2021
+| Date         : Fri Nov 19 18:42:11 2021
 | Host         : hp6g4-mlab-2 running 64-bit major release  (build 9200)
 | Command      : report_drc -file design_1_wrapper_drc_routed.rpt -pb design_1_wrapper_drc_routed.pb -rpx design_1_wrapper_drc_routed.rpx
 | Design       : design_1_wrapper
@@ -20,15 +20,15 @@ Table of Contents
 1. REPORT SUMMARY
 -----------------
             Netlist: netlist
-          Floorplan: design_1
+          Floorplan: checkpoint_design_1_wrapper
       Design limits: <entire design considered>
            Ruledeck: default
              Max violations: <unlimited>
-             Violations found: 42
+             Violations found: 85
 +-----------+----------+-------------------+------------+
 | Rule      | Severity | Description       | Violations |
 +-----------+----------+-------------------+------------+
-| PDRC-153  | Warning  | Gated clock check | 41         |
+| PDRC-153  | Warning  | Gated clock check | 84         |
 | RTSTAT-10 | Warning  | No routable loads | 1          |
 +-----------+----------+-------------------+------------+
 
@@ -51,12 +51,12 @@ Related violations: <none>
 
 PDRC-153#4 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_1/acks_out_reg_i_1_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_1/acks_out_reg_i_1/O, cell design_1_i/top_nqueens_0/U0/fsm_1/acks_out_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_1/acks_out_reg_i_1__7_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_1/acks_out_reg_i_1__7/O, cell design_1_i/top_nqueens_0/U0/fsm_1/acks_out_reg_i_1__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#5 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_1/ce_reg_i_1_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_1/ce_reg_i_1/O, cell design_1_i/top_nqueens_0/U0/fsm_1/ce_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_1/ce_reg_i_1__7_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_1/ce_reg_i_1__7/O, cell design_1_i/top_nqueens_0/U0/fsm_1/ce_reg_i_1__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#6 Warning
@@ -66,182 +66,397 @@ Related violations: <none>
 
 PDRC-153#7 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_1/logic/FSM_onehot_state_reg[1] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_1/logic/acks_out_reg_i_2/O, cell design_1_i/top_nqueens_0/U0/fsm_1/logic/acks_out_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_1/logic/FSM_onehot_state_reg[1]_1 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_1/logic/acks_out_reg_i_2__7/O, cell design_1_i/top_nqueens_0/U0/fsm_1/logic/acks_out_reg_i_2__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#8 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_1/reset_control_reg_i_1__7_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_1/reset_control_reg_i_1__7/O, cell design_1_i/top_nqueens_0/U0/fsm_1/reset_control_reg_i_1__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_1/logic/count is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_1/logic/count_reg[4]_i_2__7/O, cell design_1_i/top_nqueens_0/U0/fsm_1/logic/count_reg[4]_i_2__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#9 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_2/acks_out_reg_i_1__1_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_2/acks_out_reg_i_1__1/O, cell design_1_i/top_nqueens_0/U0/fsm_2/acks_out_reg_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_1/logic/done_aux is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_1/logic/done_aux_reg_i_1__7/O, cell design_1_i/top_nqueens_0/U0/fsm_1/logic/done_aux_reg_i_1__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#10 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_2/ce_reg_i_1__1_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_2/ce_reg_i_1__1/O, cell design_1_i/top_nqueens_0/U0/fsm_2/ce_reg_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_1/logic/j is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_1/logic/j_reg[4]_i_2__7/O, cell design_1_i/top_nqueens_0/U0/fsm_1/logic/j_reg[4]_i_2__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#11 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_2/logic/FSM_onehot_state_reg[1] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_2/logic/acks_out_reg_i_2__1/O, cell design_1_i/top_nqueens_0/U0/fsm_2/logic/acks_out_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_1/logic/valid_aux is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_1/logic/valid_aux_reg_i_1__7/O, cell design_1_i/top_nqueens_0/U0/fsm_1/logic/valid_aux_reg_i_1__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#12 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_2/reset_control_reg_i_1__6_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_2/reset_control_reg_i_1__6/O, cell design_1_i/top_nqueens_0/U0/fsm_2/reset_control_reg_i_1__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_1/reset_control_reg_i_1__7_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_1/reset_control_reg_i_1__7/O, cell design_1_i/top_nqueens_0/U0/fsm_1/reset_control_reg_i_1__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#13 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_3/acks_out_reg_i_1__3_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_3/acks_out_reg_i_1__3/O, cell design_1_i/top_nqueens_0/U0/fsm_3/acks_out_reg_i_1__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_2/acks_out_reg_i_1__6_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_2/acks_out_reg_i_1__6/O, cell design_1_i/top_nqueens_0/U0/fsm_2/acks_out_reg_i_1__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#14 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_3/ce_reg_i_1__3_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_3/ce_reg_i_1__3/O, cell design_1_i/top_nqueens_0/U0/fsm_3/ce_reg_i_1__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_2/ce_reg_i_1__6_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_2/ce_reg_i_1__6/O, cell design_1_i/top_nqueens_0/U0/fsm_2/ce_reg_i_1__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#15 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_3/logic/FSM_onehot_state_reg[1] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_3/logic/acks_out_reg_i_2__3/O, cell design_1_i/top_nqueens_0/U0/fsm_3/logic/acks_out_reg_i_2__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_2/logic/FSM_onehot_state_reg[1] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_2/logic/acks_out_reg_i_2__6/O, cell design_1_i/top_nqueens_0/U0/fsm_2/logic/acks_out_reg_i_2__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#16 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_3/reset_control_reg_i_1__5_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_3/reset_control_reg_i_1__5/O, cell design_1_i/top_nqueens_0/U0/fsm_3/reset_control_reg_i_1__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_2/logic/a_j_reg[4]_i_2__6_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_2/logic/a_j_reg[4]_i_2__6/O, cell design_1_i/top_nqueens_0/U0/fsm_2/logic/a_j_reg[4]_i_2__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#17 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_4/acks_out_reg_i_1__6_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_4/acks_out_reg_i_1__6/O, cell design_1_i/top_nqueens_0/U0/fsm_4/acks_out_reg_i_1__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_2/logic/count_reg[4]_i_2__6_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_2/logic/count_reg[4]_i_2__6/O, cell design_1_i/top_nqueens_0/U0/fsm_2/logic/count_reg[4]_i_2__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#18 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_4/ce_reg_i_1__6_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_4/ce_reg_i_1__6/O, cell design_1_i/top_nqueens_0/U0/fsm_4/ce_reg_i_1__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_2/logic/done_aux_reg_i_1__6_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_2/logic/done_aux_reg_i_1__6/O, cell design_1_i/top_nqueens_0/U0/fsm_2/logic/done_aux_reg_i_1__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#19 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_4/logic/FSM_onehot_state_reg[1] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_4/logic/acks_out_reg_i_2__6/O, cell design_1_i/top_nqueens_0/U0/fsm_4/logic/acks_out_reg_i_2__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_2/logic/j_reg[4]_i_2__6_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_2/logic/j_reg[4]_i_2__6/O, cell design_1_i/top_nqueens_0/U0/fsm_2/logic/j_reg[4]_i_2__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#20 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_4/reset_control_reg_i_1__4_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_4/reset_control_reg_i_1__4/O, cell design_1_i/top_nqueens_0/U0/fsm_4/reset_control_reg_i_1__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_2/logic/valid_aux_reg_i_1__6_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_2/logic/valid_aux_reg_i_1__6/O, cell design_1_i/top_nqueens_0/U0/fsm_2/logic/valid_aux_reg_i_1__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#21 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_5/acks_out is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_5/acks_out_reg_i_1__7/O, cell design_1_i/top_nqueens_0/U0/fsm_5/acks_out_reg_i_1__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_2/reset_control_reg_i_1__6_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_2/reset_control_reg_i_1__6/O, cell design_1_i/top_nqueens_0/U0/fsm_2/reset_control_reg_i_1__6. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#22 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_5/ce_reg_i_1__7_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_5/ce_reg_i_1__7/O, cell design_1_i/top_nqueens_0/U0/fsm_5/ce_reg_i_1__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_3/acks_out_reg_i_1__5_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_3/acks_out_reg_i_1__5/O, cell design_1_i/top_nqueens_0/U0/fsm_3/acks_out_reg_i_1__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#23 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_5/logic/FSM_onehot_state_reg[1] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_5/logic/acks_out_reg_i_2__7/O, cell design_1_i/top_nqueens_0/U0/fsm_5/logic/acks_out_reg_i_2__7. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_3/ce_reg_i_1__5_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_3/ce_reg_i_1__5/O, cell design_1_i/top_nqueens_0/U0/fsm_3/ce_reg_i_1__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#24 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_5/reset_control_reg_i_1__3_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_5/reset_control_reg_i_1__3/O, cell design_1_i/top_nqueens_0/U0/fsm_5/reset_control_reg_i_1__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_3/logic/FSM_onehot_state_reg[4] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_3/logic/acks_out_reg_i_2__5/O, cell design_1_i/top_nqueens_0/U0/fsm_3/logic/acks_out_reg_i_2__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#25 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_6/acks_out is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_6/acks_out_reg_i_1__5/O, cell design_1_i/top_nqueens_0/U0/fsm_6/acks_out_reg_i_1__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_3/logic/a_j_reg[4]_i_2__5_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_3/logic/a_j_reg[4]_i_2__5/O, cell design_1_i/top_nqueens_0/U0/fsm_3/logic/a_j_reg[4]_i_2__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#26 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_6/ce_reg_i_1__5_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_6/ce_reg_i_1__5/O, cell design_1_i/top_nqueens_0/U0/fsm_6/ce_reg_i_1__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_3/logic/count_reg[4]_i_2__5_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_3/logic/count_reg[4]_i_2__5/O, cell design_1_i/top_nqueens_0/U0/fsm_3/logic/count_reg[4]_i_2__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#27 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_6/logic/FSM_onehot_state_reg[1] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_6/logic/acks_out_reg_i_2__5/O, cell design_1_i/top_nqueens_0/U0/fsm_6/logic/acks_out_reg_i_2__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_3/logic/done_aux_reg_i_1__5_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_3/logic/done_aux_reg_i_1__5/O, cell design_1_i/top_nqueens_0/U0/fsm_3/logic/done_aux_reg_i_1__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#28 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_6/reset_control_reg_i_1__2_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_6/reset_control_reg_i_1__2/O, cell design_1_i/top_nqueens_0/U0/fsm_6/reset_control_reg_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_3/logic/j_reg[4]_i_2__5_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_3/logic/j_reg[4]_i_2__5/O, cell design_1_i/top_nqueens_0/U0/fsm_3/logic/j_reg[4]_i_2__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#29 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_7/acks_out is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_7/acks_out_reg_i_1__4/O, cell design_1_i/top_nqueens_0/U0/fsm_7/acks_out_reg_i_1__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_3/logic/valid_aux_reg_i_1__5_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_3/logic/valid_aux_reg_i_1__5/O, cell design_1_i/top_nqueens_0/U0/fsm_3/logic/valid_aux_reg_i_1__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#30 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_7/ce_reg_i_1__4_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_7/ce_reg_i_1__4/O, cell design_1_i/top_nqueens_0/U0/fsm_7/ce_reg_i_1__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_3/reset_control_reg_i_1__5_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_3/reset_control_reg_i_1__5/O, cell design_1_i/top_nqueens_0/U0/fsm_3/reset_control_reg_i_1__5. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#31 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_7/logic/FSM_onehot_state_reg[1] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_7/logic/acks_out_reg_i_2__4/O, cell design_1_i/top_nqueens_0/U0/fsm_7/logic/acks_out_reg_i_2__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_4/acks_out_reg_i_1__4_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_4/acks_out_reg_i_1__4/O, cell design_1_i/top_nqueens_0/U0/fsm_4/acks_out_reg_i_1__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#32 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_7/reset_control_reg_i_1__1_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_7/reset_control_reg_i_1__1/O, cell design_1_i/top_nqueens_0/U0/fsm_7/reset_control_reg_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_4/ce_reg_i_1__4_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_4/ce_reg_i_1__4/O, cell design_1_i/top_nqueens_0/U0/fsm_4/ce_reg_i_1__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#33 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_8/acks_out is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_8/acks_out_reg_i_1__2/O, cell design_1_i/top_nqueens_0/U0/fsm_8/acks_out_reg_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_4/logic/FSM_onehot_state_reg[1] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_4/logic/acks_out_reg_i_2__4/O, cell design_1_i/top_nqueens_0/U0/fsm_4/logic/acks_out_reg_i_2__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#34 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_8/ce_reg_i_1__2_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_8/ce_reg_i_1__2/O, cell design_1_i/top_nqueens_0/U0/fsm_8/ce_reg_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_4/logic/a_j_reg[4]_i_2__4_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_4/logic/a_j_reg[4]_i_2__4/O, cell design_1_i/top_nqueens_0/U0/fsm_4/logic/a_j_reg[4]_i_2__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#35 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_8/logic/FSM_onehot_state_reg[1] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_8/logic/acks_out_reg_i_2__2/O, cell design_1_i/top_nqueens_0/U0/fsm_8/logic/acks_out_reg_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_4/logic/count_reg[4]_i_2__4_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_4/logic/count_reg[4]_i_2__4/O, cell design_1_i/top_nqueens_0/U0/fsm_4/logic/count_reg[4]_i_2__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#36 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_8/reset_control_reg_i_1__0_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_8/reset_control_reg_i_1__0/O, cell design_1_i/top_nqueens_0/U0/fsm_8/reset_control_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_4/logic/done_aux_reg_i_1__4_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_4/logic/done_aux_reg_i_1__4/O, cell design_1_i/top_nqueens_0/U0/fsm_4/logic/done_aux_reg_i_1__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#37 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_9/E[0] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_9/counter_s_reg[11]_i_2/O, cell design_1_i/top_nqueens_0/U0/fsm_9/counter_s_reg[11]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_4/logic/j_reg[4]_i_2__4_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_4/logic/j_reg[4]_i_2__4/O, cell design_1_i/top_nqueens_0/U0/fsm_4/logic/j_reg[4]_i_2__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#38 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_9/acks_out is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_9/acks_out_reg_i_1__0/O, cell design_1_i/top_nqueens_0/U0/fsm_9/acks_out_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_4/logic/valid_aux_reg_i_1__4_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_4/logic/valid_aux_reg_i_1__4/O, cell design_1_i/top_nqueens_0/U0/fsm_4/logic/valid_aux_reg_i_1__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#39 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_9/ce_reg_i_1__0_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_9/ce_reg_i_1__0/O, cell design_1_i/top_nqueens_0/U0/fsm_9/ce_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_4/reset_control_reg_i_1__4_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_4/reset_control_reg_i_1__4/O, cell design_1_i/top_nqueens_0/U0/fsm_4/reset_control_reg_i_1__4. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#40 Warning
 Gated clock check  
-Net design_1_i/top_nqueens_0/U0/fsm_9/logic/FSM_onehot_state_reg[0] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_9/logic/acks_out_reg_i_2__0/O, cell design_1_i/top_nqueens_0/U0/fsm_9/logic/acks_out_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Net design_1_i/top_nqueens_0/U0/fsm_5/acks_out_reg_i_1__3_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_5/acks_out_reg_i_1__3/O, cell design_1_i/top_nqueens_0/U0/fsm_5/acks_out_reg_i_1__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 PDRC-153#41 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_5/ce_reg_i_1__3_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_5/ce_reg_i_1__3/O, cell design_1_i/top_nqueens_0/U0/fsm_5/ce_reg_i_1__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#42 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_5/logic/FSM_onehot_state_reg[2] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_5/logic/acks_out_reg_i_2__3/O, cell design_1_i/top_nqueens_0/U0/fsm_5/logic/acks_out_reg_i_2__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#43 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_5/logic/a_j_reg[4]_i_2__3_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_5/logic/a_j_reg[4]_i_2__3/O, cell design_1_i/top_nqueens_0/U0/fsm_5/logic/a_j_reg[4]_i_2__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#44 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_5/logic/count_reg[4]_i_2__3_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_5/logic/count_reg[4]_i_2__3/O, cell design_1_i/top_nqueens_0/U0/fsm_5/logic/count_reg[4]_i_2__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#45 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_5/logic/done_aux_reg_i_1__3_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_5/logic/done_aux_reg_i_1__3/O, cell design_1_i/top_nqueens_0/U0/fsm_5/logic/done_aux_reg_i_1__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#46 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_5/logic/j_reg[4]_i_2__3_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_5/logic/j_reg[4]_i_2__3/O, cell design_1_i/top_nqueens_0/U0/fsm_5/logic/j_reg[4]_i_2__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#47 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_5/logic/valid_aux_reg_i_1__3_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_5/logic/valid_aux_reg_i_1__3/O, cell design_1_i/top_nqueens_0/U0/fsm_5/logic/valid_aux_reg_i_1__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#48 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_5/reset_control_reg_i_1__3_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_5/reset_control_reg_i_1__3/O, cell design_1_i/top_nqueens_0/U0/fsm_5/reset_control_reg_i_1__3. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#49 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_6/acks_out is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_6/acks_out_reg_i_1__2/O, cell design_1_i/top_nqueens_0/U0/fsm_6/acks_out_reg_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#50 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_6/ce_reg_i_1__2_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_6/ce_reg_i_1__2/O, cell design_1_i/top_nqueens_0/U0/fsm_6/ce_reg_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#51 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_6/logic/FSM_onehot_state_reg[2] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_6/logic/acks_out_reg_i_2__2/O, cell design_1_i/top_nqueens_0/U0/fsm_6/logic/acks_out_reg_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#52 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_6/logic/a_j_reg[4]_i_2__2_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_6/logic/a_j_reg[4]_i_2__2/O, cell design_1_i/top_nqueens_0/U0/fsm_6/logic/a_j_reg[4]_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#53 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_6/logic/count_reg[4]_i_2__2_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_6/logic/count_reg[4]_i_2__2/O, cell design_1_i/top_nqueens_0/U0/fsm_6/logic/count_reg[4]_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#54 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_6/logic/done_aux_reg_i_1__2_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_6/logic/done_aux_reg_i_1__2/O, cell design_1_i/top_nqueens_0/U0/fsm_6/logic/done_aux_reg_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#55 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_6/logic/j_reg[4]_i_2__2_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_6/logic/j_reg[4]_i_2__2/O, cell design_1_i/top_nqueens_0/U0/fsm_6/logic/j_reg[4]_i_2__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#56 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_6/logic/valid_aux_reg_i_1__2_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_6/logic/valid_aux_reg_i_1__2/O, cell design_1_i/top_nqueens_0/U0/fsm_6/logic/valid_aux_reg_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#57 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_6/reset_control_reg_i_1__2_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_6/reset_control_reg_i_1__2/O, cell design_1_i/top_nqueens_0/U0/fsm_6/reset_control_reg_i_1__2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#58 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_7/acks_out is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_7/acks_out_reg_i_1__1/O, cell design_1_i/top_nqueens_0/U0/fsm_7/acks_out_reg_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#59 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_7/ce_reg_i_1__1_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_7/ce_reg_i_1__1/O, cell design_1_i/top_nqueens_0/U0/fsm_7/ce_reg_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#60 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_7/logic/FSM_onehot_state_reg[2] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_7/logic/acks_out_reg_i_2__1/O, cell design_1_i/top_nqueens_0/U0/fsm_7/logic/acks_out_reg_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#61 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_7/logic/a_j_reg[4]_i_2__1_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_7/logic/a_j_reg[4]_i_2__1/O, cell design_1_i/top_nqueens_0/U0/fsm_7/logic/a_j_reg[4]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#62 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_7/logic/count_reg[4]_i_2__1_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_7/logic/count_reg[4]_i_2__1/O, cell design_1_i/top_nqueens_0/U0/fsm_7/logic/count_reg[4]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#63 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_7/logic/done_aux_reg_i_1__1_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_7/logic/done_aux_reg_i_1__1/O, cell design_1_i/top_nqueens_0/U0/fsm_7/logic/done_aux_reg_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#64 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_7/logic/j_reg[4]_i_2__1_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_7/logic/j_reg[4]_i_2__1/O, cell design_1_i/top_nqueens_0/U0/fsm_7/logic/j_reg[4]_i_2__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#65 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_7/logic/valid_aux_reg_i_1__1_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_7/logic/valid_aux_reg_i_1__1/O, cell design_1_i/top_nqueens_0/U0/fsm_7/logic/valid_aux_reg_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#66 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_7/reset_control_reg_i_1__1_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_7/reset_control_reg_i_1__1/O, cell design_1_i/top_nqueens_0/U0/fsm_7/reset_control_reg_i_1__1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#67 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_8/acks_out is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_8/acks_out_reg_i_1__0/O, cell design_1_i/top_nqueens_0/U0/fsm_8/acks_out_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#68 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_8/ce_reg_i_1__0_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_8/ce_reg_i_1__0/O, cell design_1_i/top_nqueens_0/U0/fsm_8/ce_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#69 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_8/logic/FSM_onehot_state_reg[4] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_8/logic/acks_out_reg_i_2__0/O, cell design_1_i/top_nqueens_0/U0/fsm_8/logic/acks_out_reg_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#70 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_8/logic/a_j_reg[4]_i_2__0_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_8/logic/a_j_reg[4]_i_2__0/O, cell design_1_i/top_nqueens_0/U0/fsm_8/logic/a_j_reg[4]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#71 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_8/logic/count_reg[4]_i_2__0_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_8/logic/count_reg[4]_i_2__0/O, cell design_1_i/top_nqueens_0/U0/fsm_8/logic/count_reg[4]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#72 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_8/logic/done_aux_reg_i_1__0_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_8/logic/done_aux_reg_i_1__0/O, cell design_1_i/top_nqueens_0/U0/fsm_8/logic/done_aux_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#73 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_8/logic/j_reg[4]_i_2__0_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_8/logic/j_reg[4]_i_2__0/O, cell design_1_i/top_nqueens_0/U0/fsm_8/logic/j_reg[4]_i_2__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#74 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_8/logic/valid_aux_reg_i_1__0_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_8/logic/valid_aux_reg_i_1__0/O, cell design_1_i/top_nqueens_0/U0/fsm_8/logic/valid_aux_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#75 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_8/reset_control_reg_i_1__0_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_8/reset_control_reg_i_1__0/O, cell design_1_i/top_nqueens_0/U0/fsm_8/reset_control_reg_i_1__0. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#76 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_9/acks_out is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_9/acks_out_reg_i_1/O, cell design_1_i/top_nqueens_0/U0/fsm_9/acks_out_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#77 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_9/ce_reg_i_1_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_9/ce_reg_i_1/O, cell design_1_i/top_nqueens_0/U0/fsm_9/ce_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#78 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_9/logic/FSM_onehot_state_reg[4] is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_9/logic/acks_out_reg_i_2/O, cell design_1_i/top_nqueens_0/U0/fsm_9/logic/acks_out_reg_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#79 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_9/logic/a_j_reg[4]_i_2_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_9/logic/a_j_reg[4]_i_2/O, cell design_1_i/top_nqueens_0/U0/fsm_9/logic/a_j_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#80 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_9/logic/count_reg[4]_i_2_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_9/logic/count_reg[4]_i_2/O, cell design_1_i/top_nqueens_0/U0/fsm_9/logic/count_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#81 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_9/logic/done_aux_reg_i_1_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_9/logic/done_aux_reg_i_1/O, cell design_1_i/top_nqueens_0/U0/fsm_9/logic/done_aux_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#82 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_9/logic/j_reg[4]_i_2_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_9/logic/j_reg[4]_i_2/O, cell design_1_i/top_nqueens_0/U0/fsm_9/logic/j_reg[4]_i_2. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#83 Warning
+Gated clock check  
+Net design_1_i/top_nqueens_0/U0/fsm_9/logic/valid_aux_reg_i_1_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_9/logic/valid_aux_reg_i_1/O, cell design_1_i/top_nqueens_0/U0/fsm_9/logic/valid_aux_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
+Related violations: <none>
+
+PDRC-153#84 Warning
 Gated clock check  
 Net design_1_i/top_nqueens_0/U0/fsm_9/reset_control_reg_i_1_n_0 is a gated clock net sourced by a combinational pin design_1_i/top_nqueens_0/U0/fsm_9/reset_control_reg_i_1/O, cell design_1_i/top_nqueens_0/U0/fsm_9/reset_control_reg_i_1. This is not good design practice and will likely impact performance. For SLICE registers, for example, use the CE pin to control the loading of data.
 Related violations: <none>
 
 RTSTAT-10#1 Warning
 No routable loads  
-25 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/s_bscan_tms, design_1_i/system_ila_0/U0/ila_lib/U0/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[13], design_1_i/system_ila_0/U0/ila_lib/U0/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[14] (the first 15 of 23 listed).
+31 net(s) have no routable loads. The problem bus(es) and/or net(s) are dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gr1.gr1_int.rfwft/aempty_fwft_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg[2:0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD7_CTL/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD1/ctl_reg_en_2[1], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_capture[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_drck[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_switch/m_bscan_runtest[0], dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwhf.whf/overflow, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_RD/U_RD_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_rdfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.rd/gras.rsts/ram_empty_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/gntv_or_sync_fifo.gl0.wr/gwas.wsts/ram_full_i, dbg_hub/inst/BSCANID.u_xsdbm_id/CORE_XSDB.UUT_MASTER/U_ICON_INTERFACE/U_CMD6_WR/U_WR_FIFO/SUBCORE_FIFO.xsdbm_v3_0_0_wrfifo_inst/inst_fifo_gen/gconvfifo.rf/grf.rf/rstblk/rd_rst_reg[0], dbg_hub/inst/BSCANID.u_xsdbm_id/SWITCH_N_EXT_BSCAN.bscan_inst/s_bscan_tms, design_1_i/system_ila_0/U0/ila_lib/U0/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[13], u_ila_0/inst/ila_core_inst/u_ila_regs/U_XSDB_SLAVE/s_daddr_o[13] (the first 15 of 29 listed).
 Related violations: <none>
 
 

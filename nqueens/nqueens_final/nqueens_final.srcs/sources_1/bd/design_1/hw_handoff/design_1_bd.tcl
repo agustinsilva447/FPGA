@@ -169,6 +169,7 @@ proc create_root_design { parentCell } {
 
 
   # Create ports
+  set reg0_o_0 [ create_bd_port -dir O -from 31 -to 0 reg0_o_0 ]
 
   # Create instance: axi_smc, and set properties
   set axi_smc [ create_bd_cell -type ip -vlnv xilinx.com:ip:smartconnect:1.0 axi_smc ]
@@ -182,10 +183,10 @@ proc create_root_design { parentCell } {
   set_property -dict [ list \
    CONFIG.DRAM_IO_ENA {false} \
    CONFIG.FIFO_IN_ENA {false} \
-   CONFIG.REGS_IN_DEPTH {2} \
-   CONFIG.REGS_IN_DWIDTH {12} \
+   CONFIG.REGS_IN_DEPTH {3} \
+   CONFIG.REGS_IN_DWIDTH {32} \
    CONFIG.REGS_OUT_DEPTH {1} \
-   CONFIG.REGS_OUT_DWIDTH {1} \
+   CONFIG.REGS_OUT_DWIDTH {32} \
  ] $comblock_0
 
   # Create instance: processing_system7_0, and set properties
@@ -604,10 +605,11 @@ proc create_root_design { parentCell } {
   connect_bd_intf_net -intf_net processing_system7_0_M_AXI_GP0 [get_bd_intf_pins axi_smc/S00_AXI] [get_bd_intf_pins processing_system7_0/M_AXI_GP0]
 
   # Create port connections
-  connect_bd_net -net comblock_0_reg0_o [get_bd_pins comblock_0/reg0_o] [get_bd_pins top_nqueens_0/nRst]
+  connect_bd_net -net comblock_0_reg0_o [get_bd_ports reg0_o_0] [get_bd_pins comblock_0/reg0_o] [get_bd_pins top_nqueens_0/nRst]
   connect_bd_net -net processing_system7_0_FCLK_CLK0 [get_bd_pins axi_smc/aclk] [get_bd_pins comblock_0/axil_aclk] [get_bd_pins processing_system7_0/FCLK_CLK0] [get_bd_pins processing_system7_0/M_AXI_GP0_ACLK] [get_bd_pins rst_ps7_0_100M/slowest_sync_clk] [get_bd_pins top_nqueens_0/clk]
   connect_bd_net -net processing_system7_0_FCLK_RESET0_N [get_bd_pins processing_system7_0/FCLK_RESET0_N] [get_bd_pins rst_ps7_0_100M/ext_reset_in]
   connect_bd_net -net rst_ps7_0_100M_peripheral_aresetn [get_bd_pins axi_smc/aresetn] [get_bd_pins comblock_0/axil_aresetn] [get_bd_pins rst_ps7_0_100M/peripheral_aresetn]
+  connect_bd_net -net top_nqueens_0_a [get_bd_pins comblock_0/reg2_i] [get_bd_pins top_nqueens_0/a]
   connect_bd_net -net top_nqueens_0_counter [get_bd_pins comblock_0/reg1_i] [get_bd_pins top_nqueens_0/counter]
   connect_bd_net -net top_nqueens_0_done [get_bd_pins comblock_0/reg0_i] [get_bd_pins top_nqueens_0/done]
 

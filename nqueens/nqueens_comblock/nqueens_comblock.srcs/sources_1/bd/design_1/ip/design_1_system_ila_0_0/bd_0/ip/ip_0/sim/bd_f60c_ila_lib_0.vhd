@@ -56,8 +56,9 @@ clk : IN STD_LOGIC;
 
 
 probe0 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
-    probe1 : IN STD_LOGIC_VECTOR(11 DOWNTO 0);
-    probe2 : IN STD_LOGIC_VECTOR(0 DOWNTO 0)
+    probe1 : IN STD_LOGIC_VECTOR(10 DOWNTO 0);
+    probe2 : IN STD_LOGIC_VECTOR(0 DOWNTO 0);
+    probe3 : IN STD_LOGIC_VECTOR(4 DOWNTO 0)
 );
 END bd_f60c_ila_lib_0;
 
