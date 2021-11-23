@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="ASCII"?>
+<sdkproject:SdkProject xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:sdkproject="http://www.xilinx.com/sdkproject" name="debug2" location="C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/debug_queen/debug2" platform="C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/debug_queen/design_1_wrapper_12/export/design_1_wrapper_12/design_1_wrapper_12.xpfm" platformUID="xilinx:zed::0.0(custom)" systemProject="debug2_system" sysConfig="design_1_wrapper_12" runtime="cpp" cpu="standalone_domain" cpuInstance="ps7_cortexa9_0" os="standalone" mssSignature="a2397efd1367513c7d8805864744e3a0">
+  <configuration name="Debug" id="xilinx.gnu.armv7.exe.debug.261399378">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+    <lastBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <configuration name="Release" id="xilinx.gnu.armv7.exe.release.769414417" dirty="true">
+    <configBuildOptions xsi:type="sdkproject:SdkOptions"/>
+  </configuration>
+  <template appTemplateName="hello_world"/>
+</sdkproject:SdkProject>

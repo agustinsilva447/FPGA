@@ -2,3 +2,6 @@ Running: xsim.dir/top_nqueens_tb_behav/xsimk.exe -simmode gui -wdb top_nqueens_t
 Design successfully loaded
 Design Loading Memory Usage: 5364 KB (Peak: 5364 KB)
 Design Loading CPU Usage: 0 ms
+Simulation completed
+Simulation Memory Usage: 14212 KB (Peak: 14212 KB)
+Simulation CPU Usage: 21921 ms

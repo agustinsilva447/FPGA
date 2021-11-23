@@ -1,0 +1,147 @@
+!SESSION 2021-11-23 15:48:57.288 -----------------------------------------------
+eclipse.buildId=2019.2
+java.version=9.0.4
+java.vendor=Oracle Corporation
+BootLoader constants: OS=win32, ARCH=x86_64, WS=win32, NL=en_US
+Command-line arguments:  -os win32 -ws win32 -arch x86_64
+
+This is a continuation of log file C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\debug_queen\.metadata\.bak_0.log
+Created Time: 2021-11-23 19:13:13.957
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:13.958
+!MESSAGE XSCT Command: [after 3000], Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:16.959
+!MESSAGE XSCT command with result: [after 3000], Result: [null, ]. Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:16.972
+!MESSAGE XSCT Command: [jtag targets -filter {level == 0}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:16.994
+!MESSAGE XSCT command with result: [jtag targets -filter {level == 0}], Result: [null,   1* Digilent Zed 210248A49CA4]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:16.994
+!MESSAGE XSCT Command: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==1}], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:17.009
+!MESSAGE XSCT command with result: [jtag targets -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==1}], Result: [null,      2  arm_dap (idcode 4ba00477 irlen 4)
+     3  xc7z020 (idcode 23727093 irlen 6 fpga)]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:17.009
+!MESSAGE XSCT Command: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:17.025
+!MESSAGE XSCT command with result: [targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0} -index 1], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:17.026
+!MESSAGE XSCT Command: [fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/debug_queen/debug2/_ide/bitstream/design_1_wrapper.bit], Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.352
+!MESSAGE XSCT command with result: [fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/debug_queen/debug2/_ide/bitstream/design_1_wrapper.bit], Result: [null, ]. Thread: ModalContext
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.377
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.385
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.386
+!MESSAGE XSCT Command: [loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/debug_queen/design_1_wrapper_12/export/design_1_wrapper_12/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.394
+!MESSAGE XSCT command with result: [loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/debug_queen/design_1_wrapper_12/export/design_1_wrapper_12/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}]], Result: [null, design_1_wrapper_2]. Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.394
+!MESSAGE XSCT Command: [configparams force-mem-access 1], Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.396
+!MESSAGE XSCT command with result: [configparams force-mem-access 1], Result: [null, ]. Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.396
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~"APU*"}], Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.403
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~"APU*"}], Result: [null, ]. Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.404
+!MESSAGE XSCT Command: [source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/debug_queen/debug2/_ide/psinit/ps7_init.tcl], Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.406
+!MESSAGE XSCT command with result: [source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/debug_queen/debug2/_ide/psinit/ps7_init.tcl], Result: [null, ]. Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.406
+!MESSAGE XSCT Command: [ps7_init], Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.645
+!MESSAGE XSCT command with result: [ps7_init], Result: [null, ]. Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.646
+!MESSAGE XSCT Command: [ps7_post_config], Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.651
+!MESSAGE XSCT command with result: [ps7_post_config], Result: [null, ]. Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.651
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.659
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.659
+!MESSAGE XSCT Command: [dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/debug_queen/debug2/Debug/debug2.elf], Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.796
+!MESSAGE XSCT command with result: [dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/debug_queen/debug2/Debug/debug2.elf], Result: [null, ]. Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.796
+!MESSAGE XSCT Command: [configparams force-mem-access 0], Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.820
+!MESSAGE XSCT command with result: [configparams force-mem-access 0], Result: [null, ]. Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.852
+!MESSAGE XSCT Command: [targets -set -nocase -filter {name =~ "*A9*#0"}], Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.891
+!MESSAGE XSCT command with result: [targets -set -nocase -filter {name =~ "*A9*#0"}], Result: [null, ]. Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.891
+!MESSAGE XSCT Command: [con], Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:13:19.909
+!MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-43: Launching Debugger_debig_queens-Default
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-11-23 19:13:19.910
+!MESSAGE Tool usage for 'TCF_APP_DEBUG' updated to '32'
+
+!ENTRY org.eclipse.tcf 4 0 2021-11-23 19:13:34.886
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY org.eclipse.tcf 4 0 2021-11-23 19:13:36.693
+!MESSAGE Invalid peerAdded event
+!STACK 0
+java.lang.Error
+	at org.eclipse.tcf.internal.services.remote.LocatorProxy$1.event(LocatorProxy.java:64)
+	at org.eclipse.tcf.core.AbstractChannel.handleInput(AbstractChannel.java:1182)
+	at org.eclipse.tcf.core.AbstractChannel$1$1.run(AbstractChannel.java:371)
+	at org.eclipse.tcf.EventQueue.run(EventQueue.java:96)
+	at java.base/java.lang.Thread.run(Unknown Source)
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:19:59.432
+!MESSAGE XSCT Command: [disconnect tcfchan#3], Thread: Thread-2052
+
+!ENTRY com.xilinx.sdk.utils 0 0 2021-11-23 19:19:59.435
+!MESSAGE XSCT command with result: [disconnect tcfchan#3], Result: [null, ]. Thread: Thread-2052
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-11-23 19:19:59.537
+!MESSAGE Executing command: cmd /C C:\Xilinx\Vitis\2019.2\bin\wbtcv.bat -mode batch -source vitis_webtalk.tcl
+
+!ENTRY com.xilinx.sdk.utils 1 0 2021-11-23 19:19:59.567
+!MESSAGE Executed Webtalk command
