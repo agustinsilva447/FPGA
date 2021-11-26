@@ -1,0 +1,19 @@
+#include <stdio.h>
+#include "comblock.h"
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+
+
+int main()
+{
+    u32 n;
+    n = 38395104;
+
+    init_platform();
+    cbWrite(XPAR_COMBLOCK_0_AXIL_BASEADDR , CB_OREG0, n);
+    xil_printf("\nLoopback: %U\n", cbRead(XPAR_COMBLOCK_0_AXIL_BASEADDR, CB_IREG0));
+
+    cleanup_platform();
+    return 0;
+}

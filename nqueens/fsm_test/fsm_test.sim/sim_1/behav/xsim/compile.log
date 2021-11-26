@@ -1,0 +1,10 @@
+INFO: [VRFC 10-2263] Analyzing Verilog file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.sim/sim_1/behav/xsim/glbl.v" into library xil_defaultlib
+INFO: [VRFC 10-311] analyzing module glbl
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/keep_queens/keep_queens.srcs/sources_1/new/ctrl_logic_fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'ctrl_logic_fsm'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/keep_queens/keep_queens.srcs/sources_1/new/up_counter.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'up_counter'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.srcs/sources_1/new/fsm.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fsm'
+INFO: [VRFC 10-163] Analyzing VHDL file "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.srcs/sim_1/new/fsm_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fsm_tb'
