@@ -1,0 +1,25 @@
+12:58:28 **** Incremental Build of configuration Debug for project test_comblock ****
+make all 
+make --no-print-directory pre-build
+a9-linaro-pre-build-step
+' '
+make --no-print-directory main-build
+'Building file: ../src/helloworld.c'
+'Invoking: ARM v7 gcc compiler'
+arm-none-eabi-gcc -Wall -O0 -g3 -c -fmessage-length=0 -MT"src/helloworld.o" -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -IC:/Users/mlabadm/Desktop/test/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bspinclude/include -MMD -MP -MF"src/helloworld.d" -MT"src/helloworld.o" -o "src/helloworld.o" "../src/helloworld.c"
+'Finished building: ../src/helloworld.c'
+' '
+'Building target: test_comblock.elf'
+'Invoking: ARM v7 gcc linker'
+arm-none-eabi-gcc -mcpu=cortex-a9 -mfpu=vfpv3 -mfloat-abi=hard -Wl,-build-id=none -specs=Xilinx.spec -Wl,-T -Wl,../src/lscript.ld -LC:/Users/mlabadm/Desktop/test/design_1_wrapper/export/design_1_wrapper/sw/design_1_wrapper/standalone_ps7_cortexa9_0/bsplib/lib -o "test_comblock.elf"  ./src/helloworld.o ./src/platform.o   -Wl,--start-group,-lxil,-lgcc,-lc,--end-group
+'Finished building target: test_comblock.elf'
+' '
+'Invoking: ARM v7 Print Size'
+arm-none-eabi-size test_comblock.elf  |tee "test_comblock.elf.size"
+   text	   data	    bss	    dec	    hex	filename
+  23625	   1144	  22568	  47337	   b8e9	test_comblock.elf
+'Finished building: test_comblock.elf.size'
+' '
+
+12:58:28 Build Finished (took 749ms)
+
