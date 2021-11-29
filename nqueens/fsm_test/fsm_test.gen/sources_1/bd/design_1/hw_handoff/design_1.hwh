@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Fri Nov 26 18:55:17 2021" VIVADOVERSION="2021.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Nov 29 16:31:36 2021" VIVADOVERSION="2021.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="avnet.com:zedboard:part0:1.4" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -171,8 +171,8 @@
         <PARAMETER NAME="REGS_IN_DWIDTH" VALUE="32"/>
         <PARAMETER NAME="REGS_IN_DEPTH" VALUE="2"/>
         <PARAMETER NAME="REGS_OUT_ENA" VALUE="true"/>
-        <PARAMETER NAME="REGS_OUT_DWIDTH" VALUE="32"/>
-        <PARAMETER NAME="REGS_OUT_DEPTH" VALUE="4"/>
+        <PARAMETER NAME="REGS_OUT_DWIDTH" VALUE="4"/>
+        <PARAMETER NAME="REGS_OUT_DEPTH" VALUE="3"/>
         <PARAMETER NAME="DRAM_IO_ENA" VALUE="false"/>
         <PARAMETER NAME="DRAM_IO_DWIDTH" VALUE="16"/>
         <PARAMETER NAME="DRAM_IO_AWIDTH" VALUE="16"/>
@@ -201,9 +201,9 @@
         <PARAMETER NAME="C_AXIL_HIGHADDR" VALUE="0x43C0FFFF"/>
       </PARAMETERS>
       <PORTS>
-        <PORT DIR="I" LEFT="31" NAME="reg0_i" RIGHT="0" SIGIS="undef" SIGNAME="fsm_7_ack_out">
+        <PORT DIR="I" LEFT="31" NAME="reg0_i" RIGHT="0" SIGIS="undef" SIGNAME="sol_counter_0_count">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="fsm_7" PORT="ack_out"/>
+            <CONNECTION INSTANCE="sol_counter_0" PORT="count"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="31" NAME="reg1_i" RIGHT="0" SIGIS="undef" SIGNAME="fsm_1_next_out">
@@ -211,22 +211,7 @@
             <CONNECTION INSTANCE="fsm_1" PORT="next_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="reg0_o" RIGHT="0" SIGIS="undef" SIGNAME="comblock_0_reg0_o">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="fsm_7" PORT="next_in"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="reg1_o" RIGHT="0" SIGIS="undef" SIGNAME="comblock_0_reg1_o">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="fsm_1" PORT="ack_in"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="reg2_o" RIGHT="0" SIGIS="undef" SIGNAME="comblock_0_reg2_o">
-          <CONNECTIONS>
-            <CONNECTION INSTANCE="fsm_1" PORT="a_in"/>
-          </CONNECTIONS>
-        </PORT>
-        <PORT DIR="O" LEFT="31" NAME="reg3_o" RIGHT="0" SIGIS="undef" SIGNAME="comblock_0_reg3_o">
+        <PORT DIR="O" LEFT="3" NAME="reg0_o" RIGHT="0" SIGIS="undef" SIGNAME="comblock_0_reg0_o">
           <CONNECTIONS>
             <CONNECTION INSTANCE="fsm_7" PORT="nRst"/>
             <CONNECTION INSTANCE="fsm_6" PORT="nRst"/>
@@ -235,6 +220,17 @@
             <CONNECTION INSTANCE="fsm_3" PORT="nRst"/>
             <CONNECTION INSTANCE="fsm_2" PORT="nRst"/>
             <CONNECTION INSTANCE="fsm_1" PORT="nRst"/>
+            <CONNECTION INSTANCE="sol_counter_0" PORT="reset"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="reg1_o" RIGHT="0" SIGIS="undef" SIGNAME="comblock_0_reg1_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fsm_1" PORT="ack_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="3" NAME="reg2_o" RIGHT="0" SIGIS="undef" SIGNAME="comblock_0_reg2_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fsm_1" PORT="a_in"/>
           </CONNECTIONS>
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="I" NAME="axil_aclk" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
@@ -409,7 +405,6 @@
             <PORTMAP LOGICAL="reg0_o" PHYSICAL="reg0_o"/>
             <PORTMAP LOGICAL="reg1_o" PHYSICAL="reg1_o"/>
             <PORTMAP LOGICAL="reg2_o" PHYSICAL="reg2_o"/>
-            <PORTMAP LOGICAL="reg3_o" PHYSICAL="reg3_o"/>
           </PORTMAPS>
         </BUSINTERFACE>
       </BUSINTERFACES>
@@ -429,9 +424,9 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="nRst" SIGIS="undef" SIGNAME="comblock_0_reg3_o">
+        <PORT DIR="I" NAME="nRst" SIGIS="undef" SIGNAME="comblock_0_reg0_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="comblock_0" PORT="reg3_o"/>
+            <CONNECTION INSTANCE="comblock_0" PORT="reg0_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="3" NAME="a_in" RIGHT="0" SIGIS="undef" SIGNAME="comblock_0_reg2_o">
@@ -483,9 +478,9 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="nRst" SIGIS="undef" SIGNAME="comblock_0_reg3_o">
+        <PORT DIR="I" NAME="nRst" SIGIS="undef" SIGNAME="comblock_0_reg0_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="comblock_0" PORT="reg3_o"/>
+            <CONNECTION INSTANCE="comblock_0" PORT="reg0_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="7" NAME="a_in" RIGHT="0" SIGIS="undef" SIGNAME="fsm_1_a_out">
@@ -537,9 +532,9 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="nRst" SIGIS="undef" SIGNAME="comblock_0_reg3_o">
+        <PORT DIR="I" NAME="nRst" SIGIS="undef" SIGNAME="comblock_0_reg0_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="comblock_0" PORT="reg3_o"/>
+            <CONNECTION INSTANCE="comblock_0" PORT="reg0_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="11" NAME="a_in" RIGHT="0" SIGIS="undef" SIGNAME="fsm_2_a_out">
@@ -591,9 +586,9 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="nRst" SIGIS="undef" SIGNAME="comblock_0_reg3_o">
+        <PORT DIR="I" NAME="nRst" SIGIS="undef" SIGNAME="comblock_0_reg0_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="comblock_0" PORT="reg3_o"/>
+            <CONNECTION INSTANCE="comblock_0" PORT="reg0_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="15" NAME="a_in" RIGHT="0" SIGIS="undef" SIGNAME="fsm_3_a_out">
@@ -645,9 +640,9 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="nRst" SIGIS="undef" SIGNAME="comblock_0_reg3_o">
+        <PORT DIR="I" NAME="nRst" SIGIS="undef" SIGNAME="comblock_0_reg0_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="comblock_0" PORT="reg3_o"/>
+            <CONNECTION INSTANCE="comblock_0" PORT="reg0_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="19" NAME="a_in" RIGHT="0" SIGIS="undef" SIGNAME="fsm_4_a_out">
@@ -699,9 +694,9 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="nRst" SIGIS="undef" SIGNAME="comblock_0_reg3_o">
+        <PORT DIR="I" NAME="nRst" SIGIS="undef" SIGNAME="comblock_0_reg0_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="comblock_0" PORT="reg3_o"/>
+            <CONNECTION INSTANCE="comblock_0" PORT="reg0_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="23" NAME="a_in" RIGHT="0" SIGIS="undef" SIGNAME="fsm_5_a_out">
@@ -753,9 +748,9 @@
             <CONNECTION INSTANCE="processing_system7_0" PORT="FCLK_CLK0"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="nRst" SIGIS="undef" SIGNAME="comblock_0_reg3_o">
+        <PORT DIR="I" NAME="nRst" SIGIS="undef" SIGNAME="comblock_0_reg0_o">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="comblock_0" PORT="reg3_o"/>
+            <CONNECTION INSTANCE="comblock_0" PORT="reg0_o"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="I" LEFT="27" NAME="a_in" RIGHT="0" SIGIS="undef" SIGNAME="fsm_6_a_out">
@@ -768,15 +763,15 @@
             <CONNECTION INSTANCE="fsm_6" PORT="ack_out"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="I" NAME="next_in" SIGIS="undef" SIGNAME="comblock_0_reg0_o">
+        <PORT DIR="I" NAME="next_in" SIGIS="undef" SIGNAME="sol_counter_0_next_sol">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="comblock_0" PORT="reg0_o"/>
+            <CONNECTION INSTANCE="sol_counter_0" PORT="next_sol"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="31" NAME="a_out" RIGHT="0" SIGIS="undef"/>
         <PORT DIR="O" NAME="ack_out" SIGIS="undef" SIGNAME="fsm_7_ack_out">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="comblock_0" PORT="reg0_i"/>
+            <CONNECTION INSTANCE="sol_counter_0" PORT="clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="next_out" SIGIS="undef" SIGNAME="fsm_7_next_out">
@@ -1933,12 +1928,8 @@
         </PORT>
         <PORT CLKFREQUENCY="100000000" DIR="O" NAME="FCLK_CLK0" SIGIS="clk" SIGNAME="processing_system7_0_FCLK_CLK0">
           <CONNECTIONS>
-            <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
-            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="S00_ACLK"/>
-            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="slowest_sync_clk"/>
             <CONNECTION INSTANCE="comblock_0" PORT="axil_aclk"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M00_ACLK"/>
-            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="ACLK"/>
             <CONNECTION INSTANCE="fsm_1" PORT="clk"/>
             <CONNECTION INSTANCE="fsm_2" PORT="clk"/>
             <CONNECTION INSTANCE="fsm_3" PORT="clk"/>
@@ -1946,6 +1937,10 @@
             <CONNECTION INSTANCE="fsm_5" PORT="clk"/>
             <CONNECTION INSTANCE="fsm_6" PORT="clk"/>
             <CONNECTION INSTANCE="fsm_7" PORT="clk"/>
+            <CONNECTION INSTANCE="processing_system7_0" PORT="M_AXI_GP0_ACLK"/>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="S00_ACLK"/>
+            <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="ACLK"/>
+            <CONNECTION INSTANCE="rst_ps7_0_100M" PORT="slowest_sync_clk"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" NAME="FCLK_RESET0_N" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="processing_system7_0_FCLK_RESET0_N">
@@ -2942,6 +2937,37 @@
             <CONNECTION INSTANCE="comblock_0" PORT="axil_aresetn"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="M00_ARESETN"/>
             <CONNECTION INSTANCE="ps7_0_axi_periph" PORT="ARESETN"/>
+          </CONNECTIONS>
+        </PORT>
+      </PORTS>
+      <BUSINTERFACES/>
+    </MODULE>
+    <MODULE COREREVISION="1" FULLNAME="/sol_counter_0" HWVERSION="1.0" INSTANCE="sol_counter_0" IPTYPE="PERIPHERAL" IS_ENABLE="1" MODCLASS="PERIPHERAL" MODTYPE="sol_counter" VLNV="xilinx.com:module_ref:sol_counter:1.0">
+      <DOCUMENTS/>
+      <PARAMETERS>
+        <PARAMETER NAME="N" VALUE="32"/>
+        <PARAMETER NAME="Component_Name" VALUE="design_1_sol_counter_0_0"/>
+        <PARAMETER NAME="EDK_IPTYPE" VALUE="PERIPHERAL"/>
+      </PARAMETERS>
+      <PORTS>
+        <PORT CLKFREQUENCY="100000000" DIR="I" NAME="clk" SIGIS="clk" SIGNAME="fsm_7_ack_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fsm_7" PORT="ack_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" NAME="reset" POLARITY="ACTIVE_LOW" SIGIS="rst" SIGNAME="comblock_0_reg0_o">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comblock_0" PORT="reg0_o"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" NAME="next_sol" SIGIS="undef" SIGNAME="sol_counter_0_next_sol">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fsm_7" PORT="next_in"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="O" LEFT="31" NAME="count" RIGHT="0" SIGIS="undef" SIGNAME="sol_counter_0_count">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comblock_0" PORT="reg0_i"/>
           </CONNECTIONS>
         </PORT>
       </PORTS>

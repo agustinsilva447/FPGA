@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
 -- Date        : Fri Nov 26 18:56:05 2021
 -- Host        : hp6g4-mlab-2 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/ip/design_1_fsm_0_2/design_1_fsm_0_2_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_fsm_0_2 -prefix
+--               design_1_fsm_0_2_ design_1_fsm_0_2_sim_netlist.vhdl
 -- Design      : design_1_fsm_0_2
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -28,8 +28,6 @@ entity design_1_fsm_0_2_ctrl_logic_fsm is
     \count_reg[0]_0\ : in STD_LOGIC;
     done_aux_reg_0 : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_fsm_0_2_ctrl_logic_fsm : entity is "ctrl_logic_fsm";
 end design_1_fsm_0_2_ctrl_logic_fsm;
 
 architecture STRUCTURE of design_1_fsm_0_2_ctrl_logic_fsm is
@@ -280,8 +278,6 @@ entity design_1_fsm_0_2_up_counter is
     clk : in STD_LOGIC;
     ack_in : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_fsm_0_2_up_counter : entity is "up_counter";
 end design_1_fsm_0_2_up_counter;
 
 architecture STRUCTURE of design_1_fsm_0_2_up_counter is
@@ -597,8 +593,6 @@ entity design_1_fsm_0_2_fsm is
     next_in : in STD_LOGIC;
     nRst : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_fsm_0_2_fsm : entity is "fsm";
 end design_1_fsm_0_2_fsm;
 
 architecture STRUCTURE of design_1_fsm_0_2_fsm is

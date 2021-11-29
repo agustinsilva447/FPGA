@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
 // Date        : Fri Nov 26 18:56:05 2021
 // Host        : hp6g4-mlab-2 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/ip/design_1_fsm_0_2/design_1_fsm_0_2_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top design_1_fsm_0_2 -prefix
+//               design_1_fsm_0_2_ design_1_fsm_0_2_sim_netlist.v
 // Design      : design_1_fsm_0_2
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -12,53 +12,6 @@
 // --------------------------------------------------------------------------------
 `timescale 1 ps / 1 ps
 
-(* CHECK_LICENSE_TYPE = "design_1_fsm_0_2,fsm,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "module_ref" *) 
-(* x_core_info = "fsm,Vivado 2021.2" *) 
-(* NotValidForBitStream *)
-module design_1_fsm_0_2
-   (clk,
-    nRst,
-    a_in,
-    ack_in,
-    next_in,
-    a_out,
-    ack_out,
-    next_out,
-    output_state);
-  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
-  input nRst;
-  input [7:0]a_in;
-  input ack_in;
-  input next_in;
-  output [11:0]a_out;
-  output ack_out;
-  output next_out;
-  output [2:0]output_state;
-
-  wire [7:0]a_in;
-  wire [11:0]a_out;
-  wire ack_in;
-  wire ack_out;
-  wire clk;
-  wire nRst;
-  wire next_in;
-  wire next_out;
-  wire [2:0]output_state;
-
-  design_1_fsm_0_2_fsm U0
-       (.Q(output_state[2]),
-        .a_in(a_in),
-        .a_out(a_out),
-        .ack_in(ack_in),
-        .ack_out(ack_out),
-        .clk(clk),
-        .nRst(nRst),
-        .next_in(next_in),
-        .next_out(next_out),
-        .output_state(output_state[1:0]));
-endmodule
-
-(* ORIG_REF_NAME = "ctrl_logic_fsm" *) 
 module design_1_fsm_0_2_ctrl_logic_fsm
    (Q,
     \FSM_onehot_state_reg[2] ,
@@ -263,7 +216,52 @@ module design_1_fsm_0_2_ctrl_logic_fsm
         .Q(valid));
 endmodule
 
-(* ORIG_REF_NAME = "fsm" *) 
+(* CHECK_LICENSE_TYPE = "design_1_fsm_0_2,fsm,{}" *) (* downgradeipidentifiedwarnings = "yes" *) (* ip_definition_source = "module_ref" *) 
+(* x_core_info = "fsm,Vivado 2021.2" *) 
+(* NotValidForBitStream *)
+module design_1_fsm_0_2
+   (clk,
+    nRst,
+    a_in,
+    ack_in,
+    next_in,
+    a_out,
+    ack_out,
+    next_out,
+    output_state);
+  (* x_interface_info = "xilinx.com:signal:clock:1.0 clk CLK" *) (* x_interface_parameter = "XIL_INTERFACENAME clk, FREQ_HZ 100000000, FREQ_TOLERANCE_HZ 0, PHASE 0.0, CLK_DOMAIN design_1_processing_system7_0_0_FCLK_CLK0, INSERT_VIP 0" *) input clk;
+  input nRst;
+  input [7:0]a_in;
+  input ack_in;
+  input next_in;
+  output [11:0]a_out;
+  output ack_out;
+  output next_out;
+  output [2:0]output_state;
+
+  wire [7:0]a_in;
+  wire [11:0]a_out;
+  wire ack_in;
+  wire ack_out;
+  wire clk;
+  wire nRst;
+  wire next_in;
+  wire next_out;
+  wire [2:0]output_state;
+
+  design_1_fsm_0_2_fsm U0
+       (.Q(output_state[2]),
+        .a_in(a_in),
+        .a_out(a_out),
+        .ack_in(ack_in),
+        .ack_out(ack_out),
+        .clk(clk),
+        .nRst(nRst),
+        .next_in(next_in),
+        .next_out(next_out),
+        .output_state(output_state[1:0]));
+endmodule
+
 module design_1_fsm_0_2_fsm
    (Q,
     a_out,
@@ -604,7 +602,6 @@ module design_1_fsm_0_2_fsm
         .O(reset_control_reg_i_2_n_0));
 endmodule
 
-(* ORIG_REF_NAME = "up_counter" *) 
 module design_1_fsm_0_2_up_counter
    (\j_reg[0] ,
     \count_reg_reg[3]_0 ,

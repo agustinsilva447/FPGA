@@ -1,7 +1,7 @@
 --Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
---Date        : Fri Nov 26 18:54:55 2021
+--Date        : Mon Nov 29 16:31:36 2021
 --Host        : hp6g4-mlab-2 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -612,10 +612,10 @@ entity design_1 is
     FIXED_IO_ps_porb : inout STD_LOGIC;
     FIXED_IO_ps_srstb : inout STD_LOGIC
   );
-  attribute core_generation_info : string;
-  attribute core_generation_info of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=13,numReposBlks=11,numNonXlnxBlks=1,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=7,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_clkrst_cnt=7,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
-  attribute hw_handoff : string;
-  attribute hw_handoff of design_1 : entity is "design_1.hwdef";
+  attribute CORE_GENERATION_INFO : string;
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=14,numReposBlks=12,numNonXlnxBlks=1,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=8,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_clkrst_cnt=20,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute HW_HANDOFF : string;
+  attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
 
 architecture STRUCTURE of design_1 is
@@ -695,10 +695,9 @@ architecture STRUCTURE of design_1 is
   port (
     reg0_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
     reg1_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    reg0_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    reg1_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    reg2_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    reg3_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    reg0_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    reg1_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    reg2_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
     axil_aclk : in STD_LOGIC;
     axil_aresetn : in STD_LOGIC;
     axil_awaddr : in STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -827,10 +826,17 @@ architecture STRUCTURE of design_1 is
     output_state : out STD_LOGIC_VECTOR ( 2 downto 0 )
   );
   end component design_1_fsm_7_0;
-  signal comblock_0_reg0_o : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal comblock_0_reg1_o : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal comblock_0_reg2_o : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal comblock_0_reg3_o : STD_LOGIC_VECTOR ( 31 downto 0 );
+  component design_1_sol_counter_0_0 is
+  port (
+    clk : in STD_LOGIC;
+    reset : in STD_LOGIC;
+    next_sol : out STD_LOGIC;
+    count : out STD_LOGIC_VECTOR ( 31 downto 0 )
+  );
+  end component design_1_sol_counter_0_0;
+  signal comblock_0_reg0_o : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal comblock_0_reg1_o : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal comblock_0_reg2_o : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal fsm_1_a_out : STD_LOGIC_VECTOR ( 7 downto 0 );
   signal fsm_1_ack_out : STD_LOGIC;
   signal fsm_1_next_out : STD_LOGIC;
@@ -932,6 +938,8 @@ architecture STRUCTURE of design_1 is
   signal ps7_0_axi_periph_M00_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal ps7_0_axi_periph_M00_AXI_WVALID : STD_LOGIC;
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal sol_counter_0_count : STD_LOGIC_VECTOR ( 31 downto 0 );
+  signal sol_counter_0_next_sol : STD_LOGIC;
   signal NLW_fsm_1_output_state_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_fsm_2_output_state_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_fsm_3_output_state_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
@@ -949,31 +957,31 @@ architecture STRUCTURE of design_1 is
   signal NLW_rst_ps7_0_100M_bus_struct_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_ps7_0_100M_interconnect_aresetn_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
   signal NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED : STD_LOGIC_VECTOR ( 0 to 0 );
-  attribute x_interface_info : string;
-  attribute x_interface_info of DDR_cas_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CAS_N";
-  attribute x_interface_info of DDR_ck_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CK_N";
-  attribute x_interface_info of DDR_ck_p : signal is "xilinx.com:interface:ddrx:1.0 DDR CK_P";
-  attribute x_interface_info of DDR_cke : signal is "xilinx.com:interface:ddrx:1.0 DDR CKE";
-  attribute x_interface_info of DDR_cs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CS_N";
-  attribute x_interface_info of DDR_odt : signal is "xilinx.com:interface:ddrx:1.0 DDR ODT";
-  attribute x_interface_info of DDR_ras_n : signal is "xilinx.com:interface:ddrx:1.0 DDR RAS_N";
-  attribute x_interface_info of DDR_reset_n : signal is "xilinx.com:interface:ddrx:1.0 DDR RESET_N";
-  attribute x_interface_info of DDR_we_n : signal is "xilinx.com:interface:ddrx:1.0 DDR WE_N";
-  attribute x_interface_info of FIXED_IO_ddr_vrn : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRN";
-  attribute x_interface_parameter : string;
-  attribute x_interface_parameter of FIXED_IO_ddr_vrn : signal is "XIL_INTERFACENAME FIXED_IO, CAN_DEBUG false";
-  attribute x_interface_info of FIXED_IO_ddr_vrp : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRP";
-  attribute x_interface_info of FIXED_IO_ps_clk : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK";
-  attribute x_interface_info of FIXED_IO_ps_porb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB";
-  attribute x_interface_info of FIXED_IO_ps_srstb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
-  attribute x_interface_info of DDR_addr : signal is "xilinx.com:interface:ddrx:1.0 DDR ADDR";
-  attribute x_interface_parameter of DDR_addr : signal is "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250";
-  attribute x_interface_info of DDR_ba : signal is "xilinx.com:interface:ddrx:1.0 DDR BA";
-  attribute x_interface_info of DDR_dm : signal is "xilinx.com:interface:ddrx:1.0 DDR DM";
-  attribute x_interface_info of DDR_dq : signal is "xilinx.com:interface:ddrx:1.0 DDR DQ";
-  attribute x_interface_info of DDR_dqs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_N";
-  attribute x_interface_info of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
-  attribute x_interface_info of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
+  attribute X_INTERFACE_INFO : string;
+  attribute X_INTERFACE_INFO of DDR_cas_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CAS_N";
+  attribute X_INTERFACE_INFO of DDR_ck_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CK_N";
+  attribute X_INTERFACE_INFO of DDR_ck_p : signal is "xilinx.com:interface:ddrx:1.0 DDR CK_P";
+  attribute X_INTERFACE_INFO of DDR_cke : signal is "xilinx.com:interface:ddrx:1.0 DDR CKE";
+  attribute X_INTERFACE_INFO of DDR_cs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR CS_N";
+  attribute X_INTERFACE_INFO of DDR_odt : signal is "xilinx.com:interface:ddrx:1.0 DDR ODT";
+  attribute X_INTERFACE_INFO of DDR_ras_n : signal is "xilinx.com:interface:ddrx:1.0 DDR RAS_N";
+  attribute X_INTERFACE_INFO of DDR_reset_n : signal is "xilinx.com:interface:ddrx:1.0 DDR RESET_N";
+  attribute X_INTERFACE_INFO of DDR_we_n : signal is "xilinx.com:interface:ddrx:1.0 DDR WE_N";
+  attribute X_INTERFACE_INFO of FIXED_IO_ddr_vrn : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRN";
+  attribute X_INTERFACE_PARAMETER : string;
+  attribute X_INTERFACE_PARAMETER of FIXED_IO_ddr_vrn : signal is "XIL_INTERFACENAME FIXED_IO, CAN_DEBUG false";
+  attribute X_INTERFACE_INFO of FIXED_IO_ddr_vrp : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO DDR_VRP";
+  attribute X_INTERFACE_INFO of FIXED_IO_ps_clk : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_CLK";
+  attribute X_INTERFACE_INFO of FIXED_IO_ps_porb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_PORB";
+  attribute X_INTERFACE_INFO of FIXED_IO_ps_srstb : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO PS_SRSTB";
+  attribute X_INTERFACE_INFO of DDR_addr : signal is "xilinx.com:interface:ddrx:1.0 DDR ADDR";
+  attribute X_INTERFACE_PARAMETER of DDR_addr : signal is "XIL_INTERFACENAME DDR, AXI_ARBITRATION_SCHEME TDM, BURST_LENGTH 8, CAN_DEBUG false, CAS_LATENCY 11, CAS_WRITE_LATENCY 11, CS_ENABLED true, DATA_MASK_ENABLED true, DATA_WIDTH 8, MEMORY_TYPE COMPONENTS, MEM_ADDR_MAP ROW_COLUMN_BANK, SLOT Single, TIMEPERIOD_PS 1250";
+  attribute X_INTERFACE_INFO of DDR_ba : signal is "xilinx.com:interface:ddrx:1.0 DDR BA";
+  attribute X_INTERFACE_INFO of DDR_dm : signal is "xilinx.com:interface:ddrx:1.0 DDR DM";
+  attribute X_INTERFACE_INFO of DDR_dq : signal is "xilinx.com:interface:ddrx:1.0 DDR DQ";
+  attribute X_INTERFACE_INFO of DDR_dqs_n : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_N";
+  attribute X_INTERFACE_INFO of DDR_dqs_p : signal is "xilinx.com:interface:ddrx:1.0 DDR DQS_P";
+  attribute X_INTERFACE_INFO of FIXED_IO_mio : signal is "xilinx.com:display_processing_system7:fixedio:1.0 FIXED_IO MIO";
 begin
 comblock_0: component design_1_comblock_0_0
      port map (
@@ -998,39 +1006,8 @@ comblock_0: component design_1_comblock_0_0
       axil_wready => ps7_0_axi_periph_M00_AXI_WREADY,
       axil_wstrb(3 downto 0) => ps7_0_axi_periph_M00_AXI_WSTRB(3 downto 0),
       axil_wvalid => ps7_0_axi_periph_M00_AXI_WVALID,
-      reg0_i(31) => fsm_7_ack_out,
-      reg0_i(30) => fsm_7_ack_out,
-      reg0_i(29) => fsm_7_ack_out,
-      reg0_i(28) => fsm_7_ack_out,
-      reg0_i(27) => fsm_7_ack_out,
-      reg0_i(26) => fsm_7_ack_out,
-      reg0_i(25) => fsm_7_ack_out,
-      reg0_i(24) => fsm_7_ack_out,
-      reg0_i(23) => fsm_7_ack_out,
-      reg0_i(22) => fsm_7_ack_out,
-      reg0_i(21) => fsm_7_ack_out,
-      reg0_i(20) => fsm_7_ack_out,
-      reg0_i(19) => fsm_7_ack_out,
-      reg0_i(18) => fsm_7_ack_out,
-      reg0_i(17) => fsm_7_ack_out,
-      reg0_i(16) => fsm_7_ack_out,
-      reg0_i(15) => fsm_7_ack_out,
-      reg0_i(14) => fsm_7_ack_out,
-      reg0_i(13) => fsm_7_ack_out,
-      reg0_i(12) => fsm_7_ack_out,
-      reg0_i(11) => fsm_7_ack_out,
-      reg0_i(10) => fsm_7_ack_out,
-      reg0_i(9) => fsm_7_ack_out,
-      reg0_i(8) => fsm_7_ack_out,
-      reg0_i(7) => fsm_7_ack_out,
-      reg0_i(6) => fsm_7_ack_out,
-      reg0_i(5) => fsm_7_ack_out,
-      reg0_i(4) => fsm_7_ack_out,
-      reg0_i(3) => fsm_7_ack_out,
-      reg0_i(2) => fsm_7_ack_out,
-      reg0_i(1) => fsm_7_ack_out,
-      reg0_i(0) => fsm_7_ack_out,
-      reg0_o(31 downto 0) => comblock_0_reg0_o(31 downto 0),
+      reg0_i(31 downto 0) => sol_counter_0_count(31 downto 0),
+      reg0_o(3 downto 0) => comblock_0_reg0_o(3 downto 0),
       reg1_i(31) => fsm_1_next_out,
       reg1_i(30) => fsm_1_next_out,
       reg1_i(29) => fsm_1_next_out,
@@ -1063,9 +1040,8 @@ comblock_0: component design_1_comblock_0_0
       reg1_i(2) => fsm_1_next_out,
       reg1_i(1) => fsm_1_next_out,
       reg1_i(0) => fsm_1_next_out,
-      reg1_o(31 downto 0) => comblock_0_reg1_o(31 downto 0),
-      reg2_o(31 downto 0) => comblock_0_reg2_o(31 downto 0),
-      reg3_o(31 downto 0) => comblock_0_reg3_o(31 downto 0)
+      reg1_o(3 downto 0) => comblock_0_reg1_o(3 downto 0),
+      reg2_o(3 downto 0) => comblock_0_reg2_o(3 downto 0)
     );
 fsm_1: component design_1_fsm_0_1
      port map (
@@ -1074,7 +1050,7 @@ fsm_1: component design_1_fsm_0_1
       ack_in => comblock_0_reg1_o(0),
       ack_out => fsm_1_ack_out,
       clk => processing_system7_0_FCLK_CLK0,
-      nRst => comblock_0_reg3_o(0),
+      nRst => comblock_0_reg0_o(0),
       next_in => fsm_2_next_out,
       next_out => fsm_1_next_out,
       output_state(2 downto 0) => NLW_fsm_1_output_state_UNCONNECTED(2 downto 0)
@@ -1086,7 +1062,7 @@ fsm_2: component design_1_fsm_0_2
       ack_in => fsm_1_ack_out,
       ack_out => fsm_2_ack_out,
       clk => processing_system7_0_FCLK_CLK0,
-      nRst => comblock_0_reg3_o(0),
+      nRst => comblock_0_reg0_o(0),
       next_in => fsm_3_next_out,
       next_out => fsm_2_next_out,
       output_state(2 downto 0) => NLW_fsm_2_output_state_UNCONNECTED(2 downto 0)
@@ -1098,7 +1074,7 @@ fsm_3: component design_1_fsm_0_3
       ack_in => fsm_2_ack_out,
       ack_out => fsm_3_ack_out,
       clk => processing_system7_0_FCLK_CLK0,
-      nRst => comblock_0_reg3_o(0),
+      nRst => comblock_0_reg0_o(0),
       next_in => fsm_4_next_out,
       next_out => fsm_3_next_out,
       output_state(2 downto 0) => NLW_fsm_3_output_state_UNCONNECTED(2 downto 0)
@@ -1110,7 +1086,7 @@ fsm_4: component design_1_fsm_0_4
       ack_in => fsm_3_ack_out,
       ack_out => fsm_4_ack_out,
       clk => processing_system7_0_FCLK_CLK0,
-      nRst => comblock_0_reg3_o(0),
+      nRst => comblock_0_reg0_o(0),
       next_in => fsm_5_next_out,
       next_out => fsm_4_next_out,
       output_state(2 downto 0) => NLW_fsm_4_output_state_UNCONNECTED(2 downto 0)
@@ -1122,7 +1098,7 @@ fsm_5: component design_1_fsm_0_5
       ack_in => fsm_4_ack_out,
       ack_out => fsm_5_ack_out,
       clk => processing_system7_0_FCLK_CLK0,
-      nRst => comblock_0_reg3_o(0),
+      nRst => comblock_0_reg0_o(0),
       next_in => fsm_6_next_out,
       next_out => fsm_5_next_out,
       output_state(2 downto 0) => NLW_fsm_5_output_state_UNCONNECTED(2 downto 0)
@@ -1134,7 +1110,7 @@ fsm_6: component design_1_fsm_0_6
       ack_in => fsm_5_ack_out,
       ack_out => fsm_6_ack_out,
       clk => processing_system7_0_FCLK_CLK0,
-      nRst => comblock_0_reg3_o(0),
+      nRst => comblock_0_reg0_o(0),
       next_in => fsm_7_next_out,
       next_out => fsm_6_next_out,
       output_state(2 downto 0) => NLW_fsm_6_output_state_UNCONNECTED(2 downto 0)
@@ -1146,8 +1122,8 @@ fsm_7: component design_1_fsm_7_0
       ack_in => fsm_6_ack_out,
       ack_out => fsm_7_ack_out,
       clk => processing_system7_0_FCLK_CLK0,
-      nRst => comblock_0_reg3_o(0),
-      next_in => comblock_0_reg0_o(0),
+      nRst => comblock_0_reg0_o(0),
+      next_in => sol_counter_0_next_sol,
       next_out => fsm_7_next_out,
       output_state(2 downto 0) => NLW_fsm_7_output_state_UNCONNECTED(2 downto 0)
     );
@@ -1300,5 +1276,12 @@ rst_ps7_0_100M: component design_1_rst_ps7_0_100M_0
       peripheral_aresetn(0) => rst_ps7_0_100M_peripheral_aresetn(0),
       peripheral_reset(0) => NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED(0),
       slowest_sync_clk => processing_system7_0_FCLK_CLK0
+    );
+sol_counter_0: component design_1_sol_counter_0_0
+     port map (
+      clk => fsm_7_ack_out,
+      count(31 downto 0) => sol_counter_0_count(31 downto 0),
+      next_sol => sol_counter_0_next_sol,
+      reset => comblock_0_reg0_o(0)
     );
 end STRUCTURE;

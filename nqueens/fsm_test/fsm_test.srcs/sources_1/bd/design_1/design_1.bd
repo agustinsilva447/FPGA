@@ -25,7 +25,8 @@
       "fsm_4": "",
       "fsm_5": "",
       "fsm_6": "",
-      "fsm_7": ""
+      "fsm_7": "",
+      "sol_counter_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1035,7 +1036,13 @@
           "REGS_IN_DEPTH": {
             "value": "2"
           },
+          "REGS_IN_DWIDTH": {
+            "value": "32"
+          },
           "REGS_OUT_DEPTH": {
+            "value": "3"
+          },
+          "REGS_OUT_DWIDTH": {
             "value": "4"
           }
         }
@@ -1734,6 +1741,46 @@
             "right": "0"
           }
         }
+      },
+      "sol_counter_0": {
+        "vlnv": "xilinx.com:module_ref:sol_counter:1.0",
+        "xci_name": "design_1_sol_counter_0_0",
+        "xci_path": "ip\\design_1_sol_counter_0_0\\design_1_sol_counter_0_0.xci",
+        "inst_hier_path": "sol_counter_0",
+        "parameters": {
+          "N": {
+            "value": "32"
+          }
+        },
+        "reference_info": {
+          "ref_type": "hdl",
+          "ref_name": "sol_counter",
+          "boundary_crc": "0x0"
+        },
+        "ports": {
+          "clk": {
+            "type": "clk",
+            "direction": "I",
+            "parameters": {
+              "ASSOCIATED_RESET": {
+                "value": "reset",
+                "value_src": "constant"
+              }
+            }
+          },
+          "reset": {
+            "type": "rst",
+            "direction": "I"
+          },
+          "next_sol": {
+            "direction": "O"
+          },
+          "count": {
+            "direction": "O",
+            "left": "31",
+            "right": "0"
+          }
+        }
       }
     },
     "interface_nets": {
@@ -1766,7 +1813,14 @@
       "comblock_0_reg0_o": {
         "ports": [
           "comblock_0/reg0_o",
-          "fsm_7/next_in"
+          "fsm_7/nRst",
+          "fsm_6/nRst",
+          "fsm_5/nRst",
+          "fsm_4/nRst",
+          "fsm_3/nRst",
+          "fsm_2/nRst",
+          "fsm_1/nRst",
+          "sol_counter_0/reset"
         ]
       },
       "comblock_0_reg1_o": {
@@ -1779,18 +1833,6 @@
         "ports": [
           "comblock_0/reg2_o",
           "fsm_1/a_in"
-        ]
-      },
-      "comblock_0_reg3_o": {
-        "ports": [
-          "comblock_0/reg3_o",
-          "fsm_7/nRst",
-          "fsm_6/nRst",
-          "fsm_5/nRst",
-          "fsm_4/nRst",
-          "fsm_3/nRst",
-          "fsm_2/nRst",
-          "fsm_1/nRst"
         ]
       },
       "fsm_1_a_out": {
@@ -1904,7 +1946,7 @@
       "fsm_7_ack_out": {
         "ports": [
           "fsm_7/ack_out",
-          "comblock_0/reg0_i"
+          "sol_counter_0/clk"
         ]
       },
       "fsm_7_next_out": {
@@ -1916,19 +1958,19 @@
       "processing_system7_0_FCLK_CLK0": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
-          "processing_system7_0/M_AXI_GP0_ACLK",
-          "ps7_0_axi_periph/S00_ACLK",
-          "rst_ps7_0_100M/slowest_sync_clk",
           "comblock_0/axil_aclk",
           "ps7_0_axi_periph/M00_ACLK",
-          "ps7_0_axi_periph/ACLK",
           "fsm_1/clk",
           "fsm_2/clk",
           "fsm_3/clk",
           "fsm_4/clk",
           "fsm_5/clk",
           "fsm_6/clk",
-          "fsm_7/clk"
+          "fsm_7/clk",
+          "processing_system7_0/M_AXI_GP0_ACLK",
+          "ps7_0_axi_periph/S00_ACLK",
+          "ps7_0_axi_periph/ACLK",
+          "rst_ps7_0_100M/slowest_sync_clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -1944,6 +1986,18 @@
           "comblock_0/axil_aresetn",
           "ps7_0_axi_periph/M00_ARESETN",
           "ps7_0_axi_periph/ARESETN"
+        ]
+      },
+      "sol_counter_0_count": {
+        "ports": [
+          "sol_counter_0/count",
+          "comblock_0/reg0_i"
+        ]
+      },
+      "sol_counter_0_next_sol": {
+        "ports": [
+          "sol_counter_0/next_sol",
+          "fsm_7/next_in"
         ]
       }
     },
