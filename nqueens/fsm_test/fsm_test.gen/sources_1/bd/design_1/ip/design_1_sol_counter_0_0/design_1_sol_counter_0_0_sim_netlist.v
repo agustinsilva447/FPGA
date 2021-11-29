@@ -3,8 +3,8 @@
 // Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
 // Date        : Mon Nov 29 16:32:21 2021
 // Host        : hp6g4-mlab-2 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode funcsim
-//               c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/ip/design_1_sol_counter_0_0/design_1_sol_counter_0_0_sim_netlist.v
+// Command     : write_verilog -force -mode funcsim -rename_top design_1_sol_counter_0_0 -prefix
+//               design_1_sol_counter_0_0_ design_1_sol_counter_0_0_sim_netlist.v
 // Design      : design_1_sol_counter_0_0
 // Purpose     : This verilog netlist is a functional simulation representation of the design and should not be modified
 //               or synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -39,7 +39,6 @@ module design_1_sol_counter_0_0
        (.P(\<const1> ));
 endmodule
 
-(* ORIG_REF_NAME = "sol_counter" *) 
 module design_1_sol_counter_0_0_sol_counter
    (count,
     clk,

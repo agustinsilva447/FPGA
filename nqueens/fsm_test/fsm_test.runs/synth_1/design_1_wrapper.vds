@@ -2,8 +2,8 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:48:09 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Mon Nov 29 16:32:24 2021
-# Process ID: 2552
+# Start of session at: Mon Nov 29 18:47:10 2021
+# Process ID: 21188
 # Current directory: C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1
 # Command line: vivado.exe -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/design_1_wrapper.vds
@@ -14,7 +14,7 @@ source design_1_wrapper.tcl -notrace
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository 'c:/Users/mlabadm/Desktop/Github/core-comblock-master'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'C:/Xilinx/Vivado/2021.2/data/ip'.
-add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1249.641 ; gain = 0.000
+add_files: Time (s): cpu = 00:00:01 ; elapsed = 00:00:05 . Memory (MB): peak = 1249.582 ; gain = 0.000
 Command: read_checkpoint -auto_incremental -incremental C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -27,41 +27,41 @@ WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis b
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 15632
+INFO: [Synth 8-7075] Helper process launched with PID 20072
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Starting RTL Elaboration : Time (s): cpu = 00:00:04 ; elapsed = 00:00:04 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:40]
 INFO: [Synth 8-3491] module 'design_1' declared at 'c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:591' bound to instance 'design_1_i' of component 'design_1' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:67]
 INFO: [Synth 8-638] synthesizing module 'design_1' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:621]
-INFO: [Synth 8-3491] module 'design_1_comblock_0_0' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_comblock_0_0_stub.vhdl:5' bound to instance 'comblock_0' of component 'design_1_comblock_0_0' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:986]
-INFO: [Synth 8-638] synthesizing module 'design_1_comblock_0_0' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_comblock_0_0_stub.vhdl:37]
-INFO: [Synth 8-3491] module 'design_1_fsm_0_1' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_fsm_0_1_stub.vhdl:5' bound to instance 'fsm_1' of component 'design_1_fsm_0_1' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1046]
-INFO: [Synth 8-638] synthesizing module 'design_1_fsm_0_1' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_fsm_0_1_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'design_1_fsm_0_2' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_fsm_0_2_stub.vhdl:5' bound to instance 'fsm_2' of component 'design_1_fsm_0_2' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1058]
-INFO: [Synth 8-638] synthesizing module 'design_1_fsm_0_2' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_fsm_0_2_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'design_1_fsm_0_3' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_fsm_0_3_stub.vhdl:5' bound to instance 'fsm_3' of component 'design_1_fsm_0_3' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1070]
-INFO: [Synth 8-638] synthesizing module 'design_1_fsm_0_3' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_fsm_0_3_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'design_1_fsm_0_4' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_fsm_0_4_stub.vhdl:5' bound to instance 'fsm_4' of component 'design_1_fsm_0_4' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1082]
-INFO: [Synth 8-638] synthesizing module 'design_1_fsm_0_4' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_fsm_0_4_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'design_1_fsm_0_5' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_fsm_0_5_stub.vhdl:5' bound to instance 'fsm_5' of component 'design_1_fsm_0_5' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1094]
-INFO: [Synth 8-638] synthesizing module 'design_1_fsm_0_5' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_fsm_0_5_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'design_1_fsm_0_6' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_fsm_0_6_stub.vhdl:5' bound to instance 'fsm_6' of component 'design_1_fsm_0_6' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1106]
-INFO: [Synth 8-638] synthesizing module 'design_1_fsm_0_6' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_fsm_0_6_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'design_1_fsm_7_0' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_fsm_7_0_stub.vhdl:5' bound to instance 'fsm_7' of component 'design_1_fsm_7_0' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1118]
-INFO: [Synth 8-638] synthesizing module 'design_1_fsm_7_0' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_fsm_7_0_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1130]
-INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_processing_system7_0_0_stub.vhdl:79]
+INFO: [Synth 8-3491] module 'design_1_comblock_0_0' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_comblock_0_0_stub.vhdl:5' bound to instance 'comblock_0' of component 'design_1_comblock_0_0' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:987]
+INFO: [Synth 8-638] synthesizing module 'design_1_comblock_0_0' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_comblock_0_0_stub.vhdl:38]
+INFO: [Synth 8-3491] module 'design_1_fsm_0_1' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_fsm_0_1_stub.vhdl:5' bound to instance 'fsm_1' of component 'design_1_fsm_0_1' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1048]
+INFO: [Synth 8-638] synthesizing module 'design_1_fsm_0_1' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_fsm_0_1_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_fsm_0_2' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_fsm_0_2_stub.vhdl:5' bound to instance 'fsm_2' of component 'design_1_fsm_0_2' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1060]
+INFO: [Synth 8-638] synthesizing module 'design_1_fsm_0_2' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_fsm_0_2_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_fsm_0_3' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_fsm_0_3_stub.vhdl:5' bound to instance 'fsm_3' of component 'design_1_fsm_0_3' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1072]
+INFO: [Synth 8-638] synthesizing module 'design_1_fsm_0_3' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_fsm_0_3_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_fsm_0_4' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_fsm_0_4_stub.vhdl:5' bound to instance 'fsm_4' of component 'design_1_fsm_0_4' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1084]
+INFO: [Synth 8-638] synthesizing module 'design_1_fsm_0_4' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_fsm_0_4_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_fsm_0_5' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_fsm_0_5_stub.vhdl:5' bound to instance 'fsm_5' of component 'design_1_fsm_0_5' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1096]
+INFO: [Synth 8-638] synthesizing module 'design_1_fsm_0_5' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_fsm_0_5_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_fsm_0_6' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_fsm_0_6_stub.vhdl:5' bound to instance 'fsm_6' of component 'design_1_fsm_0_6' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1108]
+INFO: [Synth 8-638] synthesizing module 'design_1_fsm_0_6' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_fsm_0_6_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_fsm_7_0' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_fsm_7_0_stub.vhdl:5' bound to instance 'fsm_7' of component 'design_1_fsm_7_0' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1120]
+INFO: [Synth 8-638] synthesizing module 'design_1_fsm_7_0' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_fsm_7_0_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1132]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_processing_system7_0_0_stub.vhdl:79]
 INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:398]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:80]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:263]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:263]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_auto_pc_0_stub.vhdl:70]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (1#1) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:80]
 INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (2#1) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:398]
-INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_0' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_0' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1267]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_sol_counter_0_0' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_sol_counter_0_0_stub.vhdl:5' bound to instance 'sol_counter_0' of component 'design_1_sol_counter_0_0' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1280]
-INFO: [Synth 8-638] synthesizing module 'design_1_sol_counter_0_0' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-2552-hp6g4-mlab-2/realtime/design_1_sol_counter_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_0' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_0' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1269]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_sol_counter_0_0' declared at 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_sol_counter_0_0_stub.vhdl:5' bound to instance 'sol_counter_0' of component 'design_1_sol_counter_0_0' [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:1282]
+INFO: [Synth 8-638] synthesizing module 'design_1_sol_counter_0_0' [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/.Xil/Vivado-21188-hp6g4-mlab-2/realtime/design_1_sol_counter_0_0_stub.vhdl:15]
 INFO: [Synth 8-256] done synthesizing module 'design_1' (3#1) [c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/synth/design_1.vhd:621]
 INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (4#1) [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:40]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_UYSKKA is either unconnected or has no load
@@ -69,18 +69,18 @@ WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_UYSKKA is eith
 WARNING: [Synth 8-7129] Port ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished RTL Elaboration : Time (s): cpu = 00:00:05 ; elapsed = 00:00:05 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:05 ; elapsed = 00:00:06 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.011 . Memory (MB): peak = 1249.582 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -113,22 +113,22 @@ Parsing XDC File [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test
 Finished Parsing XDC File [C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1249.582 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.007 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.006 . Memory (MB): peak = 1249.582 ; gain = 0.000
 WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished Constraint Validation : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg484-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -408,10 +408,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fsm_6. (constraint fil
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fsm_7. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/sol_counter_0. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:11 ; elapsed = 00:00:12 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -438,25 +438,25 @@ WARNING: [Synth 8-7129] Port ARESETN in module design_1_ps7_0_axi_periph_0 is ei
 WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:14 ; elapsed = 00:00:14 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:13 ; elapsed = 00:00:14 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished Timing Optimization : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished Technology Mapping : Time (s): cpu = 00:00:19 ; elapsed = 00:00:19 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -474,37 +474,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished IO Insertion : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -546,24 +546,24 @@ Report Cell Usage:
 |12    |design_1_sol_counter_0_0_bbox        |     1|
 +------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1249.582 ; gain = 0.000
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1249.641 ; gain = 0.000
-Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:16 ; elapsed = 00:00:22 . Memory (MB): peak = 1249.582 ; gain = 0.000
+Synthesis Optimization Complete : Time (s): cpu = 00:00:23 ; elapsed = 00:00:23 . Memory (MB): peak = 1249.582 ; gain = 0.000
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1249.641 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.012 . Memory (MB): peak = 1249.582 ; gain = 0.000
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1267.223 ; gain = 0.000
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 1259.410 ; gain = 0.000
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Synth Design complete, checksum: 1735a0de
+Synth Design complete, checksum: 948072a6
 INFO: [Common 17-83] Releasing license: Synthesis
 52 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:27 ; elapsed = 00:00:29 . Memory (MB): peak = 1272.234 ; gain = 22.594
+synth_design: Time (s): cpu = 00:00:26 ; elapsed = 00:00:28 . Memory (MB): peak = 1265.414 ; gain = 15.832
 INFO: [Common 17-1381] The checkpoint 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Nov 29 16:33:04 2021...
+INFO: [Common 17-206] Exiting Vivado at Mon Nov 29 18:47:49 2021...

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1638199905">
+<GenRun Id="impl_1" LaunchPart="xc7z020clg484-1" LaunchTime="1638207991">
   <File Type="ROUTE-PWR" Name="design_1_wrapper_power_routed.rpt"/>
   <File Type="PA-TCL" Name="design_1_wrapper.tcl"/>
   <File Type="BITSTR-MMI" Name="design_1_wrapper.mmi"/>
@@ -151,6 +151,5 @@
     <Step Id="post_route_phys_opt_design"/>
     <Step Id="write_bitstream"/>
   </Strategy>
-  <BlockFileSet Type="BlockSrcs" Name="design_1_sol_counter_0_0"/>
   <BlockFileSet Type="BlockSrcs" Name="design_1_comblock_0_0"/>
 </GenRun>

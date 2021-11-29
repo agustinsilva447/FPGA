@@ -57,6 +57,7 @@ ENTITY design_1_comblock_0_0 IS
   PORT (
     reg0_i : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     reg1_i : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
+    reg2_i : IN STD_LOGIC_VECTOR(31 DOWNTO 0);
     reg0_o : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
     reg1_o : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
     reg2_o : OUT STD_LOGIC_VECTOR(3 DOWNTO 0);
@@ -268,6 +269,7 @@ ARCHITECTURE design_1_comblock_0_0_arch OF design_1_comblock_0_0 IS
   ATTRIBUTE X_INTERFACE_INFO OF reg2_o: SIGNAL IS "ictp:user:OREGS:1.0 OUT_REGS reg2_o";
   ATTRIBUTE X_INTERFACE_INFO OF reg1_o: SIGNAL IS "ictp:user:OREGS:1.0 OUT_REGS reg1_o";
   ATTRIBUTE X_INTERFACE_INFO OF reg0_o: SIGNAL IS "ictp:user:OREGS:1.0 OUT_REGS reg0_o";
+  ATTRIBUTE X_INTERFACE_INFO OF reg2_i: SIGNAL IS "ictp:user:IREGS:1.0 IN_REGS reg2_i";
   ATTRIBUTE X_INTERFACE_INFO OF reg1_i: SIGNAL IS "ictp:user:IREGS:1.0 IN_REGS reg1_i";
   ATTRIBUTE X_INTERFACE_INFO OF reg0_i: SIGNAL IS "ictp:user:IREGS:1.0 IN_REGS reg0_i";
 BEGIN
@@ -275,7 +277,7 @@ BEGIN
     GENERIC MAP (
       REGS_IN_ENA => true,
       REGS_IN_DWIDTH => 32,
-      REGS_IN_DEPTH => 2,
+      REGS_IN_DEPTH => 3,
       REGS_OUT_ENA => true,
       REGS_OUT_DWIDTH => 4,
       REGS_OUT_DEPTH => 3,
@@ -303,7 +305,7 @@ BEGIN
     PORT MAP (
       reg0_i => reg0_i,
       reg1_i => reg1_i,
-      reg2_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 32)),
+      reg2_i => reg2_i,
       reg3_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 32)),
       reg4_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 32)),
       reg5_i => STD_LOGIC_VECTOR(TO_UNSIGNED(0, 32)),

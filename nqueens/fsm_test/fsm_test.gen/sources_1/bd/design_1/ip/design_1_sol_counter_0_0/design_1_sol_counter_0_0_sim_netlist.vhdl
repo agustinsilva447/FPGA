@@ -3,8 +3,8 @@
 -- Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
 -- Date        : Mon Nov 29 16:32:21 2021
 -- Host        : hp6g4-mlab-2 running 64-bit major release  (build 9200)
--- Command     : write_vhdl -force -mode funcsim
---               c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.gen/sources_1/bd/design_1/ip/design_1_sol_counter_0_0/design_1_sol_counter_0_0_sim_netlist.vhdl
+-- Command     : write_vhdl -force -mode funcsim -rename_top design_1_sol_counter_0_0 -prefix
+--               design_1_sol_counter_0_0_ design_1_sol_counter_0_0_sim_netlist.vhdl
 -- Design      : design_1_sol_counter_0_0
 -- Purpose     : This VHDL netlist is a functional simulation representation of the design and should not be modified or
 --               synthesized. This netlist cannot be used for SDF annotated simulation.
@@ -20,8 +20,6 @@ entity design_1_sol_counter_0_0_sol_counter is
     clk : in STD_LOGIC;
     reset : in STD_LOGIC
   );
-  attribute ORIG_REF_NAME : string;
-  attribute ORIG_REF_NAME of design_1_sol_counter_0_0_sol_counter : entity is "sol_counter";
 end design_1_sol_counter_0_0_sol_counter;
 
 architecture STRUCTURE of design_1_sol_counter_0_0_sol_counter is

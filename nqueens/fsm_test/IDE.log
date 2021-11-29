@@ -2035,3 +2035,107 @@ con
 ----------------End of Script----------------
 
 18:36:30 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\fsm_test\fsm_test_system\_ide\scripts\debugger_fsm_test-default.tcl'
+18:47:11 INFO  : Checking for BSP changes to sync application flags for project 'fsm_test'...
+18:47:18 INFO  : Checking for BSP changes to sync application flags for project 'fsm_test'...
+18:47:23 INFO  : Disconnected from the channel tcfchan#30.
+18:47:24 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:47:25 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+18:47:25 INFO  : 'jtag frequency' command is executed.
+18:47:27 INFO  : Context for 'APU' is selected.
+18:47:27 INFO  : System reset is completed.
+18:47:30 INFO  : 'after 3000' command is executed.
+18:47:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0 && jtag_device_ctx=="jsn-Zed-210248A49CA4-23727093-0"}' command is executed.
+18:47:32 INFO  : Device configured successfully with "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test/_ide/bitstream/design_1_wrapper.bit"
+18:47:32 INFO  : Context for 'APU' is selected.
+18:47:32 INFO  : Hardware design and registers information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:47:32 INFO  : 'configparams force-mem-access 1' command is executed.
+18:47:32 INFO  : Context for 'APU' is selected.
+18:47:32 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test/_ide/psinit/ps7_init.tcl' is done.
+18:47:34 INFO  : 'ps7_init' command is executed.
+18:47:34 INFO  : 'ps7_post_config' command is executed.
+18:47:34 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:47:34 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test/Debug/fsm_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:47:35 INFO  : 'configparams force-mem-access 0' command is executed.
+18:47:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0 && jtag_device_ctx=="jsn-Zed-210248A49CA4-23727093-0"}
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test/Debug/fsm_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:47:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:47:35 INFO  : 'con' command is executed.
+18:47:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:47:35 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\fsm_test\fsm_test_system\_ide\scripts\debugger_fsm_test-default.tcl'
+18:50:02 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+18:50:08 INFO  : Result from executing command 'getProjects': design_1_wrapper
+18:50:08 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+18:50:08 INFO  : Checking for BSP changes to sync application flags for project 'fsm_test'...
+18:50:19 INFO  : Disconnected from the channel tcfchan#31.
+18:50:20 INFO  : The hardware specification used by project 'fsm_test' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+18:50:20 INFO  : The file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\fsm_test\fsm_test\_ide\bitstream\design_1_wrapper.bit' stored in project is removed.
+18:50:20 INFO  : The updated bitstream files are copied from platform to folder 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\fsm_test\fsm_test\_ide\bitstream' in project 'fsm_test'.
+18:50:20 INFO  : The file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\fsm_test\fsm_test\_ide\psinit\ps7_init.tcl' stored in project is removed.
+18:50:26 INFO  : The updated ps init files are copied from platform to folder 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\fsm_test\fsm_test\_ide\psinit' in project 'fsm_test'.
+18:50:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:50:26 INFO  : Jtag cable 'Digilent Zed 210248A49CA4' is selected.
+18:50:26 INFO  : 'jtag frequency' command is executed.
+18:50:26 INFO  : Context for 'APU' is selected.
+18:50:27 INFO  : System reset is completed.
+18:50:30 INFO  : 'after 3000' command is executed.
+18:50:30 INFO  : 'targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0 && jtag_device_ctx=="jsn-Zed-210248A49CA4-23727093-0"}' command is executed.
+18:50:32 INFO  : Device configured successfully with "C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test/_ide/bitstream/design_1_wrapper.bit"
+18:50:32 INFO  : Context for 'APU' is selected.
+18:50:33 INFO  : Hardware design and registers information is loaded from 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:50:33 INFO  : 'configparams force-mem-access 1' command is executed.
+18:50:33 INFO  : Context for 'APU' is selected.
+18:50:33 INFO  : Sourcing of 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test/_ide/psinit/ps7_init.tcl' is done.
+18:50:34 INFO  : 'ps7_init' command is executed.
+18:50:35 INFO  : 'ps7_post_config' command is executed.
+18:50:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:50:35 INFO  : The application 'C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test/Debug/fsm_test.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:50:35 INFO  : 'configparams force-mem-access 0' command is executed.
+18:50:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Digilent Zed 210248A49CA4" && level==0 && jtag_device_ctx=="jsn-Zed-210248A49CA4-23727093-0"}
+fpga -file C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test/Debug/fsm_test.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:50:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:50:36 INFO  : 'con' command is executed.
+18:50:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:50:36 INFO  : Launch script is exported to file 'C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\fsm_test\fsm_test_system\_ide\scripts\debugger_fsm_test-default.tcl'
+18:59:41 INFO  : Disconnected from the channel tcfchan#33.

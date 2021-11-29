@@ -2,3 +2,6 @@ Running: xsim.dir/sol_counter_tb_behav/xsimk.exe -simmode gui -wdb sol_counter_t
 Design successfully loaded
 Design Loading Memory Usage: 7600 KB (Peak: 7600 KB)
 Design Loading CPU Usage: 15 ms
+Simulation completed
+Simulation Memory Usage: 11476 KB (Peak: 11476 KB)
+Simulation CPU Usage: 77 ms

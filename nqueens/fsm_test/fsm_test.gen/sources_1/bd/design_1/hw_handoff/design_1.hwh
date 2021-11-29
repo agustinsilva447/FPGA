@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="UTF-8" standalone="no" ?>
-<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Nov 29 16:31:36 2021" VIVADOVERSION="2021.2">
+<EDKSYSTEM EDWVERSION="1.2" TIMESTAMP="Mon Nov 29 18:46:22 2021" VIVADOVERSION="2021.2">
 
   <SYSTEMINFO ARCH="zynq" BOARD="avnet.com:zedboard:part0:1.4" DEVICE="7z020" NAME="design_1" PACKAGE="clg484" SPEEDGRADE="-1"/>
 
@@ -169,7 +169,7 @@
       <PARAMETERS>
         <PARAMETER NAME="REGS_IN_ENA" VALUE="true"/>
         <PARAMETER NAME="REGS_IN_DWIDTH" VALUE="32"/>
-        <PARAMETER NAME="REGS_IN_DEPTH" VALUE="2"/>
+        <PARAMETER NAME="REGS_IN_DEPTH" VALUE="3"/>
         <PARAMETER NAME="REGS_OUT_ENA" VALUE="true"/>
         <PARAMETER NAME="REGS_OUT_DWIDTH" VALUE="4"/>
         <PARAMETER NAME="REGS_OUT_DEPTH" VALUE="3"/>
@@ -209,6 +209,11 @@
         <PORT DIR="I" LEFT="31" NAME="reg1_i" RIGHT="0" SIGIS="undef" SIGNAME="fsm_1_next_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="fsm_1" PORT="next_out"/>
+          </CONNECTIONS>
+        </PORT>
+        <PORT DIR="I" LEFT="31" NAME="reg2_i" RIGHT="0" SIGIS="undef" SIGNAME="fsm_7_a_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="fsm_7" PORT="a_out"/>
           </CONNECTIONS>
         </PORT>
         <PORT DIR="O" LEFT="3" NAME="reg0_o" RIGHT="0" SIGIS="undef" SIGNAME="comblock_0_reg0_o">
@@ -398,6 +403,7 @@
           <PORTMAPS>
             <PORTMAP LOGICAL="reg0_i" PHYSICAL="reg0_i"/>
             <PORTMAP LOGICAL="reg1_i" PHYSICAL="reg1_i"/>
+            <PORTMAP LOGICAL="reg2_i" PHYSICAL="reg2_i"/>
           </PORTMAPS>
         </BUSINTERFACE>
         <BUSINTERFACE BUSNAME="__NOC__" NAME="OUT_REGS" TYPE="INITIATOR" VLNV="ictp:user:OREGS:1.0">
@@ -768,7 +774,11 @@
             <CONNECTION INSTANCE="sol_counter_0" PORT="next_sol"/>
           </CONNECTIONS>
         </PORT>
-        <PORT DIR="O" LEFT="31" NAME="a_out" RIGHT="0" SIGIS="undef"/>
+        <PORT DIR="O" LEFT="31" NAME="a_out" RIGHT="0" SIGIS="undef" SIGNAME="fsm_7_a_out">
+          <CONNECTIONS>
+            <CONNECTION INSTANCE="comblock_0" PORT="reg2_i"/>
+          </CONNECTIONS>
+        </PORT>
         <PORT DIR="O" NAME="ack_out" SIGIS="undef" SIGNAME="fsm_7_ack_out">
           <CONNECTIONS>
             <CONNECTION INSTANCE="sol_counter_0" PORT="clk"/>

@@ -1034,7 +1034,7 @@
             "value": "false"
           },
           "REGS_IN_DEPTH": {
-            "value": "2"
+            "value": "3"
           },
           "REGS_IN_DWIDTH": {
             "value": "32"
@@ -1941,6 +1941,12 @@
         "ports": [
           "fsm_6/next_out",
           "fsm_5/next_in"
+        ]
+      },
+      "fsm_7_a_out": {
+        "ports": [
+          "fsm_7/a_out",
+          "comblock_0/reg2_i"
         ]
       },
       "fsm_7_ack_out": {

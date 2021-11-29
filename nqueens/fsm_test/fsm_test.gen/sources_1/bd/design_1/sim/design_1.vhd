@@ -1,7 +1,7 @@
 --Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2021.2 (win64) Build 3367213 Tue Oct 19 02:48:09 MDT 2021
---Date        : Mon Nov 29 16:31:36 2021
+--Date        : Mon Nov 29 18:46:02 2021
 --Host        : hp6g4-mlab-2 running 64-bit major release  (build 9200)
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -695,6 +695,7 @@ architecture STRUCTURE of design_1 is
   port (
     reg0_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
     reg1_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
+    reg2_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
     reg0_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
     reg1_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
     reg2_o : out STD_LOGIC_VECTOR ( 3 downto 0 );
@@ -855,6 +856,7 @@ architecture STRUCTURE of design_1 is
   signal fsm_6_a_out : STD_LOGIC_VECTOR ( 27 downto 0 );
   signal fsm_6_ack_out : STD_LOGIC;
   signal fsm_6_next_out : STD_LOGIC;
+  signal fsm_7_a_out : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal fsm_7_ack_out : STD_LOGIC;
   signal fsm_7_next_out : STD_LOGIC;
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
@@ -946,7 +948,6 @@ architecture STRUCTURE of design_1 is
   signal NLW_fsm_4_output_state_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_fsm_5_output_state_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_fsm_6_output_state_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
-  signal NLW_fsm_7_a_out_UNCONNECTED : STD_LOGIC_VECTOR ( 31 downto 0 );
   signal NLW_fsm_7_output_state_UNCONNECTED : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal NLW_processing_system7_0_TTC0_WAVE0_OUT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_TTC0_WAVE1_OUT_UNCONNECTED : STD_LOGIC;
@@ -1041,6 +1042,7 @@ comblock_0: component design_1_comblock_0_0
       reg1_i(1) => fsm_1_next_out,
       reg1_i(0) => fsm_1_next_out,
       reg1_o(3 downto 0) => comblock_0_reg1_o(3 downto 0),
+      reg2_i(31 downto 0) => fsm_7_a_out(31 downto 0),
       reg2_o(3 downto 0) => comblock_0_reg2_o(3 downto 0)
     );
 fsm_1: component design_1_fsm_0_1
@@ -1118,7 +1120,7 @@ fsm_6: component design_1_fsm_0_6
 fsm_7: component design_1_fsm_7_0
      port map (
       a_in(27 downto 0) => fsm_6_a_out(27 downto 0),
-      a_out(31 downto 0) => NLW_fsm_7_a_out_UNCONNECTED(31 downto 0),
+      a_out(31 downto 0) => fsm_7_a_out(31 downto 0),
       ack_in => fsm_6_ack_out,
       ack_out => fsm_7_ack_out,
       clk => processing_system7_0_FCLK_CLK0,

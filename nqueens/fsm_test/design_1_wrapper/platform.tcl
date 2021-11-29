@@ -31,3 +31,5 @@ platform config -updatehw {C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test
 platform generate -domains 
 platform config -updatehw {C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/design_1_wrapper.xsa}
 platform generate -domains 
+platform config -updatehw {C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/design_1_wrapper.xsa}
+platform generate -domains 
