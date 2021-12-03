@@ -3,13 +3,14 @@ use ieee.std_logic_1164.all;
 use ieee.numeric_std.all;
 
 entity top_nqueens is
-generic(M : integer := 10;  -- size of the board MxM
-        N : integer := 5 ;  -- N bits required to count upto size of the board;
-        P : integer := 11  -- N bits required for the counter;
+generic(M : integer;  -- size of the board MxM
+        N : integer;  -- N bits required to count upto size of the board;
+        P : integer   -- N bits required for the counter;
     );  
 port(
     clk, nRst: in std_logic; 
     flag, done: out std_logic; 
+    a_in: out std_logic_vector((N-1) downto 0);
     counter: out unsigned(P downto 0)
     );                         
 end entity;
@@ -167,6 +168,8 @@ begin
     a_in_2 <= a_out_1;    
     ack_in_2 <= ack_out_1; 
     next_in_1 <= next_out_2;
+    
+    a_in <= a_in_1;
     
     counter <= counter_s;
     flag <= flag_s;

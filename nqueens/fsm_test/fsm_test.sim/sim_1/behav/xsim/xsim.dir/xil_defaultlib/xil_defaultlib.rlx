@@ -1,0 +1,11 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,axi_vip_v1_1_11;processing_system7_vip_v1_0_13;xilinx_vip,,,,,,
+C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.srcs/sim_1/new/fsm_tb.vhd,1637945540,vhdl,,,,fsm_tb,,,,,,,,
+C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.srcs/sim_1/new/sol_counter_tb.vhd,1638193265,vhdl,,,,sol_counter_tb,,,,,,,,
+C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.srcs/sources_1/new/fsm.vhd,1637945334,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.srcs/sim_1/new/fsm_tb.vhd,,,fsm,,,,,,,,
+C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.srcs/sources_1/new/sol_counter.vhd,1638193078,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.srcs/sim_1/new/sol_counter_tb.vhd,,,sol_counter,,,,,,,,
+C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/keep_queens/keep_queens.srcs/sources_1/new/ctrl_logic_fsm.vhd,1637937747,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.srcs/sources_1/new/fsm.vhd,,,ctrl_logic_fsm,,,,,,,,
+C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/keep_queens/keep_queens.srcs/sources_1/new/up_counter.vhd,1637938110,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/fsm_test/fsm_test.srcs/sources_1/new/fsm.vhd,,,up_counter,,,,,,,,

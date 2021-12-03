@@ -1,0 +1,63 @@
+{
+   "ActiveEmotionalView":"Default View",
+   "Default View_ScaleFactor":"0.387847",
+   "Default View_TopLeft":"0,-513",
+   "ExpandedHierarchyInLayout":"",
+   "guistr":"# # String gsaved with Nlview 7.0r6  2020-01-29 bk=1.5227 VDI=41 GEI=36 GUI=JA:10.0 non-TLS
+#  -string -flagsOSRD
+preplace port DDR -pg 1 -lvl 10 -x 2980 -y 830 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 10 -x 2980 -y 850 -defaultsOSRD
+preplace inst processing_system7_0 -pg 1 -lvl 7 -x 2070 -y 910 -defaultsOSRD
+preplace inst comblock_0 -pg 1 -lvl 9 -x 2790 -y 430 -defaultsOSRD
+preplace inst ps7_0_axi_periph -pg 1 -lvl 8 -x 2460 -y 680 -defaultsOSRD
+preplace inst rst_ps7_0_100M -pg 1 -lvl 7 -x 2070 -y 670 -defaultsOSRD
+preplace inst fsm_1 -pg 1 -lvl 1 -x 180 -y 290 -defaultsOSRD
+preplace inst fsm_2 -pg 1 -lvl 2 -x 470 -y 260 -defaultsOSRD
+preplace inst fsm_3 -pg 1 -lvl 3 -x 770 -y 230 -defaultsOSRD
+preplace inst fsm_4 -pg 1 -lvl 4 -x 1080 -y 200 -defaultsOSRD
+preplace inst fsm_5 -pg 1 -lvl 5 -x 1390 -y 170 -defaultsOSRD
+preplace inst fsm_6 -pg 1 -lvl 6 -x 1700 -y 140 -defaultsOSRD
+preplace inst fsm_7 -pg 1 -lvl 7 -x 2070 -y 110 -defaultsOSRD
+preplace inst sol_counter_0 -pg 1 -lvl 8 -x 2460 -y 110 -defaultsOSRD
+preplace netloc comblock_0_reg1_o 1 0 10 40 550 NJ 550 NJ 550 NJ 550 NJ 550 NJ 550 NJ 550 NJ 550 NJ 550 2960
+preplace netloc comblock_0_reg2_o 1 0 10 20 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 NJ 560 2950
+preplace netloc fsm_1_a_out 1 1 1 N 260
+preplace netloc fsm_1_ack_out 1 1 1 N 280
+preplace netloc fsm_1_next_out 1 1 8 310 430 NJ 430 NJ 430 NJ 430 NJ 430 NJ 430 NJ 430 NJ
+preplace netloc fsm_2_a_out 1 2 1 N 230
+preplace netloc fsm_2_ack_out 1 2 1 N 250
+preplace netloc fsm_2_next_out 1 0 3 50 400 330J 360 600
+preplace netloc fsm_3_a_out 1 3 1 N 200
+preplace netloc fsm_3_ack_out 1 3 1 N 220
+preplace netloc fsm_3_next_out 1 1 3 340 380 620J 330 910
+preplace netloc fsm_4_a_out 1 4 1 N 170
+preplace netloc fsm_4_ack_out 1 4 1 N 190
+preplace netloc fsm_4_next_out 1 2 3 630 350 930J 300 1220
+preplace netloc fsm_5_a_out 1 5 1 N 140
+preplace netloc fsm_5_ack_out 1 5 1 N 160
+preplace netloc fsm_5_next_out 1 3 3 940 320 1240J 270 1530
+preplace netloc fsm_6_a_out 1 6 1 N 110
+preplace netloc fsm_6_ack_out 1 6 1 N 130
+preplace netloc fsm_6_next_out 1 4 3 1250 290 1550J 270 1840
+preplace netloc fsm_7_next_out 1 5 3 1560 290 NJ 290 2290
+preplace netloc processing_system7_0_FCLK_RESET0_N 1 6 2 1860 770 2280
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 7 2 2310 490 NJ
+preplace netloc fsm_7_ack_out 1 7 1 N 100
+preplace netloc sol_counter_0_count 1 8 1 2620 120n
+preplace netloc sol_counter_0_next_sol 1 6 3 1860 300 NJ 300 2610
+preplace netloc comblock_0_reg0_o 1 0 10 20 190 340 160 630 130 940 100 1250 70 1530 40 1840 10 2310 310 NJ 310 2960
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 9 30 390 320 370 610 340 920 310 1230 280 1540 280 1850 570 2290 470 NJ
+preplace netloc fsm_7_a_out 1 7 2 2300 450 NJ
+preplace netloc processing_system7_0_DDR 1 7 3 NJ 830 NJ 830 NJ
+preplace netloc processing_system7_0_FIXED_IO 1 7 3 NJ 850 NJ 850 NJ
+preplace netloc processing_system7_0_M_AXI_GP0 1 7 1 2300 620n
+preplace netloc ps7_0_axi_periph_M00_AXI 1 8 1 2630 370n
+levelinfo -pg 1 0 180 470 770 1080 1390 1700 2070 2460 2790 2980
+pagesize -pg 1 -db -bbox -sgen 0 0 3100 1050
+"
+}
+{
+   "da_axi4_cnt":"1",
+   "da_clkrst_cnt":"20",
+   "da_ps7_cnt":"1"
+}

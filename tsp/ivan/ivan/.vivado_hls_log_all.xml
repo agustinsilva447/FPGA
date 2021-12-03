@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog>
+        <logs message="ERROR: [HLS 200-70] Synthesizability check failed.&#xD;&#xA;command 'ap_source' returned error code&#xD;&#xA;    while executing&#xD;&#xA;&quot;source C:/Users/mlabadm/Desktop/Github/FPGA/tsp/ivan/ivan/solution1/csynth.tcl&quot;&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls::main C:/Users/mlabadm/Desktop/Github/FPGA/tsp/ivan/ivan/solution1/csynth.tcl&quot;&#xD;&#xA;    (&quot;uplevel&quot; body line 1)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;uplevel 1 hls::main {*}$args&quot;&#xD;&#xA;    (procedure &quot;hls_proc&quot; line 5)&#xD;&#xA;    invoked from within&#xD;&#xA;&quot;hls_proc $argv&quot;&#xD;&#xA;" projectName="ivan" solutionName="solution1" date="2021-11-22T14:59:01.099+0100"/>
+        <logs message="ERROR: [SYNCHK 200-42] pearsonOriginal.cpp:34: pointer comparison is not supported." projectName="ivan" solutionName="solution1" date="2021-11-22T14:59:00.795+0100"/>
+        <logs message="ERROR: [SYNCHK 200-11] pearsonOriginal.cpp:18: Argument 'coef' of function 'pearsonOriginal' (pearsonOriginal.cpp:16) has an unsynthesizable type (possible cause(s): structure variable cannot be decomposed due to (1) unsupported type conversion; (2) memory copy operation; (3) function pointer used in struct; (4) unsupported pointer comparison)." projectName="ivan" solutionName="solution1" date="2021-11-22T14:59:00.787+0100"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog>
+        <logs message="WARNING: [SYNCHK 200-120] pearsonOriginal.cpp:55: multiplication is assumed not to overflow by default, otherwise, please add option '-fwrapv'." projectName="ivan" solutionName="solution1" date="2021-11-22T14:59:00.805+0100" type="Warning"/>
+        <logs message="WARNING: [SYNCHK 200-23] C:/Xilinx/Vivado/2019.2/common/technology/autopilot/hls_sqrt_apfixed.h:272: variable-indexed range selection may cause suboptimal QoR." projectName="ivan" solutionName="solution1" date="2021-11-22T14:59:00.774+0100" type="Warning"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

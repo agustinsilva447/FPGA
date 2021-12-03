@@ -1,6 +1,6 @@
 # compile vhdl design source files
 vhdl xil_defaultlib  \
-"../../../../../old_queens/ctrl_logic.vhd" \
+"../../../../../../../../test/test.srcs/sources_1/new/ctrl_logic_fsm.vhd" \
 "../../../../../old_queens/up_counter.vhd" \
 "../../../../../old_queens/fsm.vhd" \
 "../../../../../old_queens/top_nqueens.vhd" \

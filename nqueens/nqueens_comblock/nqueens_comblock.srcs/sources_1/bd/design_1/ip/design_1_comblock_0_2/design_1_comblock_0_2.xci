@@ -52,7 +52,7 @@
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXIL.BUSER_WIDTH">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXIL.CLK_DOMAIN">design_1_processing_system7_0_0_FCLK_CLK0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXIL.DATA_WIDTH">32</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXIL.FREQ_HZ">10000000</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXIL.FREQ_HZ">100000000</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXIL.HAS_BRESP">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXIL.HAS_BURST">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXIL.HAS_CACHE">0</spirit:configurableElementValue>
@@ -78,7 +78,7 @@
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXIL.WUSER_BITS_PER_BYTE">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXIL.WUSER_WIDTH">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXIL_ACLK.CLK_DOMAIN">design_1_processing_system7_0_0_FCLK_CLK0</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXIL_ACLK.FREQ_HZ">10000000</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXIL_ACLK.FREQ_HZ">100000000</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXIL_ACLK.INSERT_VIP">0</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXIL_ACLK.PHASE">0.000</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="BUSIFPARAM_VALUE.AXIL_ARESETN.INSERT_VIP">0</spirit:configurableElementValue>
@@ -112,8 +112,8 @@
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.FIFO_OUT_DEPTH">1024</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.FIFO_OUT_DWIDTH">16</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.FIFO_OUT_ENA">false</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.REGS_IN_DEPTH">2</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.REGS_IN_DWIDTH">12</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.REGS_IN_DEPTH">3</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.REGS_IN_DWIDTH">11</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.REGS_IN_ENA">true</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.REGS_OUT_DEPTH">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="MODELPARAM_VALUE.REGS_OUT_DWIDTH">1</spirit:configurableElementValue>
@@ -159,8 +159,8 @@
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.FIFO_OUT_DEPTH">1024</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.FIFO_OUT_DWIDTH">16</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.FIFO_OUT_ENA">false</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGS_IN_DEPTH">2</spirit:configurableElementValue>
-        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGS_IN_DWIDTH">12</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGS_IN_DEPTH">3</spirit:configurableElementValue>
+        <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGS_IN_DWIDTH">11</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGS_IN_ENA">true</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGS_OUT_DEPTH">1</spirit:configurableElementValue>
         <spirit:configurableElementValue spirit:referenceId="PARAM_VALUE.REGS_OUT_DWIDTH">1</spirit:configurableElementValue>

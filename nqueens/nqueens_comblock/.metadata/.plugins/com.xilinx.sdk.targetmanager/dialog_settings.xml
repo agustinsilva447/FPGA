@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <section name="Workbench">
-	<item value="_ide/bitstream/design_1_wrapper.bit" key="nqueens_comblock-bitFile"/>
+	<item value="C:\Users\mlabadm\Desktop\Github\FPGA\nqueens\nqueens_comblock\design_1_wrapper.bit" key="nqueens_comblock-bitFile"/>
 	<item value="Auto Detect" key="nqueens_comblock-device"/>
 	<item value="" key="nqueens_comblock-bmmFile"/>
 	<item value="Local" key="nqueens_comblock-target"/>

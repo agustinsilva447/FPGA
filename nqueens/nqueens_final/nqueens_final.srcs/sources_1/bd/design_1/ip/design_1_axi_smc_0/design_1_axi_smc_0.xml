@@ -1895,24 +1895,6 @@
         </spirit:parameters>
       </spirit:view>
       <spirit:view>
-        <spirit:name>xilinx_elaboratebd</spirit:name>
-        <spirit:displayName>Elaborate BD</spirit:displayName>
-        <spirit:envIdentifier>:vivado.xilinx.com:elaborate.bd</spirit:envIdentifier>
-        <spirit:fileSetRef>
-          <spirit:localName>xilinx_elaboratebd_view_fileset</spirit:localName>
-        </spirit:fileSetRef>
-        <spirit:parameters>
-          <spirit:parameter>
-            <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 09 13:31:31 UTC 2021</spirit:value>
-          </spirit:parameter>
-          <spirit:parameter>
-            <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:2245a23e</spirit:value>
-          </spirit:parameter>
-        </spirit:parameters>
-      </spirit:view>
-      <spirit:view>
         <spirit:name>xilinx_verilogsynthesis</spirit:name>
         <spirit:displayName>Verilog Synthesis</spirit:displayName>
         <spirit:envIdentifier>verilogSource:vivado.xilinx.com:synthesis</spirit:envIdentifier>
@@ -1924,11 +1906,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 09 13:35:45 UTC 2021</spirit:value>
+            <spirit:value>Tue Nov 09 16:37:32 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:59030afe</spirit:value>
+            <spirit:value>9:aff3d40b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1940,7 +1922,7 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:59030afe</spirit:value>
+            <spirit:value>9:aff3d40b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -1956,11 +1938,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 09 13:35:45 UTC 2021</spirit:value>
+            <spirit:value>Tue Nov 09 16:37:32 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:59030afe</spirit:value>
+            <spirit:value>9:aff3d40b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2022,7 +2004,7 @@
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f10e218f</spirit:value>
+            <spirit:value>9:801d447f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2038,11 +2020,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 09 13:35:45 UTC 2021</spirit:value>
+            <spirit:value>Tue Nov 09 16:37:32 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5f9c2e4d</spirit:value>
+            <spirit:value>9:f8941098</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -2066,11 +2048,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 09 13:35:45 UTC 2021</spirit:value>
+            <spirit:value>Tue Nov 09 16:37:32 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:f10e218f</spirit:value>
+            <spirit:value>9:801d447f</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -2086,11 +2068,11 @@
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 09 13:35:45 UTC 2021</spirit:value>
+            <spirit:value>Tue Nov 09 16:37:32 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:5f9c2e4d</spirit:value>
+            <spirit:value>9:f8941098</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>sim_type</spirit:name>
@@ -2099,20 +2081,20 @@
         </spirit:parameters>
       </spirit:view>
       <spirit:view>
-        <spirit:name>xilinx_externalfiles</spirit:name>
-        <spirit:displayName>External Files</spirit:displayName>
-        <spirit:envIdentifier>:vivado.xilinx.com:external.files</spirit:envIdentifier>
+        <spirit:name>xilinx_elaboratebd</spirit:name>
+        <spirit:displayName>Elaborate BD</spirit:displayName>
+        <spirit:envIdentifier>:vivado.xilinx.com:elaborate.bd</spirit:envIdentifier>
         <spirit:fileSetRef>
-          <spirit:localName>xilinx_externalfiles_view_fileset</spirit:localName>
+          <spirit:localName>xilinx_elaboratebd_view_fileset</spirit:localName>
         </spirit:fileSetRef>
         <spirit:parameters>
           <spirit:parameter>
             <spirit:name>GENtimestamp</spirit:name>
-            <spirit:value>Tue Nov 09 13:37:10 UTC 2021</spirit:value>
+            <spirit:value>Tue Nov 09 16:43:37 UTC 2021</spirit:value>
           </spirit:parameter>
           <spirit:parameter>
             <spirit:name>outputProductCRC</spirit:name>
-            <spirit:value>9:59030afe</spirit:value>
+            <spirit:value>9:0252965b</spirit:value>
           </spirit:parameter>
         </spirit:parameters>
       </spirit:view>
@@ -4225,18 +4207,6 @@
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
-      <spirit:name>xilinx_elaboratebd_view_fileset</spirit:name>
-      <spirit:file>
-        <spirit:name>sc_xtlm_design_1_axi_smc_0.mem</spirit:name>
-        <spirit:userFileType>elaboratedData</spirit:userFileType>
-        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>bd_0/bd_afc3.bd</spirit:name>
-        <spirit:userFileType>block_diagram</spirit:userFileType>
-      </spirit:file>
-    </spirit:fileSet>
-    <spirit:fileSet>
       <spirit:name>xilinx_verilogsynthesis_view_fileset</spirit:name>
       <spirit:file>
         <spirit:name>ooc.xdc</spirit:name>
@@ -4577,39 +4547,15 @@
       </spirit:file>
     </spirit:fileSet>
     <spirit:fileSet>
-      <spirit:name>xilinx_externalfiles_view_fileset</spirit:name>
+      <spirit:name>xilinx_elaboratebd_view_fileset</spirit:name>
       <spirit:file>
-        <spirit:name>design_1_axi_smc_0.dcp</spirit:name>
-        <spirit:userFileType>dcp</spirit:userFileType>
-        <spirit:userFileType>USED_IN_implementation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_synthesis</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>design_1_axi_smc_0_stub.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>design_1_axi_smc_0_stub.vhdl</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_synth_blackbox_stub</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
-      </spirit:file>
-      <spirit:file>
-        <spirit:name>design_1_axi_smc_0_sim_netlist.v</spirit:name>
-        <spirit:fileType>verilogSource</spirit:fileType>
+        <spirit:name>sc_xtlm_design_1_axi_smc_0.mem</spirit:name>
+        <spirit:userFileType>elaboratedData</spirit:userFileType>
         <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
       </spirit:file>
       <spirit:file>
-        <spirit:name>design_1_axi_smc_0_sim_netlist.vhdl</spirit:name>
-        <spirit:fileType>vhdlSource</spirit:fileType>
-        <spirit:userFileType>USED_IN_simulation</spirit:userFileType>
-        <spirit:userFileType>USED_IN_single_language</spirit:userFileType>
-        <spirit:logicalName>xil_defaultlib</spirit:logicalName>
+        <spirit:name>bd_0/bd_afc3.bd</spirit:name>
+        <spirit:userFileType>block_diagram</spirit:userFileType>
       </spirit:file>
     </spirit:fileSet>
   </spirit:fileSets>
@@ -4649,7 +4595,6 @@
   <spirit:vendorExtensions>
     <xilinx:coreExtensions>
       <xilinx:displayName>AXI SmartConnect</xilinx:displayName>
-      <xilinx:supportsDeferredElaboration>true</xilinx:supportsDeferredElaboration>
       <xilinx:xpmLibraries>
         <xilinx:xpmLibrary>XPM_MEMORY</xilinx:xpmLibrary>
         <xilinx:xpmLibrary>XPM_FIFO</xilinx:xpmLibrary>

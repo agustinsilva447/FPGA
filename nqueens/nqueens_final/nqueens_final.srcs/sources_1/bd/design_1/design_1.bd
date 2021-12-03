@@ -1,12 +1,11 @@
 {
   "design": {
     "design_info": {
-      "boundary_crc": "0xCC6CFA5306BD3ECB",
+      "boundary_crc": "0x833805335A3EB020",
       "device": "xc7z020clg484-1",
       "name": "design_1",
-      "synth_flow_mode": "Hierarchical",
-      "tool_version": "2019.2",
-      "validated": "true"
+      "synth_flow_mode": "None",
+      "tool_version": "2019.2"
     },
     "design_tree": {
       "processing_system7_0": "",
@@ -18,67 +17,18 @@
     "interface_ports": {
       "DDR": {
         "mode": "Master",
-        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0",
-        "parameters": {
-          "CAN_DEBUG": {
-            "value": "false",
-            "value_src": "default"
-          },
-          "TIMEPERIOD_PS": {
-            "value": "1250",
-            "value_src": "default"
-          },
-          "MEMORY_TYPE": {
-            "value": "COMPONENTS",
-            "value_src": "default"
-          },
-          "DATA_WIDTH": {
-            "value": "8",
-            "value_src": "default"
-          },
-          "CS_ENABLED": {
-            "value": "true",
-            "value_src": "default"
-          },
-          "DATA_MASK_ENABLED": {
-            "value": "true",
-            "value_src": "default"
-          },
-          "SLOT": {
-            "value": "Single",
-            "value_src": "default"
-          },
-          "MEM_ADDR_MAP": {
-            "value": "ROW_COLUMN_BANK",
-            "value_src": "default"
-          },
-          "BURST_LENGTH": {
-            "value": "8",
-            "value_src": "default"
-          },
-          "AXI_ARBITRATION_SCHEME": {
-            "value": "TDM",
-            "value_src": "default"
-          },
-          "CAS_LATENCY": {
-            "value": "11",
-            "value_src": "default"
-          },
-          "CAS_WRITE_LATENCY": {
-            "value": "11",
-            "value_src": "default"
-          }
-        }
+        "vlnv": "xilinx.com:interface:ddrx_rtl:1.0"
       },
       "FIXED_IO": {
         "mode": "Master",
-        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0",
-        "parameters": {
-          "CAN_DEBUG": {
-            "value": "false",
-            "value_src": "default"
-          }
-        }
+        "vlnv": "xilinx.com:display_processing_system7:fixedio_rtl:1.0"
+      }
+    },
+    "ports": {
+      "reg0_o_0": {
+        "direction": "O",
+        "left": "0",
+        "right": "0"
       }
     },
     "components": {
@@ -885,16 +835,16 @@
             "value": "false"
           },
           "REGS_IN_DEPTH": {
-            "value": "2"
+            "value": "3"
           },
           "REGS_IN_DWIDTH": {
-            "value": "12"
+            "value": "32"
           },
           "REGS_OUT_DEPTH": {
             "value": "1"
           },
           "REGS_OUT_DWIDTH": {
-            "value": "1"
+            "value": "32"
           }
         }
       },
@@ -971,17 +921,7 @@
         "ports": {
           "clk": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "CLK_DOMAIN": {
-                "value": "design_1_processing_system7_0_1_FCLK_CLK0",
-                "value_src": "default_prop"
-              },
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              }
-            }
+            "direction": "I"
           },
           "nRst": {
             "direction": "I"
@@ -996,33 +936,38 @@
             "direction": "O",
             "left": "11",
             "right": "0"
+          },
+          "a": {
+            "direction": "O",
+            "left": "4",
+            "right": "0"
           }
         }
       }
     },
     "interface_nets": {
-      "processing_system7_0_M_AXI_GP0": {
-        "interface_ports": [
-          "processing_system7_0/M_AXI_GP0",
-          "axi_smc/S00_AXI"
-        ]
-      },
       "processing_system7_0_DDR": {
         "interface_ports": [
           "DDR",
           "processing_system7_0/DDR"
         ]
       },
-      "processing_system7_0_FIXED_IO": {
+      "processing_system7_0_M_AXI_GP0": {
         "interface_ports": [
-          "FIXED_IO",
-          "processing_system7_0/FIXED_IO"
+          "processing_system7_0/M_AXI_GP0",
+          "axi_smc/S00_AXI"
         ]
       },
       "axi_smc_M01_AXI": {
         "interface_ports": [
           "axi_smc/M01_AXI",
           "comblock_0/AXIL"
+        ]
+      },
+      "processing_system7_0_FIXED_IO": {
+        "interface_ports": [
+          "FIXED_IO",
+          "processing_system7_0/FIXED_IO"
         ]
       }
     },
@@ -1062,9 +1007,16 @@
           "comblock_0/reg1_i"
         ]
       },
+      "top_nqueens_0_a": {
+        "ports": [
+          "top_nqueens_0/a",
+          "comblock_0/reg2_i"
+        ]
+      },
       "comblock_0_reg0_o": {
         "ports": [
           "comblock_0/reg0_o",
+          "reg0_o_0",
           "top_nqueens_0/nRst"
         ]
       }

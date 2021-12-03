@@ -12,14 +12,14 @@
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0fs"></ZoomStartTime>
-      <ZoomEndTime time="15001000001fs"></ZoomEndTime>
+      <ZoomEndTime time="25001000001fs"></ZoomEndTime>
       <Cursor1Time time="0fs"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="150"></NameColumnWidth>
-      <ValueColumnWidth column_width="80"></ValueColumnWidth>
+      <ValueColumnWidth column_width="72"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="15" />
+   <WVObjectSize size="16" />
    <wvobject fp_name="/top_nqueens_tb/clk" type="logic">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
@@ -40,6 +40,10 @@
       <obj_property name="ElementShortName">counter[10:0]</obj_property>
       <obj_property name="ObjectShortName">counter[10:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject fp_name="/top_nqueens_tb/top/a_in" type="array">
+      <obj_property name="ElementShortName">a_in[4:0]</obj_property>
+      <obj_property name="ObjectShortName">a_in[4:0]</obj_property>
    </wvobject>
    <wvobject fp_name="/top_nqueens_tb/top/a_in_1" type="array">
       <obj_property name="ElementShortName">a_in_1[4:0]</obj_property>

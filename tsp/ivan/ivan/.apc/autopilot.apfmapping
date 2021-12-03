@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<autopilotfilemapping:AutoPilotFileMapping xmlns:autopilotfilemapping="www.autoesl.com/autopilotfilemapping">
+  <source>
+    <originFiles name="pearsonOriginal.cpp" path="C:\Users\mlabadm\Desktop\Github\FPGA\tsp\ivan\pearsonOriginal.cpp"/>
+  </source>
+  <testbench>
+    <originFiles name="pearsonOriginalTB.cpp" path="C:\Users\mlabadm\Desktop\Github\FPGA\tsp\ivan\pearsonOriginalTB.cpp"/>
+    <originFiles name="tbDataset.h" path="C:\Users\mlabadm\Desktop\Github\FPGA\tsp\ivan\tbDataset.h"/>
+  </testbench>
+</autopilotfilemapping:AutoPilotFileMapping>

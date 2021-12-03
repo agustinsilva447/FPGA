@@ -1,0 +1,7 @@
+19:06:41 **** Clean-only build of configuration Debug for project debig_queens ****
+make clean 
+rm -rf  ./src/helloworld.o ./src/platform.o  ./src/helloworld.d ./src/platform.d  debig_queens.elf.size  debig_queens.elf
+' '
+
+19:06:41 Build Finished (took 143ms)
+

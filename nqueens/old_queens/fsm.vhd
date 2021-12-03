@@ -26,6 +26,7 @@ signal asin_array: array_in;
 type array_out is array (K downto 0) of std_logic_vector(N-1 downto 0);
 signal asout_array: array_out;
 
+signal ctrl_state: std_logic_vector(2 downto 0);
 signal output_i : std_logic_vector(2 downto 0);
 signal u_i, u_o: std_logic_vector(N-1 downto 0);
 signal ce, complete_tick, valid, done: std_logic;
@@ -36,9 +37,10 @@ begin
     dut: entity work.up_counter 
     generic map (M => M, N => N)
     port map (clk => clk, ce => ce, reset=>ack_in, complete_tick => complete_tick, count => u_o);
-    logic: entity work.ctrl_logic 
+
+    logic: entity work.ctrl_logic_fsm
     generic map (K => K, N => N)
-    port map (clk => clk, reset => reset_control, a => a_in, u => u_i, valid => valid, done => done);
+    port map (clk => clk, reset => reset_control, a => a_in, u => u_i, valid => valid, done => done, output_state=>ctrl_state); 
     
     acks_in <= ack_in;
     ack_out <= acks_out;

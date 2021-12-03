@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock.hw/hw_1/wave/hw_ila_data_2/hw_ila_data_2.wdb" id="1">
+         <top_modules>
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0fs"></ZoomStartTime>
+      <ZoomEndTime time="4096fs"></ZoomEndTime>
+      <Cursor1Time time="0fs"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="102"></NameColumnWidth>
+      <ValueColumnWidth column_width="101"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="9" />
+   <wave_markers>
+   </wave_markers>
+   <wvobject fp_name="design_1_i/top_nqueens_0/U0/fsm_1/ack_in_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/top_nqueens_0/U0/fsm_1/ack_in_1</obj_property>
+      <obj_property name="ObjectShortName">ack_in_1</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/top_nqueens_0/U0/fsm_1/asout_array[1]_8" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/top_nqueens_0/U0/fsm_1/asout_array[1]_8</obj_property>
+      <obj_property name="ObjectShortName">asout_array[1]_8</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/top_nqueens_0/U0/fsm_1/ce__0" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/top_nqueens_0/U0/fsm_1/ce__0</obj_property>
+      <obj_property name="ObjectShortName">ce__0</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state[4]_i_1__7_n_0" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state[4]_i_1__7_n_0</obj_property>
+      <obj_property name="ObjectShortName">FSM_onehot_state[4]_i_1__7_n_0</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state_reg[4]_0" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state_reg[4]_0</obj_property>
+      <obj_property name="ObjectShortName">FSM_onehot_state_reg[4]_0</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state_reg_n_0_" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state_reg_n_0_[0:0]</obj_property>
+      <obj_property name="ObjectShortName">FSM_onehot_state_reg_n_0_[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state_reg_n_0_" type="array">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/top_nqueens_0/U0/fsm_1/FSM_onehot_state_reg_n_0_[0:0]</obj_property>
+      <obj_property name="ObjectShortName">FSM_onehot_state_reg_n_0_[0:0]</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/top_nqueens_0/U0/fsm_1/next_out_1" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/top_nqueens_0/U0/fsm_1/next_out_1</obj_property>
+      <obj_property name="ObjectShortName">next_out_1</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+   <wvobject fp_name="design_1_i/top_nqueens_0/U0/fsm_1/next_out_2" type="logic">
+      <obj_property name="DisplayName">FullPathName</obj_property>
+      <obj_property name="ElementShortName">design_1_i/top_nqueens_0/U0/fsm_1/next_out_2</obj_property>
+      <obj_property name="ObjectShortName">next_out_2</obj_property>
+      <obj_property name="Radix">HEXRADIX</obj_property>
+      <obj_property name="LABELRADIX">true</obj_property>
+      <obj_property name="WaveformStyle">STYLE_DIGITAL</obj_property>
+   </wvobject>
+</wave_config>

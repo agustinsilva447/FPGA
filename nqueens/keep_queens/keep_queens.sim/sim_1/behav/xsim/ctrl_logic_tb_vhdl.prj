@@ -1,0 +1,7 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../keep_queens.srcs/sources_1/new/ctrl_logic_fsm.vhd" \
+"../../../../keep_queens.srcs/sim_1/new/ctrl_logic_tb.vhd" \
+
+# Do not sort compile order
+nosort

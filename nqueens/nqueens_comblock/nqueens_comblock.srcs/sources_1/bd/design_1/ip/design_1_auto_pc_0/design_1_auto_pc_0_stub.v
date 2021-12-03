@@ -1,10 +1,10 @@
 // Copyright 1986-2019 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2019.2 (win64) Build 2708876 Wed Nov  6 21:40:23 MST 2019
-// Date        : Fri Nov  5 13:19:00 2021
+// Date        : Wed Nov  3 16:16:28 2021
 // Host        : hp6g4-mlab-2 running 64-bit major release  (build 9200)
-// Command     : write_verilog -force -mode synth_stub
-//               c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock.srcs/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_stub.v
+// Command     : write_verilog -force -mode synth_stub -rename_top design_1_auto_pc_0 -prefix
+//               design_1_auto_pc_0_ design_1_auto_pc_0_stub.v
 // Design      : design_1_auto_pc_0
 // Purpose     : Stub declaration of top-level module interface
 // Device      : xc7z020clg484-1

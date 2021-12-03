@@ -23,6 +23,7 @@ int main()
 {
     init_platform();
     cbWrite(XPAR_COMBLOCK_0_AXIL_BASEADDR, CB_OREG0, 1);
+    xil_printf("10 queens problem:\n");
     cbWrite(XPAR_COMBLOCK_0_AXIL_BASEADDR, CB_OREG0, 0);
     while(!(cbRead(XPAR_COMBLOCK_0_AXIL_BASEADDR, CB_IREG0)&1));
     xil_printf("Soluciónes: %U \n", cbRead(XPAR_COMBLOCK_0_AXIL_BASEADDR, CB_IREG1));

@@ -35,7 +35,13 @@ set_property ip_repo_paths c:/Users/mlabadm/Desktop/Github/core-comblock-master 
 update_ip_catalog
 set_property ip_output_repo c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/nqueens_final.cache/ip [current_project]
 set_property ip_cache_permissions {read write} [current_project]
-read_vhdl -library xil_defaultlib C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/nqueens_final.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+read_vhdl -library xil_defaultlib {
+  C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/nqueens_final.srcs/sources_1/new/ctrl_logic_fsm.vhd
+  C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/up_counter.vhd
+  C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/fsm.vhd
+  C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/top_nqueens.vhd
+  C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/nqueens_final.srcs/sources_1/bd/design_1/hdl/design_1_wrapper.vhd
+}
 add_files C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/nqueens_final.srcs/sources_1/bd/design_1/design_1.bd
 set_property used_in_implementation false [get_files -all c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/nqueens_final.srcs/sources_1/bd/design_1/ip/design_1_processing_system7_0_1/design_1_processing_system7_0_1.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/nqueens_final.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/bd_afc3_psr_aclk_0_board.xdc]
@@ -70,7 +76,6 @@ set_property used_in_implementation false [get_files -all c:/Users/mlabadm/Deskt
 set_property used_in_implementation false [get_files -all c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/nqueens_final.srcs/sources_1/bd/design_1/ip/design_1_axi_smc_0/ooc.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/nqueens_final.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_board.xdc]
 set_property used_in_implementation false [get_files -all c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/nqueens_final.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xdc]
-set_property used_in_implementation false [get_files -all c:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/nqueens_final.srcs/sources_1/bd/design_1/ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0_ooc.xdc]
 set_property used_in_implementation false [get_files -all C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/nqueens_final.srcs/sources_1/bd/design_1/design_1_ooc.xdc]
 
 # Mark all dcp files as not used in implementation to prevent them from being
@@ -81,6 +86,9 @@ set_property used_in_implementation false [get_files -all C:/Users/mlabadm/Deskt
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/nqueens_final.srcs/constrs_1/new/nqueens_final.xdc
+set_property used_in_implementation false [get_files C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_final/nqueens_final.srcs/constrs_1/new/nqueens_final.xdc]
+
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1

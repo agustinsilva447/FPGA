@@ -3,8 +3,9 @@
 Nov  6 2019
 21:57:16
 C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock.sim/sim_1/behav/xsim/glbl.v,1573089660,verilog,,,,glbl,,axi_vip_v1_1_6;processing_system7_vip_v1_0_8;xilinx_vip,,,,,,
-C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/ctrl_logic.vhd,1636113127,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/fsm.vhd,,,ctrl_logic,,,,,,,,
-C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/fsm.vhd,1636038193,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/top_nqueens.vhd,,,fsm,,,,,,,,
-C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/top_nqueens.vhd,1636036986,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/top_nqueens_tb.vhd,,,top_nqueens,,,,,,,,
+C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/ctrl_logic.vhd,1636120559,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/fsm.vhd,,,ctrl_logic,,,,,,,,
+C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/fsm.vhd,1637324473,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/top_nqueens.vhd,,,fsm,,,,,,,,
+C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/top_nqueens.vhd,1637331496,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/top_nqueens_tb.vhd,,,top_nqueens,,,,,,,,
 C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/top_nqueens_tb.vhd,1636113265,vhdl,,,,top_nqueens_tb,,,,,,,,
-C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/up_counter.vhd,1635951087,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/fsm.vhd,,,up_counter,,,,,,,,
+C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/up_counter.vhd,1636120314,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/fsm.vhd,,,up_counter,,,,,,,,
+C:/Users/mlabadm/Desktop/test/test.srcs/sources_1/new/ctrl_logic_fsm.vhd,1636479015,vhdl,C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/old_queens/fsm.vhd,,,ctrl_logic_fsm,,,,,,,,

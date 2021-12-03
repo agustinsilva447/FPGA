@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 19 2021
+03:16:22
+C:/Users/mlabadm/Desktop/test/test.sim/sim_1/behav/xsim/glbl.v,1634335545,verilog,,,,glbl,,axi_vip_v1_1_11;processing_system7_vip_v1_0_13;xilinx_vip,,,,,,
+C:/Users/mlabadm/Desktop/test/test.srcs/sim_1/new/ctrl_logic_tb.vhd,1637936565,vhdl,,,,ctrl_logic_tb,,,,,,,,
+C:/Users/mlabadm/Desktop/test/test.srcs/sim_1/new/slice_reg_tb.vhd,1637868607,vhdl,,,,slice_reg_tb,,,,,,,,
+C:/Users/mlabadm/Desktop/test/test.srcs/sources_1/new/ctrl_logic_fsm.vhd,1637854474,vhdl,C:/Users/mlabadm/Desktop/test/test.srcs/sim_1/new/ctrl_logic_tb.vhd,,,ctrl_logic_fsm,,,,,,,,
+C:/Users/mlabadm/Desktop/test/test.srcs/sources_1/new/slice_reg.vhd,1637868941,vhdl,C:/Users/mlabadm/Desktop/test/test.srcs/sim_1/new/slice_reg_tb.vhd,,,slice_reg,,,,,,,,

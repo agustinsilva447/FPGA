@@ -1,0 +1,37 @@
+#include <stdio.h>
+#include "comblock.h"
+#include "platform.h"
+#include "xil_printf.h"
+#include "xparameters.h"
+
+
+int main()
+{
+    u32 n;
+    u32 k = 0;
+    n = 38395104;
+
+    init_platform();
+    cbWrite(XPAR_COMBLOCK_0_AXIL_BASEADDR , CB_OREG0, n);
+    xil_printf("\nLoopback: %U\n", cbRead(XPAR_COMBLOCK_0_AXIL_BASEADDR, CB_IREG0));
+
+    xil_printf("\n---------------------> SLICE register\n");
+    cbWrite(XPAR_COMBLOCK_0_AXIL_BASEADDR, CB_OREG2, 1);
+    cbWrite(XPAR_COMBLOCK_0_AXIL_BASEADDR, CB_OREG2, 0);
+    n = 119943496;
+    cbWrite(XPAR_COMBLOCK_0_AXIL_BASEADDR, CB_OREG3, n);
+	for (int i = 0; i < 16; ++i)
+	{
+		if (k == 0){
+			k = 1;
+		}else{
+			k = 0;
+		}
+		cbWrite(XPAR_COMBLOCK_0_AXIL_BASEADDR, CB_OREG1, k);
+		xil_printf("idx: %U. u_k: %U. \n",cbRead(XPAR_COMBLOCK_0_AXIL_BASEADDR, CB_IREG1) ,cbRead(XPAR_COMBLOCK_0_AXIL_BASEADDR, CB_IREG2));
+		xil_printf("idx: %U. u_0: %U. \n",cbRead(XPAR_COMBLOCK_0_AXIL_BASEADDR, CB_IREG1) ,cbRead(XPAR_COMBLOCK_0_AXIL_BASEADDR, CB_IREG3));
+	}
+
+    cleanup_platform();
+    return 0;
+}

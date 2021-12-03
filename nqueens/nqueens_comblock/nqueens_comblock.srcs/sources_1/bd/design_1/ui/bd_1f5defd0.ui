@@ -1,30 +1,31 @@
 {
    "ActiveEmotionalView":"Default View",
-   "Default View_ScaleFactor":"0.882456",
-   "Default View_TopLeft":"-85,1",
+   "Default View_ScaleFactor":"0.854237",
+   "Default View_TopLeft":"-56,0",
    "ExpandedHierarchyInLayout":"",
-   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS-threadsafe
+   "guistr":"# # String gsaved with Nlview 7.0.21  2019-05-29 bk=1.5064 VDI=41 GEI=36 GUI=JA:9.0 non-TLS
 #  -string -flagsOSRD
-preplace port DDR -pg 1 -lvl 4 -x 1170 -y 270 -defaultsOSRD
-preplace port FIXED_IO -pg 1 -lvl 4 -x 1170 -y 290 -defaultsOSRD
+preplace port DDR -pg 1 -lvl 4 -x 1180 -y 270 -defaultsOSRD
+preplace port FIXED_IO -pg 1 -lvl 4 -x 1180 -y 290 -defaultsOSRD
 preplace inst processing_system7_0 -pg 1 -lvl 1 -x 240 -y 350 -defaultsOSRD
-preplace inst comblock_0 -pg 1 -lvl 3 -x 980 -y 460 -defaultsOSRD
+preplace inst comblock_0 -pg 1 -lvl 3 -x 990 -y 470 -defaultsOSRD
 preplace inst ps7_0_axi_periph -pg 1 -lvl 2 -x 640 -y 410 -defaultsOSRD
 preplace inst rst_ps7_0_100M -pg 1 -lvl 1 -x 240 -y 100 -defaultsOSRD
-preplace inst system_ila_0 -pg 1 -lvl 3 -x 980 -y 170 -defaultsOSRD
-preplace inst top_nqueens_0 -pg 1 -lvl 2 -x 640 -y 170 -defaultsOSRD
-preplace netloc top_nqueens_0_done 1 2 1 800 170n
-preplace netloc top_nqueens_0_counter 1 2 1 810 180n
-preplace netloc comblock_0_reg0_o 1 1 3 490 250 820 260 1140
-preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 200 480 280 790
+preplace inst system_ila_0 -pg 1 -lvl 3 -x 990 -y 160 -defaultsOSRD
+preplace inst top_nqueens_0 -pg 1 -lvl 2 -x 640 -y 160 -defaultsOSRD
+preplace netloc top_nqueens_0_done 1 2 1 810 150n
+preplace netloc top_nqueens_0_counter 1 2 1 820 160n
+preplace netloc comblock_0_reg0_o 1 1 3 490 70 810 60 1150
+preplace netloc processing_system7_0_FCLK_CLK0 1 0 3 20 200 480 250 800
 preplace netloc processing_system7_0_FCLK_RESET0_N 1 0 2 30 210 450
-preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 460 530 800J
-preplace netloc processing_system7_0_DDR 1 1 3 NJ 270 NJ 270 NJ
+preplace netloc rst_ps7_0_100M_peripheral_aresetn 1 1 2 460 530 NJ
+preplace netloc top_nqueens_0_a_in 1 2 1 790 170n
 preplace netloc processing_system7_0_FIXED_IO 1 1 3 NJ 290 NJ 290 NJ
+preplace netloc processing_system7_0_DDR 1 1 3 NJ 270 NJ 270 NJ
 preplace netloc processing_system7_0_M_AXI_GP0 1 1 1 470 330n
 preplace netloc ps7_0_axi_periph_M00_AXI 1 2 1 N 410
-levelinfo -pg 1 0 240 640 980 1170
-pagesize -pg 1 -db -bbox -sgen 0 0 1290 570
+levelinfo -pg 1 0 240 640 990 1180
+pagesize -pg 1 -db -bbox -sgen 0 0 1300 590
 "
 }
 {

@@ -19,6 +19,7 @@ proc create_report { reportName command } {
 }
 set_param chipscope.maxJobs 3
 set_param ced.repoPaths C:/Users/mlabadm/AppData/Roaming/Xilinx/Vivado/2019.2/xhub/ced_store
+set_param xicom.use_bs_reader 1
 create_project -in_memory -part xc7z020clg484-1
 
 set_param project.singleFileAddWarning.threshold 0
@@ -58,6 +59,9 @@ set_property used_in_implementation false [get_files -all C:/Users/mlabadm/Deskt
 foreach dcp [get_files -quiet -all -filter file_type=="Design\ Checkpoint"] {
   set_property used_in_implementation false $dcp
 }
+read_xdc C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock.srcs/constrs_1/new/werner.xdc
+set_property used_in_implementation false [get_files C:/Users/mlabadm/Desktop/Github/FPGA/nqueens/nqueens_comblock/nqueens_comblock.srcs/constrs_1/new/werner.xdc]
+
 read_xdc dont_touch.xdc
 set_property used_in_implementation false [get_files dont_touch.xdc]
 set_param ips.enableIPCacheLiteLoad 1

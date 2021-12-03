@@ -1,0 +1,18 @@
+vhdl xil_defaultlib  \
+"../../../bd/design_1/ipshared/2cb9/hdl/axil.vhdl" \
+"../../../bd/design_1/ipshared/2cb9/hdl/axif.vhdl" \
+"../../../bd/design_1/ipshared/2cb9/hdl/tdpram.vhdl" \
+"../../../bd/design_1/ipshared/2cb9/hdl/graysync.vhdl" \
+"../../../bd/design_1/ipshared/2cb9/hdl/fifo.vhdl" \
+"../../../bd/design_1/ipshared/2cb9/hdl/comblock.vhdl" \
+"../../../bd/design_1/ipshared/2cb9/hdl/axi_comblock.vhdl" \
+"../../../bd/design_1/ip/design_1_comblock_0_0/sim/design_1_comblock_0_0.vhd" \
+"../../../bd/design_1/ip/design_1_axi_smc_0/bd_0/ip/ip_1/sim/bd_afc3_psr_aclk_0.vhd" \
+"../../../bd/design_1/ip/design_1_rst_ps7_0_100M_0/sim/design_1_rst_ps7_0_100M_0.vhd" \
+"../../../bd/design_1/ip/design_1_up_counter_0_0/sim/design_1_up_counter_0_0.vhd" \
+"../../../bd/design_1/sim/design_1.vhd" \
+"../../../bd/design_1/ip/design_1_system_ila_0_0/bd_0/sim/bd_f60c.vhd" \
+"../../../bd/design_1/ip/design_1_system_ila_0_0/bd_0/ip/ip_0/sim/bd_f60c_ila_lib_0.vhd" \
+"../../../bd/design_1/ip/design_1_system_ila_0_0/sim/design_1_system_ila_0_0.vhd" \
+
+nosort

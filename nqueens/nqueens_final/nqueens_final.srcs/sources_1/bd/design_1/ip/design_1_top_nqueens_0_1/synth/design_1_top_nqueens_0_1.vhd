@@ -59,7 +59,8 @@ ENTITY design_1_top_nqueens_0_1 IS
     nRst : IN STD_LOGIC;
     flag : OUT STD_LOGIC;
     done : OUT STD_LOGIC;
-    counter : OUT STD_LOGIC_VECTOR(11 DOWNTO 0)
+    counter : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
+    a : OUT STD_LOGIC_VECTOR(4 DOWNTO 0)
   );
 END design_1_top_nqueens_0_1;
 
@@ -77,7 +78,8 @@ ARCHITECTURE design_1_top_nqueens_0_1_arch OF design_1_top_nqueens_0_1 IS
       nRst : IN STD_LOGIC;
       flag : OUT STD_LOGIC;
       done : OUT STD_LOGIC;
-      counter : OUT STD_LOGIC_VECTOR(11 DOWNTO 0)
+      counter : OUT STD_LOGIC_VECTOR(11 DOWNTO 0);
+      a : OUT STD_LOGIC_VECTOR(4 DOWNTO 0)
     );
   END COMPONENT top_nqueens;
   ATTRIBUTE X_CORE_INFO : STRING;
@@ -104,6 +106,7 @@ BEGIN
       nRst => nRst,
       flag => flag,
       done => done,
-      counter => counter
+      counter => counter,
+      a => a
     );
 END design_1_top_nqueens_0_1_arch;

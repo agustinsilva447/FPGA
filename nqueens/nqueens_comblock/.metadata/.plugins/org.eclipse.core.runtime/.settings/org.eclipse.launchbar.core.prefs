@@ -1,8 +1,9 @@
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/arch=x86_64
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/name=Local
 LaunchTargetManager/org.eclipse.launchbar.core.launchTargetType.local,Local/os=win32
-configDescList=org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_nqueens_comblock_system,org.eclipse.launchbar.core.descriptorType.default\:Debugger_nqueens_comblock-Default
+configDescList=org.eclipse.launchbar.core.descriptorType.default\:Debugger_nqueens_comblock-Emulation,org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_nqueens_comblock_system,org.eclipse.launchbar.core.descriptorType.default\:Debugger_nqueens_comblock-Default
 eclipse.preferences.version=1
-org.eclipse.launchbar.core.descriptorType.default\:Debugger_nqueens_comblock-Default/activeLaunchMode=embrun
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_nqueens_comblock-Default/activeLaunchMode=run
+org.eclipse.launchbar.core.descriptorType.default\:Debugger_nqueens_comblock-Default/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
 org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_nqueens_comblock_system/activeLaunchMode=run
 org.eclipse.launchbar.core.descriptorType.default\:SystemDebugger_nqueens_comblock_system/activeLaunchTarget=org.eclipse.launchbar.core.launchTargetType.local\:Local
