@@ -9,5 +9,5 @@ f.close()
 text = os.linesep.join([s for s in text.splitlines() if s])
 text = np.array([int(s) for s in text.splitlines()])
 
-plt.hist(text, bins=1024)
+plt.hist(text, bins=np.power(2,12))
 plt.show()
