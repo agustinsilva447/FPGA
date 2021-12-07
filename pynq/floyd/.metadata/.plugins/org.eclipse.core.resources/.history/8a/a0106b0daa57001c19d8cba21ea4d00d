@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include "platform.h"
+#include "xil_printf.h"
+
+
+int main()
+{
+    init_platform();
+
+    u32 i;
+    cbWrite(XPAR_COMBLOCK_0_AXIL_BASEADDR, CB_OREG0, i);
+
+    print("Hello World\n\r");
+    print("Successfully ran Hello World application");
+    cleanup_platform();
+    return 0;
+}
