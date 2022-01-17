@@ -1,0 +1,1 @@
+VER COMO SE COMPORTA NEXT_OUT_1, porque capaz que el PS no detecta la primera vez que se pone en 1 porque capaz es un pulso muy corto, entonces solamente la detecta de casualidad una de las miles de veces que se pone en 1 y que justo el ps está yendo a leer.
