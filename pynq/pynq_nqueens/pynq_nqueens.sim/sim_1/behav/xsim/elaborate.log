@@ -1,0 +1,31 @@
+Vivado Simulator v2021.2
+Copyright 1986-1999, 2001-2021 Xilinx, Inc. All Rights Reserved.
+Running: /home/agustinsilva447/Vitis/Vivado/2021.2/bin/unwrapped/lnx64.o/xelab --incr --debug typical --relax --mt 8 -L xil_defaultlib -L secureip -L xpm --snapshot fsm_tb_behav xil_defaultlib.fsm_tb -log elaborate.log 
+Using 8 slave threads.
+Starting static elaboration
+Completed static elaboration
+Starting simulation data flow analysis
+Completed simulation data flow analysis
+Time Resolution for simulation is 1ps
+Compiling package std.standard
+Compiling package std.textio
+Compiling package ieee.std_logic_1164
+Compiling package ieee.numeric_std
+Compiling architecture arch of entity xil_defaultlib.sol_counter [\sol_counter(n=10)\]
+Compiling architecture arch of entity xil_defaultlib.up_counter [\up_counter(m=8,n=4)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic_fsm [\ctrl_logic_fsm(k=7,n=4)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=7,m=8,n=4)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic_fsm [\ctrl_logic_fsm(k=6,n=4)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=6,m=8,n=4)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic_fsm [\ctrl_logic_fsm(k=5,n=4)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=5,m=8,n=4)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic_fsm [\ctrl_logic_fsm(k=4,n=4)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=4,m=8,n=4)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic_fsm [\ctrl_logic_fsm(k=3,n=4)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=3,m=8,n=4)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic_fsm [\ctrl_logic_fsm(k=2,n=4)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=2,m=8,n=4)\]
+Compiling architecture arch of entity xil_defaultlib.ctrl_logic_fsm [\ctrl_logic_fsm(k=1,n=4)\]
+Compiling architecture rtl of entity xil_defaultlib.fsm [\fsm(k=1,m=8,n=4)\]
+Compiling architecture sim of entity xil_defaultlib.fsm_tb
+Built simulation snapshot fsm_tb_behav

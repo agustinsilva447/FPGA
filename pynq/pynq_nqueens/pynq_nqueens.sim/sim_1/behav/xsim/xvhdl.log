@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens/pynq_nqueens.srcs/sim_1/new/fsm_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'fsm_tb'

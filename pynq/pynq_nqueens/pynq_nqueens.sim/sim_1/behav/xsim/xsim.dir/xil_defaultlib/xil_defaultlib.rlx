@@ -1,0 +1,9 @@
+0.7
+2020.2
+Oct 19 2021
+02:56:52
+/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens/pynq_nqueens.srcs/sim_1/new/fsm_tb.vhd,1642444218,vhdl,,,,fsm_tb,,,,,,,,
+/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens/pynq_nqueens.srcs/sources_1/new/ctrl_logic_fsm.vhd,1642442629,vhdl,/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens/pynq_nqueens.srcs/sources_1/new/fsm.vhd,,,ctrl_logic_fsm,,,,,,,,
+/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens/pynq_nqueens.srcs/sources_1/new/fsm.vhd,1642442673,vhdl,/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens/pynq_nqueens.srcs/sim_1/new/fsm_tb.vhd,,,fsm,,,,,,,,
+/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens/pynq_nqueens.srcs/sources_1/new/sol_counter.vhd,1642443422,vhdl,/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens/pynq_nqueens.srcs/sim_1/new/fsm_tb.vhd,,,sol_counter,,,,,,,,
+/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens/pynq_nqueens.srcs/sources_1/new/up_counter.vhd,1642442574,vhdl,/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens/pynq_nqueens.srcs/sources_1/new/fsm.vhd,,,up_counter,,,,,,,,
