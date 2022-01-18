@@ -8,7 +8,7 @@ entity up_counter is
         N : integer  -- N bits required to count upto M-1
     );    
     port(
-            clk, ce, reset : in std_logic;            
+            clk, ce, reset, nRst : in std_logic;            
             complete_tick : out std_logic;
             count : out std_logic_vector(N-1 downto 0)
     );
@@ -21,7 +21,7 @@ begin
     begin        
         if reset = '1' then 
             count_reg <= (others => '0');
-        elsif (clk'event and clk='1') and (ce='1') then
+        elsif (clk='1' and ce='1') then
             count_reg <= count_next;
         else  
             count_reg <= count_reg;

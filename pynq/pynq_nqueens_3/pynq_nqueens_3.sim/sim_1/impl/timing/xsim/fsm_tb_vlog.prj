@@ -1,0 +1,6 @@
+# compile verilog/system verilog design source files
+verilog xil_defaultlib  --include "../../../../../pynq_nqueens_3.gen/sources_1/bd/design_1/ipshared/ec67/hdl" --include "../../../../../pynq_nqueens_3.gen/sources_1/bd/design_1/ipshared/3007/hdl" --include "/home/agustinsilva447/Vitis/Vivado/2021.2/data/xilinx_vip/include" \
+"fsm_tb_time_impl.v" \
+
+# Do not sort compile order
+nosort

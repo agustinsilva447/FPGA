@@ -6,19 +6,20 @@
       <db_ref path="fsm_tb_behav.wdb" id="1">
          <top_modules>
             <top_module name="fsm_tb" />
+            <top_module name="glbl" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
       <ZoomStartTime time="0.000000 us"></ZoomStartTime>
-      <ZoomEndTime time="1,001.000000 us"></ZoomEndTime>
+      <ZoomEndTime time="51.300001 us"></ZoomEndTime>
       <Cursor1Time time="0.000000 us"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
       <NameColumnWidth column_width="141"></NameColumnWidth>
-      <ValueColumnWidth column_width="91"></ValueColumnWidth>
+      <ValueColumnWidth column_width="83"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="3" />
+   <WVObjectSize size="27" />
    <wvobject type="array" fp_name="/fsm_tb/counter_2">
       <obj_property name="ElementShortName">counter_2[9:0]</obj_property>
       <obj_property name="ObjectShortName">counter_2[9:0]</obj_property>
@@ -31,5 +32,101 @@
    <wvobject type="logic" fp_name="/fsm_tb/clk">
       <obj_property name="ElementShortName">clk</obj_property>
       <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fsm_tb/fsm_1/a_in">
+      <obj_property name="ElementShortName">a_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">a_in[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fsm_tb/fsm_1/ack_in">
+      <obj_property name="ElementShortName">ack_in</obj_property>
+      <obj_property name="ObjectShortName">ack_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fsm_tb/fsm_1/next_in">
+      <obj_property name="ElementShortName">next_in</obj_property>
+      <obj_property name="ObjectShortName">next_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fsm_tb/fsm_1/ack_out">
+      <obj_property name="ElementShortName">ack_out</obj_property>
+      <obj_property name="ObjectShortName">ack_out</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fsm_tb/fsm_1/next_out">
+      <obj_property name="ElementShortName">next_out</obj_property>
+      <obj_property name="ObjectShortName">next_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fsm_tb/fsm_1/output_state">
+      <obj_property name="ElementShortName">output_state[2:0]</obj_property>
+      <obj_property name="ObjectShortName">output_state[2:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/fsm_tb/fsm_1/state">
+      <obj_property name="ElementShortName">state</obj_property>
+      <obj_property name="ObjectShortName">state</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/fsm_tb/fsm_1/next_state">
+      <obj_property name="ElementShortName">next_state</obj_property>
+      <obj_property name="ObjectShortName">next_state</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fsm_tb/fsm_1/asin_array">
+      <obj_property name="ElementShortName">asin_array[0:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">asin_array[0:0][3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fsm_tb/fsm_1/asout_array">
+      <obj_property name="ElementShortName">asout_array[1:0][3:0]</obj_property>
+      <obj_property name="ObjectShortName">asout_array[1:0][3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fsm_tb/fsm_1/u_i">
+      <obj_property name="ElementShortName">u_i[3:0]</obj_property>
+      <obj_property name="ObjectShortName">u_i[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fsm_tb/fsm_1/u_o">
+      <obj_property name="ElementShortName">u_o[3:0]</obj_property>
+      <obj_property name="ObjectShortName">u_o[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fsm_tb/fsm_1/ce">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fsm_tb/fsm_1/complete_tick">
+      <obj_property name="ElementShortName">complete_tick</obj_property>
+      <obj_property name="ObjectShortName">complete_tick</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fsm_tb/fsm_1/valid">
+      <obj_property name="ElementShortName">valid</obj_property>
+      <obj_property name="ObjectShortName">valid</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fsm_tb/fsm_1/done">
+      <obj_property name="ElementShortName">done</obj_property>
+      <obj_property name="ObjectShortName">done</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fsm_tb/fsm_1/reset_control">
+      <obj_property name="ElementShortName">reset_control</obj_property>
+      <obj_property name="ObjectShortName">reset_control</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fsm_tb/fsm_1/dut/clk">
+      <obj_property name="ElementShortName">clk</obj_property>
+      <obj_property name="ObjectShortName">clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fsm_tb/fsm_1/dut/ce">
+      <obj_property name="ElementShortName">ce</obj_property>
+      <obj_property name="ObjectShortName">ce</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fsm_tb/fsm_1/dut/reset">
+      <obj_property name="ElementShortName">reset</obj_property>
+      <obj_property name="ObjectShortName">reset</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/fsm_tb/fsm_1/dut/complete_tick">
+      <obj_property name="ElementShortName">complete_tick</obj_property>
+      <obj_property name="ObjectShortName">complete_tick</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fsm_tb/fsm_1/dut/count">
+      <obj_property name="ElementShortName">count[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fsm_tb/fsm_1/dut/count_reg">
+      <obj_property name="ElementShortName">count_reg[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count_reg[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/fsm_tb/fsm_1/dut/count_next">
+      <obj_property name="ElementShortName">count_next[3:0]</obj_property>
+      <obj_property name="ObjectShortName">count_next[3:0]</obj_property>
    </wvobject>
 </wave_config>

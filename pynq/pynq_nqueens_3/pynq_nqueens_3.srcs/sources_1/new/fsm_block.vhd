@@ -35,7 +35,7 @@ signal reset_control, acks_in, nexts_in, acks_out, nexts_out: std_logic;
 begin
     dut: entity work.up_counter 
     generic map (M => M, N => N)
-    port map (clk => clk, ce => ce, reset=>ack_in, complete_tick => complete_tick, count => u_o);
+    port map (clk => clk, ce => ce, reset=>ack_in, nRst=>nRst, complete_tick => complete_tick, count => u_o);
     logic: entity work.ctrl_logic
     generic map (K => K, N => N)
     port map (clk => clk, reset => reset_control, a => a_in, u => u_i, valid => valid, done => done, output_state=>ctrl_state); 

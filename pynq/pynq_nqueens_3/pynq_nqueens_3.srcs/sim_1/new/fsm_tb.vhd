@@ -128,67 +128,77 @@ begin
     process is
     begin
     
+            wait for 10000 ns;  
         nRst <= '1';
-        wait for 10 ns;    
-        nRst <= '0';
-            
-        wait for 10 ns;        
+            wait for 10000 ns;    
+        nRst <= '0';            
+            wait for 10000 ns;        
         ack_in_1 <= '1';
+            wait for 10000 ns;      
         a_in_1 <= "0001";
-        wait for 10 ns;
-        ack_in_1 <= '0';
-        wait until next_out_1 = '1';
-        
-        wait for 10 ns;        
+            wait for 10000 ns;      
+        ack_in_1 <= '0';   
+            wait for 10000 ns;  
+        wait until next_out_1 = '1';        
+            wait for 10000 ns;        
         ack_in_1 <= '1';
+            wait for 10000 ns;      
         a_in_1 <= "0010";
-        wait for 10 ns;
-        ack_in_1 <= '0';
-        wait until next_out_1 = '1';
-        
-        wait for 10 ns;        
+            wait for 10000 ns;      
+        ack_in_1 <= '0';   
+            wait for 10000 ns;  
+        wait until next_out_1 = '1';        
+            wait for 10000 ns;        
         ack_in_1 <= '1';
+            wait for 10000 ns;      
         a_in_1 <= "0011";
-        wait for 10 ns;
-        ack_in_1 <= '0';
-        wait until next_out_1 = '1';
-        
-        wait for 10 ns;
+            wait for 10000 ns;      
+        ack_in_1 <= '0';   
+            wait for 10000 ns;  
+        wait until next_out_1 = '1';        
+            wait for 10000 ns;
         ack_in_1 <= '1';
+            wait for 10000 ns;      
         a_in_1 <= "0100";
-        wait for 10 ns;
-        ack_in_1 <= '0';
-        wait until next_out_1 = '1';
-        
-        wait for 10 ns;
+            wait for 10000 ns;      
+        ack_in_1 <= '0';   
+            wait for 10000 ns;  
+        wait until next_out_1 = '1';        
+            wait for 10000 ns;
         ack_in_1 <= '1';
+            wait for 10000 ns;      
         a_in_1 <= "0101";
-        wait for 10 ns;
-        ack_in_1 <= '0';
-        wait until next_out_1 = '1';
-        
-        wait for 10 ns;
+            wait for 10000 ns;      
+        ack_in_1 <= '0';   
+            wait for 10000 ns;  
+        wait until next_out_1 = '1';        
+            wait for 10000 ns;
         ack_in_1 <= '1';
+            wait for 10000 ns;      
         a_in_1 <= "0110";
-        wait for 10 ns;
-        ack_in_1 <= '0';
-        wait until next_out_1 = '1';
-        
-        wait for 10 ns;
+            wait for 10000 ns;      
+        ack_in_1 <= '0';   
+            wait for 10000 ns;  
+        wait until next_out_1 = '1';        
+            wait for 10000 ns;
         ack_in_1 <= '1';
+            wait for 10000 ns;      
         a_in_1 <= "0111";
-        wait for 10 ns;
-        ack_in_1 <= '0';
-        wait until next_out_1 = '1';
-        
-        wait for 10 ns;
+            wait for 10000 ns;      
+        ack_in_1 <= '0';   
+            wait for 10000 ns;  
+        wait until next_out_1 = '1';        
+            wait for 10000 ns;
         ack_in_1 <= '1';
+            wait for 10000 ns;      
         a_in_1 <= "1000";
-        wait for 10 ns;
-        ack_in_1 <= '0';
-        wait until next_out_1 = '1';
-        
-        wait;
+            wait for 10000 ns;      
+        ack_in_1 <= '0';   
+            wait for 10000 ns;  
+        wait until next_out_1 = '1';   
+            wait for 10000 ns;          
+        wait;   
+            wait for 10000 ns;  
     end process; 
     
 end architecture;
