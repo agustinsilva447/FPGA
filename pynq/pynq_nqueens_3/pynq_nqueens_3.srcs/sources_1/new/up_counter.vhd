@@ -8,7 +8,7 @@ entity up_counter is
         N : integer  -- N bits required to count upto M-1
     );    
     port(
-            clk, ce, reset, nRst : in std_logic;            
+            clk, ce, reset : in std_logic;            
             complete_tick : out std_logic;
             count : out std_logic_vector(N-1 downto 0)
     );
