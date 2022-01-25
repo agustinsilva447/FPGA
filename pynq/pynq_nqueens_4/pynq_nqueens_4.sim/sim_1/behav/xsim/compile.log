@@ -1,0 +1,2 @@
+INFO: [VRFC 10-163] Analyzing VHDL file "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sim_1/new/top_queens_tb.vhd" into library xil_defaultlib
+INFO: [VRFC 10-3107] analyzing entity 'top_queens_tb'

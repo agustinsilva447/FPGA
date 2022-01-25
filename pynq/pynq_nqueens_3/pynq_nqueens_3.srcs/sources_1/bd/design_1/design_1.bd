@@ -2591,13 +2591,13 @@
         "ports": [
           "comblock_0/reg0_o",
           "sol_counter_0/reset",
-          "fsm_block_7/nRst",
-          "fsm_block_6/nRst",
-          "fsm_block_5/nRst",
-          "fsm_block_4/nRst",
-          "fsm_block_3/nRst",
+          "fsm_block_1/nRst",
           "fsm_block_2/nRst",
-          "fsm_block_1/nRst"
+          "fsm_block_3/nRst",
+          "fsm_block_4/nRst",
+          "fsm_block_5/nRst",
+          "fsm_block_6/nRst",
+          "fsm_block_7/nRst"
         ]
       },
       "comblock_0_reg1_o": {

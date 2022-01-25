@@ -9,11 +9,11 @@
     ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 
 source design_1_wrapper.tcl -notrace
-create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:07 . Memory (MB): peak = 2591.398 ; gain = 8.930 ; free physical = 3738 ; free virtual = 8733
+create_project: Time (s): cpu = 00:00:14 ; elapsed = 00:00:13 . Memory (MB): peak = 2588.426 ; gain = 5.961 ; free physical = 6407 ; free virtual = 10094
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/agustinsilva447/Descargas/pynq/core-comblock-master'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/agustinsilva447/Vitis/Vivado/2021.2/data/ip'.
-add_files: Time (s): cpu = 00:00:25 ; elapsed = 00:00:26 . Memory (MB): peak = 2599.414 ; gain = 8.016 ; free physical = 3722 ; free virtual = 8715
+add_files: Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2596.441 ; gain = 8.016 ; free physical = 6386 ; free virtual = 10097
 Command: read_checkpoint -auto_incremental -incremental /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp
 INFO: [Vivado 12-5825] Read reference checkpoint from /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/utils_1/imports/synth_1/design_1_wrapper.dcp for incremental synthesis
 INFO: [Vivado 12-7989] Please ensure there are no constraint changes
@@ -26,41 +26,41 @@ WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis b
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 27606
+INFO: [Synth 8-7075] Helper process launched with PID 18849
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 2599.691 ; gain = 0.000 ; free physical = 2071 ; free virtual = 7065
+Starting RTL Elaboration : Time (s): cpu = 00:00:08 ; elapsed = 00:00:09 . Memory (MB): peak = 2596.719 ; gain = 0.000 ; free physical = 4804 ; free virtual = 8517
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_wrapper' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:40]
 INFO: [Synth 8-3491] module 'design_1' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:591' bound to instance 'design_1_i' of component 'design_1' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:67]
 INFO: [Synth 8-638] synthesizing module 'design_1' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:621]
-INFO: [Synth 8-3491] module 'design_1_comblock_0_0' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_comblock_0_0_stub.vhdl:5' bound to instance 'comblock_0' of component 'design_1_comblock_0_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:984]
-INFO: [Synth 8-638] synthesizing module 'design_1_comblock_0_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_comblock_0_0_stub.vhdl:40]
-INFO: [Synth 8-3491] module 'design_1_fsm_block_0_1' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_1_stub.vhdl:5' bound to instance 'fsm_block_1' of component 'design_1_fsm_block_0_1' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1048]
-INFO: [Synth 8-638] synthesizing module 'design_1_fsm_block_0_1' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_1_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'design_1_fsm_block_0_2' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_2_stub.vhdl:5' bound to instance 'fsm_block_2' of component 'design_1_fsm_block_0_2' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1060]
-INFO: [Synth 8-638] synthesizing module 'design_1_fsm_block_0_2' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_2_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'design_1_fsm_block_0_3' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_3_stub.vhdl:5' bound to instance 'fsm_block_3' of component 'design_1_fsm_block_0_3' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1072]
-INFO: [Synth 8-638] synthesizing module 'design_1_fsm_block_0_3' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_3_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'design_1_fsm_block_0_4' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_4_stub.vhdl:5' bound to instance 'fsm_block_4' of component 'design_1_fsm_block_0_4' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1084]
-INFO: [Synth 8-638] synthesizing module 'design_1_fsm_block_0_4' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_4_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'design_1_fsm_block_0_5' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_5_stub.vhdl:5' bound to instance 'fsm_block_5' of component 'design_1_fsm_block_0_5' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1096]
-INFO: [Synth 8-638] synthesizing module 'design_1_fsm_block_0_5' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_5_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'design_1_fsm_block_0_6' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_6_stub.vhdl:5' bound to instance 'fsm_block_6' of component 'design_1_fsm_block_0_6' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1108]
-INFO: [Synth 8-638] synthesizing module 'design_1_fsm_block_0_6' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_6_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'design_1_fsm_block_0_7' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_7_stub.vhdl:5' bound to instance 'fsm_block_7' of component 'design_1_fsm_block_0_7' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1120]
-INFO: [Synth 8-638] synthesizing module 'design_1_fsm_block_0_7' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_7_stub.vhdl:20]
-INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1132]
-INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_processing_system7_0_0_stub.vhdl:76]
+INFO: [Synth 8-3491] module 'design_1_comblock_0_0' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_comblock_0_0_stub.vhdl:5' bound to instance 'comblock_0' of component 'design_1_comblock_0_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:984]
+INFO: [Synth 8-638] synthesizing module 'design_1_comblock_0_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_comblock_0_0_stub.vhdl:40]
+INFO: [Synth 8-3491] module 'design_1_fsm_block_0_1' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_1_stub.vhdl:5' bound to instance 'fsm_block_1' of component 'design_1_fsm_block_0_1' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1048]
+INFO: [Synth 8-638] synthesizing module 'design_1_fsm_block_0_1' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_1_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_fsm_block_0_2' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_2_stub.vhdl:5' bound to instance 'fsm_block_2' of component 'design_1_fsm_block_0_2' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1060]
+INFO: [Synth 8-638] synthesizing module 'design_1_fsm_block_0_2' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_2_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_fsm_block_0_3' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_3_stub.vhdl:5' bound to instance 'fsm_block_3' of component 'design_1_fsm_block_0_3' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1072]
+INFO: [Synth 8-638] synthesizing module 'design_1_fsm_block_0_3' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_3_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_fsm_block_0_4' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_4_stub.vhdl:5' bound to instance 'fsm_block_4' of component 'design_1_fsm_block_0_4' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1084]
+INFO: [Synth 8-638] synthesizing module 'design_1_fsm_block_0_4' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_4_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_fsm_block_0_5' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_5_stub.vhdl:5' bound to instance 'fsm_block_5' of component 'design_1_fsm_block_0_5' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1096]
+INFO: [Synth 8-638] synthesizing module 'design_1_fsm_block_0_5' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_5_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_fsm_block_0_6' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_6_stub.vhdl:5' bound to instance 'fsm_block_6' of component 'design_1_fsm_block_0_6' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1108]
+INFO: [Synth 8-638] synthesizing module 'design_1_fsm_block_0_6' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_6_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_fsm_block_0_7' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_7_stub.vhdl:5' bound to instance 'fsm_block_7' of component 'design_1_fsm_block_0_7' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1120]
+INFO: [Synth 8-638] synthesizing module 'design_1_fsm_block_0_7' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_fsm_block_0_7_stub.vhdl:20]
+INFO: [Synth 8-3491] module 'design_1_processing_system7_0_0' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_processing_system7_0_0_stub.vhdl:5' bound to instance 'processing_system7_0' of component 'design_1_processing_system7_0_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1132]
+INFO: [Synth 8-638] synthesizing module 'design_1_processing_system7_0_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_processing_system7_0_0_stub.vhdl:76]
 INFO: [Synth 8-638] synthesizing module 'design_1_ps7_0_axi_periph_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:398]
 INFO: [Synth 8-638] synthesizing module 's00_couplers_imp_UYSKKA' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:80]
-INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:263]
-INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_auto_pc_0_stub.vhdl:70]
+INFO: [Synth 8-3491] module 'design_1_auto_pc_0' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_auto_pc_0_stub.vhdl:5' bound to instance 'auto_pc' of component 'design_1_auto_pc_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:263]
+INFO: [Synth 8-638] synthesizing module 'design_1_auto_pc_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_auto_pc_0_stub.vhdl:70]
 INFO: [Synth 8-256] done synthesizing module 's00_couplers_imp_UYSKKA' (1#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:80]
 INFO: [Synth 8-256] done synthesizing module 'design_1_ps7_0_axi_periph_0' (2#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:398]
-INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_0' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1266]
-INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:21]
-INFO: [Synth 8-3491] module 'design_1_sol_counter_0_0' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_sol_counter_0_0_stub.vhdl:5' bound to instance 'sol_counter_0' of component 'design_1_sol_counter_0_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1279]
-INFO: [Synth 8-638] synthesizing module 'design_1_sol_counter_0_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-27494-agustinsilva447-Lenovo-G50-80/realtime/design_1_sol_counter_0_0_stub.vhdl:15]
+INFO: [Synth 8-3491] module 'design_1_rst_ps7_0_100M_0' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:5' bound to instance 'rst_ps7_0_100M' of component 'design_1_rst_ps7_0_100M_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1266]
+INFO: [Synth 8-638] synthesizing module 'design_1_rst_ps7_0_100M_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_rst_ps7_0_100M_0_stub.vhdl:21]
+INFO: [Synth 8-3491] module 'design_1_sol_counter_0_0' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_sol_counter_0_0_stub.vhdl:5' bound to instance 'sol_counter_0' of component 'design_1_sol_counter_0_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:1279]
+INFO: [Synth 8-638] synthesizing module 'design_1_sol_counter_0_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/.Xil/Vivado-18695-agustinsilva447-Lenovo-G50-80/realtime/design_1_sol_counter_0_0_stub.vhdl:15]
 INFO: [Synth 8-256] done synthesizing module 'design_1' (3#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/synth/design_1.vhd:621]
 INFO: [Synth 8-256] done synthesizing module 'design_1_wrapper' (4#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/hdl/design_1_wrapper.vhd:40]
 WARNING: [Synth 8-7129] Port M_ACLK in module s00_couplers_imp_UYSKKA is either unconnected or has no load
@@ -68,18 +68,18 @@ WARNING: [Synth 8-7129] Port M_ARESETN in module s00_couplers_imp_UYSKKA is eith
 WARNING: [Synth 8-7129] Port ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:09 ; elapsed = 00:00:09 . Memory (MB): peak = 2599.691 ; gain = 0.000 ; free physical = 2122 ; free virtual = 7116
+Finished RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:11 . Memory (MB): peak = 2596.719 ; gain = 0.000 ; free physical = 4790 ; free virtual = 8505
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2599.691 ; gain = 0.000 ; free physical = 2987 ; free virtual = 7982
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2596.719 ; gain = 0.000 ; free physical = 5708 ; free virtual = 9424
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:10 ; elapsed = 00:00:10 . Memory (MB): peak = 2599.691 ; gain = 0.000 ; free physical = 2987 ; free virtual = 7982
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:12 ; elapsed = 00:00:12 . Memory (MB): peak = 2596.719 ; gain = 0.000 ; free physical = 5708 ; free virtual = 9424
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2599.691 ; gain = 0.000 ; free physical = 2981 ; free virtual = 7975
+Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2596.719 ; gain = 0.000 ; free physical = 5710 ; free virtual = 9427
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
@@ -112,22 +112,22 @@ Parsing XDC File [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens
 Finished Parsing XDC File [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/dont_touch.xdc]
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2623.582 ; gain = 0.000 ; free physical = 2952 ; free virtual = 7947
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2620.609 ; gain = 0.000 ; free physical = 5619 ; free virtual = 9334
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2623.582 ; gain = 0.000 ; free physical = 2952 ; free virtual = 7947
+Constraint Validation Runtime : Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.01 . Memory (MB): peak = 2620.609 ; gain = 0.000 ; free physical = 5619 ; free virtual = 9334
 WARNING: [Designutils 20-4072] Reference run did not run incremental synthesis because the design is too small; reverting to default synthesis
 INFO: [Designutils 20-4379] Flow is switching to default flow due to incremental criteria not met. If you would like to alter this behaviour and have the flow terminate instead, please set the following parameter config_implementation {autoIncr.Synth.RejectBehavior Terminate}
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2623.582 ; gain = 23.891 ; free physical = 3025 ; free virtual = 8019
+Finished Constraint Validation : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2620.609 ; gain = 23.891 ; free physical = 5661 ; free virtual = 9382
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:19 ; elapsed = 00:00:20 . Memory (MB): peak = 2623.582 ; gain = 23.891 ; free physical = 3025 ; free virtual = 8019
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:23 ; elapsed = 00:00:24 . Memory (MB): peak = 2620.609 ; gain = 23.891 ; free physical = 5661 ; free virtual = 9382
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
@@ -407,10 +407,10 @@ Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fsm_block_5. (constrai
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fsm_block_6. (constraint file  auto generated constraint).
 Applied set_property KEEP_HIERARCHY = SOFT for design_1_i/fsm_block_7. (constraint file  auto generated constraint).
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2623.582 ; gain = 23.891 ; free physical = 3025 ; free virtual = 8020
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:23 ; elapsed = 00:00:25 . Memory (MB): peak = 2620.609 ; gain = 23.891 ; free physical = 5658 ; free virtual = 9381
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:20 ; elapsed = 00:00:21 . Memory (MB): peak = 2623.582 ; gain = 23.891 ; free physical = 3026 ; free virtual = 8022
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:24 ; elapsed = 00:00:25 . Memory (MB): peak = 2620.609 ; gain = 23.891 ; free physical = 5660 ; free virtual = 9384
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -437,25 +437,25 @@ WARNING: [Synth 8-7129] Port ARESETN in module design_1_ps7_0_axi_periph_0 is ei
 WARNING: [Synth 8-7129] Port M00_ACLK in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 WARNING: [Synth 8-7129] Port M00_ARESETN in module design_1_ps7_0_axi_periph_0 is either unconnected or has no load
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:22 ; elapsed = 00:00:23 . Memory (MB): peak = 2623.582 ; gain = 23.891 ; free physical = 3020 ; free virtual = 8019
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:26 ; elapsed = 00:00:27 . Memory (MB): peak = 2620.609 ; gain = 23.891 ; free physical = 5652 ; free virtual = 9379
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2623.582 ; gain = 23.891 ; free physical = 2898 ; free virtual = 7897
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2620.609 ; gain = 23.891 ; free physical = 5548 ; free virtual = 9277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:30 ; elapsed = 00:00:31 . Memory (MB): peak = 2623.582 ; gain = 23.891 ; free physical = 2898 ; free virtual = 7897
+Finished Timing Optimization : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2620.609 ; gain = 23.891 ; free physical = 5548 ; free virtual = 9277
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:31 ; elapsed = 00:00:32 . Memory (MB): peak = 2623.582 ; gain = 23.891 ; free physical = 2898 ; free virtual = 7897
+Finished Technology Mapping : Time (s): cpu = 00:00:36 ; elapsed = 00:00:38 . Memory (MB): peak = 2620.609 ; gain = 23.891 ; free physical = 5547 ; free virtual = 9276
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -473,37 +473,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2623.582 ; gain = 23.891 ; free physical = 2896 ; free virtual = 7897
+Finished IO Insertion : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2620.609 ; gain = 23.891 ; free physical = 5547 ; free virtual = 9276
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2623.582 ; gain = 23.891 ; free physical = 2896 ; free virtual = 7897
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2620.609 ; gain = 23.891 ; free physical = 5547 ; free virtual = 9276
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2623.582 ; gain = 23.891 ; free physical = 2896 ; free virtual = 7897
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2620.609 ; gain = 23.891 ; free physical = 5547 ; free virtual = 9276
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2623.582 ; gain = 23.891 ; free physical = 2896 ; free virtual = 7897
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2620.609 ; gain = 23.891 ; free physical = 5547 ; free virtual = 9276
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2623.582 ; gain = 23.891 ; free physical = 2896 ; free virtual = 7897
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2620.609 ; gain = 23.891 ; free physical = 5547 ; free virtual = 9276
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2623.582 ; gain = 23.891 ; free physical = 2896 ; free virtual = 7897
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2620.609 ; gain = 23.891 ; free physical = 5547 ; free virtual = 9276
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -545,16 +545,16 @@ Report Cell Usage:
 |12    |design_1_sol_counter_0_0_bbox        |     1|
 +------+-------------------------------------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2623.582 ; gain = 23.891 ; free physical = 2896 ; free virtual = 7897
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2620.609 ; gain = 23.891 ; free physical = 5547 ; free virtual = 9276
 ---------------------------------------------------------------------------------
 Synthesis finished with 0 errors, 0 critical warnings and 5 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:34 ; elapsed = 00:00:35 . Memory (MB): peak = 2623.582 ; gain = 0.000 ; free physical = 2953 ; free virtual = 7953
-Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:38 . Memory (MB): peak = 2623.590 ; gain = 23.891 ; free physical = 2953 ; free virtual = 7953
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:40 ; elapsed = 00:00:41 . Memory (MB): peak = 2620.609 ; gain = 0.000 ; free physical = 5603 ; free virtual = 9333
+Synthesis Optimization Complete : Time (s): cpu = 00:00:44 ; elapsed = 00:00:46 . Memory (MB): peak = 2620.617 ; gain = 23.891 ; free physical = 5603 ; free virtual = 9333
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2623.590 ; gain = 0.000 ; free physical = 2948 ; free virtual = 7947
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2620.617 ; gain = 0.000 ; free physical = 5598 ; free virtual = 9328
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2623.590 ; gain = 0.000 ; free physical = 2974 ; free virtual = 7974
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2620.617 ; gain = 0.000 ; free physical = 5624 ; free virtual = 9354
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
@@ -562,7 +562,7 @@ Synth Design complete, checksum: ae866f56
 INFO: [Common 17-83] Releasing license: Synthesis
 52 Infos, 11 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:00:54 ; elapsed = 00:00:46 . Memory (MB): peak = 2623.590 ; gain = 24.176 ; free physical = 3167 ; free virtual = 8168
+synth_design: Time (s): cpu = 00:01:03 ; elapsed = 00:00:55 . Memory (MB): peak = 2620.617 ; gain = 24.176 ; free physical = 5817 ; free virtual = 9548
 INFO: [Common 17-1381] The checkpoint '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/design_1_wrapper.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_wrapper_utilization_synth.rpt -pb design_1_wrapper_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Jan 17 19:32:42 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 25 18:46:25 2022...

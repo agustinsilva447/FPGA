@@ -1,7 +1,7 @@
 // Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 // --------------------------------------------------------------------------------
 // Tool Version: Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
-// Date        : Mon Jan 17 17:35:15 2022
+// Date        : Tue Jan 25 18:41:28 2022
 // Host        : agustinsilva447-Lenovo-G50-80 running 64-bit Ubuntu 20.04.3 LTS
 // Command     : write_verilog -force -mode funcsim
 //               /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/ip/design_1_fsm_block_0_1/design_1_fsm_block_0_1_sim_netlist.v
@@ -133,8 +133,8 @@ module design_1_fsm_block_0_1_ctrl_logic
     .INIT(64'hFFFFFFFFFFFFFF80)) 
     acks_out_reg_i_2
        (.I0(Q[2]),
-        .I1(done),
-        .I2(valid),
+        .I1(valid),
+        .I2(done),
         .I3(Q[0]),
         .I4(Q[1]),
         .I5(Q[4]),
@@ -212,12 +212,12 @@ module design_1_fsm_block_0_1_ctrl_logic
         .D(1'b1),
         .Q(j_reg));
   LUT6 #(
-    .INIT(64'hFFFFFFFF00000200)) 
+    .INIT(64'hFFFFFFFF00000400)) 
     valid_aux_i_1
-       (.I0(j_reg),
-        .I1(count_reg[2]),
-        .I2(count_reg[3]),
-        .I3(count_reg[0]),
+       (.I0(count_reg[3]),
+        .I1(count_reg[0]),
+        .I2(count_reg[2]),
+        .I3(j_reg),
         .I4(count_reg[1]),
         .I5(valid),
         .O(valid_aux_i_1_n_0));
@@ -238,9 +238,9 @@ module design_1_fsm_block_0_1_fsm_block
     output_state,
     a_in,
     clk,
-    ack_in,
     next_in,
-    nRst);
+    nRst,
+    ack_in);
   output [0:0]Q;
   output [7:0]a_out;
   output ack_out;
@@ -248,11 +248,10 @@ module design_1_fsm_block_0_1_fsm_block
   output [1:0]output_state;
   input [3:0]a_in;
   input clk;
-  input ack_in;
   input next_in;
   input nRst;
+  input ack_in;
 
-  wire \FSM_onehot_state[4]_i_1_n_0 ;
   wire \FSM_onehot_state_reg_n_0_[0] ;
   wire \FSM_onehot_state_reg_n_0_[2] ;
   wire [0:0]Q;
@@ -284,14 +283,9 @@ module design_1_fsm_block_0_1_fsm_block
   wire reset_control;
   wire reset_control__0;
   wire reset_control_reg_i_2_n_0;
+  wire reset_counter;
   wire [3:0]u_i;
 
-  LUT2 #(
-    .INIT(4'hE)) 
-    \FSM_onehot_state[4]_i_1 
-       (.I0(ack_in),
-        .I1(nRst),
-        .O(\FSM_onehot_state[4]_i_1_n_0 ));
   (* FSM_ENCODED_STATES = "st0_reset:00001,st2_validation:00100,st3_writefifo:01000,st4_done:10000,st1_new_candidate:00010" *) 
   FDSE #(
     .INIT(1'b1)) 
@@ -300,7 +294,7 @@ module design_1_fsm_block_0_1_fsm_block
         .CE(logic_n_2),
         .D(1'b0),
         .Q(\FSM_onehot_state_reg_n_0_[0] ),
-        .S(\FSM_onehot_state[4]_i_1_n_0 ));
+        .S(reset_counter));
   (* FSM_ENCODED_STATES = "st0_reset:00001,st2_validation:00100,st3_writefifo:01000,st4_done:10000,st1_new_candidate:00010" *) 
   FDRE #(
     .INIT(1'b0)) 
@@ -309,7 +303,7 @@ module design_1_fsm_block_0_1_fsm_block
         .CE(logic_n_2),
         .D(logic_n_5),
         .Q(ce__0),
-        .R(\FSM_onehot_state[4]_i_1_n_0 ));
+        .R(reset_counter));
   (* FSM_ENCODED_STATES = "st0_reset:00001,st2_validation:00100,st3_writefifo:01000,st4_done:10000,st1_new_candidate:00010" *) 
   FDRE #(
     .INIT(1'b0)) 
@@ -318,7 +312,7 @@ module design_1_fsm_block_0_1_fsm_block
         .CE(logic_n_2),
         .D(dut_n_7),
         .Q(\FSM_onehot_state_reg_n_0_[2] ),
-        .R(\FSM_onehot_state[4]_i_1_n_0 ));
+        .R(reset_counter));
   (* FSM_ENCODED_STATES = "st0_reset:00001,st2_validation:00100,st3_writefifo:01000,st4_done:10000,st1_new_candidate:00010" *) 
   FDRE #(
     .INIT(1'b0)) 
@@ -327,7 +321,7 @@ module design_1_fsm_block_0_1_fsm_block
         .CE(logic_n_2),
         .D(logic_n_4),
         .Q(\asout_array[1]_0 ),
-        .R(\FSM_onehot_state[4]_i_1_n_0 ));
+        .R(reset_counter));
   (* FSM_ENCODED_STATES = "st0_reset:00001,st2_validation:00100,st3_writefifo:01000,st4_done:10000,st1_new_candidate:00010" *) 
   FDRE #(
     .INIT(1'b0)) 
@@ -336,7 +330,7 @@ module design_1_fsm_block_0_1_fsm_block
         .CE(logic_n_2),
         .D(dut_n_6),
         .Q(Q),
-        .R(\FSM_onehot_state[4]_i_1_n_0 ));
+        .R(reset_counter));
   (* XILINX_LEGACY_PRIM = "LD" *) 
   (* XILINX_TRANSFORM_PINMAP = "VCC:GE GND:CLR" *) 
   LDCE #(
@@ -455,18 +449,20 @@ module design_1_fsm_block_0_1_fsm_block
         .I3(\FSM_onehot_state_reg_n_0_[2] ),
         .O(ce_reg_i_1_n_0));
   design_1_fsm_block_0_1_up_counter dut
-       (.D({dut_n_6,dut_n_7}),
+       (.AR(reset_counter),
+        .D({dut_n_6,dut_n_7}),
         .E(count),
         .\FSM_onehot_state_reg[3] (dut_n_8),
         .\FSM_onehot_state_reg[4] ({\asout_array[1]_0 ,ce__0,\FSM_onehot_state_reg_n_0_[0] }),
         .Q(u_i),
         .a_in(a_in),
         .ack_in(ack_in),
+        .ce(ce),
         .clk(clk),
-        .\count_reg_reg[3]_0 (ce),
         .done(done),
         .j_reg(j_reg),
-        .j_reg_0_sp_1(dut_n_0));
+        .j_reg_0_sp_1(dut_n_0),
+        .nRst(nRst));
   design_1_fsm_block_0_1_ctrl_logic logic
        (.AR(reset_control),
         .D({logic_n_4,logic_n_5}),
@@ -540,26 +536,31 @@ module design_1_fsm_block_0_1_up_counter
     E,
     D,
     \FSM_onehot_state_reg[3] ,
+    AR,
     j_reg,
     a_in,
     done,
-    \FSM_onehot_state_reg[4] ,
-    \count_reg_reg[3]_0 ,
     clk,
+    ce,
+    \FSM_onehot_state_reg[4] ,
+    nRst,
     ack_in);
   output j_reg_0_sp_1;
   output [3:0]Q;
   output [0:0]E;
   output [1:0]D;
   output \FSM_onehot_state_reg[3] ;
+  output [0:0]AR;
   input [0:0]j_reg;
   input [3:0]a_in;
   input done;
-  input [2:0]\FSM_onehot_state_reg[4] ;
-  input [0:0]\count_reg_reg[3]_0 ;
   input clk;
+  input ce;
+  input [2:0]\FSM_onehot_state_reg[4] ;
+  input nRst;
   input ack_in;
 
+  wire [0:0]AR;
   wire [1:0]D;
   wire [0:0]E;
   wire \FSM_onehot_state_reg[3] ;
@@ -567,16 +568,18 @@ module design_1_fsm_block_0_1_up_counter
   wire [3:0]Q;
   wire [3:0]a_in;
   wire ack_in;
+  wire ce;
   wire clk;
   wire \count[3]_i_3_n_0 ;
   wire \count[3]_i_4_n_0 ;
   wire [3:0]count_next;
-  wire [0:0]\count_reg_reg[3]_0 ;
+  wire \count_reg_reg[3]_i_2_n_0 ;
   wire done;
   wire done_aux_i_2_n_0;
   wire done_aux_i_3_n_0;
   wire [0:0]j_reg;
   wire j_reg_0_sn_1;
+  wire nRst;
 
   assign j_reg_0_sp_1 = j_reg_0_sn_1;
   LUT6 #(
@@ -599,6 +602,12 @@ module design_1_fsm_block_0_1_up_counter
         .I3(Q[2]),
         .I4(\FSM_onehot_state_reg[4] [1]),
         .O(D[0]));
+  LUT2 #(
+    .INIT(4'hE)) 
+    \FSM_onehot_state[4]_i_1 
+       (.I0(nRst),
+        .I1(ack_in),
+        .O(AR));
   LUT6 #(
     .INIT(64'h0000000C00000008)) 
     \FSM_onehot_state[4]_i_3 
@@ -639,62 +648,84 @@ module design_1_fsm_block_0_1_up_counter
         .I4(a_in[0]),
         .I5(Q[1]),
         .O(\count[3]_i_4_n_0 ));
+  (* XILINX_LEGACY_PRIM = "LDC" *) 
+  (* XILINX_TRANSFORM_PINMAP = "VCC:GE" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \count_reg_reg[0] 
+       (.CLR(AR),
+        .D(count_next[0]),
+        .G(\count_reg_reg[3]_i_2_n_0 ),
+        .GE(1'b1),
+        .Q(Q[0]));
   (* SOFT_HLUTNM = "soft_lutpair0" *) 
   LUT4 #(
     .INIT(16'h00EF)) 
-    \count_reg[0]_i_1 
+    \count_reg_reg[0]_i_1 
        (.I0(Q[2]),
         .I1(Q[1]),
         .I2(Q[3]),
         .I3(Q[0]),
         .O(count_next[0]));
+  (* XILINX_LEGACY_PRIM = "LDC" *) 
+  (* XILINX_TRANSFORM_PINMAP = "VCC:GE" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \count_reg_reg[1] 
+       (.CLR(AR),
+        .D(count_next[1]),
+        .G(\count_reg_reg[3]_i_2_n_0 ),
+        .GE(1'b1),
+        .Q(Q[1]));
   LUT2 #(
     .INIT(4'h6)) 
-    \count_reg[1]_i_1 
+    \count_reg_reg[1]_i_1 
        (.I0(Q[1]),
         .I1(Q[0]),
         .O(count_next[1]));
+  (* XILINX_LEGACY_PRIM = "LDC" *) 
+  (* XILINX_TRANSFORM_PINMAP = "VCC:GE" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \count_reg_reg[2] 
+       (.CLR(AR),
+        .D(count_next[2]),
+        .G(\count_reg_reg[3]_i_2_n_0 ),
+        .GE(1'b1),
+        .Q(Q[2]));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT3 #(
     .INIT(8'h6A)) 
-    \count_reg[2]_i_1 
+    \count_reg_reg[2]_i_1 
        (.I0(Q[2]),
         .I1(Q[1]),
         .I2(Q[0]),
         .O(count_next[2]));
+  (* XILINX_LEGACY_PRIM = "LDC" *) 
+  (* XILINX_TRANSFORM_PINMAP = "VCC:GE" *) 
+  LDCE #(
+    .INIT(1'b0)) 
+    \count_reg_reg[3] 
+       (.CLR(AR),
+        .D(count_next[3]),
+        .G(\count_reg_reg[3]_i_2_n_0 ),
+        .GE(1'b1),
+        .Q(Q[3]));
   (* SOFT_HLUTNM = "soft_lutpair1" *) 
   LUT4 #(
     .INIT(16'h6AA8)) 
-    \count_reg[3]_i_1 
+    \count_reg_reg[3]_i_1 
        (.I0(Q[3]),
         .I1(Q[1]),
         .I2(Q[0]),
         .I3(Q[2]),
         .O(count_next[3]));
-  FDCE \count_reg_reg[0] 
-       (.C(clk),
-        .CE(\count_reg_reg[3]_0 ),
-        .CLR(ack_in),
-        .D(count_next[0]),
-        .Q(Q[0]));
-  FDCE \count_reg_reg[1] 
-       (.C(clk),
-        .CE(\count_reg_reg[3]_0 ),
-        .CLR(ack_in),
-        .D(count_next[1]),
-        .Q(Q[1]));
-  FDCE \count_reg_reg[2] 
-       (.C(clk),
-        .CE(\count_reg_reg[3]_0 ),
-        .CLR(ack_in),
-        .D(count_next[2]),
-        .Q(Q[2]));
-  FDCE \count_reg_reg[3] 
-       (.C(clk),
-        .CE(\count_reg_reg[3]_0 ),
-        .CLR(ack_in),
-        .D(count_next[3]),
-        .Q(Q[3]));
+  LUT2 #(
+    .INIT(4'h8)) 
+    \count_reg_reg[3]_i_2 
+       (.I0(clk),
+        .I1(ce),
+        .O(\count_reg_reg[3]_i_2_n_0 ));
   LUT6 #(
     .INIT(64'hFFFFFFFFFEFBBAEA)) 
     done_aux_i_1

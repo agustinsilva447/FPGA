@@ -1,0 +1,11 @@
+# compile vhdl design source files
+vhdl xil_defaultlib  \
+"../../../../pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd" \
+"../../../../pynq_nqueens_4.srcs/sources_1/new/up_counter.vhd" \
+"../../../../pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd" \
+"../../../../pynq_nqueens_4.srcs/sources_1/new/sol_counter.vhd" \
+"../../../../pynq_nqueens_4.srcs/sources_1/new/top_queens.vhd" \
+"../../../../pynq_nqueens_4.srcs/sim_1/new/top_queens_tb.vhd" \
+
+# Do not sort compile order
+nosort

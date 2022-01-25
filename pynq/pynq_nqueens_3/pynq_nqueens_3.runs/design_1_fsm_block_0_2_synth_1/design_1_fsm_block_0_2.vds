@@ -2,16 +2,16 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Mon Jan 17 17:33:01 2022
-# Process ID: 8940
+# Start of session at: Tue Jan 25 18:38:17 2022
+# Process ID: 17369
 # Current directory: /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/design_1_fsm_block_0_2_synth_1
 # Command line: vivado -log design_1_fsm_block_0_2.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_fsm_block_0_2.tcl
 # Log file: /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/design_1_fsm_block_0_2_synth_1/design_1_fsm_block_0_2.vds
 # Journal file: /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/design_1_fsm_block_0_2_synth_1/vivado.jou
-# Running On: agustinsilva447-Lenovo-G50-80, OS: Linux, CPU Frequency: 1895.662 MHz, CPU Physical cores: 2, Host memory: 12480 MB
+# Running On: agustinsilva447-Lenovo-G50-80, OS: Linux, CPU Frequency: 1895.465 MHz, CPU Physical cores: 2, Host memory: 12480 MB
 #-----------------------------------------------------------
 source design_1_fsm_block_0_2.tcl -notrace
-create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:16 . Memory (MB): peak = 2591.363 ; gain = 8.930 ; free physical = 7069 ; free virtual = 10377
+create_project: Time (s): cpu = 00:00:15 ; elapsed = 00:00:27 . Memory (MB): peak = 2591.367 ; gain = 8.930 ; free physical = 3765 ; free virtual = 9332
 INFO: [IP_Flow 19-234] Refreshing IP repositories
 INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/agustinsilva447/Descargas/pynq/core-comblock-master'.
 INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/agustinsilva447/Vitis/Vivado/2021.2/data/ip'.
@@ -22,9 +22,9 @@ INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020
 INFO: [Device 21-403] Loading part xc7z020clg400-1
 INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
 INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
-INFO: [Synth 8-7075] Helper process launched with PID 9028
+INFO: [Synth 8-7075] Helper process launched with PID 17550
 ---------------------------------------------------------------------------------
-Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:22 . Memory (MB): peak = 2591.652 ; gain = 0.000 ; free physical = 568 ; free virtual = 3876
+Starting RTL Elaboration : Time (s): cpu = 00:00:10 ; elapsed = 00:00:29 . Memory (MB): peak = 2591.656 ; gain = 0.000 ; free physical = 139 ; free virtual = 3527
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-638] synthesizing module 'design_1_fsm_block_0_2' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/ip/design_1_fsm_block_0_2/synth/design_1_fsm_block_0_2.vhd:70]
 	Parameter K bound to: 2 - type: integer 
@@ -34,58 +34,61 @@ INFO: [Synth 8-3491] module 'fsm_block' declared at '/home/agustinsilva447/Escri
 INFO: [Synth 8-638] synthesizing module 'fsm_block' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:20]
 INFO: [Synth 8-638] synthesizing module 'up_counter' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/up_counter.vhd:17]
 WARNING: [Synth 8-614] signal 'ce' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/up_counter.vhd:20]
+WARNING: [Synth 8-614] signal 'count_next' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/up_counter.vhd:20]
+WARNING: [Synth 8-614] signal 'count_reg' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/up_counter.vhd:20]
 INFO: [Synth 8-256] done synthesizing module 'up_counter' (1#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/up_counter.vhd:17]
 INFO: [Synth 8-638] synthesizing module 'ctrl_logic' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/ctrl_logic.vhd:20]
 INFO: [Synth 8-256] done synthesizing module 'ctrl_logic' (2#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/ctrl_logic.vhd:20]
-WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:86]
-WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:86]
-WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:86]
-WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:86]
-WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:86]
-WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:86]
+WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:87]
 INFO: [Synth 8-256] done synthesizing module 'fsm_block' (3#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:20]
 INFO: [Synth 8-256] done synthesizing module 'design_1_fsm_block_0_2' (4#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/ip/design_1_fsm_block_0_2/synth/design_1_fsm_block_0_2.vhd:70]
 ---------------------------------------------------------------------------------
-Finished RTL Elaboration : Time (s): cpu = 00:00:12 ; elapsed = 00:00:27 . Memory (MB): peak = 2591.652 ; gain = 0.000 ; free physical = 4118 ; free virtual = 7428
+Finished RTL Elaboration : Time (s): cpu = 00:00:13 ; elapsed = 00:00:37 . Memory (MB): peak = 2591.656 ; gain = 0.000 ; free physical = 3487 ; free virtual = 6665
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:00:14 ; elapsed = 00:00:30 . Memory (MB): peak = 2591.652 ; gain = 0.000 ; free physical = 4340 ; free virtual = 7650
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:15 ; elapsed = 00:00:40 . Memory (MB): peak = 2591.656 ; gain = 0.000 ; free physical = 3495 ; free virtual = 6681
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:14 ; elapsed = 00:00:30 . Memory (MB): peak = 2591.652 ; gain = 0.000 ; free physical = 4340 ; free virtual = 7650
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:15 ; elapsed = 00:00:40 . Memory (MB): peak = 2591.656 ; gain = 0.000 ; free physical = 3494 ; free virtual = 6681
 ---------------------------------------------------------------------------------
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2591.652 ; gain = 0.000 ; free physical = 4332 ; free virtual = 7642
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2591.656 ; gain = 0.000 ; free physical = 3479 ; free virtual = 6666
 INFO: [Project 1-570] Preparing netlist for logic optimization
 
 Processing XDC Constraints
 Initializing timing engine
 Completed Processing XDC Constraints
 
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2623.547 ; gain = 0.000 ; free physical = 4192 ; free virtual = 7503
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2623.551 ; gain = 0.000 ; free physical = 3343 ; free virtual = 6555
 INFO: [Project 1-111] Unisim Transformation Summary:
 No Unisim elements were transformed.
 
-Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.03 . Memory (MB): peak = 2623.547 ; gain = 0.000 ; free physical = 4190 ; free virtual = 7500
+Constraint Validation Runtime : Time (s): cpu = 00:00:00.02 ; elapsed = 00:00:00.04 . Memory (MB): peak = 2623.551 ; gain = 0.000 ; free physical = 3337 ; free virtual = 6549
 ---------------------------------------------------------------------------------
-Finished Constraint Validation : Time (s): cpu = 00:00:29 ; elapsed = 00:00:45 . Memory (MB): peak = 2623.547 ; gain = 31.895 ; free physical = 4205 ; free virtual = 7517
+Finished Constraint Validation : Time (s): cpu = 00:00:30 ; elapsed = 00:01:01 . Memory (MB): peak = 2623.551 ; gain = 31.895 ; free physical = 3362 ; free virtual = 6590
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Loading Part and Timing Information
 ---------------------------------------------------------------------------------
 Loading part: xc7z020clg400-1
 ---------------------------------------------------------------------------------
-Finished Loading Part and Timing Information : Time (s): cpu = 00:00:29 ; elapsed = 00:00:45 . Memory (MB): peak = 2623.547 ; gain = 31.895 ; free physical = 4205 ; free virtual = 7517
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:30 ; elapsed = 00:01:01 . Memory (MB): peak = 2623.551 ; gain = 31.895 ; free physical = 3360 ; free virtual = 6589
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying 'set_property' XDC Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:29 ; elapsed = 00:00:45 . Memory (MB): peak = 2623.547 ; gain = 31.895 ; free physical = 4211 ; free virtual = 7523
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:30 ; elapsed = 00:01:01 . Memory (MB): peak = 2623.551 ; gain = 31.895 ; free physical = 3360 ; free virtual = 6589
 ---------------------------------------------------------------------------------
 INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_block'
+WARNING: [Synth 8-327] inferring latch for variable 'count_reg_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/up_counter.vhd:23]
 WARNING: [Synth 8-327] inferring latch for variable 'output_i_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/ctrl_logic.vhd:31]
 ---------------------------------------------------------------------------------------------------
                    State |                     New Encoding |                Previous Encoding 
@@ -97,15 +100,15 @@ WARNING: [Synth 8-327] inferring latch for variable 'output_i_reg' [/home/agusti
                 st4_done |                            10000 |                              100
 ---------------------------------------------------------------------------------------------------
 INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm_block'
-WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:52]
-WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:52]
-WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[2]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:52]
-WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:44]
-WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:46]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[2]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:47]
 WARNING: [Synth 8-327] inferring latch for variable 'reset_control_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:41]
 WARNING: [Synth 8-327] inferring latch for variable 'ce_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.srcs/sources_1/new/fsm_block.vhd:38]
 ---------------------------------------------------------------------------------
-Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:30 ; elapsed = 00:00:46 . Memory (MB): peak = 2623.547 ; gain = 31.895 ; free physical = 4177 ; free virtual = 7498
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:31 ; elapsed = 00:01:03 . Memory (MB): peak = 2623.551 ; gain = 31.895 ; free physical = 3331 ; free virtual = 6573
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start RTL Component Statistics 
@@ -116,7 +119,7 @@ Detailed RTL Component Info :
 	   2 Input    4 Bit       Adders := 4     
 	   3 Input    4 Bit       Adders := 1     
 +---Registers : 
-	                4 Bit    Registers := 3     
+	                4 Bit    Registers := 2     
 	                1 Bit    Registers := 2     
 +---Muxes : 
 	   5 Input    5 Bit        Muxes := 1     
@@ -146,25 +149,25 @@ INFO: [Synth 8-3332] Sequential element (U0/logic/output_i_reg[2]) is unused and
 INFO: [Synth 8-3332] Sequential element (U0/logic/output_i_reg[1]) is unused and will be removed from module design_1_fsm_block_0_2.
 INFO: [Synth 8-3332] Sequential element (U0/logic/output_i_reg[0]) is unused and will be removed from module design_1_fsm_block_0_2.
 ---------------------------------------------------------------------------------
-Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:33 ; elapsed = 00:00:50 . Memory (MB): peak = 2623.547 ; gain = 31.895 ; free physical = 4181 ; free virtual = 7512
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:35 ; elapsed = 00:01:08 . Memory (MB): peak = 2623.551 ; gain = 31.895 ; free physical = 3254 ; free virtual = 6505
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Applying XDC Timing Constraints
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:49 ; elapsed = 00:01:07 . Memory (MB): peak = 2623.547 ; gain = 31.895 ; free physical = 3735 ; free virtual = 7067
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:00:50 ; elapsed = 00:01:29 . Memory (MB): peak = 2623.551 ; gain = 31.895 ; free physical = 2865 ; free virtual = 6140
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Timing Optimization
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Timing Optimization : Time (s): cpu = 00:00:49 ; elapsed = 00:01:07 . Memory (MB): peak = 2623.547 ; gain = 31.895 ; free physical = 3733 ; free virtual = 7064
+Finished Timing Optimization : Time (s): cpu = 00:00:50 ; elapsed = 00:01:29 . Memory (MB): peak = 2623.551 ; gain = 31.895 ; free physical = 2857 ; free virtual = 6132
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Technology Mapping
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Technology Mapping : Time (s): cpu = 00:00:49 ; elapsed = 00:01:07 . Memory (MB): peak = 2623.547 ; gain = 31.895 ; free physical = 3721 ; free virtual = 7053
+Finished Technology Mapping : Time (s): cpu = 00:00:50 ; elapsed = 00:01:29 . Memory (MB): peak = 2623.551 ; gain = 31.895 ; free physical = 2834 ; free virtual = 6110
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start IO Insertion
@@ -182,37 +185,37 @@ Start Final Netlist Cleanup
 Finished Final Netlist Cleanup
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished IO Insertion : Time (s): cpu = 00:01:01 ; elapsed = 00:01:19 . Memory (MB): peak = 2623.547 ; gain = 31.895 ; free physical = 3711 ; free virtual = 7042
+Finished IO Insertion : Time (s): cpu = 00:01:02 ; elapsed = 00:01:45 . Memory (MB): peak = 2623.551 ; gain = 31.895 ; free physical = 2755 ; free virtual = 6031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Instances
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Instances : Time (s): cpu = 00:01:01 ; elapsed = 00:01:19 . Memory (MB): peak = 2623.547 ; gain = 31.895 ; free physical = 3714 ; free virtual = 7045
+Finished Renaming Generated Instances : Time (s): cpu = 00:01:02 ; elapsed = 00:01:45 . Memory (MB): peak = 2623.551 ; gain = 31.895 ; free physical = 2755 ; free virtual = 6031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Rebuilding User Hierarchy
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:01 ; elapsed = 00:01:19 . Memory (MB): peak = 2623.547 ; gain = 31.895 ; free physical = 3715 ; free virtual = 7047
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:01:02 ; elapsed = 00:01:45 . Memory (MB): peak = 2623.551 ; gain = 31.895 ; free physical = 2755 ; free virtual = 6031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Ports
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Ports : Time (s): cpu = 00:01:01 ; elapsed = 00:01:19 . Memory (MB): peak = 2623.547 ; gain = 31.895 ; free physical = 3715 ; free virtual = 7047
+Finished Renaming Generated Ports : Time (s): cpu = 00:01:02 ; elapsed = 00:01:45 . Memory (MB): peak = 2623.551 ; gain = 31.895 ; free physical = 2755 ; free virtual = 6031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Handling Custom Attributes
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Handling Custom Attributes : Time (s): cpu = 00:01:01 ; elapsed = 00:01:19 . Memory (MB): peak = 2623.547 ; gain = 31.895 ; free physical = 3714 ; free virtual = 7046
+Finished Handling Custom Attributes : Time (s): cpu = 00:01:02 ; elapsed = 00:01:45 . Memory (MB): peak = 2623.551 ; gain = 31.895 ; free physical = 2755 ; free virtual = 6031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Renaming Generated Nets
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
-Finished Renaming Generated Nets : Time (s): cpu = 00:01:01 ; elapsed = 00:01:19 . Memory (MB): peak = 2623.547 ; gain = 31.895 ; free physical = 3714 ; free virtual = 7046
+Finished Renaming Generated Nets : Time (s): cpu = 00:01:02 ; elapsed = 00:01:45 . Memory (MB): peak = 2623.551 ; gain = 31.895 ; free physical = 2755 ; free virtual = 6031
 ---------------------------------------------------------------------------------
 ---------------------------------------------------------------------------------
 Start Writing Synthesis Report
@@ -229,42 +232,44 @@ Report Cell Usage:
 |      |Cell  |Count |
 +------+------+------+
 |1     |LUT1  |     2|
-|2     |LUT2  |     7|
+|2     |LUT2  |     8|
 |3     |LUT3  |     7|
 |4     |LUT4  |    10|
 |5     |LUT5  |     2|
 |6     |LUT6  |    12|
 |7     |MUXF7 |     2|
-|8     |FDCE  |    12|
+|8     |FDCE  |     8|
 |9     |FDRE  |     4|
 |10    |FDSE  |     1|
 |11    |LD    |    16|
+|12    |LDC   |     4|
 +------+------+------+
 ---------------------------------------------------------------------------------
-Finished Writing Synthesis Report : Time (s): cpu = 00:01:01 ; elapsed = 00:01:19 . Memory (MB): peak = 2623.547 ; gain = 31.895 ; free physical = 3715 ; free virtual = 7046
+Finished Writing Synthesis Report : Time (s): cpu = 00:01:02 ; elapsed = 00:01:45 . Memory (MB): peak = 2623.551 ; gain = 31.895 ; free physical = 2755 ; free virtual = 6031
 ---------------------------------------------------------------------------------
-Synthesis finished with 0 errors, 0 critical warnings and 9 warnings.
-Synthesis Optimization Runtime : Time (s): cpu = 00:00:57 ; elapsed = 00:01:15 . Memory (MB): peak = 2623.547 ; gain = 0.000 ; free physical = 3940 ; free virtual = 7272
-Synthesis Optimization Complete : Time (s): cpu = 00:01:01 ; elapsed = 00:01:20 . Memory (MB): peak = 2623.555 ; gain = 31.895 ; free physical = 3941 ; free virtual = 7273
+Synthesis finished with 0 errors, 0 critical warnings and 10 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:58 ; elapsed = 00:01:39 . Memory (MB): peak = 2623.551 ; gain = 0.000 ; free physical = 2807 ; free virtual = 6086
+Synthesis Optimization Complete : Time (s): cpu = 00:01:03 ; elapsed = 00:01:46 . Memory (MB): peak = 2623.559 ; gain = 31.895 ; free physical = 2807 ; free virtual = 6086
 INFO: [Project 1-571] Translating synthesized netlist
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2623.555 ; gain = 0.000 ; free physical = 4115 ; free virtual = 7447
-INFO: [Netlist 29-17] Analyzing 18 Unisim elements for replacement
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2623.559 ; gain = 0.000 ; free physical = 2996 ; free virtual = 6281
+INFO: [Netlist 29-17] Analyzing 22 Unisim elements for replacement
 INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
 INFO: [Project 1-570] Preparing netlist for logic optimization
 INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
-Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2623.555 ; gain = 0.000 ; free physical = 4207 ; free virtual = 7538
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00 . Memory (MB): peak = 2623.559 ; gain = 0.000 ; free physical = 3042 ; free virtual = 6330
 INFO: [Project 1-111] Unisim Transformation Summary:
-  A total of 16 instances were transformed.
+  A total of 20 instances were transformed.
   LD => LDCE: 16 instances
+  LDC => LDCE: 4 instances
 
-Synth Design complete, checksum: cf3b9d7e
+Synth Design complete, checksum: 42c63e2
 INFO: [Common 17-83] Releasing license: Synthesis
-31 Infos, 16 Warnings, 0 Critical Warnings and 0 Errors encountered.
+31 Infos, 19 Warnings, 0 Critical Warnings and 0 Errors encountered.
 synth_design completed successfully
-synth_design: Time (s): cpu = 00:01:25 ; elapsed = 00:01:32 . Memory (MB): peak = 2623.555 ; gain = 32.191 ; free physical = 4571 ; free virtual = 7903
+synth_design: Time (s): cpu = 00:01:27 ; elapsed = 00:02:02 . Memory (MB): peak = 2623.559 ; gain = 32.191 ; free physical = 3410 ; free virtual = 6698
 INFO: [Common 17-1381] The checkpoint '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/design_1_fsm_block_0_2_synth_1/design_1_fsm_block_0_2.dcp' has been generated.
-INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_fsm_block_0_2, cache-ID = d9fac6f1d8d0c222
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_fsm_block_0_2, cache-ID = 934205865c281d8d
 INFO: [Coretcl 2-1174] Renamed 3 cell refs.
 INFO: [Common 17-1381] The checkpoint '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/design_1_fsm_block_0_2_synth_1/design_1_fsm_block_0_2.dcp' has been generated.
 INFO: [runtcl-4] Executing : report_utilization -file design_1_fsm_block_0_2_utilization_synth.rpt -pb design_1_fsm_block_0_2_utilization_synth.pb
-INFO: [Common 17-206] Exiting Vivado at Mon Jan 17 17:35:14 2022...
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 25 18:41:28 2022...

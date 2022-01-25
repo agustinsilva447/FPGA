@@ -2,12 +2,12 @@
 # Vivado v2021.2 (64-bit)
 # SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
 # IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
-# Start of session at: Mon Jan 17 19:31:09 2022
-# Process ID: 27494
+# Start of session at: Tue Jan 25 18:44:25 2022
+# Process ID: 18695
 # Current directory: /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1
 # Command line: vivado -log design_1_wrapper.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_wrapper.tcl
 # Log file: /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/design_1_wrapper.vds
 # Journal file: /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.runs/synth_1/vivado.jou
-# Running On: agustinsilva447-Lenovo-G50-80, OS: Linux, CPU Frequency: 1324.403 MHz, CPU Physical cores: 2, Host memory: 12480 MB
+# Running On: agustinsilva447-Lenovo-G50-80, OS: Linux, CPU Frequency: 1895.467 MHz, CPU Physical cores: 2, Host memory: 12480 MB
 #-----------------------------------------------------------
 source design_1_wrapper.tcl -notrace

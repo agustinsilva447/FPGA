@@ -1,7 +1,7 @@
 Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ---------------------------------------------------------------------------------------------------------------------------------------
 | Tool Version : Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
-| Date         : Mon Jan 17 17:35:13 2022
+| Date         : Tue Jan 25 18:41:26 2022
 | Host         : agustinsilva447-Lenovo-G50-80 running 64-bit Ubuntu 20.04.3 LTS
 | Command      : report_utilization -file design_1_fsm_block_0_2_utilization_synth.rpt -pb design_1_fsm_block_0_2_utilization_synth.pb
 | Design       : design_1_fsm_block_0_2
@@ -31,12 +31,12 @@ Table of Contents
 +-------------------------+------+-------+------------+-----------+-------+
 |        Site Type        | Used | Fixed | Prohibited | Available | Util% |
 +-------------------------+------+-------+------------+-----------+-------+
-| Slice LUTs*             |   32 |     0 |          0 |     53200 |  0.06 |
-|   LUT as Logic          |   32 |     0 |          0 |     53200 |  0.06 |
+| Slice LUTs*             |   33 |     0 |          0 |     53200 |  0.06 |
+|   LUT as Logic          |   33 |     0 |          0 |     53200 |  0.06 |
 |   LUT as Memory         |    0 |     0 |          0 |     17400 |  0.00 |
 | Slice Registers         |   33 |     0 |          0 |    106400 |  0.03 |
-|   Register as Flip Flop |   17 |     0 |          0 |    106400 |  0.02 |
-|   Register as Latch     |   16 |     0 |          0 |    106400 |  0.02 |
+|   Register as Flip Flop |   13 |     0 |          0 |    106400 |  0.01 |
+|   Register as Latch     |   20 |     0 |          0 |    106400 |  0.02 |
 | F7 Muxes                |    2 |     0 |          0 |     26600 | <0.01 |
 | F8 Muxes                |    0 |     0 |          0 |     13300 |  0.00 |
 +-------------------------+------+-------+------------+-----------+-------+
@@ -147,12 +147,12 @@ Table of Contents
 +----------+------+---------------------+
 | Ref Name | Used | Functional Category |
 +----------+------+---------------------+
-| LDCE     |   16 |        Flop & Latch |
+| LDCE     |   20 |        Flop & Latch |
 | LUT6     |   12 |                 LUT |
-| FDCE     |   12 |        Flop & Latch |
 | LUT4     |   10 |                 LUT |
+| LUT2     |    8 |                 LUT |
+| FDCE     |    8 |        Flop & Latch |
 | LUT3     |    7 |                 LUT |
-| LUT2     |    7 |                 LUT |
 | FDRE     |    4 |        Flop & Latch |
 | MUXF7    |    2 |               MuxFx |
 | LUT5     |    2 |                 LUT |

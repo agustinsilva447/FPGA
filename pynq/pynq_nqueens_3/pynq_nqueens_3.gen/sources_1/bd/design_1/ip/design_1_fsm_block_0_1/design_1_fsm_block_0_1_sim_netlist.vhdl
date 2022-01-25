@@ -1,7 +1,7 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
--- Date        : Mon Jan 17 17:35:15 2022
+-- Date        : Tue Jan 25 18:41:28 2022
 -- Host        : agustinsilva447-Lenovo-G50-80 running 64-bit Ubuntu 20.04.3 LTS
 -- Command     : write_vhdl -force -mode funcsim
 --               /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_3/pynq_nqueens_3.gen/sources_1/bd/design_1/ip/design_1_fsm_block_0_1/design_1_fsm_block_0_1_sim_netlist.vhdl
@@ -90,8 +90,8 @@ acks_out_reg_i_2: unisim.vcomponents.LUT6
     )
         port map (
       I0 => Q(2),
-      I1 => \^done\,
-      I2 => valid,
+      I1 => valid,
+      I2 => \^done\,
       I3 => Q(0),
       I4 => Q(1),
       I5 => Q(4),
@@ -194,13 +194,13 @@ done_aux_reg: unisim.vcomponents.FDCE
     );
 valid_aux_i_1: unisim.vcomponents.LUT6
     generic map(
-      INIT => X"FFFFFFFF00000200"
+      INIT => X"FFFFFFFF00000400"
     )
         port map (
-      I0 => \^j_reg\(0),
-      I1 => count_reg(2),
-      I2 => count_reg(3),
-      I3 => count_reg(0),
+      I0 => count_reg(3),
+      I1 => count_reg(0),
+      I2 => count_reg(2),
+      I3 => \^j_reg\(0),
       I4 => count_reg(1),
       I5 => valid,
       O => valid_aux_i_1_n_0
@@ -225,12 +225,14 @@ entity design_1_fsm_block_0_1_up_counter is
     E : out STD_LOGIC_VECTOR ( 0 to 0 );
     D : out STD_LOGIC_VECTOR ( 1 downto 0 );
     \FSM_onehot_state_reg[3]\ : out STD_LOGIC;
+    AR : out STD_LOGIC_VECTOR ( 0 to 0 );
     j_reg : in STD_LOGIC_VECTOR ( 0 to 0 );
     a_in : in STD_LOGIC_VECTOR ( 3 downto 0 );
     done : in STD_LOGIC;
-    \FSM_onehot_state_reg[4]\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
-    \count_reg_reg[3]_0\ : in STD_LOGIC_VECTOR ( 0 to 0 );
     clk : in STD_LOGIC;
+    ce : in STD_LOGIC;
+    \FSM_onehot_state_reg[4]\ : in STD_LOGIC_VECTOR ( 2 downto 0 );
+    nRst : in STD_LOGIC;
     ack_in : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
@@ -238,19 +240,32 @@ entity design_1_fsm_block_0_1_up_counter is
 end design_1_fsm_block_0_1_up_counter;
 
 architecture STRUCTURE of design_1_fsm_block_0_1_up_counter is
+  signal \^ar\ : STD_LOGIC_VECTOR ( 0 to 0 );
   signal \^q\ : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal \count[3]_i_3_n_0\ : STD_LOGIC;
   signal \count[3]_i_4_n_0\ : STD_LOGIC;
   signal count_next : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal \count_reg_reg[3]_i_2_n_0\ : STD_LOGIC;
   signal done_aux_i_2_n_0 : STD_LOGIC;
   signal done_aux_i_3_n_0 : STD_LOGIC;
   signal j_reg_0_sn_1 : STD_LOGIC;
   attribute SOFT_HLUTNM : string;
   attribute SOFT_HLUTNM of \FSM_onehot_state[2]_i_1\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \count_reg[0]_i_1\ : label is "soft_lutpair0";
-  attribute SOFT_HLUTNM of \count_reg[2]_i_1\ : label is "soft_lutpair1";
-  attribute SOFT_HLUTNM of \count_reg[3]_i_1\ : label is "soft_lutpair1";
+  attribute XILINX_LEGACY_PRIM : string;
+  attribute XILINX_LEGACY_PRIM of \count_reg_reg[0]\ : label is "LDC";
+  attribute XILINX_TRANSFORM_PINMAP : string;
+  attribute XILINX_TRANSFORM_PINMAP of \count_reg_reg[0]\ : label is "VCC:GE";
+  attribute SOFT_HLUTNM of \count_reg_reg[0]_i_1\ : label is "soft_lutpair0";
+  attribute XILINX_LEGACY_PRIM of \count_reg_reg[1]\ : label is "LDC";
+  attribute XILINX_TRANSFORM_PINMAP of \count_reg_reg[1]\ : label is "VCC:GE";
+  attribute XILINX_LEGACY_PRIM of \count_reg_reg[2]\ : label is "LDC";
+  attribute XILINX_TRANSFORM_PINMAP of \count_reg_reg[2]\ : label is "VCC:GE";
+  attribute SOFT_HLUTNM of \count_reg_reg[2]_i_1\ : label is "soft_lutpair1";
+  attribute XILINX_LEGACY_PRIM of \count_reg_reg[3]\ : label is "LDC";
+  attribute XILINX_TRANSFORM_PINMAP of \count_reg_reg[3]\ : label is "VCC:GE";
+  attribute SOFT_HLUTNM of \count_reg_reg[3]_i_1\ : label is "soft_lutpair1";
 begin
+  AR(0) <= \^ar\(0);
   Q(3 downto 0) <= \^q\(3 downto 0);
   j_reg_0_sp_1 <= j_reg_0_sn_1;
 \FSM_onehot_state[1]_i_2\: unisim.vcomponents.LUT6
@@ -277,6 +292,15 @@ begin
       I3 => \^q\(2),
       I4 => \FSM_onehot_state_reg[4]\(1),
       O => D(0)
+    );
+\FSM_onehot_state[4]_i_1\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"E"
+    )
+        port map (
+      I0 => nRst,
+      I1 => ack_in,
+      O => \^ar\(0)
     );
 \FSM_onehot_state[4]_i_3\: unisim.vcomponents.LUT6
     generic map(
@@ -330,7 +354,18 @@ begin
       I5 => \^q\(1),
       O => \count[3]_i_4_n_0\
     );
-\count_reg[0]_i_1\: unisim.vcomponents.LUT4
+\count_reg_reg[0]\: unisim.vcomponents.LDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      CLR => \^ar\(0),
+      D => count_next(0),
+      G => \count_reg_reg[3]_i_2_n_0\,
+      GE => '1',
+      Q => \^q\(0)
+    );
+\count_reg_reg[0]_i_1\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"00EF"
     )
@@ -341,7 +376,18 @@ begin
       I3 => \^q\(0),
       O => count_next(0)
     );
-\count_reg[1]_i_1\: unisim.vcomponents.LUT2
+\count_reg_reg[1]\: unisim.vcomponents.LDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      CLR => \^ar\(0),
+      D => count_next(1),
+      G => \count_reg_reg[3]_i_2_n_0\,
+      GE => '1',
+      Q => \^q\(1)
+    );
+\count_reg_reg[1]_i_1\: unisim.vcomponents.LUT2
     generic map(
       INIT => X"6"
     )
@@ -350,7 +396,18 @@ begin
       I1 => \^q\(0),
       O => count_next(1)
     );
-\count_reg[2]_i_1\: unisim.vcomponents.LUT3
+\count_reg_reg[2]\: unisim.vcomponents.LDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      CLR => \^ar\(0),
+      D => count_next(2),
+      G => \count_reg_reg[3]_i_2_n_0\,
+      GE => '1',
+      Q => \^q\(2)
+    );
+\count_reg_reg[2]_i_1\: unisim.vcomponents.LUT3
     generic map(
       INIT => X"6A"
     )
@@ -360,7 +417,18 @@ begin
       I2 => \^q\(0),
       O => count_next(2)
     );
-\count_reg[3]_i_1\: unisim.vcomponents.LUT4
+\count_reg_reg[3]\: unisim.vcomponents.LDCE
+    generic map(
+      INIT => '0'
+    )
+        port map (
+      CLR => \^ar\(0),
+      D => count_next(3),
+      G => \count_reg_reg[3]_i_2_n_0\,
+      GE => '1',
+      Q => \^q\(3)
+    );
+\count_reg_reg[3]_i_1\: unisim.vcomponents.LUT4
     generic map(
       INIT => X"6AA8"
     )
@@ -371,37 +439,14 @@ begin
       I3 => \^q\(2),
       O => count_next(3)
     );
-\count_reg_reg[0]\: unisim.vcomponents.FDCE
-     port map (
-      C => clk,
-      CE => \count_reg_reg[3]_0\(0),
-      CLR => ack_in,
-      D => count_next(0),
-      Q => \^q\(0)
-    );
-\count_reg_reg[1]\: unisim.vcomponents.FDCE
-     port map (
-      C => clk,
-      CE => \count_reg_reg[3]_0\(0),
-      CLR => ack_in,
-      D => count_next(1),
-      Q => \^q\(1)
-    );
-\count_reg_reg[2]\: unisim.vcomponents.FDCE
-     port map (
-      C => clk,
-      CE => \count_reg_reg[3]_0\(0),
-      CLR => ack_in,
-      D => count_next(2),
-      Q => \^q\(2)
-    );
-\count_reg_reg[3]\: unisim.vcomponents.FDCE
-     port map (
-      C => clk,
-      CE => \count_reg_reg[3]_0\(0),
-      CLR => ack_in,
-      D => count_next(3),
-      Q => \^q\(3)
+\count_reg_reg[3]_i_2\: unisim.vcomponents.LUT2
+    generic map(
+      INIT => X"8"
+    )
+        port map (
+      I0 => clk,
+      I1 => ce,
+      O => \count_reg_reg[3]_i_2_n_0\
     );
 done_aux_i_1: unisim.vcomponents.LUT6
     generic map(
@@ -456,16 +501,15 @@ entity design_1_fsm_block_0_1_fsm_block is
     output_state : out STD_LOGIC_VECTOR ( 1 downto 0 );
     a_in : in STD_LOGIC_VECTOR ( 3 downto 0 );
     clk : in STD_LOGIC;
-    ack_in : in STD_LOGIC;
     next_in : in STD_LOGIC;
-    nRst : in STD_LOGIC
+    nRst : in STD_LOGIC;
+    ack_in : in STD_LOGIC
   );
   attribute ORIG_REF_NAME : string;
   attribute ORIG_REF_NAME of design_1_fsm_block_0_1_fsm_block : entity is "fsm_block";
 end design_1_fsm_block_0_1_fsm_block;
 
 architecture STRUCTURE of design_1_fsm_block_0_1_fsm_block is
-  signal \FSM_onehot_state[4]_i_1_n_0\ : STD_LOGIC;
   signal \FSM_onehot_state_reg_n_0_[0]\ : STD_LOGIC;
   signal \FSM_onehot_state_reg_n_0_[2]\ : STD_LOGIC;
   signal \^q\ : STD_LOGIC_VECTOR ( 0 to 0 );
@@ -488,6 +532,7 @@ architecture STRUCTURE of design_1_fsm_block_0_1_fsm_block is
   signal reset_control : STD_LOGIC;
   signal \reset_control__0\ : STD_LOGIC;
   signal reset_control_reg_i_2_n_0 : STD_LOGIC;
+  signal reset_counter : STD_LOGIC;
   signal u_i : STD_LOGIC_VECTOR ( 3 downto 0 );
   attribute FSM_ENCODED_STATES : string;
   attribute FSM_ENCODED_STATES of \FSM_onehot_state_reg[0]\ : label is "st0_reset:00001,st2_validation:00100,st3_writefifo:01000,st4_done:10000,st1_new_candidate:00010";
@@ -530,15 +575,6 @@ architecture STRUCTURE of design_1_fsm_block_0_1_fsm_block is
   attribute SOFT_HLUTNM of reset_control_reg_i_2 : label is "soft_lutpair5";
 begin
   Q(0) <= \^q\(0);
-\FSM_onehot_state[4]_i_1\: unisim.vcomponents.LUT2
-    generic map(
-      INIT => X"E"
-    )
-        port map (
-      I0 => ack_in,
-      I1 => nRst,
-      O => \FSM_onehot_state[4]_i_1_n_0\
-    );
 \FSM_onehot_state_reg[0]\: unisim.vcomponents.FDSE
     generic map(
       INIT => '1'
@@ -548,7 +584,7 @@ begin
       CE => logic_n_2,
       D => '0',
       Q => \FSM_onehot_state_reg_n_0_[0]\,
-      S => \FSM_onehot_state[4]_i_1_n_0\
+      S => reset_counter
     );
 \FSM_onehot_state_reg[1]\: unisim.vcomponents.FDRE
     generic map(
@@ -559,7 +595,7 @@ begin
       CE => logic_n_2,
       D => logic_n_5,
       Q => \ce__0\,
-      R => \FSM_onehot_state[4]_i_1_n_0\
+      R => reset_counter
     );
 \FSM_onehot_state_reg[2]\: unisim.vcomponents.FDRE
     generic map(
@@ -570,7 +606,7 @@ begin
       CE => logic_n_2,
       D => dut_n_7,
       Q => \FSM_onehot_state_reg_n_0_[2]\,
-      R => \FSM_onehot_state[4]_i_1_n_0\
+      R => reset_counter
     );
 \FSM_onehot_state_reg[3]\: unisim.vcomponents.FDRE
     generic map(
@@ -581,7 +617,7 @@ begin
       CE => logic_n_2,
       D => logic_n_4,
       Q => \asout_array[1]_0\,
-      R => \FSM_onehot_state[4]_i_1_n_0\
+      R => reset_counter
     );
 \FSM_onehot_state_reg[4]\: unisim.vcomponents.FDRE
     generic map(
@@ -592,7 +628,7 @@ begin
       CE => logic_n_2,
       D => dut_n_6,
       Q => \^q\(0),
-      R => \FSM_onehot_state[4]_i_1_n_0\
+      R => reset_counter
     );
 acks_out_reg: unisim.vcomponents.LDCE
     generic map(
@@ -727,6 +763,7 @@ ce_reg_i_1: unisim.vcomponents.LUT4
     );
 dut: entity work.design_1_fsm_block_0_1_up_counter
      port map (
+      AR(0) => reset_counter,
       D(1) => dut_n_6,
       D(0) => dut_n_7,
       E(0) => count,
@@ -737,11 +774,12 @@ dut: entity work.design_1_fsm_block_0_1_up_counter
       Q(3 downto 0) => u_i(3 downto 0),
       a_in(3 downto 0) => a_in(3 downto 0),
       ack_in => ack_in,
+      ce => ce,
       clk => clk,
-      \count_reg_reg[3]_0\(0) => ce,
       done => done,
       j_reg(0) => j_reg(0),
-      j_reg_0_sp_1 => dut_n_0
+      j_reg_0_sp_1 => dut_n_0,
+      nRst => nRst
     );
 logic: entity work.design_1_fsm_block_0_1_ctrl_logic
      port map (

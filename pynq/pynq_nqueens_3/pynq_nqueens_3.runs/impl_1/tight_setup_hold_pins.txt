@@ -1,0 +1,9 @@
++==============+===============+================================================+
+| Launch Clock | Capture Clock | Pin                                            |
++==============+===============+================================================+
+| clk_fpga_0   | clk_fpga_0    | design_1_i/fsm_block_5/U0/logic/done_aux_reg/D |
+| clk_fpga_0   | clk_fpga_0    | design_1_i/fsm_block_7/U0/logic/done_aux_reg/D |
+| clk_fpga_0   | clk_fpga_0    | design_1_i/fsm_block_6/U0/logic/done_aux_reg/D |
+| clk_fpga_0   | clk_fpga_0    | design_1_i/fsm_block_4/U0/logic/done_aux_reg/D |
+| clk_fpga_0   | clk_fpga_0    | design_1_i/fsm_block_2/U0/logic/done_aux_reg/D |
++--------------+---------------+------------------------------------------------+

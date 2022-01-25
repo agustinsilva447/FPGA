@@ -1,0 +1,489 @@
+
+*** Running vivado
+    with args -log design_1_top_queens_0_0.vds -m64 -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_top_queens_0_0.tcl
+
+
+****** Vivado v2021.2 (64-bit)
+  **** SW Build 3367213 on Tue Oct 19 02:47:39 MDT 2021
+  **** IP Build 3369179 on Thu Oct 21 08:25:16 MDT 2021
+    ** Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
+
+source design_1_top_queens_0_0.tcl -notrace
+create_project: Time (s): cpu = 00:00:10 ; elapsed = 00:00:08 . Memory (MB): peak = 2588.395 ; gain = 5.961 ; free physical = 6930 ; free virtual = 10359
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository '/home/agustinsilva447/Descargas/pynq/core-comblock-master'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository '/home/agustinsilva447/Vitis/Vivado/2021.2/data/ip'.
+Command: synth_design -top design_1_top_queens_0_0 -part xc7z020clg400-1 -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xc7z020'
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 4 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 30960
+---------------------------------------------------------------------------------
+Starting Synthesize : Time (s): cpu = 00:00:09 ; elapsed = 00:00:10 . Memory (MB): peak = 2588.516 ; gain = 0.000 ; free physical = 5549 ; free virtual = 8979
+---------------------------------------------------------------------------------
+INFO: [Synth 8-638] synthesizing module 'design_1_top_queens_0_0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.gen/sources_1/bd/design_1/ip/design_1_top_queens_0_0/synth/design_1_top_queens_0_0.vhd:68]
+	Parameter M bound to: 8 - type: integer 
+	Parameter N_1 bound to: 10 - type: integer 
+	Parameter N_2 bound to: 4 - type: integer 
+INFO: [Synth 8-3491] module 'top_queens' declared at '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/top_queens.vhd:5' bound to instance 'U0' of component 'top_queens' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.gen/sources_1/bd/design_1/ip/design_1_top_queens_0_0/synth/design_1_top_queens_0_0.vhd:100]
+INFO: [Synth 8-638] synthesizing module 'top_queens' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/top_queens.vhd:22]
+INFO: [Synth 8-638] synthesizing module 'sol_counter' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/sol_counter.vhd:16]
+WARNING: [Synth 8-614] signal 'count_next' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/sol_counter.vhd:19]
+WARNING: [Synth 8-614] signal 'count_reg' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/sol_counter.vhd:19]
+INFO: [Synth 8-256] done synthesizing module 'sol_counter' (1#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/sol_counter.vhd:16]
+INFO: [Synth 8-638] synthesizing module 'fsm_block' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'up_counter' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/up_counter.vhd:17]
+WARNING: [Synth 8-614] signal 'ce' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/up_counter.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'up_counter' (2#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/up_counter.vhd:17]
+INFO: [Synth 8-638] synthesizing module 'ctrl_logic' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ctrl_logic' (3#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:20]
+WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'fsm_block' (4#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'fsm_block__parameterized0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'ctrl_logic__parameterized0' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ctrl_logic__parameterized0' (4#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:20]
+WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'fsm_block__parameterized0' (4#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'fsm_block__parameterized1' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'ctrl_logic__parameterized1' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ctrl_logic__parameterized1' (4#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:20]
+WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'fsm_block__parameterized1' (4#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'fsm_block__parameterized2' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'ctrl_logic__parameterized2' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ctrl_logic__parameterized2' (4#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:20]
+WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'fsm_block__parameterized2' (4#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'fsm_block__parameterized3' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'ctrl_logic__parameterized3' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ctrl_logic__parameterized3' (4#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:20]
+WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'fsm_block__parameterized3' (4#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'fsm_block__parameterized4' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'ctrl_logic__parameterized4' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ctrl_logic__parameterized4' (4#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:20]
+WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'fsm_block__parameterized4' (4#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'fsm_block__parameterized5' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:21]
+INFO: [Synth 8-638] synthesizing module 'ctrl_logic__parameterized5' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:20]
+INFO: [Synth 8-256] done synthesizing module 'ctrl_logic__parameterized5' (4#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:20]
+WARNING: [Synth 8-614] signal 'complete_tick' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'done' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'valid' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'asin_array' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'u_i' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+WARNING: [Synth 8-614] signal 'nexts_in' is read in the process but is not in the sensitivity list [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:87]
+INFO: [Synth 8-256] done synthesizing module 'fsm_block__parameterized5' (4#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:21]
+INFO: [Synth 8-256] done synthesizing module 'top_queens' (5#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/top_queens.vhd:22]
+INFO: [Synth 8-256] done synthesizing module 'design_1_top_queens_0_0' (6#1) [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.gen/sources_1/bd/design_1/ip/design_1_top_queens_0_0/synth/design_1_top_queens_0_0.vhd:68]
+---------------------------------------------------------------------------------
+Finished Synthesize : Time (s): cpu = 00:00:12 ; elapsed = 00:00:13 . Memory (MB): peak = 2588.516 ; gain = 0.000 ; free physical = 6492 ; free virtual = 9923
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2588.516 ; gain = 0.000 ; free physical = 6533 ; free virtual = 9964
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xc7z020clg400-1
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:13 ; elapsed = 00:00:15 . Memory (MB): peak = 2596.398 ; gain = 7.883 ; free physical = 6532 ; free virtual = 9964
+---------------------------------------------------------------------------------
+INFO: [Device 21-403] Loading part xc7z020clg400-1
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_block'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_block__parameterized0'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_block__parameterized1'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_block__parameterized2'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_block__parameterized3'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_block__parameterized4'
+INFO: [Synth 8-802] inferred FSM for state register 'state_reg' in module 'fsm_block__parameterized5'
+WARNING: [Synth 8-327] inferring latch for variable 'next_sol_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/sol_counter.vhd:25]
+WARNING: [Synth 8-327] inferring latch for variable 'count_reg_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/sol_counter.vhd:22]
+WARNING: [Synth 8-327] inferring latch for variable 'output_i_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:31]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                            00001 |                              000
+       st1_new_candidate |                            00010 |                              001
+          st2_validation |                            00100 |                              010
+           st3_writefifo |                            01000 |                              011
+                st4_done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm_block'
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[2]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[3]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[4]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[5]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[6]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[7]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_control_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:42]
+WARNING: [Synth 8-327] inferring latch for variable 'ce_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:39]
+WARNING: [Synth 8-327] inferring latch for variable 'output_i_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:31]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                            00001 |                              000
+       st1_new_candidate |                            00010 |                              001
+          st2_validation |                            00100 |                              010
+           st3_writefifo |                            01000 |                              011
+                st4_done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm_block__parameterized0'
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[2]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[3]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[4]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[5]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[6]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_control_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:42]
+WARNING: [Synth 8-327] inferring latch for variable 'ce_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:39]
+WARNING: [Synth 8-327] inferring latch for variable 'output_i_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:31]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                            00001 |                              000
+       st1_new_candidate |                            00010 |                              001
+          st2_validation |                            00100 |                              010
+           st3_writefifo |                            01000 |                              011
+                st4_done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm_block__parameterized1'
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[2]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[3]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[4]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[5]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_control_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:42]
+WARNING: [Synth 8-327] inferring latch for variable 'ce_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:39]
+WARNING: [Synth 8-327] inferring latch for variable 'output_i_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:31]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                            00001 |                              000
+       st1_new_candidate |                            00010 |                              001
+          st2_validation |                            00100 |                              010
+           st3_writefifo |                            01000 |                              011
+                st4_done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm_block__parameterized2'
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[2]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[3]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[4]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_control_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:42]
+WARNING: [Synth 8-327] inferring latch for variable 'ce_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:39]
+WARNING: [Synth 8-327] inferring latch for variable 'output_i_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:31]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                            00001 |                              000
+       st1_new_candidate |                            00010 |                              001
+          st2_validation |                            00100 |                              010
+           st3_writefifo |                            01000 |                              011
+                st4_done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm_block__parameterized3'
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[2]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[3]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_control_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:42]
+WARNING: [Synth 8-327] inferring latch for variable 'ce_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:39]
+WARNING: [Synth 8-327] inferring latch for variable 'output_i_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:31]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                            00001 |                              000
+       st1_new_candidate |                            00010 |                              001
+          st2_validation |                            00100 |                              010
+           st3_writefifo |                            01000 |                              011
+                st4_done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm_block__parameterized4'
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[2]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_control_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:42]
+WARNING: [Synth 8-327] inferring latch for variable 'ce_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:39]
+WARNING: [Synth 8-327] inferring latch for variable 'output_i_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/ctrl_logic.vhd:31]
+---------------------------------------------------------------------------------------------------
+                   State |                     New Encoding |                Previous Encoding 
+---------------------------------------------------------------------------------------------------
+               st0_reset |                            00001 |                              000
+       st1_new_candidate |                            00010 |                              001
+          st2_validation |                            00100 |                              010
+           st3_writefifo |                            01000 |                              011
+                st4_done |                            10000 |                              100
+---------------------------------------------------------------------------------------------------
+INFO: [Synth 8-3354] encoded FSM with state register 'state_reg' using encoding 'one-hot' in module 'fsm_block__parameterized5'
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[0]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'asout_array_reg[1]' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:53]
+WARNING: [Synth 8-327] inferring latch for variable 'acks_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:45]
+WARNING: [Synth 8-327] inferring latch for variable 'nexts_out_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:47]
+WARNING: [Synth 8-327] inferring latch for variable 'reset_control_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:42]
+WARNING: [Synth 8-327] inferring latch for variable 'ce_reg' [/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.srcs/sources_1/new/fsm_block.vhd:39]
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:00:16 ; elapsed = 00:00:16 . Memory (MB): peak = 2596.398 ; gain = 7.883 ; free physical = 6450 ; free virtual = 9905
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+Detailed RTL Component Info : 
++---Adders : 
+	   2 Input   10 Bit       Adders := 1     
+	   2 Input    5 Bit       Adders := 6     
+	   2 Input    4 Bit       Adders := 29    
+	   3 Input    4 Bit       Adders := 7     
++---Registers : 
+	                4 Bit    Registers := 21    
+	                1 Bit    Registers := 14    
++---Muxes : 
+	   5 Input    5 Bit        Muxes := 7     
+	   2 Input    5 Bit        Muxes := 21    
+	   2 Input    4 Bit        Muxes := 21    
+	   5 Input    3 Bit        Muxes := 7     
+	   2 Input    1 Bit        Muxes := 7     
+	   3 Input    1 Bit        Muxes := 14    
+	   5 Input    1 Bit        Muxes := 49    
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 220 (col length:60)
+BRAMs: 280 (col length: RAMB18 60 RAMB36 30)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-3332] Sequential element (U0/counter_sol/next_sol_reg) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_7/logic/output_i_reg[2]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_7/logic/output_i_reg[1]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_7/logic/output_i_reg[0]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_6/logic/output_i_reg[2]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_6/logic/output_i_reg[1]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_6/logic/output_i_reg[0]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_5/logic/output_i_reg[2]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_5/logic/output_i_reg[1]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_5/logic/output_i_reg[0]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_4/logic/output_i_reg[2]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_4/logic/output_i_reg[1]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_4/logic/output_i_reg[0]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_3/logic/output_i_reg[2]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_3/logic/output_i_reg[1]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_3/logic/output_i_reg[0]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_2/logic/output_i_reg[2]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_2/logic/output_i_reg[1]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_2/logic/output_i_reg[0]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_1/logic/output_i_reg[2]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_1/logic/output_i_reg[1]) is unused and will be removed from module design_1_top_queens_0_0.
+INFO: [Synth 8-3332] Sequential element (U0/fsm_1/logic/output_i_reg[0]) is unused and will be removed from module design_1_top_queens_0_0.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2596.398 ; gain = 7.883 ; free physical = 6125 ; free virtual = 9600
+---------------------------------------------------------------------------------
+No constraint files found.
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2596.398 ; gain = 7.883 ; free physical = 6064 ; free virtual = 9539
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:00:29 ; elapsed = 00:00:31 . Memory (MB): peak = 2596.398 ; gain = 7.883 ; free physical = 6153 ; free virtual = 9628
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2596.398 ; gain = 7.883 ; free physical = 6188 ; free virtual = 9655
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2596.398 ; gain = 7.883 ; free physical = 6188 ; free virtual = 9655
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2596.398 ; gain = 7.883 ; free physical = 6187 ; free virtual = 9655
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:00:37 ; elapsed = 00:00:39 . Memory (MB): peak = 2596.398 ; gain = 7.883 ; free physical = 6187 ; free virtual = 9655
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2596.398 ; gain = 7.883 ; free physical = 6185 ; free virtual = 9653
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2596.398 ; gain = 7.883 ; free physical = 6185 ; free virtual = 9652
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+------+------+
+|      |Cell  |Count |
++------+------+------+
+|1     |LUT1  |    15|
+|2     |LUT2  |    40|
+|3     |LUT3  |    47|
+|4     |LUT4  |    89|
+|5     |LUT5  |    33|
+|6     |LUT6  |   143|
+|7     |MUXF7 |    14|
+|8     |MUXF8 |     7|
+|9     |FDCE  |    91|
+|10    |FDRE  |    28|
+|11    |FDSE  |     7|
+|12    |LD    |   168|
+|13    |LDC   |    10|
++------+------+------+
+
+Report Instance Areas: 
++------+----------------+---------------------------+------+
+|      |Instance        |Module                     |Cells |
++------+----------------+---------------------------+------+
+|1     |top             |                           |   692|
+|2     |  U0            |top_queens                 |   692|
+|3     |    counter_sol |sol_counter                |    21|
+|4     |    fsm_1       |fsm_block__parameterized5  |    69|
+|5     |      dut       |up_counter_5               |    17|
+|6     |      logic     |ctrl_logic__parameterized5 |    29|
+|7     |    fsm_2       |fsm_block__parameterized4  |    78|
+|8     |      dut       |up_counter_4               |    11|
+|9     |      logic     |ctrl_logic__parameterized4 |    41|
+|10    |    fsm_3       |fsm_block__parameterized3  |    91|
+|11    |      dut       |up_counter_3               |    11|
+|12    |      logic     |ctrl_logic__parameterized3 |    50|
+|13    |    fsm_4       |fsm_block__parameterized2  |   102|
+|14    |      dut       |up_counter_2               |    11|
+|15    |      logic     |ctrl_logic__parameterized2 |    57|
+|16    |    fsm_5       |fsm_block__parameterized1  |   118|
+|17    |      dut       |up_counter_1               |    11|
+|18    |      logic     |ctrl_logic__parameterized1 |    69|
+|19    |    fsm_6       |fsm_block__parameterized0  |   129|
+|20    |      dut       |up_counter_0               |    11|
+|21    |      logic     |ctrl_logic__parameterized0 |    76|
+|22    |    fsm_7       |fsm_block                  |    84|
+|23    |      dut       |up_counter                 |    11|
+|24    |      logic     |ctrl_logic                 |    27|
++------+----------------+---------------------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2596.398 ; gain = 7.883 ; free physical = 6184 ; free virtual = 9651
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 118 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2596.398 ; gain = 7.883 ; free physical = 6182 ; free virtual = 9650
+Synthesis Optimization Complete : Time (s): cpu = 00:00:37 ; elapsed = 00:00:40 . Memory (MB): peak = 2596.406 ; gain = 7.883 ; free physical = 6182 ; free virtual = 9650
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00.02 . Memory (MB): peak = 2596.688 ; gain = 0.000 ; free physical = 6264 ; free virtual = 9730
+INFO: [Netlist 29-17] Analyzing 199 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 0 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 1 inverter(s) to 10 load pin(s).
+Netlist sorting complete. Time (s): cpu = 00:00:00.01 ; elapsed = 00:00:00 . Memory (MB): peak = 2620.578 ; gain = 0.000 ; free physical = 6209 ; free virtual = 9675
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 178 instances were transformed.
+  LD => LDCE: 168 instances
+  LDC => LDCE (inverted pins: G): 10 instances
+
+Synth Design complete, checksum: c368d7ee
+INFO: [Common 17-83] Releasing license: Synthesis
+88 Infos, 118 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:00:53 ; elapsed = 00:00:44 . Memory (MB): peak = 2620.578 ; gain = 32.184 ; free physical = 6414 ; free virtual = 9880
+INFO: [Timing 38-35] Done setting XDC timing constraints.
+INFO: [Common 17-1381] The checkpoint '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.runs/design_1_top_queens_0_0_synth_1/design_1_top_queens_0_0.dcp' has been generated.
+write_checkpoint: Time (s): cpu = 00:00:14 ; elapsed = 00:00:15 . Memory (MB): peak = 2771.391 ; gain = 150.812 ; free physical = 6024 ; free virtual = 9504
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_top_queens_0_0, cache-ID = 03668f8de2318b7b
+INFO: [Coretcl 2-1174] Renamed 23 cell refs.
+INFO: [Common 17-1381] The checkpoint '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.runs/design_1_top_queens_0_0_synth_1/design_1_top_queens_0_0.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_top_queens_0_0_utilization_synth.rpt -pb design_1_top_queens_0_0_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Tue Jan 25 20:24:36 2022...

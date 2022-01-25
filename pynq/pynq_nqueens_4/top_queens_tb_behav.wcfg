@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="top_queens_tb_behav.wdb" id="1">
+         <top_modules>
+            <top_module name="glbl" />
+            <top_module name="top_queens_tb" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <zoom_setting>
+      <ZoomStartTime time="0.000000 us"></ZoomStartTime>
+      <ZoomEndTime time="370.073421 us"></ZoomEndTime>
+      <Cursor1Time time="0.000000 us"></Cursor1Time>
+   </zoom_setting>
+   <column_width_setting>
+      <NameColumnWidth column_width="108"></NameColumnWidth>
+      <ValueColumnWidth column_width="66"></ValueColumnWidth>
+   </column_width_setting>
+   <WVObjectSize size="10" />
+   <wvobject type="logic" fp_name="/top_queens_tb/s_clk">
+      <obj_property name="ElementShortName">s_clk</obj_property>
+      <obj_property name="ObjectShortName">s_clk</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_queens_tb/s_nRst">
+      <obj_property name="ElementShortName">s_nRst</obj_property>
+      <obj_property name="ObjectShortName">s_nRst</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_queens_tb/s_count">
+      <obj_property name="ElementShortName">s_count[9:0]</obj_property>
+      <obj_property name="ObjectShortName">s_count[9:0]</obj_property>
+      <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_queens_tb/s_ack_in">
+      <obj_property name="ElementShortName">s_ack_in</obj_property>
+      <obj_property name="ObjectShortName">s_ack_in</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_queens_tb/s_next_out">
+      <obj_property name="ElementShortName">s_next_out</obj_property>
+      <obj_property name="ObjectShortName">s_next_out</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_queens_tb/s_a_in">
+      <obj_property name="ElementShortName">s_a_in[3:0]</obj_property>
+      <obj_property name="ObjectShortName">s_a_in[3:0]</obj_property>
+   </wvobject>
+   <wvobject type="array" fp_name="/top_queens_tb/s_a_out">
+      <obj_property name="ElementShortName">s_a_out[31:0]</obj_property>
+      <obj_property name="ObjectShortName">s_a_out[31:0]</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/top_queens_tb/M">
+      <obj_property name="ElementShortName">M</obj_property>
+      <obj_property name="ObjectShortName">M</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/top_queens_tb/N_1">
+      <obj_property name="ElementShortName">N_1</obj_property>
+      <obj_property name="ObjectShortName">N_1</obj_property>
+   </wvobject>
+   <wvobject type="other" fp_name="/top_queens_tb/N_2">
+      <obj_property name="ElementShortName">N_2</obj_property>
+      <obj_property name="ObjectShortName">N_2</obj_property>
+   </wvobject>
+</wave_config>
