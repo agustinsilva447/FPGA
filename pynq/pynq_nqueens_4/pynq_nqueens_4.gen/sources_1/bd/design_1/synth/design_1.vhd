@@ -1,7 +1,7 @@
 --Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 ----------------------------------------------------------------------------------
 --Tool Version: Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
---Date        : Tue Jan 25 20:18:59 2022
+--Date        : Wed Jan 26 20:20:33 2022
 --Host        : agustinsilva447-Lenovo-G50-80 running 64-bit Ubuntu 20.04.3 LTS
 --Command     : generate_target design_1.bd
 --Design      : design_1
@@ -613,7 +613,7 @@ entity design_1 is
     FIXED_IO_ps_srstb : inout STD_LOGIC
   );
   attribute CORE_GENERATION_INFO : string;
-  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=7,numReposBlks=5,numNonXlnxBlks=1,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_clkrst_cnt=1,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
+  attribute CORE_GENERATION_INFO of design_1 : entity is "design_1,IP_Integrator,{x_ipVendor=xilinx.com,x_ipLibrary=BlockDiagram,x_ipName=design_1,x_ipVersion=1.00.a,x_ipLanguage=VHDL,numBlks=7,numReposBlks=5,numNonXlnxBlks=1,numHierBlks=2,maxHierDepth=0,numSysgenBlks=0,numHlsBlks=0,numHdlrefBlks=1,numPkgbdBlks=0,bdsource=USER,da_axi4_cnt=1,da_clkrst_cnt=6,da_ps7_cnt=1,synth_mode=OOC_per_IP}";
   attribute HW_HANDOFF : string;
   attribute HW_HANDOFF of design_1 : entity is "design_1.hwdef";
 end design_1;
@@ -690,12 +690,11 @@ architecture STRUCTURE of design_1 is
   end component design_1_processing_system7_0_0;
   component design_1_comblock_0_0 is
   port (
-    reg0_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    reg1_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    reg2_i : in STD_LOGIC_VECTOR ( 31 downto 0 );
-    reg0_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    reg1_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
-    reg2_o : out STD_LOGIC_VECTOR ( 31 downto 0 );
+    reg0_i : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    reg1_i : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    reg2_i : in STD_LOGIC_VECTOR ( 9 downto 0 );
+    reg0_o : out STD_LOGIC_VECTOR ( 0 to 0 );
+    reg1_o : out STD_LOGIC_VECTOR ( 0 to 0 );
     axil_aclk : in STD_LOGIC;
     axil_aresetn : in STD_LOGIC;
     axil_awaddr : in STD_LOGIC_VECTOR ( 7 downto 0 );
@@ -733,20 +732,17 @@ architecture STRUCTURE of design_1 is
     peripheral_aresetn : out STD_LOGIC_VECTOR ( 0 to 0 )
   );
   end component design_1_rst_ps7_0_100M_0;
-  component design_1_top_queens_0_0 is
+  component design_1_top_pynq_0_0 is
   port (
     clk : in STD_LOGIC;
     nRst : in STD_LOGIC;
     count : out STD_LOGIC_VECTOR ( 9 downto 0 );
-    ack_in : in STD_LOGIC;
-    next_out : out STD_LOGIC;
-    a_in : in STD_LOGIC_VECTOR ( 3 downto 0 );
-    a_out : out STD_LOGIC_VECTOR ( 31 downto 0 )
+    a_in : out STD_LOGIC_VECTOR ( 3 downto 0 );
+    done : out STD_LOGIC
   );
-  end component design_1_top_queens_0_0;
-  signal comblock_0_reg0_o : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal comblock_0_reg1_o : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal comblock_0_reg2_o : STD_LOGIC_VECTOR ( 31 downto 0 );
+  end component design_1_top_pynq_0_0;
+  signal comblock_0_reg0_o : STD_LOGIC_VECTOR ( 0 to 0 );
+  signal comblock_0_reg1_o : STD_LOGIC_VECTOR ( 0 to 0 );
   signal processing_system7_0_DDR_ADDR : STD_LOGIC_VECTOR ( 14 downto 0 );
   signal processing_system7_0_DDR_BA : STD_LOGIC_VECTOR ( 2 downto 0 );
   signal processing_system7_0_DDR_CAS_N : STD_LOGIC;
@@ -828,9 +824,9 @@ architecture STRUCTURE of design_1 is
   signal ps7_0_axi_periph_M00_AXI_WSTRB : STD_LOGIC_VECTOR ( 3 downto 0 );
   signal ps7_0_axi_periph_M00_AXI_WVALID : STD_LOGIC;
   signal rst_ps7_0_100M_peripheral_aresetn : STD_LOGIC_VECTOR ( 0 to 0 );
-  signal top_queens_0_a_out : STD_LOGIC_VECTOR ( 31 downto 0 );
-  signal top_queens_0_count : STD_LOGIC_VECTOR ( 9 downto 0 );
-  signal top_queens_0_next_out : STD_LOGIC;
+  signal top_pynq_0_a_in : STD_LOGIC_VECTOR ( 3 downto 0 );
+  signal top_pynq_0_count : STD_LOGIC_VECTOR ( 9 downto 0 );
+  signal top_pynq_0_done : STD_LOGIC;
   signal NLW_processing_system7_0_USB0_VBUS_PWRSELECT_UNCONNECTED : STD_LOGIC;
   signal NLW_processing_system7_0_USB0_PORT_INDCTL_UNCONNECTED : STD_LOGIC_VECTOR ( 1 downto 0 );
   signal NLW_rst_ps7_0_100M_mb_reset_UNCONNECTED : STD_LOGIC;
@@ -886,44 +882,21 @@ comblock_0: component design_1_comblock_0_0
       axil_wready => ps7_0_axi_periph_M00_AXI_WREADY,
       axil_wstrb(3 downto 0) => ps7_0_axi_periph_M00_AXI_WSTRB(3 downto 0),
       axil_wvalid => ps7_0_axi_periph_M00_AXI_WVALID,
-      reg0_i(31 downto 10) => B"0000000000000000000000",
-      reg0_i(9 downto 0) => top_queens_0_count(9 downto 0),
-      reg0_o(31 downto 0) => comblock_0_reg0_o(31 downto 0),
-      reg1_i(31) => top_queens_0_next_out,
-      reg1_i(30) => top_queens_0_next_out,
-      reg1_i(29) => top_queens_0_next_out,
-      reg1_i(28) => top_queens_0_next_out,
-      reg1_i(27) => top_queens_0_next_out,
-      reg1_i(26) => top_queens_0_next_out,
-      reg1_i(25) => top_queens_0_next_out,
-      reg1_i(24) => top_queens_0_next_out,
-      reg1_i(23) => top_queens_0_next_out,
-      reg1_i(22) => top_queens_0_next_out,
-      reg1_i(21) => top_queens_0_next_out,
-      reg1_i(20) => top_queens_0_next_out,
-      reg1_i(19) => top_queens_0_next_out,
-      reg1_i(18) => top_queens_0_next_out,
-      reg1_i(17) => top_queens_0_next_out,
-      reg1_i(16) => top_queens_0_next_out,
-      reg1_i(15) => top_queens_0_next_out,
-      reg1_i(14) => top_queens_0_next_out,
-      reg1_i(13) => top_queens_0_next_out,
-      reg1_i(12) => top_queens_0_next_out,
-      reg1_i(11) => top_queens_0_next_out,
-      reg1_i(10) => top_queens_0_next_out,
-      reg1_i(9) => top_queens_0_next_out,
-      reg1_i(8) => top_queens_0_next_out,
-      reg1_i(7) => top_queens_0_next_out,
-      reg1_i(6) => top_queens_0_next_out,
-      reg1_i(5) => top_queens_0_next_out,
-      reg1_i(4) => top_queens_0_next_out,
-      reg1_i(3) => top_queens_0_next_out,
-      reg1_i(2) => top_queens_0_next_out,
-      reg1_i(1) => top_queens_0_next_out,
-      reg1_i(0) => top_queens_0_next_out,
-      reg1_o(31 downto 0) => comblock_0_reg1_o(31 downto 0),
-      reg2_i(31 downto 0) => top_queens_0_a_out(31 downto 0),
-      reg2_o(31 downto 0) => comblock_0_reg2_o(31 downto 0)
+      reg0_i(9 downto 0) => top_pynq_0_count(9 downto 0),
+      reg0_o(0) => comblock_0_reg0_o(0),
+      reg1_i(9) => top_pynq_0_done,
+      reg1_i(8) => top_pynq_0_done,
+      reg1_i(7) => top_pynq_0_done,
+      reg1_i(6) => top_pynq_0_done,
+      reg1_i(5) => top_pynq_0_done,
+      reg1_i(4) => top_pynq_0_done,
+      reg1_i(3) => top_pynq_0_done,
+      reg1_i(2) => top_pynq_0_done,
+      reg1_i(1) => top_pynq_0_done,
+      reg1_i(0) => top_pynq_0_done,
+      reg1_o(0) => comblock_0_reg1_o(0),
+      reg2_i(9 downto 4) => B"000000",
+      reg2_i(3 downto 0) => top_pynq_0_a_in(3 downto 0)
     );
 processing_system7_0: component design_1_processing_system7_0_0
      port map (
@@ -1072,14 +1045,12 @@ rst_ps7_0_100M: component design_1_rst_ps7_0_100M_0
       peripheral_reset(0) => NLW_rst_ps7_0_100M_peripheral_reset_UNCONNECTED(0),
       slowest_sync_clk => processing_system7_0_FCLK_CLK0
     );
-top_queens_0: component design_1_top_queens_0_0
+top_pynq_0: component design_1_top_pynq_0_0
      port map (
-      a_in(3 downto 0) => comblock_0_reg2_o(3 downto 0),
-      a_out(31 downto 0) => top_queens_0_a_out(31 downto 0),
-      ack_in => comblock_0_reg1_o(0),
-      clk => processing_system7_0_FCLK_CLK0,
-      count(9 downto 0) => top_queens_0_count(9 downto 0),
-      nRst => comblock_0_reg0_o(0),
-      next_out => top_queens_0_next_out
+      a_in(3 downto 0) => top_pynq_0_a_in(3 downto 0),
+      clk => comblock_0_reg1_o(0),
+      count(9 downto 0) => top_pynq_0_count(9 downto 0),
+      done => top_pynq_0_done,
+      nRst => comblock_0_reg0_o(0)
     );
 end STRUCTURE;

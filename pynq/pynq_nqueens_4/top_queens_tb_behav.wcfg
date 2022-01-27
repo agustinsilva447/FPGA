@@ -3,58 +3,38 @@
    <wave_state>
    </wave_state>
    <db_ref_list>
-      <db_ref path="top_queens_tb_behav.wdb" id="1">
+      <db_ref path="top_pynq_tb_behav.wdb" id="1">
          <top_modules>
             <top_module name="glbl" />
-            <top_module name="top_queens_tb" />
+            <top_module name="top_pynq_tb" />
          </top_modules>
       </db_ref>
    </db_ref_list>
    <zoom_setting>
-      <ZoomStartTime time="0.000 ns"></ZoomStartTime>
-      <ZoomEndTime time="52.751 ns"></ZoomEndTime>
-      <Cursor1Time time="0.000 ns"></Cursor1Time>
+      <ZoomStartTime time="0.000000000 ms"></ZoomStartTime>
+      <ZoomEndTime time="9.131910001 ms"></ZoomEndTime>
+      <Cursor1Time time="9.131910000 ms"></Cursor1Time>
    </zoom_setting>
    <column_width_setting>
-      <NameColumnWidth column_width="129"></NameColumnWidth>
+      <NameColumnWidth column_width="125"></NameColumnWidth>
       <ValueColumnWidth column_width="66"></ValueColumnWidth>
    </column_width_setting>
-   <WVObjectSize size="9" />
-   <wvobject type="logic" fp_name="/top_queens_tb/s_clk">
+   <WVObjectSize size="4" />
+   <wvobject type="logic" fp_name="/top_pynq_tb/s_clk">
       <obj_property name="ElementShortName">s_clk</obj_property>
       <obj_property name="ObjectShortName">s_clk</obj_property>
    </wvobject>
-   <wvobject type="logic" fp_name="/top_queens_tb/s_nRst">
+   <wvobject type="logic" fp_name="/top_pynq_tb/s_nRst">
       <obj_property name="ElementShortName">s_nRst</obj_property>
       <obj_property name="ObjectShortName">s_nRst</obj_property>
    </wvobject>
-   <wvobject type="array" fp_name="/top_queens_tb/s_output">
-      <obj_property name="ElementShortName">s_output[1:0]</obj_property>
-      <obj_property name="ObjectShortName">s_output[1:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/top_queens_tb/s_a_in">
-      <obj_property name="ElementShortName">s_a_in[3:0]</obj_property>
-      <obj_property name="ObjectShortName">s_a_in[3:0]</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/top_queens_tb/s_a_out">
-      <obj_property name="ElementShortName">s_a_out[31:0]</obj_property>
-      <obj_property name="ObjectShortName">s_a_out[31:0]</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/top_queens_tb/s_ack_in">
-      <obj_property name="ElementShortName">s_ack_in</obj_property>
-      <obj_property name="ObjectShortName">s_ack_in</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/top_queens_tb/s_next_out">
-      <obj_property name="ElementShortName">s_next_out</obj_property>
-      <obj_property name="ObjectShortName">s_next_out</obj_property>
-   </wvobject>
-   <wvobject type="logic" fp_name="/top_queens_tb/s_done">
-      <obj_property name="ElementShortName">s_done</obj_property>
-      <obj_property name="ObjectShortName">s_done</obj_property>
-   </wvobject>
-   <wvobject type="array" fp_name="/top_queens_tb/s_count">
+   <wvobject type="array" fp_name="/top_pynq_tb/s_count">
       <obj_property name="ElementShortName">s_count[9:0]</obj_property>
       <obj_property name="ObjectShortName">s_count[9:0]</obj_property>
       <obj_property name="Radix">UNSIGNEDDECRADIX</obj_property>
+   </wvobject>
+   <wvobject type="logic" fp_name="/top_pynq_tb/s_done">
+      <obj_property name="ElementShortName">s_done</obj_property>
+      <obj_property name="ObjectShortName">s_done</obj_property>
    </wvobject>
 </wave_config>

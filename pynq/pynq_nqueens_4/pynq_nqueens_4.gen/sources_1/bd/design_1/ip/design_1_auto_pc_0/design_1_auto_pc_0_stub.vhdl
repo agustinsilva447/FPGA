@@ -1,10 +1,10 @@
 -- Copyright 1986-2021 Xilinx, Inc. All Rights Reserved.
 -- --------------------------------------------------------------------------------
 -- Tool Version: Vivado v.2021.2 (lin64) Build 3367213 Tue Oct 19 02:47:39 MDT 2021
--- Date        : Tue Jan 25 20:23:24 2022
+-- Date        : Tue Jan 25 20:23:22 2022
 -- Host        : agustinsilva447-Lenovo-G50-80 running 64-bit Ubuntu 20.04.3 LTS
--- Command     : write_vhdl -force -mode synth_stub
---               /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.gen/sources_1/bd/design_1/ip/design_1_auto_pc_0/design_1_auto_pc_0_stub.vhdl
+-- Command     : write_vhdl -force -mode synth_stub -rename_top design_1_auto_pc_0 -prefix
+--               design_1_auto_pc_0_ design_1_auto_pc_0_stub.vhdl
 -- Design      : design_1_auto_pc_0
 -- Purpose     : Stub declaration of top-level module interface
 -- Device      : xc7z020clg400-1

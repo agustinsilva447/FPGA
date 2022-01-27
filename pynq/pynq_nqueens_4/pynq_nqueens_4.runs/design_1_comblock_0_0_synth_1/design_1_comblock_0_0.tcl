@@ -71,6 +71,7 @@ proc create_report { reportName command } {
 }
 OPTRACE "design_1_comblock_0_0_synth_1" START { ROLLUP_AUTO }
 set_param ced.repoPaths /home/agustinsilva447/.Xilinx/Vivado/2019.2/xhub/ced_store
+set_param chipscope.maxJobs 1
 set_param project.vivado.isBlockSynthRun true
 OPTRACE "Creating in-memory project" START { }
 create_project -in_memory -part xc7z020clg400-1
@@ -81,6 +82,7 @@ set_param synth.vivado.isSynthRun true
 set_msg_config -source 4 -id {IP_Flow 19-2162} -severity warning -new_severity info
 set_property webtalk.parent_dir /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.cache/wt [current_project]
 set_property parent.project_path /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_4.xpr [current_project]
+set_property XPM_LIBRARIES {XPM_CDC XPM_MEMORY} [current_project]
 set_property default_lib xil_defaultlib [current_project]
 set_property target_language VHDL [current_project]
 set_property board_part tul.com.tw:pynq-z2:part0:1.0 [current_project]

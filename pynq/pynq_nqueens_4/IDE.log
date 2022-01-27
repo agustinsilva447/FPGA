@@ -1,0 +1,1563 @@
+14:48:06 INFO  : Launching XSCT server: xsct -n  -interactive /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/temp_xsdb_launch_script.tcl
+14:48:06 INFO  : Platform repository initialization has completed.
+14:48:07 INFO  : Registering command handlers for Vitis TCF services
+14:48:15 INFO  : XSCT server has started successfully.
+14:48:15 INFO  : Successfully done setting XSCT server connection channel  
+14:48:16 INFO  : plnx-install-location is set to ''
+14:48:16 INFO  : Successfully done setting workspace for the tool. 
+14:48:16 INFO  : Successfully done query RDI_DATADIR 
+14:50:21 INFO  : Result from executing command 'getProjects': design_1_wrapper
+14:50:21 INFO  : Result from executing command 'getPlatforms': 
+14:50:22 WARN  : An unexpected exception occurred in the module 'platform project logging'
+14:50:22 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+14:50:40 INFO  : Platform 'design_1_wrapper' is added to custom repositories.
+15:40:28 INFO  : Result from executing command 'getProjects': design_1_wrapper
+15:40:28 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+15:40:31 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+15:50:49 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+15:51:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:51:03 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:51:03 INFO  : 'jtag frequency' command is executed.
+15:51:03 INFO  : Context for 'APU' is selected.
+15:51:03 INFO  : System reset is completed.
+15:51:06 INFO  : 'after 3000' command is executed.
+15:51:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:51:09 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+15:51:09 INFO  : Context for 'APU' is selected.
+15:51:09 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:51:09 INFO  : 'configparams force-mem-access 1' command is executed.
+15:51:09 INFO  : Context for 'APU' is selected.
+15:51:09 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+15:51:10 INFO  : 'ps7_init' command is executed.
+15:51:10 INFO  : 'ps7_post_config' command is executed.
+15:51:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:51:10 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:51:10 INFO  : 'configparams force-mem-access 0' command is executed.
+15:51:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:51:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:51:10 INFO  : 'con' command is executed.
+15:51:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:51:10 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+15:53:44 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+15:53:54 INFO  : Disconnected from the channel tcfchan#2.
+15:53:55 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:54:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:54:04 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:54:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:54:34 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:54:34 INFO  : 'jtag frequency' command is executed.
+15:54:34 INFO  : Context for 'APU' is selected.
+15:54:34 INFO  : System reset is completed.
+15:54:37 INFO  : 'after 3000' command is executed.
+15:54:37 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:54:39 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+15:54:40 INFO  : Context for 'APU' is selected.
+15:54:40 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:54:40 INFO  : 'configparams force-mem-access 1' command is executed.
+15:54:40 INFO  : Context for 'APU' is selected.
+15:54:40 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+15:54:40 INFO  : 'ps7_init' command is executed.
+15:54:40 INFO  : 'ps7_post_config' command is executed.
+15:54:40 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:54:40 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:54:41 INFO  : 'configparams force-mem-access 0' command is executed.
+15:54:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:54:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:54:41 INFO  : 'con' command is executed.
+15:54:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:54:41 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+15:55:08 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+15:55:21 INFO  : Disconnected from the channel tcfchan#3.
+15:55:22 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:55:22 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:55:22 INFO  : 'jtag frequency' command is executed.
+15:55:22 INFO  : Context for 'APU' is selected.
+15:55:22 INFO  : System reset is completed.
+15:55:25 INFO  : 'after 3000' command is executed.
+15:55:25 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:55:28 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+15:55:28 INFO  : Context for 'APU' is selected.
+15:55:28 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:55:28 INFO  : 'configparams force-mem-access 1' command is executed.
+15:55:28 INFO  : Context for 'APU' is selected.
+15:55:28 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+15:55:28 INFO  : 'ps7_init' command is executed.
+15:55:28 INFO  : 'ps7_post_config' command is executed.
+15:55:28 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:55:29 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:55:29 INFO  : 'configparams force-mem-access 0' command is executed.
+15:55:29 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:55:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:55:29 INFO  : 'con' command is executed.
+15:55:29 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:55:29 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+15:57:09 INFO  : Disconnected from the channel tcfchan#4.
+15:57:10 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:57:11 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:57:11 INFO  : 'jtag frequency' command is executed.
+15:57:11 INFO  : Context for 'APU' is selected.
+15:57:11 INFO  : System reset is completed.
+15:57:14 INFO  : 'after 3000' command is executed.
+15:57:14 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:57:16 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+15:57:16 INFO  : Context for 'APU' is selected.
+15:57:16 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:57:16 INFO  : 'configparams force-mem-access 1' command is executed.
+15:57:16 INFO  : Context for 'APU' is selected.
+15:57:16 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+15:57:17 INFO  : 'ps7_init' command is executed.
+15:57:17 INFO  : 'ps7_post_config' command is executed.
+15:57:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:57:17 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:57:17 INFO  : 'configparams force-mem-access 0' command is executed.
+15:57:17 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:57:17 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:57:17 INFO  : 'con' command is executed.
+15:57:17 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:57:17 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+15:57:45 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+15:57:58 INFO  : Disconnected from the channel tcfchan#5.
+15:57:59 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:58:08 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+15:58:08 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+15:58:24 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+15:58:32 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+15:58:33 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+15:58:33 INFO  : 'jtag frequency' command is executed.
+15:58:33 INFO  : Context for 'APU' is selected.
+15:58:33 INFO  : System reset is completed.
+15:58:36 INFO  : 'after 3000' command is executed.
+15:58:36 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+15:58:38 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+15:58:38 INFO  : Context for 'APU' is selected.
+15:58:38 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+15:58:38 INFO  : 'configparams force-mem-access 1' command is executed.
+15:58:38 INFO  : Context for 'APU' is selected.
+15:58:38 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+15:58:39 INFO  : 'ps7_init' command is executed.
+15:58:39 INFO  : 'ps7_post_config' command is executed.
+15:58:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:58:39 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+15:58:39 INFO  : 'configparams force-mem-access 0' command is executed.
+15:58:39 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+15:58:39 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+15:58:39 INFO  : 'con' command is executed.
+15:58:39 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+15:58:39 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+16:04:22 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+16:04:29 INFO  : Disconnected from the channel tcfchan#6.
+16:04:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:04:31 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+16:04:31 INFO  : 'jtag frequency' command is executed.
+16:04:31 INFO  : Context for 'APU' is selected.
+16:04:31 INFO  : System reset is completed.
+16:04:34 INFO  : 'after 3000' command is executed.
+16:04:34 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+16:04:36 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+16:04:36 INFO  : Context for 'APU' is selected.
+16:04:36 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:04:36 INFO  : 'configparams force-mem-access 1' command is executed.
+16:04:36 INFO  : Context for 'APU' is selected.
+16:04:36 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+16:04:37 INFO  : 'ps7_init' command is executed.
+16:04:37 INFO  : 'ps7_post_config' command is executed.
+16:04:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:04:37 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:04:37 INFO  : 'configparams force-mem-access 0' command is executed.
+16:04:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:04:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:04:37 INFO  : 'con' command is executed.
+16:04:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:04:37 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+16:10:15 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+16:11:32 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+16:12:08 INFO  : Disconnected from the channel tcfchan#7.
+16:12:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:12:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+16:12:19 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+16:12:26 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:12:26 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+16:12:26 INFO  : 'jtag frequency' command is executed.
+16:12:26 INFO  : Context for 'APU' is selected.
+16:12:26 INFO  : System reset is completed.
+16:12:29 INFO  : 'after 3000' command is executed.
+16:12:29 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+16:12:32 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+16:12:32 INFO  : Context for 'APU' is selected.
+16:12:32 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:12:32 INFO  : 'configparams force-mem-access 1' command is executed.
+16:12:32 INFO  : Context for 'APU' is selected.
+16:12:32 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+16:12:33 INFO  : 'ps7_init' command is executed.
+16:12:33 INFO  : 'ps7_post_config' command is executed.
+16:12:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:12:33 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:12:33 INFO  : 'configparams force-mem-access 0' command is executed.
+16:12:33 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:12:33 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:12:33 INFO  : 'con' command is executed.
+16:12:33 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:12:33 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+16:13:54 INFO  : Disconnected from the channel tcfchan#8.
+16:37:15 INFO  : Launching XSCT server: xsct -n  -interactive /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/temp_xsdb_launch_script.tcl
+16:37:21 INFO  : Platform repository initialization has completed.
+16:37:22 INFO  : Registering command handlers for Vitis TCF services
+16:37:26 INFO  : XSCT server has started successfully.
+16:37:26 INFO  : plnx-install-location is set to ''
+16:37:26 INFO  : Successfully done setting XSCT server connection channel  
+16:37:27 INFO  : Successfully done setting workspace for the tool. 
+16:37:27 INFO  : Successfully done query RDI_DATADIR 
+16:46:27 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+16:47:34 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+16:47:59 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+16:48:50 INFO  : Result from executing command 'getProjects': design_1_wrapper
+16:48:50 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+16:49:13 INFO  : The hardware specification used by project 'pynq_nqueens' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+16:49:13 INFO  : The file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit' stored in project is removed.
+16:49:13 INFO  : The updated bitstream files are copied from platform to folder '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream' in project 'pynq_nqueens'.
+16:49:13 INFO  : The file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' stored in project is removed.
+16:49:26 INFO  : The updated ps init files are copied from platform to folder '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit' in project 'pynq_nqueens'.
+16:49:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:49:29 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+16:49:29 INFO  : 'jtag frequency' command is executed.
+16:49:29 INFO  : Context for 'APU' is selected.
+16:49:29 INFO  : System reset is completed.
+16:49:32 INFO  : 'after 3000' command is executed.
+16:49:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+16:49:34 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+16:49:34 INFO  : Context for 'APU' is selected.
+16:49:35 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:49:35 INFO  : 'configparams force-mem-access 1' command is executed.
+16:49:35 INFO  : Context for 'APU' is selected.
+16:49:35 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+16:49:35 INFO  : 'ps7_init' command is executed.
+16:49:35 INFO  : 'ps7_post_config' command is executed.
+16:49:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:35 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:49:36 INFO  : 'configparams force-mem-access 0' command is executed.
+16:49:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:49:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:49:36 INFO  : 'con' command is executed.
+16:49:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:49:36 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+16:51:02 INFO  : Disconnected from the channel tcfchan#2.
+16:51:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:51:04 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+16:51:04 INFO  : 'jtag frequency' command is executed.
+16:51:04 INFO  : Context for 'APU' is selected.
+16:51:04 INFO  : System reset is completed.
+16:51:07 INFO  : 'after 3000' command is executed.
+16:51:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+16:51:10 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+16:51:10 INFO  : Context for 'APU' is selected.
+16:51:10 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:51:10 INFO  : 'configparams force-mem-access 1' command is executed.
+16:51:10 INFO  : Context for 'APU' is selected.
+16:51:10 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+16:51:11 INFO  : 'ps7_init' command is executed.
+16:51:11 INFO  : 'ps7_post_config' command is executed.
+16:51:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:51:11 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:51:11 INFO  : 'configparams force-mem-access 0' command is executed.
+16:51:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:51:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:51:11 INFO  : 'con' command is executed.
+16:51:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:51:11 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+16:52:28 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+16:52:36 INFO  : Disconnected from the channel tcfchan#3.
+16:52:37 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:52:37 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+16:52:37 INFO  : 'jtag frequency' command is executed.
+16:52:37 INFO  : Context for 'APU' is selected.
+16:52:37 INFO  : System reset is completed.
+16:52:40 INFO  : 'after 3000' command is executed.
+16:52:40 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+16:52:43 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+16:52:43 INFO  : Context for 'APU' is selected.
+16:52:43 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:52:43 INFO  : 'configparams force-mem-access 1' command is executed.
+16:52:43 INFO  : Context for 'APU' is selected.
+16:52:43 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+16:52:43 INFO  : 'ps7_init' command is executed.
+16:52:43 INFO  : 'ps7_post_config' command is executed.
+16:52:43 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:52:43 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:52:44 INFO  : 'configparams force-mem-access 0' command is executed.
+16:52:44 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:52:44 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:52:44 INFO  : 'con' command is executed.
+16:52:44 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:52:44 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+16:53:08 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+16:53:16 INFO  : Disconnected from the channel tcfchan#4.
+16:53:17 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+16:53:17 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+16:53:17 INFO  : 'jtag frequency' command is executed.
+16:53:17 INFO  : Context for 'APU' is selected.
+16:53:17 INFO  : System reset is completed.
+16:53:20 INFO  : 'after 3000' command is executed.
+16:53:20 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+16:53:22 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+16:53:22 INFO  : Context for 'APU' is selected.
+16:53:22 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+16:53:22 INFO  : 'configparams force-mem-access 1' command is executed.
+16:53:23 INFO  : Context for 'APU' is selected.
+16:53:23 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+16:53:23 INFO  : 'ps7_init' command is executed.
+16:53:23 INFO  : 'ps7_post_config' command is executed.
+16:53:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:53:23 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+16:53:23 INFO  : 'configparams force-mem-access 0' command is executed.
+16:53:23 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+16:53:23 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+16:53:23 INFO  : 'con' command is executed.
+16:53:23 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+16:53:23 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+17:10:30 INFO  : Disconnected from the channel tcfchan#5.
+17:10:31 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:10:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+17:10:41 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+17:10:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:10:57 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+17:10:57 INFO  : 'jtag frequency' command is executed.
+17:10:57 INFO  : Context for 'APU' is selected.
+17:10:57 INFO  : System reset is completed.
+17:11:00 INFO  : 'after 3000' command is executed.
+17:11:00 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+17:11:02 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+17:11:02 INFO  : Context for 'APU' is selected.
+17:11:02 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+17:11:02 INFO  : 'configparams force-mem-access 1' command is executed.
+17:11:02 INFO  : Context for 'APU' is selected.
+17:11:02 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+17:11:03 INFO  : 'ps7_init' command is executed.
+17:11:03 INFO  : 'ps7_post_config' command is executed.
+17:11:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:11:03 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:11:03 INFO  : 'configparams force-mem-access 0' command is executed.
+17:11:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:11:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:11:03 INFO  : 'con' command is executed.
+17:11:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:11:03 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+17:11:26 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+17:11:41 INFO  : Disconnected from the channel tcfchan#6.
+17:11:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:11:51 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+17:11:51 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+17:11:57 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:11:57 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+17:11:57 INFO  : 'jtag frequency' command is executed.
+17:11:57 INFO  : Context for 'APU' is selected.
+17:11:57 INFO  : System reset is completed.
+17:12:00 INFO  : 'after 3000' command is executed.
+17:12:01 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+17:12:03 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+17:12:03 INFO  : Context for 'APU' is selected.
+17:12:03 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+17:12:03 INFO  : 'configparams force-mem-access 1' command is executed.
+17:12:03 INFO  : Context for 'APU' is selected.
+17:12:03 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+17:12:04 INFO  : 'ps7_init' command is executed.
+17:12:04 INFO  : 'ps7_post_config' command is executed.
+17:12:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:12:04 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:12:04 INFO  : 'configparams force-mem-access 0' command is executed.
+17:12:04 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:12:04 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:12:04 INFO  : 'con' command is executed.
+17:12:04 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:12:04 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+17:23:43 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+17:23:55 INFO  : Disconnected from the channel tcfchan#7.
+17:23:56 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:23:56 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+17:23:56 INFO  : 'jtag frequency' command is executed.
+17:23:56 INFO  : Context for 'APU' is selected.
+17:23:56 INFO  : System reset is completed.
+17:23:59 INFO  : 'after 3000' command is executed.
+17:23:59 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+17:24:02 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+17:24:02 INFO  : Context for 'APU' is selected.
+17:24:02 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+17:24:02 INFO  : 'configparams force-mem-access 1' command is executed.
+17:24:02 INFO  : Context for 'APU' is selected.
+17:24:02 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+17:24:02 INFO  : 'ps7_init' command is executed.
+17:24:02 INFO  : 'ps7_post_config' command is executed.
+17:24:02 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:24:02 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:24:03 INFO  : 'configparams force-mem-access 0' command is executed.
+17:24:03 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:24:03 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:24:03 INFO  : 'con' command is executed.
+17:24:03 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:24:03 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+17:24:37 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+17:24:49 INFO  : Disconnected from the channel tcfchan#8.
+17:24:50 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:24:50 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+17:24:50 INFO  : 'jtag frequency' command is executed.
+17:24:50 INFO  : Context for 'APU' is selected.
+17:24:50 INFO  : System reset is completed.
+17:24:53 INFO  : 'after 3000' command is executed.
+17:24:53 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+17:24:56 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+17:24:56 INFO  : Context for 'APU' is selected.
+17:24:56 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+17:24:56 INFO  : 'configparams force-mem-access 1' command is executed.
+17:24:56 INFO  : Context for 'APU' is selected.
+17:24:56 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+17:24:56 INFO  : 'ps7_init' command is executed.
+17:24:56 INFO  : 'ps7_post_config' command is executed.
+17:24:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:24:56 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:24:56 INFO  : 'configparams force-mem-access 0' command is executed.
+17:24:56 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:24:56 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:24:57 INFO  : 'con' command is executed.
+17:24:57 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:24:57 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+17:27:21 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+17:27:33 INFO  : Disconnected from the channel tcfchan#9.
+17:27:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:27:43 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+17:27:43 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+17:28:09 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+17:28:20 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+17:28:21 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+17:28:21 INFO  : 'jtag frequency' command is executed.
+17:28:21 INFO  : Context for 'APU' is selected.
+17:28:21 INFO  : System reset is completed.
+17:28:24 INFO  : 'after 3000' command is executed.
+17:28:24 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+17:28:26 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+17:28:26 INFO  : Context for 'APU' is selected.
+17:28:26 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+17:28:26 INFO  : 'configparams force-mem-access 1' command is executed.
+17:28:26 INFO  : Context for 'APU' is selected.
+17:28:26 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+17:28:27 INFO  : 'ps7_init' command is executed.
+17:28:27 INFO  : 'ps7_post_config' command is executed.
+17:28:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:28:27 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+17:28:27 INFO  : 'configparams force-mem-access 0' command is executed.
+17:28:27 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+17:28:27 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+17:28:27 INFO  : 'con' command is executed.
+17:28:27 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+17:28:27 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+18:03:31 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+18:41:41 INFO  : Result from executing command 'getProjects': design_1_wrapper
+18:41:41 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+18:41:44 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+18:42:15 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+18:42:25 INFO  : Result from executing command 'getProjects': design_1_wrapper
+18:42:25 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+18:45:12 INFO  : Disconnected from the channel tcfchan#10.
+18:45:14 INFO  : The hardware specification used by project 'pynq_nqueens' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+18:45:14 INFO  : The file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit' stored in project is removed.
+18:45:14 INFO  : The updated bitstream files are copied from platform to folder '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream' in project 'pynq_nqueens'.
+18:45:14 INFO  : The file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' stored in project is removed.
+18:45:26 INFO  : The updated ps init files are copied from platform to folder '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit' in project 'pynq_nqueens'.
+18:45:28 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:45:29 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+18:45:29 INFO  : 'jtag frequency' command is executed.
+18:45:29 INFO  : Context for 'APU' is selected.
+18:45:29 INFO  : System reset is completed.
+18:45:32 INFO  : 'after 3000' command is executed.
+18:45:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+18:45:34 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+18:45:34 INFO  : Context for 'APU' is selected.
+18:45:34 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:45:34 INFO  : 'configparams force-mem-access 1' command is executed.
+18:45:34 INFO  : Context for 'APU' is selected.
+18:45:34 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+18:45:35 INFO  : 'ps7_init' command is executed.
+18:45:35 INFO  : 'ps7_post_config' command is executed.
+18:45:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:45:35 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:45:35 INFO  : 'configparams force-mem-access 0' command is executed.
+18:45:35 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:45:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:45:35 INFO  : 'con' command is executed.
+18:45:35 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:45:35 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+18:47:04 INFO  : Disconnected from the channel tcfchan#13.
+18:47:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:47:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+18:47:14 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+18:47:23 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:47:23 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+18:47:23 INFO  : 'jtag frequency' command is executed.
+18:47:23 INFO  : Context for 'APU' is selected.
+18:47:23 INFO  : System reset is completed.
+18:47:26 INFO  : 'after 3000' command is executed.
+18:47:26 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+18:47:29 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+18:47:29 INFO  : Context for 'APU' is selected.
+18:47:29 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:47:29 INFO  : 'configparams force-mem-access 1' command is executed.
+18:47:29 INFO  : Context for 'APU' is selected.
+18:47:29 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+18:47:29 INFO  : 'ps7_init' command is executed.
+18:47:29 INFO  : 'ps7_post_config' command is executed.
+18:47:29 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:47:30 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:47:30 INFO  : 'configparams force-mem-access 0' command is executed.
+18:47:30 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:47:30 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:47:30 INFO  : 'con' command is executed.
+18:47:30 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:47:30 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+18:47:33 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+18:48:11 INFO  : Disconnected from the channel tcfchan#14.
+18:48:12 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:48:21 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+18:48:21 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+18:48:42 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:48:42 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+18:48:42 INFO  : 'jtag frequency' command is executed.
+18:48:42 INFO  : Context for 'APU' is selected.
+18:48:42 INFO  : System reset is completed.
+18:48:45 INFO  : 'after 3000' command is executed.
+18:48:55 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+18:48:57 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+18:48:57 INFO  : Context for 'APU' is selected.
+18:48:57 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:48:57 INFO  : 'configparams force-mem-access 1' command is executed.
+18:48:57 INFO  : Context for 'APU' is selected.
+18:48:57 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+18:48:58 INFO  : 'ps7_init' command is executed.
+18:48:58 INFO  : 'ps7_post_config' command is executed.
+18:48:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:48:58 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:48:58 INFO  : 'configparams force-mem-access 0' command is executed.
+18:48:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:48:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:48:58 INFO  : 'con' command is executed.
+18:48:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:48:58 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+18:50:53 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+18:51:02 INFO  : Disconnected from the channel tcfchan#15.
+18:51:03 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:51:04 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+18:51:04 INFO  : 'jtag frequency' command is executed.
+18:51:04 INFO  : Context for 'APU' is selected.
+18:51:04 INFO  : System reset is completed.
+18:51:07 INFO  : 'after 3000' command is executed.
+18:51:07 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+18:51:09 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+18:51:09 INFO  : Context for 'APU' is selected.
+18:51:09 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:51:09 INFO  : 'configparams force-mem-access 1' command is executed.
+18:51:09 INFO  : Context for 'APU' is selected.
+18:51:09 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+18:51:10 INFO  : 'ps7_init' command is executed.
+18:51:10 INFO  : 'ps7_post_config' command is executed.
+18:51:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:51:10 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:51:10 INFO  : 'configparams force-mem-access 0' command is executed.
+18:51:10 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:51:10 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:51:10 INFO  : 'con' command is executed.
+18:51:10 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:51:10 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+18:52:49 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+18:53:04 INFO  : Disconnected from the channel tcfchan#16.
+18:53:05 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:53:14 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+18:53:14 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+18:53:22 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+18:53:29 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:53:29 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+18:53:29 INFO  : 'jtag frequency' command is executed.
+18:53:29 INFO  : Context for 'APU' is selected.
+18:53:29 INFO  : System reset is completed.
+18:53:32 INFO  : 'after 3000' command is executed.
+18:53:32 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+18:53:35 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+18:53:35 INFO  : Context for 'APU' is selected.
+18:53:35 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:53:35 INFO  : 'configparams force-mem-access 1' command is executed.
+18:53:35 INFO  : Context for 'APU' is selected.
+18:53:35 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+18:53:35 INFO  : 'ps7_init' command is executed.
+18:53:35 INFO  : 'ps7_post_config' command is executed.
+18:53:35 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:53:36 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:53:36 INFO  : 'configparams force-mem-access 0' command is executed.
+18:53:36 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:53:36 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:53:36 INFO  : 'con' command is executed.
+18:53:36 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:53:36 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+18:55:27 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+18:55:37 INFO  : Disconnected from the channel tcfchan#17.
+18:55:38 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:55:47 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+18:55:47 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+18:55:51 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+18:55:51 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+18:55:51 INFO  : 'jtag frequency' command is executed.
+18:55:51 INFO  : Context for 'APU' is selected.
+18:55:51 INFO  : System reset is completed.
+18:55:54 INFO  : 'after 3000' command is executed.
+18:55:54 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+18:55:57 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+18:55:57 INFO  : Context for 'APU' is selected.
+18:55:57 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+18:55:57 INFO  : 'configparams force-mem-access 1' command is executed.
+18:55:57 INFO  : Context for 'APU' is selected.
+18:55:57 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+18:55:57 INFO  : 'ps7_init' command is executed.
+18:55:57 INFO  : 'ps7_post_config' command is executed.
+18:55:57 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:55:58 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+18:55:58 INFO  : 'configparams force-mem-access 0' command is executed.
+18:55:58 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+18:55:58 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+18:55:58 INFO  : 'con' command is executed.
+18:55:58 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+18:55:58 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+19:28:18 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+19:28:29 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+19:29:15 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+19:29:26 INFO  : Disconnected from the channel tcfchan#18.
+19:29:27 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:29:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+19:29:37 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+19:29:43 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:29:43 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+19:29:43 INFO  : 'jtag frequency' command is executed.
+19:29:43 INFO  : Context for 'APU' is selected.
+19:29:43 INFO  : System reset is completed.
+19:29:46 INFO  : 'after 3000' command is executed.
+19:29:46 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+19:29:49 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+19:29:49 INFO  : Context for 'APU' is selected.
+19:29:49 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+19:29:49 INFO  : 'configparams force-mem-access 1' command is executed.
+19:29:49 INFO  : Context for 'APU' is selected.
+19:29:49 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+19:29:49 INFO  : 'ps7_init' command is executed.
+19:29:49 INFO  : 'ps7_post_config' command is executed.
+19:29:49 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:29:50 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:29:50 INFO  : 'configparams force-mem-access 0' command is executed.
+19:29:50 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:29:50 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:29:50 INFO  : 'con' command is executed.
+19:29:50 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:29:50 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+19:39:40 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+19:39:52 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+19:40:03 INFO  : Disconnected from the channel tcfchan#19.
+19:40:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:40:04 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+19:40:04 INFO  : 'jtag frequency' command is executed.
+19:40:04 INFO  : Context for 'APU' is selected.
+19:40:04 INFO  : System reset is completed.
+19:40:07 INFO  : 'after 3000' command is executed.
+19:40:08 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+19:40:10 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+19:40:10 INFO  : Context for 'APU' is selected.
+19:40:10 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+19:40:10 INFO  : 'configparams force-mem-access 1' command is executed.
+19:40:10 INFO  : Context for 'APU' is selected.
+19:40:10 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+19:40:11 INFO  : 'ps7_init' command is executed.
+19:40:11 INFO  : 'ps7_post_config' command is executed.
+19:40:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:40:11 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:40:11 INFO  : 'configparams force-mem-access 0' command is executed.
+19:40:11 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:40:11 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:40:11 INFO  : 'con' command is executed.
+19:40:11 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:40:11 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+19:45:07 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+19:45:29 INFO  : Disconnected from the channel tcfchan#20.
+19:45:30 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+19:45:30 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+19:45:30 INFO  : 'jtag frequency' command is executed.
+19:45:30 INFO  : Context for 'APU' is selected.
+19:45:30 INFO  : System reset is completed.
+19:45:33 INFO  : 'after 3000' command is executed.
+19:45:33 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+19:45:36 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+19:45:36 INFO  : Context for 'APU' is selected.
+19:45:36 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+19:45:36 INFO  : 'configparams force-mem-access 1' command is executed.
+19:45:36 INFO  : Context for 'APU' is selected.
+19:45:36 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+19:45:37 INFO  : 'ps7_init' command is executed.
+19:45:37 INFO  : 'ps7_post_config' command is executed.
+19:45:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:45:37 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+19:45:37 INFO  : 'configparams force-mem-access 0' command is executed.
+19:45:37 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+19:45:37 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+19:45:37 INFO  : 'con' command is executed.
+19:45:37 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+19:45:37 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+20:30:13 INFO  : Hardware specification for platform project 'design_1_wrapper' is updated.
+20:30:30 INFO  : Result from executing command 'getProjects': design_1_wrapper
+20:30:30 INFO  : Result from executing command 'getPlatforms': design_1_wrapper|/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/design_1_wrapper.xpfm
+20:30:33 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+20:30:54 INFO  : Disconnected from the channel tcfchan#21.
+20:30:55 INFO  : The hardware specification used by project 'pynq_nqueens' is out of sync with the platform. Resource files extracted from the hardware specification will be updated.
+20:30:55 INFO  : The file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit' stored in project is removed.
+20:30:55 INFO  : The updated bitstream files are copied from platform to folder '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream' in project 'pynq_nqueens'.
+20:30:55 INFO  : The file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' stored in project is removed.
+20:31:07 INFO  : The updated ps init files are copied from platform to folder '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit' in project 'pynq_nqueens'.
+20:31:09 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+20:31:09 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+20:31:09 INFO  : 'jtag frequency' command is executed.
+20:31:09 INFO  : Context for 'APU' is selected.
+20:31:09 INFO  : System reset is completed.
+20:31:12 INFO  : 'after 3000' command is executed.
+20:31:12 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+20:31:15 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+20:31:15 INFO  : Context for 'APU' is selected.
+20:31:15 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+20:31:15 INFO  : 'configparams force-mem-access 1' command is executed.
+20:31:15 INFO  : Context for 'APU' is selected.
+20:31:15 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+20:31:15 INFO  : 'ps7_init' command is executed.
+20:31:16 INFO  : 'ps7_post_config' command is executed.
+20:31:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:31:16 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+20:31:16 INFO  : 'configparams force-mem-access 0' command is executed.
+20:31:16 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+20:31:16 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+20:31:16 INFO  : 'con' command is executed.
+20:31:16 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+20:31:16 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+21:09:58 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+21:10:10 INFO  : Disconnected from the channel tcfchan#23.
+21:10:11 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:10:13 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:10:13 INFO  : 'jtag frequency' command is executed.
+21:10:13 INFO  : Context for 'APU' is selected.
+21:10:13 INFO  : System reset is completed.
+21:10:16 INFO  : 'after 3000' command is executed.
+21:10:16 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+21:10:18 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+21:10:18 INFO  : Context for 'APU' is selected.
+21:10:18 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:10:18 INFO  : 'configparams force-mem-access 1' command is executed.
+21:10:18 INFO  : Context for 'APU' is selected.
+21:10:18 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+21:10:19 INFO  : 'ps7_init' command is executed.
+21:10:19 INFO  : 'ps7_post_config' command is executed.
+21:10:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:10:19 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:10:19 INFO  : 'configparams force-mem-access 0' command is executed.
+21:10:19 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:10:19 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:10:19 INFO  : 'con' command is executed.
+21:10:19 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:10:19 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+21:10:51 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+21:11:03 INFO  : Disconnected from the channel tcfchan#24.
+21:11:04 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:11:13 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+----------------End of Script----------------
+
+21:11:13 ERROR : Could not find ARM device on the board for connection 'Local'.
+Check if the target is in:
+1. Split JTAG - No operations are possible with ARM DAP.
+2. Non JTAG bootmode - Bootrom may need time to enable DAP.
+Please try again.
+
+
+Troubleshooting hints:
+1. Check whether board is connected to system properly.
+2. In case of zynq board, check whether Digilent/Xilinx cable switch settings are correct.
+3. If you are using Xilinx Platform Cable USB, ensure that status LED is green.
+21:11:28 INFO  : Checking for BSP changes to sync application flags for project 'pynq_nqueens'...
+21:11:34 INFO  : Connected to target on host '127.0.0.1' and port '3121'.
+21:11:35 INFO  : Jtag cable 'Xilinx TUL 1234-tulA' is selected.
+21:11:35 INFO  : 'jtag frequency' command is executed.
+21:11:35 INFO  : Context for 'APU' is selected.
+21:11:35 INFO  : System reset is completed.
+21:11:38 INFO  : 'after 3000' command is executed.
+21:11:38 INFO  : 'targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}' command is executed.
+21:11:40 INFO  : Device configured successfully with "/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit"
+21:11:40 INFO  : Context for 'APU' is selected.
+21:11:40 INFO  : Hardware design and registers information is loaded from '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa'.
+21:11:40 INFO  : 'configparams force-mem-access 1' command is executed.
+21:11:40 INFO  : Context for 'APU' is selected.
+21:11:40 INFO  : Sourcing of '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl' is done.
+21:11:41 INFO  : 'ps7_init' command is executed.
+21:11:41 INFO  : 'ps7_post_config' command is executed.
+21:11:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:11:41 INFO  : The application '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf' is downloaded to processor 'ps7_cortexa9_0'.
+21:11:41 INFO  : 'configparams force-mem-access 0' command is executed.
+21:11:41 INFO  : ----------------XSDB Script----------------
+connect -url tcp:127.0.0.1:3121
+targets -set -nocase -filter {name =~"APU*"}
+rst -system
+after 3000
+targets -set -filter {jtag_cable_name =~ "Xilinx TUL 1234-tulA" && level==0 && jtag_device_ctx=="jsn-TUL-1234-tulA-23727093-0"}
+fpga -file /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/bitstream/design_1_wrapper.bit
+targets -set -nocase -filter {name =~"APU*"}
+loadhw -hw /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/design_1_wrapper/export/design_1_wrapper/hw/design_1_wrapper.xsa -mem-ranges [list {0x40000000 0xbfffffff}] -regs
+configparams force-mem-access 1
+targets -set -nocase -filter {name =~"APU*"}
+source /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/_ide/psinit/ps7_init.tcl
+ps7_init
+ps7_post_config
+targets -set -nocase -filter {name =~ "*A9*#0"}
+dow /home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens/Debug/pynq_nqueens.elf
+configparams force-mem-access 0
+----------------End of Script----------------
+
+21:11:41 INFO  : Context for processor 'ps7_cortexa9_0' is selected.
+21:11:41 INFO  : 'con' command is executed.
+21:11:41 INFO  : ----------------XSDB Script (After Launch)----------------
+targets -set -nocase -filter {name =~ "*A9*#0"}
+con
+----------------End of Script----------------
+
+21:11:41 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'

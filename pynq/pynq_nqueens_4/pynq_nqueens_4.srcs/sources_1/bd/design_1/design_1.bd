@@ -19,7 +19,7 @@
         }
       },
       "rst_ps7_0_100M": "",
-      "top_queens_0": ""
+      "top_pynq_0": ""
     },
     "interface_ports": {
       "DDR": {
@@ -1818,8 +1818,14 @@
           "REGS_IN_DEPTH": {
             "value": "3"
           },
+          "REGS_IN_DWIDTH": {
+            "value": "10"
+          },
           "REGS_OUT_DEPTH": {
-            "value": "3"
+            "value": "2"
+          },
+          "REGS_OUT_DWIDTH": {
+            "value": "1"
           }
         }
       },
@@ -2042,11 +2048,11 @@
         "xci_path": "ip/design_1_rst_ps7_0_100M_0/design_1_rst_ps7_0_100M_0.xci",
         "inst_hier_path": "rst_ps7_0_100M"
       },
-      "top_queens_0": {
-        "vlnv": "xilinx.com:module_ref:top_queens:1.0",
-        "xci_name": "design_1_top_queens_0_0",
-        "xci_path": "ip/design_1_top_queens_0_0/design_1_top_queens_0_0.xci",
-        "inst_hier_path": "top_queens_0",
+      "top_pynq_0": {
+        "vlnv": "xilinx.com:module_ref:top_pynq:1.0",
+        "xci_name": "design_1_top_pynq_0_0",
+        "xci_path": "ip/design_1_top_pynq_0_0/design_1_top_pynq_0_0.xci",
+        "inst_hier_path": "top_pynq_0",
         "parameters": {
           "M": {
             "value": "8"
@@ -2060,23 +2066,13 @@
         },
         "reference_info": {
           "ref_type": "hdl",
-          "ref_name": "top_queens",
+          "ref_name": "top_pynq",
           "boundary_crc": "0x0"
         },
         "ports": {
           "clk": {
             "type": "clk",
-            "direction": "I",
-            "parameters": {
-              "FREQ_HZ": {
-                "value": "100000000",
-                "value_src": "user_prop"
-              },
-              "CLK_DOMAIN": {
-                "value": "design_1_processing_system7_0_0_FCLK_CLK0",
-                "value_src": "default_prop"
-              }
-            }
+            "direction": "I"
           },
           "nRst": {
             "direction": "I"
@@ -2086,21 +2082,13 @@
             "left": "9",
             "right": "0"
           },
-          "ack_in": {
-            "direction": "I"
-          },
-          "next_out": {
-            "direction": "O"
-          },
           "a_in": {
-            "direction": "I",
+            "direction": "O",
             "left": "3",
             "right": "0"
           },
-          "a_out": {
-            "direction": "O",
-            "left": "31",
-            "right": "0"
+          "done": {
+            "direction": "O"
           }
         }
       }
@@ -2135,31 +2123,24 @@
       "comblock_0_reg0_o": {
         "ports": [
           "comblock_0/reg0_o",
-          "top_queens_0/nRst"
+          "top_pynq_0/nRst"
         ]
       },
       "comblock_0_reg1_o": {
         "ports": [
           "comblock_0/reg1_o",
-          "top_queens_0/ack_in"
-        ]
-      },
-      "comblock_0_reg2_o": {
-        "ports": [
-          "comblock_0/reg2_o",
-          "top_queens_0/a_in"
+          "top_pynq_0/clk"
         ]
       },
       "processing_system7_0_FCLK_CLK0": {
         "ports": [
           "processing_system7_0/FCLK_CLK0",
-          "processing_system7_0/M_AXI_GP0_ACLK",
-          "ps7_0_axi_periph/S00_ACLK",
-          "rst_ps7_0_100M/slowest_sync_clk",
           "comblock_0/axil_aclk",
           "ps7_0_axi_periph/M00_ACLK",
+          "processing_system7_0/M_AXI_GP0_ACLK",
+          "ps7_0_axi_periph/S00_ACLK",
           "ps7_0_axi_periph/ACLK",
-          "top_queens_0/clk"
+          "rst_ps7_0_100M/slowest_sync_clk"
         ]
       },
       "processing_system7_0_FCLK_RESET0_N": {
@@ -2177,21 +2158,21 @@
           "ps7_0_axi_periph/ARESETN"
         ]
       },
-      "top_queens_0_a_out": {
+      "top_pynq_0_a_in": {
         "ports": [
-          "top_queens_0/a_out",
+          "top_pynq_0/a_in",
           "comblock_0/reg2_i"
         ]
       },
-      "top_queens_0_count": {
+      "top_pynq_0_count": {
         "ports": [
-          "top_queens_0/count",
+          "top_pynq_0/count",
           "comblock_0/reg0_i"
         ]
       },
-      "top_queens_0_next_out": {
+      "top_pynq_0_done": {
         "ports": [
-          "top_queens_0/next_out",
+          "top_pynq_0/done",
           "comblock_0/reg1_i"
         ]
       }
