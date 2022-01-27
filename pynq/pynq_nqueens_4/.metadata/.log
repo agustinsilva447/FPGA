@@ -15076,3 +15076,9 @@ Copyright 1986-2020 Xilinx, Inc. All Rights Reserved.]. Thread: Worker-79: Launc
 
 !ENTRY com.xilinx.sdk.utils 0 0 2022-01-26 21:11:41.762
 !MESSAGE XSCT command with result: [con], Result: [null, ]. Thread: Worker-79: Launching Debugger_pynq_nqueens-Default
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-01-26 21:26:02.677
+!MESSAGE XSCT Command: [disconnect tcfchan#25], Thread: Thread-1484
+
+!ENTRY com.xilinx.sdk.utils 0 0 2022-01-26 21:26:02.681
+!MESSAGE XSCT command with result: [disconnect tcfchan#25], Result: [null, ]. Thread: Thread-1484

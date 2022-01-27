@@ -1561,3 +1561,4 @@ con
 ----------------End of Script----------------
 
 21:11:41 INFO  : Launch script is exported to file '/home/agustinsilva447/Escritorio/Github/FPGA/pynq/pynq_nqueens_4/pynq_nqueens_system/_ide/scripts/debugger_pynq_nqueens-default.tcl'
+21:26:02 INFO  : Disconnected from the channel tcfchan#25.
